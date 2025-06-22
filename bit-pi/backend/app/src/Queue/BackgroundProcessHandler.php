@@ -702,7 +702,7 @@ abstract class BackgroundProcessHandler extends AsyncRequest
             $cpuCount = 1;
         }
 
-        return ($load[0] / $cpuCount) * 100;
+        return ($load[0] / max($cpuCount, 1)) * 100;
     }
 
     private function getCpuLoadWindows()

@@ -236,6 +236,8 @@ class ComposerStaticInitc7de084ae2fb7a3f6c76e1419a3743c2
         'BitApps\\Pi\\src\\Integrations\\GoHighLevel\\GoHighLevelAction' => __DIR__ . '/../..' . '/backend/app/src/Integrations/GoHighLevel/GoHighLevelAction.php',
         'BitApps\\Pi\\src\\Integrations\\GoHighLevel\\GoHighLevelService' => __DIR__ . '/../..' . '/backend/app/src/Integrations/GoHighLevel/GoHighLevelService.php',
         'BitApps\\Pi\\src\\Integrations\\HookRegisterInterface' => __DIR__ . '/../..' . '/backend/app/src/Integrations/HookRegisterInterface.php',
+        'BitApps\\Pi\\src\\Integrations\\HubSpot\\HubSpotAction' => __DIR__ . '/../..' . '/backend/app/src/Integrations/HubSpot/HubSpotAction.php',
+        'BitApps\\Pi\\src\\Integrations\\HubSpot\\HubSpotService' => __DIR__ . '/../..' . '/backend/app/src/Integrations/HubSpot/HubSpotService.php',
         'BitApps\\Pi\\src\\Integrations\\IntegrationHookLoader' => __DIR__ . '/../..' . '/backend/app/src/Integrations/IntegrationHookLoader.php',
         'BitApps\\Pi\\src\\Integrations\\LemList\\LemListAction' => __DIR__ . '/../..' . '/backend/app/src/Integrations/LemList/LemListAction.php',
         'BitApps\\Pi\\src\\Integrations\\LemList\\LemListContact' => __DIR__ . '/../..' . '/backend/app/src/Integrations/LemList/LemListContact.php',

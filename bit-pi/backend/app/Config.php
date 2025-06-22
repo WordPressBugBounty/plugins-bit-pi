@@ -24,7 +24,7 @@ class Config
 
     public const VAR_PREFIX = 'bit_pi_';
 
-    public const VERSION = '1.1.0';
+    public const VERSION = '1.2.0';
 
     public const DB_VERSION = '0.1.0';
 

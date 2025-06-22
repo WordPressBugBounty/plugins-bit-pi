@@ -4,7 +4,7 @@ Tags: automation, integration, webhook, form, workflow
 Requires at least: 5.8
 Tested up to: 6.8.1
 Requires PHP: 7.4
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPL-2.0-or-later
 
 Bit Flows is an automation & integration plugin like Zapier inside WordPress. Connect WP & external platforms with unlimited tasks, workflows & steps..
@@ -436,6 +436,19 @@ Yes! The Pro version unlocks all premium tools, unlimited workflows, priority su
 
 
 == Changelog ==
+
+= v1.2.0 (Jun 22, 2025) =
+* **Actions (14)**:
+  * Perplexity AI (2)
+  * Github (2)
+  * Slack (5)
+  * HubSpot (5)
+* **Triggers (42)**:
+  * WooCommerce Subscriptions (23)
+  * Amelia Booking (14) 
+  * Paymattic (5)
+* **Fixes**:
+  * Fixed properly handle boolean values in mix-input JSON
 
 = v1.1.0 (Jun 05, 2025) =
 * **Actions (4)**:

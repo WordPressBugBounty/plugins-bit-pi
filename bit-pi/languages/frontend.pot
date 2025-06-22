@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Thu Jun 05 2025 09:48:58 GMT+0000 (Coordinated Universal "
+"POT-Creation-Date: Sun Jun 22 2025 12:01:32 GMT+0000 (Coordinated Universal "
 "Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -216,6 +216,8 @@ msgstr ""
 
 #: frontend/_plugin-commons/components/SupportPage/SupportLinks.tsx:56
 #: frontend/src/pages/Layout/ui/Sidebar/Sidebar.tsx:113
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:75
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:187
 msgid "Support"
 msgstr ""
 
@@ -643,11 +645,15 @@ msgid "Connection Name"
 msgstr ""
 
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:124
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/CustomOauth2Connection/CustomOauth2Connection.tsx:347
-#: frontend/src/services/machines/commonMachines/apiClient.machine.ts:68
-#: frontend/src/services/machines/commonMachines/apiClient.machine.ts:96
-#: frontend/src/services/machines/commonMachines/apiClient.machine.ts:124
-msgid "Key"
+#: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomAppsAction.tsx:137
+#: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/CustomAppsTrigger.tsx:94
+#: frontend/src/services/machines/asana/helpers/machineHelper.asana.ts:228
+#: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:266
+#: frontend/src/services/machines/demio/helpers/machineHelper.demio.ts:86
+#: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:64
+#: frontend/src/services/machines/getResponse/helpers/machineHelper.getResponse.ts:12
+#: frontend/src/services/machines/telegram/createInviteLink.telegram.machine.pro.ts:35
+msgid "Name"
 msgstr ""
 
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:136
@@ -672,6 +678,9 @@ msgstr ""
 #: frontend/src/services/machines/goHighLevel/updateContact.goHighLevel.machine.free.ts:73
 #: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:114
 #: frontend/src/services/machines/googleSheet/appendOrUpdateRow.googleSheet.machine.pro.ts:145
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:105
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:136
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:178
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.free.ts:84
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:59
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:106
@@ -739,15 +748,16 @@ msgid "Connect"
 msgstr ""
 
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/BasicAuthConnection/BasicAuthConnection.tsx:123
-msgid "Username"
+msgid "Key / Username"
 msgstr ""
 
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/BasicAuthConnection/BasicAuthConnection.tsx:138
-msgid "Password"
+msgid "Secret / Password"
 msgstr ""
 
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/BearerTokenConnection/BearerTokenConnection.tsx:110
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:21
+#: frontend/src/services/machines/slack/helpers/slackCommons.ts:14
 msgid "Token"
 msgstr ""
 
@@ -799,6 +809,13 @@ msgstr ""
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionHeaders.tsx:96
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionQueryParams.tsx:100
 msgid "Add"
+msgstr ""
+
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/CustomOauth2Connection/CustomOauth2Connection.tsx:347
+#: frontend/src/services/machines/commonMachines/apiClient.machine.ts:68
+#: frontend/src/services/machines/commonMachines/apiClient.machine.ts:96
+#: frontend/src/services/machines/commonMachines/apiClient.machine.ts:124
+msgid "Key"
 msgstr ""
 
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/CustomOauth2Connection/CustomOauth2Connection.tsx:350
@@ -991,6 +1008,7 @@ msgstr ""
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:138
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:113
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:138
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:59
 #: frontend/src/services/machines/googleSheet/appendOrUpdateRow.googleSheet.machine.pro.ts:108
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:100
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:114
@@ -1038,6 +1056,7 @@ msgstr ""
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:137
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:112
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:137
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:58
 #: frontend/src/services/machines/googleSheet/appendOrUpdateRow.googleSheet.machine.pro.ts:107
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:99
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:113
@@ -1467,6 +1486,7 @@ msgstr ""
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:276
 #: frontend/src/pages/Flows/ui/Flows.tsx:122
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:35
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:61
 #: frontend/src/services/machines/notion/createDatabase.notion.machine.pro.ts:34
 #: frontend/src/services/machines/notion/createDatabase.notion.machine.pro.ts:49
 #: frontend/src/services/machines/notion/helpers/notionCommons.ts:67
@@ -1541,6 +1561,7 @@ msgstr ""
 #: frontend/src/components/features/FlowVariables/internals/SystemTabContent/SystemTabContent.tsx:24
 #: frontend/src/components/features/FlowVariables/ui/FlowVariables.tsx:20
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:65
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:50
 msgid "System"
 msgstr ""
 
@@ -1620,6 +1641,8 @@ msgstr ""
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:63
 #: frontend/src/services/machines/getResponse/helpers/machineHelper.getResponse.ts:11
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:10
+#: frontend/src/services/machines/hubSpot/addContactsToList.hubSpot.machine.free.ts:38
+#: frontend/src/services/machines/hubSpot/removeContactFromList.hubSpot.machine.free.ts:38
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:75
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.free.ts:68
 #: frontend/src/services/machines/mailBluster/helpers/machineHelper.mailBluster.ts:11
@@ -1676,9 +1699,9 @@ msgstr ""
 #: frontend/src/services/machines/gemini/helpers/commonUtils.gemini.ts:14
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:21
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:30
+#: frontend/src/services/machines/github/helpers/commonUtils.github.ts:14
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.free.ts:21
 #: frontend/src/services/machines/goHighLevel/updateContact.goHighLevel.machine.free.ts:21
-#: frontend/src/services/machines/hubSpot/createContact.hubSpot.machine.free.ts:18
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:20
 #: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:24
 #: frontend/src/services/machines/klaviyo/addSubscriber.klaviyo.machine.free.ts:18
@@ -1686,6 +1709,7 @@ msgstr ""
 #: frontend/src/services/machines/mailerCloud/createContact.mailerCloud.machine.free.ts:26
 #: frontend/src/services/machines/Omnisend/helpers/commonUtils.omnisend.ts:14
 #: frontend/src/services/machines/oneHashCrm/createLead.oneHashCrm.machine.free.ts:19
+#: frontend/src/services/machines/perplexity/helpers/commonUtils.perplexity.ts:14
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.free.ts:26
 #: frontend/src/services/machines/systemIo/createContact.systemIo.machine.free.ts:25
 #: frontend/src/services/machines/telegram/helpers/telegramCommons.ts:14
@@ -1732,11 +1756,12 @@ msgstr ""
 #: frontend/src/services/machines/gemini/helpers/commonUtils.gemini.ts:32
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:33
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:45
+#: frontend/src/services/machines/github/helpers/commonUtils.github.ts:31
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.free.ts:36
 #: frontend/src/services/machines/goHighLevel/updateContact.goHighLevel.machine.free.ts:36
 #: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:65
 #: frontend/src/services/machines/googleSheet/appendOrUpdateRow.googleSheet.machine.pro.ts:66
-#: frontend/src/services/machines/hubSpot/createContact.hubSpot.machine.free.ts:33
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommons.ts:29
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:34
 #: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:38
 #: frontend/src/services/machines/klaviyo/addSubscriber.klaviyo.machine.free.ts:33
@@ -1749,8 +1774,10 @@ msgstr ""
 #: frontend/src/services/machines/Omnisend/helpers/commonUtils.omnisend.ts:31
 #: frontend/src/services/machines/oneHashCrm/createLead.oneHashCrm.machine.free.ts:48
 #: frontend/src/services/machines/openAi/helpers/openAiCommons.ts:29
+#: frontend/src/services/machines/perplexity/helpers/commonUtils.perplexity.ts:31
 #: frontend/src/services/machines/rapidMail/createContact.rapidMail.machine.free.ts:35
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.free.ts:39
+#: frontend/src/services/machines/slack/helpers/slackCommons.ts:28
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashCommons.ts:37
 #: frontend/src/services/machines/systemIo/createContact.systemIo.machine.free.ts:38
 #: frontend/src/services/machines/telegram/helpers/telegramCommons.ts:29
@@ -2133,15 +2160,15 @@ msgstr ""
 msgid "Load More..."
 msgstr ""
 
-#: frontend/src/components/utilities/TagFilter/TagFilter.test.tsx:17
+#: frontend/src/components/utilities/TagFilter/TagFilter.test.broken.tsx:17
 msgid "Tag 1"
 msgstr ""
 
-#: frontend/src/components/utilities/TagFilter/TagFilter.test.tsx:18
+#: frontend/src/components/utilities/TagFilter/TagFilter.test.broken.tsx:18
 msgid "Tag 2"
 msgstr ""
 
-#: frontend/src/components/utilities/TagFilter/TagFilter.test.tsx:19
+#: frontend/src/components/utilities/TagFilter/TagFilter.test.broken.tsx:19
 msgid "Tag 3"
 msgstr ""
 
@@ -2233,6 +2260,7 @@ msgstr ""
 #: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/CustomAppsTrigger.tsx:103
 #: frontend/src/pages/CustomApps/internals/EditCustomAppsModal/EditCustomAppsForm.tsx:75
 #: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:267
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:44
 msgid "Description"
 msgstr ""
 
@@ -2308,6 +2336,7 @@ msgstr ""
 
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionBody.tsx:108
 #: frontend/src/services/machines/commonMachines/apiClient.machine.ts:139
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:72
 msgid "Body"
 msgstr ""
 
@@ -2317,6 +2346,7 @@ msgid "Headers"
 msgstr ""
 
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionHeaders.tsx:114
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:98
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:55
 msgid "Label"
 msgstr ""
@@ -2327,17 +2357,6 @@ msgstr ""
 
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomAppsAction.tsx:135
 msgid "Action name should be unique and descriptive. For example, \"Create Lead\"."
-msgstr ""
-
-#: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomAppsAction.tsx:137
-#: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/CustomAppsTrigger.tsx:94
-#: frontend/src/services/machines/asana/helpers/machineHelper.asana.ts:228
-#: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:266
-#: frontend/src/services/machines/demio/helpers/machineHelper.demio.ts:86
-#: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:64
-#: frontend/src/services/machines/getResponse/helpers/machineHelper.getResponse.ts:12
-#: frontend/src/services/machines/telegram/createInviteLink.telegram.machine.pro.ts:35
-msgid "Name"
 msgstr ""
 
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomAppsAction.tsx:165
@@ -3031,7 +3050,7 @@ msgstr ""
 #: frontend/src/services/machines/formstackForms/_formstackFormsMachines.ts:30
 #: frontend/src/services/machines/googleForms/_googleFormsMachines.ts:30
 #: frontend/src/services/machines/goZenForms/_goZenFormsMachines.ts:30
-#: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:42
+#: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:65
 #: frontend/src/services/machines/involve/_involveMachines.ts:30
 #: frontend/src/services/machines/mailchimpForms/_mailchimpFormsMachines.ts:30
 #: frontend/src/services/machines/mailerLiteForms/_mailerLiteFormsMachines.ts:30
@@ -3064,6 +3083,56 @@ msgstr ""
 #: frontend/src/services/machines/jotForm/_jotFormMachines.ts:25
 #: frontend/src/services/machines/wpFunnels/_wpFunnelsMachines.ts:17
 msgid "Watch Submission"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:24
+msgid "New Appointment Added"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:31
+msgid "Appointment Status Updated"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:38
+msgid "Appointment Cancelled"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:45
+msgid "Appointment Rejected"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:52
+msgid "New Booking Added"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:59
+#: frontend/src/services/machines/fluentBooking/_fluentBookingMachines.ts:31
+msgid "Booking Cancelled"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:66
+msgid "Booking Rescheduled"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:73
+msgid "New Event Added"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:80
+#: frontend/src/services/machines/eventin/_eventinMachines.ts:24
+msgid "Event Updated"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:87
+msgid "Event Booking Added"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:94
+msgid "Event Booking updated"
+msgstr ""
+
+#: frontend/src/services/machines/amelia/_ameliaMachines.ts:101
+msgid "Event Booking Deleted"
 msgstr ""
 
 #: frontend/src/services/machines/arForm/_arFormMachines.ts:17
@@ -3326,7 +3395,6 @@ msgstr ""
 #: frontend/src/services/machines/elasticMail/_elasticMailMachines.ts:15
 #: frontend/src/services/machines/encharge/_enchargeMachines.ts:15
 #: frontend/src/services/machines/getGist/_getGistMachines.ts:15
-#: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:33
 #: frontend/src/services/machines/lemList/_lemListMachines.ts:15
 #: frontend/src/services/machines/mailerCloud/_mailerCloudMachines.ts:15
 #: frontend/src/services/machines/selzy/_selzyMachines.ts:15
@@ -3337,6 +3405,7 @@ msgstr ""
 
 #: frontend/src/services/machines/benchMark/_benchmarkMachines.ts:21
 #: frontend/src/services/machines/goHighLevel/_goHighLevelMachines.ts:21
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:28
 msgid "Update Contact"
 msgstr ""
 
@@ -3389,6 +3458,9 @@ msgstr ""
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:70
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.free.ts:48
 #: frontend/src/services/machines/goHighLevel/updateContact.goHighLevel.machine.free.ts:62
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:94
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:125
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:168
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.free.ts:65
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:48
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:97
@@ -3443,10 +3515,14 @@ msgid "Remove a contact from a list"
 msgstr ""
 
 #: frontend/src/services/machines/brevo/addContactToList.brevo.machine.free.ts:20
+#: frontend/src/services/machines/hubSpot/addContactsToList.hubSpot.machine.free.ts:21
+#: frontend/src/services/machines/hubSpot/removeContactFromList.hubSpot.machine.free.ts:21
 msgid "List ID"
 msgstr ""
 
 #: frontend/src/services/machines/brevo/addContactToList.brevo.machine.free.ts:25
+#: frontend/src/services/machines/hubSpot/addContactsToList.hubSpot.machine.free.ts:26
+#: frontend/src/services/machines/hubSpot/removeContactFromList.hubSpot.machine.free.ts:26
 msgid "Select a List"
 msgstr ""
 
@@ -3459,11 +3535,15 @@ msgstr ""
 
 #: frontend/src/services/machines/brevo/addContactToList.brevo.machine.free.ts:50
 #: frontend/src/services/machines/brevo/removeContactFromList.brevo.machine.free.ts:48
+#: frontend/src/services/machines/hubSpot/addContactsToList.hubSpot.machine.free.ts:47
+#: frontend/src/services/machines/hubSpot/removeContactFromList.hubSpot.machine.free.ts:47
 msgid "Email #{COUNT}"
 msgstr ""
 
 #: frontend/src/services/machines/brevo/addContactToList.brevo.machine.free.ts:52
 #: frontend/src/services/machines/brevo/removeContactFromList.brevo.machine.free.ts:50
+#: frontend/src/services/machines/hubSpot/addContactsToList.hubSpot.machine.free.ts:49
+#: frontend/src/services/machines/hubSpot/removeContactFromList.hubSpot.machine.free.ts:49
 msgid "Emails"
 msgstr ""
 
@@ -3577,6 +3657,7 @@ msgstr ""
 
 #: frontend/src/services/machines/claude/_claudeMachines.ts:16
 #: frontend/src/services/machines/gemini/_geminiMachines.ts:16
+#: frontend/src/services/machines/perplexity/_perplexityMachines.ts:16
 msgid "Create a Completion"
 msgstr ""
 
@@ -3595,6 +3676,8 @@ msgstr ""
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:23
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:24
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:45
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:22
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:22
 msgid "Model"
 msgstr ""
 
@@ -3607,11 +3690,14 @@ msgstr ""
 #: frontend/src/services/machines/openAi/createModeration.openAi.machine.pro.ts:24
 #: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:25
 #: frontend/src/services/machines/openAi/textToStructuredData.openAi.machine.pro.ts:24
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:34
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:34
 msgid "Select a Model"
 msgstr ""
 
 #: frontend/src/services/machines/claude/askClaude.claude.machine.pro.ts:36
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:36
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:41
 msgid "Write the message"
 msgstr ""
 
@@ -3620,11 +3706,16 @@ msgstr ""
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:73
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:38
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:53
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:43
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:58
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:36
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:39
 msgid "Message"
 msgstr ""
 
 #: frontend/src/services/machines/claude/askClaude.claude.machine.pro.ts:41
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:41
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:46
 msgid "Enter message"
 msgstr ""
 
@@ -3633,6 +3724,8 @@ msgstr ""
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:49
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:70
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:89
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:54
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:75
 msgid "Show Advance Feature"
 msgstr ""
 
@@ -3647,6 +3740,8 @@ msgstr ""
 #: frontend/src/services/machines/claude/createCompletion.claude.machine.pro.ts:81
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:60
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:81
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:65
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:86
 msgid "Max Token"
 msgstr ""
 
@@ -3655,6 +3750,8 @@ msgstr ""
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:39
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:63
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:84
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:68
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:89
 msgid "Enter the token value"
 msgstr ""
 
@@ -3671,6 +3768,8 @@ msgstr ""
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:47
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:75
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:96
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:78
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:99
 msgid "Temperatures"
 msgstr ""
 
@@ -3679,6 +3778,8 @@ msgstr ""
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:50
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:77
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:98
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:81
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:102
 msgid "Enter temperature value"
 msgstr ""
 
@@ -3695,6 +3796,8 @@ msgstr ""
 #: frontend/src/services/machines/claude/createCompletion.claude.machine.pro.ts:107
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:89
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:110
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:117
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:138
 msgid "topP Sampling Value"
 msgstr ""
 
@@ -3702,6 +3805,8 @@ msgstr ""
 #: frontend/src/services/machines/claude/createCompletion.claude.machine.pro.ts:110
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:91
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:112
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:120
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:141
 msgid "Enter topP value"
 msgstr ""
 
@@ -3717,6 +3822,8 @@ msgstr ""
 #: frontend/src/services/machines/claude/createCompletion.claude.machine.pro.ts:120
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:103
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:124
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:130
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:151
 msgid "topK Sampling Value"
 msgstr ""
 
@@ -3724,6 +3831,8 @@ msgstr ""
 #: frontend/src/services/machines/claude/createCompletion.claude.machine.pro.ts:123
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:105
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:126
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:133
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:154
 msgid "Enter topK value"
 msgstr ""
 
@@ -3753,6 +3862,7 @@ msgstr ""
 #: frontend/src/services/machines/claude/createCompletion.claude.machine.pro.ts:41
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:60
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:41
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:45
 msgid "Role"
 msgstr ""
 
@@ -3760,12 +3870,16 @@ msgstr ""
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:63
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:44
 #: frontend/src/services/machines/openAi/helpers/openAiCommonFields.ts:27
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:48
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:19
 msgid "User"
 msgstr ""
 
 #: frontend/src/services/machines/claude/createCompletion.claude.machine.pro.ts:45
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:64
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:99
 #: frontend/src/services/machines/openAi/helpers/openAiCommonFields.ts:28
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:49
 msgid "Assistant"
 msgstr ""
 
@@ -3773,6 +3887,7 @@ msgstr ""
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:80
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:60
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:81
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:65
 msgid "Messages"
 msgstr ""
 
@@ -3823,6 +3938,7 @@ msgid "Lists"
 msgstr ""
 
 #: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:269
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:112
 msgid "Priority"
 msgstr ""
 
@@ -4017,6 +4133,7 @@ msgid "New withdrawal request"
 msgstr ""
 
 #: frontend/src/services/machines/drip/_dripMachines.ts:15
+#: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:32
 msgid "Create or Update Contact"
 msgstr ""
 
@@ -4463,10 +4580,6 @@ msgstr ""
 msgid "Event Created"
 msgstr ""
 
-#: frontend/src/services/machines/eventin/_eventinMachines.ts:24
-msgid "Event Updated"
-msgstr ""
-
 #: frontend/src/services/machines/eventin/_eventinMachines.ts:31
 msgid "Event Deleted"
 msgstr ""
@@ -4523,6 +4636,7 @@ msgstr ""
 #: frontend/src/services/machines/eventsCalendar/attendeeRegisteredWc.eventsCalendar.machine.pro.ts:33
 #: frontend/src/services/machines/eventsCalendar/attendEvent.eventsCalendar.machine.pro.ts:33
 #: frontend/src/services/machines/eventsCalendar/newAttendee.eventsCalendar.machine.pro.ts:33
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:125
 msgid "Events"
 msgstr ""
 
@@ -4536,10 +4650,6 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentBooking/_fluentBookingMachines.ts:24
 msgid "Booking Completed"
-msgstr ""
-
-#: frontend/src/services/machines/fluentBooking/_fluentBookingMachines.ts:31
-msgid "Booking Cancelled"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:17
@@ -4760,6 +4870,195 @@ msgstr ""
 msgid "No tags found or failed to fetch tags"
 msgstr ""
 
+#: frontend/src/services/machines/github/_githubMachines.ts:16
+msgid "Create a Gist"
+msgstr ""
+
+#: frontend/src/services/machines/github/_githubMachines.ts:23
+msgid "Create an Issue"
+msgstr ""
+
+#: frontend/src/services/machines/github/_githubMachines.ts:30
+msgid "Create an Issue Comment"
+msgstr ""
+
+#: frontend/src/services/machines/github/_githubMachines.ts:37
+msgid "Get an User"
+msgstr ""
+
+#: frontend/src/services/machines/github/_githubMachines.ts:44
+msgid "Get a Repository"
+msgstr ""
+
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:20
+msgid "Write the filename to create the gist"
+msgstr ""
+
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:22
+msgid "Gist Filename"
+msgstr ""
+
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:25
+msgid "Enter filename"
+msgstr ""
+
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:31
+msgid "Write the content of the gist"
+msgstr ""
+
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:33
+msgid "Content Of The Gist"
+msgstr ""
+
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:36
+msgid "Enter content of gist"
+msgstr ""
+
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:42
+msgid "Enter a short description of your gist"
+msgstr ""
+
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:47
+msgid "Enter description of gist"
+msgstr ""
+
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:53
+msgid "Chose the visibility"
+msgstr ""
+
+#: frontend/src/services/machines/github/createGist.github.machine.pro.ts:55
+msgid "Make Gist Public"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:29
+msgid "Select the owner of the issue"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:31
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:31
+#: frontend/src/services/machines/github/getRepository.github.machine.pro.ts:22
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:85
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:156
+msgid "Owner"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:37
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:37
+msgid "Select  Owner"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:44
+msgid "Select a repository of the issue"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:46
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:46
+#: frontend/src/services/machines/github/getRepository.github.machine.pro.ts:37
+msgid "Repository"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:52
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:52
+#: frontend/src/services/machines/github/getRepository.github.machine.pro.ts:43
+msgid "Select a Repository"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:59
+msgid "Write the title of the issue"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:64
+msgid "Enter Title"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:70
+msgid "Write the body content of the issue"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:75
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:64
+msgid "Enter Body"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:81
+msgid "Select an assignee of the issue"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:83
+msgid "Assignee"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:89
+msgid "Select Assignee"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:96
+msgid "Select the label of the issue"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:104
+msgid "Select Label"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:29
+msgid "Select the owner of the comment"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:44
+msgid "Select a repository of the comment"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:59
+msgid "Enter the comment body"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:61
+msgid "Comment Body"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:70
+msgid "Select an issue to be commented"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:72
+msgid "Issue"
+msgstr ""
+
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:78
+msgid "Select Issue"
+msgstr ""
+
+#: frontend/src/services/machines/github/getRepository.github.machine.pro.ts:20
+msgid "Select owner to get the repository"
+msgstr ""
+
+#: frontend/src/services/machines/github/getRepository.github.machine.pro.ts:28
+msgid "Select Owner"
+msgstr ""
+
+#: frontend/src/services/machines/github/getRepository.github.machine.pro.ts:35
+msgid "Select the repository to get"
+msgstr ""
+
+#: frontend/src/services/machines/github/getUser.github.machine.pro.ts:20
+msgid "Enter the login username"
+msgstr ""
+
+#: frontend/src/services/machines/github/getUser.github.machine.pro.ts:22
+msgid "Username (Login)"
+msgstr ""
+
+#: frontend/src/services/machines/github/getUser.github.machine.pro.ts:25
+msgid "Enter username"
+msgstr ""
+
+#: frontend/src/services/machines/github/helpers/commonUtils.github.ts:7
+msgid ""
+"You can find credentials from <a target=\"_blank\" class=\"text-blue-600 "
+"underline\" rel=\"noopener noreferrer nofollow\" "
+"href=\"https://github.com/settings/tokens\">Here</a>"
+msgstr ""
+
 #: frontend/src/services/machines/giveWp/_giveWpMachines.ts:17
 msgid "User made a donation via form"
 msgstr ""
@@ -4932,9 +5231,1122 @@ msgstr ""
 msgid "Tag removed from contact"
 msgstr ""
 
-#: frontend/src/services/machines/hubSpot/createContact.hubSpot.machine.free.ts:13
-#: frontend/src/services/machines/klaviyo/addSubscriber.klaviyo.machine.free.ts:13
-msgid "You can get your API key from ..."
+#: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:38
+msgid "Create or Update Company"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:44
+msgid "Create or Update Deal"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:50
+msgid "Add Contacts To List"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:56
+msgid "Remove Contacts From List"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:19
+msgid "Enable to update a company if it exists, or add a new one if it does not."
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:21
+msgid "Update Company If Exists"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:33
+msgid "Companies"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:39
+#: frontend/src/services/machines/suiteDash/getCompanies.suiteDash.machine.free.ts:54
+#: frontend/src/services/machines/suiteDash/updateACompany.suiteDash.machine.free.ts:27
+msgid "Select a Company"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:49
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:80
+msgid "Lead Status"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:54
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:85
+msgid "Select a Lead Status"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:63
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:94
+msgid "Lifecycle Stage"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:68
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:99
+msgid "Select a Lifecycle Stage"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:77
+msgid "Types"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:82
+msgid "Select a Type"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:88
+msgid "Add Company Fields"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:114
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:145
+#: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:257
+msgid "Field #{COUNT}"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:116
+msgid "Company Fields"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:26
+msgid "Enable to update a contact if it exists, or add a new one if it does not."
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:38
+msgid "Employment Role"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:43
+msgid "Select a Employment Role"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:52
+msgid "Employment Seniority"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:57
+msgid "Select a Employment Seniority"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:66
+msgid "Employment Sub Role"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:71
+msgid "Select a Employment Sub Role"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:108
+msgid "Number Of Employees"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:113
+msgid "Select Number Of Employees"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:119
+msgid "Add Contact Fields"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:147
+msgid "Contact Fields"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:19
+msgid "Enable to update a deal if it exists, or add a new one if it does not."
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:21
+msgid "Update Deal"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:33
+msgid "Deals"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:39
+msgid "Select a Deal"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:47
+msgid "A name for this deal."
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:49
+msgid "Deal Name"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:59
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:131
+msgid "Pipeline"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:61
+msgid "Sales Pipeline"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:63
+msgid "Select a Pipeline"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:71
+msgid "Deal Stage"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:75
+msgid "Select a Deal Stage"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:84
+msgid "Deal Owner"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:90
+msgid "Select a Owner"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:98
+msgid "Deal Type"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:101
+msgid "New Business"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:102
+msgid "Existing Business"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:105
+msgid "Select a Deal Type"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:115
+#: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:122
+msgid "Low"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:116
+#: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:123
+msgid "Medium"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:117
+#: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:124
+msgid "High"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:120
+msgid "Select a Priority"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:127
+msgid "Forecast Category"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:130
+msgid "Not forecasted"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:132
+msgid "Best case"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:133
+msgid "Commit"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:134
+msgid "Closed won"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:137
+msgid "Select a Forecast Category"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:144
+msgid "Original Traffic Source"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:147
+msgid "Organic Search"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:148
+msgid "Paid Search"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:149
+msgid "Email Marketing"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:150
+msgid "Organic Social"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:151
+msgid "Referrals"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:152
+msgid "Other Campaigns"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:153
+msgid "Direct Traffic"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:154
+msgid "Offline Sources"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:155
+msgid "Paid Social"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:158
+msgid "Select a Traffic Source"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:185
+msgid "Deal Fields"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:4
+msgid "Amount"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:5
+msgid "Attributed Reporting Team"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:6
+msgid "Close Date"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:7
+msgid "Closed Lost Reason"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:8
+msgid "Create Date"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:9
+msgid "Deal Description"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:10
+msgid "Forecast Probability"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:11
+msgid "Deal Probability"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:12
+msgid "Next Step"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:13
+msgid "Shared Teams"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:14
+msgid "Shared Users"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:15
+#: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:178
+msgid "Currency"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:16
+msgid "Exchange rate"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:20
+msgid "New"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:21
+msgid "Open"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:22
+msgid "In Progress"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:23
+msgid "Open Deal"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:24
+msgid "Unqualified"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:25
+msgid "Attempted to Contact"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:26
+msgid "Connected"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:27
+msgid "Bad Timing"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:31
+msgid "Subscriber"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:32
+#: frontend/src/services/machines/suiteDash/createCompany.suiteDash.machine.free.ts:30
+#: frontend/src/services/machines/suiteDash/createContact.suiteDash.machine.free.ts:25
+msgid "Lead"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:33
+msgid "Marketing Qualified Lead"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:34
+msgid "Sales Qualified Lead"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:35
+msgid "Opportunity"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:36
+msgid "Customer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:37
+msgid "Evangelist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:38
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:46
+msgid "Other"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:42
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:86
+msgid "Partner"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:43
+#: frontend/src/services/machines/suiteDash/createCompany.suiteDash.machine.free.ts:32
+#: frontend/src/services/machines/suiteDash/createContact.suiteDash.machine.free.ts:27
+msgid "Prospect"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:44
+msgid "Vendor"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:45
+msgid "Reseller"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:50
+msgid "Accounting"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:51
+msgid "Administrative"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:52
+msgid "Business Development"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:53
+msgid "Communications"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:54
+msgid "Customer Service"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:55
+msgid "Consulting"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:56
+msgid "Design"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:57
+msgid "Education"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:58
+msgid "Engineering"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:59
+msgid "Entrepreneurship"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:60
+msgid "Finance"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:61
+msgid "Health Professional"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:62
+msgid "Human Resources"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:63
+msgid "Information Technology"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:64
+msgid "Legal"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:65
+msgid "Marketing"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:66
+msgid "Operations"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:67
+msgid "Product"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:68
+msgid "Project Management"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:69
+msgid "Public Relations"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:70
+msgid "Quality Assurance"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:71
+msgid "Real Estate"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:72
+msgid "Recruiting"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:73
+msgid "Research"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:74
+msgid "Sales"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:76
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:219
+msgid "Retired"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:80
+msgid "VP"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:81
+msgid "Director"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:82
+msgid "Entry"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:83
+msgid "Executive"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:84
+msgid "Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:87
+msgid "Senior"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:88
+msgid "Employee"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:92
+msgid "Account Executive"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:93
+msgid "Account Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:94
+msgid "Accountant"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:95
+msgid "Accounting Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:96
+msgid "Administrative Assistant"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:97
+msgid "Appraisal"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:98
+msgid "Architect IT"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:100
+msgid "Attorney"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:101
+msgid "Auditor"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:102
+msgid "Brand Marketing"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:103
+msgid "Business Analyst"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:104
+msgid "Business Consultant"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:105
+msgid "Business Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:106
+msgid "Chief Financial Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:107
+msgid "Communications Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:108
+msgid "Community"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:109
+msgid "Content Marketing"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:110
+msgid "Contracts"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:111
+msgid "Creative"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:112
+msgid "Customer Service Specialist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:113
+msgid "Customer Success"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:114
+msgid "Data IT"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:115
+msgid "Data Science Engineer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:116
+msgid "Database Administrator"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:117
+msgid "Design Engineer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:118
+msgid "Development Specialist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:119
+msgid "Devops Engineer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:120
+msgid "Digital Marketing"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:121
+msgid "Director of Development"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:122
+msgid "Editorial"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:123
+msgid "Electrical Engineer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:124
+msgid "Engineering Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:126
+msgid "Executive Assistant"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:127
+msgid "Facilities"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:128
+msgid "Fashion Design"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:129
+msgid "Field Marketing"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:130
+msgid "Financial Analyst"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:131
+msgid "Financial Controller"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:132
+msgid "Fitness"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:133
+msgid "Founder"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:134
+msgid "General Counsel"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:135
+msgid "General Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:136
+msgid "General Partner"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:137
+msgid "Graphic Design"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:138
+msgid "Human Resources Specialist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:139
+msgid "Information Technology Specialist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:140
+msgid "Investment"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:141
+msgid "Investment Banker"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:142
+msgid "Journalist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:143
+msgid "Key Account Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:144
+msgid "Law Enforcement"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:145
+msgid "Lawyer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:146
+msgid "Logistics Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:147
+msgid "Management"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:148
+msgid "Marketing Specialist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:149
+msgid "Mechanical Engineer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:150
+msgid "Medical Doctor"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:151
+msgid "Network Engineer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:152
+msgid "Nurse"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:153
+msgid "Office Management"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:154
+msgid "Office Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:155
+msgid "Operational Specialist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:157
+msgid "Paralegal"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:158
+msgid "Principal"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:159
+msgid "Product Design"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:160
+msgid "Product Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:161
+msgid "Product Marketing"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:162
+msgid "Production Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:163
+msgid "Professor"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:164
+msgid "Program Coordinator"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:165
+msgid "Program Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:166
+msgid "Project Engineer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:167
+msgid "Project Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:168
+msgid "Property Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:169
+msgid "QA engineer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:170
+msgid "QA IT"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:171
+msgid "Quality Assurance Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:172
+msgid "Quality Assurance Specialist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:173
+msgid "Realtor"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:174
+msgid "Recruiter"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:175
+msgid "Relationship Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:176
+msgid "Research Analyst"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:177
+msgid "Risk Compliance"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:178
+msgid "Sales Executive"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:179
+msgid "Sales Operations"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:180
+msgid "Sales Specialist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:181
+msgid "Salesperson"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:182
+msgid "Secretary"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:183
+msgid "Social Marketing"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:184
+msgid "Software Engineer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:185
+msgid "Strategy"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:186
+msgid "Student"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:188
+msgid "Support Specialist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:189
+msgid "System Administrator"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:190
+msgid "System Analyst"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:191
+msgid "Systems Engineer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:192
+msgid "Talent"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:193
+msgid "Tax Audit"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:194
+msgid "Teacher"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:195
+msgid "Technical Manager"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:196
+msgid "Technical Support Specialist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:197
+msgid "Therapist"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:198
+msgid "Training"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:199
+#: frontend/src/services/machines/telegram/sendMedia.telegram.machine.pro.ts:28
+msgid "Video"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:200
+msgid "Web Developer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:201
+msgid "Writer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:202
+msgid "Chief Executive Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:203
+msgid "Chief Operating Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:204
+msgid "Chief Marketing Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:205
+msgid "Chief Technology Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:206
+msgid "Chief Information Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:207
+msgid "Chief Human Resources officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:208
+msgid "Chief Compliance Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:209
+msgid "Chief Risk Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:210
+msgid "Chief Data Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:211
+msgid "Chief Product Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:212
+msgid "Chief Revenue Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:213
+msgid "Chief Sustainability Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:214
+msgid "Chief Legal Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:215
+msgid "Chief Security Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:216
+msgid "Chief Experience Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:217
+msgid "Chief Innovation Officer"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:218
+msgid "Retail"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:223
+msgid "1-5"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:224
+msgid "5-25"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:225
+msgid "25-50"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:226
+msgid "50-100"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:227
+msgid "100-500"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:228
+msgid "500-1000"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:229
+msgid "1000+"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:233
+msgid "Appointment Scheduled"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:234
+msgid "Qualified To Buy"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:235
+msgid "Presentation Scheduled"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:236
+msgid "Decision Marker Bought-In"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:237
+msgid "Contract Sent"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:238
+msgid "Closed Won"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:239
+msgid "Closed Lost"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommons.ts:7
+msgid ""
+"You can find API guides <a target=\"_blank\" class=\"text-blue-600 "
+"underline\" rel=\"noopener noreferrer nofollow\" "
+"href=\"https://developers.hubspot.com/docs/guides/api/overview\">Here</a>"
+msgstr ""
+
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommons.ts:14
+#: frontend/src/services/machines/openAi/helpers/openAiCommons.ts:14
+#: frontend/src/services/machines/woodpecker/addProspect.woodpecker.machine.free.ts:22
+#: frontend/src/services/machines/woodpecker/addProspectToCampaign.woodpecker.machine.free.ts:22
+#: frontend/src/services/machines/woodpecker/deleteProspect.woodpecker.machine.free.ts:21
+#: frontend/src/services/machines/woodpecker/searchProspect.woodpecker.machine.free.ts:20
+#: frontend/src/services/machines/woodpecker/updateProspect.woodpecker.machine.free.ts:22
+msgid "Api Key"
 msgstr ""
 
 #: frontend/src/services/machines/jetEngine/_jetEngineMachines.ts:17
@@ -5054,11 +6466,16 @@ msgid "Select Form"
 msgstr ""
 
 #: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:76
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:146
 msgid "Note"
 msgstr ""
 
 #: frontend/src/services/machines/klaviyo/_klaviyoMachines.ts:17
 msgid "Add Subscriber"
+msgstr ""
+
+#: frontend/src/services/machines/klaviyo/addSubscriber.klaviyo.machine.free.ts:13
+msgid "You can get your API key from ..."
 msgstr ""
 
 #: frontend/src/services/machines/learnDash/_learnDashMachines.ts:17
@@ -5617,10 +7034,6 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-#: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:178
-msgid "Currency"
-msgstr ""
-
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:183
 msgid "variants"
 msgstr ""
@@ -5789,18 +7202,6 @@ msgstr ""
 msgid "Reasoning Effort"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:122
-msgid "Low"
-msgstr ""
-
-#: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:123
-msgid "Medium"
-msgstr ""
-
-#: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:124
-msgid "High"
-msgstr ""
-
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:127
 msgid "Select a Effort"
 msgstr ""
@@ -5836,6 +7237,8 @@ msgid ""
 msgstr ""
 
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:174
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:104
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:125
 msgid "Frequency Penalty"
 msgstr ""
 
@@ -5847,6 +7250,8 @@ msgid ""
 msgstr ""
 
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:186
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:91
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:112
 msgid "Presence Penalty"
 msgstr ""
 
@@ -5880,10 +7285,6 @@ msgstr ""
 
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:232
 msgid "Add Optional Fields"
-msgstr ""
-
-#: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:257
-msgid "Field #{COUNT}"
 msgstr ""
 
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:259
@@ -6176,15 +7577,6 @@ msgid ""
 "Api Settings</a>"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/helpers/openAiCommons.ts:14
-#: frontend/src/services/machines/woodpecker/addProspect.woodpecker.machine.free.ts:22
-#: frontend/src/services/machines/woodpecker/addProspectToCampaign.woodpecker.machine.free.ts:22
-#: frontend/src/services/machines/woodpecker/deleteProspect.woodpecker.machine.free.ts:21
-#: frontend/src/services/machines/woodpecker/searchProspect.woodpecker.machine.free.ts:20
-#: frontend/src/services/machines/woodpecker/updateProspect.woodpecker.machine.free.ts:22
-msgid "Api Key"
-msgstr ""
-
 #: frontend/src/services/machines/openAi/listBatches.openAi.machine.pro.ts:18
 msgid "Limit value must be numeric."
 msgstr ""
@@ -6239,6 +7631,134 @@ msgstr ""
 #: frontend/src/services/machines/paidMembershipPro/membershipLevelExpiry.paidMembershipPro.machine.pro.ts:37
 #: frontend/src/services/machines/paidMembershipPro/membershipLevelOnCheckout.paidMembershipPro.machine.pro.ts:37
 msgid "Select a pro-level"
+msgstr ""
+
+#: frontend/src/services/machines/Paymattic/_paymatticMachines.ts:17
+msgid "Payment Form Submission"
+msgstr ""
+
+#: frontend/src/services/machines/Paymattic/_paymatticMachines.ts:24
+msgid "Payment Status Changed"
+msgstr ""
+
+#: frontend/src/services/machines/Paymattic/_paymatticMachines.ts:31
+msgid "Payment Success"
+msgstr ""
+
+#: frontend/src/services/machines/Paymattic/_paymatticMachines.ts:38
+msgid "Payment Failed"
+msgstr ""
+
+#: frontend/src/services/machines/Paymattic/_paymatticMachines.ts:45
+msgid "Note Created By User"
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/_perplexityMachines.ts:23
+msgid "Ask Perplexity"
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:20
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:20
+msgid "Choose the perplexity model to use here."
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:26
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:26
+msgid "sonar"
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:27
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:27
+msgid "sonar-pro"
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:28
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:28
+msgid "sonar-reasoning"
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:29
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:29
+msgid "sonar-deep-research"
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:30
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:30
+msgid "sonar-reasoning-pro"
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:31
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:31
+msgid "r1-1776"
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:61
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:82
+msgid ""
+"Enter the maximum number of completion tokens. Ensure the total of "
+"max_tokens and prompt tokens does not exceed the model's context window "
+"limit. If left blank, the model will generate tokens until a stop token or "
+"the context window end is reached. E.g. 900."
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:74
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:95
+msgid ""
+"Enter the temperature value here, which must be between 0 (inclusive) and "
+"1.999 (inclusive). This controls the randomness of the response: higher "
+"values introduce more randomness, while lower values result in more "
+"deterministic outputs. E.g. 1.5."
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:87
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:108
+msgid ""
+"Enter a value between -2.0 and 2.0. Positive values penalize new tokens "
+"based on their occurrence in the text, encouraging the model to introduce "
+"new topics. This setting is incompatible with the frequency_penalty. E.g. 1."
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:94
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:115
+msgid "Enter presence-penalty value"
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:100
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:121
+msgid ""
+"Enter a multiplicative penalty greater than 0. Values above 1.0 reduce the "
+"likelihood of repeating tokens, with 1.0 indicating no penalty. This "
+"setting is incompatible with the presence_penalty. E.g. 1."
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:107
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:128
+msgid "Enter frequency-penalty value"
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:113
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:134
+msgid ""
+"Enter the nucleus sampling threshold, which should be a value between 0 and "
+"1 (inclusive). For each subsequent token, the model will consider the "
+"results of tokens within the top_p probability mass. We recommend adjusting "
+"either the top_k or top_p parameter, but not both simultaneously. E.g. 0.7."
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:126
+#: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:147
+msgid ""
+"Enter the number of tokens to retain for top-k filtering, using an integer "
+"between 0 and 2048 (inclusive). Setting this value to 0 will disable top-k "
+"filtering. We recommend adjusting either the top_k or top_p parameter, but "
+"not both simultaneously. E.g. 1000."
+msgstr ""
+
+#: frontend/src/services/machines/perplexity/helpers/commonUtils.perplexity.ts:7
+msgid ""
+"You can find credentials from <a target=\"_blank\" class=\"text-blue-600 "
+"underline\" rel=\"noopener noreferrer nofollow\" "
+"href=\"https://www.perplexity.ai/account/api/keys\">Here</a>"
 msgstr ""
 
 #: frontend/src/services/machines/piotnetAddonForm/handleAddonFormSubmitV2.piotnetAddonForm.machine.pro.ts:33
@@ -6404,6 +7924,198 @@ msgstr ""
 msgid "Order Created"
 msgstr ""
 
+#: frontend/src/services/machines/slack/_slackMachines.ts:5
+msgid "**Note**: To send messages as a bot, please connect using a valid bot token."
+msgstr ""
+
+#: frontend/src/services/machines/slack/_slackMachines.ts:18
+msgid "Create Channel"
+msgstr ""
+
+#: frontend/src/services/machines/slack/_slackMachines.ts:25
+msgid "Send a message to a channel"
+msgstr ""
+
+#: frontend/src/services/machines/slack/_slackMachines.ts:33
+msgid "Send Direct Message"
+msgstr ""
+
+#: frontend/src/services/machines/slack/_slackMachines.ts:41
+msgid "Join Channel"
+msgstr ""
+
+#: frontend/src/services/machines/slack/_slackMachines.ts:48
+msgid "Find User By Email"
+msgstr ""
+
+#: frontend/src/services/machines/slack/createChannel.slack.machine.pro.ts:16
+msgid ""
+"Name for the channel to be created. Channel names can only contain "
+"lowercase letters, numbers, hyphens, and underscores, and must be 80 "
+"characters or fewer."
+msgstr ""
+
+#: frontend/src/services/machines/slack/createChannel.slack.machine.pro.ts:20
+msgid "Channel Name"
+msgstr ""
+
+#: frontend/src/services/machines/slack/createChannel.slack.machine.pro.ts:29
+msgid "Switch ON if you want to create a private channel instead of a public one."
+msgstr ""
+
+#: frontend/src/services/machines/slack/createChannel.slack.machine.pro.ts:31
+msgid "Is Private?"
+msgstr ""
+
+#: frontend/src/services/machines/slack/findUserByEmail.slack.machine.pro.ts:16
+msgid "Enter the email address of the user."
+msgstr ""
+
+#: frontend/src/services/machines/slack/findUserByEmail.slack.machine.pro.ts:18
+msgid "User Email"
+msgstr ""
+
+#: frontend/src/services/machines/slack/helpers/slackCommons.ts:7
+msgid ""
+"To get access Token, Please Visit <a target=\"_blank\" "
+"class=\"text-blue-600 underline\" rel=\"noopener noreferrer nofollow\" "
+"href=\"https://api.slack.com/\">Slack Console</a>"
+msgstr ""
+
+#: frontend/src/services/machines/slack/joinChannel.slack.machine.pro.ts:19
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:22
+msgid "Channel"
+msgstr ""
+
+#: frontend/src/services/machines/slack/joinChannel.slack.machine.pro.ts:26
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:29
+msgid "Select a Channel"
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:26
+msgid "Select a User"
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:34
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:37
+msgid "Specify text of the message to send."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:46
+msgid ""
+"If you Switch No, this message will appear to come from you. Direct "
+"messages are always sent by bots."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:50
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:51
+msgid "Send as a bot?"
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:59
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:60
+msgid ""
+"Specify the bot name here, Note that the Specified bot name will appear in "
+"Slack only if you are authorized with bot token."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:63
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:64
+msgid "Bot Name"
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:71
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:72
+msgid ""
+"Specify the bot icon URL here, Note that the Specified bot icon will appear "
+"in Slack only if you are authorized with bot token."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:75
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:76
+msgid "Bot Icon"
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:83
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:84
+msgid ""
+"Self specified, this will upload the given image URL to Slack and attach it "
+"to the message separately."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:87
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:88
+msgid "Attach Image by URL"
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:95
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:96
+msgid ""
+"Enable to automatically expand links in this message. For example: turn a "
+"YouTube link into a playable widget."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:99
+msgid "Is Auto Expand Links?"
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:108
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:109
+msgid ""
+"If Switch No, any usernames and channels mentioned would not be linked (or "
+"mentioned). Also affects @channel and @group."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:112
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:113
+msgid "Link Usernames and Channel Names?"
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:121
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:122
+msgid "Enter the time (as a Unix timestamp) when the message should be sent."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:123
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:124
+msgid "Schedule At"
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:17
+msgid ""
+"Select a channel from the list. A bot can't post in a private channel if "
+"it's not a member - you need to invite it to the channel if you are using "
+"bot token."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:49
+msgid "If you Switch No, this message will appear to come from you."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:100
+msgid "Auto-Expand Links?"
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:132
+msgid ""
+"If you want this to be part of a thread, you will need the timestamp (Ts) "
+"of the parent message. For example: 1345232312616.1231232."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:136
+msgid "Thread"
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:154
+msgid ""
+"Enable Broadcast to control whether a threaded reply will also be posted as "
+"a visible message in the channel."
+msgstr ""
+
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:158
+msgid "Broadcast Message to Channel?"
+msgstr ""
+
 #: frontend/src/services/machines/sliceWp/_sliceWpMachines.ts:17
 msgid "Became an affiliate"
 msgstr ""
@@ -6499,19 +8211,9 @@ msgstr ""
 msgid "Select Role"
 msgstr ""
 
-#: frontend/src/services/machines/suiteDash/createCompany.suiteDash.machine.free.ts:30
-#: frontend/src/services/machines/suiteDash/createContact.suiteDash.machine.free.ts:25
-msgid "Lead"
-msgstr ""
-
 #: frontend/src/services/machines/suiteDash/createCompany.suiteDash.machine.free.ts:31
 #: frontend/src/services/machines/suiteDash/createContact.suiteDash.machine.free.ts:26
 msgid "Client"
-msgstr ""
-
-#: frontend/src/services/machines/suiteDash/createCompany.suiteDash.machine.free.ts:32
-#: frontend/src/services/machines/suiteDash/createContact.suiteDash.machine.free.ts:27
-msgid "Prospect"
 msgstr ""
 
 #: frontend/src/services/machines/suiteDash/createCompany.suiteDash.machine.free.ts:34
@@ -6558,11 +8260,6 @@ msgstr ""
 #: frontend/src/services/machines/suiteDash/getCompanies.suiteDash.machine.free.ts:48
 #: frontend/src/services/machines/suiteDash/updateACompany.suiteDash.machine.free.ts:21
 msgid "Select Company"
-msgstr ""
-
-#: frontend/src/services/machines/suiteDash/getCompanies.suiteDash.machine.free.ts:54
-#: frontend/src/services/machines/suiteDash/updateACompany.suiteDash.machine.free.ts:27
-msgid "Select a Company"
 msgstr ""
 
 #: frontend/src/services/machines/suiteDash/getContacts.suiteDash.machine.free.ts:19
@@ -6969,10 +8666,6 @@ msgstr ""
 
 #: frontend/src/services/machines/telegram/sendMedia.telegram.machine.pro.ts:27
 msgid "Document"
-msgstr ""
-
-#: frontend/src/services/machines/telegram/sendMedia.telegram.machine.pro.ts:28
-msgid "Video"
 msgstr ""
 
 #: frontend/src/services/machines/telegram/sendMedia.telegram.machine.pro.ts:31
@@ -7548,6 +9241,98 @@ msgstr ""
 
 #: frontend/src/services/machines/wooCommerceMemberships/_wooCommerceMembershipsMachines.ts:115
 msgid "User's Membership Status Changed"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:17
+msgid "User Subscribes to Product"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:24
+msgid "User Purchases Variable Subscription"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:31
+msgid "User Subscription Trial End"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:38
+msgid "User Renews Subscription"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:45
+msgid "User Cancels Subscription"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:52
+msgid "User Subscription Status Set To Pending"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:59
+msgid "User Subscription Status Set To On-hold"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:66
+msgid "User Subscription Status Set To Active"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:73
+msgid "User Subscription Status Changed"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:80
+msgid "User Subscription Unable To Update Status"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:87
+msgid "User Subscription Status Expires"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:94
+msgid "User Subscription Trashed"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:101
+msgid "User Subscription Permanently Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:108
+msgid "User Subscription Restore"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:115
+msgid "User Renewal Subscription Payment Failed"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:122
+msgid "User Subscription Trial End Date Updated"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:129
+msgid "User Subscription Next Payment Date Updated"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:136
+msgid "User Subscription End Date Updated"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:143
+msgid "User Subscription Date Updated"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:150
+msgid "User Subscription Trial End Date Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:157
+msgid "User Subscription Next Payment Date Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:164
+msgid "User Subscription End Date Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerceSubscriptions/_wooCommerceSubscriptionsMachines.ts:171
+msgid "User Subscription Date Deleted"
 msgstr ""
 
 #: frontend/src/services/machines/woodpecker/_woodpeckerMachines.ts:15

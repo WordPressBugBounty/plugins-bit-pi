@@ -1,0 +1,1 @@
+import{c as s}from"./createwe-458.js";import"./_applist-622.js";import"./lodash-784.js";import"./main-old-rocks-mate.js";import"./mutative-816.js";import"./machine.-470.js";globalThis.jotaiAtomCache=globalThis.jotaiAtomCache||{cache:new Map,get(t,o){return this.cache.has(t)?this.cache.get(t):(this.cache.set(t,o),o)}};export{s as default};

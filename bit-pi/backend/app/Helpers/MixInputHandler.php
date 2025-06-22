@@ -21,12 +21,16 @@ class MixInputHandler
      *
      * @param mixed  $mixedInputValues the input value, which could be a JSON-encoded string,
      *                                 an array of mixed types, or a plain value
-     * @param string $returnType       Determines the return type of the processed values.
-     *                                 Accepts 'string' (default) or 'array'.
+     * @param mixed $returnFormat
+     *
+     * @returnFormat specifies the format of the return value.
+     * - If 'array-first-element', returns the first element of the array if the input is an array.
+     * - If 'array', returns an array of processed values.
+     * - If null or any other value, returns a concatenated string of processed values.
      *
      * @throws Exception Throws an exception if processing encounters critical errors (e.g., invalid paths or data).
      *
-     * @return mixed Returns the processed value based on the $returnType. If 'string',
+     * @return mixed Returns the processed value based on the $returnFormat. If 'null' or not specified,
      *               concatenates the processed values. If 'array', returns an array of processed values.
      *
      * Processing Details:
@@ -35,7 +39,7 @@ class MixInputHandler
      * - **Array Type**: Fetches a value from the specified index and path in the node response.
      * - **Pro Plugin Check**: If the Pro plugin is active, applies additional filters to the input values.
      */
-    public static function replaceMixTagValue($mixedInputValues, $returnType = 'string')
+    public static function replaceMixTagValue($mixedInputValues, $returnFormat = null)
     {
         $nodeResponseData = GlobalNodeVariables::getInstance()->getAllNodeResponse();
 
@@ -94,7 +98,8 @@ class MixInputHandler
             }
         }
 
-        return self::processValues($values, $returnType);
+
+        return self::processValues($values, $returnFormat);
     }
 
     public static function getValueFromIndexPath($mixInputs, $nodeId)
@@ -210,28 +215,29 @@ class MixInputHandler
      *
      * This function evaluates the provided values and processes them depending on
      * the specified return type. If there is only one value and it's an array,
-     * the function can return it directly if `$returnType` is 'array'.
+     * the function can return it directly if `$returnFormat` is 'array'.
      * Otherwise, it transforms all elements in the array, converting arrays to the string "array",
      * objects to the string "object", and concatenating everything into a single string.
      *
      * @param array  $values     An array of values to be processed. Values can be arrays, objects, or scalars.
-     * @param string $returnType The desired return type. Accepts 'array' or 'string'.
+     * @param mixed $returnFormat
      *
      * @return mixed Returns:
-     *               - If `$returnType` is 'array' and the input array contains a single array, that array is returned.
+     *               - If `$returnFormat` is 'array-first-element' and the input array contains a single array, that array is returned.
+     *               - If `$returnFormat` is 'array', returns an array of processed values.
      *               - Otherwise, returns a concatenated string representation of the processed values.
      *
      * Processing Details:
-     * - If `$values` has only one element and it's an array, and `$returnType` is 'array', that array is returned directly.
+     * - If `$values` has only one element and it's an array, and `$returnFormat` is 'array', that array is returned directly.
      * - Otherwise, all elements in `$values` are processed as follows:
      *   - Arrays are replaced with the string "array".
      *   - Objects are replaced with the string "object".
      *   - Scalars (e.g., strings, numbers) remain unchanged.
      * - Finally, all processed values are concatenated into a single string.
      */
-    private static function processValues($values, $returnType)
+    private static function processValues($values, $returnFormat)
     {
-        if (\count($values) === 1 && \is_array($values[0]) && $returnType === 'array') {
+        if (\count($values) === 1 && \is_array($values[0]) && $returnFormat === 'array-first-element') {
             return $values[0];
         }
 
@@ -249,6 +255,11 @@ class MixInputHandler
             },
             $values
         );
+
+        if ($returnFormat === 'array') {
+            return $values;
+        }
+
 
         return self::checkAndTransformScalarValue($processedValues);
     }

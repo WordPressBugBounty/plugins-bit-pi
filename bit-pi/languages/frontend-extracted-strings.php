@@ -285,7 +285,7 @@ return [
 
     'Connection Name' => __('Connection Name', 'bit-pi'),
 
-    'Key' => __('Key', 'bit-pi'),
+    'Name' => __('Name', 'bit-pi'),
 
     'Value' => __('Value', 'bit-pi'),
 
@@ -299,9 +299,9 @@ return [
 
     'Connect' => __('Connect', 'bit-pi'),
 
-    'Username' => __('Username', 'bit-pi'),
+    'Key / Username' => __('Key / Username', 'bit-pi'),
 
-    'Password' => __('Password', 'bit-pi'),
+    'Secret / Password' => __('Secret / Password', 'bit-pi'),
 
     'Token' => __('Token', 'bit-pi'),
 
@@ -326,6 +326,8 @@ return [
     'Scope' => __('Scope', 'bit-pi'),
 
     'Add' => __('Add', 'bit-pi'),
+
+    'Key' => __('Key', 'bit-pi'),
 
     'Additional Query Params' => __('Additional Query Params', 'bit-pi'),
 
@@ -895,8 +897,6 @@ return [
 
     'Action name should be unique and descriptive. For example, "Create Lead".' => __('Action name should be unique and descriptive. For example, "Create Lead".', 'bit-pi'),
 
-    'Name' => __('Name', 'bit-pi'),
-
     'Enable Authentication' => __('Enable Authentication', 'bit-pi'),
 
     'You can set a default connection for this action. which will be used to authenticate the request. you can also select other connections during flow setup.' => __('You can set a default connection for this action. which will be used to authenticate the request. you can also select other connections during flow setup.', 'bit-pi'),
@@ -1124,6 +1124,30 @@ return [
     'On Form Submit' => __('On Form Submit', 'bit-pi'),
 
     'Watch Submission' => __('Watch Submission', 'bit-pi'),
+
+    'New Appointment Added' => __('New Appointment Added', 'bit-pi'),
+
+    'Appointment Status Updated' => __('Appointment Status Updated', 'bit-pi'),
+
+    'Appointment Cancelled' => __('Appointment Cancelled', 'bit-pi'),
+
+    'Appointment Rejected' => __('Appointment Rejected', 'bit-pi'),
+
+    'New Booking Added' => __('New Booking Added', 'bit-pi'),
+
+    'Booking Cancelled' => __('Booking Cancelled', 'bit-pi'),
+
+    'Booking Rescheduled' => __('Booking Rescheduled', 'bit-pi'),
+
+    'New Event Added' => __('New Event Added', 'bit-pi'),
+
+    'Event Updated' => __('Event Updated', 'bit-pi'),
+
+    'Event Booking Added' => __('Event Booking Added', 'bit-pi'),
+
+    'Event Booking updated' => __('Event Booking updated', 'bit-pi'),
+
+    'Event Booking Deleted' => __('Event Booking Deleted', 'bit-pi'),
 
     'Form Submission' => __('Form Submission', 'bit-pi'),
 
@@ -1601,8 +1625,6 @@ return [
 
     'Event Created' => __('Event Created', 'bit-pi'),
 
-    'Event Updated' => __('Event Updated', 'bit-pi'),
-
     'Event Deleted' => __('Event Deleted', 'bit-pi'),
 
     'Speaker or Organizer Created' => __('Speaker or Organizer Created', 'bit-pi'),
@@ -1636,8 +1658,6 @@ return [
     'Booking Scheduled' => __('Booking Scheduled', 'bit-pi'),
 
     'Booking Completed' => __('Booking Completed', 'bit-pi'),
-
-    'Booking Cancelled' => __('Booking Cancelled', 'bit-pi'),
 
     'A tag is added to contact' => __('A tag is added to contact', 'bit-pi'),
 
@@ -1727,6 +1747,94 @@ return [
 
     'No tags found or failed to fetch tags' => __('No tags found or failed to fetch tags', 'bit-pi'),
 
+    'Create a Gist' => __('Create a Gist', 'bit-pi'),
+
+    'Create an Issue' => __('Create an Issue', 'bit-pi'),
+
+    'Create an Issue Comment' => __('Create an Issue Comment', 'bit-pi'),
+
+    'Get an User' => __('Get an User', 'bit-pi'),
+
+    'Get a Repository' => __('Get a Repository', 'bit-pi'),
+
+    'Write the filename to create the gist' => __('Write the filename to create the gist', 'bit-pi'),
+
+    'Gist Filename' => __('Gist Filename', 'bit-pi'),
+
+    'Enter filename' => __('Enter filename', 'bit-pi'),
+
+    'Write the content of the gist' => __('Write the content of the gist', 'bit-pi'),
+
+    'Content Of The Gist' => __('Content Of The Gist', 'bit-pi'),
+
+    'Enter content of gist' => __('Enter content of gist', 'bit-pi'),
+
+    'Enter a short description of your gist' => __('Enter a short description of your gist', 'bit-pi'),
+
+    'Enter description of gist' => __('Enter description of gist', 'bit-pi'),
+
+    'Chose the visibility' => __('Chose the visibility', 'bit-pi'),
+
+    'Make Gist Public' => __('Make Gist Public', 'bit-pi'),
+
+    'Select the owner of the issue' => __('Select the owner of the issue', 'bit-pi'),
+
+    'Owner' => __('Owner', 'bit-pi'),
+
+    'Select  Owner' => __('Select  Owner', 'bit-pi'),
+
+    'Select a repository of the issue' => __('Select a repository of the issue', 'bit-pi'),
+
+    'Repository' => __('Repository', 'bit-pi'),
+
+    'Select a Repository' => __('Select a Repository', 'bit-pi'),
+
+    'Write the title of the issue' => __('Write the title of the issue', 'bit-pi'),
+
+    'Enter Title' => __('Enter Title', 'bit-pi'),
+
+    'Write the body content of the issue' => __('Write the body content of the issue', 'bit-pi'),
+
+    'Enter Body' => __('Enter Body', 'bit-pi'),
+
+    'Select an assignee of the issue' => __('Select an assignee of the issue', 'bit-pi'),
+
+    'Assignee' => __('Assignee', 'bit-pi'),
+
+    'Select Assignee' => __('Select Assignee', 'bit-pi'),
+
+    'Select the label of the issue' => __('Select the label of the issue', 'bit-pi'),
+
+    'Select Label' => __('Select Label', 'bit-pi'),
+
+    'Select the owner of the comment' => __('Select the owner of the comment', 'bit-pi'),
+
+    'Select a repository of the comment' => __('Select a repository of the comment', 'bit-pi'),
+
+    'Enter the comment body' => __('Enter the comment body', 'bit-pi'),
+
+    'Comment Body' => __('Comment Body', 'bit-pi'),
+
+    'Select an issue to be commented' => __('Select an issue to be commented', 'bit-pi'),
+
+    'Issue' => __('Issue', 'bit-pi'),
+
+    'Select Issue' => __('Select Issue', 'bit-pi'),
+
+    'Select owner to get the repository' => __('Select owner to get the repository', 'bit-pi'),
+
+    'Select Owner' => __('Select Owner', 'bit-pi'),
+
+    'Select the repository to get' => __('Select the repository to get', 'bit-pi'),
+
+    'Enter the login username' => __('Enter the login username', 'bit-pi'),
+
+    'Username (Login)' => __('Username (Login)', 'bit-pi'),
+
+    'Enter username' => __('Enter username', 'bit-pi'),
+
+    'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://github.com/settings/tokens">Here</a>' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://github.com/settings/tokens">Here</a>', 'bit-pi'),
+
     'User made a donation via form' => __('User made a donation via form', 'bit-pi'),
 
     'Donation-forms' => __('Donation-forms', 'bit-pi'),
@@ -1803,7 +1911,549 @@ return [
 
     'Tag removed from contact' => __('Tag removed from contact', 'bit-pi'),
 
-    'You can get your API key from ...' => __('You can get your API key from ...', 'bit-pi'),
+    'Create or Update Company' => __('Create or Update Company', 'bit-pi'),
+
+    'Create or Update Deal' => __('Create or Update Deal', 'bit-pi'),
+
+    'Add Contacts To List' => __('Add Contacts To List', 'bit-pi'),
+
+    'Remove Contacts From List' => __('Remove Contacts From List', 'bit-pi'),
+
+    'Enable to update a company if it exists, or add a new one if it does not.' => __('Enable to update a company if it exists, or add a new one if it does not.', 'bit-pi'),
+
+    'Update Company If Exists' => __('Update Company If Exists', 'bit-pi'),
+
+    'Companies' => __('Companies', 'bit-pi'),
+
+    'Select a Company' => __('Select a Company', 'bit-pi'),
+
+    'Lead Status' => __('Lead Status', 'bit-pi'),
+
+    'Select a Lead Status' => __('Select a Lead Status', 'bit-pi'),
+
+    'Lifecycle Stage' => __('Lifecycle Stage', 'bit-pi'),
+
+    'Select a Lifecycle Stage' => __('Select a Lifecycle Stage', 'bit-pi'),
+
+    'Types' => __('Types', 'bit-pi'),
+
+    'Select a Type' => __('Select a Type', 'bit-pi'),
+
+    'Add Company Fields' => __('Add Company Fields', 'bit-pi'),
+
+    'Field #{COUNT}' => __('Field #{COUNT}', 'bit-pi'),
+
+    'Company Fields' => __('Company Fields', 'bit-pi'),
+
+    'Enable to update a contact if it exists, or add a new one if it does not.' => __('Enable to update a contact if it exists, or add a new one if it does not.', 'bit-pi'),
+
+    'Employment Role' => __('Employment Role', 'bit-pi'),
+
+    'Select a Employment Role' => __('Select a Employment Role', 'bit-pi'),
+
+    'Employment Seniority' => __('Employment Seniority', 'bit-pi'),
+
+    'Select a Employment Seniority' => __('Select a Employment Seniority', 'bit-pi'),
+
+    'Employment Sub Role' => __('Employment Sub Role', 'bit-pi'),
+
+    'Select a Employment Sub Role' => __('Select a Employment Sub Role', 'bit-pi'),
+
+    'Number Of Employees' => __('Number Of Employees', 'bit-pi'),
+
+    'Select Number Of Employees' => __('Select Number Of Employees', 'bit-pi'),
+
+    'Add Contact Fields' => __('Add Contact Fields', 'bit-pi'),
+
+    'Contact Fields' => __('Contact Fields', 'bit-pi'),
+
+    'Enable to update a deal if it exists, or add a new one if it does not.' => __('Enable to update a deal if it exists, or add a new one if it does not.', 'bit-pi'),
+
+    'Update Deal' => __('Update Deal', 'bit-pi'),
+
+    'Deals' => __('Deals', 'bit-pi'),
+
+    'Select a Deal' => __('Select a Deal', 'bit-pi'),
+
+    'A name for this deal.' => __('A name for this deal.', 'bit-pi'),
+
+    'Deal Name' => __('Deal Name', 'bit-pi'),
+
+    'Pipeline' => __('Pipeline', 'bit-pi'),
+
+    'Sales Pipeline' => __('Sales Pipeline', 'bit-pi'),
+
+    'Select a Pipeline' => __('Select a Pipeline', 'bit-pi'),
+
+    'Deal Stage' => __('Deal Stage', 'bit-pi'),
+
+    'Select a Deal Stage' => __('Select a Deal Stage', 'bit-pi'),
+
+    'Deal Owner' => __('Deal Owner', 'bit-pi'),
+
+    'Select a Owner' => __('Select a Owner', 'bit-pi'),
+
+    'Deal Type' => __('Deal Type', 'bit-pi'),
+
+    'New Business' => __('New Business', 'bit-pi'),
+
+    'Existing Business' => __('Existing Business', 'bit-pi'),
+
+    'Select a Deal Type' => __('Select a Deal Type', 'bit-pi'),
+
+    'Low' => __('Low', 'bit-pi'),
+
+    'Medium' => __('Medium', 'bit-pi'),
+
+    'High' => __('High', 'bit-pi'),
+
+    'Select a Priority' => __('Select a Priority', 'bit-pi'),
+
+    'Forecast Category' => __('Forecast Category', 'bit-pi'),
+
+    'Not forecasted' => __('Not forecasted', 'bit-pi'),
+
+    'Best case' => __('Best case', 'bit-pi'),
+
+    'Commit' => __('Commit', 'bit-pi'),
+
+    'Closed won' => __('Closed won', 'bit-pi'),
+
+    'Select a Forecast Category' => __('Select a Forecast Category', 'bit-pi'),
+
+    'Original Traffic Source' => __('Original Traffic Source', 'bit-pi'),
+
+    'Organic Search' => __('Organic Search', 'bit-pi'),
+
+    'Paid Search' => __('Paid Search', 'bit-pi'),
+
+    'Email Marketing' => __('Email Marketing', 'bit-pi'),
+
+    'Organic Social' => __('Organic Social', 'bit-pi'),
+
+    'Referrals' => __('Referrals', 'bit-pi'),
+
+    'Other Campaigns' => __('Other Campaigns', 'bit-pi'),
+
+    'Direct Traffic' => __('Direct Traffic', 'bit-pi'),
+
+    'Offline Sources' => __('Offline Sources', 'bit-pi'),
+
+    'Paid Social' => __('Paid Social', 'bit-pi'),
+
+    'Select a Traffic Source' => __('Select a Traffic Source', 'bit-pi'),
+
+    'Deal Fields' => __('Deal Fields', 'bit-pi'),
+
+    'Amount' => __('Amount', 'bit-pi'),
+
+    'Attributed Reporting Team' => __('Attributed Reporting Team', 'bit-pi'),
+
+    'Close Date' => __('Close Date', 'bit-pi'),
+
+    'Closed Lost Reason' => __('Closed Lost Reason', 'bit-pi'),
+
+    'Create Date' => __('Create Date', 'bit-pi'),
+
+    'Deal Description' => __('Deal Description', 'bit-pi'),
+
+    'Forecast Probability' => __('Forecast Probability', 'bit-pi'),
+
+    'Deal Probability' => __('Deal Probability', 'bit-pi'),
+
+    'Next Step' => __('Next Step', 'bit-pi'),
+
+    'Shared Teams' => __('Shared Teams', 'bit-pi'),
+
+    'Shared Users' => __('Shared Users', 'bit-pi'),
+
+    'Currency' => __('Currency', 'bit-pi'),
+
+    'Exchange rate' => __('Exchange rate', 'bit-pi'),
+
+    'New' => __('New', 'bit-pi'),
+
+    'Open' => __('Open', 'bit-pi'),
+
+    'In Progress' => __('In Progress', 'bit-pi'),
+
+    'Open Deal' => __('Open Deal', 'bit-pi'),
+
+    'Unqualified' => __('Unqualified', 'bit-pi'),
+
+    'Attempted to Contact' => __('Attempted to Contact', 'bit-pi'),
+
+    'Connected' => __('Connected', 'bit-pi'),
+
+    'Bad Timing' => __('Bad Timing', 'bit-pi'),
+
+    'Subscriber' => __('Subscriber', 'bit-pi'),
+
+    'Lead' => __('Lead', 'bit-pi'),
+
+    'Marketing Qualified Lead' => __('Marketing Qualified Lead', 'bit-pi'),
+
+    'Sales Qualified Lead' => __('Sales Qualified Lead', 'bit-pi'),
+
+    'Opportunity' => __('Opportunity', 'bit-pi'),
+
+    'Customer' => __('Customer', 'bit-pi'),
+
+    'Evangelist' => __('Evangelist', 'bit-pi'),
+
+    'Other' => __('Other', 'bit-pi'),
+
+    'Partner' => __('Partner', 'bit-pi'),
+
+    'Prospect' => __('Prospect', 'bit-pi'),
+
+    'Vendor' => __('Vendor', 'bit-pi'),
+
+    'Reseller' => __('Reseller', 'bit-pi'),
+
+    'Accounting' => __('Accounting', 'bit-pi'),
+
+    'Administrative' => __('Administrative', 'bit-pi'),
+
+    'Business Development' => __('Business Development', 'bit-pi'),
+
+    'Communications' => __('Communications', 'bit-pi'),
+
+    'Customer Service' => __('Customer Service', 'bit-pi'),
+
+    'Consulting' => __('Consulting', 'bit-pi'),
+
+    'Design' => __('Design', 'bit-pi'),
+
+    'Education' => __('Education', 'bit-pi'),
+
+    'Engineering' => __('Engineering', 'bit-pi'),
+
+    'Entrepreneurship' => __('Entrepreneurship', 'bit-pi'),
+
+    'Finance' => __('Finance', 'bit-pi'),
+
+    'Health Professional' => __('Health Professional', 'bit-pi'),
+
+    'Human Resources' => __('Human Resources', 'bit-pi'),
+
+    'Information Technology' => __('Information Technology', 'bit-pi'),
+
+    'Legal' => __('Legal', 'bit-pi'),
+
+    'Marketing' => __('Marketing', 'bit-pi'),
+
+    'Operations' => __('Operations', 'bit-pi'),
+
+    'Product' => __('Product', 'bit-pi'),
+
+    'Project Management' => __('Project Management', 'bit-pi'),
+
+    'Public Relations' => __('Public Relations', 'bit-pi'),
+
+    'Quality Assurance' => __('Quality Assurance', 'bit-pi'),
+
+    'Real Estate' => __('Real Estate', 'bit-pi'),
+
+    'Recruiting' => __('Recruiting', 'bit-pi'),
+
+    'Research' => __('Research', 'bit-pi'),
+
+    'Sales' => __('Sales', 'bit-pi'),
+
+    'Retired' => __('Retired', 'bit-pi'),
+
+    'VP' => __('VP', 'bit-pi'),
+
+    'Director' => __('Director', 'bit-pi'),
+
+    'Entry' => __('Entry', 'bit-pi'),
+
+    'Executive' => __('Executive', 'bit-pi'),
+
+    'Manager' => __('Manager', 'bit-pi'),
+
+    'Senior' => __('Senior', 'bit-pi'),
+
+    'Employee' => __('Employee', 'bit-pi'),
+
+    'Account Executive' => __('Account Executive', 'bit-pi'),
+
+    'Account Manager' => __('Account Manager', 'bit-pi'),
+
+    'Accountant' => __('Accountant', 'bit-pi'),
+
+    'Accounting Manager' => __('Accounting Manager', 'bit-pi'),
+
+    'Administrative Assistant' => __('Administrative Assistant', 'bit-pi'),
+
+    'Appraisal' => __('Appraisal', 'bit-pi'),
+
+    'Architect IT' => __('Architect IT', 'bit-pi'),
+
+    'Attorney' => __('Attorney', 'bit-pi'),
+
+    'Auditor' => __('Auditor', 'bit-pi'),
+
+    'Brand Marketing' => __('Brand Marketing', 'bit-pi'),
+
+    'Business Analyst' => __('Business Analyst', 'bit-pi'),
+
+    'Business Consultant' => __('Business Consultant', 'bit-pi'),
+
+    'Business Manager' => __('Business Manager', 'bit-pi'),
+
+    'Chief Financial Officer' => __('Chief Financial Officer', 'bit-pi'),
+
+    'Communications Manager' => __('Communications Manager', 'bit-pi'),
+
+    'Community' => __('Community', 'bit-pi'),
+
+    'Content Marketing' => __('Content Marketing', 'bit-pi'),
+
+    'Contracts' => __('Contracts', 'bit-pi'),
+
+    'Creative' => __('Creative', 'bit-pi'),
+
+    'Customer Service Specialist' => __('Customer Service Specialist', 'bit-pi'),
+
+    'Customer Success' => __('Customer Success', 'bit-pi'),
+
+    'Data IT' => __('Data IT', 'bit-pi'),
+
+    'Data Science Engineer' => __('Data Science Engineer', 'bit-pi'),
+
+    'Database Administrator' => __('Database Administrator', 'bit-pi'),
+
+    'Design Engineer' => __('Design Engineer', 'bit-pi'),
+
+    'Development Specialist' => __('Development Specialist', 'bit-pi'),
+
+    'Devops Engineer' => __('Devops Engineer', 'bit-pi'),
+
+    'Digital Marketing' => __('Digital Marketing', 'bit-pi'),
+
+    'Director of Development' => __('Director of Development', 'bit-pi'),
+
+    'Editorial' => __('Editorial', 'bit-pi'),
+
+    'Electrical Engineer' => __('Electrical Engineer', 'bit-pi'),
+
+    'Engineering Manager' => __('Engineering Manager', 'bit-pi'),
+
+    'Executive Assistant' => __('Executive Assistant', 'bit-pi'),
+
+    'Facilities' => __('Facilities', 'bit-pi'),
+
+    'Fashion Design' => __('Fashion Design', 'bit-pi'),
+
+    'Field Marketing' => __('Field Marketing', 'bit-pi'),
+
+    'Financial Analyst' => __('Financial Analyst', 'bit-pi'),
+
+    'Financial Controller' => __('Financial Controller', 'bit-pi'),
+
+    'Fitness' => __('Fitness', 'bit-pi'),
+
+    'Founder' => __('Founder', 'bit-pi'),
+
+    'General Counsel' => __('General Counsel', 'bit-pi'),
+
+    'General Manager' => __('General Manager', 'bit-pi'),
+
+    'General Partner' => __('General Partner', 'bit-pi'),
+
+    'Graphic Design' => __('Graphic Design', 'bit-pi'),
+
+    'Human Resources Specialist' => __('Human Resources Specialist', 'bit-pi'),
+
+    'Information Technology Specialist' => __('Information Technology Specialist', 'bit-pi'),
+
+    'Investment' => __('Investment', 'bit-pi'),
+
+    'Investment Banker' => __('Investment Banker', 'bit-pi'),
+
+    'Journalist' => __('Journalist', 'bit-pi'),
+
+    'Key Account Manager' => __('Key Account Manager', 'bit-pi'),
+
+    'Law Enforcement' => __('Law Enforcement', 'bit-pi'),
+
+    'Lawyer' => __('Lawyer', 'bit-pi'),
+
+    'Logistics Manager' => __('Logistics Manager', 'bit-pi'),
+
+    'Management' => __('Management', 'bit-pi'),
+
+    'Marketing Specialist' => __('Marketing Specialist', 'bit-pi'),
+
+    'Mechanical Engineer' => __('Mechanical Engineer', 'bit-pi'),
+
+    'Medical Doctor' => __('Medical Doctor', 'bit-pi'),
+
+    'Network Engineer' => __('Network Engineer', 'bit-pi'),
+
+    'Nurse' => __('Nurse', 'bit-pi'),
+
+    'Office Management' => __('Office Management', 'bit-pi'),
+
+    'Office Manager' => __('Office Manager', 'bit-pi'),
+
+    'Operational Specialist' => __('Operational Specialist', 'bit-pi'),
+
+    'Paralegal' => __('Paralegal', 'bit-pi'),
+
+    'Principal' => __('Principal', 'bit-pi'),
+
+    'Product Design' => __('Product Design', 'bit-pi'),
+
+    'Product Manager' => __('Product Manager', 'bit-pi'),
+
+    'Product Marketing' => __('Product Marketing', 'bit-pi'),
+
+    'Production Manager' => __('Production Manager', 'bit-pi'),
+
+    'Professor' => __('Professor', 'bit-pi'),
+
+    'Program Coordinator' => __('Program Coordinator', 'bit-pi'),
+
+    'Program Manager' => __('Program Manager', 'bit-pi'),
+
+    'Project Engineer' => __('Project Engineer', 'bit-pi'),
+
+    'Project Manager' => __('Project Manager', 'bit-pi'),
+
+    'Property Manager' => __('Property Manager', 'bit-pi'),
+
+    'QA engineer' => __('QA engineer', 'bit-pi'),
+
+    'QA IT' => __('QA IT', 'bit-pi'),
+
+    'Quality Assurance Manager' => __('Quality Assurance Manager', 'bit-pi'),
+
+    'Quality Assurance Specialist' => __('Quality Assurance Specialist', 'bit-pi'),
+
+    'Realtor' => __('Realtor', 'bit-pi'),
+
+    'Recruiter' => __('Recruiter', 'bit-pi'),
+
+    'Relationship Manager' => __('Relationship Manager', 'bit-pi'),
+
+    'Research Analyst' => __('Research Analyst', 'bit-pi'),
+
+    'Risk Compliance' => __('Risk Compliance', 'bit-pi'),
+
+    'Sales Executive' => __('Sales Executive', 'bit-pi'),
+
+    'Sales Operations' => __('Sales Operations', 'bit-pi'),
+
+    'Sales Specialist' => __('Sales Specialist', 'bit-pi'),
+
+    'Salesperson' => __('Salesperson', 'bit-pi'),
+
+    'Secretary' => __('Secretary', 'bit-pi'),
+
+    'Social Marketing' => __('Social Marketing', 'bit-pi'),
+
+    'Software Engineer' => __('Software Engineer', 'bit-pi'),
+
+    'Strategy' => __('Strategy', 'bit-pi'),
+
+    'Student' => __('Student', 'bit-pi'),
+
+    'Support Specialist' => __('Support Specialist', 'bit-pi'),
+
+    'System Administrator' => __('System Administrator', 'bit-pi'),
+
+    'System Analyst' => __('System Analyst', 'bit-pi'),
+
+    'Systems Engineer' => __('Systems Engineer', 'bit-pi'),
+
+    'Talent' => __('Talent', 'bit-pi'),
+
+    'Tax Audit' => __('Tax Audit', 'bit-pi'),
+
+    'Teacher' => __('Teacher', 'bit-pi'),
+
+    'Technical Manager' => __('Technical Manager', 'bit-pi'),
+
+    'Technical Support Specialist' => __('Technical Support Specialist', 'bit-pi'),
+
+    'Therapist' => __('Therapist', 'bit-pi'),
+
+    'Training' => __('Training', 'bit-pi'),
+
+    'Video' => __('Video', 'bit-pi'),
+
+    'Web Developer' => __('Web Developer', 'bit-pi'),
+
+    'Writer' => __('Writer', 'bit-pi'),
+
+    'Chief Executive Officer' => __('Chief Executive Officer', 'bit-pi'),
+
+    'Chief Operating Officer' => __('Chief Operating Officer', 'bit-pi'),
+
+    'Chief Marketing Officer' => __('Chief Marketing Officer', 'bit-pi'),
+
+    'Chief Technology Officer' => __('Chief Technology Officer', 'bit-pi'),
+
+    'Chief Information Officer' => __('Chief Information Officer', 'bit-pi'),
+
+    'Chief Human Resources officer' => __('Chief Human Resources officer', 'bit-pi'),
+
+    'Chief Compliance Officer' => __('Chief Compliance Officer', 'bit-pi'),
+
+    'Chief Risk Officer' => __('Chief Risk Officer', 'bit-pi'),
+
+    'Chief Data Officer' => __('Chief Data Officer', 'bit-pi'),
+
+    'Chief Product Officer' => __('Chief Product Officer', 'bit-pi'),
+
+    'Chief Revenue Officer' => __('Chief Revenue Officer', 'bit-pi'),
+
+    'Chief Sustainability Officer' => __('Chief Sustainability Officer', 'bit-pi'),
+
+    'Chief Legal Officer' => __('Chief Legal Officer', 'bit-pi'),
+
+    'Chief Security Officer' => __('Chief Security Officer', 'bit-pi'),
+
+    'Chief Experience Officer' => __('Chief Experience Officer', 'bit-pi'),
+
+    'Chief Innovation Officer' => __('Chief Innovation Officer', 'bit-pi'),
+
+    'Retail' => __('Retail', 'bit-pi'),
+
+    '1-5' => __('1-5', 'bit-pi'),
+
+    '5-25' => __('5-25', 'bit-pi'),
+
+    '25-50' => __('25-50', 'bit-pi'),
+
+    '50-100' => __('50-100', 'bit-pi'),
+
+    '100-500' => __('100-500', 'bit-pi'),
+
+    '500-1000' => __('500-1000', 'bit-pi'),
+
+    '1000+' => __('1000+', 'bit-pi'),
+
+    'Appointment Scheduled' => __('Appointment Scheduled', 'bit-pi'),
+
+    'Qualified To Buy' => __('Qualified To Buy', 'bit-pi'),
+
+    'Presentation Scheduled' => __('Presentation Scheduled', 'bit-pi'),
+
+    'Decision Marker Bought-In' => __('Decision Marker Bought-In', 'bit-pi'),
+
+    'Contract Sent' => __('Contract Sent', 'bit-pi'),
+
+    'Closed Won' => __('Closed Won', 'bit-pi'),
+
+    'Closed Lost' => __('Closed Lost', 'bit-pi'),
+
+    'You can find API guides <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://developers.hubspot.com/docs/guides/api/overview">Here</a>' => __('You can find API guides <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://developers.hubspot.com/docs/guides/api/overview">Here</a>', 'bit-pi'),
+
+    'Api Key' => __('Api Key', 'bit-pi'),
 
     'Updated JetEngine field on post type' => __('Updated JetEngine field on post type', 'bit-pi'),
 
@@ -1862,6 +2512,8 @@ return [
     'Note' => __('Note', 'bit-pi'),
 
     'Add Subscriber' => __('Add Subscriber', 'bit-pi'),
+
+    'You can get your API key from ...' => __('You can get your API key from ...', 'bit-pi'),
 
     'A user is enrolled in a course' => __('A user is enrolled in a course', 'bit-pi'),
 
@@ -2109,8 +2761,6 @@ return [
 
     'ID' => __('ID', 'bit-pi'),
 
-    'Currency' => __('Currency', 'bit-pi'),
-
     'variants' => __('variants', 'bit-pi'),
 
     'After' => __('After', 'bit-pi'),
@@ -2185,12 +2835,6 @@ return [
 
     'Reasoning Effort' => __('Reasoning Effort', 'bit-pi'),
 
-    'Low' => __('Low', 'bit-pi'),
-
-    'Medium' => __('Medium', 'bit-pi'),
-
-    'High' => __('High', 'bit-pi'),
-
     'Select a Effort' => __('Select a Effort', 'bit-pi'),
 
     'Higher temperatures generate more diverse and creative responses. For example, 0.8. Lower temperatures generate more focused and well-defined responses. For example, 0.2. The default value is 1. Must be lower than or equal to 2.' => __('Higher temperatures generate more diverse and creative responses. For example, 0.8. Lower temperatures generate more focused and well-defined responses. For example, 0.2. The default value is 1. Must be lower than or equal to 2.', 'bit-pi'),
@@ -2220,8 +2864,6 @@ return [
     'Stop Sequences #{COUNT}' => __('Stop Sequences #{COUNT}', 'bit-pi'),
 
     'Add Optional Fields' => __('Add Optional Fields', 'bit-pi'),
-
-    'Field #{COUNT}' => __('Field #{COUNT}', 'bit-pi'),
 
     'Optional Fields' => __('Optional Fields', 'bit-pi'),
 
@@ -2361,8 +3003,6 @@ return [
 
     'You can find your API key in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://platform.openai.com/settings/organization/api-keys">OpenAi Api Settings</a>' => __('You can find your API key in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://platform.openai.com/settings/organization/api-keys">OpenAi Api Settings</a>', 'bit-pi'),
 
-    'Api Key' => __('Api Key', 'bit-pi'),
-
     'Limit value must be numeric.' => __('Limit value must be numeric.', 'bit-pi'),
 
     'Batches Limit' => __('Batches Limit', 'bit-pi'),
@@ -2386,6 +3026,50 @@ return [
     'Pro-levels' => __('Pro-levels', 'bit-pi'),
 
     'Select a pro-level' => __('Select a pro-level', 'bit-pi'),
+
+    'Payment Form Submission' => __('Payment Form Submission', 'bit-pi'),
+
+    'Payment Status Changed' => __('Payment Status Changed', 'bit-pi'),
+
+    'Payment Success' => __('Payment Success', 'bit-pi'),
+
+    'Payment Failed' => __('Payment Failed', 'bit-pi'),
+
+    'Note Created By User' => __('Note Created By User', 'bit-pi'),
+
+    'Ask Perplexity' => __('Ask Perplexity', 'bit-pi'),
+
+    'Choose the perplexity model to use here.' => __('Choose the perplexity model to use here.', 'bit-pi'),
+
+    'sonar' => __('sonar', 'bit-pi'),
+
+    'sonar-pro' => __('sonar-pro', 'bit-pi'),
+
+    'sonar-reasoning' => __('sonar-reasoning', 'bit-pi'),
+
+    'sonar-deep-research' => __('sonar-deep-research', 'bit-pi'),
+
+    'sonar-reasoning-pro' => __('sonar-reasoning-pro', 'bit-pi'),
+
+    'r1-1776' => __('r1-1776', 'bit-pi'),
+
+    'Enter the maximum number of completion tokens. Ensure the total of max_tokens and prompt tokens does not exceed the model\'s context window limit. If left blank, the model will generate tokens until a stop token or the context window end is reached. E.g. 900.' => __('Enter the maximum number of completion tokens. Ensure the total of max_tokens and prompt tokens does not exceed the model\'s context window limit. If left blank, the model will generate tokens until a stop token or the context window end is reached. E.g. 900.', 'bit-pi'),
+
+    'Enter the temperature value here, which must be between 0 (inclusive) and 1.999 (inclusive). This controls the randomness of the response: higher values introduce more randomness, while lower values result in more deterministic outputs. E.g. 1.5.' => __('Enter the temperature value here, which must be between 0 (inclusive) and 1.999 (inclusive). This controls the randomness of the response: higher values introduce more randomness, while lower values result in more deterministic outputs. E.g. 1.5.', 'bit-pi'),
+
+    'Enter a value between -2.0 and 2.0. Positive values penalize new tokens based on their occurrence in the text, encouraging the model to introduce new topics. This setting is incompatible with the frequency_penalty. E.g. 1.' => __('Enter a value between -2.0 and 2.0. Positive values penalize new tokens based on their occurrence in the text, encouraging the model to introduce new topics. This setting is incompatible with the frequency_penalty. E.g. 1.', 'bit-pi'),
+
+    'Enter presence-penalty value' => __('Enter presence-penalty value', 'bit-pi'),
+
+    'Enter a multiplicative penalty greater than 0. Values above 1.0 reduce the likelihood of repeating tokens, with 1.0 indicating no penalty. This setting is incompatible with the presence_penalty. E.g. 1.' => __('Enter a multiplicative penalty greater than 0. Values above 1.0 reduce the likelihood of repeating tokens, with 1.0 indicating no penalty. This setting is incompatible with the presence_penalty. E.g. 1.', 'bit-pi'),
+
+    'Enter frequency-penalty value' => __('Enter frequency-penalty value', 'bit-pi'),
+
+    'Enter the nucleus sampling threshold, which should be a value between 0 and 1 (inclusive). For each subsequent token, the model will consider the results of tokens within the top_p probability mass. We recommend adjusting either the top_k or top_p parameter, but not both simultaneously. E.g. 0.7.' => __('Enter the nucleus sampling threshold, which should be a value between 0 and 1 (inclusive). For each subsequent token, the model will consider the results of tokens within the top_p probability mass. We recommend adjusting either the top_k or top_p parameter, but not both simultaneously. E.g. 0.7.', 'bit-pi'),
+
+    'Enter the number of tokens to retain for top-k filtering, using an integer between 0 and 2048 (inclusive). Setting this value to 0 will disable top-k filtering. We recommend adjusting either the top_k or top_p parameter, but not both simultaneously. E.g. 1000.' => __('Enter the number of tokens to retain for top-k filtering, using an integer between 0 and 2048 (inclusive). Setting this value to 0 will disable top-k filtering. We recommend adjusting either the top_k or top_p parameter, but not both simultaneously. E.g. 1000.', 'bit-pi'),
+
+    'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://www.perplexity.ai/account/api/keys">Here</a>' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://www.perplexity.ai/account/api/keys">Here</a>', 'bit-pi'),
 
     'NewRecordV2s' => __('NewRecordV2s', 'bit-pi'),
 
@@ -2463,6 +3147,82 @@ return [
 
     'Order Created' => __('Order Created', 'bit-pi'),
 
+    '**Note**: To send messages as a bot, please connect using a valid bot token.' => __('**Note**: To send messages as a bot, please connect using a valid bot token.', 'bit-pi'),
+
+    'Create Channel' => __('Create Channel', 'bit-pi'),
+
+    'Send a message to a channel' => __('Send a message to a channel', 'bit-pi'),
+
+    'Send Direct Message' => __('Send Direct Message', 'bit-pi'),
+
+    'Join Channel' => __('Join Channel', 'bit-pi'),
+
+    'Find User By Email' => __('Find User By Email', 'bit-pi'),
+
+    'Name for the channel to be created. Channel names can only contain lowercase letters, numbers, hyphens, and underscores, and must be 80 characters or fewer.' => __('Name for the channel to be created. Channel names can only contain lowercase letters, numbers, hyphens, and underscores, and must be 80 characters or fewer.', 'bit-pi'),
+
+    'Channel Name' => __('Channel Name', 'bit-pi'),
+
+    'Switch ON if you want to create a private channel instead of a public one.' => __('Switch ON if you want to create a private channel instead of a public one.', 'bit-pi'),
+
+    'Is Private?' => __('Is Private?', 'bit-pi'),
+
+    'Enter the email address of the user.' => __('Enter the email address of the user.', 'bit-pi'),
+
+    'User Email' => __('User Email', 'bit-pi'),
+
+    'To get access Token, Please Visit <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://api.slack.com/">Slack Console</a>' => __('To get access Token, Please Visit <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://api.slack.com/">Slack Console</a>', 'bit-pi'),
+
+    'Channel' => __('Channel', 'bit-pi'),
+
+    'Select a Channel' => __('Select a Channel', 'bit-pi'),
+
+    'Select a User' => __('Select a User', 'bit-pi'),
+
+    'Specify text of the message to send.' => __('Specify text of the message to send.', 'bit-pi'),
+
+    'If you Switch No, this message will appear to come from you. Direct messages are always sent by bots.' => __('If you Switch No, this message will appear to come from you. Direct messages are always sent by bots.', 'bit-pi'),
+
+    'Send as a bot?' => __('Send as a bot?', 'bit-pi'),
+
+    'Specify the bot name here, Note that the Specified bot name will appear in Slack only if you are authorized with bot token.' => __('Specify the bot name here, Note that the Specified bot name will appear in Slack only if you are authorized with bot token.', 'bit-pi'),
+
+    'Bot Name' => __('Bot Name', 'bit-pi'),
+
+    'Specify the bot icon URL here, Note that the Specified bot icon will appear in Slack only if you are authorized with bot token.' => __('Specify the bot icon URL here, Note that the Specified bot icon will appear in Slack only if you are authorized with bot token.', 'bit-pi'),
+
+    'Bot Icon' => __('Bot Icon', 'bit-pi'),
+
+    'Self specified, this will upload the given image URL to Slack and attach it to the message separately.' => __('Self specified, this will upload the given image URL to Slack and attach it to the message separately.', 'bit-pi'),
+
+    'Attach Image by URL' => __('Attach Image by URL', 'bit-pi'),
+
+    'Enable to automatically expand links in this message. For example: turn a YouTube link into a playable widget.' => __('Enable to automatically expand links in this message. For example: turn a YouTube link into a playable widget.', 'bit-pi'),
+
+    'Is Auto Expand Links?' => __('Is Auto Expand Links?', 'bit-pi'),
+
+    'If Switch No, any usernames and channels mentioned would not be linked (or mentioned). Also affects @channel and @group.' => __('If Switch No, any usernames and channels mentioned would not be linked (or mentioned). Also affects @channel and @group.', 'bit-pi'),
+
+    'Link Usernames and Channel Names?' => __('Link Usernames and Channel Names?', 'bit-pi'),
+
+    'Enter the time (as a Unix timestamp) when the message should be sent.' => __('Enter the time (as a Unix timestamp) when the message should be sent.', 'bit-pi'),
+
+    'Schedule At' => __('Schedule At', 'bit-pi'),
+
+    'Select a channel from the list. A bot can\'t post in a private channel if it\'s not a member - you need to invite it to the channel if you are using bot token.' => __('Select a channel from the list. A bot can\'t post in a private channel if it\'s not a member - you need to invite it to the channel if you are using bot token.', 'bit-pi'),
+
+    'If you Switch No, this message will appear to come from you.' => __('If you Switch No, this message will appear to come from you.', 'bit-pi'),
+
+    'Auto-Expand Links?' => __('Auto-Expand Links?', 'bit-pi'),
+
+    'If you want this to be part of a thread, you will need the timestamp (Ts) of the parent message. For example: 1345232312616.1231232.' => __('If you want this to be part of a thread, you will need the timestamp (Ts) of the parent message. For example: 1345232312616.1231232.', 'bit-pi'),
+
+    'Thread' => __('Thread', 'bit-pi'),
+
+    'Enable Broadcast to control whether a threaded reply will also be posted as a visible message in the channel.' => __('Enable Broadcast to control whether a threaded reply will also be posted as a visible message in the channel.', 'bit-pi'),
+
+    'Broadcast Message to Channel?' => __('Broadcast Message to Channel?', 'bit-pi'),
+
     'Became an affiliate' => __('Became an affiliate', 'bit-pi'),
 
     'Earned a commission' => __('Earned a commission', 'bit-pi'),
@@ -2509,11 +3269,7 @@ return [
 
     'Select Role' => __('Select Role', 'bit-pi'),
 
-    'Lead' => __('Lead', 'bit-pi'),
-
     'Client' => __('Client', 'bit-pi'),
-
-    'Prospect' => __('Prospect', 'bit-pi'),
 
     'Select a Role' => __('Select a Role', 'bit-pi'),
 
@@ -2534,8 +3290,6 @@ return [
     'Page Number' => __('Page Number', 'bit-pi'),
 
     'Select Company' => __('Select Company', 'bit-pi'),
-
-    'Select a Company' => __('Select a Company', 'bit-pi'),
 
     'Chose Contacts' => __('Chose Contacts', 'bit-pi'),
 
@@ -2694,8 +3448,6 @@ return [
     'Audio' => __('Audio', 'bit-pi'),
 
     'Document' => __('Document', 'bit-pi'),
-
-    'Video' => __('Video', 'bit-pi'),
 
     'Select Media Type' => __('Select Media Type', 'bit-pi'),
 
@@ -2964,6 +3716,52 @@ return [
     'User\'s Membership Status Set to Expires' => __('User\'s Membership Status Set to Expires', 'bit-pi'),
 
     'User\'s Membership Status Changed' => __('User\'s Membership Status Changed', 'bit-pi'),
+
+    'User Subscribes to Product' => __('User Subscribes to Product', 'bit-pi'),
+
+    'User Purchases Variable Subscription' => __('User Purchases Variable Subscription', 'bit-pi'),
+
+    'User Subscription Trial End' => __('User Subscription Trial End', 'bit-pi'),
+
+    'User Renews Subscription' => __('User Renews Subscription', 'bit-pi'),
+
+    'User Cancels Subscription' => __('User Cancels Subscription', 'bit-pi'),
+
+    'User Subscription Status Set To Pending' => __('User Subscription Status Set To Pending', 'bit-pi'),
+
+    'User Subscription Status Set To On-hold' => __('User Subscription Status Set To On-hold', 'bit-pi'),
+
+    'User Subscription Status Set To Active' => __('User Subscription Status Set To Active', 'bit-pi'),
+
+    'User Subscription Status Changed' => __('User Subscription Status Changed', 'bit-pi'),
+
+    'User Subscription Unable To Update Status' => __('User Subscription Unable To Update Status', 'bit-pi'),
+
+    'User Subscription Status Expires' => __('User Subscription Status Expires', 'bit-pi'),
+
+    'User Subscription Trashed' => __('User Subscription Trashed', 'bit-pi'),
+
+    'User Subscription Permanently Deleted' => __('User Subscription Permanently Deleted', 'bit-pi'),
+
+    'User Subscription Restore' => __('User Subscription Restore', 'bit-pi'),
+
+    'User Renewal Subscription Payment Failed' => __('User Renewal Subscription Payment Failed', 'bit-pi'),
+
+    'User Subscription Trial End Date Updated' => __('User Subscription Trial End Date Updated', 'bit-pi'),
+
+    'User Subscription Next Payment Date Updated' => __('User Subscription Next Payment Date Updated', 'bit-pi'),
+
+    'User Subscription End Date Updated' => __('User Subscription End Date Updated', 'bit-pi'),
+
+    'User Subscription Date Updated' => __('User Subscription Date Updated', 'bit-pi'),
+
+    'User Subscription Trial End Date Deleted' => __('User Subscription Trial End Date Deleted', 'bit-pi'),
+
+    'User Subscription Next Payment Date Deleted' => __('User Subscription Next Payment Date Deleted', 'bit-pi'),
+
+    'User Subscription End Date Deleted' => __('User Subscription End Date Deleted', 'bit-pi'),
+
+    'User Subscription Date Deleted' => __('User Subscription Date Deleted', 'bit-pi'),
 
     'Create Prospect' => __('Create Prospect', 'bit-pi'),
 
