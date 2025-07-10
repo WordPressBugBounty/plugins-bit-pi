@@ -22,12 +22,11 @@ class Parser
 
         foreach ($response as $key => $value) {
             if (\is_array($value) || \is_object($value)) {
-                if (Utility::isMultiDimensionArray($value)) {
+                if (Utility::isMultiDimensionArray($value) || Utility::isSequentialArray($value)) {
                     $parsed[] = [
-                        'key'    => $key,
-                        'type'   => 'array',
-                        'value'  => isset($value[0]) ? static::parseResponse($value[0], $isFile) : [],
-                        'length' => \count($value),
+                        'key'   => $key,
+                        'type'  => 'array',
+                        'value' => static::parseResponse($value, $isFile)
                     ];
                 } else {
                     $parsed[] = [

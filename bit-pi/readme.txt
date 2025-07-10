@@ -1,13 +1,13 @@
-=== Automation & Integration plugin: Automate & Integrate Webhooks, Form, CRM, LMS- Bit Flows ===
+=== AI Automation: Build Complex AI Workflow with OpenAI, Gemini, Claude, DeepSeek - Bit Flows ===
 Contributors: bitpressadmin,akaioum,arif25897,mazharul78,shuvomohajan
 Tags: automation, integration, webhook, form, workflow
 Requires at least: 5.8
 Tested up to: 6.8.1
 Requires PHP: 7.4
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPL-2.0-or-later
 
-Bit Flows is an automation & integration plugin like Zapier inside WordPress. Connect WP & external platforms with unlimited tasks, workflows & steps..
+Create AI powered automation workflows on a visual canvas, like n8n inside WordPress. Unlimited tasks, unlimited workflows, and unlimited steps.
 
 == Description ==
 
@@ -436,6 +436,22 @@ Yes! The Pro version unlocks all premium tools, unlimited workflows, priority su
 
 
 == Changelog ==
+
+= v1.3.0 (Jul 10, 2025) =
+* **Actions (16)**
+  * **Stripe (10)**: Enhanced payment processing capabilities
+  * **Line (6)**: Streamlined messaging and communication workflows
+* **Triggers (8)**
+  * **Stripe (1)**: Listen to Stripe events
+  * **Line (1)**: Integrated messaging trigger for Line
+  * **New User Approve (5)**: Automated workflows for new user approve
+  * **SureCart (1)**: `checkout_confirmation` event added
+* **New Features**
+  * **Smart Field Search**: Added a variable search functionality for easier field discovery and selection
+  * **OpenAI Memory Storage**: Now store and persist conversation context across multiple AI interactions
+  * **OAuth2 Authorization Types**: Added support for `client_credentials` and `PKCE` authorization types
+* **Bug Fixes**
+  * Fixed localization and translation issues for a smoother experience
 
 = v1.2.0 (Jun 22, 2025) =
 * **Actions (14)**:

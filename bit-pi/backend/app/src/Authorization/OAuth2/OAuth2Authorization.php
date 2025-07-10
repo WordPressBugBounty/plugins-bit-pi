@@ -29,7 +29,7 @@ class OAuth2Authorization extends AbstractBaseAuthorization
     {
         $tokenDetails = $this->tokenDetails;
 
-        $response = $this->http->request($this->refreshTokenUrl ?? $tokenDetails->refreshTokenUrl, 'POST', $this->getBodyParams($tokenDetails));
+        $response = $this->http->request($this->refreshTokenUrl ?? $tokenDetails['refreshTokenUrl'], 'POST', $this->getRefreshTokenBodyParams($tokenDetails));
 
         if ($this->http->getResponseCode() !== 200 || isset($response->error)) {
             return [
@@ -115,13 +115,24 @@ class OAuth2Authorization extends AbstractBaseAuthorization
         return $this->tokenDetails = (array) $this->connection->auth_details;
     }
 
-    private function getBodyParams($tokenDetails)
+    private function getRefreshTokenBodyParams($tokenDetails)
     {
-        return $this->bodyParams ?? [
-            'grant_type'    => 'refresh_token',
+        if (isset($this->bodyParams) && !empty($this->bodyParams)) {
+            return $this->bodyParams;
+        }
+
+        $grantType = $tokenDetails['grant_type'] ?? 'authorization_code';
+
+        $body = [
+            'grant_type'    => $grantType === 'client_credentials' ? 'client_credentials' : 'refresh_token',
             'client_id'     => $tokenDetails['client_id'],
             'client_secret' => Hash::decrypt($tokenDetails['client_secret']),
-            'refresh_token' => Hash::decrypt($tokenDetails['refresh_token']),
         ];
+
+        if (!empty($tokenDetails['refresh_token'])) {
+            $body['refresh_token'] = Hash::decrypt($tokenDetails['refresh_token']);
+        }
+
+        return $body;
     }
 }

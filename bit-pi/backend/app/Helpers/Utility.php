@@ -251,4 +251,23 @@ class Utility
     {
         return \array_slice($array, 0, $limit);
     }
+
+    /**
+     * Check if the given array is a sequential array.
+     *
+     * A sequential array is an array where the keys are integers starting from 0
+     * and incrementing by 1 for each element.
+     *
+     * @param array $array the array to check
+     *
+     * @return bool true if the array is sequential, false otherwise
+     */
+    public static function isSequentialArray($array)
+    {
+        if (!\is_array($array)) {
+            return false;
+        }
+
+        return array_keys($array) === range(0, \count($array) - 1);
+    }
 }

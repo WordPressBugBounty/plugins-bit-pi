@@ -305,15 +305,19 @@ return [
 
     'Token' => __('Token', 'bit-pi'),
 
-    'Redirect URI' => __('Redirect URI', 'bit-pi'),
-
     'Grant Type' => __('Grant Type', 'bit-pi'),
 
     'Authorization Code' => __('Authorization Code', 'bit-pi'),
 
+    'Authorization Code with PKCE' => __('Authorization Code with PKCE', 'bit-pi'),
+
+    'Client Credentials' => __('Client Credentials', 'bit-pi'),
+
+    'Callback URL' => __('Callback URL', 'bit-pi'),
+
     'Authorization URL' => __('Authorization URL', 'bit-pi'),
 
-    'Token URL' => __('Token URL', 'bit-pi'),
+    'Access Token URL' => __('Access Token URL', 'bit-pi'),
 
     'if not provided, the token URL will be used to refresh the token' => __('if not provided, the token URL will be used to refresh the token', 'bit-pi'),
 
@@ -591,6 +595,8 @@ return [
 
     'Tags' => __('Tags', 'bit-pi'),
 
+    'Search variables' => __('Search variables', 'bit-pi'),
+
     'Path' => __('Path', 'bit-pi'),
 
     'Make sure you captured test response in trigger node.' => __('Make sure you captured test response in trigger node.', 'bit-pi'),
@@ -760,8 +766,6 @@ return [
     'Disable' => __('Disable', 'bit-pi'),
 
     'Choose a webhook' => __('Choose a webhook', 'bit-pi'),
-
-    'Callback URL' => __('Callback URL', 'bit-pi'),
 
     'Component/ContextMenu' => __('Component/ContextMenu', 'bit-pi'),
 
@@ -1725,7 +1729,7 @@ return [
 
     'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://aistudio.google.com/app/apikey">Here</a>' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://aistudio.google.com/app/apikey">Here</a>', 'bit-pi'),
 
-    'You can get your API key from <a class="text-blue-600 underline" href="https://app.mailercloud.com/account/api-integrations" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API key from <a class="text-blue-600 underline" href="https://app.mailercloud.com/account/api-integrations" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
+    'You can get your API key from <a class="text-blue-600 underline" href="https://app.getgist.com/projects/jgmmrszy/settings/api-key" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API key from <a class="text-blue-600 underline" href="https://app.getgist.com/projects/jgmmrszy/settings/api-key" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
 
     'Gender' => __('Gender', 'bit-pi'),
 
@@ -1894,6 +1898,24 @@ return [
     'Select a sheet' => __('Select a sheet', 'bit-pi'),
 
     'Refetch Columns' => __('Refetch Columns', 'bit-pi'),
+
+    'Show Advanced Settings' => __('Show Advanced Settings', 'bit-pi'),
+
+    'Choose how new data is added relative to existing sheet content. \'Overwrite\' updates empty columns without affecting existing data; \'Insert Rows\' always adds new rows.' => __('Choose how new data is added relative to existing sheet content. \'Overwrite\' updates empty columns without affecting existing data; \'Insert Rows\' always adds new rows.', 'bit-pi'),
+
+    'Insert Data Option' => __('Insert Data Option', 'bit-pi'),
+
+    'Insert Rows' => __('Insert Rows', 'bit-pi'),
+
+    'Overwrite' => __('Overwrite', 'bit-pi'),
+
+    'Specifies how input data is interpreted: store as-is (RAW) or parse like user input in Sheets (USER_ENTERED).' => __('Specifies how input data is interpreted: store as-is (RAW) or parse like user input in Sheets (USER_ENTERED).', 'bit-pi'),
+
+    'Value Input Option' => __('Value Input Option', 'bit-pi'),
+
+    'User Entered' => __('User Entered', 'bit-pi'),
+
+    'Raw' => __('Raw', 'bit-pi'),
 
     'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.cloud.google.com/apis/credentials">Here</a>' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.cloud.google.com/apis/credentials">Here</a>', 'bit-pi'),
 
@@ -2575,6 +2597,154 @@ return [
 
     'Select a membership' => __('Select a membership', 'bit-pi'),
 
+    'A verified LINE account is required to retrieve a member\'s ID or profile from a group/room.' => __('A verified LINE account is required to retrieve a member\'s ID or profile from a group/room.', 'bit-pi'),
+
+    'Send a Push Message' => __('Send a Push Message', 'bit-pi'),
+
+    'Send a Reply Message' => __('Send a Reply Message', 'bit-pi'),
+
+    'Send Broadcast Message' => __('Send Broadcast Message', 'bit-pi'),
+
+    'Get a Number of Followers' => __('Get a Number of Followers', 'bit-pi'),
+
+    'List of Group/Room Members' => __('List of Group/Room Members', 'bit-pi'),
+
+    'Get a Group/Room Member Profile' => __('Get a Group/Room Member Profile', 'bit-pi'),
+
+    'Watch Events' => __('Watch Events', 'bit-pi'),
+
+    'Chose Group Or Room' => __('Chose Group Or Room', 'bit-pi'),
+
+    'Group' => __('Group', 'bit-pi'),
+
+    'Room' => __('Room', 'bit-pi'),
+
+    'Select a Group or Room' => __('Select a Group or Room', 'bit-pi'),
+
+    'Enter Group ID from which to fetch members profile' => __('Enter Group ID from which to fetch members profile', 'bit-pi'),
+
+    'Group ID' => __('Group ID', 'bit-pi'),
+
+    'Enter Room ID from which to fetch members profile' => __('Enter Room ID from which to fetch members profile', 'bit-pi'),
+
+    'Room ID' => __('Room ID', 'bit-pi'),
+
+    'Enter the specific User ID to fetch the user\'s profile.' => __('Enter the specific User ID to fetch the user\'s profile.', 'bit-pi'),
+
+    'User ID' => __('User ID', 'bit-pi'),
+
+    'Enter the date in YYYYMMDD format (e.g., 20250618 for June 18, 2025). The date must be in the past—using today or a future date may not return correct results.' => __('Enter the date in YYYYMMDD format (e.g., 20250618 for June 18, 2025). The date must be in the past—using today or a future date may not return correct results.', 'bit-pi'),
+
+    'Date' => __('Date', 'bit-pi'),
+
+    'To get access Token, Please Visit <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://developers.line.biz/console/">Line Console</a>' => __('To get access Token, Please Visit <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://developers.line.biz/console/">Line Console</a>', 'bit-pi'),
+
+    'Add Emojis' => __('Add Emojis', 'bit-pi'),
+
+    'Index of Emojis' => __('Index of Emojis', 'bit-pi'),
+
+    'Product ID of Emojis' => __('Product ID of Emojis', 'bit-pi'),
+
+    'Emojis ID' => __('Emojis ID', 'bit-pi'),
+
+    'Emoji #{COUNT}' => __('Emoji #{COUNT}', 'bit-pi'),
+
+    'Emoji Field Mapping' => __('Emoji Field Mapping', 'bit-pi'),
+
+    'Add Stickers' => __('Add Stickers', 'bit-pi'),
+
+    'Stickers\'s Package ID' => __('Stickers\'s Package ID', 'bit-pi'),
+
+    'Sticker ID' => __('Sticker ID', 'bit-pi'),
+
+    'Sticker #{COUNT}' => __('Sticker #{COUNT}', 'bit-pi'),
+
+    'Sticker Field Mapping' => __('Sticker Field Mapping', 'bit-pi'),
+
+    'Add Images' => __('Add Images', 'bit-pi'),
+
+    'Image\'s Original Content URL' => __('Image\'s Original Content URL', 'bit-pi'),
+
+    'Image\'s Preview Image URL' => __('Image\'s Preview Image URL', 'bit-pi'),
+
+    'Image #{COUNT}' => __('Image #{COUNT}', 'bit-pi'),
+
+    'Image Field Mapping' => __('Image Field Mapping', 'bit-pi'),
+
+    'Add Audios' => __('Add Audios', 'bit-pi'),
+
+    'Audio\'s Original Content URL' => __('Audio\'s Original Content URL', 'bit-pi'),
+
+    'Audio\'s Duration' => __('Audio\'s Duration', 'bit-pi'),
+
+    'Audio #{COUNT}' => __('Audio #{COUNT}', 'bit-pi'),
+
+    'Audio Field Mapping' => __('Audio Field Mapping', 'bit-pi'),
+
+    'Add Videos' => __('Add Videos', 'bit-pi'),
+
+    'Original Content URL' => __('Original Content URL', 'bit-pi'),
+
+    'Preview Image URL' => __('Preview Image URL', 'bit-pi'),
+
+    'Tracking ID' => __('Tracking ID', 'bit-pi'),
+
+    'Video #{COUNT}' => __('Video #{COUNT}', 'bit-pi'),
+
+    'Video Field Mapping' => __('Video Field Mapping', 'bit-pi'),
+
+    'Add Locations' => __('Add Locations', 'bit-pi'),
+
+    'Address Line\'s' => __('Address Line\'s', 'bit-pi'),
+
+    'Latitude' => __('Latitude', 'bit-pi'),
+
+    'Longitude' => __('Longitude', 'bit-pi'),
+
+    'Location #{COUNT}' => __('Location #{COUNT}', 'bit-pi'),
+
+    'Location Field Mapping' => __('Location Field Mapping', 'bit-pi'),
+
+    'Enter Group ID from which want to fetch members' => __('Enter Group ID from which want to fetch members', 'bit-pi'),
+
+    'Enter Room ID from which want to fetch members' => __('Enter Room ID from which want to fetch members', 'bit-pi'),
+
+    'Switch Yes to disabled the notification' => __('Switch Yes to disabled the notification', 'bit-pi'),
+
+    'Disabled Notification?' => __('Disabled Notification?', 'bit-pi'),
+
+    'To add LINE emojis, insert $ where you want the emoji in your text, then define its index, length, productId, and emojiId in the emojis field mapping.' => __('To add LINE emojis, insert $ where you want the emoji in your text, then define its index, length, productId, and emojiId in the emojis field mapping.', 'bit-pi'),
+
+    'Enable to Send Message with Multiple Emojis with index ID, Product ID of Emoji & Emojis ID' => __('Enable to Send Message with Multiple Emojis with index ID, Product ID of Emoji & Emojis ID', 'bit-pi'),
+
+    'Send Emojis?' => __('Send Emojis?', 'bit-pi'),
+
+    'Enable to Send Multiple Sticker with Stickers\'s Package ID &  Sticker ID' => __('Enable to Send Multiple Sticker with Stickers\'s Package ID &  Sticker ID', 'bit-pi'),
+
+    'Send Sticker?' => __('Send Sticker?', 'bit-pi'),
+
+    'Enable to Send Multiple Image with Image\'s Original Content URL & Image\'s Preview Image URL' => __('Enable to Send Multiple Image with Image\'s Original Content URL & Image\'s Preview Image URL', 'bit-pi'),
+
+    'Send Image?' => __('Send Image?', 'bit-pi'),
+
+    'Enable to Send Multiple Audio with Audio\'s Original Content URL & Audio\'s Duration' => __('Enable to Send Multiple Audio with Audio\'s Original Content URL & Audio\'s Duration', 'bit-pi'),
+
+    'Send Audio?' => __('Send Audio?', 'bit-pi'),
+
+    'Enable to Send Multiple Video with Original Content URL, Preview Image URL & Tracking ID' => __('Enable to Send Multiple Video with Original Content URL, Preview Image URL & Tracking ID', 'bit-pi'),
+
+    'Send Video?' => __('Send Video?', 'bit-pi'),
+
+    'Enable to Send Multiple Location with Title, Address Line\'s, Latitude & Longitude' => __('Enable to Send Multiple Location with Title, Address Line\'s, Latitude & Longitude', 'bit-pi'),
+
+    'Send Location?' => __('Send Location?', 'bit-pi'),
+
+    'Recipient ID' => __('Recipient ID', 'bit-pi'),
+
+    'Reply Token' => __('Reply Token', 'bit-pi'),
+
+    'To add LINE emojis, insert $ where you want the emoji in your message, then define its index, length, productId, and emojiId in the emojis field mapping.' => __('To add LINE emojis, insert $ where you want the emoji in your message, then define its index, length, productId, and emojiId in the emojis field mapping.', 'bit-pi'),
+
     'Add Lead' => __('Add Lead', 'bit-pi'),
 
     'To generate the API key, you need to go to your Brand > Settings > API Keys then click Create' => __('To generate the API key, you need to go to your Brand > Settings > API Keys then click Create', 'bit-pi'),
@@ -2621,6 +2791,8 @@ return [
 
     'Update Subscriber' => __('Update Subscriber', 'bit-pi'),
 
+    'You can get your API key from <a class="text-blue-600 underline" href="https://app.mailercloud.com/account/api-integrations" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API key from <a class="text-blue-600 underline" href="https://app.mailercloud.com/account/api-integrations" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
+
     'You can get your API Token from <a class="text-blue-600 underline" href="https://dashboard.mailerlite.com/integrations/api" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API Token from <a class="text-blue-600 underline" href="https://dashboard.mailerlite.com/integrations/api" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
 
     'Add subscriber to groups.' => __('Add subscriber to groups.', 'bit-pi'),
@@ -2653,6 +2825,16 @@ return [
 
     'Select a recurring-membership' => __('Select a recurring-membership', 'bit-pi'),
 
+    'User Approved' => __('User Approved', 'bit-pi'),
+
+    'User Denied' => __('User Denied', 'bit-pi'),
+
+    'User Status Updated' => __('User Status Updated', 'bit-pi'),
+
+    'User Status Set To Approve' => __('User Status Set To Approve', 'bit-pi'),
+
+    'User Status Set To Deny' => __('User Status Set To Deny', 'bit-pi'),
+
     'Get a Database' => __('Get a Database', 'bit-pi'),
 
     'Get a Page' => __('Get a Page', 'bit-pi'),
@@ -2680,8 +2862,6 @@ return [
     'Rich Text' => __('Rich Text', 'bit-pi'),
 
     'People' => __('People', 'bit-pi'),
-
-    'Date' => __('Date', 'bit-pi'),
 
     'Url' => __('Url', 'bit-pi'),
 
@@ -2819,6 +2999,18 @@ return [
 
     'Max Completion Token' => __('Max Completion Token', 'bit-pi'),
 
+    'Toggle the switch to reveal the Memory Key input field. This crucial setting allows the system to store OpenAI\'s output responses directly into your database,' => __('Toggle the switch to reveal the Memory Key input field. This crucial setting allows the system to store OpenAI\'s output responses directly into your database,', 'bit-pi'),
+
+    'Get Unique Response' => __('Get Unique Response', 'bit-pi'),
+
+    'Enter a unique identifier here (e.g., \'John Doe\'). This Memory Key links OpenAI\'s responses to your specified database entry' => __('Enter a unique identifier here (e.g., \'John Doe\'). This Memory Key links OpenAI\'s responses to your specified database entry', 'bit-pi'),
+
+    'Memory Key' => __('Memory Key', 'bit-pi'),
+
+    'How many recent responses should I remember? (e.g., 5)' => __('How many recent responses should I remember? (e.g., 5)', 'bit-pi'),
+
+    'Context Length' => __('Context Length', 'bit-pi'),
+
     'Add Message' => __('Add Message', 'bit-pi'),
 
     'Role #{COUNT}' => __('Role #{COUNT}', 'bit-pi'),
@@ -2844,6 +3036,10 @@ return [
     'Alternative to sampling with temperature, based on token probability. For example, .1 means only the tokens in the top 10% probability mass are considered. The default value is 1. Must be lower than or equal to 1.' => __('Alternative to sampling with temperature, based on token probability. For example, .1 means only the tokens in the top 10% probability mass are considered. The default value is 1. Must be lower than or equal to 1.', 'bit-pi'),
 
     'Top P' => __('Top P', 'bit-pi'),
+
+    'The results can be found in the modules output in Choices. The default value is 1.' => __('The results can be found in the modules output in Choices. The default value is 1.', 'bit-pi'),
+
+    'Number of responses to generate' => __('Number of responses to generate', 'bit-pi'),
 
     'Number of responses to generate. The results can be found in the modules output in Choices. The default value is 1.' => __('Number of responses to generate. The results can be found in the modules output in Choices. The default value is 1.', 'bit-pi'),
 
@@ -3139,8 +3335,6 @@ return [
 
     'Override' => __('Override', 'bit-pi'),
 
-    'Overwrite' => __('Overwrite', 'bit-pi'),
-
     'Double Optin.' => __('Double Optin.', 'bit-pi'),
 
     'Double Optin' => __('Double Optin', 'bit-pi'),
@@ -3235,6 +3429,182 @@ return [
 
     'New referral affiliate created' => __('New referral affiliate created', 'bit-pi'),
 
+    'Create a Customer' => __('Create a Customer', 'bit-pi'),
+
+    'Create an Invoice' => __('Create an Invoice', 'bit-pi'),
+
+    'Create a Product' => __('Create a Product', 'bit-pi'),
+
+    'Create a Subscription' => __('Create a Subscription', 'bit-pi'),
+
+    'Create a PaymentIntent' => __('Create a PaymentIntent', 'bit-pi'),
+
+    'Cancel a Subscription' => __('Cancel a Subscription', 'bit-pi'),
+
+    'Retrieve Balance' => __('Retrieve Balance', 'bit-pi'),
+
+    'Retrieve Customer' => __('Retrieve Customer', 'bit-pi'),
+
+    'Retrieve Price' => __('Retrieve Price', 'bit-pi'),
+
+    'Retrieve Subscription' => __('Retrieve Subscription', 'bit-pi'),
+
+    'Enter the subscription ID, to cancel the subscription' => __('Enter the subscription ID, to cancel the subscription', 'bit-pi'),
+
+    'Subscription' => __('Subscription', 'bit-pi'),
+
+    'Enter email address of the customer' => __('Enter email address of the customer', 'bit-pi'),
+
+    'Email Address' => __('Email Address', 'bit-pi'),
+
+    'Enter description of the customer' => __('Enter description of the customer', 'bit-pi'),
+
+    'Enter the customer full name or business name' => __('Enter the customer full name or business name', 'bit-pi'),
+
+    'Enter phone-number of the customer' => __('Enter phone-number of the customer', 'bit-pi'),
+
+    'Enter address line 1' => __('Enter address line 1', 'bit-pi'),
+
+    'Address Line 1' => __('Address Line 1', 'bit-pi'),
+
+    'Enter address line 2, (e.g., apartment, suite, unit, or building)' => __('Enter address line 2, (e.g., apartment, suite, unit, or building)', 'bit-pi'),
+
+    'Address Line 2' => __('Address Line 2', 'bit-pi'),
+
+    'Enter city, district, suburb, town, or village' => __('Enter city, district, suburb, town, or village', 'bit-pi'),
+
+    'city' => __('city', 'bit-pi'),
+
+    'Enter a Two-letter country code (ISO 3166-1 alpha-2) e.g., US, BD' => __('Enter a Two-letter country code (ISO 3166-1 alpha-2) e.g., US, BD', 'bit-pi'),
+
+    'Enter postal-code' => __('Enter postal-code', 'bit-pi'),
+
+    'Enter State, county, province, or region of the customer' => __('Enter State, county, province, or region of the customer', 'bit-pi'),
+
+    'Meta Data' => __('Meta Data', 'bit-pi'),
+
+    'Enter the customer ID for creating invoice' => __('Enter the customer ID for creating invoice', 'bit-pi'),
+
+    'Customer ID' => __('Customer ID', 'bit-pi'),
+
+    'Enter the description of the invoice' => __('Enter the description of the invoice', 'bit-pi'),
+
+    'Select the auto advance option for the invoice' => __('Select the auto advance option for the invoice', 'bit-pi'),
+
+    'Auto advance' => __('Auto advance', 'bit-pi'),
+
+    'Select the collection method of the invoice' => __('Select the collection method of the invoice', 'bit-pi'),
+
+    'Collection Method' => __('Collection Method', 'bit-pi'),
+
+    'Charge automatically' => __('Charge automatically', 'bit-pi'),
+
+    'Send invoice' => __('Send invoice', 'bit-pi'),
+
+    'Enter amount for the payment-intent' => __('Enter amount for the payment-intent', 'bit-pi'),
+
+    'Enter the currency of the payment-intent' => __('Enter the currency of the payment-intent', 'bit-pi'),
+
+    'Enter the customer ID of the payment-intent' => __('Enter the customer ID of the payment-intent', 'bit-pi'),
+
+    'Enter the description of the payment-intent' => __('Enter the description of the payment-intent', 'bit-pi'),
+
+    'Enter the name of the product, which is visible to the customer' => __('Enter the name of the product, which is visible to the customer', 'bit-pi'),
+
+    'name' => __('name', 'bit-pi'),
+
+    'Enter the description of the product' => __('Enter the description of the product', 'bit-pi'),
+
+    'Enter the type of the product' => __('Enter the type of the product', 'bit-pi'),
+
+    'Enter the customer ID for creating subscription' => __('Enter the customer ID for creating subscription', 'bit-pi'),
+
+    'Enter the price ID for creating subscription' => __('Enter the price ID for creating subscription', 'bit-pi'),
+
+    'Price' => __('Price', 'bit-pi'),
+
+    'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://dashboard.stripe.com/account/apikeys">Here</a>. Please click on "Create Secret Key"' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://dashboard.stripe.com/account/apikeys">Here</a>. Please click on "Create Secret Key"', 'bit-pi'),
+
+    'Payments' => __('Payments', 'bit-pi'),
+
+    'Payment Intent Created' => __('Payment Intent Created', 'bit-pi'),
+
+    'Payment Intent Succeeded' => __('Payment Intent Succeeded', 'bit-pi'),
+
+    'Payment Intent Failed' => __('Payment Intent Failed', 'bit-pi'),
+
+    'Charge Succeeded' => __('Charge Succeeded', 'bit-pi'),
+
+    'Charge Failed' => __('Charge Failed', 'bit-pi'),
+
+    'Charge Refunded' => __('Charge Refunded', 'bit-pi'),
+
+    'Checkout' => __('Checkout', 'bit-pi'),
+
+    'Checkout Session Completed' => __('Checkout Session Completed', 'bit-pi'),
+
+    'Checkout Session Expired' => __('Checkout Session Expired', 'bit-pi'),
+
+    'Invoices' => __('Invoices', 'bit-pi'),
+
+    'Invoice Created' => __('Invoice Created', 'bit-pi'),
+
+    'Invoice Finalized' => __('Invoice Finalized', 'bit-pi'),
+
+    'Invoice Paid' => __('Invoice Paid', 'bit-pi'),
+
+    'Invoice Payment Failed' => __('Invoice Payment Failed', 'bit-pi'),
+
+    'Invoice Sent' => __('Invoice Sent', 'bit-pi'),
+
+    'Subscriptions' => __('Subscriptions', 'bit-pi'),
+
+    'Subscription Created' => __('Subscription Created', 'bit-pi'),
+
+    'Subscription Updated' => __('Subscription Updated', 'bit-pi'),
+
+    'Subscription Deleted' => __('Subscription Deleted', 'bit-pi'),
+
+    'Subscription Trial Will End' => __('Subscription Trial Will End', 'bit-pi'),
+
+    'Customers' => __('Customers', 'bit-pi'),
+
+    'Customer Created' => __('Customer Created', 'bit-pi'),
+
+    'Customer Updated' => __('Customer Updated', 'bit-pi'),
+
+    'Customer Deleted' => __('Customer Deleted', 'bit-pi'),
+
+    'Products & Prices' => __('Products & Prices', 'bit-pi'),
+
+    'Product Created' => __('Product Created', 'bit-pi'),
+
+    'Price Created' => __('Price Created', 'bit-pi'),
+
+    'Price Updated' => __('Price Updated', 'bit-pi'),
+
+    'Payouts' => __('Payouts', 'bit-pi'),
+
+    'Payout Created' => __('Payout Created', 'bit-pi'),
+
+    'Payout Paid' => __('Payout Paid', 'bit-pi'),
+
+    'Payout Failed' => __('Payout Failed', 'bit-pi'),
+
+    'Transfers' => __('Transfers', 'bit-pi'),
+
+    'Transfer Created' => __('Transfer Created', 'bit-pi'),
+
+    'Transfer Failed' => __('Transfer Failed', 'bit-pi'),
+
+    'Enter email ID to retrieve the corresponding customers' => __('Enter email ID to retrieve the corresponding customers', 'bit-pi'),
+
+    'Enter customer ID to retrieve the subscription' => __('Enter customer ID to retrieve the subscription', 'bit-pi'),
+
+    'Select an event, that will attach to the webhook. The webhook will be triggered when the selected event occurs in stripe.' => __('Select an event, that will attach to the webhook. The webhook will be triggered when the selected event occurs in stripe.', 'bit-pi'),
+
+    'Select an Event' => __('Select an Event', 'bit-pi'),
+
     '**Guide**: Create a Webhook endpoint, copy the URL, and add it to your Suite Dash' => __('**Guide**: Create a Webhook endpoint, copy the URL, and add it to your Suite Dash', 'bit-pi'),
 
     '[Webhook Integration](%s) settings' => __('[Webhook Integration](%s) settings', 'bit-pi'),
@@ -3252,8 +3622,6 @@ return [
     'Update a Company' => __('Update a Company', 'bit-pi'),
 
     'Subscribe Contact to Marketing' => __('Subscribe Contact to Marketing', 'bit-pi'),
-
-    'Subscription Created' => __('Subscription Created', 'bit-pi'),
 
     'Subscription Canceled' => __('Subscription Canceled', 'bit-pi'),
 
@@ -3327,10 +3695,6 @@ return [
 
     'Full Address' => __('Full Address', 'bit-pi'),
 
-    'Address Line 1' => __('Address Line 1', 'bit-pi'),
-
-    'Address Line 2' => __('Address Line 2', 'bit-pi'),
-
     'State / Province' => __('State / Province', 'bit-pi'),
 
     'ZIP / Postal Code' => __('ZIP / Postal Code', 'bit-pi'),
@@ -3346,6 +3710,8 @@ return [
     'User revoked product purchase' => __('User revoked product purchase', 'bit-pi'),
 
     'User unrevoked product purchase' => __('User unrevoked product purchase', 'bit-pi'),
+
+    'Checkout Confirmed' => __('Checkout Confirmed', 'bit-pi'),
 
     'New Comment On Site' => __('New Comment On Site', 'bit-pi'),
 
@@ -3378,8 +3744,6 @@ return [
     'Enter the Chat ID with the prefix 100 here. For example, if your channel ID is -155545555, then the chat ID will be -100155545555 or the username of the target channel (in the format @channelusername or @supergroupusername).' => __('Enter the Chat ID with the prefix 100 here. For example, if your channel ID is -155545555, then the chat ID will be -100155545555 or the username of the target channel (in the format @channelusername or @supergroupusername).', 'bit-pi'),
 
     'Chat ID' => __('Chat ID', 'bit-pi'),
-
-    'User ID' => __('User ID', 'bit-pi'),
 
     'The invite link to revoke.' => __('The invite link to revoke.', 'bit-pi'),
 

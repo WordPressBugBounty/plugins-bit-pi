@@ -95,7 +95,7 @@ final class Plugin
         TelemetryConfig::setTermsUrl('https://bitapps.pro/terms-of-service/');
         TelemetryConfig::setPolicyUrl('https://bitapps.pro/privacy-policy/');
 
-        // Telemetry::report()->init();
+        Telemetry::report()->init();
         Telemetry::feedback()->init();
     }
 

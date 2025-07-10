@@ -1,0 +1,1 @@
+import{c as s}from"./createwe-670.js";import"./_applist-880.js";import"./lodash-939.js";import"./main-moody-dragons-sleep.js";import"./mutative-278.js";import"./machine.-444.js";globalThis.jotaiAtomCache=globalThis.jotaiAtomCache||{cache:new Map,get(t,o){return this.cache.has(t)?this.cache.get(t):(this.cache.set(t,o),o)}};export{s as default};

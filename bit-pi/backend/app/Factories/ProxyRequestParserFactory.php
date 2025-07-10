@@ -94,6 +94,12 @@ class ProxyRequestParserFactory
             case 'hmac_encrypt':
                 return Hash::encrypt($value);
 
+            case 'sha256':
+                return hash('sha256', $value);
+
+            case 'base64_urlencode':
+                return rtrim(strtr(base64_encode($value), '+/', '-_'), '=');
+
             default:
                 return $value;
         }
