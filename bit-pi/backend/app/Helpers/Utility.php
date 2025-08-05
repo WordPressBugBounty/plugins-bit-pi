@@ -3,6 +3,7 @@
 namespace BitApps\Pi\Helpers;
 
 use BitApps\Pi\Config;
+use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use Exception;
 
 if (!\defined('ABSPATH')) {
@@ -12,32 +13,42 @@ if (!\defined('ABSPATH')) {
 class Utility
 {
     /**
-     * Gets a value from an array using a path.
+     * Retrieve a value from a nested array or object using dot notation.
      *
-     * @param array  $data the array to get the value from
-     * @param string $path the path to the value
+     * Example:
+     * $data = [
+     *     'address' => [
+     *         'state' => 'state-01'
+     *     ]
+     * ];
+     * getValueFromPath($data, 'address.state'); // Returns: 'state-01'
      *
-     * @return mixed the value
+     * @param mixed  $data the input data (array or object)
+     * @param string $path Dot-notated path to the target value (e.g., "address.state").
+     *
+     * @return mixed the value if found; otherwise, an empty string
      */
     public static function getValueFromPath($data, $path)
     {
-        if (empty($data)) {
+        if (empty($data) || empty($path)) {
             return $data;
         }
 
-        if (!\is_null($path) && $path !== '') {
-            $keys = explode('.', $path);
+        $keys = explode('.', $path);
 
-            foreach ($keys as $key) {
-                $data = \is_object($data) ? (array) $data : $data;
+        $current = $data;
 
-                if (\array_key_exists($key, $data)) {
-                    $data = $data[$key];
-                }
+        foreach ($keys as $key) {
+            $current = \is_object($current) ? (array) $current : $current;
+
+            if (\is_array($current) && \array_key_exists($key, $current)) {
+                $current = $current[$key];
+            } else {
+                return '';
             }
         }
 
-        return $data;
+        return $current;
     }
 
     public static function formatResponseData($statusCode, $requestBody, $response, $message = null)
@@ -114,27 +125,90 @@ class Utility
      */
     public static function getUserInfo($userId)
     {
-        $userInfo = get_userdata($userId);
+        $user = get_userdata($userId);
 
-        if (!$userInfo) {
+        return $user ? self::formatUserData($user) : [];
+    }
+
+    /**
+     * Get user info by field.
+     *
+     * @param string $field
+     * @param string $value
+     *
+     * @return array
+     */
+    public static function getUserDataByField($field, $value)
+    {
+        $user = get_user_by($field, $value);
+
+        return $user ? self::formatUserData($user) : [];
+    }
+
+    /**
+     * Get all users.
+     *
+     * @param array $args
+     *
+     * @return array
+     */
+    public static function getUsers($args = [])
+    {
+        $users = get_users($args);
+
+        if (empty($users)) {
             return [];
         }
 
-        $userData = $userInfo->data;
+        return array_map([self::class, 'formatUserData'], $users);
+    }
 
-        $userMeta = get_user_meta($userId);
+    /**
+     * Get User Metadata.
+     *
+     * @param int $userId
+     * @param string $key
+     * @param bool $single
+     *
+     * @return array
+     */
+    public static function getUserMetadata($userId, $key = '', $single = false)
+    {
+        $metadata = get_user_meta($userId, $key, $single);
 
-        return [
-            'user_id'      => $userId,
-            'first_name'   => $userMeta['first_name'][0],
-            'last_name'    => $userMeta['last_name'][0],
-            'user_email'   => $userData->user_email,
-            'nickname'     => $userData->user_nicename,
-            'avatar_url'   => get_avatar_url($userId),
-            'display_name' => $userData->display_name,
-            'user_pass'    => $userData->user_pass,
-            'user_roles'   => $userInfo->roles
-        ];
+        return self::sanitizeMetadata($metadata, $key, $single);
+    }
+
+    /**
+     * Get Post Metadata.
+     *
+     * @param mixed $postId
+     * @param string $key
+     * @param bool $single
+     *
+     * @return array
+     */
+    public static function getPostMetadata($postId, $key = '', $single = false)
+    {
+        $metadata = get_post_meta($postId, $key, $single);
+
+        return self::sanitizeMetadata($metadata, $key, $single);
+    }
+
+    /**
+     * Get Comment Metadata.
+     *
+     * @param mixed $commentId
+     * @param string $key
+     * @param bool $single
+     *
+     * @return array
+     */
+    public static function getCommentMetadata($commentId, $key = '', $single = false)
+    {
+        $metadata = get_comment_meta($commentId, $key, $single);
+
+        return self::sanitizeMetadata($metadata, $key, $single);
     }
 
     /**
@@ -269,5 +343,64 @@ class Utility
         }
 
         return array_keys($array) === range(0, \count($array) - 1);
+    }
+
+    /**
+     * Sanitize Metadata.
+     *
+     * @param null|array $metadata
+     * @param string $key
+     * @param bool $single
+     *
+     * @return array
+     */
+    private static function sanitizeMetadata($metadata, $key = '', $single = false)
+    {
+        if (!empty($key) && $single) {
+            return ['meta_key' => $key, 'meta_value' => $metadata];
+        }
+
+        if (empty($metadata)) {
+            return [];
+        }
+
+        return array_map(
+            function ($value) {
+                return maybe_unserialize(reset($value));
+
+                if (\is_array($value)) {
+                    return JSON::maybeEncode($value);
+                }
+            },
+            $metadata
+        );
+    }
+
+    /**
+     * Format user object into a clean array.
+     *
+     * @param WP_User $user
+     *
+     * @return array
+     */
+    private static function formatUserData($user)
+    {
+        $userData = $user->data;
+        $userId = $userData->ID;
+
+        $userMeta = get_user_meta($userId);
+
+        return [
+            'user_id'      => $userId,
+            'first_name'   => $userMeta['first_name'][0],
+            'last_name'    => $userMeta['last_name'][0],
+            'user_login'   => $userData->user_login,
+            'user_email'   => $userData->user_email,
+            'nickname'     => $userData->user_nicename,
+            'avatar_url'   => get_avatar_url($userId),
+            'display_name' => $userData->display_name,
+            'user_pass'    => $userData->user_pass,
+            'user_roles'   => $user->roles
+        ];
     }
 }

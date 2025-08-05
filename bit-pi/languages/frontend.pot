@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Thu Jul 10 2025 13:16:29 GMT+0000 (Coordinated Universal "
+"POT-Creation-Date: Tue Aug 05 2025 11:39:09 GMT+0000 (Coordinated Universal "
 "Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -644,7 +644,7 @@ msgstr ""
 msgid "Connection Name"
 msgstr ""
 
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:124
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:125
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomAppsAction.tsx:137
 #: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/CustomAppsTrigger.tsx:94
 #: frontend/src/services/machines/asana/helpers/machineHelper.asana.ts:228
@@ -654,10 +654,11 @@ msgstr ""
 #: frontend/src/services/machines/getResponse/helpers/machineHelper.getResponse.ts:12
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:42
 #: frontend/src/services/machines/telegram/createInviteLink.telegram.machine.pro.ts:35
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:326
 msgid "Name"
 msgstr ""
 
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:136
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:137
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/CustomOauth2Connection/CustomOauth2Connection.tsx:316
 #: frontend/src/services/machines/asana/createTask.asana.machine.pro.ts:119
 #: frontend/src/services/machines/benchMark/createContact.benchmark.machine.free.ts:74
@@ -713,26 +714,33 @@ msgstr ""
 #: frontend/src/services/machines/woodpecker/addProspect.woodpecker.machine.free.ts:60
 #: frontend/src/services/machines/woodpecker/addProspectToCampaign.woodpecker.machine.free.ts:73
 #: frontend/src/services/machines/woodpecker/updateProspect.woodpecker.machine.free.ts:85
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:220
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:58
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:116
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:227
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:39
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:67
+#: frontend/src/services/machines/wordPress/updateUserMetadata.wordPress.machine.pro.ts:36
 msgid "Value"
 msgstr ""
 
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:148
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:149
 msgid "Add to"
 msgstr ""
 
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:151
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:73
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:152
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:74
 msgid "Header"
 msgstr ""
 
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:152
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:153
 #: frontend/src/services/machines/commonMachines/apiClient.machine.ts:111
 msgid "Query Params"
 msgstr ""
 
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:168
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/BasicAuthConnection/BasicAuthConnection.tsx:162
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/BearerTokenConnection/BearerTokenConnection.tsx:126
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:169
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/BasicAuthConnection/BasicAuthConnection.tsx:163
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/BearerTokenConnection/BearerTokenConnection.tsx:127
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/CustomOauth2Connection/CustomOauth2Connection.tsx:351
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/Oauth2Connection/Oauth2Connection.tsx:212
 #: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:84
@@ -745,23 +753,23 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:170
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/BasicAuthConnection/BasicAuthConnection.tsx:164
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/BearerTokenConnection/BearerTokenConnection.tsx:128
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:171
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/BasicAuthConnection/BasicAuthConnection.tsx:165
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/BearerTokenConnection/BearerTokenConnection.tsx:129
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/CustomOauth2Connection/CustomOauth2Connection.tsx:353
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/Oauth2Connection/Oauth2Connection.tsx:214
 msgid "Connect"
 msgstr ""
 
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/BasicAuthConnection/BasicAuthConnection.tsx:123
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/BasicAuthConnection/BasicAuthConnection.tsx:124
 msgid "Key / Username"
 msgstr ""
 
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/BasicAuthConnection/BasicAuthConnection.tsx:138
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/BasicAuthConnection/BasicAuthConnection.tsx:139
 msgid "Secret / Password"
 msgstr ""
 
-#: frontend/src/components/features/Connection/internals/ConnectionTypes/BearerTokenConnection/BearerTokenConnection.tsx:110
+#: frontend/src/components/features/Connection/internals/ConnectionTypes/BearerTokenConnection/BearerTokenConnection.tsx:111
 #: frontend/src/services/machines/line/helpers/lineCommons.ts:14
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:21
 #: frontend/src/services/machines/slack/helpers/slackCommons.ts:14
@@ -836,6 +844,8 @@ msgstr ""
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:64
 #: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:54
 #: frontend/src/services/machines/stripe/createSubscription.stripe.machine.pro.ts:44
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:212
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:219
 msgid "Key"
 msgstr ""
 
@@ -906,7 +916,7 @@ msgstr ""
 #: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/BuilderLeftSideBar.tsx:75
 #: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/BuilderLeftSideBar.tsx:103
 #: frontend/src/components/features/FlowVariables/internals/AppsTabContent/helpers/treeHelpers.tsx:81
-#: frontend/src/pages/FlowHistories/ui/FlowLogs.tsx:62
+#: frontend/src/pages/FlowHistories/ui/FlowLogs.tsx:63
 msgid "Tools"
 msgstr ""
 
@@ -914,30 +924,30 @@ msgstr ""
 msgid "No apps or tools found"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:26
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:33
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:28
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:36
 msgid "Router"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:34
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:23
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:36
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:25
 msgid "Condition"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:42
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:27
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:44
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:30
 #: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:28
 msgid "Delay"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:51
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:29
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:53
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:32
 #: frontend/src/components/features/NodeDetails/internals/IteratorConfig/IteratorConfig.tsx:34
 msgid "Iterator"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:60
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:32
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:62
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:35
 msgid "Repeater/Loop"
 msgstr ""
 
@@ -1014,8 +1024,8 @@ msgid "No Condition Matched"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/ConditionItem/ConditionItem.tsx:127
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:142
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:96
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:128
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:91
 #: frontend/src/pages/Connections/ui/Connections.tsx:56
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppActions.tsx:34
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppModules.tsx:47
@@ -1063,8 +1073,8 @@ msgid "Are you sure to delete this app?"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/ConditionItem/ConditionItem.tsx:130
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:150
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:99
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:136
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:94
 #: frontend/src/pages/Connections/ui/Connections.tsx:60
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppActions.tsx:36
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppModules.tsx:49
@@ -1321,7 +1331,7 @@ msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/FlowSettingsMenu/internals/DropdownExportLabel.tsx:32
 #: frontend/src/components/features/FlowBuilder/internals/FlowSettingsMenu/internals/DropdownImportLabel.tsx:24
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:79
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:75
 #: frontend/src/components/features/FlowBuilder/internals/Tool/Tool.tsx:50
 #: frontend/src/components/features/NodeDetails/internals/AppHeaderPopoverContent/appHeaderPopoverUtils.tsx:120
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppActions.tsx:55
@@ -1357,20 +1367,20 @@ msgstr ""
 msgid "Only supports Bit Flows exported JSON file with .json extension"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeContent/NodeContent.tsx:34
+#: frontend/src/components/features/FlowBuilder/internals/NodeContent/NodeContent.tsx:33
 msgid "Flow App Item"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeContent/NodeContent.tsx:54
-#: frontend/src/components/features/FlowBuilder/internals/NodeContent/NodeContent.tsx:63
+#: frontend/src/components/features/FlowBuilder/internals/NodeContent/NodeContent.tsx:53
+#: frontend/src/components/features/FlowBuilder/internals/NodeContent/NodeContent.tsx:62
 msgid "Select an app"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:110
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:102
 msgid "Unlink"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:110
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:102
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:122
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:175
 #: frontend/src/components/utilities/ContextMenu/ContextMenu.stories.tsx:52
@@ -1384,16 +1394,16 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:125
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:110
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:152
 msgid "Edit"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:135
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:123
 msgid "Clone (Planned)"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:143
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:129
 msgid "Are you sure %s this %s?"
 msgstr ""
 
@@ -1403,6 +1413,10 @@ msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/ConditionNode/ConditionNodeContent.tsx:113
 msgid "Add more condition"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/Csv/CsvNodeContent.tsx:22
+msgid "CSV Tool"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/Delay/DelayNodeContent.tsx:41
@@ -1419,50 +1433,63 @@ msgstr ""
 msgid "Json Parser Node"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:22
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:24
 #: frontend/src/pages/CustomApps/internals/AddModuleModal/AddModuleModal.tsx:61
 msgid "Action"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:24
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:26
 msgid "Condition Logic"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:25
-msgid "Custom Code"
-msgstr ""
-
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:26
-msgid "Default Condition Logic"
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:27
+msgid "CSV"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:28
-msgid "Email Parser"
+msgid "Custom Code"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:30
-msgid "Json Parser"
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:29
+msgid "Default Condition Logic"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:31
-msgid "PDF Parser"
+msgid "Email Parser"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:33
+msgid "Json Parser"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:34
+msgid "PDF Parser"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:37
 #: frontend/src/pages/CustomApps/internals/AddModuleModal/AddModuleModal.tsx:64
 msgid "Trigger"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:76
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:38
+#: frontend/src/components/features/NodeDetails/internals/XmlConfig/XmlConfig.tsx:42
+msgid "XML"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:72
 msgid "This tool is available with the pro plan. Flow will not work with this node!"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:97
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:92
 msgid "Are you sure to delete this"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:101
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:96
 msgid "Delete the %s"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/Xml/XmlNodeContent.tsx:22
+msgid "XML Node"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/Tool/Tool.tsx:59
@@ -1519,6 +1546,8 @@ msgstr ""
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:18
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:43
 #: frontend/src/services/machines/woodpecker/helpers/woodpeckerProspectFields.ts:13
+#: frontend/src/services/machines/wordPress/addNewImage.wordPress.machine.pro.ts:25
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:499
 msgid "Title"
 msgstr ""
 
@@ -1629,8 +1658,9 @@ msgstr ""
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:11
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:37
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:62
-#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:27
+#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:38
 #: frontend/src/services/machines/woodpecker/helpers/woodpeckerProspectFields.ts:5
+#: frontend/src/services/machines/wordPress/helpers/wpUserFields.ts:8
 msgid "First Name"
 msgstr ""
 
@@ -1647,8 +1677,9 @@ msgstr ""
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:13
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:38
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:63
-#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:34
+#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:45
 #: frontend/src/services/machines/woodpecker/helpers/woodpeckerProspectFields.ts:6
+#: frontend/src/services/machines/wordPress/helpers/wpUserFields.ts:9
 msgid "Last Name"
 msgstr ""
 
@@ -1671,7 +1702,7 @@ msgstr ""
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:10
 #: frontend/src/services/machines/hubSpot/addContactsToList.hubSpot.machine.free.ts:38
 #: frontend/src/services/machines/hubSpot/removeContactFromList.hubSpot.machine.free.ts:38
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:75
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:76
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.free.ts:68
 #: frontend/src/services/machines/mailBluster/helpers/machineHelper.mailBluster.ts:11
 #: frontend/src/services/machines/mailerLite/helpers/machineHelper.mailerLite.ts:28
@@ -1682,8 +1713,9 @@ msgstr ""
 #: frontend/src/services/machines/rapidMail/createContact.rapidMail.machine.free.ts:80
 #: frontend/src/services/machines/selzy/helpers/machineHelper.selzy.ts:103
 #: frontend/src/services/machines/stripe/retrieveCustomer.stripe.machine.pro.ts:22
-#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:20
+#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:31
 #: frontend/src/services/machines/woodpecker/helpers/woodpeckerProspectFields.ts:4
+#: frontend/src/services/machines/wordPress/helpers/wpUserFields.ts:4
 msgid "Email"
 msgstr ""
 
@@ -1841,28 +1873,28 @@ msgstr ""
 #: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/customAppsTrigger.static.ts:14
 #: frontend/src/services/machines/commonMachines/createWebhook.machine.ts:15
 #: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:64
-#: frontend/src/services/machines/line/watchEvents.line.machine.pro.ts:18
+#: frontend/src/services/machines/line/watchEvents.line.machine.pro.ts:19
 #: frontend/src/services/machines/stripe/webhookAutomation.stripe.machine.pro.ts:42
 msgid "Webhook"
 msgstr ""
 
-#: frontend/src/components/features/NodeDetails/internals/AppHeader/AppHeader.tsx:47
+#: frontend/src/components/features/NodeDetails/internals/AppHeader/AppHeader.tsx:56
 msgid "Select App & Action"
 msgstr ""
 
-#: frontend/src/components/features/NodeDetails/internals/AppHeader/AppHeader.tsx:51
+#: frontend/src/components/features/NodeDetails/internals/AppHeader/AppHeader.tsx:60
 msgid "Close Popup"
 msgstr ""
 
-#: frontend/src/components/features/NodeDetails/internals/AppHeader/AppHeader.tsx:62
+#: frontend/src/components/features/NodeDetails/internals/AppHeader/AppHeader.tsx:71
 msgid "Open App & Action Popup"
 msgstr ""
 
-#: frontend/src/components/features/NodeDetails/internals/AppHeader/AppHeader.tsx:78
+#: frontend/src/components/features/NodeDetails/internals/AppHeader/AppHeader.tsx:87
 msgid "Select App"
 msgstr ""
 
-#: frontend/src/components/features/NodeDetails/internals/AppHeader/AppHeader.tsx:81
+#: frontend/src/components/features/NodeDetails/internals/AppHeader/AppHeader.tsx:90
 msgid "Select %s"
 msgstr ""
 
@@ -1902,6 +1934,14 @@ msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/AppHeaderPopoverContent/appHeaderPopoverUtils.tsx:125
 msgid "Coming Soon"
+msgstr ""
+
+#: frontend/src/components/features/NodeDetails/internals/CsvConfig/CsvConfig.tsx:31
+msgid "CSV Source"
+msgstr ""
+
+#: frontend/src/components/features/NodeDetails/internals/CsvConfig/CsvConfig.tsx:47
+msgid "CSV contains headers"
 msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:36
@@ -1996,6 +2036,26 @@ msgstr ""
 msgid "Test Run"
 msgstr ""
 
+#: frontend/src/components/features/NodeDetails/internals/XmlConfig/XmlConfig.tsx:31
+msgid "XML Mode"
+msgstr ""
+
+#: frontend/src/components/features/NodeDetails/internals/XmlConfig/XmlConfig.tsx:34
+msgid "Parse XML"
+msgstr ""
+
+#: frontend/src/components/features/NodeDetails/internals/XmlConfig/XmlConfig.tsx:35
+msgid "Perform XPath Query"
+msgstr ""
+
+#: frontend/src/components/features/NodeDetails/internals/XmlConfig/XmlConfig.tsx:50
+msgid "Query to extract data from XML using XPath syntax. Example: /root/element."
+msgstr ""
+
+#: frontend/src/components/features/NodeDetails/internals/XmlConfig/XmlConfig.tsx:51
+msgid "XPath Query"
+msgstr ""
+
 #: frontend/src/components/features/NodeDetails/NodeDetailsModalActions.tsx:31
 msgid "Open in modal"
 msgstr ""
@@ -2021,15 +2081,15 @@ msgstr ""
 msgid "Webhook name"
 msgstr ""
 
-#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:97
+#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:98
 msgid "Create a webhook"
 msgstr ""
 
-#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:110
+#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:111
 msgid "Add new webhook"
 msgstr ""
 
-#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:111
+#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:112
 msgid "Add Webhook"
 msgstr ""
 
@@ -2295,6 +2355,13 @@ msgstr ""
 #: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:32
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:52
 #: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:32
+#: frontend/src/services/machines/wordPress/addNewImage.wordPress.machine.pro.ts:52
+#: frontend/src/services/machines/wordPress/createNewTerm.wordPress.machine.pro.ts:46
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:346
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:406
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:127
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:105
+#: frontend/src/services/machines/wordPress/updateTerm.wordPress.machine.pro.ts:56
 msgid "Description"
 msgstr ""
 
@@ -2353,7 +2420,7 @@ msgid "Text"
 msgstr ""
 
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/BodyAndQueryParamFields.tsx:33
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:85
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:86
 #: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:64
 msgid "Number"
 msgstr ""
@@ -2380,7 +2447,8 @@ msgstr ""
 
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionHeaders.tsx:114
 #: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:98
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:55
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:56
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:29
 msgid "Label"
 msgstr ""
 
@@ -2592,15 +2660,15 @@ msgstr ""
 msgid "Logs"
 msgstr ""
 
-#: frontend/src/pages/FlowHistories/ui/FlowLogs.tsx:57
+#: frontend/src/pages/FlowHistories/ui/FlowLogs.tsx:58
 msgid "%s (Tools)"
 msgstr ""
 
-#: frontend/src/pages/FlowHistories/ui/FlowLogs.tsx:99
+#: frontend/src/pages/FlowHistories/ui/FlowLogs.tsx:100
 msgid "Duration: %s's"
 msgstr ""
 
-#: frontend/src/pages/FlowHistories/ui/FlowLogs.tsx:104
+#: frontend/src/pages/FlowHistories/ui/FlowLogs.tsx:105
 msgid "Size: %s KB"
 msgstr ""
 
@@ -3515,6 +3583,10 @@ msgstr ""
 #: frontend/src/services/machines/woodpecker/addProspect.woodpecker.machine.free.ts:51
 #: frontend/src/services/machines/woodpecker/addProspectToCampaign.woodpecker.machine.free.ts:64
 #: frontend/src/services/machines/woodpecker/updateProspect.woodpecker.machine.free.ts:76
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:49
+#: frontend/src/services/machines/wordPress/getTermByField.wordPress.machine.pro.ts:16
+#: frontend/src/services/machines/wordPress/getUserByField.wordPress.machine.pro.ts:16
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:30
 msgid "Field"
 msgstr ""
 
@@ -3908,6 +3980,7 @@ msgstr ""
 #: frontend/src/services/machines/openAi/helpers/openAiCommonFields.ts:27
 #: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:48
 #: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:19
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:36
 msgid "User"
 msgstr ""
 
@@ -4113,6 +4186,7 @@ msgstr ""
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:69
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:87
 #: frontend/src/services/machines/woodpecker/helpers/woodpeckerProspectFields.ts:10
+#: frontend/src/services/machines/wordPress/helpers/wpUserFields.ts:10
 msgid "Website"
 msgstr ""
 
@@ -4301,7 +4375,7 @@ msgstr ""
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:130
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:65
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:14
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:77
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:78
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:133
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:52
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:82
@@ -4502,7 +4576,7 @@ msgid "Add Column"
 msgstr ""
 
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.free.ts:87
-msgid "Elastic Mail Field"
+msgid "Elastic Email Field"
 msgstr ""
 
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.free.ts:91
@@ -4557,6 +4631,8 @@ msgstr ""
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:67
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:113
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:61
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:66
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:47
 msgid "Field Map"
 msgstr ""
 
@@ -5139,7 +5215,7 @@ msgid "Choose from pre-existing tags or add new tags by writing and pressing Ent
 msgstr ""
 
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:13
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:74
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:75
 msgid "Full Name"
 msgstr ""
 
@@ -6470,72 +6546,76 @@ msgstr ""
 msgid "Form"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:62
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:63
+#: frontend/src/services/machines/wordPress/createNewTerm.wordPress.machine.pro.ts:37
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:337
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:397
+#: frontend/src/services/machines/wordPress/updateTerm.wordPress.machine.pro.ts:47
 msgid "Slug"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:70
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:71
 #: frontend/src/services/machines/openAi/createModeration.openAi.machine.pro.ts:61
 #: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:42
 msgid "Type"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:76
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:77
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:63
 #: frontend/src/services/machines/woodpecker/helpers/woodpeckerProspectFields.ts:15
 msgid "Address"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:78
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:79
 msgid "Date Picker"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:79
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:80
 msgid "Signature"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:80
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:81
 msgid "Short Text"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:81
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:82
 msgid "Long Text"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:82
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:83
 msgid "Dropdown"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:83
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:84
 msgid "Single Choice"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:84
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:85
 msgid "Multiple Choice"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:86
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:87
 #: frontend/src/services/machines/openAi/createModeration.openAi.machine.pro.ts:38
 msgid "Image"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:87
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:88
 msgid "File Upload"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:88
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:89
 msgid "Time"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:89
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:90
 msgid "Captcha"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:90
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:91
 msgid "Spinner"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:91
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:92
 msgid "Submit"
 msgstr ""
 
@@ -6543,15 +6623,15 @@ msgstr ""
 msgid "Order"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:108
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:107
 msgid "Question #{COUNT}"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:110
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:109
 msgid "Questions"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:119
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:118
 msgid "Form Height"
 msgstr ""
 
@@ -6567,10 +6647,12 @@ msgstr ""
 #: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:87
 #: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:65
 #: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:87
+#: frontend/src/services/machines/line/watchEvents.line.machine.pro.ts:30
 #: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:146
 #: frontend/src/services/machines/stripe/retrieveBalance.stripe.machine.pro.ts:22
 #: frontend/src/services/machines/stripe/retrievePrice.stripe.machine.pro.ts:22
 #: frontend/src/services/machines/stripe/webhookAutomation.stripe.machine.pro.ts:53
+#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:18
 msgid "Note"
 msgstr ""
 
@@ -7370,6 +7452,16 @@ msgid "Enter the user-id to retrive the user"
 msgstr ""
 
 #: frontend/src/services/machines/notion/getUser.notion.machine.pro.ts:19
+#: frontend/src/services/machines/wordPress/deleteExitingUser.wordPress.machine.pro.ts:16
+#: frontend/src/services/machines/wordPress/getUserById.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/getUserCapabilities.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/getUserComments.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/getUserMetadata.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/getUserMetadataByMetaKey.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:81
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:123
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:17
+#: frontend/src/services/machines/wordPress/updateUserMetadata.wordPress.machine.pro.ts:15
 msgid "User Id"
 msgstr ""
 
@@ -7513,6 +7605,8 @@ msgid "Origin"
 msgstr ""
 
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:168
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:273
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:376
 msgid "ID"
 msgstr ""
 
@@ -9187,6 +9281,7 @@ msgstr ""
 
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:14
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:39
+#: frontend/src/services/machines/wordPress/helpers/wpUserFields.ts:7
 msgid "Display Name"
 msgstr ""
 
@@ -9261,14 +9356,19 @@ msgstr ""
 
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:65
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:83
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:386
 msgid "Category Name"
 msgstr ""
 
-#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:41
+#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:52
 msgid "Audiences ID"
 msgstr ""
 
-#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:48
+#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:60
+msgid "Subscriber #{COUNT}"
+msgstr ""
+
+#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:62
 msgid "Subscribe"
 msgstr ""
 
@@ -9753,6 +9853,10 @@ msgstr ""
 msgid "Closed Date"
 msgstr ""
 
+#: frontend/src/services/machines/tidio/_tidioMachines.ts:38
+msgid "Contact Sent From Bot"
+msgstr ""
+
 #: frontend/src/services/machines/tutorLms/_tutorLmsMachines.ts:31
 msgid "Attempted (submitted) a quiz"
 msgstr ""
@@ -9806,7 +9910,7 @@ msgid "Post Submitted"
 msgstr ""
 
 #: frontend/src/services/machines/voxel/_voxelMachines.ts:77
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:678
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1440
 msgid "Post Updated"
 msgstr ""
 
@@ -10369,1262 +10473,1718 @@ msgstr ""
 msgid "Select where to add prospects"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:17
-msgid "On Post Status Update"
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:18
+msgid "Create New User"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:21
-msgid "**When Trigger**: After post status change"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:22
-msgid "*Fires after a post status is updated.*"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:24
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:38
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:50
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:62
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:81
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:94
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:109
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:124
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:139
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:153
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:166
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:181
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:196
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:211
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:226
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:241
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:255
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:267
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:279
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:292
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:307
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:322
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:337
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:351
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:363
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:375
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:387
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:400
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:414
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:427
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:442
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:456
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:468
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:480
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:492
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:505
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:520
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:534
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:547
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:562
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:576
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:588
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:600
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:612
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:625
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:640
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:655
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:670
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:684
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:697
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:712
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:726
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:739
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:753
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:766
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:780
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:792
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:805
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:820
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:835
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:850
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:864
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:876
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:888
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:903
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:918
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:932
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:945
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:960
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:975
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:989
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1002
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1017
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1031
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1044
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1059
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1074
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1089
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1105
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1122
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1138
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1154
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1170
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1185
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1200
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1214
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1227
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1241
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1256
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1270
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1284
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1300
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1315
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1330
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1345
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1359
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1371
-msgid "[Learn More](%s)"
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:25
+msgid "Update User"
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/_wordPressMachines.ts:32
-msgid "User Added to a Role"
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1170
+msgid "Delete User"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:36
-msgid "**When Trigger**: When a role is added to a user."
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:37
-msgid "*Used to perform actions when a user is assigned a new role.*"
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:41
+msgid "Get All Users"
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/_wordPressMachines.ts:44
-msgid "Post Moved to Trash"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:48
-msgid "**When Trigger**: After post is moved to trash"
+msgid "Want to see your users? Just hit **Test Run** to fetch them."
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/_wordPressMachines.ts:49
-msgid "*Fires after a post is moved to the trash.*"
+msgid "Get All Users by Role"
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/_wordPressMachines.ts:56
-msgid "Post Deleted"
+msgid "Get User by Id"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:60
-msgid "**When Trigger**: After post is deleted"
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:63
+msgid "Get User by Email"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:61
-msgid "*Fires after a post is deleted.*"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:68
-msgid "Add Action"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:75
-msgid "Do Action"
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:70
+msgid "Get User by Field"
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/_wordPressMachines.ts:79
-msgid "**When Trigger**: Custom action"
+msgid "Get User Metadata (All)"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:80
-msgid "*Perform custom action.*"
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:86
+msgid "Get User Metadata (Single)"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:87
-msgid "Revision Creation"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:91
-msgid "**When Trigger**: During revision save"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:92
-msgid "*Process post revision creation.*"
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:93
+msgid "Update User Metadata"
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/_wordPressMachines.ts:102
+msgid "Create Role"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:109
+msgid "Delete Role"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:116
+msgid "Add User Role"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:123
+msgid "Remove User Role"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:130
+msgid "Update User Role"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:133
+msgid "Previous roles have been replaced with the first role"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:138
+msgid "Get All Roles"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:141
+msgid "Want to see all roles? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:148
+msgid "Get All Capabilities"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:151
+msgid "Want to see all capabilities? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:156
+msgid "Get Role Capabilities"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:163
+msgid "Add Role Capabilities"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:170
+msgid "Remove Role Capabilities"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:177
+msgid "Get User Capabilities"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:184
+msgid "Add User Capabilities"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:191
+msgid "Remove User Capabilities"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:200
+msgid "Create New Post"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:207
+msgid "Update Post"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:214
+msgid "Update Post Status"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:221
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1119
+msgid "Delete Post"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:228
+msgid "Get Post (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:231
+msgid "Want to see all posts? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:236
+msgid "Get Post (Single)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:243
+msgid "Get Posts By Post Type"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:250
+msgid "Get Posts by Metadata"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:257
+msgid "Get Post Metadata (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:264
+msgid "Get Post Metadata (Single)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:271
+msgid "Get Post Permalink"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:278
+msgid "Get Post Content"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:285
+msgid "Get Post Excerpt"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:292
+msgid "Get Post Status"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:301
+msgid "Get Post Comments (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:304
+msgid "Want to see post Comments? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:309
+msgid "Get Post Comments (Single Post)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:316
+msgid "Get User Comments"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:323
+msgid "Get User Comments (By Email)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:330
+msgid "Get Comment Metadata (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:337
+msgid "Get Comment Metadata (Single)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:344
+msgid "Create New Comment"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:351
+msgid "Reply To Comment"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:358
+msgid "Delete Comment"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:367
+msgid "Get Post Type (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:370
+msgid "Want to see all post types? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:375
+msgid "Get Post Type (Single Post)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:382
+msgid "Register Post Type"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:389
+msgid "Unregister Post Type"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:396
+msgid "Add Post Type Features (Support)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:405
+msgid "Create Post Tag"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:412
+msgid "Update Post Tag"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:419
+msgid "Delete Post Tag"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:426
+msgid "Add Tags to Post"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:433
+msgid "Remove Tags From Post"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:440
+msgid "Get Post Tag (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:443
+msgid "Want to see your tags? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:448
+msgid "Get Post Tag (Single)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:457
+msgid "Add New Image To Media Library"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:464
+msgid "Delete Media From Media Library"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:471
+msgid "Rename Media"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:478
+msgid "Get Media (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:481
+msgid "Want to see your Medias? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:486
+msgid "Get Media (By Title)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:493
+msgid "Get Media (By Id)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:502
+msgid "Get Term (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:505
+msgid "Want to see your Terms? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:510
+msgid "Get Term (Single)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:517
+msgid "Get Term by Taxonomy"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:524
+msgid "Get Term by Field"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:531
+msgid "Create New Term"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:538
+msgid "Update Term"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:545
+msgid "Delete Term"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:554
+msgid "Register Taxonomy"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:561
+msgid "Unregister Taxonomy"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:568
+msgid "Get Taxonomy (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:571
+msgid "Want to see your Taxonomies? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:576
+msgid "Get Taxonomy (Single)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:583
+msgid "Add Taxonomy to Post"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:590
+msgid "Remove Taxonomy From Post"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:599
+msgid "Create Category"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:606
+msgid "Update Category"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:613
+msgid "Delete Category"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:620
+msgid "Add Category To Post"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:627
+msgid "Get Category (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:630
+msgid "Want to see Categories? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:635
+msgid "Get Category (Single)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:644
+msgid "Create Product Tag"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:651
+msgid "Update Product Tag"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:658
+msgid "Delete Product Tag"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:665
+msgid "Get Product Tag (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:672
+msgid "Get Product Tag (Single)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:681
+msgid "Create Product Category"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:688
+msgid "Update Product Category"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:695
+msgid "Delete Product Category"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:702
+msgid "Get Product Category (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:709
+msgid "Get Product Category (Single)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:718
+msgid "Create Product Type"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:725
+msgid "Update Product Type"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:732
+msgid "Delete Product Type"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:739
+msgid "Get Product Type (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:746
+msgid "Get Product Type (Single)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:755
+msgid "Check Plugin Activation Status"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:759
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:770
+msgid "You can find the plugin file name in the"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:760
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:771
+msgid "[Plugin File Editor](%s)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:766
+msgid "Activate Plugin"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:779
+msgid "On Post Status Update"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:783
+msgid "**When Trigger**: After post status change"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:784
+msgid "*Fires after a post status is updated.*"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:786
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:800
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:812
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:824
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:843
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:856
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:871
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:886
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:901
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:915
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:928
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:943
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:958
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:973
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:988
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1003
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1017
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1029
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1041
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1054
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1069
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1084
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1099
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1113
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1125
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1137
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1149
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1162
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1176
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1189
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1204
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1218
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1230
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1242
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1254
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1267
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1282
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1296
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1309
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1324
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1338
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1350
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1362
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1374
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1387
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1402
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1417
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1432
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1446
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1459
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1474
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1488
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1501
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1515
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1528
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1542
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1554
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1567
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1582
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1597
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1612
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1626
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1638
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1650
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1665
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1680
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1694
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1707
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1722
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1737
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1751
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1764
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1779
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1793
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1806
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1821
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1836
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1851
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1867
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1884
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1900
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1916
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1932
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1947
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1962
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1976
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1989
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2003
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2018
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2032
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2046
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2062
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2077
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2092
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2107
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2121
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2133
+msgid "[Learn More](%s)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:794
+msgid "User Added to a Role"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:798
+msgid "**When Trigger**: When a role is added to a user."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:799
+msgid "*Used to perform actions when a user is assigned a new role.*"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:806
+msgid "Post Moved to Trash"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:810
+msgid "**When Trigger**: After post is moved to trash"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:811
+msgid "*Fires after a post is moved to the trash.*"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:818
+msgid "Post Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:822
+msgid "**When Trigger**: After post is deleted"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:823
+msgid "*Fires after a post is deleted.*"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:830
+msgid "Add Action"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:837
+msgid "Do Action"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:841
+msgid "**When Trigger**: Custom action"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:842
+msgid "*Perform custom action.*"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:849
+msgid "Revision Creation"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:853
+msgid "**When Trigger**: During revision save"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:854
+msgid "*Process post revision creation.*"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:864
 msgid "Plugin Activation"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:106
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:868
 msgid "**When Trigger**: After plugin is activated"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:107
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:869
 msgid "*Fires after a plugin has been activated.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:117
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:879
 msgid "Add Attachment"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:121
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:883
 msgid "**When Trigger**: When an attachment (media file) is added to the database."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:122
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:884
 msgid ""
 "*Used to perform actions (e.g., generating thumbnails) when a media file is "
 "uploaded.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:132
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:894
 msgid "Meta Box Setup"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:136
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:898
 msgid "**When Trigger**: During post load"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:137
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:899
 msgid "*Register meta boxes for post types.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:147
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:909
 msgid "Option Addition"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:151
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:913
 msgid "**When Trigger**: After option added"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:152
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:914
 msgid "*Fires after new option is added.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:159
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:921
 msgid "Admin Post Action"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:163
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:925
 msgid "**When Trigger**: Custom admin action"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:164
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:926
 msgid "*Handle custom admin page form submissions.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:174
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:936
 msgid "After Password Reset"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:178
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:652
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:940
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1414
 msgid "**When Trigger**: After password reset"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:179
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:941
 msgid "*Handle completed password reset.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:189
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:951
 msgid "Attachment Edit"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:193
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:955
 msgid "**When Trigger**: During media edit"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:194
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:956
 msgid "*Modify attachment edit form fields.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:204
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:966
 msgid "Attachment Save"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:208
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:970
 msgid "**When Trigger**: During media save"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:209
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:971
 msgid "*Process attachment metadata save.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:219
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:981
 msgid "Attachment Updated"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:223
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:985
 msgid "**When Trigger**: After attachment update"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:224
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:986
 msgid "*Process attachment updates.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:234
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:996
 msgid "Before Delete Post"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:238
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1000
 msgid "**When Trigger**: Before a post is permanently deleted."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:239
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1001
 msgid "*Used to perform actions (e.g., cleanup) before a post is deleted.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:249
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1011
 msgid "Comment Post"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:253
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1015
 msgid "**When Trigger**: When a comment is posted."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:254
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1016
 msgid "*Used to perform actions (e.g., notifications) when a comment is submitted.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:261
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1023
 msgid "Term Creation"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:265
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1027
 msgid "**When Trigger**: After term is created"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:266
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1028
 msgid "*Fires after a new term is created.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:273
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1035
 msgid "Term Created"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:277
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1039
 msgid "**When Trigger**: After term creation"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:278
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1040
 msgid "*Process new term creation.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:285
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1047
 msgid "Customizer Registration"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:289
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1051
 msgid "**When Trigger**: During customizer setup"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:290
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1052
 msgid "*Used to register Customizer controls, settings, and panels.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:300
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1062
 msgid "Plugin Deactivation"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:304
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1066
 msgid "**When Trigger**: After plugin is deactivated"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:305
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1067
 msgid "*Fires after a plugin has been deactivated.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:315
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1077
 msgid "Media Deletion"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:319
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1081
 msgid "**When Trigger**: Before media is deleted"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:320
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1082
 msgid "*Fires before an attachment is deleted.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:330
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1092
 msgid "Comment Deletion"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:334
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1096
 msgid "**When Trigger**: Before comment is deleted"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:335
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1097
 msgid "*Fires immediately before a comment is deleted.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:345
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1107
 msgid "Option Deletion"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:349
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1111
 msgid "**When Trigger**: When option is deleted"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:350
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1112
 msgid "*Fires after an option has been deleted.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:357
-msgid "Delete Post"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:361
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1123
 msgid "**When Trigger**: During post deletion"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:362
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1124
 msgid "*Process post deletion.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:369
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1131
 msgid "Site Deletion"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:373
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1135
 msgid "**When Trigger**: Before site is deleted"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:374
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1136
 msgid "*Fires before a site is deleted in multisite.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:381
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1143
 msgid "Term Deletion"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:385
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1147
 msgid "**When Trigger**: After term is deleted"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:386
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1148
 msgid "*Fires after a term has been deleted.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:393
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1155
 msgid "Delete Term Taxonomy"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:397
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1159
 msgid "**When Trigger**: During term deletion"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:398
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1160
 msgid "*Handle taxonomy term deletion.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:408
-msgid "Delete User"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:412
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1135
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1342
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1174
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1897
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2104
 msgid "**When Trigger**: During user deletion"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:413
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1175
 msgid "*Handle user deletion process.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:420
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1182
 msgid "Post Option Delete"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:424
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1186
 msgid "**When Trigger**: After option deleted"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:425
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1187
 msgid "*Fires after option is deleted.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:435
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1197
 msgid "Media Edit"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:439
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1201
 msgid "**When Trigger**: After media is edited"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:440
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1202
 msgid "*Fires when an attachment is updated.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:450
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1212
 msgid "Edit Comment"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:454
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1216
 msgid "**When Trigger**: During comment edit"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:455
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1217
 msgid "*Process comment edits.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:462
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1224
 msgid "Term Update"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:466
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1228
 msgid "**When Trigger**: After term is updated"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:467
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1229
 msgid "*Fires after a term has been updated.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:474
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1236
 msgid "Term Edit"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:478
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1240
 msgid "**When Trigger**: During term edit"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:479
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:533
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1241
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1295
 msgid "*Process term edits.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:486
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1248
 msgid "Edit User"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:490
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1252
 msgid "**When Trigger**: During user edit"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:491
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1253
 msgid "*Process user profile edits.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:498
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1260
 msgid "User Profile Edit"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:502
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1264
 msgid "**When Trigger**: During profile editing"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:503
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1265
 msgid "*Add custom fields to user profile edit screen.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:513
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:705
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1275
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1467
 msgid "Profile Update"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:517
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1279
 msgid "**When Trigger**: After profile saved"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:518
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1280
 msgid "*Fires after user profile is updated by admin.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:528
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1290
 msgid "Term Edited"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:532
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1294
 msgid "**When Trigger**: After term edit"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:540
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1302
 msgid "Rewrite Rules"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:544
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1306
 msgid "**When Trigger**: When permalink rules update"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:545
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1307
 msgid "*Fires when rewrite rules are generated.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:555
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1317
 msgid "Image Sizes"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:559
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1321
 msgid "**When Trigger**: During image insertion"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:560
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1322
 msgid "*Modify available image sizes.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:570
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1332
 msgid "Login Footer"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:574
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1336
 msgid "**When Trigger**: During login page footer"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:575
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1337
 msgid "*Add content to login page footer.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:582
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1344
 msgid "Login Form"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:586
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1348
 msgid "**When Trigger**: During login form display"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:587
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1349
 msgid "*Add content to the login form.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:594
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1356
 msgid "Login Head"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:598
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1360
 msgid "**When Trigger**: During login page header"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:599
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1361
 msgid "*Add content to login page header.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:606
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1368
 msgid "Login Initialization"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:610
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1372
 msgid "**When Trigger**: During login page load"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:611
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1373
 msgid "*Initialize login page functionality.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:618
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1380
 msgid "Lost Password Form"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:622
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1384
 msgid "**When Trigger**: During password reset form"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:623
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1385
 msgid "*Add content to password reset form.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:633
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1395
 msgid "Media Tabs"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:637
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1399
 msgid "**When Trigger**: During media upload"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:638
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1400
 msgid "*Modify media upload tabs.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:648
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1410
 msgid "Password Reset"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:653
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1415
 msgid "*Fires after a users password has been reset.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:663
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1425
 msgid "Personal Options Update"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:667
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1429
 msgid "**When Trigger**: After profile options saved"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:668
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1430
 msgid "*Fires after personal options are updated for current user.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:682
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1444
 msgid "**When Trigger**: After post update"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:683
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1445
 msgid "*Handle completed post updates.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:690
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1452
 msgid "Pre-Approve Comment"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:694
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1456
 msgid "**When Trigger**: Before comment saved"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:695
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1457
 msgid "*Pre-process comment approval.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:709
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1471
 msgid "**When Trigger**: After user profile is updated"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:710
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1472
 msgid "*Triggered when user profile is updated.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:720
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1482
 msgid "Registration Form"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:724
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1486
 msgid "**When Trigger**: During registration form"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:725
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1487
 msgid "*Add fields to user registration form.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:732
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1494
 msgid "Remove Blog User"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:736
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1498
 msgid "**When Trigger**: During user removal"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:737
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1499
 msgid "*Handle user removal from blog.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:747
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1509
 msgid "REST API Init"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:751
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1513
 msgid "**When Trigger**: When REST API initializes"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:752
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1514
 msgid "*Register REST API endpoints and data.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:759
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1521
 msgid "Password Retrieval"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:763
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1525
 msgid "**When Trigger**: During password recovery"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:764
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1526
 msgid "*Fires when a password reset is requested.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:774
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1536
 msgid "Save Post"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:778
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1540
 msgid "**When Trigger**: When a post or page is created or updated."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:779
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1541
 msgid "*Used to perform actions (e.g., updating meta data) when a post is saved.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:786
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1548
 msgid "Set User Role"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:790
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1552
 msgid "**When Trigger**: During role change"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:791
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1553
 msgid "*Process user role changes.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:798
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1560
 msgid "User Profile Show"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:802
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1564
 msgid "**When Trigger**: During profile display"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:803
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1565
 msgid "*Add custom fields to users own profile screen.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:813
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1575
 msgid "Signup Blog Form"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:817
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1579
 msgid "**When Trigger**: During blog signup"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:818
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1580
 msgid "*Modify blog signup form.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:828
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1590
 msgid "Signup Extra Fields"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:832
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1594
 msgid "**When Trigger**: During signup form"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:833
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1595
 msgid "*Add extra signup form fields.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:843
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1605
 msgid "Signup Finished"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:847
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1609
 msgid "**When Trigger**: After signup complete"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:848
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1610
 msgid "*Handle completed user signup.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:858
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1620
 msgid "Signup Header"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:862
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1624
 msgid "**When Trigger**: During signup header"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:863
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1625
 msgid "*Modify signup page header.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:870
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1632
 msgid "Blog Switch"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:874
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1636
 msgid "**When Trigger**: When switching sites"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:875
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1637
 msgid "*Fires when switching between blogs in multisite.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:882
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1644
 msgid "Theme Switch"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:886
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1648
 msgid "**When Trigger**: When theme is changed"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:887
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1649
 msgid "*Fires after the theme is switched.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:894
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1656
 msgid "Transition Comment Status"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:898
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1660
 msgid ""
 "**When Trigger**: When a comment transitions from one status to another "
 "(e.g., approved to spam)."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:901
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1663
 msgid "*Used to perform actions when a comments status changes.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:911
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1673
 msgid "Trashed Comment"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:915
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1677
 msgid "**When Trigger**: When a comment is moved to the trash."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:916
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1678
 msgid "*Used to perform actions when a comment is trashed.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:926
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1688
 msgid "Untrash Post"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:930
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1692
 msgid "**When Trigger**: When a post is restored from the trash."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:931
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1693
 msgid "*Used to perform actions when a post is untrashed.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:938
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1700
 msgid "Untrashed Comment"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:942
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1704
 msgid "**When Trigger**: When a comment is restored from the trash."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:943
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1705
 msgid "*Used to perform actions when a comment is untrashed.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:953
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1715
 msgid "Update Blog Public"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:957
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1719
 msgid "**When Trigger**: During visibility change"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:958
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1720
 msgid "*Handle blog visibility changes.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:968
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1730
 msgid "Update Blog Status"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:972
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1734
 msgid "**When Trigger**: During status change"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:973
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1735
 msgid "*Process blog status changes.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:983
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1745
 msgid "Option Update"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:987
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1749
 msgid "**When Trigger**: When option is updated"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:988
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1750
 msgid "*Fires after an option has been updated.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:995
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1757
 msgid "Updated Option"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:999
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1761
 msgid "**When Trigger**: After an option is updated in the database."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1000
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1762
 msgid "*Used to perform actions (e.g., logging) after an option is updated.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1010
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1772
 msgid "Update Complete"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1014
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1776
 msgid "**When Trigger**: After updates finish"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1015
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1777
 msgid "*Fires after WordPress core, plugin, or theme update is complete.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1025
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1787
 msgid "User Register"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1029
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1791
 msgid "**When Trigger**: When a new user is registered."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1030
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1792
 msgid ""
 "*Used to perform actions (e.g., sending welcome emails) when a new user is "
 "registered.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1037
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1799
 msgid "Validate Reset"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1041
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1803
 msgid "**When Trigger**: During password reset"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1042
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1804
 msgid "*Validate password reset attempt.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1052
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1814
 msgid "WP After Insert Post"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1056
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1818
 msgid "**When Trigger**: After a post is inserted or updated in the database."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1057
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1819
 msgid "*Used to perform actions after a post is saved or updated.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1067
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1829
 msgid "WP Authenticate"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1071
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1833
 msgid "**When Trigger**: During user authentication."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1072
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1834
 msgid "*Used to modify or extend user authentication behavior.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1082
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1844
 msgid "Attachment Count"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1086
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1848
 msgid "**When Trigger**: During media count"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1087
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1849
 msgid "*Modify attachment counting results.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1097
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1859
 msgid "Create App Password"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1101
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1863
 msgid "**When Trigger**: During password creation"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1102
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1864
 msgid "*Handle application password creation.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1114
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1876
 msgid "Delete App Password"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1118
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1880
 msgid "**When Trigger**: During password deletion"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1119
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1881
 msgid "*Handle application password deletion.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1131
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1893
 msgid "WP Delete User"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1136
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1898
 msgid "*Process user deletion cleanup.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1146
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1908
 msgid "Generate Attachment Metadata"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1150
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1912
 msgid "**When Trigger**: When attachment metadata (e.g., image sizes) is generated."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1151
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1913
 msgid "*Used to modify or extend the metadata generated for media files.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1163
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1925
 msgid "WP Insert Comment"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1167
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1929
 msgid "**When Trigger**: When a comment is inserted into the database."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1168
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1930
 msgid "*Used to perform actions (e.g., notifications) when a comment is added.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1178
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1940
 msgid "WP Insert Post"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1182
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1944
 msgid "**When Trigger**: When a post is inserted into the database."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1183
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1945
 msgid ""
 "*Used to perform actions (e.g., updating meta data) when a post is created "
 "or updated.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1193
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1955
 msgid "Site Creation"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1197
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1959
 msgid "**When Trigger**: After multisite site created"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1198
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1960
 msgid "*Fires after a new site is created in multisite.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1208
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1970
 msgid "WP Login"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1212
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1974
 msgid "**When Trigger**: When a user logs in."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1213
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1975
 msgid "*Used to perform actions (e.g., logging) when a user logs in.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1220
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1982
 msgid "WP Login Failed"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1224
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1986
 msgid "**When Trigger**: When a user login attempt fails."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1225
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1987
 msgid "*Used to perform actions (e.g., logging) when a login attempt fails.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1235
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1997
 msgid "WP Logout"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1239
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2001
 msgid "**When Trigger**: When a user logs out."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1240
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2002
 msgid "*Used to perform actions (e.g., cleanup) when a user logs out.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1247
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2009
 msgid "WP Set Comment Status"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1251
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2013
 msgid "**When Trigger**: When a comment status is changed."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1252
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2014
 msgid ""
 "*Used to perform actions when a comments status is updated (e.g., approved, "
 "unapproved, spam).*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1264
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2026
 msgid "WP Trash Post"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1268
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2030
 msgid "**When Trigger**: When a post is moved to the trash."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1269
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2031
 msgid "*Used to perform actions (e.g., cleanup) when a post is trashed.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1276
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2038
 msgid "Update App Password"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1280
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2042
 msgid "**When Trigger**: During password update"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1281
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2043
 msgid "*Process application password updates.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1293
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2055
 msgid "Update Comment Count"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1297
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2059
 msgid "**When Trigger**: After comment count"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1298
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2060
 msgid "*Update post comment counts.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1308
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2070
 msgid "WP Update User"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1312
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2074
 msgid "**When Trigger**: When a users profile is updated."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1313
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2075
 msgid "*Used to perform actions (e.g., logging) when a users profile is updated.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1323
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2085
 msgid "Activate User"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1327
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2089
 msgid "**When Trigger**: During user activation"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1328
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2090
 msgid "*Process multisite user activation.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1338
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2100
 msgid "Delete Network User"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1343
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2105
 msgid "*Handle multisite user deletion.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1353
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2115
 msgid "New Blog"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1357
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2119
 msgid "**When Trigger**: After blog creation"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1358
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2120
 msgid "*Process new blog creation in multisite.*"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1365
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2127
 msgid "New Network User"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1369
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2131
 msgid "**When Trigger**: After user creation"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1370
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:2132
 msgid "*Process new multisite user.*"
 msgstr ""
 
@@ -11632,20 +12192,750 @@ msgstr ""
 msgid "Hook Name"
 msgstr ""
 
+#: frontend/src/services/machines/wordPress/addCategoryToPost.wordPress.machine.pro.ts:16
+#: frontend/src/services/machines/wordPress/addTagsToPost.wordPress.machine.pro.ts:16
+#: frontend/src/services/machines/wordPress/addTaxonomyToPost.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/createNewComment.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/getPostMetadataByMetaKey.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:438
+#: frontend/src/services/machines/wordPress/removeTagsFromPost.wordPress.machine.pro.ts:16
+#: frontend/src/services/machines/wordPress/removeTaxonomyFromPost.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/replyToComment.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:23
+#: frontend/src/services/machines/wordPress/updatePostStatus.wordPress.machine.pro.ts:15
+msgid "Post Id"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addCategoryToPost.wordPress.machine.pro.ts:27
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:80
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:88
+msgid "Post Category"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addCategoryToPost.wordPress.machine.pro.ts:33
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:86
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:94
+msgid "any post category"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addCategoryToPost.wordPress.machine.pro.ts:40
+msgid ""
+"If true, don't delete existing categories, just add on. If false, replace "
+"the categories with the new categories."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addCategoryToPost.wordPress.machine.pro.ts:44
+#: frontend/src/services/machines/wordPress/addTagsToPost.wordPress.machine.pro.ts:42
+#: frontend/src/services/machines/wordPress/addTaxonomyToPost.wordPress.machine.pro.ts:51
+msgid "Append"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addNewImage.wordPress.machine.pro.ts:15
+msgid "Image URL"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addNewImage.wordPress.machine.pro.ts:34
+msgid "Alternative Text"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addNewImage.wordPress.machine.pro.ts:43
+msgid "Caption"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addPostTypeFeatures.wordPress.machine.pro.ts:14
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:14
+msgid ""
+"Post type key. Must not exceed 20 characters and may only contain lowercase "
+"alphanumeric characters, dashes, and underscores."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addPostTypeFeatures.wordPress.machine.pro.ts:18
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:18
+msgid "Post Type Key"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addPostTypeFeatures.wordPress.machine.pro.ts:28
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:115
+msgid "Select Features (Supports)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addTagsToPost.wordPress.machine.pro.ts:26
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:93
+#: frontend/src/services/machines/wordPress/removeTagsFromPost.wordPress.machine.pro.ts:26
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:101
+msgid "Select Post tags"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addTagsToPost.wordPress.machine.pro.ts:38
+#: frontend/src/services/machines/wordPress/addTaxonomyToPost.wordPress.machine.pro.ts:47
+msgid ""
+"If true, don’t delete existing terms, just add on. If false, replace the "
+"terms with the new terms."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addTaxonomyToPost.wordPress.machine.pro.ts:25
+#: frontend/src/services/machines/wordPress/createNewTerm.wordPress.machine.pro.ts:26
+#: frontend/src/services/machines/wordPress/getTermByField.wordPress.machine.pro.ts:38
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:31
+#: frontend/src/services/machines/wordPress/removeTaxonomyFromPost.wordPress.machine.pro.ts:25
+#: frontend/src/services/machines/wordPress/updateTerm.wordPress.machine.pro.ts:36
+msgid "Taxonomy Name"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addTaxonomyToPost.wordPress.machine.pro.ts:34
+#: frontend/src/services/machines/wordPress/removeTaxonomyFromPost.wordPress.machine.pro.ts:34
+msgid ""
+"Provide one or more Taxonomy Terms as a comma-separated list or array. "
+"Accepted formats: wordpress, manage_options, read (string input) "
+"[\"wordpress\", \"manage_options\", \"read\"] (array input)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/addTaxonomyToPost.wordPress.machine.pro.ts:38
+#: frontend/src/services/machines/wordPress/removeTaxonomyFromPost.wordPress.machine.pro.ts:38
+msgid "Taxonomy Term"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewComment.wordPress.machine.pro.ts:25
+msgid "Comment"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewComment.wordPress.machine.pro.ts:35
+#: frontend/src/services/machines/wordPress/replyToComment.wordPress.machine.pro.ts:45
+msgid "Author Name"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewComment.wordPress.machine.pro.ts:45
+#: frontend/src/services/machines/wordPress/replyToComment.wordPress.machine.pro.ts:55
+msgid "Author Email Address"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewComment.wordPress.machine.pro.ts:54
+#: frontend/src/services/machines/wordPress/replyToComment.wordPress.machine.pro.ts:64
+msgid "Author Website URL"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:23
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:33
+msgid "Post Title"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:34
+#: frontend/src/services/machines/wordPress/getPostsByMetadata.wordPress.machine.pro.ts:18
+#: frontend/src/services/machines/wordPress/getPostsByPostType.wordPress.machine.pro.ts:18
+#: frontend/src/services/machines/wordPress/postStatusUpdated.wordPress.machine.pro.ts:17
+#: frontend/src/services/machines/wordPress/unregisterPostType.wordPress.machine.pro.ts:16
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:43
+msgid "Post Type"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:39
+#: frontend/src/services/machines/wordPress/getPostsByMetadata.wordPress.machine.pro.ts:24
+#: frontend/src/services/machines/wordPress/getPostsByPostType.wordPress.machine.pro.ts:24
+#: frontend/src/services/machines/wordPress/postStatusUpdated.wordPress.machine.pro.ts:23
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:48
+msgid "any post type"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:49
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:57
+#: frontend/src/services/machines/wordPress/updatePostStatus.wordPress.machine.pro.ts:26
+msgid "Post Status"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:53
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:61
+#: frontend/src/services/machines/wordPress/updatePostStatus.wordPress.machine.pro.ts:30
+msgid "Publish"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:54
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:62
+#: frontend/src/services/machines/wordPress/updatePostStatus.wordPress.machine.pro.ts:31
+msgid "Pending Preview"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:55
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:63
+#: frontend/src/services/machines/wordPress/updatePostStatus.wordPress.machine.pro.ts:32
+msgid "Draft"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:56
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:64
+#: frontend/src/services/machines/wordPress/updatePostStatus.wordPress.machine.pro.ts:33
+msgid "Private"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:58
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:67
+#: frontend/src/services/machines/wordPress/updatePostStatus.wordPress.machine.pro.ts:36
+msgid "any post status"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:67
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:75
+msgid "Post Author"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:72
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:80
+msgid "any post author"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:106
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:114
+msgid "Post Content"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:115
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:123
+msgid "Post Excerpt"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:124
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:132
+msgid "Post Date"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:133
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:141
+msgid "Post Date GMT"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:142
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:150
+msgid "Post Slug"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:150
+msgid "Provide the Id of the parent post if this is a child post."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:152
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:160
+msgid "Post Parent Id"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:160
+msgid "Only visible to those who know the password."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:162
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:169
+msgid "Post Password"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:171
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:178
+msgid "Post Featured Image URL"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:181
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:188
+msgid "Select Taxonomy"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:186
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:193
+msgid "any post Taxonomy"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:195
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:202
+msgid "Select Taxonomy Term"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:201
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:208
+msgid "any post Taxonomy Term"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:207
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:44
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:103
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:214
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:25
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:54
+#: frontend/src/services/machines/wordPress/updateUserMetadata.wordPress.machine.pro.ts:23
+msgid "Add Field"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.pro.ts:228
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:235
+msgid "Post Custom Field Map"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewTerm.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/updateTerm.wordPress.machine.pro.ts:25
+msgid "Term Name"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewTerm.wordPress.machine.pro.ts:24
+#: frontend/src/services/machines/wordPress/updateTerm.wordPress.machine.pro.ts:34
+msgid "The taxonomy to which to add the term. Example: Trigger Type, Flow Category."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewTerm.wordPress.machine.pro.ts:35
+#: frontend/src/services/machines/wordPress/updateTerm.wordPress.machine.pro.ts:45
+msgid "URL-friendly version of the term name."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:17
+#: frontend/src/services/machines/wordPress/getRoleCapabilities.wordPress.machine.pro.ts:16
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:133
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:96
+msgid "Select User Role"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:28
+msgid ""
+"Selecting this option will trigger a welcome email from WordPress upon user "
+"registration."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:32
+msgid "Select Email Notification"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:35
+msgid "Admin"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:37
+msgid "Both (Admin & User)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:77
+msgid "Generate Password Automatically"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:87
+msgid "Custom User Password"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:100
+msgid "Generate Password"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:108
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:59
+#: frontend/src/services/machines/wordPress/updateUserMetadata.wordPress.machine.pro.ts:28
+msgid "Meta Key"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:124
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:75
+#: frontend/src/services/machines/wordPress/updateUserMetadata.wordPress.machine.pro.ts:44
+msgid "User Meta Field Map"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:135
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:86
+msgid "Show User Meta Field Mapping"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createRole.wordPress.machine.pro.ts:14
+#: frontend/src/services/machines/wordPress/deleteRole.wordPress.machine.pro.ts:14
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:37
+msgid "Provide the unique role name. (Example: editor, subscriber)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createRole.wordPress.machine.pro.ts:16
+#: frontend/src/services/machines/wordPress/deleteRole.wordPress.machine.pro.ts:16
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:39
+msgid "Role Name"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createRole.wordPress.machine.pro.ts:25
+msgid "Provide the human readable name for the role. (Example: Editor, Subscriber)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createRole.wordPress.machine.pro.ts:27
+msgid "Role Display Name"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createRole.wordPress.machine.pro.ts:36
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:48
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:90
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:145
+msgid ""
+"Provide one or more user role capabilities as a comma-separated list or "
+"array. Accepted formats: edit_posts, manage_options, read (string input) "
+"[\"edit_posts\", \"manage_options\", \"read\"] (array input)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/createRole.wordPress.machine.pro.ts:40
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:52
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:94
+msgid "Role Capabilities"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/deleteExitingUser.wordPress.machine.pro.ts:26
+#: frontend/src/services/machines/wordPress/getUserByEmail.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/getUserCommentsByEmail.wordPress.machine.pro.ts:15
+msgid "User Email Address"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/deleteExitingUser.wordPress.machine.pro.ts:37
+msgid "Map Email"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/deleteExitingUser.wordPress.machine.pro.ts:45
+msgid "Re-Assign User"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/deleteExitingUser.wordPress.machine.pro.ts:56
+msgid "Re-Assign User Id"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/deleteExitingUser.wordPress.machine.pro.ts:66
+msgid "Map Custom User Id"
+msgstr ""
+
 #: frontend/src/services/machines/wordPress/doAction.wordPress.machine.pro.ts:14
 msgid "Use this code to trigger the action"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/postStatusUpdated.wordPress.machine.pro.ts:17
-msgid "Post Type"
+#: frontend/src/services/machines/wordPress/getAllUsersByRole.wordPress.machine.pro.ts:16
+msgid "Select User Roles"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/postStatusUpdated.wordPress.machine.pro.ts:23
-msgid "any post type"
+#: frontend/src/services/machines/wordPress/getAllUsersByRole.wordPress.machine.pro.ts:28
+#: frontend/src/services/machines/wordPress/getRoleCapabilities.wordPress.machine.pro.ts:28
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:149
+msgid "Custom User Role"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getAllUsersByRole.wordPress.machine.pro.ts:39
+#: frontend/src/services/machines/wordPress/getRoleCapabilities.wordPress.machine.pro.ts:39
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:160
+msgid "Map Custom User Role"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getCommentMetadata.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/getCommentMetadataByMetaKey.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/replyToComment.wordPress.machine.pro.ts:25
+msgid "Comment Id"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getCommentMetadataByMetaKey.wordPress.machine.pro.ts:25
+#: frontend/src/services/machines/wordPress/getPostMetadataByMetaKey.wordPress.machine.pro.ts:25
+#: frontend/src/services/machines/wordPress/getPostsByMetadata.wordPress.machine.pro.ts:33
+msgid "Post Meta Key"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getMediaById.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/renameMedia.wordPress.machine.pro.ts:15
+msgid "Media Id"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getMediaByTitle.wordPress.machine.pro.ts:15
+msgid "Media Title"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getPostsByMetadata.wordPress.machine.pro.ts:43
+msgid "Post Meta value"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getTermByField.wordPress.machine.pro.ts:14
+msgid "The field to retrieve the data. slug, name, term_id or term_taxonomy_id."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getTermByField.wordPress.machine.pro.ts:25
+msgid "Enter the matching value for the selected field"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getTermByField.wordPress.machine.pro.ts:27
+#: frontend/src/services/machines/wordPress/getUserByField.wordPress.machine.pro.ts:29
+msgid "Field Value"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getTermByField.wordPress.machine.pro.ts:36
+msgid "Taxonomy name is Optional, if field is term_taxonomy_id."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getTermByTaxonomy.wordPress.machine.pro.ts:15
+msgid "Taxonomy"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getUserByField.wordPress.machine.pro.ts:14
+msgid "The field to retrieve the user with. id | slug | email | login."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getUserByField.wordPress.machine.pro.ts:25
+msgid ""
+"Enter the matching value for the selected field — e.g., user id, email "
+"address, or username."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/getUserMetadataByMetaKey.wordPress.machine.pro.ts:25
+msgid "User Meta Key"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:203
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:241
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:14
+msgid ""
+"A unique, lowercase slug (no spaces) used internally by WordPress. Example: "
+"automation_trigger. Once set, this should not be changed."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:207
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:245
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:18
+msgid "Taxonomy Identifier"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:232
+#: frontend/src/services/machines/wordPress/updateTerm.wordPress.machine.pro.ts:15
+msgid "Term Id"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:297
+msgid ""
+"Provide the plugin file name of the plugin to check if it is active. "
+"Example: bit-pi/bit-pi.php"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:301
+msgid "Plugin File"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:335
+msgid "URL-friendly version of the name."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:395
+msgid "URL-friendly version of the Category name."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:463
+msgid "Id"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:473
+msgid "Whether to bypass Trash and force deletion."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:475
+msgid "Force Delete"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:500
+msgid "Editor"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:501
+msgid "Comments"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:502
+msgid "Revisions"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:503
+msgid "Trackbacks"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:504
+msgid "Author"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:505
+msgid "Excerpt"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:506
+msgid "Page Attributes"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:507
+msgid "Thumbnail"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:508
+msgid "Custom Fields"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:509
+msgid "Post Formats"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/wpUserFields.ts:5
+msgid "Username"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/wpUserFields.ts:6
+msgid "Nickname"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/helpers/wpUserFields.ts:11
+msgid "Biographical Info"
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/postStatusUpdated.wordPress.machine.pro.ts:38
 msgid "any post"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:27
+msgid "Name of the post type shown in the menu. Usually plural."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:37
+msgid "Whether the post type is hierarchical (e.g. page)."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:39
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:57
+msgid "Hierarchy (Category Style)"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:47
+msgid ""
+"Whether a post type is intended for use publicly either via the admin "
+"interface or by front-end users."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:51
+msgid "Public"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:59
+msgid "Whether to generate and allow a UI for managing this post type in the admin."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:61
+msgid "Show UI"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:69
+msgid ""
+"Where to show the post type in the admin menu. To work, Show UI must be "
+"true. If true, the post type is shown in its own top level menu. If false, "
+"no menu is shown."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:73
+msgid "Show In Menu"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:81
+msgid "Makes this post type available for selection in navigation menus."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:83
+msgid "Show In Nav Menu"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:91
+msgid "Makes this post type available via the admin bar."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:93
+msgid "Show In Admin Bar"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:101
+msgid ""
+"The position in the menu order number the post type should appear. To work, "
+"Show In Menu must be true."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:105
+msgid "Menu Position"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:125
+msgid "A short descriptive summary of what the post type is."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:135
+msgid "Customize the permastruct slug. Defaults to Post Type key."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:137
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:117
+msgid "Custom URL Slug"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:27
+msgid ""
+"The display name for your taxonomy shown in the admin menu and meta boxes. "
+"Example: Trigger Type, Flow Category."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:40
+msgid ""
+"Select the content types (like posts, pages, or custom post types) this "
+"taxonomy should apply to."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:44
+msgid "Assign To Post Types"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:53
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:65
+msgid ""
+"Enable this if you want terms to support parent–child relationships (like "
+"categories). Disable for flat structures (like tags)."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:69
+msgid "Publicly Queryable"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:77
+msgid ""
+"Toggle to show or hide this taxonomy in the WordPress dashboard. If off, it "
+"will still function but not be visible in menus."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:81
+msgid "Show in Admin Interface"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:89
+msgid ""
+"Required if you are using the block editor (Gutenberg) or building headless "
+"features via the REST API."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:93
+msgid "Enable for REST API"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:101
+msgid ""
+"Optional. Describe the purpose of this taxonomy. This appears in the admin "
+"area and helps other users understand its use."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/registerTaxonomy.wordPress.machine.pro.ts:113
+msgid ""
+"Customize the URL used for term archive pages. For example, trigger makes "
+"term links look like /trigger/form-submit/. Leave blank to use the default."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/renameMedia.wordPress.machine.pro.ts:25
+msgid "New Title"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/replyToComment.wordPress.machine.pro.ts:35
+msgid "Comment Reply"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/unregisterPostType.wordPress.machine.pro.ts:14
+msgid "Post type to unregister."
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:65
+#: frontend/src/services/machines/wordPress/updatePostStatus.wordPress.machine.pro.ts:34
+msgid "Trash"
+msgstr ""
+
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.pro.ts:158
+msgid "Provide the id of the parent post if this is a child post."
 msgstr ""
 
 #: frontend/src/services/machines/wpForo/_wpForoMachines.ts:17
@@ -11868,6 +13158,18 @@ msgstr ""
 
 #: frontend/src/services/machines/wpJobManager/jobTypeApplicationStatusChanged.wpJobManager.machine.pro.ts:54
 msgid "Select a Job Type"
+msgstr ""
+
+#: frontend/src/services/machines/WPTravelEngine/_wPTravelEngineMachines.ts:26
+msgid "Booking Created"
+msgstr ""
+
+#: frontend/src/services/machines/WPTravelEngine/_wPTravelEngineMachines.ts:33
+msgid "Booking Updated"
+msgstr ""
+
+#: frontend/src/services/machines/WPTravelEngine/_wPTravelEngineMachines.ts:40
+msgid "Enquiry Created"
 msgstr ""
 
 #: frontend/src/services/machines/wsForm/wsFormSubmit.wsForm.machine.pro.ts:32

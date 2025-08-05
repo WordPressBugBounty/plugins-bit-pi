@@ -4,7 +4,7 @@ Tags: automation, integration, webhook, form, workflow
 Requires at least: 5.8
 Tested up to: 6.8.1
 Requires PHP: 7.4
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 License: GPL-2.0-or-later
 
 Create AI powered automation workflows on a visual canvas, like n8n inside WordPress. Unlimited tasks, unlimited workflows, and unlimited steps.
@@ -195,7 +195,7 @@ Available popular integrated platforms are:
 29. Dokan
 30. Drip
 31. eForm
-32. Elastic Mail
+32. Elastic Email
 33. Elementor Form
 34. EmailOctopus
 35. Encharge
@@ -229,7 +229,7 @@ Available popular integrated platforms are:
 63. Gravity Forms
 64. Groundhogg
 65. Gutena Forms
-66. happyForm
+66. Happyforms
 67. HTTP
 68. HubSpot
 69. Hustle
@@ -436,6 +436,20 @@ Yes! The Pro version unlocks all premium tools, unlimited workflows, priority su
 
 
 == Changelog ==
+
+
+= v1.4.0 (Aug 05, 2025) =
+* **Actions (101)**:
+  * WordPress (101) 🌟
+* **Triggers (05)**:
+  * WP Travel Engine (3)
+  * Line (1)
+  * Tidio (1)
+* **Features**:
+  * **CSV**: Added CSV module to convert any CSV file to JSON.
+  * **XML**: Added XML module with support for parsing and XPath queries.
+* **Fixes**:
+  * Fixed the repeater field input to match the mixed input format of SuiteDash and JotForm in order to capture the tag value.
 
 = v1.3.0 (Jul 10, 2025) =
 * **Actions (16)**

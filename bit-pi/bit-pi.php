@@ -6,7 +6,7 @@
  * Plugin Name:  Bit Flows
  * Plugin URI:   https://bitapps.pro/bit-pi
  * Description:  Integrates with other platform
- * Version:      1.3.0
+ * Version:     1.4.0
  * Author:       Bit Apps
  * Author URI:   https://bitapps.pro
  * Text Domain:  bit-pi

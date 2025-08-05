@@ -1,0 +1,1 @@
+import{c as s}from"./createwe-234.js";import"./_applist-406.js";import"./lodash-64.js";import"./main-nice-ears-bathe.js";import"./mutative-185.js";import"./machine.-148.js";globalThis.jotaiAtomCache=globalThis.jotaiAtomCache||{cache:new Map,get(t,o){return this.cache.has(t)?this.cache.get(t):(this.cache.set(t,o),o)}};export{s as default};

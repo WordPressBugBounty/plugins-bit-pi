@@ -545,6 +545,8 @@ return [
 
     'Add more condition' => __('Add more condition', 'bit-pi'),
 
+    'CSV Tool' => __('CSV Tool', 'bit-pi'),
+
     'Delay Node' => __('Delay Node', 'bit-pi'),
 
     'Router Tool Node' => __('Router Tool Node', 'bit-pi'),
@@ -554,6 +556,8 @@ return [
     'Action' => __('Action', 'bit-pi'),
 
     'Condition Logic' => __('Condition Logic', 'bit-pi'),
+
+    'CSV' => __('CSV', 'bit-pi'),
 
     'Custom Code' => __('Custom Code', 'bit-pi'),
 
@@ -567,11 +571,15 @@ return [
 
     'Trigger' => __('Trigger', 'bit-pi'),
 
+    'XML' => __('XML', 'bit-pi'),
+
     'This tool is available with the pro plan. Flow will not work with this node!' => __('This tool is available with the pro plan. Flow will not work with this node!', 'bit-pi'),
 
     'Are you sure to delete this' => __('Are you sure to delete this', 'bit-pi'),
 
     'Delete the %s' => __('Delete the %s', 'bit-pi'),
+
+    'XML Node' => __('XML Node', 'bit-pi'),
 
     'Planned' => __('Planned', 'bit-pi'),
 
@@ -685,6 +693,10 @@ return [
 
     'Coming Soon' => __('Coming Soon', 'bit-pi'),
 
+    'CSV Source' => __('CSV Source', 'bit-pi'),
+
+    'CSV contains headers' => __('CSV contains headers', 'bit-pi'),
+
     'Minutes' => __('Minutes', 'bit-pi'),
 
     'Hours' => __('Hours', 'bit-pi'),
@@ -728,6 +740,16 @@ return [
     'Runs a test to check if the node is working properly' => __('Runs a test to check if the node is working properly', 'bit-pi'),
 
     'Test Run' => __('Test Run', 'bit-pi'),
+
+    'XML Mode' => __('XML Mode', 'bit-pi'),
+
+    'Parse XML' => __('Parse XML', 'bit-pi'),
+
+    'Perform XPath Query' => __('Perform XPath Query', 'bit-pi'),
+
+    'Query to extract data from XML using XPath syntax. Example: /root/element.' => __('Query to extract data from XML using XPath syntax. Example: /root/element.', 'bit-pi'),
+
+    'XPath Query' => __('XPath Query', 'bit-pi'),
 
     'Open in modal' => __('Open in modal', 'bit-pi'),
 
@@ -1585,7 +1607,7 @@ return [
 
     'Add Column' => __('Add Column', 'bit-pi'),
 
-    'Elastic Mail Field' => __('Elastic Mail Field', 'bit-pi'),
+    'Elastic Email Field' => __('Elastic Email Field', 'bit-pi'),
 
     'FirstName' => __('FirstName', 'bit-pi'),
 
@@ -3703,6 +3725,8 @@ return [
 
     'Audiences ID' => __('Audiences ID', 'bit-pi'),
 
+    'Subscriber #{COUNT}' => __('Subscriber #{COUNT}', 'bit-pi'),
+
     'Subscribe' => __('Subscribe', 'bit-pi'),
 
     'Company Field Map' => __('Company Field Map', 'bit-pi'),
@@ -3906,6 +3930,8 @@ return [
     'Enter the point in time (Unix timestamp) when the poll will be automatically closed. Must be at least 5 seconds and no more than 600 seconds in the future.' => __('Enter the point in time (Unix timestamp) when the poll will be automatically closed. Must be at least 5 seconds and no more than 600 seconds in the future.', 'bit-pi'),
 
     'Closed Date' => __('Closed Date', 'bit-pi'),
+
+    'Contact Sent From Bot' => __('Contact Sent From Bot', 'bit-pi'),
 
     'Attempted (submitted) a quiz' => __('Attempted (submitted) a quiz', 'bit-pi'),
 
@@ -4203,6 +4229,236 @@ return [
 
     'Select where to add prospects' => __('Select where to add prospects', 'bit-pi'),
 
+    'Create New User' => __('Create New User', 'bit-pi'),
+
+    'Update User' => __('Update User', 'bit-pi'),
+
+    'Delete User' => __('Delete User', 'bit-pi'),
+
+    'Get All Users' => __('Get All Users', 'bit-pi'),
+
+    'Want to see your users? Just hit **Test Run** to fetch them.' => __('Want to see your users? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get All Users by Role' => __('Get All Users by Role', 'bit-pi'),
+
+    'Get User by Id' => __('Get User by Id', 'bit-pi'),
+
+    'Get User by Email' => __('Get User by Email', 'bit-pi'),
+
+    'Get User by Field' => __('Get User by Field', 'bit-pi'),
+
+    'Get User Metadata (All)' => __('Get User Metadata (All)', 'bit-pi'),
+
+    'Get User Metadata (Single)' => __('Get User Metadata (Single)', 'bit-pi'),
+
+    'Update User Metadata' => __('Update User Metadata', 'bit-pi'),
+
+    'Create Role' => __('Create Role', 'bit-pi'),
+
+    'Delete Role' => __('Delete Role', 'bit-pi'),
+
+    'Add User Role' => __('Add User Role', 'bit-pi'),
+
+    'Remove User Role' => __('Remove User Role', 'bit-pi'),
+
+    'Update User Role' => __('Update User Role', 'bit-pi'),
+
+    'Previous roles have been replaced with the first role' => __('Previous roles have been replaced with the first role', 'bit-pi'),
+
+    'Get All Roles' => __('Get All Roles', 'bit-pi'),
+
+    'Want to see all roles? Just hit **Test Run** to fetch them.' => __('Want to see all roles? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get All Capabilities' => __('Get All Capabilities', 'bit-pi'),
+
+    'Want to see all capabilities? Just hit **Test Run** to fetch them.' => __('Want to see all capabilities? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Role Capabilities' => __('Get Role Capabilities', 'bit-pi'),
+
+    'Add Role Capabilities' => __('Add Role Capabilities', 'bit-pi'),
+
+    'Remove Role Capabilities' => __('Remove Role Capabilities', 'bit-pi'),
+
+    'Get User Capabilities' => __('Get User Capabilities', 'bit-pi'),
+
+    'Add User Capabilities' => __('Add User Capabilities', 'bit-pi'),
+
+    'Remove User Capabilities' => __('Remove User Capabilities', 'bit-pi'),
+
+    'Create New Post' => __('Create New Post', 'bit-pi'),
+
+    'Update Post' => __('Update Post', 'bit-pi'),
+
+    'Update Post Status' => __('Update Post Status', 'bit-pi'),
+
+    'Delete Post' => __('Delete Post', 'bit-pi'),
+
+    'Get Post (All)' => __('Get Post (All)', 'bit-pi'),
+
+    'Want to see all posts? Just hit **Test Run** to fetch them.' => __('Want to see all posts? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Post (Single)' => __('Get Post (Single)', 'bit-pi'),
+
+    'Get Posts By Post Type' => __('Get Posts By Post Type', 'bit-pi'),
+
+    'Get Posts by Metadata' => __('Get Posts by Metadata', 'bit-pi'),
+
+    'Get Post Metadata (All)' => __('Get Post Metadata (All)', 'bit-pi'),
+
+    'Get Post Metadata (Single)' => __('Get Post Metadata (Single)', 'bit-pi'),
+
+    'Get Post Permalink' => __('Get Post Permalink', 'bit-pi'),
+
+    'Get Post Content' => __('Get Post Content', 'bit-pi'),
+
+    'Get Post Excerpt' => __('Get Post Excerpt', 'bit-pi'),
+
+    'Get Post Status' => __('Get Post Status', 'bit-pi'),
+
+    'Get Post Comments (All)' => __('Get Post Comments (All)', 'bit-pi'),
+
+    'Want to see post Comments? Just hit **Test Run** to fetch them.' => __('Want to see post Comments? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Post Comments (Single Post)' => __('Get Post Comments (Single Post)', 'bit-pi'),
+
+    'Get User Comments' => __('Get User Comments', 'bit-pi'),
+
+    'Get User Comments (By Email)' => __('Get User Comments (By Email)', 'bit-pi'),
+
+    'Get Comment Metadata (All)' => __('Get Comment Metadata (All)', 'bit-pi'),
+
+    'Get Comment Metadata (Single)' => __('Get Comment Metadata (Single)', 'bit-pi'),
+
+    'Create New Comment' => __('Create New Comment', 'bit-pi'),
+
+    'Reply To Comment' => __('Reply To Comment', 'bit-pi'),
+
+    'Delete Comment' => __('Delete Comment', 'bit-pi'),
+
+    'Get Post Type (All)' => __('Get Post Type (All)', 'bit-pi'),
+
+    'Want to see all post types? Just hit **Test Run** to fetch them.' => __('Want to see all post types? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Post Type (Single Post)' => __('Get Post Type (Single Post)', 'bit-pi'),
+
+    'Register Post Type' => __('Register Post Type', 'bit-pi'),
+
+    'Unregister Post Type' => __('Unregister Post Type', 'bit-pi'),
+
+    'Add Post Type Features (Support)' => __('Add Post Type Features (Support)', 'bit-pi'),
+
+    'Create Post Tag' => __('Create Post Tag', 'bit-pi'),
+
+    'Update Post Tag' => __('Update Post Tag', 'bit-pi'),
+
+    'Delete Post Tag' => __('Delete Post Tag', 'bit-pi'),
+
+    'Add Tags to Post' => __('Add Tags to Post', 'bit-pi'),
+
+    'Remove Tags From Post' => __('Remove Tags From Post', 'bit-pi'),
+
+    'Get Post Tag (All)' => __('Get Post Tag (All)', 'bit-pi'),
+
+    'Want to see your tags? Just hit **Test Run** to fetch them.' => __('Want to see your tags? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Post Tag (Single)' => __('Get Post Tag (Single)', 'bit-pi'),
+
+    'Add New Image To Media Library' => __('Add New Image To Media Library', 'bit-pi'),
+
+    'Delete Media From Media Library' => __('Delete Media From Media Library', 'bit-pi'),
+
+    'Rename Media' => __('Rename Media', 'bit-pi'),
+
+    'Get Media (All)' => __('Get Media (All)', 'bit-pi'),
+
+    'Want to see your Medias? Just hit **Test Run** to fetch them.' => __('Want to see your Medias? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Media (By Title)' => __('Get Media (By Title)', 'bit-pi'),
+
+    'Get Media (By Id)' => __('Get Media (By Id)', 'bit-pi'),
+
+    'Get Term (All)' => __('Get Term (All)', 'bit-pi'),
+
+    'Want to see your Terms? Just hit **Test Run** to fetch them.' => __('Want to see your Terms? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Term (Single)' => __('Get Term (Single)', 'bit-pi'),
+
+    'Get Term by Taxonomy' => __('Get Term by Taxonomy', 'bit-pi'),
+
+    'Get Term by Field' => __('Get Term by Field', 'bit-pi'),
+
+    'Create New Term' => __('Create New Term', 'bit-pi'),
+
+    'Update Term' => __('Update Term', 'bit-pi'),
+
+    'Delete Term' => __('Delete Term', 'bit-pi'),
+
+    'Register Taxonomy' => __('Register Taxonomy', 'bit-pi'),
+
+    'Unregister Taxonomy' => __('Unregister Taxonomy', 'bit-pi'),
+
+    'Get Taxonomy (All)' => __('Get Taxonomy (All)', 'bit-pi'),
+
+    'Want to see your Taxonomies? Just hit **Test Run** to fetch them.' => __('Want to see your Taxonomies? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Taxonomy (Single)' => __('Get Taxonomy (Single)', 'bit-pi'),
+
+    'Add Taxonomy to Post' => __('Add Taxonomy to Post', 'bit-pi'),
+
+    'Remove Taxonomy From Post' => __('Remove Taxonomy From Post', 'bit-pi'),
+
+    'Create Category' => __('Create Category', 'bit-pi'),
+
+    'Update Category' => __('Update Category', 'bit-pi'),
+
+    'Delete Category' => __('Delete Category', 'bit-pi'),
+
+    'Add Category To Post' => __('Add Category To Post', 'bit-pi'),
+
+    'Get Category (All)' => __('Get Category (All)', 'bit-pi'),
+
+    'Want to see Categories? Just hit **Test Run** to fetch them.' => __('Want to see Categories? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Category (Single)' => __('Get Category (Single)', 'bit-pi'),
+
+    'Create Product Tag' => __('Create Product Tag', 'bit-pi'),
+
+    'Update Product Tag' => __('Update Product Tag', 'bit-pi'),
+
+    'Delete Product Tag' => __('Delete Product Tag', 'bit-pi'),
+
+    'Get Product Tag (All)' => __('Get Product Tag (All)', 'bit-pi'),
+
+    'Get Product Tag (Single)' => __('Get Product Tag (Single)', 'bit-pi'),
+
+    'Create Product Category' => __('Create Product Category', 'bit-pi'),
+
+    'Update Product Category' => __('Update Product Category', 'bit-pi'),
+
+    'Delete Product Category' => __('Delete Product Category', 'bit-pi'),
+
+    'Get Product Category (All)' => __('Get Product Category (All)', 'bit-pi'),
+
+    'Get Product Category (Single)' => __('Get Product Category (Single)', 'bit-pi'),
+
+    'Create Product Type' => __('Create Product Type', 'bit-pi'),
+
+    'Update Product Type' => __('Update Product Type', 'bit-pi'),
+
+    'Delete Product Type' => __('Delete Product Type', 'bit-pi'),
+
+    'Get Product Type (All)' => __('Get Product Type (All)', 'bit-pi'),
+
+    'Get Product Type (Single)' => __('Get Product Type (Single)', 'bit-pi'),
+
+    'Check Plugin Activation Status' => __('Check Plugin Activation Status', 'bit-pi'),
+
+    'You can find the plugin file name in the' => __('You can find the plugin file name in the', 'bit-pi'),
+
+    '[Plugin File Editor](%s)' => __('[Plugin File Editor](%s)', 'bit-pi'),
+
+    'Activate Plugin' => __('Activate Plugin', 'bit-pi'),
+
     'On Post Status Update' => __('On Post Status Update', 'bit-pi'),
 
     '**When Trigger**: After post status change' => __('**When Trigger**: After post status change', 'bit-pi'),
@@ -4351,8 +4607,6 @@ return [
 
     '*Fires after an option has been deleted.*' => __('*Fires after an option has been deleted.*', 'bit-pi'),
 
-    'Delete Post' => __('Delete Post', 'bit-pi'),
-
     '**When Trigger**: During post deletion' => __('**When Trigger**: During post deletion', 'bit-pi'),
 
     '*Process post deletion.*' => __('*Process post deletion.*', 'bit-pi'),
@@ -4374,8 +4628,6 @@ return [
     '**When Trigger**: During term deletion' => __('**When Trigger**: During term deletion', 'bit-pi'),
 
     '*Handle taxonomy term deletion.*' => __('*Handle taxonomy term deletion.*', 'bit-pi'),
-
-    'Delete User' => __('Delete User', 'bit-pi'),
 
     '**When Trigger**: During user deletion' => __('**When Trigger**: During user deletion', 'bit-pi'),
 
@@ -4779,13 +5031,299 @@ return [
 
     'Hook Name' => __('Hook Name', 'bit-pi'),
 
-    'Use this code to trigger the action' => __('Use this code to trigger the action', 'bit-pi'),
+    'Post Id' => __('Post Id', 'bit-pi'),
+
+    'Post Category' => __('Post Category', 'bit-pi'),
+
+    'any post category' => __('any post category', 'bit-pi'),
+
+    'If true, don\'t delete existing categories, just add on. If false, replace the categories with the new categories.' => __('If true, don\'t delete existing categories, just add on. If false, replace the categories with the new categories.', 'bit-pi'),
+
+    'Append' => __('Append', 'bit-pi'),
+
+    'Image URL' => __('Image URL', 'bit-pi'),
+
+    'Alternative Text' => __('Alternative Text', 'bit-pi'),
+
+    'Caption' => __('Caption', 'bit-pi'),
+
+    'Post type key. Must not exceed 20 characters and may only contain lowercase alphanumeric characters, dashes, and underscores.' => __('Post type key. Must not exceed 20 characters and may only contain lowercase alphanumeric characters, dashes, and underscores.', 'bit-pi'),
+
+    'Post Type Key' => __('Post Type Key', 'bit-pi'),
+
+    'Select Features (Supports)' => __('Select Features (Supports)', 'bit-pi'),
+
+    'Select Post tags' => __('Select Post tags', 'bit-pi'),
+
+    'If true, don’t delete existing terms, just add on. If false, replace the terms with the new terms.' => __('If true, don’t delete existing terms, just add on. If false, replace the terms with the new terms.', 'bit-pi'),
+
+    'Taxonomy Name' => __('Taxonomy Name', 'bit-pi'),
+
+    'Provide one or more Taxonomy Terms as a comma-separated list or array. Accepted formats: wordpress, manage_options, read (string input) ["wordpress", "manage_options", "read"] (array input)' => __('Provide one or more Taxonomy Terms as a comma-separated list or array. Accepted formats: wordpress, manage_options, read (string input) ["wordpress", "manage_options", "read"] (array input)', 'bit-pi'),
+
+    'Taxonomy Term' => __('Taxonomy Term', 'bit-pi'),
+
+    'Comment' => __('Comment', 'bit-pi'),
+
+    'Author Name' => __('Author Name', 'bit-pi'),
+
+    'Author Email Address' => __('Author Email Address', 'bit-pi'),
+
+    'Author Website URL' => __('Author Website URL', 'bit-pi'),
+
+    'Post Title' => __('Post Title', 'bit-pi'),
 
     'Post Type' => __('Post Type', 'bit-pi'),
 
     'any post type' => __('any post type', 'bit-pi'),
 
+    'Post Status' => __('Post Status', 'bit-pi'),
+
+    'Publish' => __('Publish', 'bit-pi'),
+
+    'Pending Preview' => __('Pending Preview', 'bit-pi'),
+
+    'Draft' => __('Draft', 'bit-pi'),
+
+    'Private' => __('Private', 'bit-pi'),
+
+    'any post status' => __('any post status', 'bit-pi'),
+
+    'Post Author' => __('Post Author', 'bit-pi'),
+
+    'any post author' => __('any post author', 'bit-pi'),
+
+    'Post Content' => __('Post Content', 'bit-pi'),
+
+    'Post Excerpt' => __('Post Excerpt', 'bit-pi'),
+
+    'Post Date' => __('Post Date', 'bit-pi'),
+
+    'Post Date GMT' => __('Post Date GMT', 'bit-pi'),
+
+    'Post Slug' => __('Post Slug', 'bit-pi'),
+
+    'Provide the Id of the parent post if this is a child post.' => __('Provide the Id of the parent post if this is a child post.', 'bit-pi'),
+
+    'Post Parent Id' => __('Post Parent Id', 'bit-pi'),
+
+    'Only visible to those who know the password.' => __('Only visible to those who know the password.', 'bit-pi'),
+
+    'Post Password' => __('Post Password', 'bit-pi'),
+
+    'Post Featured Image URL' => __('Post Featured Image URL', 'bit-pi'),
+
+    'Select Taxonomy' => __('Select Taxonomy', 'bit-pi'),
+
+    'any post Taxonomy' => __('any post Taxonomy', 'bit-pi'),
+
+    'Select Taxonomy Term' => __('Select Taxonomy Term', 'bit-pi'),
+
+    'any post Taxonomy Term' => __('any post Taxonomy Term', 'bit-pi'),
+
+    'Add Field' => __('Add Field', 'bit-pi'),
+
+    'Post Custom Field Map' => __('Post Custom Field Map', 'bit-pi'),
+
+    'Term Name' => __('Term Name', 'bit-pi'),
+
+    'The taxonomy to which to add the term. Example: Trigger Type, Flow Category.' => __('The taxonomy to which to add the term. Example: Trigger Type, Flow Category.', 'bit-pi'),
+
+    'URL-friendly version of the term name.' => __('URL-friendly version of the term name.', 'bit-pi'),
+
+    'Select User Role' => __('Select User Role', 'bit-pi'),
+
+    'Selecting this option will trigger a welcome email from WordPress upon user registration.' => __('Selecting this option will trigger a welcome email from WordPress upon user registration.', 'bit-pi'),
+
+    'Select Email Notification' => __('Select Email Notification', 'bit-pi'),
+
+    'Admin' => __('Admin', 'bit-pi'),
+
+    'Both (Admin & User)' => __('Both (Admin & User)', 'bit-pi'),
+
+    'Generate Password Automatically' => __('Generate Password Automatically', 'bit-pi'),
+
+    'Custom User Password' => __('Custom User Password', 'bit-pi'),
+
+    'Generate Password' => __('Generate Password', 'bit-pi'),
+
+    'Meta Key' => __('Meta Key', 'bit-pi'),
+
+    'User Meta Field Map' => __('User Meta Field Map', 'bit-pi'),
+
+    'Show User Meta Field Mapping' => __('Show User Meta Field Mapping', 'bit-pi'),
+
+    'Provide the unique role name. (Example: editor, subscriber)' => __('Provide the unique role name. (Example: editor, subscriber)', 'bit-pi'),
+
+    'Role Name' => __('Role Name', 'bit-pi'),
+
+    'Provide the human readable name for the role. (Example: Editor, Subscriber)' => __('Provide the human readable name for the role. (Example: Editor, Subscriber)', 'bit-pi'),
+
+    'Role Display Name' => __('Role Display Name', 'bit-pi'),
+
+    'Provide one or more user role capabilities as a comma-separated list or array. Accepted formats: edit_posts, manage_options, read (string input) ["edit_posts", "manage_options", "read"] (array input)' => __('Provide one or more user role capabilities as a comma-separated list or array. Accepted formats: edit_posts, manage_options, read (string input) ["edit_posts", "manage_options", "read"] (array input)', 'bit-pi'),
+
+    'Role Capabilities' => __('Role Capabilities', 'bit-pi'),
+
+    'User Email Address' => __('User Email Address', 'bit-pi'),
+
+    'Map Email' => __('Map Email', 'bit-pi'),
+
+    'Re-Assign User' => __('Re-Assign User', 'bit-pi'),
+
+    'Re-Assign User Id' => __('Re-Assign User Id', 'bit-pi'),
+
+    'Map Custom User Id' => __('Map Custom User Id', 'bit-pi'),
+
+    'Use this code to trigger the action' => __('Use this code to trigger the action', 'bit-pi'),
+
+    'Select User Roles' => __('Select User Roles', 'bit-pi'),
+
+    'Custom User Role' => __('Custom User Role', 'bit-pi'),
+
+    'Map Custom User Role' => __('Map Custom User Role', 'bit-pi'),
+
+    'Comment Id' => __('Comment Id', 'bit-pi'),
+
+    'Post Meta Key' => __('Post Meta Key', 'bit-pi'),
+
+    'Media Id' => __('Media Id', 'bit-pi'),
+
+    'Media Title' => __('Media Title', 'bit-pi'),
+
+    'Post Meta value' => __('Post Meta value', 'bit-pi'),
+
+    'The field to retrieve the data. slug, name, term_id or term_taxonomy_id.' => __('The field to retrieve the data. slug, name, term_id or term_taxonomy_id.', 'bit-pi'),
+
+    'Enter the matching value for the selected field' => __('Enter the matching value for the selected field', 'bit-pi'),
+
+    'Field Value' => __('Field Value', 'bit-pi'),
+
+    'Taxonomy name is Optional, if field is term_taxonomy_id.' => __('Taxonomy name is Optional, if field is term_taxonomy_id.', 'bit-pi'),
+
+    'Taxonomy' => __('Taxonomy', 'bit-pi'),
+
+    'The field to retrieve the user with. id | slug | email | login.' => __('The field to retrieve the user with. id | slug | email | login.', 'bit-pi'),
+
+    'Enter the matching value for the selected field — e.g., user id, email address, or username.' => __('Enter the matching value for the selected field — e.g., user id, email address, or username.', 'bit-pi'),
+
+    'User Meta Key' => __('User Meta Key', 'bit-pi'),
+
+    'A unique, lowercase slug (no spaces) used internally by WordPress. Example: automation_trigger. Once set, this should not be changed.' => __('A unique, lowercase slug (no spaces) used internally by WordPress. Example: automation_trigger. Once set, this should not be changed.', 'bit-pi'),
+
+    'Taxonomy Identifier' => __('Taxonomy Identifier', 'bit-pi'),
+
+    'Term Id' => __('Term Id', 'bit-pi'),
+
+    'Provide the plugin file name of the plugin to check if it is active. Example: bit-pi/bit-pi.php' => __('Provide the plugin file name of the plugin to check if it is active. Example: bit-pi/bit-pi.php', 'bit-pi'),
+
+    'Plugin File' => __('Plugin File', 'bit-pi'),
+
+    'URL-friendly version of the name.' => __('URL-friendly version of the name.', 'bit-pi'),
+
+    'URL-friendly version of the Category name.' => __('URL-friendly version of the Category name.', 'bit-pi'),
+
+    'Id' => __('Id', 'bit-pi'),
+
+    'Whether to bypass Trash and force deletion.' => __('Whether to bypass Trash and force deletion.', 'bit-pi'),
+
+    'Force Delete' => __('Force Delete', 'bit-pi'),
+
+    'Editor' => __('Editor', 'bit-pi'),
+
+    'Comments' => __('Comments', 'bit-pi'),
+
+    'Revisions' => __('Revisions', 'bit-pi'),
+
+    'Trackbacks' => __('Trackbacks', 'bit-pi'),
+
+    'Author' => __('Author', 'bit-pi'),
+
+    'Excerpt' => __('Excerpt', 'bit-pi'),
+
+    'Page Attributes' => __('Page Attributes', 'bit-pi'),
+
+    'Thumbnail' => __('Thumbnail', 'bit-pi'),
+
+    'Custom Fields' => __('Custom Fields', 'bit-pi'),
+
+    'Post Formats' => __('Post Formats', 'bit-pi'),
+
+    'Username' => __('Username', 'bit-pi'),
+
+    'Nickname' => __('Nickname', 'bit-pi'),
+
+    'Biographical Info' => __('Biographical Info', 'bit-pi'),
+
     'any post' => __('any post', 'bit-pi'),
+
+    'Name of the post type shown in the menu. Usually plural.' => __('Name of the post type shown in the menu. Usually plural.', 'bit-pi'),
+
+    'Whether the post type is hierarchical (e.g. page).' => __('Whether the post type is hierarchical (e.g. page).', 'bit-pi'),
+
+    'Hierarchy (Category Style)' => __('Hierarchy (Category Style)', 'bit-pi'),
+
+    'Whether a post type is intended for use publicly either via the admin interface or by front-end users.' => __('Whether a post type is intended for use publicly either via the admin interface or by front-end users.', 'bit-pi'),
+
+    'Public' => __('Public', 'bit-pi'),
+
+    'Whether to generate and allow a UI for managing this post type in the admin.' => __('Whether to generate and allow a UI for managing this post type in the admin.', 'bit-pi'),
+
+    'Show UI' => __('Show UI', 'bit-pi'),
+
+    'Where to show the post type in the admin menu. To work, Show UI must be true. If true, the post type is shown in its own top level menu. If false, no menu is shown.' => __('Where to show the post type in the admin menu. To work, Show UI must be true. If true, the post type is shown in its own top level menu. If false, no menu is shown.', 'bit-pi'),
+
+    'Show In Menu' => __('Show In Menu', 'bit-pi'),
+
+    'Makes this post type available for selection in navigation menus.' => __('Makes this post type available for selection in navigation menus.', 'bit-pi'),
+
+    'Show In Nav Menu' => __('Show In Nav Menu', 'bit-pi'),
+
+    'Makes this post type available via the admin bar.' => __('Makes this post type available via the admin bar.', 'bit-pi'),
+
+    'Show In Admin Bar' => __('Show In Admin Bar', 'bit-pi'),
+
+    'The position in the menu order number the post type should appear. To work, Show In Menu must be true.' => __('The position in the menu order number the post type should appear. To work, Show In Menu must be true.', 'bit-pi'),
+
+    'Menu Position' => __('Menu Position', 'bit-pi'),
+
+    'A short descriptive summary of what the post type is.' => __('A short descriptive summary of what the post type is.', 'bit-pi'),
+
+    'Customize the permastruct slug. Defaults to Post Type key.' => __('Customize the permastruct slug. Defaults to Post Type key.', 'bit-pi'),
+
+    'Custom URL Slug' => __('Custom URL Slug', 'bit-pi'),
+
+    'The display name for your taxonomy shown in the admin menu and meta boxes. Example: Trigger Type, Flow Category.' => __('The display name for your taxonomy shown in the admin menu and meta boxes. Example: Trigger Type, Flow Category.', 'bit-pi'),
+
+    'Select the content types (like posts, pages, or custom post types) this taxonomy should apply to.' => __('Select the content types (like posts, pages, or custom post types) this taxonomy should apply to.', 'bit-pi'),
+
+    'Assign To Post Types' => __('Assign To Post Types', 'bit-pi'),
+
+    'Enable this if you want terms to support parent–child relationships (like categories). Disable for flat structures (like tags).' => __('Enable this if you want terms to support parent–child relationships (like categories). Disable for flat structures (like tags).', 'bit-pi'),
+
+    'Publicly Queryable' => __('Publicly Queryable', 'bit-pi'),
+
+    'Toggle to show or hide this taxonomy in the WordPress dashboard. If off, it will still function but not be visible in menus.' => __('Toggle to show or hide this taxonomy in the WordPress dashboard. If off, it will still function but not be visible in menus.', 'bit-pi'),
+
+    'Show in Admin Interface' => __('Show in Admin Interface', 'bit-pi'),
+
+    'Required if you are using the block editor (Gutenberg) or building headless features via the REST API.' => __('Required if you are using the block editor (Gutenberg) or building headless features via the REST API.', 'bit-pi'),
+
+    'Enable for REST API' => __('Enable for REST API', 'bit-pi'),
+
+    'Optional. Describe the purpose of this taxonomy. This appears in the admin area and helps other users understand its use.' => __('Optional. Describe the purpose of this taxonomy. This appears in the admin area and helps other users understand its use.', 'bit-pi'),
+
+    'Customize the URL used for term archive pages. For example, trigger makes term links look like /trigger/form-submit/. Leave blank to use the default.' => __('Customize the URL used for term archive pages. For example, trigger makes term links look like /trigger/form-submit/. Leave blank to use the default.', 'bit-pi'),
+
+    'New Title' => __('New Title', 'bit-pi'),
+
+    'Comment Reply' => __('Comment Reply', 'bit-pi'),
+
+    'Post type to unregister.' => __('Post type to unregister.', 'bit-pi'),
+
+    'Trash' => __('Trash', 'bit-pi'),
+
+    'Provide the id of the parent post if this is a child post.' => __('Provide the id of the parent post if this is a child post.', 'bit-pi'),
 
     'New topic added' => __('New topic added', 'bit-pi'),
 
@@ -4878,6 +5416,12 @@ return [
     'Select a job' => __('Select a job', 'bit-pi'),
 
     'Select a Job Type' => __('Select a Job Type', 'bit-pi'),
+
+    'Booking Created' => __('Booking Created', 'bit-pi'),
+
+    'Booking Updated' => __('Booking Updated', 'bit-pi'),
+
+    'Enquiry Created' => __('Enquiry Created', 'bit-pi'),
 
     'Note: navigate to the WS Form settings, select "Run WordPress Hook" as the action type, and enter the Hook Tag: bit_pi_do_action.' => __('Note: navigate to the WS Form settings, select "Run WordPress Hook" as the action type, and enter the Hook Tag: bit_pi_do_action.', 'bit-pi'),
 
