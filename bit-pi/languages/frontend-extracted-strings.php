@@ -2735,7 +2735,7 @@ return [
 
     'Disabled Notification?' => __('Disabled Notification?', 'bit-pi'),
 
-    'To add LINE emojis, insert $ where you want the emoji in your text, then define its index, length, productId, and emojiId in the emojis field mapping.' => __('To add LINE emojis, insert $ where you want the emoji in your text, then define its index, length, productId, and emojiId in the emojis field mapping.', 'bit-pi'),
+    'To add LINE emojis, insert $ where you want the emoji in your message, then define its index, length, productId, and emojiId in the emojis field mapping.' => __('To add LINE emojis, insert $ where you want the emoji in your message, then define its index, length, productId, and emojiId in the emojis field mapping.', 'bit-pi'),
 
     'Enable to Send Message with Multiple Emojis with index ID, Product ID of Emoji & Emojis ID' => __('Enable to Send Message with Multiple Emojis with index ID, Product ID of Emoji & Emojis ID', 'bit-pi'),
 
@@ -2749,7 +2749,7 @@ return [
 
     'Send Image?' => __('Send Image?', 'bit-pi'),
 
-    'Enable to Send Multiple Audio with Audio\'s Original Content URL & Audio\'s Duration' => __('Enable to Send Multiple Audio with Audio\'s Original Content URL & Audio\'s Duration', 'bit-pi'),
+    'Enable to Send Multiple Audio with Audio\'s Original Content URL & Audio\'s Duration. Duration must be in milliseconds.' => __('Enable to Send Multiple Audio with Audio\'s Original Content URL & Audio\'s Duration. Duration must be in milliseconds.', 'bit-pi'),
 
     'Send Audio?' => __('Send Audio?', 'bit-pi'),
 
@@ -2764,8 +2764,6 @@ return [
     'Recipient ID' => __('Recipient ID', 'bit-pi'),
 
     'Reply Token' => __('Reply Token', 'bit-pi'),
-
-    'To add LINE emojis, insert $ where you want the emoji in your message, then define its index, length, productId, and emojiId in the emojis field mapping.' => __('To add LINE emojis, insert $ where you want the emoji in your message, then define its index, length, productId, and emojiId in the emojis field mapping.', 'bit-pi'),
 
     'Add Lead' => __('Add Lead', 'bit-pi'),
 
@@ -2785,7 +2783,77 @@ return [
 
     'IP Address' => __('IP Address', 'bit-pi'),
 
-    'Create Subscriber' => __('Create Subscriber', 'bit-pi'),
+    'This event is deprecated. It is recommended to use the updated events instead.' => __('This event is deprecated. It is recommended to use the updated events instead.', 'bit-pi'),
+
+    'Create Subscriber (Deprecated Event)' => __('Create Subscriber (Deprecated Event)', 'bit-pi'),
+
+    'Add or Update a Member To List' => __('Add or Update a Member To List', 'bit-pi'),
+
+    'Add/Remove Member Tag' => __('Add/Remove Member Tag', 'bit-pi'),
+
+    'Add Member Note' => __('Add Member Note', 'bit-pi'),
+
+    'Delete Member From List' => __('Delete Member From List', 'bit-pi'),
+
+    'Get a Member From List' => __('Get a Member From List', 'bit-pi'),
+
+    'Get Members From List' => __('Get Members From List', 'bit-pi'),
+
+    'Choose the list from which you want to add a note to a member.' => __('Choose the list from which you want to add a note to a member.', 'bit-pi'),
+
+    'Select Audience List' => __('Select Audience List', 'bit-pi'),
+
+    'Enter the member\'s email where you want to add the note.' => __('Enter the member\'s email where you want to add the note.', 'bit-pi'),
+
+    'Member Email' => __('Member Email', 'bit-pi'),
+
+    'Enter the content of the note. Note length is limited to 1,000 characters' => __('Enter the content of the note. Note length is limited to 1,000 characters', 'bit-pi'),
+
+    'Note Content' => __('Note Content', 'bit-pi'),
+
+    'Choose the list from which you want to remove the member tag.' => __('Choose the list from which you want to remove the member tag.', 'bit-pi'),
+
+    'Enter the member\'s email from which you want to Add or Remove the tag.' => __('Enter the member\'s email from which you want to Add or Remove the tag.', 'bit-pi'),
+
+    'Tag Name' => __('Tag Name', 'bit-pi'),
+
+    'ADD' => __('ADD', 'bit-pi'),
+
+    'DELETE' => __('DELETE', 'bit-pi'),
+
+    'Tag #{COUNT}' => __('Tag #{COUNT}', 'bit-pi'),
+
+    'Tag Field Map' => __('Tag Field Map', 'bit-pi'),
+
+    'When Is Syncing is Enabled, automation based on the tags in the request will not fire.' => __('When Is Syncing is Enabled, automation based on the tags in the request will not fire.', 'bit-pi'),
+
+    'Is Syncing?' => __('Is Syncing?', 'bit-pi'),
+
+    'Enable the switch to update an existing member.' => __('Enable the switch to update an existing member.', 'bit-pi'),
+
+    'Update Existing Member' => __('Update Existing Member', 'bit-pi'),
+
+    'Choose the list from which you want to add or update a member. After selecting the list, other fields will appear.' => __('Choose the list from which you want to add or update a member. After selecting the list, other fields will appear.', 'bit-pi'),
+
+    'Field Name' => __('Field Name', 'bit-pi'),
+
+    'Merge Field Map' => __('Merge Field Map', 'bit-pi'),
+
+    'Select the status you want to assign to your member.' => __('Select the status you want to assign to your member.', 'bit-pi'),
+
+    'Cleaned' => __('Cleaned', 'bit-pi'),
+
+    'Enable the switch to assign VIP status to the member.' => __('Enable the switch to assign VIP status to the member.', 'bit-pi'),
+
+    'VIP' => __('VIP', 'bit-pi'),
+
+    'Enable the switch to map address fields with their values.' => __('Enable the switch to map address fields with their values.', 'bit-pi'),
+
+    'Address Field' => __('Address Field', 'bit-pi'),
+
+    'Address #{COUNT}' => __('Address #{COUNT}', 'bit-pi'),
+
+    'Address Field Map' => __('Address Field Map', 'bit-pi'),
 
     'Select Module' => __('Select Module', 'bit-pi'),
 
@@ -2801,10 +2869,6 @@ return [
 
     'Add Address Field' => __('Add Address Field', 'bit-pi'),
 
-    'Address Field' => __('Address Field', 'bit-pi'),
-
-    'Address Field Map' => __('Address Field Map', 'bit-pi'),
-
     'Add Double Opt-in' => __('Add Double Opt-in', 'bit-pi'),
 
     'Double Opt-in' => __('Double Opt-in', 'bit-pi'),
@@ -2813,7 +2877,53 @@ return [
 
     'Update Subscriber' => __('Update Subscriber', 'bit-pi'),
 
+    'Choose the list from which you want to delete a member.' => __('Choose the list from which you want to delete a member.', 'bit-pi'),
+
+    'Enter the member\'s email you want to delete from the list.' => __('Enter the member\'s email you want to delete from the list.', 'bit-pi'),
+
+    'Choose the list from which you want to get a member\'s information.' => __('Choose the list from which you want to get a member\'s information.', 'bit-pi'),
+
+    'Enter the member\'s email whose information you want.' => __('Enter the member\'s email whose information you want.', 'bit-pi'),
+
+    'Choose the list from which you want to get member\'s information. After selecting the List, Status and Count field will appear.' => __('Choose the list from which you want to get member\'s information. After selecting the List, Status and Count field will appear.', 'bit-pi'),
+
+    'Select a status to filter members by their subscription state (e.g., Subscribed, Unsubscribed).' => __('Select a status to filter members by their subscription state (e.g., Subscribed, Unsubscribed).', 'bit-pi'),
+
+    'Enter the count value to specify the number of members to retrieve.' => __('Enter the count value to specify the number of members to retrieve.', 'bit-pi'),
+
+    'Count' => __('Count', 'bit-pi'),
+
+    'Choose the list to which you want to add a webhook.' => __('Choose the list to which you want to add a webhook.', 'bit-pi'),
+
+    'Select the type of Mailchimp Event that should trigger the webhook.' => __('Select the type of Mailchimp Event that should trigger the webhook.', 'bit-pi'),
+
+    'Select Webhook Event' => __('Select Webhook Event', 'bit-pi'),
+
+    'SUBSCRIBE' => __('SUBSCRIBE', 'bit-pi'),
+
+    'UNSUBSCRIBE' => __('UNSUBSCRIBE', 'bit-pi'),
+
+    'PROFILE UPDATE' => __('PROFILE UPDATE', 'bit-pi'),
+
+    'CLEANED' => __('CLEANED', 'bit-pi'),
+
+    'EMAIL_UPDATE' => __('EMAIL_UPDATE', 'bit-pi'),
+
+    'CAMPAIGN' => __('CAMPAIGN', 'bit-pi'),
+
+    'Select the Source of the event that should trigger the webhook.' => __('Select the Source of the event that should trigger the webhook.', 'bit-pi'),
+
+    'Select Webhook Source' => __('Select Webhook Source', 'bit-pi'),
+
+    'USER' => __('USER', 'bit-pi'),
+
+    'ADMIN' => __('ADMIN', 'bit-pi'),
+
+    'API' => __('API', 'bit-pi'),
+
     'You can get your API key from <a class="text-blue-600 underline" href="https://app.mailercloud.com/account/api-integrations" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API key from <a class="text-blue-600 underline" href="https://app.mailercloud.com/account/api-integrations" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
+
+    'Create Subscriber' => __('Create Subscriber', 'bit-pi'),
 
     'You can get your API Token from <a class="text-blue-600 underline" href="https://dashboard.mailerlite.com/integrations/api" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API Token from <a class="text-blue-600 underline" href="https://dashboard.mailerlite.com/integrations/api" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
 
@@ -3240,6 +3350,8 @@ return [
     'Purchased a membership' => __('Purchased a membership', 'bit-pi'),
 
     'Membership subscription expired' => __('Membership subscription expired', 'bit-pi'),
+
+    'Membership level changed' => __('Membership level changed', 'bit-pi'),
 
     'Pro-levels' => __('Pro-levels', 'bit-pi'),
 
@@ -5422,6 +5534,10 @@ return [
     'Booking Updated' => __('Booking Updated', 'bit-pi'),
 
     'Enquiry Created' => __('Enquiry Created', 'bit-pi'),
+
+    'Post Form Submission' => __('Post Form Submission', 'bit-pi'),
+
+    'Subscription Pack Updated' => __('Subscription Pack Updated', 'bit-pi'),
 
     'Note: navigate to the WS Form settings, select "Run WordPress Hook" as the action type, and enter the Hook Tag: bit_pi_do_action.' => __('Note: navigate to the WS Form settings, select "Run WordPress Hook" as the action type, and enter the Hook Tag: bit_pi_do_action.', 'bit-pi'),
 

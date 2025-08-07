@@ -153,7 +153,7 @@ class MixInputHandler
         foreach ($fieldMap as $fieldPair) {
             $keys = explode('.', $fieldPair['path']);
 
-            if (isset($fieldMap['value']) && empty($fieldPair['value']) && !is_numeric($fieldMap['value'])) {
+            if (empty($fieldPair['value']) && !is_numeric($fieldMap['value'])) {
                 continue;
             }
 

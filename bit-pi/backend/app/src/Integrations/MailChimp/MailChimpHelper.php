@@ -14,48 +14,47 @@ use BitApps\Pi\Helpers\Hash;
 
 final class MailChimpHelper
 {
-    public function getAudienceFields(Request $request)
+    public function setMailchimpWebhook(Request $request)
     {
-        $accessToken = Hash::decrypt($request->accessToken);
-        $module = $request->module;
-        if (property_exists($request, 'module') && $request->module !== null && ($module == 'add_tag_to_a_member' || $module == 'remove_tag_from_a_member')) {
-            $fields[] = ['value' => 'Email', 'label' => 'Email', 'required' => true];
-            $response['audienceField'] = $fields;
+        $validated = $request->validate(
+            [
+                'token'         => ['required', 'string'],
+                'dataCenter'    => ['required', 'string'],
+                'audienceList'  => ['required', 'string'],
+                'webhookEvent'  => ['required', 'string'],
+                'webhookSource' => ['required', 'string'],
+                'webhookUrl'    => ['required', 'url'],
+            ]
+        );
 
-            return $response;
-        }
+        $token = Hash::decrypt($validated['token']);
+        $dataCenter = $validated['dataCenter'];
+        $audienceList = $validated['audienceList'];
+        $webhookEvent = $validated['webhookEvent'];
+        $webhookSource = $validated['webhookSource'];
+        $webhookUrl = filter_var($validated['webhookUrl'], FILTER_SANITIZE_URL);
 
-        $apiEndpoints = self::baseURL($request->dataCenter) . '/lists/' . $request->listId . '/merge-fields';
-        $httpClient = new HttpClient(['headers' => ['Authorization' => 'Bearer ' . $accessToken]]);
-        $apiResponse = $httpClient->request($apiEndpoints, 'GET', []);
-        $fields = [];
+        $httpClient = new HttpClient(
+            [
+                'headers' => [
+                    'Authorization' => 'Bearer ' . $token,
+                    'Content-Type'  => 'application/json',
+                ],
+            ]
+        );
 
-        if (isset($apiResponse->merge_fields)) {
-            $fields[] = (object) ['value' => 'Email', 'label' => 'Email', 'required' => true];
-            $allFields = $apiResponse->merge_fields;
-            foreach ($allFields as $field) {
-                if ($field->name === 'Address') {
-                    continue;
-                }
-                $fields[] = [
-                    'value'    => $field->tag,
-                    'label'    => $field->name,
-                    'required' => $field->required ?? false
-                ];
-            }
-            $response['audienceField'] = $fields;
+        $body = [
+            'events'  => [$webhookEvent => true],
+            'sources' => [$webhookSource => true],
+            'url'     => $webhookUrl
+        ];
 
-            return $response;
-        }
-    }
+        $endpoint = "https://{$dataCenter}.api.mailchimp.com/3.0/lists/{$audienceList}/webhooks";
 
-    /**
-     * MailChimp API Endpoint.
-     *
-     * @param mixed $dataCenter
-     */
-    public static function baseURL($dataCenter)
-    {
-        return "https://{$dataCenter}.api.mailchimp.com/3.0";
+        return $httpClient->request(
+            $endpoint,
+            'POST',
+            wp_json_encode($body)
+        );
     }
 }

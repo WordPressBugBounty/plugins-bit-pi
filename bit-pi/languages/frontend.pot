@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Tue Aug 05 2025 11:39:09 GMT+0000 (Coordinated Universal "
+"POT-Creation-Date: Thu Aug 07 2025 13:59:16 GMT+0000 (Coordinated Universal "
 "Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -685,8 +685,10 @@ msgstr ""
 #: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:178
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.free.ts:84
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:59
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:106
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:160
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:60
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:141
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:70
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:124
 #: frontend/src/services/machines/mailerCloud/createContact.mailerCloud.machine.free.ts:90
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:54
 #: frontend/src/services/machines/notion/createDatabase.notion.machine.pro.ts:63
@@ -1043,9 +1045,9 @@ msgstr ""
 #: frontend/src/services/machines/googleSheet/appendOrUpdateRow.googleSheet.machine.pro.ts:108
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:100
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:114
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:132
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:200
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:215
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:96
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:164
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:179
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:114
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.free.ts:122
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.free.ts:140
@@ -1092,9 +1094,9 @@ msgstr ""
 #: frontend/src/services/machines/googleSheet/appendOrUpdateRow.googleSheet.machine.pro.ts:107
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:99
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:113
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:131
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:199
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:214
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:95
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:163
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:178
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:113
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.free.ts:139
 #: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:45
@@ -1435,6 +1437,7 @@ msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:24
 #: frontend/src/pages/CustomApps/internals/AddModuleModal/AddModuleModal.tsx:61
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:57
 msgid "Action"
 msgstr ""
 
@@ -1792,7 +1795,7 @@ msgstr ""
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:172
 #: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:38
 #: frontend/src/services/machines/googleSheet/appendOrUpdateRow.googleSheet.machine.pro.ts:39
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:29
+#: frontend/src/services/machines/mailChimp/helpers/mailChimpCommons.ts:22
 #: frontend/src/services/machines/notion/helpers/notionCommons.ts:22
 #: frontend/src/services/machines/zohoCrm/createLead.zohoCrm.machine.free.ts:28
 msgid "OAuth 2"
@@ -1830,7 +1833,7 @@ msgstr ""
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.free.ts:39
 #: frontend/src/services/machines/line/helpers/lineCommons.ts:28
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:36
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:45
+#: frontend/src/services/machines/mailChimp/helpers/mailChimpCommons.ts:38
 #: frontend/src/services/machines/mailerCloud/createContact.mailerCloud.machine.free.ts:39
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:33
 #: frontend/src/services/machines/notion/helpers/notionCommons.ts:39
@@ -1874,6 +1877,7 @@ msgstr ""
 #: frontend/src/services/machines/commonMachines/createWebhook.machine.ts:15
 #: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:64
 #: frontend/src/services/machines/line/watchEvents.line.machine.pro.ts:19
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:69
 #: frontend/src/services/machines/stripe/webhookAutomation.stripe.machine.pro.ts:42
 msgid "Webhook"
 msgstr ""
@@ -2822,6 +2826,8 @@ msgstr ""
 #: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:268
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:119
 #: frontend/src/services/machines/fluentCrm/crmStatusUpdated.fluentCrm.machine.pro.ts:33
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:83
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:42
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:193
 msgid "Status"
 msgstr ""
@@ -3564,8 +3570,8 @@ msgstr ""
 #: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:168
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.free.ts:65
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:48
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:97
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:144
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:61
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:108
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:45
 #: frontend/src/services/machines/notion/createDatabase.notion.machine.pro.ts:46
 #: frontend/src/services/machines/notion/createDatabaseItem.notion.machine.pro.ts:35
@@ -3811,9 +3817,9 @@ msgstr ""
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:73
 #: frontend/src/services/machines/gemini/askGemini.gemini.machine.pro.ts:38
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:53
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:43
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:41
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:41
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:42
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:40
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:40
 #: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:43
 #: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:58
 #: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:36
@@ -4276,6 +4282,8 @@ msgstr ""
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.free.ts:68
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.free.ts:70
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:123
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:87
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:46
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:96
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:41
 msgid "Unsubscribed"
@@ -4284,6 +4292,8 @@ msgstr ""
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.free.ts:70
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.free.ts:85
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.free.ts:99
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:93
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:52
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:27
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:44
 msgid "Select a Status"
@@ -4304,7 +4314,8 @@ msgstr ""
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:92
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.free.ts:70
 #: frontend/src/services/machines/goHighLevel/updateContact.goHighLevel.machine.free.ts:84
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:116
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:73
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:80
 msgid "Refetch Fields"
 msgstr ""
 
@@ -4320,19 +4331,22 @@ msgstr ""
 
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:124
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:16
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:147
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:128
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:111
 msgid "Address 1"
 msgstr ""
 
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:125
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:148
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:129
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:112
 msgid "Address 2"
 msgstr ""
 
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:126
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:68
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:17
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:149
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:130
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:113
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:58
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:28
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:53
@@ -4345,7 +4359,8 @@ msgstr ""
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:127
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:74
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:18
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:151
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:132
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:115
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:53
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:112
 #: frontend/src/services/machines/woodpecker/helpers/woodpeckerProspectFields.ts:17
@@ -4353,7 +4368,8 @@ msgid "State"
 msgstr ""
 
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:128
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:150
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:131
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:114
 #: frontend/src/services/machines/rapidMail/createContact.rapidMail.machine.free.ts:85
 msgid "Zip"
 msgstr ""
@@ -4361,7 +4377,8 @@ msgstr ""
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:129
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:67
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:19
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:152
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:133
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:116
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:42
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:92
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:31
@@ -4537,6 +4554,8 @@ msgid "Contact Status"
 msgstr ""
 
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.free.ts:66
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:90
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:49
 msgid "Transactional"
 msgstr ""
 
@@ -4629,7 +4648,7 @@ msgstr ""
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.free.ts:67
 #: frontend/src/services/machines/goHighLevel/updateContact.goHighLevel.machine.free.ts:81
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:67
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:113
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:77
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:61
 #: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.pro.ts:66
 #: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:47
@@ -4649,11 +4668,15 @@ msgstr ""
 
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:122
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:85
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:86
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:45
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:40
 msgid "Subscribed"
 msgstr ""
 
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:124
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:89
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:48
 msgid "Pending"
 msgstr ""
 
@@ -5274,12 +5297,12 @@ msgid "Append or Update Row (by value)"
 msgstr ""
 
 #: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:20
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:15
+#: frontend/src/services/machines/mailChimp/helpers/mailChimpCommons.ts:8
 msgid "You can find credentials from"
 msgstr ""
 
 #: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:21
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:16
+#: frontend/src/services/machines/mailChimp/helpers/mailChimpCommons.ts:9
 msgid "Here"
 msgstr ""
 
@@ -5465,6 +5488,7 @@ msgstr ""
 
 #: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:114
 #: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:145
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:68
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:295
 msgid "Field #{COUNT}"
 msgstr ""
@@ -6641,13 +6665,14 @@ msgstr ""
 
 #: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:76
 #: frontend/src/services/machines/line/getNumberOfFollowers.line.machine.pro.ts:31
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:67
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:89
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:65
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:87
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:65
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:87
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:66
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:88
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:64
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:86
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:64
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:86
 #: frontend/src/services/machines/line/watchEvents.line.machine.pro.ts:30
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:79
 #: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:146
 #: frontend/src/services/machines/stripe/retrieveBalance.stripe.machine.pro.ts:22
 #: frontend/src/services/machines/stripe/retrievePrice.stripe.machine.pro.ts:22
@@ -6845,6 +6870,7 @@ msgid "Get a Group/Room Member Profile"
 msgstr ""
 
 #: frontend/src/services/machines/line/_lineMachines.ts:67
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:65
 msgid "Watch Events"
 msgstr ""
 
@@ -7065,93 +7091,94 @@ msgstr ""
 msgid "Disabled Notification?"
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:39
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:37
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:38
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:36
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:36
 msgid ""
-"To add LINE emojis, insert $ where you want the emoji in your text, then "
+"To add LINE emojis, insert $ where you want the emoji in your message, then "
 "define its index, length, productId, and emojiId in the emojis field "
 "mapping."
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:53
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:51
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:51
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:52
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:50
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:50
 msgid ""
 "Enable to Send Message with Multiple Emojis with index ID, Product ID of "
 "Emoji & Emojis ID"
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:57
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:55
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:55
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:56
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:54
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:54
 msgid "Send Emojis?"
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:77
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:75
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:75
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:76
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:74
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:74
 msgid "Enable to Send Multiple Sticker with Stickers's Package ID &  Sticker ID"
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:79
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:77
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:77
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:78
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:76
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:76
 msgid "Send Sticker?"
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:99
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:97
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:97
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:98
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:96
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:96
 msgid ""
 "Enable to Send Multiple Image with Image's Original Content URL & Image's "
 "Preview Image URL"
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:103
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:101
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:101
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:102
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:100
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:100
 msgid "Send Image?"
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:113
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:112
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:111
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:112
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:111
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:110
 msgid ""
 "Enable to Send Multiple Audio with Audio's Original Content URL & Audio's "
-"Duration"
+"Duration. Duration must be in milliseconds."
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:117
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:116
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:115
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:116
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:115
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:114
 msgid "Send Audio?"
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:128
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:126
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:125
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:127
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:125
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:124
 msgid ""
 "Enable to Send Multiple Video with Original Content URL, Preview Image URL "
 "& Tracking ID"
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:132
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:130
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:129
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:131
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:129
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:128
 msgid "Send Video?"
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:142
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:140
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:139
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:141
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:139
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:138
 msgid ""
 "Enable to Send Multiple Location with Title, Address Line's, Latitude & "
 "Longitude"
 msgstr ""
 
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:146
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:144
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:143
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:145
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:143
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:142
 msgid "Send Location?"
 msgstr ""
 
@@ -7161,13 +7188,6 @@ msgstr ""
 
 #: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:27
 msgid "Reply Token"
-msgstr ""
-
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:37
-msgid ""
-"To add LINE emojis, insert $ where you want the emoji in your message, then "
-"define its index, length, productId, and emojiId in the emojis field "
-"mapping."
 msgstr ""
 
 #: frontend/src/services/machines/mailBluster/_mailBlusterMachines.ts:15
@@ -7208,63 +7228,305 @@ msgstr ""
 msgid "IP Address"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:15
-#: frontend/src/services/machines/mailerLite/_mailerLiteMachines.ts:15
-msgid "Create Subscriber"
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:5
+msgid ""
+"This event is deprecated. It is recommended to use the updated events "
+"instead."
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:55
-msgid "Select Module"
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:19
+msgid "Create Subscriber (Deprecated Event)"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:58
-msgid "Add a member to an audience"
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:26
+msgid "Add or Update a Member To List"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:59
-msgid "Add tag to a member"
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:33
+msgid "Add/Remove Member Tag"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:60
-msgid "Remove tag from a member"
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:39
+msgid "Add Member Note"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:70
-msgid "Select Audience"
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:45
+msgid "Delete Member From List"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:81
-msgid "Select Tag"
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:51
+msgid "Get a Member From List"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:126
-msgid "Add Address Field"
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:57
+msgid "Get Members From List"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:128
+#: frontend/src/services/machines/mailChimp/addMemberNote.mailChimp.machine.free.ts:22
+msgid "Choose the list from which you want to add a note to a member."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addMemberNote.mailChimp.machine.free.ts:24
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:24
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:37
+#: frontend/src/services/machines/mailChimp/deleteMemberFromList.mailChimp.machine.free.ts:24
+#: frontend/src/services/machines/mailChimp/getMemberFromList.mailChimp.machine.free.ts:24
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:26
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:27
+msgid "Select Audience List"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addMemberNote.mailChimp.machine.free.ts:35
+msgid "Enter the member's email where you want to add the note."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addMemberNote.mailChimp.machine.free.ts:37
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:37
+#: frontend/src/services/machines/mailChimp/deleteMemberFromList.mailChimp.machine.free.ts:37
+#: frontend/src/services/machines/mailChimp/getMemberFromList.mailChimp.machine.free.ts:37
+msgid "Member Email"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addMemberNote.mailChimp.machine.free.ts:46
+msgid "Enter the content of the note. Note length is limited to 1,000 characters"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addMemberNote.mailChimp.machine.free.ts:48
+msgid "Note Content"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:22
+msgid "Choose the list from which you want to remove the member tag."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:35
+msgid "Enter the member's email from which you want to Add or Remove the tag."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:50
+msgid "Tag Name"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:60
+msgid "ADD"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:61
+msgid "DELETE"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:69
+msgid "Tag #{COUNT}"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:71
+msgid "Tag Field Map"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:78
+msgid ""
+"When Is Syncing is Enabled, automation based on the tags in the request "
+"will not fire."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:82
+msgid "Is Syncing?"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:22
+msgid "Enable the switch to update an existing member."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:24
+msgid "Update Existing Member"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:33
+msgid ""
+"Choose the list from which you want to add or update a member. After "
+"selecting the list, other fields will appear."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:51
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:125
+msgid "Field Name"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:70
+msgid "Merge Field Map"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:81
+msgid "Select the status you want to assign to your member."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:88
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:47
+msgid "Cleaned"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:99
+msgid "Enable the switch to assign VIP status to the member."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:101
+msgid "VIP"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:111
+msgid "Enable the switch to map address fields with their values."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:113
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:92
 msgid "Address Field"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:167
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:149
+msgid "Address #{COUNT}"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:151
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:131
 msgid "Address Field Map"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:194
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:19
+msgid "Select Module"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:22
+msgid "Add a member to an audience"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:23
+msgid "Add tag to a member"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:24
+msgid "Remove tag from a member"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:34
+msgid "Select Audience"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:45
+msgid "Select Tag"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:90
+msgid "Add Address Field"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:158
 msgid "Add Double Opt-in"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:196
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:160
 msgid "Double Opt-in"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:209
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:173
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:108
 msgid "Update Responses if the Subscriber is exist?"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:211
+#: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:175
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:110
 msgid "Update Subscriber"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/deleteMemberFromList.mailChimp.machine.free.ts:22
+msgid "Choose the list from which you want to delete a member."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/deleteMemberFromList.mailChimp.machine.free.ts:35
+msgid "Enter the member's email you want to delete from the list."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/getMemberFromList.mailChimp.machine.free.ts:22
+msgid "Choose the list from which you want to get a member's information."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/getMemberFromList.mailChimp.machine.free.ts:35
+msgid "Enter the member's email whose information you want."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:22
+msgid ""
+"Choose the list from which you want to get member's information. After "
+"selecting the List, Status and Count field will appear."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:38
+msgid ""
+"Select a status to filter members by their subscription state (e.g., "
+"Subscribed, Unsubscribed)."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:58
+msgid "Enter the count value to specify the number of members to retrieve."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:60
+msgid "Count"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:25
+msgid "Choose the list to which you want to add a webhook."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:37
+msgid "Select the type of Mailchimp Event that should trigger the webhook."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:39
+msgid "Select Webhook Event"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:42
+msgid "SUBSCRIBE"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:43
+msgid "UNSUBSCRIBE"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:44
+msgid "PROFILE UPDATE"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:45
+msgid "CLEANED"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:46
+msgid "EMAIL_UPDATE"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:47
+msgid "CAMPAIGN"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:54
+msgid "Select the Source of the event that should trigger the webhook."
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:56
+msgid "Select Webhook Source"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:59
+msgid "USER"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:60
+msgid "ADMIN"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:61
+msgid "API"
 msgstr ""
 
 #: frontend/src/services/machines/mailerCloud/createContact.mailerCloud.machine.free.ts:19
@@ -7272,6 +7534,10 @@ msgid ""
 "You can get your API key from <a class=\"text-blue-600 underline\" "
 "href=\"https://app.mailercloud.com/account/api-integrations\" "
 "target=\"_blank\" rel=\"noopener noreferrer nofollow\">here</a>"
+msgstr ""
+
+#: frontend/src/services/machines/mailerLite/_mailerLiteMachines.ts:15
+msgid "Create Subscriber"
 msgstr ""
 
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:14
@@ -8231,6 +8497,10 @@ msgstr ""
 
 #: frontend/src/services/machines/paidMembershipPro/_paidMembershipProMachines.ts:38
 msgid "Membership subscription expired"
+msgstr ""
+
+#: frontend/src/services/machines/paidMembershipPro/_paidMembershipProMachines.ts:45
+msgid "Membership level changed"
 msgstr ""
 
 #: frontend/src/services/machines/paidMembershipPro/adminChangesMembershipLevel.paidMembershipPro.machine.pro.ts:33
@@ -13170,6 +13440,14 @@ msgstr ""
 
 #: frontend/src/services/machines/WPTravelEngine/_wPTravelEngineMachines.ts:40
 msgid "Enquiry Created"
+msgstr ""
+
+#: frontend/src/services/machines/WPUserFrontend/_wPUserFrontendMachines.ts:26
+msgid "Post Form Submission"
+msgstr ""
+
+#: frontend/src/services/machines/WPUserFrontend/_wPUserFrontendMachines.ts:33
+msgid "Subscription Pack Updated"
 msgstr ""
 
 #: frontend/src/services/machines/wsForm/wsFormSubmit.wsForm.machine.pro.ts:32

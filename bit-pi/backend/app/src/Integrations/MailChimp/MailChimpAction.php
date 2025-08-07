@@ -1,23 +1,27 @@
 <?php
 
-namespace BitApps\Pi\src\Integrations\MailChimp;
-
-use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
-use BitApps\Pi\src\Authorization\AuthorizationFactory;
-use BitApps\Pi\src\Authorization\AuthorizationType;
-use BitApps\Pi\src\Flow\NodeInfoProvider;
-use BitApps\Pi\src\Interfaces\ActionInterface;
+namespace BitApps\PiPro\src\Integrations\MailChimp;
 
 if (!\defined('ABSPATH')) {
     exit;
 }
 
+use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
+use BitApps\Pi\Helpers\Utility;
+use BitApps\Pi\src\Authorization\AuthorizationFactory;
+use BitApps\Pi\src\Authorization\AuthorizationType;
+use BitApps\Pi\src\Flow\NodeInfoProvider;
+use BitApps\Pi\src\Integrations\MailChimp\deprecated\MailChimpDeprecated;
+use BitApps\Pi\src\Integrations\MailChimp\MailChimpService;
+use BitApps\Pi\src\Interfaces\ActionInterface;
 
 class MailChimpAction implements ActionInterface
 {
-    private $mailChimpServices;
+    private NodeInfoProvider $nodeInfoProvider;
 
-    private $nodeInfoProvider;
+    private MailChimpDeprecated $mailChimpDeprecated;
+
+    private MailChimpService $mailChimpService;
 
     public function __construct(NodeInfoProvider $nodeInfoProvider)
     {
@@ -26,42 +30,73 @@ class MailChimpAction implements ActionInterface
 
     public function execute(): array
     {
-        $executeResponse = $this->executeMailChimpAction();
+        $executedNodeAction = $this->executeMailChimpAction();
 
-        if (isset($executeResponse['response']['addContact']->id) || isset($executeResponse['response']['addContact']->title) || isset($executeResponse['response']['updateContact']->id)) {
-            return [
-                'status' => 'success',
-                'output' => $executeResponse['response'],
-                'input'  => $executeResponse['payload'],
-            ];
+        return Utility::formatResponseData(
+            $executedNodeAction['status_code'],
+            $executedNodeAction['payload'],
+            $executedNodeAction['response']
+        );
+    }
+
+    private function executeMachine($machineSlug, $audienceFieldMapData, $addressFieldMapData, $fieldMapData, $tagFieldMapData, $configs)
+    {
+        switch ($machineSlug) {
+            case 'createSubscriber':
+                return $this->mailChimpDeprecated->createSubscriber($audienceFieldMapData, $addressFieldMapData, $fieldMapData);
+
+            case 'addUpdateMember':
+                $merge_fields = array_merge($audienceFieldMapData, [['ADDRESS' => $addressFieldMapData]]);
+                $fieldMapData = array_merge($fieldMapData, ['email_address' => $audienceFieldMapData['Email']], ['merge_fields' => $merge_fields]);
+
+                return $this->mailChimpService->addUpdateMember($fieldMapData['select-audience'], $audienceFieldMapData['Email'], $fieldMapData, $configs);
+
+            case 'addRemoveMemberTag':
+                return $this->mailChimpService->addRemoveMemberTag($fieldMapData['select-audience'], $fieldMapData['member-email'], $tagFieldMapData);
+
+            case 'addMemberNote':
+                return $this->mailChimpService->addMemberNote($fieldMapData['select-audience'], $fieldMapData['member-email'], $fieldMapData['note']);
+
+            case 'deleteMemberFromList':
+                return $this->mailChimpService->deleteMemberFromList($fieldMapData['select-audience'], $fieldMapData['member-email']);
+
+            case 'getMemberFromList':
+                return $this->mailChimpService->getMemberFromList($fieldMapData['select-audience'], $fieldMapData['member-email']);
+
+            case 'getMembersFromList':
+                return $this->mailChimpService->getMembersFromList($fieldMapData['select-audience'], $fieldMapData['status'], $fieldMapData['count']);
         }
-
-        return [
-            'status' => 'error',
-            'output' => $executeResponse['response'],
-            'input'  => $executeResponse['payload'],
-        ];
     }
 
     private function executeMailChimpAction()
     {
-        $connectionId = $this->nodeInfoProvider->getFieldMapConfigs('connection-id.value');
-        $fieldMapData = $this->nodeInfoProvider->getFieldMapRepeaters('field-map.value', false, true, 'mailchimpField', 'value');
+        $machineSlug = $this->nodeInfoProvider->getMachineSlug();
+        $configs = $this->nodeInfoProvider->getFieldMapConfigs();
+        $audienceFieldMapData = $this->nodeInfoProvider->getFieldMapRepeaters('field-map.value', false, true, 'mailchimpField', 'value');
         $addressFieldMapData = $this->nodeInfoProvider->getFieldMapRepeaters('address-field-map.value', false, true, 'mailchimpAddressField', 'value');
-        $additionalData = $this->nodeInfoProvider->getFieldMapData();
+        $tagFieldMapData = $this->nodeInfoProvider->getFieldMapRepeaters('tag-field-map.value', false, false);
+        $fieldMapData = $this->nodeInfoProvider->getFieldMapData();
 
         $dataCenter = $this->nodeInfoProvider->getData();
         $dataCenter = $dataCenter['db']['dataCenter'];
 
-        $accessToken = AuthorizationFactory::getAuthorizationHandler(AuthorizationType::OAUTH2, $connectionId)->getAccessToken();
+        $accessToken = AuthorizationFactory::getAuthorizationHandler(
+            AuthorizationType::OAUTH2,
+            $configs['connection-id']
+        )->getAccessToken();
 
-        $httpClient = new HttpClient(['headers' => ['Authorization' => $accessToken]]);
-        $mailerLiteAction = $this->nodeInfoProvider->getMachineSlug();
+        $httpClient = new HttpClient(
+            [
+                'headers' => [
+                    'Authorization' => $accessToken,
+                ],
+            ]
+        );
 
-        $this->mailChimpServices = new MailChimpServices($httpClient, $dataCenter);
+        $this->mailChimpDeprecated = new MailChimpDeprecated($httpClient, $dataCenter);
 
-        if ($mailerLiteAction === 'createSubscriber') {
-            return $this->mailChimpServices->createSubscriber($fieldMapData, $addressFieldMapData, $additionalData);
-        }
+        $this->mailChimpService = new MailChimpService($httpClient, $dataCenter);
+
+        return $this->executeMachine($machineSlug, $audienceFieldMapData, $addressFieldMapData, $fieldMapData, $tagFieldMapData, $configs);
     }
 }
