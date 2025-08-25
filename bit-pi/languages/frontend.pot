@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Thu Aug 07 2025 13:59:16 GMT+0000 (Coordinated Universal "
+"POT-Creation-Date: Mon Aug 25 2025 09:49:23 GMT+0000 (Coordinated Universal "
 "Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -647,6 +647,9 @@ msgstr ""
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:125
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomAppsAction.tsx:137
 #: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/CustomAppsTrigger.tsx:94
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:70
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:65
 #: frontend/src/services/machines/asana/helpers/machineHelper.asana.ts:228
 #: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:266
 #: frontend/src/services/machines/demio/helpers/machineHelper.demio.ts:86
@@ -654,12 +657,15 @@ msgstr ""
 #: frontend/src/services/machines/getResponse/helpers/machineHelper.getResponse.ts:12
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:42
 #: frontend/src/services/machines/telegram/createInviteLink.telegram.machine.pro.ts:35
+#: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.pro.ts:48
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:77
 #: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:326
 msgid "Name"
 msgstr ""
 
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:137
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/CustomOauth2Connection/CustomOauth2Connection.tsx:316
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:90
 #: frontend/src/services/machines/asana/createTask.asana.machine.pro.ts:119
 #: frontend/src/services/machines/benchMark/createContact.benchmark.machine.free.ts:74
 #: frontend/src/services/machines/benchMark/updateContact.benchmark.machine.free.ts:86
@@ -674,6 +680,10 @@ msgstr ""
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.free.ts:127
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:80
 #: frontend/src/services/machines/encharge/createContact.encharge.machine.free.ts:73
+#: frontend/src/services/machines/fluentCrm/createCompany.fluentCrm.machine.pro.ts:28
+#: frontend/src/services/machines/fluentCrm/createCompany.fluentCrm.machine.pro.ts:61
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:72
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:105
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:83
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:81
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.free.ts:59
@@ -685,8 +695,8 @@ msgstr ""
 #: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.free.ts:178
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.free.ts:84
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:59
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:60
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:141
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:62
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:143
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:70
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:124
 #: frontend/src/services/machines/mailerCloud/createContact.mailerCloud.machine.free.ts:90
@@ -834,6 +844,8 @@ msgstr ""
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionBody.tsx:105
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionHeaders.tsx:96
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionQueryParams.tsx:100
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:83
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:83
 msgid "Add"
 msgstr ""
 
@@ -1437,6 +1449,9 @@ msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:24
 #: frontend/src/pages/CustomApps/internals/AddModuleModal/AddModuleModal.tsx:61
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:80
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:80
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:80
 #: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:57
 msgid "Action"
 msgstr ""
@@ -1538,7 +1553,10 @@ msgstr ""
 
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:276
 #: frontend/src/pages/Flows/ui/Flows.tsx:122
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:60
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:35
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:155
+#: frontend/src/services/machines/fluentCrm/addNote.fluentCrm.machine.pro.ts:25
 #: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:61
 #: frontend/src/services/machines/line/helpers/lineCommons.ts:276
 #: frontend/src/services/machines/notion/createDatabase.notion.machine.pro.ts:34
@@ -1563,7 +1581,9 @@ msgstr ""
 #: frontend/src/components/utilities/TagFilter/TagListMenu.tsx:31
 #: frontend/src/services/machines/asana/createTask.asana.machine.pro.ts:93
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:107
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:64
 #: frontend/src/services/machines/fluentCrm/addTag.fluentCrm.machine.pro.ts:33
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:36
 #: frontend/src/services/machines/fluentCrm/removeTag.fluentCrm.machine.pro.ts:33
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:43
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:108
@@ -1620,6 +1640,7 @@ msgstr ""
 
 #: frontend/src/components/features/FlowVariables/internals/SystemTabContent/SystemTabContent.tsx:24
 #: frontend/src/components/features/FlowVariables/ui/FlowVariables.tsx:20
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:96
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:65
 #: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:50
 msgid "System"
@@ -1653,6 +1674,8 @@ msgstr ""
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:68
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:211
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:278
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:70
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:80
 #: frontend/src/services/machines/benchMark/helpers/machineHelper.benchmark.ts:83
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:11
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.free.ts:69
@@ -1671,6 +1694,8 @@ msgstr ""
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:74
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:221
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:288
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:80
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:90
 #: frontend/src/services/machines/benchMark/helpers/machineHelper.benchmark.ts:87
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:72
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:12
@@ -1691,6 +1716,7 @@ msgstr ""
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:231
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:298
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/BodyAndQueryParamFields.tsx:34
+#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:60
 #: frontend/src/services/machines/benchMark/helpers/machineHelper.benchmark.ts:79
 #: frontend/src/services/machines/brevo/addContactToList.brevo.machine.free.ts:37
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:23
@@ -1747,6 +1773,21 @@ msgid "Action 1"
 msgstr ""
 
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:148
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:20
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:25
 #: frontend/src/services/machines/benchMark/createContact.benchmark.machine.free.ts:23
 #: frontend/src/services/machines/benchMark/updateContact.benchmark.machine.free.ts:23
 #: frontend/src/services/machines/brevo/helpers/brevoCommons.ts:14
@@ -1803,6 +1844,21 @@ msgstr ""
 
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:189
 #: frontend/src/components/features/NodeDetails/helpers/customMachineToComponent.ts:65
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:50
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:55
 #: frontend/src/services/machines/asana/createTask.asana.machine.pro.ts:41
 #: frontend/src/services/machines/benchMark/createContact.benchmark.machine.free.ts:39
 #: frontend/src/services/machines/benchMark/updateContact.benchmark.machine.free.ts:39
@@ -1848,6 +1904,7 @@ msgstr ""
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashCommons.ts:37
 #: frontend/src/services/machines/systemIo/createContact.systemIo.machine.free.ts:38
 #: frontend/src/services/machines/telegram/helpers/telegramCommons.ts:29
+#: frontend/src/services/machines/whatsApp/helpers/whatsAppCommons.ts:64
 #: frontend/src/services/machines/woodpecker/addProspect.woodpecker.machine.free.ts:38
 #: frontend/src/services/machines/woodpecker/addProspectToCampaign.woodpecker.machine.free.ts:38
 #: frontend/src/services/machines/woodpecker/deleteProspect.woodpecker.machine.free.ts:37
@@ -1874,11 +1931,13 @@ msgstr ""
 #: frontend/src/components/features/NodeDetails/helpers/customMachineToComponent.ts:13
 #: frontend/src/components/features/Webhook/ui/Webhook.tsx:58
 #: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/customAppsTrigger.static.ts:14
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:104
 #: frontend/src/services/machines/commonMachines/createWebhook.machine.ts:15
 #: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:64
 #: frontend/src/services/machines/line/watchEvents.line.machine.pro.ts:19
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:69
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:72
 #: frontend/src/services/machines/stripe/webhookAutomation.stripe.machine.pro.ts:42
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:59
 msgid "Webhook"
 msgstr ""
 
@@ -2085,15 +2144,15 @@ msgstr ""
 msgid "Webhook name"
 msgstr ""
 
-#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:98
+#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:105
 msgid "Create a webhook"
 msgstr ""
 
-#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:111
+#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:118
 msgid "Add new webhook"
 msgstr ""
 
-#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:112
+#: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:119
 msgid "Add Webhook"
 msgstr ""
 
@@ -2353,7 +2412,10 @@ msgstr ""
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomAppsAction.tsx:146
 #: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/CustomAppsTrigger.tsx:103
 #: frontend/src/pages/CustomApps/internals/EditCustomAppsModal/EditCustomAppsForm.tsx:75
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:70
 #: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:267
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:174
+#: frontend/src/services/machines/fluentCrm/addNote.fluentCrm.machine.pro.ts:44
 #: frontend/src/services/machines/github/createGist.github.machine.pro.ts:44
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:32
 #: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:32
@@ -2441,6 +2503,7 @@ msgstr ""
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionBody.tsx:108
 #: frontend/src/services/machines/commonMachines/apiClient.machine.ts:139
 #: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:72
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:111
 msgid "Body"
 msgstr ""
 
@@ -2826,7 +2889,7 @@ msgstr ""
 #: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:268
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:119
 #: frontend/src/services/machines/fluentCrm/crmStatusUpdated.fluentCrm.machine.pro.ts:33
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:83
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:85
 #: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:42
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:193
 msgid "Status"
@@ -3012,6 +3075,7 @@ msgstr ""
 #: frontend/src/services/machines/memberpress/recurringSubscription.memberpress.machine.pro.ts:45
 #: frontend/src/services/machines/memberpress/subscriptionExpired.memberpress.machine.pro.ts:45
 #: frontend/src/services/machines/metaBox/saveMetaBoxData.metaBox.machine.pro.ts:45
+#: frontend/src/services/machines/metForm/formSubmit.metForm.machine.pro.ts:32
 #: frontend/src/services/machines/ninjaForm/processNinjaForm.ninjaForm.machine.pro.ts:45
 #: frontend/src/services/machines/paidMembershipPro/adminChangesMembershipLevel.paidMembershipPro.machine.pro.ts:45
 #: frontend/src/services/machines/paidMembershipPro/cancelMembershipLevel.paidMembershipPro.machine.pro.ts:45
@@ -3114,26 +3178,524 @@ msgstr ""
 msgid "Select a Lesson"
 msgstr ""
 
-#: frontend/src/services/machines/activepieces/_activepiecesMachines.ts:40
-#: frontend/src/services/machines/albato/_albatoMachines.ts:40
-#: frontend/src/services/machines/apiRequest/_apiRequestMachines.ts:40
-#: frontend/src/services/machines/automatisch/_automatischMachines.ts:40
-#: frontend/src/services/machines/automatorWp/_automatorWpMachines.ts:40
-#: frontend/src/services/machines/flowMattic/_flowMatticMachines.ts:40
-#: frontend/src/services/machines/http/_httpMachines.ts:40
-#: frontend/src/services/machines/integrately/_integratelyMachines.ts:40
-#: frontend/src/services/machines/konnectzIt/_konnectzItMachines.ts:40
-#: frontend/src/services/machines/make/_makeMachines.ts:40
-#: frontend/src/services/machines/n8n/_n8nMachines.ts:40
-#: frontend/src/services/machines/pabbly/_pabblyMachines.ts:52
-#: frontend/src/services/machines/sperseio/_sperseioMachines.ts:40
-#: frontend/src/services/machines/sureTriggers/_sureTriggersMachines.ts:40
-#: frontend/src/services/machines/syncSpider/_syncSpiderMachines.ts:40
-#: frontend/src/services/machines/thriveAutomator/_thriveAutomatorMachines.ts:40
-#: frontend/src/services/machines/uncannyAutomator/_uncannyAutomatorMachines.ts:40
-#: frontend/src/services/machines/wpFusion/_wpFusionMachines.ts:40
-#: frontend/src/services/machines/zapier/_zapierMachines.ts:40
-#: frontend/src/services/machines/zohoFlow/_zohoFlowMachines.ts:40
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:16
+msgid "Create a Contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:23
+#: frontend/src/services/machines/suiteDash/_suiteDashMachine.ts:36
+msgid "Update a Contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:30
+msgid "Create an Account"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:37
+msgid "Update an Account"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:44
+msgid "Create Deal"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:51
+msgid "Add or Remove Tag from Contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:58
+msgid "Add or Remove Contact from Automation"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:65
+msgid "Subscribe Or Unsubscribe Contact from List"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:72
+msgid "Find User"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:79
+msgid "Find account"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:86
+msgid "Find contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:93
+msgid "Get all contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:100
+msgid "Get all account"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:107
+msgid "Get all User"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:116
+#: frontend/src/services/machines/Omnisend/_omnisendMachines.ts:81
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:88
+msgid "Webhook Automation"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:13
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:18
+msgid ""
+"You can get your API key in your activeCampaign settings tab, developer "
+"sections"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:38
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:43
+#: frontend/src/services/machines/notion/createDatabase.notion.machine.pro.ts:54
+#: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:188
+msgid "Url"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:40
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:45
+msgid "Enter Url"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:58
+msgid "Enter contact ID, for the automation"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:130
+#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/benchMark/updateContact.benchmark.machine.free.ts:64
+msgid "Contact ID"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:68
+msgid "Enter automation ID, of the automation"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:70
+msgid "Automation ID"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:78
+msgid "Choose the action for the automation"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:84
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:84
+msgid "Remove"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:58
+msgid "Enter contact ID, of the contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:68
+msgid "Enter tag ID, for the contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:70
+msgid "Tag ID"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:78
+msgid "Choose the action for the tag"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:58
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:68
+msgid "Enter name of the account"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:68
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:78
+msgid "Enter account-url of the account"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:70
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:80
+msgid "Account Url"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:78
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:88
+msgid "Enter owner-id of the contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:80
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:110
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:90
+#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:31
+#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:31
+#: frontend/src/services/machines/github/getRepository.github.machine.pro.ts:22
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:85
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:156
+msgid "Owner"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:92
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:142
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:102
+msgid "Field Id"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:99
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:149
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:109
+#: frontend/src/services/machines/wordPress/getTermByField.wordPress.machine.pro.ts:27
+#: frontend/src/services/machines/wordPress/getUserByField.wordPress.machine.pro.ts:29
+msgid "Field Value"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:106
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:80
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:156
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:116
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:15
+#: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:178
+#: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:32
+msgid "Currency"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:113
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:163
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:123
+#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:114
+#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:145
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:70
+#: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:295
+msgid "Field #{COUNT}"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:115
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:165
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:125
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:508
+msgid "Custom Fields"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:58
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:68
+msgid "Enter email address of the contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:70
+#: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:22
+msgid "Email Address"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:68
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:78
+msgid "Enter first name of the contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:78
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:88
+msgid "Enter last name of the contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:88
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:98
+msgid "Enter phone-number of the contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:90
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:100
+#: frontend/src/services/machines/demio/helpers/machineHelper.demio.ts:87
+#: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:27
+msgid "Phone Number"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:58
+msgid "Enter the title of the deal"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:68
+msgid "Enter the description of the deal"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:78
+msgid "Enter currency for the deal"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:88
+msgid "Enter value for the deal"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:98
+msgid "Enter stage ID for the deal"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:100
+msgid "Stage"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:108
+msgid "Enter owner ID for the deal"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:118
+msgid "Enter account ID for the deal"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:120
+#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:60
+msgid "Account ID"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:128
+msgid "Enter contact ID for the deal"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:58
+msgid "Enter account ID, to find the account"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:58
+msgid "Enter contact ID, to find the contact"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:58
+msgid "Enter email address to find the user"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:60
+msgid "This event will fetch all the account of the profile"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:60
+msgid "This event will fetch all the contact of the profile"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:60
+msgid "This event will fetch all the user of the profile"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:4
+msgid "Subscribe to List"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:5
+msgid "Unsubscribe from List"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:6
+msgid "Email Opened"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:7
+msgid "Link Clicked"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:8
+msgid "Email Forwarded"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:9
+msgid "Email Shared"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:10
+msgid "Hard Bounce"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:11
+msgid "Contact Updated"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:12
+msgid "New Contact Added"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:13
+msgid "Contact Note Added"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:14
+msgid "Contact Tag Added"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:15
+msgid "Contact Tag Removed"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:16
+msgid "Deal Added"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:17
+msgid "Deal Updated"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:18
+msgid "Deal Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:19
+msgid "Account Added"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:20
+msgid "Account Updated"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:21
+msgid "Account Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:58
+msgid "Enter contact ID, to subscribe or unsubscribe from the contact list"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:68
+msgid "Enter automation ID, to subscribe or unsubscribe from the contact list"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:70
+#: frontend/src/services/machines/brevo/addContactToList.brevo.machine.free.ts:20
+#: frontend/src/services/machines/hubSpot/addContactsToList.hubSpot.machine.free.ts:21
+#: frontend/src/services/machines/hubSpot/removeContactFromList.hubSpot.machine.free.ts:21
+msgid "List ID"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:78
+msgid "Choose the action for subscribe or unsubscribe"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:83
+#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:62
+msgid "Subscribe"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:84
+#: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:86
+msgid "Unsubscribe"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:58
+msgid "Enter account ID for updates"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:58
+msgid "Enter contact ID for updates"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:63
+msgid "Enter name of the webhook"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:73
+msgid ""
+"Select an event, that will attach to the webhook. The webhook will be "
+"triggered when the selected event occurs in activeCampaign."
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:77
+#: frontend/src/services/machines/stripe/webhookAutomation.stripe.machine.pro.ts:30
+msgid "Select an Event"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:89
+msgid "Enter source for the webhook"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:91
+#: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:24
+msgid "Source"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:95
+#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:51
+msgid "Public"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:115
+#: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:76
+#: frontend/src/services/machines/line/getNumberOfFollowers.line.machine.pro.ts:31
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:66
+#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:88
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:64
+#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:86
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:64
+#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:86
+#: frontend/src/services/machines/line/watchEvents.line.machine.pro.ts:30
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:82
+#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:146
+#: frontend/src/services/machines/stripe/retrieveBalance.stripe.machine.pro.ts:22
+#: frontend/src/services/machines/stripe/retrievePrice.stripe.machine.pro.ts:22
+#: frontend/src/services/machines/stripe/webhookAutomation.stripe.machine.pro.ts:53
+#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:18
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:48
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:70
+msgid "Note"
+msgstr ""
+
+#: frontend/src/services/machines/activepieces/_activepiecesMachines.ts:16
+#: frontend/src/services/machines/albato/_albatoMachines.ts:16
+#: frontend/src/services/machines/apiRequest/_apiRequestMachines.ts:16
+#: frontend/src/services/machines/automatisch/_automatischMachines.ts:16
+#: frontend/src/services/machines/automatorWp/_automatorWpMachines.ts:16
+#: frontend/src/services/machines/flowMattic/_flowMatticMachines.ts:16
+#: frontend/src/services/machines/http/_httpMachines.ts:16
+#: frontend/src/services/machines/integrately/_integratelyMachines.ts:16
+#: frontend/src/services/machines/konnectzIt/_konnectzItMachines.ts:16
+#: frontend/src/services/machines/make/_makeMachines.ts:16
+#: frontend/src/services/machines/n8n/_n8nMachines.ts:16
+#: frontend/src/services/machines/pabbly/_pabblyMachines.ts:16
+#: frontend/src/services/machines/sperseio/_sperseioMachines.ts:16
+#: frontend/src/services/machines/sureTriggers/_sureTriggersMachines.ts:16
+#: frontend/src/services/machines/syncSpider/_syncSpiderMachines.ts:16
+#: frontend/src/services/machines/thriveAutomator/_thriveAutomatorMachines.ts:16
+#: frontend/src/services/machines/uncannyAutomator/_uncannyAutomatorMachines.ts:16
+#: frontend/src/services/machines/wpFusion/_wpFusionMachines.ts:16
+#: frontend/src/services/machines/zapier/_zapierMachines.ts:16
+#: frontend/src/services/machines/zohoFlow/_zohoFlowMachines.ts:16
 msgid "Make A Request"
 msgstr ""
 
@@ -3166,7 +3728,7 @@ msgstr ""
 #: frontend/src/services/machines/mightyForms/_mightyFormsMachines.ts:30
 #: frontend/src/services/machines/moosendForms/_moosendFormsMachines.ts:30
 #: frontend/src/services/machines/optinMonsterForms/_optinMonsterFormsMachines.ts:30
-#: frontend/src/services/machines/pabbly/_pabblyMachines.ts:61
+#: frontend/src/services/machines/pabbly/_pabblyMachines.ts:25
 #: frontend/src/services/machines/paperform/_paperformMachines.ts:30
 #: frontend/src/services/machines/squarespaceForms/_squarespaceFormsMachines.ts:30
 #: frontend/src/services/machines/surveyMonkey/_surveyMonkeyMachines.ts:30
@@ -3244,6 +3806,7 @@ msgstr ""
 
 #: frontend/src/services/machines/arForm/_arFormMachines.ts:17
 #: frontend/src/services/machines/avadaForms/_avadaFormsMachines.ts:17
+#: frontend/src/services/machines/bricksBuilder/_bricksBuilderMachines.ts:17
 #: frontend/src/services/machines/bricksforge/_bricksforgeMachines.ts:17
 #: frontend/src/services/machines/brizy/_brizyMachines.ts:17
 #: frontend/src/services/machines/coblocks/_coblocksMachines.ts:17
@@ -3296,6 +3859,7 @@ msgstr ""
 #: frontend/src/services/machines/happyForm/submissionSuccess.happyForm.machine.pro.ts:33
 #: frontend/src/services/machines/mailPoet/subscriptionSubmit.mailPoet.machine.pro.ts:33
 #: frontend/src/services/machines/metaBox/saveMetaBoxData.metaBox.machine.pro.ts:33
+#: frontend/src/services/machines/metForm/formSubmit.metForm.machine.pro.ts:18
 #: frontend/src/services/machines/ninjaForm/processNinjaForm.ninjaForm.machine.pro.ts:33
 #: frontend/src/services/machines/sureForms/sureFormsSubmission.sureForms.machine.pro.ts:33
 #: frontend/src/services/machines/tripetto/tripettoFormSubmission.tripetto.machine.pro.ts:33
@@ -3323,6 +3887,7 @@ msgstr ""
 #: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:55
 #: frontend/src/services/machines/mailPoet/subscriptionSubmit.mailPoet.machine.pro.ts:37
 #: frontend/src/services/machines/metaBox/saveMetaBoxData.metaBox.machine.pro.ts:37
+#: frontend/src/services/machines/metForm/formSubmit.metForm.machine.pro.ts:23
 #: frontend/src/services/machines/ninjaForm/processNinjaForm.ninjaForm.machine.pro.ts:37
 #: frontend/src/services/machines/sureForms/sureFormsSubmission.sureForms.machine.pro.ts:37
 #: frontend/src/services/machines/tripetto/tripettoFormSubmission.tripetto.machine.pro.ts:37
@@ -3390,7 +3955,9 @@ msgid "Select a task"
 msgstr ""
 
 #: frontend/src/services/machines/asana/createTask.asana.machine.pro.ts:98
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:69
 #: frontend/src/services/machines/fluentCrm/addTag.fluentCrm.machine.pro.ts:37
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:41
 #: frontend/src/services/machines/fluentCrm/removeTag.fluentCrm.machine.pro.ts:37
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:49
 #: frontend/src/services/machines/groundhogg/tagApplied.groundhogg.machine.pro.ts:37
@@ -3539,7 +4106,9 @@ msgstr ""
 #: frontend/src/services/machines/clickUp/createTask.clickUp.machine.pro.ts:102
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:59
 #: frontend/src/services/machines/encharge/createContact.encharge.machine.free.ts:53
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:115
 #: frontend/src/services/machines/fluentCrm/addList.fluentCrm.machine.pro.ts:37
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:28
 #: frontend/src/services/machines/fluentCrm/removeList.fluentCrm.machine.pro.ts:37
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:60
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.free.ts:54
@@ -3562,6 +4131,10 @@ msgstr ""
 #: frontend/src/services/machines/demio/registerEvent.demio.machine.pro.ts:77
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.free.ts:110
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:69
+#: frontend/src/services/machines/fluentCrm/createCompany.fluentCrm.machine.pro.ts:19
+#: frontend/src/services/machines/fluentCrm/createCompany.fluentCrm.machine.pro.ts:52
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:63
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:96
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:70
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.free.ts:48
 #: frontend/src/services/machines/goHighLevel/updateContact.goHighLevel.machine.free.ts:62
@@ -3605,10 +4178,6 @@ msgstr ""
 msgid "Must need contact id for update existing contact"
 msgstr ""
 
-#: frontend/src/services/machines/benchMark/updateContact.benchmark.machine.free.ts:64
-msgid "Contact ID"
-msgstr ""
-
 #: frontend/src/services/machines/bitForm/_bitFormMachines.ts:16
 msgid "Submit Success"
 msgstr ""
@@ -3623,12 +4192,6 @@ msgstr ""
 
 #: frontend/src/services/machines/brevo/_brevoMachines.ts:33
 msgid "Remove a contact from a list"
-msgstr ""
-
-#: frontend/src/services/machines/brevo/addContactToList.brevo.machine.free.ts:20
-#: frontend/src/services/machines/hubSpot/addContactsToList.hubSpot.machine.free.ts:21
-#: frontend/src/services/machines/hubSpot/removeContactFromList.hubSpot.machine.free.ts:21
-msgid "List ID"
 msgstr ""
 
 #: frontend/src/services/machines/brevo/addContactToList.brevo.machine.free.ts:25
@@ -4045,7 +4608,9 @@ msgid "Select a folder"
 msgstr ""
 
 #: frontend/src/services/machines/clickUp/createTask.clickUp.machine.pro.ts:97
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:110
 #: frontend/src/services/machines/fluentCrm/addList.fluentCrm.machine.pro.ts:33
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:23
 #: frontend/src/services/machines/fluentCrm/removeList.fluentCrm.machine.pro.ts:33
 #: frontend/src/services/machines/mailerCloud/createContact.mailerCloud.machine.free.ts:49
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.free.ts:49
@@ -4175,12 +4740,8 @@ msgstr ""
 msgid "Select an event"
 msgstr ""
 
-#: frontend/src/services/machines/demio/helpers/machineHelper.demio.ts:87
-#: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:27
-msgid "Phone Number"
-msgstr ""
-
 #: frontend/src/services/machines/demio/helpers/machineHelper.demio.ts:88
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:205
 #: frontend/src/services/machines/woodpecker/helpers/woodpeckerProspectFields.ts:7
 msgid "Company"
 msgstr ""
@@ -4249,6 +4810,7 @@ msgid "New withdrawal request"
 msgstr ""
 
 #: frontend/src/services/machines/drip/_dripMachines.ts:15
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:16
 #: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:32
 msgid "Create or Update Contact"
 msgstr ""
@@ -4275,6 +4837,7 @@ msgstr ""
 
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.free.ts:67
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.free.ts:68
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:60
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:95
 msgid "Active"
 msgstr ""
@@ -4282,7 +4845,7 @@ msgstr ""
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.free.ts:68
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.free.ts:70
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:123
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:87
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:89
 #: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:46
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.free.ts:96
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:41
@@ -4292,7 +4855,7 @@ msgstr ""
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.free.ts:70
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.free.ts:85
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.free.ts:99
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:93
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:95
 #: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:52
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:27
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:44
@@ -4311,10 +4874,12 @@ msgid "Remove Tags"
 msgstr ""
 
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.free.ts:130
+#: frontend/src/services/machines/fluentCrm/createCompany.fluentCrm.machine.pro.ts:38
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:82
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:92
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.free.ts:70
 #: frontend/src/services/machines/goHighLevel/updateContact.goHighLevel.machine.free.ts:84
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:73
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:75
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:80
 msgid "Refetch Fields"
 msgstr ""
@@ -4331,13 +4896,13 @@ msgstr ""
 
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:124
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:16
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:128
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:130
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:111
 msgid "Address 1"
 msgstr ""
 
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:125
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:129
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:131
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:112
 msgid "Address 2"
 msgstr ""
@@ -4345,7 +4910,7 @@ msgstr ""
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:126
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:68
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:17
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:130
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:132
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:113
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:58
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:28
@@ -4359,7 +4924,7 @@ msgstr ""
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:127
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:74
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:18
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:132
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:134
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:115
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:53
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:112
@@ -4368,7 +4933,7 @@ msgid "State"
 msgstr ""
 
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:128
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:131
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:133
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:114
 #: frontend/src/services/machines/rapidMail/createContact.rapidMail.machine.free.ts:85
 msgid "Zip"
@@ -4377,7 +4942,7 @@ msgstr ""
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:129
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:67
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:19
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:133
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:135
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:116
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:42
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:92
@@ -4550,11 +5115,12 @@ msgid "Select Lists"
 msgstr ""
 
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.free.ts:62
+#: frontend/src/services/machines/fluentCrm/getContactByStatus.fluentCrm.machine.pro.ts:15
 msgid "Contact Status"
 msgstr ""
 
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.free.ts:66
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:90
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:92
 #: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:49
 msgid "Transactional"
 msgstr ""
@@ -4573,6 +5139,7 @@ msgid "Abuse"
 msgstr ""
 
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.free.ts:72
+#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:61
 msgid "Inactive"
 msgstr ""
 
@@ -4644,6 +5211,8 @@ msgid "Add Item"
 msgstr ""
 
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:88
+#: frontend/src/services/machines/fluentCrm/createCompany.fluentCrm.machine.pro.ts:35
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:79
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:89
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.free.ts:67
 #: frontend/src/services/machines/goHighLevel/updateContact.goHighLevel.machine.free.ts:81
@@ -4668,14 +5237,14 @@ msgstr ""
 
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:122
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:85
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:86
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:88
 #: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:45
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:40
 msgid "Subscribed"
 msgstr ""
 
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.free.ts:124
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:89
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:91
 #: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:48
 msgid "Pending"
 msgstr ""
@@ -4790,32 +5359,251 @@ msgstr ""
 msgid "Booking Completed"
 msgstr ""
 
-#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:17
-msgid "A tag is added to contact"
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:23
+msgid "Get Contact (All)"
 msgstr ""
 
-#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:24
-msgid "A tag is removed from contact"
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:26
+msgid "Want to see contacts? Just hit **Test Run** to fetch them."
 msgstr ""
 
 #: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:31
-msgid "A contact is added to a list"
+msgid "Get Contact (By Id)"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:38
-msgid "A contact is remove from a list"
+msgid "Get Contact (By Email)"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:45
-msgid "A contact is create"
+msgid "Get Contact (By User Id)"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:52
+msgid "Get Contact (By Tag Ids)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:59
+msgid "Get Contact (By List Ids)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:66
+msgid "Get Contact (By Status)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:73
+msgid "Get Current Contact"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:76
+msgid ""
+"Get Current Contact based on the current userID or contact from the cookie "
+"value"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:81
+msgid "Get Tag (All)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:84
+msgid "Want to see tags? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:89
+msgid "Create or Update Tag"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:96
+msgid "Add Tag To Contact"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:103
+msgid "Remove Tag From Contact"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:110
+msgid "Get List (All)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:113
+msgid "Want to see lists? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:118
+msgid "Create or Update List"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:125
+msgid "Add List To Contact"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:132
+msgid "Remove List From Contact"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:139
+msgid "Get Company (All)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:142
+msgid "Want to see companies? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:147
+msgid "Get Company (By Id)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:154
+#: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:38
+msgid "Create or Update Company"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:161
+msgid "Add Company To Contact"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:168
+msgid "Remove Company From Contact"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:175
+msgid "Add Event Tracking"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:182
+msgid "Add Note"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:191
+msgid "A tag is added to contact"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:198
+msgid "A tag is removed from contact"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:205
+msgid "A contact is added to a list"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:212
+msgid "A contact is remove from a list"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:219
+msgid "A contact is create"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:226
 msgid "Contact status updated"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:38
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:463
+msgid "Id"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:76
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:122
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:217
+#: frontend/src/services/machines/fluentCrm/addNote.fluentCrm.machine.pro.ts:15
+#: frontend/src/services/machines/Omnisend/getContact.omnisend.machine.pro.ts:18
+#: frontend/src/services/machines/Omnisend/updateContacts.omnisend.machine.pro.ts:19
+msgid "Contact Id"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:165
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:63
+#: frontend/src/services/machines/wordPress/createNewTerm.wordPress.machine.pro.ts:37
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:337
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:397
+#: frontend/src/services/machines/wordPress/updateTerm.wordPress.machine.pro.ts:47
+msgid "Slug"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:210
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:53
+msgid "Select a company"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/addEvent.fluentCrm.machine.pro.ts:15
+msgid "Contact Email"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/addEvent.fluentCrm.machine.pro.ts:25
+msgid "Event Tracking key"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/addEvent.fluentCrm.machine.pro.ts:35
+msgid "Event Tracking Title"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/addEvent.fluentCrm.machine.pro.ts:45
+msgid "Event value"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/addEvent.fluentCrm.machine.pro.ts:54
+msgid "Provider"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/addNote.fluentCrm.machine.pro.ts:35
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:71
+#: frontend/src/services/machines/openAi/createModeration.openAi.machine.pro.ts:61
+#: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:42
+msgid "Type"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/createCompany.fluentCrm.machine.pro.ts:68
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:112
+msgid "Custom Field Map"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/createCompany.fluentCrm.machine.pro.ts:71
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:115
+msgid "Refetch Custom Fields"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:49
+msgid "Primary Company"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCrm/crmStatusUpdated.fluentCrm.machine.pro.ts:37
 msgid "Select a status"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/getContactByEmail.fluentCrm.machine.pro.ts:15
+msgid "Contact Email Address"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/getContactByListIds.fluentCrm.machine.pro.ts:14
+msgid "Provide one or more list id as a comma-separated list or array."
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/getContactByListIds.fluentCrm.machine.pro.ts:16
+msgid "List Ids"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/getContactByTagIds.fluentCrm.machine.pro.ts:14
+msgid "Provide one or more tag id as a comma-separated list or array."
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/getContactByTagIds.fluentCrm.machine.pro.ts:16
+msgid "Tag Ids"
+msgstr ""
+
+#: frontend/src/services/machines/fluentCrm/getContactByUserId.fluentCrm.machine.pro.ts:15
+#: frontend/src/services/machines/notion/getUser.notion.machine.pro.ts:19
+#: frontend/src/services/machines/wordPress/deleteExitingUser.wordPress.machine.pro.ts:16
+#: frontend/src/services/machines/wordPress/getUserById.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/getUserCapabilities.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/getUserComments.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/getUserMetadata.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/getUserMetadataByMetaKey.wordPress.machine.pro.ts:15
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:81
+#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:123
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:17
+#: frontend/src/services/machines/wordPress/updateUserMetadata.wordPress.machine.pro.ts:15
+msgid "User Id"
 msgstr ""
 
 #: frontend/src/services/machines/fluentForms/_fluentFormsMachines.ts:17
@@ -5072,14 +5860,6 @@ msgstr ""
 msgid "Select the owner of the issue"
 msgstr ""
 
-#: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:31
-#: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:31
-#: frontend/src/services/machines/github/getRepository.github.machine.pro.ts:22
-#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:85
-#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:156
-msgid "Owner"
-msgstr ""
-
 #: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:37
 #: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:37
 msgid "Select  Owner"
@@ -5254,10 +6034,6 @@ msgstr ""
 msgid "DND (Do Not Disturb)"
 msgstr ""
 
-#: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:24
-msgid "Source"
-msgstr ""
-
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:132
 msgid "Failed to fetch contacts"
 msgstr ""
@@ -5420,10 +6196,6 @@ msgstr ""
 msgid "Tag removed from contact"
 msgstr ""
 
-#: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:38
-msgid "Create or Update Company"
-msgstr ""
-
 #: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:44
 msgid "Create or Update Deal"
 msgstr ""
@@ -5484,13 +6256,6 @@ msgstr ""
 
 #: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:88
 msgid "Add Company Fields"
-msgstr ""
-
-#: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:114
-#: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:145
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:68
-#: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:295
-msgid "Field #{COUNT}"
 msgstr ""
 
 #: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:116
@@ -5744,12 +6509,6 @@ msgstr ""
 
 #: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:14
 msgid "Shared Users"
-msgstr ""
-
-#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:15
-#: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:178
-#: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:32
-msgid "Currency"
 msgstr ""
 
 #: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:16
@@ -6570,22 +7329,10 @@ msgstr ""
 msgid "Form"
 msgstr ""
 
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:63
-#: frontend/src/services/machines/wordPress/createNewTerm.wordPress.machine.pro.ts:37
-#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:337
-#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:397
-#: frontend/src/services/machines/wordPress/updateTerm.wordPress.machine.pro.ts:47
-msgid "Slug"
-msgstr ""
-
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:71
-#: frontend/src/services/machines/openAi/createModeration.openAi.machine.pro.ts:61
-#: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:42
-msgid "Type"
-msgstr ""
-
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:77
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:63
+#: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.pro.ts:58
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:88
 #: frontend/src/services/machines/woodpecker/helpers/woodpeckerProspectFields.ts:15
 msgid "Address"
 msgstr ""
@@ -6661,24 +7408,6 @@ msgstr ""
 
 #: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:49
 msgid "Select Form"
-msgstr ""
-
-#: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:76
-#: frontend/src/services/machines/line/getNumberOfFollowers.line.machine.pro.ts:31
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:66
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:88
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:64
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:86
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:64
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:86
-#: frontend/src/services/machines/line/watchEvents.line.machine.pro.ts:30
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:79
-#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:146
-#: frontend/src/services/machines/stripe/retrieveBalance.stripe.machine.pro.ts:22
-#: frontend/src/services/machines/stripe/retrievePrice.stripe.machine.pro.ts:22
-#: frontend/src/services/machines/stripe/webhookAutomation.stripe.machine.pro.ts:53
-#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:18
-msgid "Note"
 msgstr ""
 
 #: frontend/src/services/machines/klaviyo/_klaviyoMachines.ts:17
@@ -6870,7 +7599,6 @@ msgid "Get a Group/Room Member Profile"
 msgstr ""
 
 #: frontend/src/services/machines/line/_lineMachines.ts:67
-#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:65
 msgid "Watch Events"
 msgstr ""
 
@@ -7060,10 +7788,14 @@ msgid "Address Line's"
 msgstr ""
 
 #: frontend/src/services/machines/line/helpers/lineCommons.ts:292
+#: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.pro.ts:26
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:55
 msgid "Latitude"
 msgstr ""
 
 #: frontend/src/services/machines/line/helpers/lineCommons.ts:300
+#: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.pro.ts:37
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:66
 msgid "Longitude"
 msgstr ""
 
@@ -7190,6 +7922,102 @@ msgstr ""
 msgid "Reply Token"
 msgstr ""
 
+#: frontend/src/services/machines/mail/_mailMachines.ts:16
+msgid "Send Email"
+msgstr ""
+
+#: frontend/src/services/machines/mail/_mailMachines.ts:20
+msgid "*Send Email through your website*."
+msgstr ""
+
+#: frontend/src/services/machines/mail/_mailMachines.ts:21
+msgid ""
+"This action allows you to send emails using your site's **SMTP or mail "
+"configuration**."
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:25
+msgid "Email address that will be used to send the email."
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:27
+msgid "From Email"
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:36
+msgid "Name that will be used to send the email."
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:38
+msgid "From Name"
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:47
+msgid ""
+"Email address to which the email will be sent. You can use multiple emails "
+"separated by commas."
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:51
+msgid "To"
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:60
+msgid ""
+"Email address to which a copy of the email will be sent. You can use "
+"multiple emails separated by commas."
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:64
+msgid "CC"
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:72
+msgid ""
+"Email address to which a blind copy of the email will be sent. You can use "
+"multiple emails separated by commas."
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:76
+msgid "BCC"
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:84
+msgid ""
+"Email address to which replies will be sent. Make sure it is not same as "
+"the from email. If it is same, skip this field."
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:88
+msgid "Reply To"
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:96
+msgid "Subject of the email."
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:98
+msgid "Subject"
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:107
+msgid ""
+"Content of the email. You can map an HTML field here. If you map an HTML "
+"field, you must set the \"Is this email in HTML format?\" option to true."
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:120
+msgid "Attachments to be included in the email."
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:122
+msgid "Attachments"
+msgstr ""
+
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:132
+msgid "Is this email in HTML format?"
+msgstr ""
+
 #: frontend/src/services/machines/mailBluster/_mailBlusterMachines.ts:15
 msgid "Add Lead"
 msgstr ""
@@ -7202,10 +8030,6 @@ msgstr ""
 
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:82
 msgid "Subscription Status"
-msgstr ""
-
-#: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:86
-msgid "Unsubscribe"
 msgstr ""
 
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:108
@@ -7262,17 +8086,41 @@ msgstr ""
 msgid "Get Members From List"
 msgstr ""
 
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:65
+msgid "Watch Subscribe"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:71
+msgid "Watch Unsubscribe"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:77
+msgid "Watch Campaign"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:83
+msgid "Watch Cleaned"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:89
+msgid "Watch Profile"
+msgstr ""
+
+#: frontend/src/services/machines/mailChimp/_mailChimpMachines.ts:95
+msgid "Watch Upemail"
+msgstr ""
+
 #: frontend/src/services/machines/mailChimp/addMemberNote.mailChimp.machine.free.ts:22
 msgid "Choose the list from which you want to add a note to a member."
 msgstr ""
 
 #: frontend/src/services/machines/mailChimp/addMemberNote.mailChimp.machine.free.ts:24
 #: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:24
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:37
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:39
 #: frontend/src/services/machines/mailChimp/deleteMemberFromList.mailChimp.machine.free.ts:24
 #: frontend/src/services/machines/mailChimp/getMemberFromList.mailChimp.machine.free.ts:24
 #: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:26
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:27
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:27
 msgid "Select Audience List"
 msgstr ""
 
@@ -7307,14 +8155,6 @@ msgstr ""
 msgid "Tag Name"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:60
-msgid "ADD"
-msgstr ""
-
-#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:61
-msgid "DELETE"
-msgstr ""
-
 #: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:69
 msgid "Tag #{COUNT}"
 msgstr ""
@@ -7323,70 +8163,60 @@ msgstr ""
 msgid "Tag Field Map"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:78
-msgid ""
-"When Is Syncing is Enabled, automation based on the tags in the request "
-"will not fire."
-msgstr ""
-
-#: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:82
-msgid "Is Syncing?"
-msgstr ""
-
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:22
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:24
 msgid "Enable the switch to update an existing member."
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:24
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:26
 msgid "Update Existing Member"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:33
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:35
 msgid ""
 "Choose the list from which you want to add or update a member. After "
 "selecting the list, other fields will appear."
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:51
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:125
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:53
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:127
 msgid "Field Name"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:70
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:72
 msgid "Merge Field Map"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:81
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:83
 msgid "Select the status you want to assign to your member."
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:88
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:90
 #: frontend/src/services/machines/mailChimp/getMembersFromList.mailChimp.machine.free.ts:47
 msgid "Cleaned"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:99
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:101
 msgid "Enable the switch to assign VIP status to the member."
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:101
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:103
 msgid "VIP"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:111
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:113
 msgid "Enable the switch to map address fields with their values."
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:113
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:115
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:92
 msgid "Address Field"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:149
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:151
 msgid "Address #{COUNT}"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:151
+#: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:153
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.free.ts:131
 msgid "Address Field Map"
 msgstr ""
@@ -7473,59 +8303,59 @@ msgstr ""
 msgid "Count"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:25
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:25
 msgid "Choose the list to which you want to add a webhook."
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:37
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:37
 msgid "Select the type of Mailchimp Event that should trigger the webhook."
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:39
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:39
 msgid "Select Webhook Event"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:42
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:43
 msgid "SUBSCRIBE"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:43
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:44
 msgid "UNSUBSCRIBE"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:44
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:45
 msgid "PROFILE UPDATE"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:45
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:46
 msgid "CLEANED"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:46
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:47
 msgid "EMAIL_UPDATE"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:47
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:48
 msgid "CAMPAIGN"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:54
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:55
 msgid "Select the Source of the event that should trigger the webhook."
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:56
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:57
 msgid "Select Webhook Source"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:59
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:61
 msgid "USER"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:60
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:62
 msgid "ADMIN"
 msgstr ""
 
-#: frontend/src/services/machines/mailChimp/watchEvents.mailChimp.machine.free.ts:61
+#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:63
 msgid "API"
 msgstr ""
 
@@ -7609,6 +8439,10 @@ msgstr ""
 msgid "Select a recurring-membership"
 msgstr ""
 
+#: frontend/src/services/machines/metForm/_metFormMachines.ts:17
+msgid "Form Submitted"
+msgstr ""
+
 #: frontend/src/services/machines/newUserApprove/_newUserApproveMachines.ts:26
 msgid "User Approved"
 msgstr ""
@@ -7688,11 +8522,6 @@ msgstr ""
 msgid "People"
 msgstr ""
 
-#: frontend/src/services/machines/notion/createDatabase.notion.machine.pro.ts:54
-#: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:188
-msgid "Url"
-msgstr ""
-
 #: frontend/src/services/machines/notion/createDatabase.notion.machine.pro.ts:55
 msgid "Checkbox"
 msgstr ""
@@ -7715,20 +8544,6 @@ msgstr ""
 
 #: frontend/src/services/machines/notion/getUser.notion.machine.pro.ts:17
 msgid "Enter the user-id to retrive the user"
-msgstr ""
-
-#: frontend/src/services/machines/notion/getUser.notion.machine.pro.ts:19
-#: frontend/src/services/machines/wordPress/deleteExitingUser.wordPress.machine.pro.ts:16
-#: frontend/src/services/machines/wordPress/getUserById.wordPress.machine.pro.ts:15
-#: frontend/src/services/machines/wordPress/getUserCapabilities.wordPress.machine.pro.ts:15
-#: frontend/src/services/machines/wordPress/getUserComments.wordPress.machine.pro.ts:15
-#: frontend/src/services/machines/wordPress/getUserMetadata.wordPress.machine.pro.ts:15
-#: frontend/src/services/machines/wordPress/getUserMetadataByMetaKey.wordPress.machine.pro.ts:15
-#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:81
-#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:123
-#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.pro.ts:17
-#: frontend/src/services/machines/wordPress/updateUserMetadata.wordPress.machine.pro.ts:15
-msgid "User Id"
 msgstr ""
 
 #: frontend/src/services/machines/notion/getUser.notion.machine.pro.ts:21
@@ -7815,11 +8630,6 @@ msgstr ""
 msgid "Delete Product"
 msgstr ""
 
-#: frontend/src/services/machines/Omnisend/_omnisendMachines.ts:81
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:88
-msgid "Webhook Automation"
-msgstr ""
-
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:19
 msgid "Subscriber Type"
 msgstr ""
@@ -7835,11 +8645,6 @@ msgstr ""
 #: frontend/src/services/machines/Omnisend/deleteProduct.omnisend.machine.pro.ts:18
 #: frontend/src/services/machines/Omnisend/getProduct.omnisend.machine.pro.ts:18
 msgid "Product Id"
-msgstr ""
-
-#: frontend/src/services/machines/Omnisend/getContact.omnisend.machine.pro.ts:18
-#: frontend/src/services/machines/Omnisend/updateContacts.omnisend.machine.pro.ts:19
-msgid "Contact Id"
 msgstr ""
 
 #: frontend/src/services/machines/Omnisend/helpers/commonUtils.omnisend.ts:7
@@ -9072,10 +9877,6 @@ msgstr ""
 msgid "Enter email address of the customer"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:22
-msgid "Email Address"
-msgstr ""
-
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:30
 msgid "Enter description of the customer"
 msgstr ""
@@ -9389,10 +10190,6 @@ msgid ""
 "triggered when the selected event occurs in stripe."
 msgstr ""
 
-#: frontend/src/services/machines/stripe/webhookAutomation.stripe.machine.pro.ts:30
-msgid "Select an Event"
-msgstr ""
-
 #: frontend/src/services/machines/suiteDash/_suiteDashMachine.ts:6
 msgid ""
 "**Guide**: Create a Webhook endpoint, copy the URL, and add it to your "
@@ -9409,10 +10206,6 @@ msgstr ""
 
 #: frontend/src/services/machines/suiteDash/_suiteDashMachine.ts:30
 msgid "Get Contacts"
-msgstr ""
-
-#: frontend/src/services/machines/suiteDash/_suiteDashMachine.ts:36
-msgid "Update a Contact"
 msgstr ""
 
 #: frontend/src/services/machines/suiteDash/_suiteDashMachine.ts:42
@@ -9638,10 +10431,6 @@ msgstr ""
 msgid "Subscriber #{COUNT}"
 msgstr ""
 
-#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:62
-msgid "Subscribe"
-msgstr ""
-
 #: frontend/src/services/machines/suiteDash/updateACompany.suiteDash.machine.free.ts:55
 #: frontend/src/services/machines/suiteDash/updateAContact.suiteDash.machine.free.ts:55
 msgid "Company Field Map"
@@ -9686,36 +10475,86 @@ msgid ""
 "target=\"_blank\" rel=\"noopener noreferrer nofollow\">here</a>"
 msgstr ""
 
-#: frontend/src/services/machines/telegram/_telegramMachines.ts:9
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:16
 msgid "Send Text Message or a Reply"
 msgstr ""
 
-#: frontend/src/services/machines/telegram/_telegramMachines.ts:16
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:23
 msgid "Send Poll"
 msgstr ""
 
-#: frontend/src/services/machines/telegram/_telegramMachines.ts:23
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:30
 msgid "Send Contact"
 msgstr ""
 
-#: frontend/src/services/machines/telegram/_telegramMachines.ts:30
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:37
 msgid "Create Invite Link"
 msgstr ""
 
-#: frontend/src/services/machines/telegram/_telegramMachines.ts:37
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:44
 msgid "Revoke Invite Link"
 msgstr ""
 
-#: frontend/src/services/machines/telegram/_telegramMachines.ts:44
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:51
 msgid "Ban User"
 msgstr ""
 
-#: frontend/src/services/machines/telegram/_telegramMachines.ts:51
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:58
 msgid "Unban User"
 msgstr ""
 
-#: frontend/src/services/machines/telegram/_telegramMachines.ts:58
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:65
 msgid "Send Media"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:75
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:30
+msgid "All Updates"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:82
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:31
+msgid "Watch Callback Query"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:89
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:32
+msgid "Watch Channel Post"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:96
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:33
+msgid "Watch Edited Channel Post"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:103
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:34
+msgid "Watch Edited Message"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:110
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:35
+msgid "Watch Inline Query"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:117
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:36
+msgid "Watch Message"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:124
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:37
+msgid "Watch Poll"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:131
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:38
+msgid "Watch Pre-Checkout Query"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/_telegramMachines.ts:138
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:39
+msgid "Watch Shipping Query"
 msgstr ""
 
 #: frontend/src/services/machines/telegram/banUser.telegram.machine.pro.ts:20
@@ -9960,6 +10799,7 @@ msgid "Enter the message text to send."
 msgstr ""
 
 #: frontend/src/services/machines/telegram/sendOrReplyMessage.telegram.machine.pro.ts:35
+#: frontend/src/services/machines/whatsApp/sendMessage.whatsApp.machine.pro.ts:26
 msgid "Text Message"
 msgstr ""
 
@@ -10121,6 +10961,16 @@ msgstr ""
 
 #: frontend/src/services/machines/telegram/sendPoll.telegram.machine.pro.ts:169
 msgid "Closed Date"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:26
+msgid "Select Event"
+msgstr ""
+
+#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:50
+msgid ""
+"Select the events you want to trigger.To trigger all together, select only "
+"\"All Updates\" from the dropdown."
 msgstr ""
 
 #: frontend/src/services/machines/tidio/_tidioMachines.ts:38
@@ -10339,12 +11189,191 @@ msgstr ""
 msgid "Booking status changed"
 msgstr ""
 
-#: frontend/src/services/machines/webhook/_webhookMachines.ts:42
+#: frontend/src/services/machines/webhook/_webhookMachines.ts:16
 msgid "Outgoing Webhook"
 msgstr ""
 
-#: frontend/src/services/machines/webhook/_webhookMachines.ts:51
+#: frontend/src/services/machines/webhook/_webhookMachines.ts:25
 msgid "Incoming Webhook"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/_whatsAppMachines.ts:16
+msgid "Send Template Message"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/_whatsAppMachines.ts:23
+msgid "Send Message"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/_whatsAppMachines.ts:30
+msgid "Send Document"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/_whatsAppMachines.ts:37
+msgid "Send Image"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/_whatsAppMachines.ts:44
+msgid "Send Audio"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/_whatsAppMachines.ts:51
+msgid "Send Video"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/_whatsAppMachines.ts:58
+msgid "Send Sticker"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/_whatsAppMachines.ts:65
+msgid "Send Location"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/helpers/whatsAppCommons.ts:18
+msgid ""
+"To get access token and business ID information, please visit <a "
+"target=\"_blank\" class=\"text-blue-600 underline\" rel=\"noopener "
+"noreferrer nofollow\" "
+"href=\"https://developers.facebook.com/docs/whatsapp/business-management-"
+"api/get-started\">WhatsApp Business API</a>"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/helpers/whatsAppCommons.ts:25
+msgid "WhatsApp Business API"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/helpers/whatsAppCommons.ts:41
+msgid "Business ID"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/helpers/whatsAppCommons.ts:52
+msgid "Phone Number ID"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/helpers/whatsAppCommons.ts:123
+msgid ""
+"Enter the recipient phone number in international format with country code, "
+"without using ' + '. Ex: 919822012345. you must preregister the receiver's "
+"phone number in Meta's developer console."
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/helpers/whatsAppCommons.ts:127
+msgid "Recipient Phone Number"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendAudio.whatsApp.machine.pro.ts:24
+#: frontend/src/services/machines/whatsApp/sendVideo.whatsApp.machine.pro.ts:24
+msgid ""
+"Enter the video URL. WhatsApp API supports only H.264 + AAC encoded videos "
+"in .3gp or .mp4 formats with a maximum file size of 16 MB."
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendAudio.whatsApp.machine.pro.ts:28
+msgid "Audio URL"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendDocument.whatsApp.machine.pro.ts:24
+msgid ""
+"Enter the document URL. which supports TXT, Excel, Word, PowerPoint, and "
+"PDF files up to 100 MB."
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendDocument.whatsApp.machine.pro.ts:28
+msgid "Document URL"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendDocument.whatsApp.machine.pro.ts:37
+msgid "Enter the caption you want to send with the Document."
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendDocument.whatsApp.machine.pro.ts:39
+#: frontend/src/services/machines/whatsApp/sendImage.whatsApp.machine.pro.ts:39
+#: frontend/src/services/machines/whatsApp/sendVideo.whatsApp.machine.pro.ts:39
+#: frontend/src/services/machines/wordPress/addNewImage.wordPress.machine.pro.ts:43
+msgid "Caption"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendDocument.whatsApp.machine.pro.ts:47
+msgid "Enter the File Name you want to send with the Document."
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendDocument.whatsApp.machine.pro.ts:49
+msgid "File Name"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendImage.whatsApp.machine.pro.ts:24
+msgid ""
+"Enter the image ULR. Which supports sending JPEG and PNG images via URL, "
+"with a maximum file size of 5 MB."
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendImage.whatsApp.machine.pro.ts:28
+#: frontend/src/services/machines/wordPress/addNewImage.wordPress.machine.pro.ts:15
+msgid "Image URL"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendImage.whatsApp.machine.pro.ts:37
+msgid "Enter the caption you want to send with the Image."
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.pro.ts:24
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:53
+msgid "Enter the latitude of the location in decimal format. Ex: 23.810331"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.pro.ts:35
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:64
+msgid "Enter the longitude of the location in decimal format. Ex: 90.412521"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.pro.ts:46
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:75
+msgid "Enter the name of the location. Ex: Dhaka City"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.pro.ts:56
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:86
+msgid "Enter the full address of the location. Ex: Dhaka, Bangladesh"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendMessage.whatsApp.machine.pro.ts:24
+msgid "Enter the text to be sent as message."
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendSticker.whatsApp.machine.pro.ts:24
+msgid ""
+"Static stickers must be .webp and under 100 KB. Animated stickers must also "
+"be .webp and under 500 KB."
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendSticker.whatsApp.machine.pro.ts:28
+msgid "Sticker URL"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:25
+msgid "Select the name of the message template you want to send as message."
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:27
+msgid "Select Template Name"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:40
+msgid ""
+"Enter the direct link to the media (image, video or document) you want to "
+"send. Must be publicly accessible. Ex: https://example.com/file.jpg"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.pro.ts:44
+msgid "Media URL"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendVideo.whatsApp.machine.pro.ts:28
+msgid "Video URL"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendVideo.whatsApp.machine.pro.ts:37
+msgid "Enter the caption you want to send with the Video."
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:17
@@ -12500,16 +13529,8 @@ msgstr ""
 msgid "Append"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/addNewImage.wordPress.machine.pro.ts:15
-msgid "Image URL"
-msgstr ""
-
 #: frontend/src/services/machines/wordPress/addNewImage.wordPress.machine.pro.ts:34
 msgid "Alternative Text"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/addNewImage.wordPress.machine.pro.ts:43
-msgid "Caption"
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/addPostTypeFeatures.wordPress.machine.pro.ts:14
@@ -12915,11 +13936,6 @@ msgstr ""
 msgid "Enter the matching value for the selected field"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/getTermByField.wordPress.machine.pro.ts:27
-#: frontend/src/services/machines/wordPress/getUserByField.wordPress.machine.pro.ts:29
-msgid "Field Value"
-msgstr ""
-
 #: frontend/src/services/machines/wordPress/getTermByField.wordPress.machine.pro.ts:36
 msgid "Taxonomy name is Optional, if field is term_taxonomy_id."
 msgstr ""
@@ -12979,10 +13995,6 @@ msgstr ""
 msgid "URL-friendly version of the Category name."
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:463
-msgid "Id"
-msgstr ""
-
 #: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:473
 msgid "Whether to bypass Trash and force deletion."
 msgstr ""
@@ -13023,10 +14035,6 @@ msgstr ""
 msgid "Thumbnail"
 msgstr ""
 
-#: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:508
-msgid "Custom Fields"
-msgstr ""
-
 #: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:509
 msgid "Post Formats"
 msgstr ""
@@ -13064,10 +14072,6 @@ msgstr ""
 msgid ""
 "Whether a post type is intended for use publicly either via the admin "
 "interface or by front-end users."
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:51
-msgid "Public"
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:59

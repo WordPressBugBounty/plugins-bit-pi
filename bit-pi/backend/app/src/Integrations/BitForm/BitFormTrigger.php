@@ -14,15 +14,13 @@ if (!\defined('ABSPATH')) {
 
 class BitFormTrigger
 {
-    public static function handleSubmit($formId, $entryId, $formData)
+    public static function handleSubmit($formId, $entryId, $formData, $files)
     {
         $flows = FlowService::exists('bitForm', 'submitSuccess');
 
         if (!$flows) {
             return;
         }
-
-        $data = ['form_id' => $formId, 'entry_id' => $entryId, 'form_data' => $formData];
 
         foreach ($flows as $flow) {
             $triggerNode = Node::getNodeInfoById($flow->id . '-1', $flow->nodes);
@@ -38,6 +36,13 @@ class BitFormTrigger
             if ($configFormId !== 'any' && $configFormId !== $formId) {
                 continue;
             }
+
+            $data = [
+                'form_id'   => $formId,
+                'entry_id'  => $entryId,
+                'form_data' => $formData,
+                'files'     => $files
+            ];
 
             FlowExecutor::execute($flow, $data);
         }

@@ -17,7 +17,7 @@ class BitFormHooks implements HookRegisterInterface
                 'hook'          => 'bitform_submit_success',
                 'callback'      => [BitFormTrigger::class, 'handleSubmit'],
                 'priority'      => 10,
-                'accepted_args' => 3,
+                'accepted_args' => 4,
             ],
         ];
     }

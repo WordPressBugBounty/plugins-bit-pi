@@ -1,0 +1,1 @@
+import{c as s}from"./createwe-97.js";import"./_applist-850.js";import"./lodash-475.js";import"./main-great-olives-cough.js";import"./mutative-319.js";import"./machine.-113.js";globalThis.jotaiAtomCache=globalThis.jotaiAtomCache||{cache:new Map,get(t,o){return this.cache.has(t)?this.cache.get(t):(this.cache.set(t,o),o)}};export{s as default};

@@ -1141,6 +1141,192 @@ return [
 
     'Select a Lesson' => __('Select a Lesson', 'bit-pi'),
 
+    'Create a Contact' => __('Create a Contact', 'bit-pi'),
+
+    'Update a Contact' => __('Update a Contact', 'bit-pi'),
+
+    'Create an Account' => __('Create an Account', 'bit-pi'),
+
+    'Update an Account' => __('Update an Account', 'bit-pi'),
+
+    'Create Deal' => __('Create Deal', 'bit-pi'),
+
+    'Add or Remove Tag from Contact' => __('Add or Remove Tag from Contact', 'bit-pi'),
+
+    'Add or Remove Contact from Automation' => __('Add or Remove Contact from Automation', 'bit-pi'),
+
+    'Subscribe Or Unsubscribe Contact from List' => __('Subscribe Or Unsubscribe Contact from List', 'bit-pi'),
+
+    'Find User' => __('Find User', 'bit-pi'),
+
+    'Find account' => __('Find account', 'bit-pi'),
+
+    'Find contact' => __('Find contact', 'bit-pi'),
+
+    'Get all contact' => __('Get all contact', 'bit-pi'),
+
+    'Get all account' => __('Get all account', 'bit-pi'),
+
+    'Get all User' => __('Get all User', 'bit-pi'),
+
+    'Webhook Automation' => __('Webhook Automation', 'bit-pi'),
+
+    'You can get your API key in your activeCampaign settings tab, developer sections' => __('You can get your API key in your activeCampaign settings tab, developer sections', 'bit-pi'),
+
+    'Url' => __('Url', 'bit-pi'),
+
+    'Enter Url' => __('Enter Url', 'bit-pi'),
+
+    'Enter contact ID, for the automation' => __('Enter contact ID, for the automation', 'bit-pi'),
+
+    'Contact ID' => __('Contact ID', 'bit-pi'),
+
+    'Enter automation ID, of the automation' => __('Enter automation ID, of the automation', 'bit-pi'),
+
+    'Automation ID' => __('Automation ID', 'bit-pi'),
+
+    'Choose the action for the automation' => __('Choose the action for the automation', 'bit-pi'),
+
+    'Remove' => __('Remove', 'bit-pi'),
+
+    'Enter contact ID, of the contact' => __('Enter contact ID, of the contact', 'bit-pi'),
+
+    'Enter tag ID, for the contact' => __('Enter tag ID, for the contact', 'bit-pi'),
+
+    'Tag ID' => __('Tag ID', 'bit-pi'),
+
+    'Choose the action for the tag' => __('Choose the action for the tag', 'bit-pi'),
+
+    'Enter name of the account' => __('Enter name of the account', 'bit-pi'),
+
+    'Enter account-url of the account' => __('Enter account-url of the account', 'bit-pi'),
+
+    'Account Url' => __('Account Url', 'bit-pi'),
+
+    'Enter owner-id of the contact' => __('Enter owner-id of the contact', 'bit-pi'),
+
+    'Owner' => __('Owner', 'bit-pi'),
+
+    'Field Id' => __('Field Id', 'bit-pi'),
+
+    'Field Value' => __('Field Value', 'bit-pi'),
+
+    'Currency' => __('Currency', 'bit-pi'),
+
+    'Field #{COUNT}' => __('Field #{COUNT}', 'bit-pi'),
+
+    'Custom Fields' => __('Custom Fields', 'bit-pi'),
+
+    'Enter email address of the contact' => __('Enter email address of the contact', 'bit-pi'),
+
+    'Email Address' => __('Email Address', 'bit-pi'),
+
+    'Enter first name of the contact' => __('Enter first name of the contact', 'bit-pi'),
+
+    'Enter last name of the contact' => __('Enter last name of the contact', 'bit-pi'),
+
+    'Enter phone-number of the contact' => __('Enter phone-number of the contact', 'bit-pi'),
+
+    'Phone Number' => __('Phone Number', 'bit-pi'),
+
+    'Enter the title of the deal' => __('Enter the title of the deal', 'bit-pi'),
+
+    'Enter the description of the deal' => __('Enter the description of the deal', 'bit-pi'),
+
+    'Enter currency for the deal' => __('Enter currency for the deal', 'bit-pi'),
+
+    'Enter value for the deal' => __('Enter value for the deal', 'bit-pi'),
+
+    'Enter stage ID for the deal' => __('Enter stage ID for the deal', 'bit-pi'),
+
+    'Stage' => __('Stage', 'bit-pi'),
+
+    'Enter owner ID for the deal' => __('Enter owner ID for the deal', 'bit-pi'),
+
+    'Enter account ID for the deal' => __('Enter account ID for the deal', 'bit-pi'),
+
+    'Account ID' => __('Account ID', 'bit-pi'),
+
+    'Enter contact ID for the deal' => __('Enter contact ID for the deal', 'bit-pi'),
+
+    'Enter account ID, to find the account' => __('Enter account ID, to find the account', 'bit-pi'),
+
+    'Enter contact ID, to find the contact' => __('Enter contact ID, to find the contact', 'bit-pi'),
+
+    'Enter email address to find the user' => __('Enter email address to find the user', 'bit-pi'),
+
+    'This event will fetch all the account of the profile' => __('This event will fetch all the account of the profile', 'bit-pi'),
+
+    'This event will fetch all the contact of the profile' => __('This event will fetch all the contact of the profile', 'bit-pi'),
+
+    'This event will fetch all the user of the profile' => __('This event will fetch all the user of the profile', 'bit-pi'),
+
+    'Subscribe to List' => __('Subscribe to List', 'bit-pi'),
+
+    'Unsubscribe from List' => __('Unsubscribe from List', 'bit-pi'),
+
+    'Email Opened' => __('Email Opened', 'bit-pi'),
+
+    'Link Clicked' => __('Link Clicked', 'bit-pi'),
+
+    'Email Forwarded' => __('Email Forwarded', 'bit-pi'),
+
+    'Email Shared' => __('Email Shared', 'bit-pi'),
+
+    'Hard Bounce' => __('Hard Bounce', 'bit-pi'),
+
+    'Contact Updated' => __('Contact Updated', 'bit-pi'),
+
+    'New Contact Added' => __('New Contact Added', 'bit-pi'),
+
+    'Contact Note Added' => __('Contact Note Added', 'bit-pi'),
+
+    'Contact Tag Added' => __('Contact Tag Added', 'bit-pi'),
+
+    'Contact Tag Removed' => __('Contact Tag Removed', 'bit-pi'),
+
+    'Deal Added' => __('Deal Added', 'bit-pi'),
+
+    'Deal Updated' => __('Deal Updated', 'bit-pi'),
+
+    'Deal Deleted' => __('Deal Deleted', 'bit-pi'),
+
+    'Account Added' => __('Account Added', 'bit-pi'),
+
+    'Account Updated' => __('Account Updated', 'bit-pi'),
+
+    'Account Deleted' => __('Account Deleted', 'bit-pi'),
+
+    'Enter contact ID, to subscribe or unsubscribe from the contact list' => __('Enter contact ID, to subscribe or unsubscribe from the contact list', 'bit-pi'),
+
+    'Enter automation ID, to subscribe or unsubscribe from the contact list' => __('Enter automation ID, to subscribe or unsubscribe from the contact list', 'bit-pi'),
+
+    'List ID' => __('List ID', 'bit-pi'),
+
+    'Choose the action for subscribe or unsubscribe' => __('Choose the action for subscribe or unsubscribe', 'bit-pi'),
+
+    'Subscribe' => __('Subscribe', 'bit-pi'),
+
+    'Unsubscribe' => __('Unsubscribe', 'bit-pi'),
+
+    'Enter account ID for updates' => __('Enter account ID for updates', 'bit-pi'),
+
+    'Enter contact ID for updates' => __('Enter contact ID for updates', 'bit-pi'),
+
+    'Enter name of the webhook' => __('Enter name of the webhook', 'bit-pi'),
+
+    'Select an event, that will attach to the webhook. The webhook will be triggered when the selected event occurs in activeCampaign.' => __('Select an event, that will attach to the webhook. The webhook will be triggered when the selected event occurs in activeCampaign.', 'bit-pi'),
+
+    'Select an Event' => __('Select an Event', 'bit-pi'),
+
+    'Enter source for the webhook' => __('Enter source for the webhook', 'bit-pi'),
+
+    'Source' => __('Source', 'bit-pi'),
+
+    'Public' => __('Public', 'bit-pi'),
+
+    'Note' => __('Note', 'bit-pi'),
+
     'Make A Request' => __('Make A Request', 'bit-pi'),
 
     'New affiliate approved' => __('New affiliate approved', 'bit-pi'),
@@ -1259,8 +1445,6 @@ return [
 
     'Must need contact id for update existing contact' => __('Must need contact id for update existing contact', 'bit-pi'),
 
-    'Contact ID' => __('Contact ID', 'bit-pi'),
-
     'Submit Success' => __('Submit Success', 'bit-pi'),
 
     'Add Contacts To list' => __('Add Contacts To list', 'bit-pi'),
@@ -1268,8 +1452,6 @@ return [
     'Delete a Contact' => __('Delete a Contact', 'bit-pi'),
 
     'Remove a contact from a list' => __('Remove a contact from a list', 'bit-pi'),
-
-    'List ID' => __('List ID', 'bit-pi'),
 
     'Select a List' => __('Select a List', 'bit-pi'),
 
@@ -1452,8 +1634,6 @@ return [
     'Event' => __('Event', 'bit-pi'),
 
     'Select an event' => __('Select an event', 'bit-pi'),
-
-    'Phone Number' => __('Phone Number', 'bit-pi'),
 
     'Company' => __('Company', 'bit-pi'),
 
@@ -1685,6 +1865,62 @@ return [
 
     'Booking Completed' => __('Booking Completed', 'bit-pi'),
 
+    'Get Contact (All)' => __('Get Contact (All)', 'bit-pi'),
+
+    'Want to see contacts? Just hit **Test Run** to fetch them.' => __('Want to see contacts? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Contact (By Id)' => __('Get Contact (By Id)', 'bit-pi'),
+
+    'Get Contact (By Email)' => __('Get Contact (By Email)', 'bit-pi'),
+
+    'Get Contact (By User Id)' => __('Get Contact (By User Id)', 'bit-pi'),
+
+    'Get Contact (By Tag Ids)' => __('Get Contact (By Tag Ids)', 'bit-pi'),
+
+    'Get Contact (By List Ids)' => __('Get Contact (By List Ids)', 'bit-pi'),
+
+    'Get Contact (By Status)' => __('Get Contact (By Status)', 'bit-pi'),
+
+    'Get Current Contact' => __('Get Current Contact', 'bit-pi'),
+
+    'Get Current Contact based on the current userID or contact from the cookie value' => __('Get Current Contact based on the current userID or contact from the cookie value', 'bit-pi'),
+
+    'Get Tag (All)' => __('Get Tag (All)', 'bit-pi'),
+
+    'Want to see tags? Just hit **Test Run** to fetch them.' => __('Want to see tags? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Create or Update Tag' => __('Create or Update Tag', 'bit-pi'),
+
+    'Add Tag To Contact' => __('Add Tag To Contact', 'bit-pi'),
+
+    'Remove Tag From Contact' => __('Remove Tag From Contact', 'bit-pi'),
+
+    'Get List (All)' => __('Get List (All)', 'bit-pi'),
+
+    'Want to see lists? Just hit **Test Run** to fetch them.' => __('Want to see lists? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Create or Update List' => __('Create or Update List', 'bit-pi'),
+
+    'Add List To Contact' => __('Add List To Contact', 'bit-pi'),
+
+    'Remove List From Contact' => __('Remove List From Contact', 'bit-pi'),
+
+    'Get Company (All)' => __('Get Company (All)', 'bit-pi'),
+
+    'Want to see companies? Just hit **Test Run** to fetch them.' => __('Want to see companies? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Company (By Id)' => __('Get Company (By Id)', 'bit-pi'),
+
+    'Create or Update Company' => __('Create or Update Company', 'bit-pi'),
+
+    'Add Company To Contact' => __('Add Company To Contact', 'bit-pi'),
+
+    'Remove Company From Contact' => __('Remove Company From Contact', 'bit-pi'),
+
+    'Add Event Tracking' => __('Add Event Tracking', 'bit-pi'),
+
+    'Add Note' => __('Add Note', 'bit-pi'),
+
     'A tag is added to contact' => __('A tag is added to contact', 'bit-pi'),
 
     'A tag is removed from contact' => __('A tag is removed from contact', 'bit-pi'),
@@ -1697,7 +1933,45 @@ return [
 
     'Contact status updated' => __('Contact status updated', 'bit-pi'),
 
+    'Id' => __('Id', 'bit-pi'),
+
+    'Contact Id' => __('Contact Id', 'bit-pi'),
+
+    'Slug' => __('Slug', 'bit-pi'),
+
+    'Select a company' => __('Select a company', 'bit-pi'),
+
+    'Contact Email' => __('Contact Email', 'bit-pi'),
+
+    'Event Tracking key' => __('Event Tracking key', 'bit-pi'),
+
+    'Event Tracking Title' => __('Event Tracking Title', 'bit-pi'),
+
+    'Event value' => __('Event value', 'bit-pi'),
+
+    'Provider' => __('Provider', 'bit-pi'),
+
+    'Type' => __('Type', 'bit-pi'),
+
+    'Custom Field Map' => __('Custom Field Map', 'bit-pi'),
+
+    'Refetch Custom Fields' => __('Refetch Custom Fields', 'bit-pi'),
+
+    'Primary Company' => __('Primary Company', 'bit-pi'),
+
     'Select a status' => __('Select a status', 'bit-pi'),
+
+    'Contact Email Address' => __('Contact Email Address', 'bit-pi'),
+
+    'Provide one or more list id as a comma-separated list or array.' => __('Provide one or more list id as a comma-separated list or array.', 'bit-pi'),
+
+    'List Ids' => __('List Ids', 'bit-pi'),
+
+    'Provide one or more tag id as a comma-separated list or array.' => __('Provide one or more tag id as a comma-separated list or array.', 'bit-pi'),
+
+    'Tag Ids' => __('Tag Ids', 'bit-pi'),
+
+    'User Id' => __('User Id', 'bit-pi'),
 
     'Submission Inserted' => __('Submission Inserted', 'bit-pi'),
 
@@ -1805,8 +2079,6 @@ return [
 
     'Select the owner of the issue' => __('Select the owner of the issue', 'bit-pi'),
 
-    'Owner' => __('Owner', 'bit-pi'),
-
     'Select  Owner' => __('Select  Owner', 'bit-pi'),
 
     'Select a repository of the issue' => __('Select a repository of the issue', 'bit-pi'),
@@ -1887,8 +2159,6 @@ return [
 
     'DND (Do Not Disturb)' => __('DND (Do Not Disturb)', 'bit-pi'),
 
-    'Source' => __('Source', 'bit-pi'),
-
     'Failed to fetch contacts' => __('Failed to fetch contacts', 'bit-pi'),
 
     'Select Contact' => __('Select Contact', 'bit-pi'),
@@ -1955,8 +2225,6 @@ return [
 
     'Tag removed from contact' => __('Tag removed from contact', 'bit-pi'),
 
-    'Create or Update Company' => __('Create or Update Company', 'bit-pi'),
-
     'Create or Update Deal' => __('Create or Update Deal', 'bit-pi'),
 
     'Add Contacts To List' => __('Add Contacts To List', 'bit-pi'),
@@ -1984,8 +2252,6 @@ return [
     'Select a Type' => __('Select a Type', 'bit-pi'),
 
     'Add Company Fields' => __('Add Company Fields', 'bit-pi'),
-
-    'Field #{COUNT}' => __('Field #{COUNT}', 'bit-pi'),
 
     'Company Fields' => __('Company Fields', 'bit-pi'),
 
@@ -2110,8 +2376,6 @@ return [
     'Shared Teams' => __('Shared Teams', 'bit-pi'),
 
     'Shared Users' => __('Shared Users', 'bit-pi'),
-
-    'Currency' => __('Currency', 'bit-pi'),
 
     'Exchange rate' => __('Exchange rate', 'bit-pi'),
 
@@ -2511,10 +2775,6 @@ return [
 
     'Form' => __('Form', 'bit-pi'),
 
-    'Slug' => __('Slug', 'bit-pi'),
-
-    'Type' => __('Type', 'bit-pi'),
-
     'Address' => __('Address', 'bit-pi'),
 
     'Date Picker' => __('Date Picker', 'bit-pi'),
@@ -2552,8 +2812,6 @@ return [
     'Form Height' => __('Form Height', 'bit-pi'),
 
     'Select Form' => __('Select Form', 'bit-pi'),
-
-    'Note' => __('Note', 'bit-pi'),
 
     'Add Subscriber' => __('Add Subscriber', 'bit-pi'),
 
@@ -2765,13 +3023,53 @@ return [
 
     'Reply Token' => __('Reply Token', 'bit-pi'),
 
+    'Send Email' => __('Send Email', 'bit-pi'),
+
+    '*Send Email through your website*.' => __('*Send Email through your website*.', 'bit-pi'),
+
+    'This action allows you to send emails using your site\'s **SMTP or mail configuration**.' => __('This action allows you to send emails using your site\'s **SMTP or mail configuration**.', 'bit-pi'),
+
+    'Email address that will be used to send the email.' => __('Email address that will be used to send the email.', 'bit-pi'),
+
+    'From Email' => __('From Email', 'bit-pi'),
+
+    'Name that will be used to send the email.' => __('Name that will be used to send the email.', 'bit-pi'),
+
+    'From Name' => __('From Name', 'bit-pi'),
+
+    'Email address to which the email will be sent. You can use multiple emails separated by commas.' => __('Email address to which the email will be sent. You can use multiple emails separated by commas.', 'bit-pi'),
+
+    'To' => __('To', 'bit-pi'),
+
+    'Email address to which a copy of the email will be sent. You can use multiple emails separated by commas.' => __('Email address to which a copy of the email will be sent. You can use multiple emails separated by commas.', 'bit-pi'),
+
+    'CC' => __('CC', 'bit-pi'),
+
+    'Email address to which a blind copy of the email will be sent. You can use multiple emails separated by commas.' => __('Email address to which a blind copy of the email will be sent. You can use multiple emails separated by commas.', 'bit-pi'),
+
+    'BCC' => __('BCC', 'bit-pi'),
+
+    'Email address to which replies will be sent. Make sure it is not same as the from email. If it is same, skip this field.' => __('Email address to which replies will be sent. Make sure it is not same as the from email. If it is same, skip this field.', 'bit-pi'),
+
+    'Reply To' => __('Reply To', 'bit-pi'),
+
+    'Subject of the email.' => __('Subject of the email.', 'bit-pi'),
+
+    'Subject' => __('Subject', 'bit-pi'),
+
+    'Content of the email. You can map an HTML field here. If you map an HTML field, you must set the "Is this email in HTML format?" option to true.' => __('Content of the email. You can map an HTML field here. If you map an HTML field, you must set the "Is this email in HTML format?" option to true.', 'bit-pi'),
+
+    'Attachments to be included in the email.' => __('Attachments to be included in the email.', 'bit-pi'),
+
+    'Attachments' => __('Attachments', 'bit-pi'),
+
+    'Is this email in HTML format?' => __('Is this email in HTML format?', 'bit-pi'),
+
     'Add Lead' => __('Add Lead', 'bit-pi'),
 
     'To generate the API key, you need to go to your Brand > Settings > API Keys then click Create' => __('To generate the API key, you need to go to your Brand > Settings > API Keys then click Create', 'bit-pi'),
 
     'Subscription Status' => __('Subscription Status', 'bit-pi'),
-
-    'Unsubscribe' => __('Unsubscribe', 'bit-pi'),
 
     'Add Double Opt-In to the lead.' => __('Add Double Opt-In to the lead.', 'bit-pi'),
 
@@ -2799,6 +3097,18 @@ return [
 
     'Get Members From List' => __('Get Members From List', 'bit-pi'),
 
+    'Watch Subscribe' => __('Watch Subscribe', 'bit-pi'),
+
+    'Watch Unsubscribe' => __('Watch Unsubscribe', 'bit-pi'),
+
+    'Watch Campaign' => __('Watch Campaign', 'bit-pi'),
+
+    'Watch Cleaned' => __('Watch Cleaned', 'bit-pi'),
+
+    'Watch Profile' => __('Watch Profile', 'bit-pi'),
+
+    'Watch Upemail' => __('Watch Upemail', 'bit-pi'),
+
     'Choose the list from which you want to add a note to a member.' => __('Choose the list from which you want to add a note to a member.', 'bit-pi'),
 
     'Select Audience List' => __('Select Audience List', 'bit-pi'),
@@ -2817,17 +3127,9 @@ return [
 
     'Tag Name' => __('Tag Name', 'bit-pi'),
 
-    'ADD' => __('ADD', 'bit-pi'),
-
-    'DELETE' => __('DELETE', 'bit-pi'),
-
     'Tag #{COUNT}' => __('Tag #{COUNT}', 'bit-pi'),
 
     'Tag Field Map' => __('Tag Field Map', 'bit-pi'),
-
-    'When Is Syncing is Enabled, automation based on the tags in the request will not fire.' => __('When Is Syncing is Enabled, automation based on the tags in the request will not fire.', 'bit-pi'),
-
-    'Is Syncing?' => __('Is Syncing?', 'bit-pi'),
 
     'Enable the switch to update an existing member.' => __('Enable the switch to update an existing member.', 'bit-pi'),
 
@@ -2957,6 +3259,8 @@ return [
 
     'Select a recurring-membership' => __('Select a recurring-membership', 'bit-pi'),
 
+    'Form Submitted' => __('Form Submitted', 'bit-pi'),
+
     'User Approved' => __('User Approved', 'bit-pi'),
 
     'User Denied' => __('User Denied', 'bit-pi'),
@@ -2995,8 +3299,6 @@ return [
 
     'People' => __('People', 'bit-pi'),
 
-    'Url' => __('Url', 'bit-pi'),
-
     'Checkbox' => __('Checkbox', 'bit-pi'),
 
     'Properties' => __('Properties', 'bit-pi'),
@@ -3006,8 +3308,6 @@ return [
     'Select a Database' => __('Select a Database', 'bit-pi'),
 
     'Enter the user-id to retrive the user' => __('Enter the user-id to retrive the user', 'bit-pi'),
-
-    'User Id' => __('User Id', 'bit-pi'),
 
     'Enter the user id' => __('Enter the user id', 'bit-pi'),
 
@@ -3047,8 +3347,6 @@ return [
 
     'Delete Product' => __('Delete Product', 'bit-pi'),
 
-    'Webhook Automation' => __('Webhook Automation', 'bit-pi'),
-
     'Subscriber Type' => __('Subscriber Type', 'bit-pi'),
 
     'SMS' => __('SMS', 'bit-pi'),
@@ -3056,8 +3354,6 @@ return [
     'nonSubscribed' => __('nonSubscribed', 'bit-pi'),
 
     'Product Id' => __('Product Id', 'bit-pi'),
-
-    'Contact Id' => __('Contact Id', 'bit-pi'),
 
     'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://app.omnisend.com/o/my-account/integrations/api-keys">Here</a>' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://app.omnisend.com/o/my-account/integrations/api-keys">Here</a>', 'bit-pi'),
 
@@ -3589,8 +3885,6 @@ return [
 
     'Enter email address of the customer' => __('Enter email address of the customer', 'bit-pi'),
 
-    'Email Address' => __('Email Address', 'bit-pi'),
-
     'Enter description of the customer' => __('Enter description of the customer', 'bit-pi'),
 
     'Enter the customer full name or business name' => __('Enter the customer full name or business name', 'bit-pi'),
@@ -3737,8 +4031,6 @@ return [
 
     'Select an event, that will attach to the webhook. The webhook will be triggered when the selected event occurs in stripe.' => __('Select an event, that will attach to the webhook. The webhook will be triggered when the selected event occurs in stripe.', 'bit-pi'),
 
-    'Select an Event' => __('Select an Event', 'bit-pi'),
-
     '**Guide**: Create a Webhook endpoint, copy the URL, and add it to your Suite Dash' => __('**Guide**: Create a Webhook endpoint, copy the URL, and add it to your Suite Dash', 'bit-pi'),
 
     '[Webhook Integration](%s) settings' => __('[Webhook Integration](%s) settings', 'bit-pi'),
@@ -3746,8 +4038,6 @@ return [
     '. Then, select the desired events.' => __('. Then, select the desired events.', 'bit-pi'),
 
     'Get Contacts' => __('Get Contacts', 'bit-pi'),
-
-    'Update a Contact' => __('Update a Contact', 'bit-pi'),
 
     'Create a Company' => __('Create a Company', 'bit-pi'),
 
@@ -3839,8 +4129,6 @@ return [
 
     'Subscriber #{COUNT}' => __('Subscriber #{COUNT}', 'bit-pi'),
 
-    'Subscribe' => __('Subscribe', 'bit-pi'),
-
     'Company Field Map' => __('Company Field Map', 'bit-pi'),
 
     'User revoked product purchase' => __('User revoked product purchase', 'bit-pi'),
@@ -3876,6 +4164,26 @@ return [
     'Unban User' => __('Unban User', 'bit-pi'),
 
     'Send Media' => __('Send Media', 'bit-pi'),
+
+    'All Updates' => __('All Updates', 'bit-pi'),
+
+    'Watch Callback Query' => __('Watch Callback Query', 'bit-pi'),
+
+    'Watch Channel Post' => __('Watch Channel Post', 'bit-pi'),
+
+    'Watch Edited Channel Post' => __('Watch Edited Channel Post', 'bit-pi'),
+
+    'Watch Edited Message' => __('Watch Edited Message', 'bit-pi'),
+
+    'Watch Inline Query' => __('Watch Inline Query', 'bit-pi'),
+
+    'Watch Message' => __('Watch Message', 'bit-pi'),
+
+    'Watch Poll' => __('Watch Poll', 'bit-pi'),
+
+    'Watch Pre-Checkout Query' => __('Watch Pre-Checkout Query', 'bit-pi'),
+
+    'Watch Shipping Query' => __('Watch Shipping Query', 'bit-pi'),
 
     'Enter the Chat ID with the prefix 100 here. For example, if your channel ID is -155545555, then the chat ID will be -100155545555 or the username of the target channel (in the format @channelusername or @supergroupusername).' => __('Enter the Chat ID with the prefix 100 here. For example, if your channel ID is -155545555, then the chat ID will be -100155545555 or the username of the target channel (in the format @channelusername or @supergroupusername).', 'bit-pi'),
 
@@ -4043,6 +4351,10 @@ return [
 
     'Closed Date' => __('Closed Date', 'bit-pi'),
 
+    'Select Event' => __('Select Event', 'bit-pi'),
+
+    'Select the events you want to trigger.To trigger all together, select only "All Updates" from the dropdown.' => __('Select the events you want to trigger.To trigger all together, select only "All Updates" from the dropdown.', 'bit-pi'),
+
     'Contact Sent From Bot' => __('Contact Sent From Bot', 'bit-pi'),
 
     'Attempted (submitted) a quiz' => __('Attempted (submitted) a quiz', 'bit-pi'),
@@ -4148,6 +4460,82 @@ return [
     'Outgoing Webhook' => __('Outgoing Webhook', 'bit-pi'),
 
     'Incoming Webhook' => __('Incoming Webhook', 'bit-pi'),
+
+    'Send Template Message' => __('Send Template Message', 'bit-pi'),
+
+    'Send Message' => __('Send Message', 'bit-pi'),
+
+    'Send Document' => __('Send Document', 'bit-pi'),
+
+    'Send Image' => __('Send Image', 'bit-pi'),
+
+    'Send Audio' => __('Send Audio', 'bit-pi'),
+
+    'Send Video' => __('Send Video', 'bit-pi'),
+
+    'Send Sticker' => __('Send Sticker', 'bit-pi'),
+
+    'Send Location' => __('Send Location', 'bit-pi'),
+
+    'To get access token and business ID information, please visit <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://developers.facebook.com/docs/whatsapp/business-management-api/get-started">WhatsApp Business API</a>' => __('To get access token and business ID information, please visit <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://developers.facebook.com/docs/whatsapp/business-management-api/get-started">WhatsApp Business API</a>', 'bit-pi'),
+
+    'WhatsApp Business API' => __('WhatsApp Business API', 'bit-pi'),
+
+    'Business ID' => __('Business ID', 'bit-pi'),
+
+    'Phone Number ID' => __('Phone Number ID', 'bit-pi'),
+
+    'Enter the recipient phone number in international format with country code, without using \' + \'. Ex: 919822012345. you must preregister the receiver\'s phone number in Meta\'s developer console.' => __('Enter the recipient phone number in international format with country code, without using \' + \'. Ex: 919822012345. you must preregister the receiver\'s phone number in Meta\'s developer console.', 'bit-pi'),
+
+    'Recipient Phone Number' => __('Recipient Phone Number', 'bit-pi'),
+
+    'Enter the video URL. WhatsApp API supports only H.264 + AAC encoded videos in .3gp or .mp4 formats with a maximum file size of 16 MB.' => __('Enter the video URL. WhatsApp API supports only H.264 + AAC encoded videos in .3gp or .mp4 formats with a maximum file size of 16 MB.', 'bit-pi'),
+
+    'Audio URL' => __('Audio URL', 'bit-pi'),
+
+    'Enter the document URL. which supports TXT, Excel, Word, PowerPoint, and PDF files up to 100 MB.' => __('Enter the document URL. which supports TXT, Excel, Word, PowerPoint, and PDF files up to 100 MB.', 'bit-pi'),
+
+    'Document URL' => __('Document URL', 'bit-pi'),
+
+    'Enter the caption you want to send with the Document.' => __('Enter the caption you want to send with the Document.', 'bit-pi'),
+
+    'Caption' => __('Caption', 'bit-pi'),
+
+    'Enter the File Name you want to send with the Document.' => __('Enter the File Name you want to send with the Document.', 'bit-pi'),
+
+    'File Name' => __('File Name', 'bit-pi'),
+
+    'Enter the image ULR. Which supports sending JPEG and PNG images via URL, with a maximum file size of 5 MB.' => __('Enter the image ULR. Which supports sending JPEG and PNG images via URL, with a maximum file size of 5 MB.', 'bit-pi'),
+
+    'Image URL' => __('Image URL', 'bit-pi'),
+
+    'Enter the caption you want to send with the Image.' => __('Enter the caption you want to send with the Image.', 'bit-pi'),
+
+    'Enter the latitude of the location in decimal format. Ex: 23.810331' => __('Enter the latitude of the location in decimal format. Ex: 23.810331', 'bit-pi'),
+
+    'Enter the longitude of the location in decimal format. Ex: 90.412521' => __('Enter the longitude of the location in decimal format. Ex: 90.412521', 'bit-pi'),
+
+    'Enter the name of the location. Ex: Dhaka City' => __('Enter the name of the location. Ex: Dhaka City', 'bit-pi'),
+
+    'Enter the full address of the location. Ex: Dhaka, Bangladesh' => __('Enter the full address of the location. Ex: Dhaka, Bangladesh', 'bit-pi'),
+
+    'Enter the text to be sent as message.' => __('Enter the text to be sent as message.', 'bit-pi'),
+
+    'Static stickers must be .webp and under 100 KB. Animated stickers must also be .webp and under 500 KB.' => __('Static stickers must be .webp and under 100 KB. Animated stickers must also be .webp and under 500 KB.', 'bit-pi'),
+
+    'Sticker URL' => __('Sticker URL', 'bit-pi'),
+
+    'Select the name of the message template you want to send as message.' => __('Select the name of the message template you want to send as message.', 'bit-pi'),
+
+    'Select Template Name' => __('Select Template Name', 'bit-pi'),
+
+    'Enter the direct link to the media (image, video or document) you want to send. Must be publicly accessible. Ex: https://example.com/file.jpg' => __('Enter the direct link to the media (image, video or document) you want to send. Must be publicly accessible. Ex: https://example.com/file.jpg', 'bit-pi'),
+
+    'Media URL' => __('Media URL', 'bit-pi'),
+
+    'Video URL' => __('Video URL', 'bit-pi'),
+
+    'Enter the caption you want to send with the Video.' => __('Enter the caption you want to send with the Video.', 'bit-pi'),
 
     'Create Order' => __('Create Order', 'bit-pi'),
 
@@ -5153,11 +5541,7 @@ return [
 
     'Append' => __('Append', 'bit-pi'),
 
-    'Image URL' => __('Image URL', 'bit-pi'),
-
     'Alternative Text' => __('Alternative Text', 'bit-pi'),
-
-    'Caption' => __('Caption', 'bit-pi'),
 
     'Post type key. Must not exceed 20 characters and may only contain lowercase alphanumeric characters, dashes, and underscores.' => __('Post type key. Must not exceed 20 characters and may only contain lowercase alphanumeric characters, dashes, and underscores.', 'bit-pi'),
 
@@ -5309,8 +5693,6 @@ return [
 
     'Enter the matching value for the selected field' => __('Enter the matching value for the selected field', 'bit-pi'),
 
-    'Field Value' => __('Field Value', 'bit-pi'),
-
     'Taxonomy name is Optional, if field is term_taxonomy_id.' => __('Taxonomy name is Optional, if field is term_taxonomy_id.', 'bit-pi'),
 
     'Taxonomy' => __('Taxonomy', 'bit-pi'),
@@ -5335,8 +5717,6 @@ return [
 
     'URL-friendly version of the Category name.' => __('URL-friendly version of the Category name.', 'bit-pi'),
 
-    'Id' => __('Id', 'bit-pi'),
-
     'Whether to bypass Trash and force deletion.' => __('Whether to bypass Trash and force deletion.', 'bit-pi'),
 
     'Force Delete' => __('Force Delete', 'bit-pi'),
@@ -5357,8 +5737,6 @@ return [
 
     'Thumbnail' => __('Thumbnail', 'bit-pi'),
 
-    'Custom Fields' => __('Custom Fields', 'bit-pi'),
-
     'Post Formats' => __('Post Formats', 'bit-pi'),
 
     'Username' => __('Username', 'bit-pi'),
@@ -5376,8 +5754,6 @@ return [
     'Hierarchy (Category Style)' => __('Hierarchy (Category Style)', 'bit-pi'),
 
     'Whether a post type is intended for use publicly either via the admin interface or by front-end users.' => __('Whether a post type is intended for use publicly either via the admin interface or by front-end users.', 'bit-pi'),
-
-    'Public' => __('Public', 'bit-pi'),
 
     'Whether to generate and allow a UI for managing this post type in the admin.' => __('Whether to generate and allow a UI for managing this post type in the admin.', 'bit-pi'),
 

@@ -243,7 +243,6 @@ class ComposerStaticInitea51af6c08176aadc028d16533e215ca
         'BitApps\\Pi\\src\\Integrations\\LemList\\LemListContact' => __DIR__ . '/../..' . '/backend/app/src/Integrations/LemList/LemListContact.php',
         'BitApps\\Pi\\src\\Integrations\\MailBluster\\MailBlusterAction' => __DIR__ . '/../..' . '/backend/app/src/Integrations/MailBluster/MailBlusterAction.php',
         'BitApps\\Pi\\src\\Integrations\\MailBluster\\MailBlusterService' => __DIR__ . '/../..' . '/backend/app/src/Integrations/MailBluster/MailBlusterService.php',
-        'BitApps\\Pi\\src\\Integrations\\MailChimp\\MailChimpHelper' => __DIR__ . '/../..' . '/backend/app/src/Integrations/MailChimp/MailChimpHelper.php',
         'BitApps\\Pi\\src\\Integrations\\MailChimp\\MailChimpService' => __DIR__ . '/../..' . '/backend/app/src/Integrations/MailChimp/MailChimpService.php',
         'BitApps\\Pi\\src\\Integrations\\MailChimp\\deprecated\\MailChimpDeprecated' => __DIR__ . '/../..' . '/backend/app/src/Integrations/MailChimp/deprecated/MailChimpDeprecated.php',
         'BitApps\\Pi\\src\\Integrations\\MailChimp\\deprecated\\MailChimpDeprecatedHelper' => __DIR__ . '/../..' . '/backend/app/src/Integrations/MailChimp/deprecated/MailChimpDeprecatedHelper.php',

@@ -47,19 +47,19 @@ class MailChimpService
     {
         unset($fieldMapData['select-audience']);
         $subscriberHash = md5(strtolower($memberEmail));
-        $newMemberData = JSON::encode($fieldMapData);
+
 
         if ($configs['member-update-switch']['value'] === false) {
             $endPoint = $this->baseURL() . "/lists/{$listId}/members";
-            $response = $this->http->request($endPoint, 'POST', $newMemberData);
+            $response = $this->http->request($endPoint, 'POST', JSON::encode($fieldMapData));
         } else {
             $endPoint = $this->baseURL() . "/lists/{$listId}/members/{$subscriberHash}";
-            $response = $this->http->request($endPoint, 'PATCH', $newMemberData);
+            $response = $this->http->request($endPoint, 'PATCH', JSON::encode($fieldMapData));
         }
 
         return [
             'response'    => $response,
-            'payload'     => $newMemberData,
+            'payload'     => $fieldMapData,
             'status_code' => $this->http->getResponseCode()
         ];
     }
@@ -77,12 +77,11 @@ class MailChimpService
     {
         $subscriberHash = md5(strtolower($memberEmail));
         $endPoint = $this->baseURL() . "/lists/{$listId}/members/{$subscriberHash}/tags";
-        $sendTagData = JSON::encode(['tags' => $tagFieldMapData]);
-        $response = $this->http->request($endPoint, 'POST', $sendTagData);
+        $response = $this->http->request($endPoint, 'POST', JSON::encode(['tags' => $tagFieldMapData]));
 
         return [
             'response'    => $response,
-            'payload'     => $sendTagData,
+            'payload'     => ['tags' => $tagFieldMapData],
             'status_code' => $this->http->getResponseCode()
         ];
     }
@@ -100,12 +99,11 @@ class MailChimpService
     {
         $subscriberHash = md5(strtolower($memberEmail));
         $endPoint = $this->baseURL() . "/lists/{$listId}/members/{$subscriberHash}/notes";
-        $sendNote = JSON::encode(['note' => $noteContent]);
-        $response = $this->http->request($endPoint, 'POST', $sendNote);
+        $response = $this->http->request($endPoint, 'POST', JSON::encode(['note' => $noteContent]));
 
         return [
             'response'    => $response,
-            'payload'     => $noteContent,
+            'payload'     => ['note' => $noteContent],
             'status_code' => $this->http->getResponseCode()
         ];
     }

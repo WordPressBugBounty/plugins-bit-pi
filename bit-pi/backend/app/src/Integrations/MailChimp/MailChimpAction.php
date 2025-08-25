@@ -46,8 +46,11 @@ class MailChimpAction implements ActionInterface
                 return $this->mailChimpDeprecated->createSubscriber($audienceFieldMapData, $addressFieldMapData, $fieldMapData);
 
             case 'addUpdateMember':
-                $merge_fields = array_merge($audienceFieldMapData, [['ADDRESS' => $addressFieldMapData]]);
-                $fieldMapData = array_merge($fieldMapData, ['email_address' => $audienceFieldMapData['Email']], ['merge_fields' => $merge_fields]);
+                $fieldMapData = array_merge($fieldMapData, ['email_address' => $audienceFieldMapData['Email']], ['merge_fields' => $audienceFieldMapData]);
+
+                if ($configs['address-field-switch']['value'] === true) {
+                    $fieldMapData['merge_fields'] = array_merge($fieldMapData['merge_fields'], ['ADDRESS' => $addressFieldMapData]);
+                }
 
                 return $this->mailChimpService->addUpdateMember($fieldMapData['select-audience'], $audienceFieldMapData['Email'], $fieldMapData, $configs);
 

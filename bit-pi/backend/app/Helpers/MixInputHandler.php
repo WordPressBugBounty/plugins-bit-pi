@@ -153,11 +153,13 @@ class MixInputHandler
         foreach ($fieldMap as $fieldPair) {
             $keys = explode('.', $fieldPair['path']);
 
-            if (empty($fieldPair['value']) && !is_numeric($fieldMap['value'])) {
+            $value = $fieldPair['value'];
+
+            if ($value === [] || $value === '' || $value === null) {
                 continue;
             }
 
-            $mixedInputValue = static::replaceMixTagValue($fieldPair['value']);
+            $mixedInputValue = static::replaceMixTagValue($value);
 
             static::assignValueToKey($payload, $keys, $mixedInputValue);
         }

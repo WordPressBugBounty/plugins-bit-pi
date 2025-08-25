@@ -13,7 +13,7 @@ interface ActionInterface
      * Executes the action.
      *
      * @return array{
-     *     status: 'success'|'error',
+     *     status: 'error'|'success',
      *     input: array,
      *     output: array,
      *     message?: string

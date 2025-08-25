@@ -53,6 +53,14 @@ class Utility
 
     public static function formatResponseData($statusCode, $requestBody, $response, $message = null)
     {
+        if (!\is_array($response) && !\is_object($response)) {
+            $response = [$response];
+        }
+
+        if (!\is_array($requestBody) && !\is_object($requestBody)) {
+            $requestBody = [$requestBody];
+        }
+
         if ($statusCode >= 200 && $statusCode < 300) {
             return [
                 'status'  => 'success',
@@ -343,6 +351,27 @@ class Utility
         }
 
         return array_keys($array) === range(0, \count($array) - 1);
+    }
+
+    /**
+     * Convert string to array.
+     *
+     * @param string $data
+     * @param string $separator
+     *
+     * @return array
+     */
+    public static function convertStringToArray($data, $separator = ',')
+    {
+        if (empty($data)) {
+            return [];
+        }
+
+        if (\is_array($data)) {
+            return array_map('trim', $data);
+        }
+
+        return array_map('trim', explode($separator, $data));
     }
 
     /**

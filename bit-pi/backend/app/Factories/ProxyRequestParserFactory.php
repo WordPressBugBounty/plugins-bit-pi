@@ -9,6 +9,7 @@ if (!\defined('ABSPATH')) {
 
 
 use BitApps\Pi\Helpers\Hash;
+use BitApps\Pi\Helpers\Utility;
 
 /**
  * Class ProxyRequestParserFactory
@@ -58,13 +59,15 @@ class ProxyRequestParserFactory
                 continue;
             }
 
-            if (!isset($item['encryption'])) {
+            if (Utility::isSequentialArray($item)) {
                 $data[$key] = implode('', self::parseArrayValue($item));
 
                 continue;
             }
 
-            $data[$key] = self::processEncryption(self::parseArrayValue($item));
+            if (isset($item['encryption'])) {
+                $data[$key] = self::processEncryption(self::parseArrayValue($item));
+            }
         }
 
         return $data;

@@ -4,7 +4,7 @@ Tags: automation, integration, webhook, form, workflow
 Requires at least: 5.8
 Tested up to: 6.8.1
 Requires PHP: 7.4
-Stable tag: 1.4.1
+Stable tag: 1.5.0
 License: GPL-2.0-or-later
 
 Create AI powered automation workflows on a visual canvas, like n8n inside WordPress. Unlimited tasks, unlimited workflows, and unlimited steps.
@@ -437,6 +437,27 @@ Yes! The Pro version unlocks all premium tools, unlimited workflows, priority su
 
 == Changelog ==
 
+= v1.5.0 (Aug 25, 2025) =
+* **Actions (47)**:
+  * WhatsApp (08) 🌟
+  * FluentCRM (24) 
+  * ActiveCampaign (14) 
+  * Mail (01) 
+* **Triggers (12)**:
+  * Mailchimp (06)
+  * ActiveCampaign (01)
+  * WP User Frontend (02)
+  * Paid Memberships Pro (01)
+  * Bricks (01)
+  * MetForm (01)
+* **Improvements**:
+  * Added support for uploaded files in Bit Form trigger.
+* **Fixes**:
+  * Fixed minor bugs.
+
+= v1.4.1 (Aug 07, 2025) =
+* **Fixes**:
+  * Fixed mix input functionality issue.
 
 = v1.4.0 (Aug 05, 2025) =
 * **Actions (101)**:

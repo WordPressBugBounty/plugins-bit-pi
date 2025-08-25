@@ -195,7 +195,6 @@ return array(
     'BitApps\\Pi\\src\\Integrations\\LemList\\LemListContact' => $baseDir . '/backend/app/src/Integrations/LemList/LemListContact.php',
     'BitApps\\Pi\\src\\Integrations\\MailBluster\\MailBlusterAction' => $baseDir . '/backend/app/src/Integrations/MailBluster/MailBlusterAction.php',
     'BitApps\\Pi\\src\\Integrations\\MailBluster\\MailBlusterService' => $baseDir . '/backend/app/src/Integrations/MailBluster/MailBlusterService.php',
-    'BitApps\\Pi\\src\\Integrations\\MailChimp\\MailChimpHelper' => $baseDir . '/backend/app/src/Integrations/MailChimp/MailChimpHelper.php',
     'BitApps\\Pi\\src\\Integrations\\MailChimp\\MailChimpService' => $baseDir . '/backend/app/src/Integrations/MailChimp/MailChimpService.php',
     'BitApps\\Pi\\src\\Integrations\\MailChimp\\deprecated\\MailChimpDeprecated' => $baseDir . '/backend/app/src/Integrations/MailChimp/deprecated/MailChimpDeprecated.php',
     'BitApps\\Pi\\src\\Integrations\\MailChimp\\deprecated\\MailChimpDeprecatedHelper' => $baseDir . '/backend/app/src/Integrations/MailChimp/deprecated/MailChimpDeprecatedHelper.php',
