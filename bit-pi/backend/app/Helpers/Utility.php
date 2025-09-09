@@ -374,6 +374,11 @@ class Utility
         return array_map('trim', explode($separator, $data));
     }
 
+    public static function jsonEncodeDecode($data)
+    {
+        return JSON::decode(JSON::encode($data));
+    }
+
     /**
      * Sanitize Metadata.
      *

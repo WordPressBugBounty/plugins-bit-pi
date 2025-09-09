@@ -692,8 +692,6 @@ abstract class BackgroundProcessHandler extends AsyncRequest
 
     private function getCpuLoadLinux()
     {
-        $load = sys_getloadavg();
-
         if (file_exists('/proc/cpuinfo') && is_readable('/proc/cpuinfo')) {
             $cpuCount = substr_count(file_get_contents('/proc/cpuinfo'), 'processor');
         } elseif (\function_exists('shell_exec') && is_executable('/usr/bin/nproc')) {
@@ -702,7 +700,40 @@ abstract class BackgroundProcessHandler extends AsyncRequest
             $cpuCount = 1;
         }
 
-        return ($load[0] / max($cpuCount, 1)) * 100;
+        $lastOneMinuteLoad = $this->getLastOneMinuteResourceLoad();
+
+        return ($lastOneMinuteLoad / max($cpuCount, 1)) * 100;
+    }
+
+    private function getLastOneMinuteResourceLoad()
+    {
+        $firstMinuteIndexPosition = 0;
+
+        if (\function_exists('sys_getloadavg')) {
+            $loadAvg = @sys_getloadavg();
+            if ($loadAvg !== false && isset($loadAvg[$firstMinuteIndexPosition])) {
+                return $loadAvg[$firstMinuteIndexPosition];
+            }
+        }
+
+        if (is_readable('/proc/loadavg')) {
+            $content = @file_get_contents('/proc/loadavg');
+            if ($content !== false) {
+                $loadAvg = preg_split('/\s+/', trim($content));
+                if (isset($loadAvg[$firstMinuteIndexPosition])) {
+                    return $loadAvg[$firstMinuteIndexPosition];
+                }
+            }
+        }
+
+        if (\function_exists('shell_exec')) {
+            $uptime = @shell_exec('uptime');
+            if ($uptime && preg_match('/load average[s]?:\s*([0-9\.]+)/i', $uptime, $matches)) {
+                return str_replace(',', '.', $matches[1]);
+            }
+        }
+
+        return 0;
     }
 
     private function getCpuLoadWindows()

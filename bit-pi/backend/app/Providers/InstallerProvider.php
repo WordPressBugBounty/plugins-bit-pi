@@ -61,6 +61,7 @@ final class InstallerProvider
     public function deactivate()
     {
         wp_clear_scheduled_hook(Config::VAR_PREFIX . 'flow_history_cleanup');
+        flush_rewrite_rules();
     }
 
     public function registerActivator($networkWide)

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Mon Aug 25 2025 09:49:23 GMT+0000 (Coordinated Universal "
+"POT-Creation-Date: Tue Sep 09 2025 09:44:59 GMT+0000 (Coordinated Universal "
 "Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -620,6 +620,10 @@ msgstr ""
 msgid "Choose a connection"
 msgstr ""
 
+#: frontend/src/components/features/Connection/data/useUpdateConnection.ts:43
+msgid "Connection updated successfully"
+msgstr ""
+
 #: frontend/src/components/features/Connection/internals/ConnectionPopover.tsx:39
 msgid "Add new connection"
 msgstr ""
@@ -641,6 +645,7 @@ msgid "Choose type"
 msgstr ""
 
 #: frontend/src/components/features/Connection/internals/ConnectionPopoverContent.tsx:84
+#: frontend/src/pages/Connections/internals/EditConnectionModal.tsx:55
 msgid "Connection Name"
 msgstr ""
 
@@ -655,6 +660,9 @@ msgstr ""
 #: frontend/src/services/machines/demio/helpers/machineHelper.demio.ts:86
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:64
 #: frontend/src/services/machines/getResponse/helpers/machineHelper.getResponse.ts:12
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:168
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:178
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:168
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:42
 #: frontend/src/services/machines/telegram/createInviteLink.telegram.machine.pro.ts:35
 #: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.pro.ts:48
@@ -756,8 +764,10 @@ msgstr ""
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/CustomOauth2Connection/CustomOauth2Connection.tsx:351
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/Oauth2Connection/Oauth2Connection.tsx:212
 #: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:84
+#: frontend/src/components/features/Webhook/ui/EditWebhookModal.tsx:67
 #: frontend/src/components/utilities/ContextMenu/ContextMenu.stories.tsx:61
 #: frontend/src/components/utilities/ContextMenu/ContextMenuStory.tsx:55
+#: frontend/src/pages/Connections/internals/EditConnectionModal.tsx:67
 #: frontend/src/pages/CustomApps/internals/AddCustomAppsModal/AddCustomAppsModal.tsx:170
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomAppsAction.tsx:280
 #: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/CustomAppsTrigger.tsx:152
@@ -914,6 +924,10 @@ msgstr ""
 msgid "Untitled Condition 4"
 msgstr ""
 
+#: frontend/src/components/features/FlowBuilder/helpers/useNodeClone.tsx:37
+msgid "Node not found"
+msgstr ""
+
 #: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/BuilderLeftSideBar.tsx:61
 #: frontend/src/components/features/NodeDetails/internals/AppHeaderPopoverContent/AppHeaderPopoverContent.tsx:152
 #: frontend/src/pages/Flows/ui/Flows.tsx:83
@@ -1038,12 +1052,12 @@ msgid "No Condition Matched"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/ConditionItem/ConditionItem.tsx:127
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:128
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:139
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:91
-#: frontend/src/pages/Connections/ui/Connections.tsx:56
+#: frontend/src/pages/Connections/ui/Connections.tsx:58
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppActions.tsx:34
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppModules.tsx:47
-#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:63
+#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:65
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:81
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:97
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:113
@@ -1054,6 +1068,7 @@ msgstr ""
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:113
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:138
 #: frontend/src/services/machines/github/createGist.github.machine.pro.ts:59
+#: frontend/src/services/machines/gmail/deleteEmail.gmail.machine.pro.ts:32
 #: frontend/src/services/machines/googleSheet/appendOrUpdateRow.googleSheet.machine.pro.ts:108
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:100
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:114
@@ -1087,12 +1102,12 @@ msgid "Are you sure to delete this app?"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/ConditionItem/ConditionItem.tsx:130
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:136
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:147
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:94
-#: frontend/src/pages/Connections/ui/Connections.tsx:60
+#: frontend/src/pages/Connections/ui/Connections.tsx:62
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppActions.tsx:36
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppModules.tsx:49
-#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:67
+#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:69
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:80
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:96
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:112
@@ -1103,6 +1118,7 @@ msgstr ""
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:112
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:137
 #: frontend/src/services/machines/github/createGist.github.machine.pro.ts:58
+#: frontend/src/services/machines/gmail/deleteEmail.gmail.machine.pro.ts:31
 #: frontend/src/services/machines/googleSheet/appendOrUpdateRow.googleSheet.machine.pro.ts:107
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:99
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:113
@@ -1390,11 +1406,11 @@ msgstr ""
 msgid "Select an app"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:102
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:113
 msgid "Unlink"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:102
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:113
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:122
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:175
 #: frontend/src/components/utilities/ContextMenu/ContextMenu.stories.tsx:52
@@ -1402,22 +1418,20 @@ msgstr ""
 #: frontend/src/components/utilities/ContextMenu/ContextMenuStory.tsx:46
 #: frontend/src/components/utilities/ContextMenu/ContextMenuStory.tsx:57
 #: frontend/src/components/utilities/DropDown/DropDown.stories.tsx:20
-#: frontend/src/pages/Connections/ui/Connections.tsx:64
 #: frontend/src/pages/Flows/shared/FlowTags/ui/FlowTags.tsx:80
-#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:71
 msgid "Delete"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:110
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:121
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:152
 msgid "Edit"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:123
-msgid "Clone (Planned)"
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:134
+msgid "Clone"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:129
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:140
 msgid "Are you sure %s this %s?"
 msgstr ""
 
@@ -1538,6 +1552,8 @@ msgid "Are you Confirm to Delete?"
 msgstr ""
 
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:269
+#: frontend/src/components/features/Webhook/ui/EditWebhookModal.tsx:69
+#: frontend/src/pages/Connections/internals/EditConnectionModal.tsx:69
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomAppsAction.tsx:288
 #: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/CustomAppsTrigger.tsx:160
 #: frontend/src/pages/CustomApps/internals/EditCustomAppsModal/EditCustomAppsForm.tsx:127
@@ -1552,6 +1568,7 @@ msgid "Edit Flow"
 msgstr ""
 
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:276
+#: frontend/src/components/features/Webhook/ui/EditWebhookModal.tsx:55
 #: frontend/src/pages/Flows/ui/Flows.tsx:122
 #: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:60
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:35
@@ -1834,6 +1851,7 @@ msgid "Basic Auth"
 msgstr ""
 
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:172
+#: frontend/src/services/machines/gmail/helpers/commonUtils.gmail.ts:25
 #: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:38
 #: frontend/src/services/machines/googleSheet/appendOrUpdateRow.googleSheet.machine.pro.ts:39
 #: frontend/src/services/machines/mailChimp/helpers/mailChimpCommons.ts:22
@@ -1878,6 +1896,7 @@ msgstr ""
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:33
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.free.ts:45
 #: frontend/src/services/machines/github/helpers/commonUtils.github.ts:31
+#: frontend/src/services/machines/gmail/helpers/commonUtils.gmail.ts:51
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.free.ts:36
 #: frontend/src/services/machines/goHighLevel/updateContact.goHighLevel.machine.free.ts:36
 #: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:65
@@ -2135,6 +2154,10 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
+#: frontend/src/components/features/Webhook/data/useUpdateTitleWebhook.ts:41
+msgid "Webhook updated successfully"
+msgstr ""
+
 #: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:34
 #: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:65
 msgid "Untitled Webhook"
@@ -2154,6 +2177,26 @@ msgstr ""
 
 #: frontend/src/components/features/Webhook/ui/AddWebhookPopover.tsx:119
 msgid "Add Webhook"
+msgstr ""
+
+#: frontend/src/components/features/Webhook/ui/EditWebhookButton.tsx:32
+msgid "Edit webhook"
+msgstr ""
+
+#: frontend/src/components/features/Webhook/ui/EditWebhookModal.tsx:50
+msgid "Edit Webhook"
+msgstr ""
+
+#: frontend/src/components/features/Webhook/ui/EditWebhookModal.tsx:58
+msgid "Webhook title is required"
+msgstr ""
+
+#: frontend/src/components/features/Webhook/ui/EditWebhookModal.tsx:59
+msgid "Webhook title cannot exceed 255 characters"
+msgstr ""
+
+#: frontend/src/components/features/Webhook/ui/EditWebhookModal.tsx:62
+msgid "Enter webhook title"
 msgstr ""
 
 #: frontend/src/components/features/Webhook/ui/HookListener.tsx:62
@@ -2369,17 +2412,41 @@ msgstr ""
 msgid "Auth Response Captured"
 msgstr ""
 
-#: frontend/src/pages/Connections/ui/Connections.tsx:29
+#: frontend/src/pages/Connections/internals/EditConnectionButton.tsx:28
+msgid "Edit connection"
+msgstr ""
+
+#: frontend/src/pages/Connections/internals/EditConnectionModal.tsx:50
+msgid "Edit Connection Name"
+msgstr ""
+
+#: frontend/src/pages/Connections/internals/EditConnectionModal.tsx:58
+msgid "Connection name is required"
+msgstr ""
+
+#: frontend/src/pages/Connections/internals/EditConnectionModal.tsx:59
+msgid "Connection name cannot exceed 255 characters"
+msgstr ""
+
+#: frontend/src/pages/Connections/internals/EditConnectionModal.tsx:62
+msgid "Enter connection name"
+msgstr ""
+
+#: frontend/src/pages/Connections/ui/Connections.tsx:30
 #: frontend/src/pages/Layout/ui/Sidebar/Sidebar.tsx:34
 msgid "Connections"
 msgstr ""
 
-#: frontend/src/pages/Connections/ui/Connections.tsx:57
+#: frontend/src/pages/Connections/ui/Connections.tsx:59
 msgid "Are you sure to delete this connection?"
 msgstr ""
 
-#: frontend/src/pages/Connections/ui/Connections.tsx:62
+#: frontend/src/pages/Connections/ui/Connections.tsx:64
 msgid "Delete the connection"
+msgstr ""
+
+#: frontend/src/pages/Connections/ui/Connections.tsx:66
+msgid "Delete connection"
 msgstr ""
 
 #: frontend/src/pages/CustomApps/helpers/customAppsRestHandlers.ts:41
@@ -2471,6 +2538,8 @@ msgid ""
 msgstr ""
 
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/BodyAndQueryParamFields.tsx:23
+#: frontend/src/services/machines/gmail/addLabelToEmail.gmail.machine.pro.ts:19
+#: frontend/src/services/machines/gmail/removeLabelToEmail.gmail.machine.pro.ts:19
 msgid "label"
 msgstr ""
 
@@ -2487,7 +2556,7 @@ msgstr ""
 
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/BodyAndQueryParamFields.tsx:33
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:86
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:64
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:63
 msgid "Number"
 msgstr ""
 
@@ -2503,6 +2572,9 @@ msgstr ""
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionBody.tsx:108
 #: frontend/src/services/machines/commonMachines/apiClient.machine.ts:139
 #: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:72
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:96
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:106
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:96
 #: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:111
 msgid "Body"
 msgstr ""
@@ -2514,6 +2586,9 @@ msgstr ""
 
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionHeaders.tsx:114
 #: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:98
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:121
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:131
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:121
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:56
 #: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:29
 msgid "Label"
@@ -2829,7 +2904,7 @@ msgid "Dashboard"
 msgstr ""
 
 #: frontend/src/pages/Layout/ui/Sidebar/Sidebar.tsx:35
-#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:28
+#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:29
 msgid "Webhooks"
 msgstr ""
 
@@ -2953,15 +3028,15 @@ msgid ""
 "more accurately."
 msgstr ""
 
-#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:59
+#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:60
 msgid "Go to Flow"
 msgstr ""
 
-#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:64
+#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:66
 msgid "Are you sure to delete this webhook?"
 msgstr ""
 
-#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:69
+#: frontend/src/pages/Webhooks/ui/Webhooks.tsx:71
 msgid "Delete the webhook"
 msgstr ""
 
@@ -3276,6 +3351,9 @@ msgstr ""
 #: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:38
 #: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:38
 #: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:43
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:175
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:185
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:175
 #: frontend/src/services/machines/notion/createDatabase.notion.machine.pro.ts:54
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:188
 msgid "Url"
@@ -3653,27 +3731,6 @@ msgstr ""
 #: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:95
 #: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:51
 msgid "Public"
-msgstr ""
-
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:115
-#: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:76
-#: frontend/src/services/machines/line/getNumberOfFollowers.line.machine.pro.ts:31
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:66
-#: frontend/src/services/machines/line/sendBroadcastMessage.line.machine.pro.ts:88
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:64
-#: frontend/src/services/machines/line/sendPushMessage.line.machine.pro.ts:86
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:64
-#: frontend/src/services/machines/line/sendReplyMessage.line.machine.pro.ts:86
-#: frontend/src/services/machines/line/watchEvents.line.machine.pro.ts:30
-#: frontend/src/services/machines/mailChimp/watchMailChimpEvents.mailChimp.machine.free.ts:82
-#: frontend/src/services/machines/slack/sendMessageToChannel.slack.machine.pro.ts:146
-#: frontend/src/services/machines/stripe/retrieveBalance.stripe.machine.pro.ts:22
-#: frontend/src/services/machines/stripe/retrievePrice.stripe.machine.pro.ts:22
-#: frontend/src/services/machines/stripe/webhookAutomation.stripe.machine.pro.ts:53
-#: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:18
-#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:48
-#: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:70
-msgid "Note"
 msgstr ""
 
 #: frontend/src/services/machines/activepieces/_activepiecesMachines.ts:16
@@ -4209,6 +4266,15 @@ msgstr ""
 
 #: frontend/src/services/machines/brevo/addContactToList.brevo.machine.free.ts:50
 #: frontend/src/services/machines/brevo/removeContactFromList.brevo.machine.free.ts:48
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:28
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:50
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:73
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:28
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:50
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:73
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:28
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:50
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:73
 #: frontend/src/services/machines/hubSpot/addContactsToList.hubSpot.machine.free.ts:47
 #: frontend/src/services/machines/hubSpot/removeContactFromList.hubSpot.machine.free.ts:47
 msgid "Email #{COUNT}"
@@ -4362,7 +4428,7 @@ msgstr ""
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.pro.ts:30
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:35
 #: frontend/src/services/machines/openAi/createModeration.openAi.machine.pro.ts:24
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:25
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:24
 #: frontend/src/services/machines/openAi/textToStructuredData.openAi.machine.pro.ts:24
 #: frontend/src/services/machines/perplexity/askPerplexity.perplexity.machine.pro.ts:34
 #: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:34
@@ -4703,15 +4769,15 @@ msgstr ""
 msgid "Register an event"
 msgstr ""
 
-#: frontend/src/services/machines/demio/_demioMachines.ts:22
+#: frontend/src/services/machines/demio/_demioMachines.ts:23
 msgid "Get Event"
 msgstr ""
 
-#: frontend/src/services/machines/demio/_demioMachines.ts:28
+#: frontend/src/services/machines/demio/_demioMachines.ts:30
 msgid "Get Session"
 msgstr ""
 
-#: frontend/src/services/machines/demio/_demioMachines.ts:34
+#: frontend/src/services/machines/demio/_demioMachines.ts:37
 msgid "Info of an Event"
 msgstr ""
 
@@ -4971,6 +5037,132 @@ msgstr ""
 
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:132
 msgid "IP address"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:17
+msgid "User Created"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:24
+msgid "User Updated"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:31
+msgid "Attribute Created"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:38
+msgid "Add To Cart"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:45
+msgid "Cart Updated"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:52
+msgid "Product Remove from Cart"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:59
+msgid "Cart Cleared"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:66
+msgid "Set Shipping Method In The Checkout Page"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:73
+msgid "Coupon Applied"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:80
+msgid "Coupon Removed From Checkout Page"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:87
+msgid "Coupon Status Updated (Bulk)"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:94
+msgid "Coupon Deleted (Bulk)"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:101
+#: frontend/src/services/machines/shopify/_shopifyMachines.ts:17
+msgid "Order Created"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:108
+msgid "Order Status Updated"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:115
+msgid "Order Refunded"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:122
+msgid "Email To The Customer"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:129
+msgid "Set Order Status To Processing"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:136
+msgid "Set Order Status To Completed"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:143
+msgid "Set Order Status To Pending"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:150
+msgid "Set Order Status To Refunded"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:157
+msgid "Set Order Status To On Hold"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:164
+msgid "Set Order Status To Cancelled"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:171
+#: frontend/src/services/machines/stripe/helpers/commonUtils.stripe.ts:107
+msgid "Product Created"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:178
+msgid "Product Updated"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:185
+msgid "Product Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:192
+msgid "Product Status Updated (Bulk)"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:199
+msgid "Set Product Status To Live (Bulk)"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:206
+msgid "Set Product Status To Draft (Bulk)"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:213
+msgid "Set Product Status To Trash (Bulk)"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:220
+msgid "Abandoned Cart Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:227
+msgid "Abandoned Cart Reminder Sent"
 msgstr ""
 
 #: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:17
@@ -5351,6 +5543,38 @@ msgstr ""
 msgid "Select a event"
 msgstr ""
 
+#: frontend/src/services/machines/FluentAffiliate/_fluentAffiliateMachines.ts:17
+msgid "Affiliate Created"
+msgstr ""
+
+#: frontend/src/services/machines/FluentAffiliate/_fluentAffiliateMachines.ts:24
+msgid "Affiliate Updated"
+msgstr ""
+
+#: frontend/src/services/machines/FluentAffiliate/_fluentAffiliateMachines.ts:31
+msgid "Affiliate Approved Or Activated"
+msgstr ""
+
+#: frontend/src/services/machines/FluentAffiliate/_fluentAffiliateMachines.ts:38
+msgid "Affiliate Pending"
+msgstr ""
+
+#: frontend/src/services/machines/FluentAffiliate/_fluentAffiliateMachines.ts:45
+msgid "Affiliate Inactivate Or Deactivated"
+msgstr ""
+
+#: frontend/src/services/machines/FluentAffiliate/_fluentAffiliateMachines.ts:52
+msgid "Affiliate Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/FluentAffiliate/_fluentAffiliateMachines.ts:59
+msgid "Referral Created"
+msgstr ""
+
+#: frontend/src/services/machines/FluentAffiliate/_fluentAffiliateMachines.ts:66
+msgid "Referral Deleted"
+msgstr ""
+
 #: frontend/src/services/machines/fluentBooking/_fluentBookingMachines.ts:17
 msgid "Booking Scheduled"
 msgstr ""
@@ -5618,6 +5842,47 @@ msgstr ""
 #: frontend/src/services/machines/fluentSmtp/_fluentSmtpMachines.ts:24
 #: frontend/src/services/machines/SureMail/_sureMailMachines.ts:24
 msgid "Failed to send email"
+msgstr ""
+
+#: frontend/src/services/machines/FormGent/_formGentMachines.ts:17
+#: frontend/src/services/machines/metForm/_metFormMachines.ts:17
+msgid "Form Submitted"
+msgstr ""
+
+#: frontend/src/services/machines/FormGent/_formGentMachines.ts:24
+msgid "Form Created"
+msgstr ""
+
+#: frontend/src/services/machines/FormGent/_formGentMachines.ts:31
+msgid "Form Title Updated"
+msgstr ""
+
+#: frontend/src/services/machines/FormGent/_formGentMachines.ts:38
+msgid "Form Status Updated"
+msgstr ""
+
+#: frontend/src/services/machines/FormGent/_formGentMachines.ts:45
+msgid "Form Duplicated"
+msgstr ""
+
+#: frontend/src/services/machines/FormGent/_formGentMachines.ts:52
+msgid "Form Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/FormGent/_formGentMachines.ts:59
+msgid "Form Responses Deleted"
+msgstr ""
+
+#: frontend/src/services/machines/FormGent/_formGentMachines.ts:66
+msgid "Form Response Starred"
+msgstr ""
+
+#: frontend/src/services/machines/FormGent/_formGentMachines.ts:73
+msgid "Form Response Read Or Unread"
+msgstr ""
+
+#: frontend/src/services/machines/FormGent/_formGentMachines.ts:80
+msgid "View Quiz Result"
 msgstr ""
 
 #: frontend/src/services/machines/gamiPress/_gamiPressMachines.ts:17
@@ -5989,6 +6254,246 @@ msgstr ""
 msgid "Select a donation-form"
 msgstr ""
 
+#: frontend/src/services/machines/gmail/_gmailMachines.ts:16
+msgid "Send an Email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/_gmailMachines.ts:23
+msgid "Find Email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/_gmailMachines.ts:30
+msgid "Create a Draft Email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/_gmailMachines.ts:37
+msgid "Delete an Email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/_gmailMachines.ts:44
+msgid "Get an Email Details"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/_gmailMachines.ts:51
+msgid "Get all Labels"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/_gmailMachines.ts:58
+msgid "Add Label to Email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/_gmailMachines.ts:65
+msgid "Remove Label to Email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/_gmailMachines.ts:72
+msgid "Send Draft"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/_gmailMachines.ts:79
+msgid "Reply To Email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/addLabelToEmail.gmail.machine.pro.ts:17
+msgid "Select the label to add it on the email."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/addLabelToEmail.gmail.machine.pro.ts:24
+#: frontend/src/services/machines/gmail/removeLabelToEmail.gmail.machine.pro.ts:24
+msgid "Select a label"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/addLabelToEmail.gmail.machine.pro.ts:31
+#: frontend/src/services/machines/gmail/removeLabelToEmail.gmail.machine.pro.ts:31
+msgid "Enter the message ID, for the label."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/addLabelToEmail.gmail.machine.pro.ts:33
+#: frontend/src/services/machines/gmail/deleteEmail.gmail.machine.pro.ts:18
+#: frontend/src/services/machines/gmail/getEmailDetails.gmail.machine.pro.ts:18
+#: frontend/src/services/machines/gmail/removeLabelToEmail.gmail.machine.pro.ts:33
+msgid "Message ID"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:30
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:30
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:30
+msgid "Email To"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:52
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:52
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:52
+msgid "CC Email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:75
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:75
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:75
+msgid "BCC Email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:84
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:94
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:84
+msgid "Enter the subject for the email."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:86
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:96
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:86
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:98
+msgid "Subject"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:94
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:104
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:94
+msgid "Enter content of the email."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:104
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:114
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:104
+msgid "Select the content type of the email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:106
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:116
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:106
+msgid "Body Type"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:109
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:119
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:109
+msgid "Plain"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:110
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:120
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:110
+msgid "Html"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:119
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:129
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:119
+msgid "Enter the label of the email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:129
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:139
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:129
+msgid ""
+"Enter a from email-address, default is the primary email address of the "
+"user."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:133
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:143
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:133
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:27
+msgid "From Email"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:141
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:151
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:141
+msgid "Enter the name of the sender."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:143
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:153
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:143
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:38
+msgid "From Name"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:151
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:161
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:151
+msgid ""
+"Enter a reply email-address, which will be different from user own, and "
+"from email-address."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:155
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:165
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:155
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:88
+msgid "Reply To"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:183
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:193
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:183
+msgid "Attachment #{COUNT}"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:185
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:195
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:185
+msgid "Attachment"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/deleteEmail.gmail.machine.pro.ts:16
+#: frontend/src/services/machines/gmail/getEmailDetails.gmail.machine.pro.ts:16
+msgid "Enter the message ID, to delete the email."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/deleteEmail.gmail.machine.pro.ts:26
+msgid "Select is permanently delete the email."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/deleteEmail.gmail.machine.pro.ts:28
+msgid "Permanently Delete"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/findEmail.gmail.machine.pro.ts:16
+msgid "Enter the search query to find the email."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/findEmail.gmail.machine.pro.ts:18
+msgid "Search Query"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/getLabels.gmail.machine.pro.ts:17
+msgid "This event will fetch all the labels of your Gmail account."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/helpers/commonUtils.gmail.ts:8
+#: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:20
+#: frontend/src/services/machines/mailChimp/helpers/mailChimpCommons.ts:8
+msgid "You can find credentials from"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/helpers/commonUtils.gmail.ts:9
+#: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:21
+#: frontend/src/services/machines/mailChimp/helpers/mailChimpCommons.ts:9
+msgid "Here"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/removeLabelToEmail.gmail.machine.pro.ts:17
+msgid "Select the label to remove it from the email."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:84
+msgid "Enter the thread-id, for the email."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:86
+msgid "Thread ID"
+msgstr ""
+
+#: frontend/src/services/machines/gmail/sendDraft.gmail.machine.pro.ts:16
+msgid "Enter draft ID, to send the draft."
+msgstr ""
+
+#: frontend/src/services/machines/gmail/sendDraft.gmail.machine.pro.ts:18
+msgid "Draft ID"
+msgstr ""
+
 #: frontend/src/services/machines/goHighLevel/_goHighLevelMachines.ts:28
 msgid "Add Task"
 msgstr ""
@@ -6070,16 +6575,6 @@ msgstr ""
 
 #: frontend/src/services/machines/googleSheet/_googleSheetMachines.ts:23
 msgid "Append or Update Row (by value)"
-msgstr ""
-
-#: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:20
-#: frontend/src/services/machines/mailChimp/helpers/mailChimpCommons.ts:8
-msgid "You can find credentials from"
-msgstr ""
-
-#: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:21
-#: frontend/src/services/machines/mailChimp/helpers/mailChimpCommons.ts:9
-msgid "Here"
 msgstr ""
 
 #: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.pro.ts:75
@@ -7940,16 +8435,8 @@ msgstr ""
 msgid "Email address that will be used to send the email."
 msgstr ""
 
-#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:27
-msgid "From Email"
-msgstr ""
-
 #: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:36
 msgid "Name that will be used to send the email."
-msgstr ""
-
-#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:38
-msgid "From Name"
 msgstr ""
 
 #: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:47
@@ -7988,16 +8475,8 @@ msgid ""
 "the from email. If it is same, skip this field."
 msgstr ""
 
-#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:88
-msgid "Reply To"
-msgstr ""
-
 #: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:96
 msgid "Subject of the email."
-msgstr ""
-
-#: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:98
-msgid "Subject"
 msgstr ""
 
 #: frontend/src/services/machines/mail/sendEmail.mail.machine.pro.ts:107
@@ -8439,10 +8918,6 @@ msgstr ""
 msgid "Select a recurring-membership"
 msgstr ""
 
-#: frontend/src/services/machines/metForm/_metFormMachines.ts:17
-msgid "Form Submitted"
-msgstr ""
-
 #: frontend/src/services/machines/newUserApprove/_newUserApproveMachines.ts:26
 msgid "User Approved"
 msgstr ""
@@ -8626,7 +9101,7 @@ msgid "Create Product"
 msgstr ""
 
 #: frontend/src/services/machines/Omnisend/_omnisendMachines.ts:72
-#: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:96
+#: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:103
 msgid "Delete Product"
 msgstr ""
 
@@ -8791,7 +9266,7 @@ msgstr ""
 
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:29
 #: frontend/src/services/machines/openAi/createModeration.openAi.machine.pro.ts:17
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:18
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:17
 #: frontend/src/services/machines/openAi/textToStructuredData.openAi.machine.pro.ts:18
 msgid "Select Model"
 msgstr ""
@@ -8862,8 +9337,8 @@ msgid "JSON Object"
 msgstr ""
 
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.pro.ts:146
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:83
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:116
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:82
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:115
 #: frontend/src/services/machines/telegram/sendMedia.telegram.machine.pro.ts:83
 msgid "Select a Format"
 msgstr ""
@@ -9004,117 +9479,117 @@ msgstr ""
 msgid "Text #{COUNT}"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:21
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:20
 msgid "Dall-E-3"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:22
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:21
 msgid "Dall-E-2"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:32
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:31
 msgid ""
 "The maximum length is 1000 characters for dall-e-2 and 4000 characters for "
 "dall-e-3."
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:36
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:35
 msgid "Image Generation Prompt"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:45
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:44
 msgid "Size of the image or images."
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:47
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:91
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:46
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:90
 msgid "Select Size"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:50
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:49
 msgid "256x256"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:51
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:50
 msgid "512x512"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:52
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:94
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:51
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:93
 msgid "1024x1024"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:55
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:99
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:54
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:98
 msgid "Select a Size"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:62
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:61
 msgid "The number of images to generate. Must be between 1 and 10."
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:72
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:71
 msgid ""
 "Format to return the image or images in. For Base64-encoded PNG, the raw "
 "PNG image can be obtained using the IML function "
 "toBinary(<module_no>.data[].b64_json; base64) in following modules."
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:76
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:75
 msgid "Select Response Format"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:79
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:78
 msgid "url"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:80
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:79
 msgid "b64_json"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:89
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:88
 msgid "Size of the image."
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:95
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:94
 msgid "1792x1024"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:96
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:95
 msgid "1024x1792"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:105
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:104
 msgid ""
 "Quality of the generated image. HD generates images with finer details and "
 "greater consistency across the image."
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:109
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:108
 msgid "Select Quality"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:112
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:111
 msgid "Standard"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:113
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:112
 msgid "Hd"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:124
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:123
 msgid "Select Style"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:127
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:126
 msgid "Vivid"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:128
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:127
 msgid "Natural"
 msgstr ""
 
-#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:131
+#: frontend/src/services/machines/openAi/generateImage.openAi.machine.pro.ts:130
 msgid "Select a Style"
 msgstr ""
 
@@ -9603,10 +10078,6 @@ msgstr ""
 
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.free.ts:135
 msgid "Double Optin"
-msgstr ""
-
-#: frontend/src/services/machines/shopify/_shopifyMachines.ts:17
-msgid "Order Created"
 msgstr ""
 
 #: frontend/src/services/machines/slack/_slackMachines.ts:5
@@ -10134,10 +10605,6 @@ msgstr ""
 
 #: frontend/src/services/machines/stripe/helpers/commonUtils.stripe.ts:105
 msgid "Products & Prices"
-msgstr ""
-
-#: frontend/src/services/machines/stripe/helpers/commonUtils.stripe.ts:107
-msgid "Product Created"
 msgstr ""
 
 #: frontend/src/services/machines/stripe/helpers/commonUtils.stripe.ts:108
@@ -11408,51 +11875,55 @@ msgstr ""
 msgid "Update Product"
 msgstr ""
 
-#: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:103
-msgid "Restore Product"
+#: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:96
+msgid "Product Status Updated"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:110
-msgid "Product Status Changed"
+msgid "Restore Product"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:117
-msgid "Product Added to Cart"
+msgid "Product Status Changed"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:124
-msgid "Product Removed from Cart"
+msgid "Product Added to Cart"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:131
-msgid "Order Status Set to Pending"
+msgid "Product Removed from Cart"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:138
-msgid "Order Status Set to Failed"
+msgid "Order Status Set to Pending"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:145
-msgid "Order Status Set to On-hold"
+msgid "Order Status Set to Failed"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:152
-msgid "Order Status Set to Processing"
+msgid "Order Status Set to On-hold"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:159
-msgid "Order Status Set to Completed"
+msgid "Order Status Set to Processing"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:166
-msgid "Order Status Set to Refunded"
+msgid "Order Status Set to Completed"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:173
-msgid "Order Status Set to Cancelled"
+msgid "Order Status Set to Refunded"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:180
+msgid "Order Status Set to Cancelled"
+msgstr ""
+
+#: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:187
 msgid "Order Status Changed"
 msgstr ""
 
@@ -14451,7 +14922,27 @@ msgid "Post Form Submission"
 msgstr ""
 
 #: frontend/src/services/machines/WPUserFrontend/_wPUserFrontendMachines.ts:33
+msgid "Registration Form Submission"
+msgstr ""
+
+#: frontend/src/services/machines/WPUserFrontend/_wPUserFrontendMachines.ts:40
+msgid "Profile Edit Form Submission"
+msgstr ""
+
+#: frontend/src/services/machines/WPUserFrontend/_wPUserFrontendMachines.ts:47
+msgid "User Metadata updated via Profile Edit Form"
+msgstr ""
+
+#: frontend/src/services/machines/WPUserFrontend/_wPUserFrontendMachines.ts:54
 msgid "Subscription Pack Updated"
+msgstr ""
+
+#: frontend/src/services/machines/WPUserFrontend/_wPUserFrontendMachines.ts:61
+msgid "Coupon Created"
+msgstr ""
+
+#: frontend/src/services/machines/WPUserFrontend/_wPUserFrontendMachines.ts:68
+msgid "Coupon Updated"
 msgstr ""
 
 #: frontend/src/services/machines/wsForm/wsFormSubmit.wsForm.machine.pro.ts:32

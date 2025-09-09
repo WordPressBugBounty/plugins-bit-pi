@@ -4,7 +4,7 @@ Tags: automation, integration, webhook, form, workflow
 Requires at least: 5.8
 Tested up to: 6.8.1
 Requires PHP: 7.4
-Stable tag: 1.5.0
+Stable tag: 1.6.0
 License: GPL-2.0-or-later
 
 Create AI powered automation workflows on a visual canvas, like n8n inside WordPress. Unlimited tasks, unlimited workflows, and unlimited steps.
@@ -436,6 +436,18 @@ Yes! The Pro version unlocks all premium tools, unlimited workflows, priority su
 
 
 == Changelog ==
+
+= v1.6.0 (Sept 09, 2025) =
+* **Actions (10)**:
+  * Gmail (10) 🌟
+* **Triggers (55)**:
+  * FluentAffiliate (08)
+  * WooCommerce (01)
+  * FormGent (10)
+  * WP User Frontend (05)
+  * EasyCommerce (31)
+* **Fixes**:
+  * Fixed minor bugs.
 
 = v1.5.0 (Aug 25, 2025) =
 * **Actions (47)**:

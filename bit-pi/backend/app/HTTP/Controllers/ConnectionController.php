@@ -9,11 +9,11 @@ if (!\defined('ABSPATH')) {
 
 
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
-use BitApps\Pi\Deps\BitApps\WPKit\Http\Request\Request;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitApps\Pi\Helpers\Hash;
 use BitApps\Pi\HTTP\Requests\ConnectionIndexRequest;
 use BitApps\Pi\HTTP\Requests\ConnectionStoreRequest;
+use BitApps\Pi\HTTP\Requests\ConnectionUpdateRequest;
 use BitApps\Pi\Model\Connection;
 
 final class ConnectionController
@@ -57,15 +57,23 @@ final class ConnectionController
         return Response::success($connection);
     }
 
-    public function update(Request $request, Connection $connection)
+    public function update(ConnectionUpdateRequest $request)
     {
-        $validated = $request->validate(
-            [
-                'connection_name' => ['required', 'string', 'sanitize:text'],
-            ]
-        );
+        $validated = $request->validated();
 
-        $connection->update($validated)->save();
+        if (empty(trim($validated['connection_name']))) {
+            return Response::error('Connection name is required');
+        }
+
+        $connection = Connection::findOne(['id' => $validated['connection']]);
+        if (!$connection) {
+            return Response::error('Connection not found');
+        }
+
+        $result = $connection->update($validated)->save();
+        if (!$result) {
+            return Response::error('Failed to update connection');
+        }
 
         return Response::success($connection);
     }

@@ -72,6 +72,7 @@ Route::group(
 
         Route::post('connections', [ConnectionController::class, 'index']);
         Route::post('connections/save', [ConnectionController::class, 'store']);
+        Route::post('connections/{connection}/update', [ConnectionController::class, 'update']);
         Route::post('connections/{connection}/delete', [ConnectionController::class, 'destroy']);
         Route::post('refresh-token', [AuthorizationController::class, 'refreshToken']);
 

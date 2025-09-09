@@ -1,0 +1,1 @@
+globalThis.jotaiAtomCache=globalThis.jotaiAtomCache||{cache:new Map,get(t,e){return this.cache.has(t)?this.cache.get(t):(this.cache.set(t,e),e)}};const s="https://bit-flows.com/users-guide/",i={getStarted:`${s}get-started-with-bit-flows/`,integrationRequest:"https://forum.bitapps.pro/t/integration-request-for-bit-flows/249"};export{i as l};

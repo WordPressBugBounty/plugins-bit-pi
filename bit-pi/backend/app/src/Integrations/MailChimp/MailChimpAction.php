@@ -1,6 +1,6 @@
 <?php
 
-namespace BitApps\PiPro\src\Integrations\MailChimp;
+namespace BitApps\Pi\src\Integrations\MailChimp;
 
 if (!\defined('ABSPATH')) {
     exit;
@@ -12,7 +12,6 @@ use BitApps\Pi\src\Authorization\AuthorizationFactory;
 use BitApps\Pi\src\Authorization\AuthorizationType;
 use BitApps\Pi\src\Flow\NodeInfoProvider;
 use BitApps\Pi\src\Integrations\MailChimp\deprecated\MailChimpDeprecated;
-use BitApps\Pi\src\Integrations\MailChimp\MailChimpService;
 use BitApps\Pi\src\Interfaces\ActionInterface;
 
 class MailChimpAction implements ActionInterface

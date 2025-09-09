@@ -273,6 +273,8 @@ return [
 
     'Choose a connection' => __('Choose a connection', 'bit-pi'),
 
+    'Connection updated successfully' => __('Connection updated successfully', 'bit-pi'),
+
     'Add new connection' => __('Add new connection', 'bit-pi'),
 
     'Add Connection' => __('Add Connection', 'bit-pi'),
@@ -352,6 +354,8 @@ return [
     'Untitled' => __('Untitled', 'bit-pi'),
 
     'Untitled Condition 4' => __('Untitled Condition 4', 'bit-pi'),
+
+    'Node not found' => __('Node not found', 'bit-pi'),
 
     'Search' => __('Search', 'bit-pi'),
 
@@ -537,7 +541,7 @@ return [
 
     'Edit' => __('Edit', 'bit-pi'),
 
-    'Clone (Planned)' => __('Clone (Planned)', 'bit-pi'),
+    'Clone' => __('Clone', 'bit-pi'),
 
     'Are you sure %s this %s?' => __('Are you sure %s this %s?', 'bit-pi'),
 
@@ -757,6 +761,8 @@ return [
 
     'Close' => __('Close', 'bit-pi'),
 
+    'Webhook updated successfully' => __('Webhook updated successfully', 'bit-pi'),
+
     'Untitled Webhook' => __('Untitled Webhook', 'bit-pi'),
 
     'Webhook name' => __('Webhook name', 'bit-pi'),
@@ -766,6 +772,16 @@ return [
     'Add new webhook' => __('Add new webhook', 'bit-pi'),
 
     'Add Webhook' => __('Add Webhook', 'bit-pi'),
+
+    'Edit webhook' => __('Edit webhook', 'bit-pi'),
+
+    'Edit Webhook' => __('Edit Webhook', 'bit-pi'),
+
+    'Webhook title is required' => __('Webhook title is required', 'bit-pi'),
+
+    'Webhook title cannot exceed 255 characters' => __('Webhook title cannot exceed 255 characters', 'bit-pi'),
+
+    'Enter webhook title' => __('Enter webhook title', 'bit-pi'),
 
     'Listen Response' => __('Listen Response', 'bit-pi'),
 
@@ -865,11 +881,23 @@ return [
 
     'Auth Response Captured' => __('Auth Response Captured', 'bit-pi'),
 
+    'Edit connection' => __('Edit connection', 'bit-pi'),
+
+    'Edit Connection Name' => __('Edit Connection Name', 'bit-pi'),
+
+    'Connection name is required' => __('Connection name is required', 'bit-pi'),
+
+    'Connection name cannot exceed 255 characters' => __('Connection name cannot exceed 255 characters', 'bit-pi'),
+
+    'Enter connection name' => __('Enter connection name', 'bit-pi'),
+
     'Connections' => __('Connections', 'bit-pi'),
 
     'Are you sure to delete this connection?' => __('Are you sure to delete this connection?', 'bit-pi'),
 
     'Delete the connection' => __('Delete the connection', 'bit-pi'),
+
+    'Delete connection' => __('Delete connection', 'bit-pi'),
 
     'Test Description' => __('Test Description', 'bit-pi'),
 
@@ -1325,8 +1353,6 @@ return [
 
     'Public' => __('Public', 'bit-pi'),
 
-    'Note' => __('Note', 'bit-pi'),
-
     'Make A Request' => __('Make A Request', 'bit-pi'),
 
     'New affiliate approved' => __('New affiliate approved', 'bit-pi'),
@@ -1709,6 +1735,68 @@ return [
 
     'IP address' => __('IP address', 'bit-pi'),
 
+    'User Created' => __('User Created', 'bit-pi'),
+
+    'User Updated' => __('User Updated', 'bit-pi'),
+
+    'Attribute Created' => __('Attribute Created', 'bit-pi'),
+
+    'Add To Cart' => __('Add To Cart', 'bit-pi'),
+
+    'Cart Updated' => __('Cart Updated', 'bit-pi'),
+
+    'Product Remove from Cart' => __('Product Remove from Cart', 'bit-pi'),
+
+    'Cart Cleared' => __('Cart Cleared', 'bit-pi'),
+
+    'Set Shipping Method In The Checkout Page' => __('Set Shipping Method In The Checkout Page', 'bit-pi'),
+
+    'Coupon Applied' => __('Coupon Applied', 'bit-pi'),
+
+    'Coupon Removed From Checkout Page' => __('Coupon Removed From Checkout Page', 'bit-pi'),
+
+    'Coupon Status Updated (Bulk)' => __('Coupon Status Updated (Bulk)', 'bit-pi'),
+
+    'Coupon Deleted (Bulk)' => __('Coupon Deleted (Bulk)', 'bit-pi'),
+
+    'Order Created' => __('Order Created', 'bit-pi'),
+
+    'Order Status Updated' => __('Order Status Updated', 'bit-pi'),
+
+    'Order Refunded' => __('Order Refunded', 'bit-pi'),
+
+    'Email To The Customer' => __('Email To The Customer', 'bit-pi'),
+
+    'Set Order Status To Processing' => __('Set Order Status To Processing', 'bit-pi'),
+
+    'Set Order Status To Completed' => __('Set Order Status To Completed', 'bit-pi'),
+
+    'Set Order Status To Pending' => __('Set Order Status To Pending', 'bit-pi'),
+
+    'Set Order Status To Refunded' => __('Set Order Status To Refunded', 'bit-pi'),
+
+    'Set Order Status To On Hold' => __('Set Order Status To On Hold', 'bit-pi'),
+
+    'Set Order Status To Cancelled' => __('Set Order Status To Cancelled', 'bit-pi'),
+
+    'Product Created' => __('Product Created', 'bit-pi'),
+
+    'Product Updated' => __('Product Updated', 'bit-pi'),
+
+    'Product Deleted' => __('Product Deleted', 'bit-pi'),
+
+    'Product Status Updated (Bulk)' => __('Product Status Updated (Bulk)', 'bit-pi'),
+
+    'Set Product Status To Live (Bulk)' => __('Set Product Status To Live (Bulk)', 'bit-pi'),
+
+    'Set Product Status To Draft (Bulk)' => __('Set Product Status To Draft (Bulk)', 'bit-pi'),
+
+    'Set Product Status To Trash (Bulk)' => __('Set Product Status To Trash (Bulk)', 'bit-pi'),
+
+    'Abandoned Cart Deleted' => __('Abandoned Cart Deleted', 'bit-pi'),
+
+    'Abandoned Cart Reminder Sent' => __('Abandoned Cart Reminder Sent', 'bit-pi'),
+
     'User purchased a product' => __('User purchased a product', 'bit-pi'),
 
     '**When Trigger**: A user purchases a product. This trigger is fired when a user completes a purchase.' => __('**When Trigger**: A user purchases a product. This trigger is fired when a user completes a purchase.', 'bit-pi'),
@@ -1861,6 +1949,22 @@ return [
 
     'Select a event' => __('Select a event', 'bit-pi'),
 
+    'Affiliate Created' => __('Affiliate Created', 'bit-pi'),
+
+    'Affiliate Updated' => __('Affiliate Updated', 'bit-pi'),
+
+    'Affiliate Approved Or Activated' => __('Affiliate Approved Or Activated', 'bit-pi'),
+
+    'Affiliate Pending' => __('Affiliate Pending', 'bit-pi'),
+
+    'Affiliate Inactivate Or Deactivated' => __('Affiliate Inactivate Or Deactivated', 'bit-pi'),
+
+    'Affiliate Deleted' => __('Affiliate Deleted', 'bit-pi'),
+
+    'Referral Created' => __('Referral Created', 'bit-pi'),
+
+    'Referral Deleted' => __('Referral Deleted', 'bit-pi'),
+
     'Booking Scheduled' => __('Booking Scheduled', 'bit-pi'),
 
     'Booking Completed' => __('Booking Completed', 'bit-pi'),
@@ -1978,6 +2082,26 @@ return [
     'Email was sent successfully' => __('Email was sent successfully', 'bit-pi'),
 
     'Failed to send email' => __('Failed to send email', 'bit-pi'),
+
+    'Form Submitted' => __('Form Submitted', 'bit-pi'),
+
+    'Form Created' => __('Form Created', 'bit-pi'),
+
+    'Form Title Updated' => __('Form Title Updated', 'bit-pi'),
+
+    'Form Status Updated' => __('Form Status Updated', 'bit-pi'),
+
+    'Form Duplicated' => __('Form Duplicated', 'bit-pi'),
+
+    'Form Deleted' => __('Form Deleted', 'bit-pi'),
+
+    'Form Responses Deleted' => __('Form Responses Deleted', 'bit-pi'),
+
+    'Form Response Starred' => __('Form Response Starred', 'bit-pi'),
+
+    'Form Response Read Or Unread' => __('Form Response Read Or Unread', 'bit-pi'),
+
+    'View Quiz Result' => __('View Quiz Result', 'bit-pi'),
 
     'A user earns a rank' => __('A user earns a rank', 'bit-pi'),
 
@@ -2139,6 +2263,98 @@ return [
 
     'Select a donation-form' => __('Select a donation-form', 'bit-pi'),
 
+    'Send an Email' => __('Send an Email', 'bit-pi'),
+
+    'Find Email' => __('Find Email', 'bit-pi'),
+
+    'Create a Draft Email' => __('Create a Draft Email', 'bit-pi'),
+
+    'Delete an Email' => __('Delete an Email', 'bit-pi'),
+
+    'Get an Email Details' => __('Get an Email Details', 'bit-pi'),
+
+    'Get all Labels' => __('Get all Labels', 'bit-pi'),
+
+    'Add Label to Email' => __('Add Label to Email', 'bit-pi'),
+
+    'Remove Label to Email' => __('Remove Label to Email', 'bit-pi'),
+
+    'Send Draft' => __('Send Draft', 'bit-pi'),
+
+    'Reply To Email' => __('Reply To Email', 'bit-pi'),
+
+    'Select the label to add it on the email.' => __('Select the label to add it on the email.', 'bit-pi'),
+
+    'Select a label' => __('Select a label', 'bit-pi'),
+
+    'Enter the message ID, for the label.' => __('Enter the message ID, for the label.', 'bit-pi'),
+
+    'Message ID' => __('Message ID', 'bit-pi'),
+
+    'Email To' => __('Email To', 'bit-pi'),
+
+    'CC Email' => __('CC Email', 'bit-pi'),
+
+    'BCC Email' => __('BCC Email', 'bit-pi'),
+
+    'Enter the subject for the email.' => __('Enter the subject for the email.', 'bit-pi'),
+
+    'Subject' => __('Subject', 'bit-pi'),
+
+    'Enter content of the email.' => __('Enter content of the email.', 'bit-pi'),
+
+    'Select the content type of the email' => __('Select the content type of the email', 'bit-pi'),
+
+    'Body Type' => __('Body Type', 'bit-pi'),
+
+    'Plain' => __('Plain', 'bit-pi'),
+
+    'Html' => __('Html', 'bit-pi'),
+
+    'Enter the label of the email' => __('Enter the label of the email', 'bit-pi'),
+
+    'Enter a from email-address, default is the primary email address of the user.' => __('Enter a from email-address, default is the primary email address of the user.', 'bit-pi'),
+
+    'From Email' => __('From Email', 'bit-pi'),
+
+    'Enter the name of the sender.' => __('Enter the name of the sender.', 'bit-pi'),
+
+    'From Name' => __('From Name', 'bit-pi'),
+
+    'Enter a reply email-address, which will be different from user own, and from email-address.' => __('Enter a reply email-address, which will be different from user own, and from email-address.', 'bit-pi'),
+
+    'Reply To' => __('Reply To', 'bit-pi'),
+
+    'Attachment #{COUNT}' => __('Attachment #{COUNT}', 'bit-pi'),
+
+    'Attachment' => __('Attachment', 'bit-pi'),
+
+    'Enter the message ID, to delete the email.' => __('Enter the message ID, to delete the email.', 'bit-pi'),
+
+    'Select is permanently delete the email.' => __('Select is permanently delete the email.', 'bit-pi'),
+
+    'Permanently Delete' => __('Permanently Delete', 'bit-pi'),
+
+    'Enter the search query to find the email.' => __('Enter the search query to find the email.', 'bit-pi'),
+
+    'Search Query' => __('Search Query', 'bit-pi'),
+
+    'This event will fetch all the labels of your Gmail account.' => __('This event will fetch all the labels of your Gmail account.', 'bit-pi'),
+
+    'You can find credentials from' => __('You can find credentials from', 'bit-pi'),
+
+    'Here' => __('Here', 'bit-pi'),
+
+    'Select the label to remove it from the email.' => __('Select the label to remove it from the email.', 'bit-pi'),
+
+    'Enter the thread-id, for the email.' => __('Enter the thread-id, for the email.', 'bit-pi'),
+
+    'Thread ID' => __('Thread ID', 'bit-pi'),
+
+    'Enter draft ID, to send the draft.' => __('Enter draft ID, to send the draft.', 'bit-pi'),
+
+    'Draft ID' => __('Draft ID', 'bit-pi'),
+
     'Add Task' => __('Add Task', 'bit-pi'),
 
     'Update Task' => __('Update Task', 'bit-pi'),
@@ -2176,10 +2392,6 @@ return [
     'Add Row' => __('Add Row', 'bit-pi'),
 
     'Append or Update Row (by value)' => __('Append or Update Row (by value)', 'bit-pi'),
-
-    'You can find credentials from' => __('You can find credentials from', 'bit-pi'),
-
-    'Here' => __('Here', 'bit-pi'),
 
     'Spreadsheet' => __('Spreadsheet', 'bit-pi'),
 
@@ -3031,11 +3243,7 @@ return [
 
     'Email address that will be used to send the email.' => __('Email address that will be used to send the email.', 'bit-pi'),
 
-    'From Email' => __('From Email', 'bit-pi'),
-
     'Name that will be used to send the email.' => __('Name that will be used to send the email.', 'bit-pi'),
-
-    'From Name' => __('From Name', 'bit-pi'),
 
     'Email address to which the email will be sent. You can use multiple emails separated by commas.' => __('Email address to which the email will be sent. You can use multiple emails separated by commas.', 'bit-pi'),
 
@@ -3051,11 +3259,7 @@ return [
 
     'Email address to which replies will be sent. Make sure it is not same as the from email. If it is same, skip this field.' => __('Email address to which replies will be sent. Make sure it is not same as the from email. If it is same, skip this field.', 'bit-pi'),
 
-    'Reply To' => __('Reply To', 'bit-pi'),
-
     'Subject of the email.' => __('Subject of the email.', 'bit-pi'),
-
-    'Subject' => __('Subject', 'bit-pi'),
 
     'Content of the email. You can map an HTML field here. If you map an HTML field, you must set the "Is this email in HTML format?" option to true.' => __('Content of the email. You can map an HTML field here. If you map an HTML field, you must set the "Is this email in HTML format?" option to true.', 'bit-pi'),
 
@@ -3258,8 +3462,6 @@ return [
     'Recurring-memberships' => __('Recurring-memberships', 'bit-pi'),
 
     'Select a recurring-membership' => __('Select a recurring-membership', 'bit-pi'),
-
-    'Form Submitted' => __('Form Submitted', 'bit-pi'),
 
     'User Approved' => __('User Approved', 'bit-pi'),
 
@@ -3769,8 +3971,6 @@ return [
 
     'Double Optin' => __('Double Optin', 'bit-pi'),
 
-    'Order Created' => __('Order Created', 'bit-pi'),
-
     '**Note**: To send messages as a bot, please connect using a valid bot token.' => __('**Note**: To send messages as a bot, please connect using a valid bot token.', 'bit-pi'),
 
     'Create Channel' => __('Create Channel', 'bit-pi'),
@@ -4004,8 +4204,6 @@ return [
     'Customer Deleted' => __('Customer Deleted', 'bit-pi'),
 
     'Products & Prices' => __('Products & Prices', 'bit-pi'),
-
-    'Product Created' => __('Product Created', 'bit-pi'),
 
     'Price Created' => __('Price Created', 'bit-pi'),
 
@@ -4552,6 +4750,8 @@ return [
     'Delete Customer' => __('Delete Customer', 'bit-pi'),
 
     'Update Product' => __('Update Product', 'bit-pi'),
+
+    'Product Status Updated' => __('Product Status Updated', 'bit-pi'),
 
     'Restore Product' => __('Restore Product', 'bit-pi'),
 
@@ -5913,7 +6113,17 @@ return [
 
     'Post Form Submission' => __('Post Form Submission', 'bit-pi'),
 
+    'Registration Form Submission' => __('Registration Form Submission', 'bit-pi'),
+
+    'Profile Edit Form Submission' => __('Profile Edit Form Submission', 'bit-pi'),
+
+    'User Metadata updated via Profile Edit Form' => __('User Metadata updated via Profile Edit Form', 'bit-pi'),
+
     'Subscription Pack Updated' => __('Subscription Pack Updated', 'bit-pi'),
+
+    'Coupon Created' => __('Coupon Created', 'bit-pi'),
+
+    'Coupon Updated' => __('Coupon Updated', 'bit-pi'),
 
     'Note: navigate to the WS Form settings, select "Run WordPress Hook" as the action type, and enter the Hook Tag: bit_pi_do_action.' => __('Note: navigate to the WS Form settings, select "Run WordPress Hook" as the action type, and enter the Hook Tag: bit_pi_do_action.', 'bit-pi'),
 

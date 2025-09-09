@@ -8,7 +8,6 @@ if (!\defined('ABSPATH')) {
 }
 
 
-use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Hooks\Hooks;
 
 class RewriteRuleProvider
@@ -24,14 +23,8 @@ class RewriteRuleProvider
     ) {
         $this->route = $route;
         $this->makeRewriteRule();
-        Hooks::addAction(Config::withPrefix('deactivate'), [$this, 'flushOnDeactivate']);
         Hooks::addAction('init', [$this, 'rewriteUrl']);
         Hooks::addAction('query_vars', [$this, 'addQueryVars']);
-    }
-
-    public function flushOnDeactivate()
-    {
-        flush_rewrite_rules();
     }
 
     public function rewriteUrl()
