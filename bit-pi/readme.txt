@@ -4,7 +4,7 @@ Tags: automation, integration, webhook, form, workflow
 Requires at least: 5.8
 Tested up to: 6.8.1
 Requires PHP: 7.4
-Stable tag: 1.6.0
+Stable tag: 1.6.1
 License: GPL-2.0-or-later
 
 Create AI powered automation workflows on a visual canvas, like n8n inside WordPress. Unlimited tasks, unlimited workflows, and unlimited steps.
@@ -437,7 +437,13 @@ Yes! The Pro version unlocks all premium tools, unlimited workflows, priority su
 
 == Changelog ==
 
+= v1.6.1 (Sep 16, 2025) =
+* **Fixes**:
+  * Fixed ActiveCampaign authentication URL endpoint issue.
+
 = v1.6.0 (Sept 09, 2025) =
+* **Feature**: 
+  * Added  ** Node clone functionality.
 * **Actions (10)**:
   * Gmail (10) 🌟
 * **Triggers (55)**:

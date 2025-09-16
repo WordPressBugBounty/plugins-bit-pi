@@ -1199,12 +1199,6 @@ return [
 
     'Webhook Automation' => __('Webhook Automation', 'bit-pi'),
 
-    'You can get your API key in your activeCampaign settings tab, developer sections' => __('You can get your API key in your activeCampaign settings tab, developer sections', 'bit-pi'),
-
-    'Url' => __('Url', 'bit-pi'),
-
-    'Enter Url' => __('Enter Url', 'bit-pi'),
-
     'Enter contact ID, for the automation' => __('Enter contact ID, for the automation', 'bit-pi'),
 
     'Contact ID' => __('Contact ID', 'bit-pi'),
@@ -1324,6 +1318,12 @@ return [
     'Account Updated' => __('Account Updated', 'bit-pi'),
 
     'Account Deleted' => __('Account Deleted', 'bit-pi'),
+
+    'You can get your API key in your activeCampaign settings tab, developer sections' => __('You can get your API key in your activeCampaign settings tab, developer sections', 'bit-pi'),
+
+    'Url' => __('Url', 'bit-pi'),
+
+    'Enter Url' => __('Enter Url', 'bit-pi'),
 
     'Enter contact ID, to subscribe or unsubscribe from the contact list' => __('Enter contact ID, to subscribe or unsubscribe from the contact list', 'bit-pi'),
 

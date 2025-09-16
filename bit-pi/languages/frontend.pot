@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Tue Sep 09 2025 09:44:59 GMT+0000 (Coordinated Universal "
+"POT-Creation-Date: Tue Sep 16 2025 10:43:46 GMT+0000 (Coordinated Universal "
 "Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -652,9 +652,9 @@ msgstr ""
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:125
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomAppsAction.tsx:137
 #: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/CustomAppsTrigger.tsx:94
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:60
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:70
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:65
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:23
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:33
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:70
 #: frontend/src/services/machines/asana/helpers/machineHelper.asana.ts:228
 #: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:266
 #: frontend/src/services/machines/demio/helpers/machineHelper.demio.ts:86
@@ -673,7 +673,7 @@ msgstr ""
 
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:137
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/CustomOauth2Connection/CustomOauth2Connection.tsx:316
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:90
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:53
 #: frontend/src/services/machines/asana/createTask.asana.machine.pro.ts:119
 #: frontend/src/services/machines/benchMark/createContact.benchmark.machine.free.ts:74
 #: frontend/src/services/machines/benchMark/updateContact.benchmark.machine.free.ts:86
@@ -854,8 +854,8 @@ msgstr ""
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionBody.tsx:105
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionHeaders.tsx:96
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomActionQueryParams.tsx:100
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:83
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:83
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:46
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:46
 msgid "Add"
 msgstr ""
 
@@ -1463,9 +1463,9 @@ msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:24
 #: frontend/src/pages/CustomApps/internals/AddModuleModal/AddModuleModal.tsx:61
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:80
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:80
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:80
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:43
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:43
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:43
 #: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.free.ts:57
 msgid "Action"
 msgstr ""
@@ -1570,7 +1570,7 @@ msgstr ""
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:276
 #: frontend/src/components/features/Webhook/ui/EditWebhookModal.tsx:55
 #: frontend/src/pages/Flows/ui/Flows.tsx:122
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:23
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:35
 #: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:155
 #: frontend/src/services/machines/fluentCrm/addNote.fluentCrm.machine.pro.ts:25
@@ -1657,7 +1657,7 @@ msgstr ""
 
 #: frontend/src/components/features/FlowVariables/internals/SystemTabContent/SystemTabContent.tsx:24
 #: frontend/src/components/features/FlowVariables/ui/FlowVariables.tsx:20
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:96
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:101
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.pro.ts:65
 #: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.pro.ts:50
 msgid "System"
@@ -1691,8 +1691,8 @@ msgstr ""
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:68
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:211
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:278
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:70
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:80
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:33
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:43
 #: frontend/src/services/machines/benchMark/helpers/machineHelper.benchmark.ts:83
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:11
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.free.ts:69
@@ -1711,8 +1711,8 @@ msgstr ""
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:74
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:221
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:288
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:80
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:90
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:43
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:53
 #: frontend/src/services/machines/benchMark/helpers/machineHelper.benchmark.ts:87
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.free.ts:72
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:12
@@ -1733,7 +1733,7 @@ msgstr ""
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:231
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:298
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/BodyAndQueryParamFields.tsx:34
-#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:23
 #: frontend/src/services/machines/benchMark/helpers/machineHelper.benchmark.ts:79
 #: frontend/src/services/machines/brevo/addContactToList.brevo.machine.free.ts:37
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.free.ts:23
@@ -1790,21 +1790,8 @@ msgid "Action 1"
 msgstr ""
 
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:148
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:20
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:25
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:39
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:30
 #: frontend/src/services/machines/benchMark/createContact.benchmark.machine.free.ts:23
 #: frontend/src/services/machines/benchMark/updateContact.benchmark.machine.free.ts:23
 #: frontend/src/services/machines/brevo/helpers/brevoCommons.ts:14
@@ -1862,21 +1849,8 @@ msgstr ""
 
 #: frontend/src/components/features/NodeDetails/helpers/customMachineConverter.test.ts:189
 #: frontend/src/components/features/NodeDetails/helpers/customMachineToComponent.ts:65
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:50
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:55
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:69
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:60
 #: frontend/src/services/machines/asana/createTask.asana.machine.pro.ts:41
 #: frontend/src/services/machines/benchMark/createContact.benchmark.machine.free.ts:39
 #: frontend/src/services/machines/benchMark/updateContact.benchmark.machine.free.ts:39
@@ -1950,7 +1924,7 @@ msgstr ""
 #: frontend/src/components/features/NodeDetails/helpers/customMachineToComponent.ts:13
 #: frontend/src/components/features/Webhook/ui/Webhook.tsx:58
 #: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/customAppsTrigger.static.ts:14
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:104
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:109
 #: frontend/src/services/machines/commonMachines/createWebhook.machine.ts:15
 #: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:64
 #: frontend/src/services/machines/line/watchEvents.line.machine.pro.ts:19
@@ -2479,7 +2453,7 @@ msgstr ""
 #: frontend/src/pages/CustomApps/internals/CustomAppsAction/CustomAppsAction.tsx:146
 #: frontend/src/pages/CustomApps/internals/CustomAppsTrigger/CustomAppsTrigger.tsx:103
 #: frontend/src/pages/CustomApps/internals/EditCustomAppsModal/EditCustomAppsForm.tsx:75
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:70
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:33
 #: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:267
 #: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:174
 #: frontend/src/services/machines/fluentCrm/addNote.fluentCrm.machine.pro.ts:44
@@ -3316,137 +3290,76 @@ msgstr ""
 msgid "Webhook Automation"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:13
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:18
-msgid ""
-"You can get your API key in your activeCampaign settings tab, developer "
-"sections"
-msgstr ""
-
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:38
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:43
-#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:175
-#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:185
-#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:175
-#: frontend/src/services/machines/notion/createDatabase.notion.machine.pro.ts:54
-#: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:188
-msgid "Url"
-msgstr ""
-
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:40
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:45
-msgid "Enter Url"
-msgstr ""
-
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:58
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:21
 msgid "Enter contact ID, for the automation"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:60
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:60
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:130
-#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:60
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:60
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:23
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:23
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:93
+#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:23
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:23
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:23
 #: frontend/src/services/machines/benchMark/updateContact.benchmark.machine.free.ts:64
 msgid "Contact ID"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:68
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:31
 msgid "Enter automation ID, of the automation"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:70
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:33
 msgid "Automation ID"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:78
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:41
 msgid "Choose the action for the automation"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:84
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:84
+#: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:47
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:47
 msgid "Remove"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:58
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:21
 msgid "Enter contact ID, of the contact"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:68
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:31
 msgid "Enter tag ID, for the contact"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:70
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:33
 msgid "Tag ID"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:78
+#: frontend/src/services/machines/activeCampaign/addOrRemoveTagContact.activeCampaign.machine.pro.ts:41
 msgid "Choose the action for the tag"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:58
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:68
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:21
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:31
 msgid "Enter name of the account"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:68
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:78
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:31
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:41
 msgid "Enter account-url of the account"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:70
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:80
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:33
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:43
 msgid "Account Url"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:78
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:88
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:41
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:51
 msgid "Enter owner-id of the contact"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:80
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:110
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:90
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:43
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:73
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:53
 #: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:31
 #: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:31
 #: frontend/src/services/machines/github/getRepository.github.machine.pro.ts:22
@@ -3455,33 +3368,33 @@ msgstr ""
 msgid "Owner"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:92
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:142
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:102
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:55
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:105
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:65
 msgid "Field Id"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:99
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:149
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:109
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:62
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:112
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:72
 #: frontend/src/services/machines/wordPress/getTermByField.wordPress.machine.pro.ts:27
 #: frontend/src/services/machines/wordPress/getUserByField.wordPress.machine.pro.ts:29
 msgid "Field Value"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:106
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:80
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:156
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:116
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:69
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:43
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:119
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:79
 #: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:15
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:178
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:32
 msgid "Currency"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:113
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:163
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:123
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:76
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:126
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:86
 #: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.free.ts:114
 #: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.free.ts:145
 #: frontend/src/services/machines/mailChimp/addUpdateMember.mailChimp.machine.free.ts:70
@@ -3489,246 +3402,268 @@ msgstr ""
 msgid "Field #{COUNT}"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:115
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:165
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:125
+#: frontend/src/services/machines/activeCampaign/createAccount.activeCampaign.machine.pro.ts:78
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:128
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:88
 #: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:508
 msgid "Custom Fields"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:58
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:68
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:21
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:31
 msgid "Enter email address of the contact"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:60
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:70
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:23
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:33
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:22
 msgid "Email Address"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:68
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:78
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:31
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:41
 msgid "Enter first name of the contact"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:78
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:88
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:41
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:51
 msgid "Enter last name of the contact"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:88
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:98
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:51
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:61
 msgid "Enter phone-number of the contact"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:90
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:100
+#: frontend/src/services/machines/activeCampaign/createContact.activeCampaign.machine.pro.ts:53
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:63
 #: frontend/src/services/machines/demio/helpers/machineHelper.demio.ts:87
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:27
 msgid "Phone Number"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:58
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:21
 msgid "Enter the title of the deal"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:68
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:31
 msgid "Enter the description of the deal"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:78
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:41
 msgid "Enter currency for the deal"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:88
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:51
 msgid "Enter value for the deal"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:98
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:61
 msgid "Enter stage ID for the deal"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:100
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:63
 msgid "Stage"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:108
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:71
 msgid "Enter owner ID for the deal"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:118
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:81
 msgid "Enter account ID for the deal"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:120
-#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:60
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:83
+#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:23
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:23
 msgid "Account ID"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:128
+#: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:91
 msgid "Enter contact ID for the deal"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:58
+#: frontend/src/services/machines/activeCampaign/findAccount.activeCampaign.machine.pro.ts:21
 msgid "Enter account ID, to find the account"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:58
+#: frontend/src/services/machines/activeCampaign/findContact.activeCampaign.machine.pro.ts:21
 msgid "Enter contact ID, to find the contact"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:58
+#: frontend/src/services/machines/activeCampaign/findUser.activeCampaign.machine.pro.ts:21
 msgid "Enter email address to find the user"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/getAllAccount.activeCampaign.machine.pro.ts:23
 msgid "This event will fetch all the account of the profile"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/getAllContact.activeCampaign.machine.pro.ts:23
 msgid "This event will fetch all the contact of the profile"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:60
+#: frontend/src/services/machines/activeCampaign/getAllUser.activeCampaign.machine.pro.ts:23
 msgid "This event will fetch all the user of the profile"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:4
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:11
 msgid "Subscribe to List"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:5
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:12
 msgid "Unsubscribe from List"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:6
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:13
 msgid "Email Opened"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:7
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:14
 msgid "Link Clicked"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:8
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:15
 msgid "Email Forwarded"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:9
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:16
 msgid "Email Shared"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:10
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:17
 msgid "Hard Bounce"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:11
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:18
 msgid "Contact Updated"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:12
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:19
 msgid "New Contact Added"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:13
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:20
 msgid "Contact Note Added"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:14
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:21
 msgid "Contact Tag Added"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:15
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:22
 msgid "Contact Tag Removed"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:16
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:23
 msgid "Deal Added"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:17
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:24
 msgid "Deal Updated"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:18
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:25
 msgid "Deal Deleted"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:19
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:26
 msgid "Account Added"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:20
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:27
 msgid "Account Updated"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:21
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:28
 msgid "Account Deleted"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:58
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:32
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:23
+msgid ""
+"You can get your API key in your activeCampaign settings tab, developer "
+"sections"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:57
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:48
+#: frontend/src/services/machines/gmail/createDraftEmail.gmail.machine.pro.ts:175
+#: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:185
+#: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:175
+#: frontend/src/services/machines/notion/createDatabase.notion.machine.pro.ts:54
+#: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:188
+msgid "Url"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/helpers/commonUtils.activeCampaign.ts:59
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:50
+msgid "Enter Url"
+msgstr ""
+
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:21
 msgid "Enter contact ID, to subscribe or unsubscribe from the contact list"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:68
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:31
 msgid "Enter automation ID, to subscribe or unsubscribe from the contact list"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:70
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:33
 #: frontend/src/services/machines/brevo/addContactToList.brevo.machine.free.ts:20
 #: frontend/src/services/machines/hubSpot/addContactsToList.hubSpot.machine.free.ts:21
 #: frontend/src/services/machines/hubSpot/removeContactFromList.hubSpot.machine.free.ts:21
 msgid "List ID"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:78
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:41
 msgid "Choose the action for subscribe or unsubscribe"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:83
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:46
 #: frontend/src/services/machines/suiteDash/subscribeMarketing.suiteDash.machine.free.ts:62
 msgid "Subscribe"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:84
+#: frontend/src/services/machines/activeCampaign/subscribeOrUnsubscribeContactList.activeCampaign.machine.pro.ts:47
 #: frontend/src/services/machines/mailBluster/addLead.mailBluster.machine.free.ts:86
 msgid "Unsubscribe"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:58
+#: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:21
 msgid "Enter account ID for updates"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:58
+#: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:21
 msgid "Enter contact ID for updates"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:63
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:68
 msgid "Enter name of the webhook"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:73
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:78
 msgid ""
 "Select an event, that will attach to the webhook. The webhook will be "
 "triggered when the selected event occurs in activeCampaign."
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:77
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:82
 #: frontend/src/services/machines/stripe/webhookAutomation.stripe.machine.pro.ts:30
 msgid "Select an Event"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:89
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:94
 msgid "Enter source for the webhook"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:91
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:96
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:24
 msgid "Source"
 msgstr ""
 
-#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:95
+#: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:100
 #: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.pro.ts:51
 msgid "Public"
 msgstr ""

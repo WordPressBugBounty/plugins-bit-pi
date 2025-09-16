@@ -1,0 +1,1 @@
+import{c as s}from"./createwe-280.js";import"./_applist-869.js";import"./lodash-621.js";import"./main-salty-geckos-sort.js";import"./mutative-523.js";import"./machine.-202.js";globalThis.jotaiAtomCache=globalThis.jotaiAtomCache||{cache:new Map,get(t,o){return this.cache.has(t)?this.cache.get(t):(this.cache.set(t,o),o)}};export{s as default};

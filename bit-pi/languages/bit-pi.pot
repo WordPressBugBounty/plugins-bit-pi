@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Bit Flows 1.6.0\n"
+"Project-Id-Version: Bit Flows 1.6.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bit-pi\n"
 "Last-Translator: Bit Apps <developer@bitapps.pro>\n"
 "Language-Team: Bit Apps <support@bitapps.pro>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-09-09T09:45:00+00:00\n"
+"POT-Creation-Date: 2025-09-16T10:43:46+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 
@@ -2505,258 +2505,258 @@ msgid "Webhook Automation"
 msgstr ""
 
 #: languages/frontend-extracted-strings.php:1202
-msgid "You can get your API key in your activeCampaign settings tab, developer sections"
-msgstr ""
-
-#: languages/frontend-extracted-strings.php:1204
-msgid "Url"
-msgstr ""
-
-#: languages/frontend-extracted-strings.php:1206
-msgid "Enter Url"
-msgstr ""
-
-#: languages/frontend-extracted-strings.php:1208
 msgid "Enter contact ID, for the automation"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1210
+#: languages/frontend-extracted-strings.php:1204
 msgid "Contact ID"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1212
+#: languages/frontend-extracted-strings.php:1206
 msgid "Enter automation ID, of the automation"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1214
+#: languages/frontend-extracted-strings.php:1208
 msgid "Automation ID"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1216
+#: languages/frontend-extracted-strings.php:1210
 msgid "Choose the action for the automation"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1218
+#: languages/frontend-extracted-strings.php:1212
 msgid "Remove"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1220
+#: languages/frontend-extracted-strings.php:1214
 msgid "Enter contact ID, of the contact"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1222
+#: languages/frontend-extracted-strings.php:1216
 msgid "Enter tag ID, for the contact"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1224
+#: languages/frontend-extracted-strings.php:1218
 msgid "Tag ID"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1226
+#: languages/frontend-extracted-strings.php:1220
 msgid "Choose the action for the tag"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1228
+#: languages/frontend-extracted-strings.php:1222
 msgid "Enter name of the account"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1230
+#: languages/frontend-extracted-strings.php:1224
 msgid "Enter account-url of the account"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1232
+#: languages/frontend-extracted-strings.php:1226
 msgid "Account Url"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1234
+#: languages/frontend-extracted-strings.php:1228
 msgid "Enter owner-id of the contact"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1236
+#: languages/frontend-extracted-strings.php:1230
 msgid "Owner"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1238
+#: languages/frontend-extracted-strings.php:1232
 msgid "Field Id"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1240
+#: languages/frontend-extracted-strings.php:1234
 msgid "Field Value"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1242
+#: languages/frontend-extracted-strings.php:1236
 #: pro/backend/app/src/Integrations/EventsCalendar/EventsCalendarHelper.php:271
 #: pro/backend/app/src/Integrations/SliceWp/SliceWpHelper.php:80
 msgid "Currency"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1244
+#: languages/frontend-extracted-strings.php:1238
 msgid "Field #{COUNT}"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1246
+#: languages/frontend-extracted-strings.php:1240
 msgid "Custom Fields"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1248
+#: languages/frontend-extracted-strings.php:1242
 msgid "Enter email address of the contact"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1250
+#: languages/frontend-extracted-strings.php:1244
 #: pro/backend/app/src/Integrations/Eventin/EventinHelper.php:382
 msgid "Email Address"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1252
+#: languages/frontend-extracted-strings.php:1246
 msgid "Enter first name of the contact"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1254
+#: languages/frontend-extracted-strings.php:1248
 msgid "Enter last name of the contact"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1256
+#: languages/frontend-extracted-strings.php:1250
 msgid "Enter phone-number of the contact"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1258
+#: languages/frontend-extracted-strings.php:1252
 msgid "Phone Number"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1260
+#: languages/frontend-extracted-strings.php:1254
 msgid "Enter the title of the deal"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1262
+#: languages/frontend-extracted-strings.php:1256
 msgid "Enter the description of the deal"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1264
+#: languages/frontend-extracted-strings.php:1258
 msgid "Enter currency for the deal"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1266
+#: languages/frontend-extracted-strings.php:1260
 msgid "Enter value for the deal"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1268
+#: languages/frontend-extracted-strings.php:1262
 msgid "Enter stage ID for the deal"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1270
+#: languages/frontend-extracted-strings.php:1264
 msgid "Stage"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1272
+#: languages/frontend-extracted-strings.php:1266
 msgid "Enter owner ID for the deal"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1274
+#: languages/frontend-extracted-strings.php:1268
 msgid "Enter account ID for the deal"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1276
+#: languages/frontend-extracted-strings.php:1270
 msgid "Account ID"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1278
+#: languages/frontend-extracted-strings.php:1272
 msgid "Enter contact ID for the deal"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1280
+#: languages/frontend-extracted-strings.php:1274
 msgid "Enter account ID, to find the account"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1282
+#: languages/frontend-extracted-strings.php:1276
 msgid "Enter contact ID, to find the contact"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1284
+#: languages/frontend-extracted-strings.php:1278
 msgid "Enter email address to find the user"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1286
+#: languages/frontend-extracted-strings.php:1280
 msgid "This event will fetch all the account of the profile"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1288
+#: languages/frontend-extracted-strings.php:1282
 msgid "This event will fetch all the contact of the profile"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1290
+#: languages/frontend-extracted-strings.php:1284
 msgid "This event will fetch all the user of the profile"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1292
+#: languages/frontend-extracted-strings.php:1286
 msgid "Subscribe to List"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1294
+#: languages/frontend-extracted-strings.php:1288
 msgid "Unsubscribe from List"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1296
+#: languages/frontend-extracted-strings.php:1290
 msgid "Email Opened"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1298
+#: languages/frontend-extracted-strings.php:1292
 msgid "Link Clicked"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1300
+#: languages/frontend-extracted-strings.php:1294
 msgid "Email Forwarded"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1302
+#: languages/frontend-extracted-strings.php:1296
 msgid "Email Shared"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1304
+#: languages/frontend-extracted-strings.php:1298
 msgid "Hard Bounce"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1306
+#: languages/frontend-extracted-strings.php:1300
 msgid "Contact Updated"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1308
+#: languages/frontend-extracted-strings.php:1302
 msgid "New Contact Added"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1310
+#: languages/frontend-extracted-strings.php:1304
 msgid "Contact Note Added"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1312
+#: languages/frontend-extracted-strings.php:1306
 msgid "Contact Tag Added"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1314
+#: languages/frontend-extracted-strings.php:1308
 msgid "Contact Tag Removed"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1316
+#: languages/frontend-extracted-strings.php:1310
 msgid "Deal Added"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1318
+#: languages/frontend-extracted-strings.php:1312
 msgid "Deal Updated"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1320
+#: languages/frontend-extracted-strings.php:1314
 msgid "Deal Deleted"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1322
+#: languages/frontend-extracted-strings.php:1316
 msgid "Account Added"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1324
+#: languages/frontend-extracted-strings.php:1318
 msgid "Account Updated"
 msgstr ""
 
-#: languages/frontend-extracted-strings.php:1326
+#: languages/frontend-extracted-strings.php:1320
 msgid "Account Deleted"
+msgstr ""
+
+#: languages/frontend-extracted-strings.php:1322
+msgid "You can get your API key in your activeCampaign settings tab, developer sections"
+msgstr ""
+
+#: languages/frontend-extracted-strings.php:1324
+msgid "Url"
+msgstr ""
+
+#: languages/frontend-extracted-strings.php:1326
+msgid "Enter Url"
 msgstr ""
 
 #: languages/frontend-extracted-strings.php:1328
