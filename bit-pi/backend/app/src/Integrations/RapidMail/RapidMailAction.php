@@ -46,6 +46,7 @@ class RapidMailAction implements ActionInterface
         $connectionId = $this->nodeInfoProvider->getFieldMapConfigs('connection-id.value');
 
         $listId = $this->nodeInfoProvider->getFieldMapConfigs('list-id.value');
+        $status = $this->nodeInfoProvider->getFieldMapConfigs('status.value');
 
         $this->recipientTags = $this->nodeInfoProvider->getFieldMapConfigs('recipient-tags.value');
 
@@ -66,18 +67,22 @@ class RapidMailAction implements ActionInterface
         $this->rapidMailContact = new RapidMailService(static::BASE_URL, $header);
 
         if ($machineSlug === 'createContact') {
-            $dataArr = $this->formattedData($listId, $dataArr);
+            $dataArr = $this->formattedData($listId, $status, $dataArr);
 
             return $this->rapidMailContact->addRecipient($dataArr);
         }
     }
 
-    private function formattedData($listId, $data = [])
+    private function formattedData($listId, $status, $data = [])
     {
         $data['recipientlist_id'] = (int) $listId;
 
         if ($this->recipientTags !== []) {
             $data['tags'] = $this->recipientTags;
+        }
+
+        if ($status === true) {
+            $data['status'] = 'active';
         }
 
         return $data;

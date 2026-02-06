@@ -9,9 +9,12 @@ if (!\defined('ABSPATH')) {
 
 
 use BitApps\Pi\Config;
+use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\HTTP\Controllers\GlobalSettingsController;
+use BitApps\Pi\Model\Flow;
 use BitApps\Pi\Model\FlowHistory;
 use BitApps\Pi\Model\FlowLog;
+use BitApps\Pi\Model\FlowNode;
 
 class FlowHistoryService
 {
@@ -45,7 +48,7 @@ class FlowHistoryService
             )->save();
     }
 
-    public static function createFlowHistory($flowId, $flowHistoryId, $parentFlowHistoryId)
+    public static function createHistoryWithTriggerNode($flowId, $flowHistoryId, $parentFlowHistoryId, $triggerData, $listenerType = null)
     {
         if (!$flowHistoryId) {
             $flowHistory = FlowHistory::insert(
@@ -61,6 +64,33 @@ class FlowHistoryService
             }
 
             $flowHistoryId = $flowHistory->id;
+
+            $triggerNode = FlowNode::where('node_id', $flowId . '-1')->first();
+
+            if ($triggerNode && isset($triggerNode->app_slug, $triggerNode->machine_slug)) {
+                if ($listenerType === Flow::LISTENER_TYPE['RUN_ONCE']) {
+                    NodeService::saveNodeVariables($flowId, $triggerData, $flowId . '-1');
+                }
+
+                $createdLog = LogService::save(
+                    [
+                        'flow_history_id' => $flowHistoryId,
+                        'node_id'         => $flowId . '-1',
+                        'status'          => FlowLog::STATUS['SUCCESS'],
+                        'input'           => [],
+                        'output'          => JSON::maybeEncode($triggerData),
+                        'messages'        => 'trigger node executed successfully.',
+                        'details'         => [
+                            'app_slug'     => $triggerNode->app_slug,
+                            'machine_slug' => $triggerNode->machine_slug
+                        ]
+                    ]
+                );
+
+                if (!$createdLog) {
+                    return false;
+                }
+            }
         }
 
         return $flowHistoryId;

@@ -1,10 +1,10 @@
-=== AI Automation: Build Complex AI Workflow with OpenAI, Gemini, Claude, DeepSeek - Bit Flows ===
+=== Bit Flows: AI Agent For Your Website with ChatGPT, Gemini, Claude, Grok & More
 Contributors: bitpressadmin,akaioum,arif25897,mazharul78,shuvomohajan
 Tags: automation, integration, webhook, form, workflow
 Requires at least: 5.8
-Tested up to: 6.8.1
+Tested up to:  6.9.1
 Requires PHP: 7.4
-Stable tag: 1.6.1
+Stable tag: 1.16.0
 License: GPL-2.0-or-later
 
 Create AI powered automation workflows on a visual canvas, like n8n inside WordPress. Unlimited tasks, unlimited workflows, and unlimited steps.
@@ -436,6 +436,208 @@ Yes! The Pro version unlocks all premium tools, unlimited workflows, priority su
 
 
 == Changelog ==
+
+= v1.16.0 (Feb 5, 2026) =
+
+* **Actions (91)**:
+  * Google Docs (08)
+  * AcademyLMS (2)
+  * Advanced Ads (1)
+  * Advanced Coupons (2)
+  * Badgeos (1)
+  * FunnelKit Automations (4)
+  * LatePoint (12)
+  * LearnDash (14)
+  * LearnDash Achievement (1)
+  * LearnPress (2)
+  * BetterMassages (2)
+  * ClickWhale (4)
+  * MemberPressCourse (3)
+  * JetPackCRM (19)
+  * myCred (5)
+  * PrestoPlayer (1)
+  * Teams for WooCommerce Memberships (9)
+  * Paymattic (1)
+
+* **Triggers (77)**:
+  * Advanced Ads (13)
+  * Advanced Coupons (4)
+  * Appointment Hour Booking (2)
+  * FunnelKit Automations (4)
+  * LatePoint (5)
+  * LearnPress (3)
+  * Masteriyo (4)
+  * BetterMassages (1)
+  * ClickWhale (4)
+  * MemberPressCourse (3)
+  * GravityKit (2)
+  * JetPackCRM (7)
+  * ConvertPro (1)
+  * PrestoPlayer (2)
+  * Simply Schedule Appointment (3)
+  * WP Polls (1)
+  * Thrive Leads (2)
+  * Teams for WooCommerce Memberships (14)
+  * Forminator (2)
+
+* **Fixes**:
+  * Fixed some other bugs.
+
+= v1.15.1 (Jan 27, 2026) =
+* **Improvement** Updated plugin title and banner.
+
+= v1.15.0 (Jan 26, 2026) =
+* **Now FREE (Previously Pro Only)**:
+  * WooCommerce, Elementor, and WPForms triggers
+  * WhatsApp and Telegram actions
+  * All workflow tools
+* **Bug Fixes**:
+  * Fixed WordPress post featured image requirement issue
+  * Fixed "Get Post" action not working properly
+* **Actions (43)**:
+  * Google Tasks (5)
+  * SendFox (8)
+  * JetEngine (19)
+  * WPCafe (6)
+  * SEOPress (5)
+* **Triggers (33)**:
+  * JetEngine (8)
+  * WPCafe (7)
+  * SEOPress (4)
+  * Bit Social (14)
+
+= v1.14.0 (Jan 19, 2026) =
+* **Features**:
+  * AI Agent 🔥
+  * Simple Memory
+* **Actions (23)**:
+  * Gemini Image (1)
+  * Microsoft Excel (9)
+  * Zoho Project (7)
+  * GoHighLevel (6)
+
+= v1.13.0 (Dec 23, 2025) =
+* **Actions (121)**:
+  * BuddyBoss (20)
+  * FluentCart (01)
+  * Advanced Custom Fields (ACF) (08)
+  * Dropbox (11)
+  * Google Drive (18)
+  * Flowlu (40)
+  * Twilio (06)
+  * ActiveCampaign (03)
+  * Sendy (06)
+  * OpenRouter (03)
+  * Poptics (05)
+* **Triggers (25)**:
+  * BuddyBoss (14)
+  * Advanced Custom Fields (ACF) (03)
+  * Essential Addons for Elementor (2)
+  * Poptics (02)
+  * Sendy (04)
+* **Improvement**:
+  * Added OpenAI request caching to significantly improve performance and reduce repeated API calls.
+* **Fixes**:
+  * Fixed request content-type handling issue.
+
+= v1.12.3 (Dec 3, 2025)
+* **Fixes**:
+  * Fixed some integration issues.
+
+= v1.12.2 (Dec 3, 2025)
+* **Fixes**:
+  * Fixed voxel integration.
+
+= v1.12.1 (Dec 2, 2025)
+* **Fixes**:
+  * Fixed custom app machine field fetch issue.
+
+= v1.12.0 (Nov 30, 2025) =
+* **Actions (74)**:
+  * FluentCart (57)
+  * MailerPress (17)
+* **Triggers (20)**:
+  * FluentCart (13)
+  * MailerPress (07)
+
+= v1.11.0 (Nov 29, 2025) =
+* **Actions (104)**:
+  * FluentBoards (57)
+  * Google Calendar (18)
+  * Apify (10)
+  * EmailIt (03)
+  * Discord (16)
+* **Triggers (35)**:
+  * FluentBoards (33)
+  * Apify (02)
+* **Features**:
+  * Added toBoolean() conversion function.
+* **Fixes**:
+  * Fixed minor bugs.
+
+= v1.10.0 (Nov 09, 2025) =
+* **Actions (28)**:
+  * Google Meet (1)
+  * Newsletter (12)
+  * Paid Membership pro (04)
+  * Airtable (05)
+  * FluentCRM (3)
+  * Stripe (3)
+* **Triggers (05)**:
+  * Newsletter (05)
+* **Features**:
+  * Introduced the new Image Helper tool for easier image handling
+  * MemberPress User Custom Fields Added
+* **Fixes**:
+  * Fixed minor bugs.
+
+= v1.9.0 (Oct 26, 2025) =
+* **Actions (215)**:
+  * Google Meet(01)
+* **Features**:
+  * Insert nodes between workflow steps for greater flexibility.
+  * Automatic node arrangement in the visual builder.
+  * **Schedule Tool**: Advanced scheduling for time-based automation.
+* **Improvements**:
+  * Improved UI/UX for a smoother experience.
+* **Fixes**:
+  * Resolved issues with RapidMail integration.
+  * Resolved issues with Stripe integration.
+  * Resolved issues with Selzy integration
+
+= v1.8.0 (Oct 14, 2025) =
+* **Triggers (17)**:
+  * FluentCart (17) 🌟
+* **Fixes**:
+  * Fixed math expression parsing issue in the Math() function.
+
+= v1.7.0 (Oct 08, 2025) =
+* **Actions (215)**:
+  * WooCommerce (84) 🌟
+  * Fluent Community (26)
+  * Zoom (07) 
+  * Klaviyo (05)
+  * ACPT (37) 
+  * MailPoet (14)
+  * SureMembers (02)
+  * Mail Mint (26)
+  * WishList Member (14)
+* **Triggers (67)**:
+  * Zoom (13)
+  * Fluent Community (16)
+  * Klaviyo (03)
+  * Booking Calendar Contact Form (01)
+  * WPSubscription (04)
+  * Contact Form Email (01)
+  * GeoDirectory (01)
+  * StoreEngine (12)
+  * Mail Mint (07)
+  * Breakdance (01)
+  * Wishlist Member (08)
+* **Fixes**:
+  * Fixed Encharge fetching tags issue.
+  * Fixed GetGist fetching tags issue.
+  * Changed the HubSpot deal stage field from static data to dynamic values fetched through the API.
 
 = v1.6.1 (Sep 16, 2025) =
 * **Fixes**:

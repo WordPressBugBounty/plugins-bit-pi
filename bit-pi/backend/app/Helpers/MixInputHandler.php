@@ -65,6 +65,7 @@ class MixInputHandler
                         $platformValues = empty($nodeResponseData[$item['nodeId']]) ? [] : $nodeResponseData[$item['nodeId']];
                     }
 
+
                     if (!empty($platformValues)) {
                         $pathValue = Utility::getValueFromPath($platformValues, $item['path']);
 
@@ -91,8 +92,7 @@ class MixInputHandler
 
             if (is_plugin_active(Config::PRO_PLUGIN_SLUG . '/' . Config::PRO_PLUGIN_SLUG . '.php')) {
                 $value = apply_filters(Config::VAR_PREFIX . 'mix_tag_input', $values, $item);
-
-                if (!empty($value)) {
+                if (!empty($value) || is_numeric($value)) {
                     $values[] = $value;
                 }
             }
@@ -143,18 +143,25 @@ class MixInputHandler
      * Generate payload with field map.
      *
      * @param array $fieldMap
+     * @param null|mixed $nodeId
      *
      * @return array
      */
-    public static function processData($fieldMap)
+    public static function processData($fieldMap, $nodeId = null)
     {
         $payload = [];
 
         foreach ($fieldMap as $fieldPair) {
-            $keys = explode('.', $fieldPair['path']);
+            $keys = explode('.', $fieldPair['path'] ?? '');
 
+            if (isset($fieldPair['modelDefined']) && $nodeId) {
+                $llmData = get_option('ai_agent_tool_args_' . $nodeId);
+                $value = $llmData[$fieldPair['path']] ?? '';
+                static::assignValueToKey($payload, $keys, $value);
+
+                continue;
+            }
             $value = $fieldPair['value'];
-
             if ($value === [] || $value === '' || $value === null) {
                 continue;
             }
@@ -167,19 +174,24 @@ class MixInputHandler
         return $payload;
     }
 
-    public static function processRepeaters($data, $isArrayAssociative, $isArrayColumn, $keyColumnName, $valueColumnName)
+    public static function processRepeaters($data, $isArrayAssociative, $isArrayColumn, $keyColumnName, $valueColumnName, $nodeId = null, $path = null)
     {
         $output = [];
-
         foreach ($data as $items) {
             $itemArray = [];
 
             foreach ($items as $item) {
                 if (isset($item['key'], $item['value'])) {
                     $key = static::replaceMixTagValue($item['key']);
-
-                    $value = static::replaceMixTagValue($item['value']);
-
+                    if (isset($item['modelDefined'], $items[0]['value'])) {
+                        $llmData = get_option('ai_agent_tool_args_' . $nodeId);
+                        $llmFldName = explode('.value', $path)[0] . '.' . $items[0]['value'];
+                        if (isset($llmData[$llmFldName])) {
+                            $value = $llmData[$llmFldName];
+                        }
+                    } else {
+                        $value = static::replaceMixTagValue($item['value']);
+                    }
                     $itemArray[$key] = \is_array($value) ? '' : $value;
                 }
             }
@@ -198,14 +210,20 @@ class MixInputHandler
         return $output;
     }
 
-    public static function processConfigs($data)
+    public static function processConfigs($data, $nodeId = null)
     {
-        // if data is string then showing warning thats why added this condition
         if (!is_iterable($data)) {
             return $data;
         }
 
         foreach ($data as $key => $value) {
+            if (isset($value['modelDefined']) && $nodeId) {
+                $llmData = get_option('ai_agent_tool_args_' . $nodeId);
+
+                $data[$key] = $llmData[$key] ?? '';
+
+                continue;
+            }
             $data[$key] = \is_array($value) ? static::processConfigs($value) : static::replaceMixTagValue($value);
         }
 
@@ -245,12 +263,8 @@ class MixInputHandler
 
         $processedValues = array_map(
             function ($value) {
-                if (\is_array($value)) {
-                    return 'array';
-                }
-
-                if (\is_object($value)) {
-                    return 'object';
+                if (\is_array($value) || \is_object($value)) {
+                    return JSON::encode($value);
                 }
 
                 return $value;

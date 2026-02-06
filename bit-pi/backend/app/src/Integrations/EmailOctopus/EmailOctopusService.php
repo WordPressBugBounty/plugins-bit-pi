@@ -73,7 +73,7 @@ final class EmailOctopusService
      *
      * @param array $configs ['key' => 'config']
      *
-     * @return bool
+     * @return array|void
      */
     private function checkConfigs(array $configs)
     {

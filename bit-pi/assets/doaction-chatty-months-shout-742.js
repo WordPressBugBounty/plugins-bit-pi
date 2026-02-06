@@ -1,0 +1,1 @@
+import{default as r}from"./doaction-chatty-months-shout-324.js";import"./_applist-chatty-months-shout-814.js";import"./lodash-chatty-months-shout-731.js";import"./main-chatty-months-shout.js";globalThis.jotaiAtomCache=globalThis.jotaiAtomCache||{cache:new Map,get(t,e){return this.cache.has(t)?this.cache.get(t):(this.cache.set(t,e),e)}};export{r as default};

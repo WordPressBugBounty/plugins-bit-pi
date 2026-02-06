@@ -15,6 +15,7 @@ use BitApps\Pi\Deps\BitApps\WPKit\Http\Router\Router;
 use BitApps\Pi\Plugin;
 use BitApps\Pi\Services\FlowHistoryService;
 use BitApps\Pi\src\Integrations\IntegrationHookLoader;
+use BitApps\Pi\src\Tools\Delay\DelayTool;
 use FilesystemIterator;
 
 class HookProvider
@@ -30,6 +31,7 @@ class HookProvider
         Hooks::addAction(Config::VAR_PREFIX . 'flow_history_cleanup', [FlowHistoryService::class, 'flowHistoryCleanup']);
         Hooks::addAction('rest_api_init', [$this, 'loadAppApiHooks']);
         Hooks::addFilter('safe_style_css', [$this, 'allowStyleProperties']);
+        Hooks::addAction(Config::VAR_PREFIX . 'run_scheduled_flow_node', [DelayTool::class, 'runScheduledFlowNode'], 10, 2);
 
         if (!wp_next_scheduled(Config::VAR_PREFIX . 'flow_history_cleanup')) {
             wp_schedule_event(time(), 'daily', Config::VAR_PREFIX . 'flow_history_cleanup');

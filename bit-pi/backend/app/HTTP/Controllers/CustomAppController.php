@@ -9,7 +9,6 @@ if (!\defined('ABSPATH')) {
 
 
 use BitApps\Pi\Config;
-use BitApps\Pi\Deps\BitApps\WPKit\Helpers\Slug;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Request\Request;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitApps\Pi\HTTP\Requests\CustomAppRequest;
@@ -22,9 +21,7 @@ final class CustomAppController
     {
         $query = CustomApp::select(['id', 'CONCAT("' . Config::get('UPLOAD_BASE_URL') . '", logo) as logo', 'name', 'slug', 'description', 'color', 'status']);
 
-        if (Config::isProActivated()) {
-            $query->with('customMachines');
-        }
+        $query->with('customMachines');
 
         $customApps = $query->desc()->get();
 
@@ -42,11 +39,12 @@ final class CustomAppController
         $customMachineTable = Config::withDBPrefix('custom_machines');
 
         $query = "SELECT 
-            a.name, a.slug, a.color,
+            a.name, a.slug, a.color, a.description,
             CONCAT('%s', a.logo) as logo, 
-            b.name as machine_name, 
+            b.name as machine_name,
             b.slug as machine_slug,
             b.app_type as machine_app_type,
+            b.config as machine_config,
             b.trigger_type as machine_trigger_type
             FROM {$customAppTable} a join {$customMachineTable} b 
             on a.id = b.custom_app_id WHERE a.status = 1";
@@ -57,20 +55,24 @@ final class CustomAppController
         $customApps = [];
 
         foreach ($customAppsMeta as $customApp) {
+            $machineConfig = json_decode($customApp->machine_config, true);
+
             if (!isset($customApps[$customApp->slug])) {
                 $customApps[$customApp->slug] = [
-                    'name'     => $customApp->name,
-                    'slug'     => $customApp->slug,
-                    'color'    => $customApp->color,
-                    'logo'     => $customApp->logo,
-                    'actions'  => [],
-                    'triggers' => [],
+                    'name'        => $customApp->name,
+                    'slug'        => $customApp->slug,
+                    'color'       => $customApp->color,
+                    'logo'        => $customApp->logo,
+                    'description' => $customApp->description,
+                    'actions'     => [],
+                    'triggers'    => [],
                 ];
             }
 
             if ($customApp->machine_app_type === 'action') {
                 $customApps[$customApp->slug]['actions'][] = [
                     'label'       => $customApp->machine_name,
+                    'description' => $machineConfig['description'] ?? '',
                     'machineSlug' => $customApp->machine_slug,
                     'runType'     => $customApp->machine_app_type,
                     'triggerType' => 'scheduled',
@@ -80,6 +82,7 @@ final class CustomAppController
             if ($customApp->machine_app_type === 'trigger') {
                 $customApps[$customApp->slug]['triggers'][] = [
                     'label'       => $customApp->machine_name,
+                    'description' => $machineConfig['description'] ?? '',
                     'machineSlug' => $customApp->machine_slug,
                     'runType'     => $customApp->machine_app_type,
                     'triggerType' => $customApp->machine_trigger_type,

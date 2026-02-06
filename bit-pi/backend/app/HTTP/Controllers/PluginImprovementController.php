@@ -13,6 +13,7 @@ use BitApps\Pi\Deps\BitApps\WPKit\Http\Request\Request;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitApps\Pi\Deps\BitApps\WPTelemetry\Telemetry\Telemetry;
 use BitApps\Pi\Model\CustomApp;
+use BitApps\Pi\Model\CustomMachine;
 use BitApps\Pi\Model\Flow;
 
 final class PluginImprovementController
@@ -57,13 +58,16 @@ final class PluginImprovementController
                 }
             )->all();
 
+        $customAppsWithMachines = [];
 
-        $customAppsWithMachines = CustomApp::select(['id', 'name', 'status'])->with(
-            'customMachines',
-            function ($query) {
-                $query->select(['custom_app_id', 'name', 'status', 'app_type', 'trigger_type']);
-            }
-        )->all();
+        if (class_exists(CustomMachine::class)) {
+            $customAppsWithMachines = CustomApp::select(['id', 'name', 'status'])->with(
+                'customMachines',
+                function ($query) {
+                    $query->select(['custom_app_id', 'name', 'status', 'app_type', 'trigger_type']);
+                }
+            )->all();
+        }
 
         $data['flows'] = array_map(
             function ($flow) {

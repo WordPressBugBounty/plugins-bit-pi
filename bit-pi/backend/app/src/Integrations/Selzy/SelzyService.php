@@ -13,6 +13,13 @@ if (!\defined('ABSPATH')) {
 
 final class SelzyService
 {
+    /**
+     * Selzy double opt-in and single opt-in values.
+     */
+    private const DOUBLE_OPTIN = 4;
+
+    private const SINGLE_OPTIN = 3;
+
     private $baseUrl;
 
     private $connectionId;
@@ -86,8 +93,10 @@ final class SelzyService
             $processedData['overwrite'] = $overrideExisting;
         }
 
-        if (isset($doubleOptin) && $doubleOptin === 'true') {
-            $processedData['double_optin'] = 4;
+        if ($doubleOptin === 'true') {
+            $processedData['double_optin'] = self::DOUBLE_OPTIN;
+        } else {
+            $processedData['double_optin'] = self::SINGLE_OPTIN;
         }
 
         if (isset($tagId) || $tagId !== null) {

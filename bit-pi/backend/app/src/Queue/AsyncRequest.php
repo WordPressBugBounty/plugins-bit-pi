@@ -117,10 +117,6 @@ abstract class AsyncRequest
      */
     protected function getQueryArgs($identifier)
     {
-        if (\defined('REST_REQUEST') && REST_REQUEST && 0 === ((int) wp_get_current_user()->ID)) {
-            $_COOKIE = [];
-        }
-
         $args = [
             'action'      => $identifier,
             '_ajax_nonce' => wp_create_nonce(Config::withPrefix('nonce')),

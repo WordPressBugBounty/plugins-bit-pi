@@ -22,7 +22,7 @@ use BitApps\Pi\Services\LogService;
 use BitApps\Pi\Services\NodeService;
 use BitApps\Pi\src\Log\LogHandler;
 use BitApps\Pi\src\Queue\BackgroundProcessHandler;
-use BitApps\PiPro\src\Tools\FlowToolsFactory;
+use BitApps\Pi\src\Tools\FlowToolsFactory;
 use stdClass;
 use Throwable;
 
@@ -42,8 +42,6 @@ class FlowExecutor extends BackgroundProcessHandler
     private $flowHistoryId;
 
     private $currentNode;
-
-    private $triggerData = [];
 
     private $listenerType;
 
@@ -113,7 +111,13 @@ class FlowExecutor extends BackgroundProcessHandler
                 $flowHistoryId = null;
             }
 
-            $flowHistoryId = FlowHistoryService::createFlowHistory($flow->id, $flowHistoryId, $parentFlowHistoryId);
+            $flowHistoryId = FlowHistoryService::createHistoryWithTriggerNode(
+                $flow->id,
+                $flowHistoryId,
+                $parentFlowHistoryId,
+                $triggerData,
+                $listenerType
+            );
 
             if (!$flowHistoryId) {
                 return false;
@@ -129,7 +133,6 @@ class FlowExecutor extends BackgroundProcessHandler
                 'tasks'           => $flowMap,
                 'flow_id'         => $flow->id,
                 'settings'        => $flow->settings,
-                'trigger_data'    => $triggerData,
                 'flow_history_id' => $flowHistoryId,
                 'listener_type'   => $flow->listener_type
             ];
@@ -167,11 +170,7 @@ class FlowExecutor extends BackgroundProcessHandler
         $currentNodeInfo = null;
 
         try {
-            $triggerData = $this->triggerData;
-
             $nodeInstance = GlobalNodes::getInstance($flowId);
-
-            $nodeVariablesInstance = GlobalNodeVariables::getInstance($flowHistoryId, $flowId);
 
             $nodes = $nodeInstance->getAllNodeData();
 
@@ -179,7 +178,9 @@ class FlowExecutor extends BackgroundProcessHandler
 
             switch ($currentNode->type) {
                 case 'trigger':
-                    return $this->nodeExecutor->handleTriggerNode($currentNodeInfo, $triggerData, $nodeVariablesInstance, $flowHistoryId);
+                    GlobalNodeVariables::getInstance($flowHistoryId, $flowId);
+
+                    return false;
 
                 case 'action':
                     $response = $this->nodeExecutor->handleActionNode($currentNodeInfo, $flowHistoryId, $flowId);
@@ -198,7 +199,7 @@ class FlowExecutor extends BackgroundProcessHandler
                     break;
             }
 
-            if (is_plugin_active(Config::PRO_PLUGIN_SLUG . '/' . Config::PRO_PLUGIN_SLUG . '.php')) {
+            if (class_exists(FlowToolsFactory::class)) {
                 return FlowToolsFactory::executeToolWithLogging($currentNode, $currentNodeInfo, $flowHistoryId);
             }
         } catch (Throwable $th) {
@@ -271,7 +272,12 @@ class FlowExecutor extends BackgroundProcessHandler
         LogService::save(LogHandler::getLogs());
 
         if ($this->listenerType === FlowModel::LISTENER_TYPE['RUN_ONCE']) {
-            NodeService::saveNodeVariables($this->flowId, GlobalNodeVariables::getInstance()->getVariables());
+            $variables = GlobalNodeVariables::getInstance()->getVariables();
+            // remove trigger node variables
+            if (isset($variables[$this->flowId . '-1'])) {
+                unset($variables[$this->flowId . '-1']);
+            }
+            NodeService::saveNodeVariables($this->flowId, $variables);
         }
 
         $flow = FlowModel::where('id', $this->flowId)->first();
@@ -326,11 +332,6 @@ class FlowExecutor extends BackgroundProcessHandler
         while (\count($flowMap) > 0) {
             $currentNode = array_shift($flowMap);
             $this->currentNode = $currentNode;
-
-            if ($currentNode->type === 'trigger') {
-                $this->triggerData = $batch->data['trigger_data'];
-                unset($batch->data['trigger_data']);
-            }
 
             $response = $this->task();
 

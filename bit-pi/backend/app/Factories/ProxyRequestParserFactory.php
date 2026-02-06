@@ -17,6 +17,15 @@ use BitApps\Pi\Helpers\Utility;
  */
 class ProxyRequestParserFactory
 {
+    private const ENCRYPTION_TYPES = [
+        'base64_encode',
+        'base64_decode',
+        'hmac_decrypt',
+        'hmac_encrypt',
+        'sha256',
+        'base64_urlencode',
+    ];
+
     /**
      * Parses the given request array and processes headers, query parameters, and body parameters.
      *
@@ -59,7 +68,7 @@ class ProxyRequestParserFactory
                 continue;
             }
 
-            if (Utility::isSequentialArray($item)) {
+            if (Utility::isSequentialArray($item) && self::hasEncryptionKeyAndValidType($item)) {
                 $data[$key] = implode('', self::parseArrayValue($item));
 
                 continue;
@@ -106,5 +115,20 @@ class ProxyRequestParserFactory
             default:
                 return $value;
         }
+    }
+
+    private static function hasEncryptionKeyAndValidType(array $items): bool
+    {
+        foreach ($items as $item) {
+            if (
+                \is_array($item)
+                && \array_key_exists('encryption', $item)
+                && \in_array($item['encryption'], self::ENCRYPTION_TYPES, true)
+            ) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

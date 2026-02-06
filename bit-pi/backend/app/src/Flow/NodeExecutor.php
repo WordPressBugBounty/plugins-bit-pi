@@ -4,6 +4,7 @@ namespace BitApps\Pi\src\Flow;
 
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Helpers\Node;
+use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\Model\CustomApp;
 use BitApps\Pi\Model\FlowLog;
 use BitApps\Pi\src\Exception\MissingKeyException;
@@ -34,7 +35,7 @@ class NodeExecutor
     {
         $nodeVariableInstance = GlobalNodeVariables::getInstance($flowHistoryId, $flowId);
 
-        $app = $this->doesActionExist($currentNodeInfo->app_slug);
+        $app = $this->isExistClass($currentNodeInfo->app_slug);
 
         if (!$app) {
             throw new PlatformNotFoundException($currentNodeInfo->app_slug);
@@ -56,6 +57,14 @@ class NodeExecutor
 
         if (\gettype($response['output']) !== 'array') {
             $response['output'] = (array) $response['output'];
+        }
+
+        if (
+            !empty($response['output'])
+            && (Utility::isSequentialArray($response['output'])
+            || Utility::isMultiDimensionArray($response['output']))
+        ) {
+            $response['output'] = ['data' => $response['output']];
         }
 
         $nodeVariableInstance->setVariables($currentNodeInfo->node_id, $response['output']);
@@ -108,10 +117,11 @@ class NodeExecutor
      * Check if action exist.
      *
      * @param string $appSlug
+     * @param mixed $appType
      *
      * @return string || bool
      */
-    public function doesActionExist($appSlug)
+    public function isExistClass($appSlug, $appType = 'Action')
     {
         if (strpos($appSlug, CustomApp::APP_SLUG_PREFIX) !== false) {
             $appSlug = ucfirst(CustomApp::APP_SLUG);
@@ -119,12 +129,12 @@ class NodeExecutor
             $appSlug = ucfirst($appSlug);
         }
 
-        if (class_exists(self::BASE_INTEGRATION_NAMESPACE . "{$appSlug}\\{$appSlug}Action")) {
-            return self::BASE_INTEGRATION_NAMESPACE . "{$appSlug}\\{$appSlug}Action";
+        if (class_exists(self::BASE_INTEGRATION_NAMESPACE . "{$appSlug}\\{$appSlug}{$appType}")) {
+            return self::BASE_INTEGRATION_NAMESPACE . "{$appSlug}\\{$appSlug}{$appType}";
         }
 
-        if (class_exists(self::BASE_INTEGRATION_NAMESPACE_PRO . "{$appSlug}\\{$appSlug}Action")) {
-            return self::BASE_INTEGRATION_NAMESPACE_PRO . "{$appSlug}\\{$appSlug}Action";
+        if (class_exists(self::BASE_INTEGRATION_NAMESPACE_PRO . "{$appSlug}\\{$appSlug}{$appType}")) {
+            return self::BASE_INTEGRATION_NAMESPACE_PRO . "{$appSlug}\\{$appSlug}{$appType}";
         }
 
         return false;

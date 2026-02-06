@@ -22,6 +22,7 @@ final class BitAppsPiFlowLogsTableMigration extends Migration
                 $table->bigint('flow_history_id', 20)->unsigned()->foreign('flow_histories', 'id')->onDelete()->cascade();
                 $table->string('node_id');
                 $table->enum('status', array_values(FlowLog::STATUS));
+                // $table->bigint('parent_node_id', 20)->nullable(); TODO:: Add next version
                 $table->mediumtext('messages')->nullable();
                 $table->longtext('input')->nullable();
                 $table->longtext('output')->nullable();

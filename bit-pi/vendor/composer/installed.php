@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'bitapps/pi',
-        'pretty_version' => '1.6.1',
-        'version' => '1.6.1.0',
-        'reference' => '330633c44596e2c2711769a84726c3c60f50a35a',
+        'pretty_version' => '1.16.0',
+        'version' => '1.16.0.0',
+        'reference' => '07ca47ad70eb2244c2791d1bf3e81aba83978df7',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'bitapps/pi' => array(
-            'pretty_version' => '1.6.1',
-            'version' => '1.6.1.0',
-            'reference' => '330633c44596e2c2711769a84726c3c60f50a35a',
+            'pretty_version' => '1.16.0',
+            'version' => '1.16.0.0',
+            'reference' => '07ca47ad70eb2244c2791d1bf3e81aba83978df7',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => false,
         ),
         'bitapps/wp-kit' => array(
-            'pretty_version' => '2.1',
-            'version' => '2.1.0.0',
-            'reference' => '3e49d25e047530a2a43c08af3a8fc821feaa7ae8',
+            'pretty_version' => '2.2',
+            'version' => '2.2.0.0',
+            'reference' => '6052fcfd1b94ccb452d2cb4ecfd93e63617503e3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../bitapps/wp-kit',
             'aliases' => array(),
@@ -47,9 +47,9 @@
             'dev_requirement' => false,
         ),
         'bitapps/wp-validator' => array(
-            'pretty_version' => '1.2.1',
-            'version' => '1.2.1.0',
-            'reference' => '294d6a7c35436419060dc067f58a9c5a0d72b37e',
+            'pretty_version' => '1.2.2',
+            'version' => '1.2.2.0',
+            'reference' => '856b3685c6e6673af4e3f7fea5083500ce011b99',
             'type' => 'library',
             'install_path' => __DIR__ . '/../bitapps/wp-validator',
             'aliases' => array(),

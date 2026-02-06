@@ -30,7 +30,7 @@ class Utility
      */
     public static function getValueFromPath($data, $path)
     {
-        if (empty($data) || empty($path)) {
+        if (empty($data) || (!is_numeric($path) && empty($path))) {
             return $data;
         }
 
@@ -356,7 +356,7 @@ class Utility
     /**
      * Convert string to array.
      *
-     * @param string $data
+     * @param null|array|string $data
      * @param string $separator
      *
      * @return array
@@ -377,6 +377,33 @@ class Utility
     public static function jsonEncodeDecode($data)
     {
         return JSON::decode(JSON::encode($data));
+    }
+
+    public static function clearFlowSchedules()
+    {
+        $scheduleNodes = (array) Utility::getTransientCache('schedules');
+
+        foreach ($scheduleNodes as $nodeId => $scheduleNode) {
+            $schedule = JSON::decode($scheduleNode ?? '', true);
+
+
+            if (empty($schedule)) {
+                continue;
+            }
+
+            $hookArgs = [
+                'nodeId'     => $nodeId,
+                'dayOfMonth' => null,
+                'day'        => null,
+            ];
+
+            foreach ($schedule as $index => $item) {
+                if (!empty($item['interval'])) {
+                    $actionHook = Config::VAR_PREFIX . "flow_schedule_event_{$nodeId}_{$index}";
+                    wp_clear_scheduled_hook($actionHook, $hookArgs);
+                }
+            }
+        }
     }
 
     /**
@@ -433,7 +460,6 @@ class Utility
             'nickname'     => $userData->user_nicename,
             'avatar_url'   => get_avatar_url($userId),
             'display_name' => $userData->display_name,
-            'user_pass'    => $userData->user_pass,
             'user_roles'   => $user->roles
         ];
     }

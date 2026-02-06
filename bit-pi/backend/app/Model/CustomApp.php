@@ -10,7 +10,6 @@ if (!\defined('ABSPATH')) {
 
 use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPDatabase\Model;
-use BitApps\PiPro\Model\CustomMachine;
 
 class CustomApp extends Model
 {

@@ -56,7 +56,7 @@ final class FlowController
             return Response::error('Flow not found');
         }
 
-        $flow['customApps'] = Config::isProActivated() ? (new CustomAppController())->getActiveCustomAppsMeta() : [];
+        $flow['customApps'] = (new CustomAppController())->getActiveCustomAppsMeta();
 
         return Response::success($flow);
     }

@@ -61,17 +61,17 @@
         },
         {
             "name": "bitapps/wp-kit",
-            "version": "2.1",
-            "version_normalized": "2.1.0.0",
+            "version": "2.2",
+            "version_normalized": "2.2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Bit-Apps-Pro/wp-kit.git",
-                "reference": "3e49d25e047530a2a43c08af3a8fc821feaa7ae8"
+                "reference": "6052fcfd1b94ccb452d2cb4ecfd93e63617503e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Bit-Apps-Pro/wp-kit/zipball/3e49d25e047530a2a43c08af3a8fc821feaa7ae8",
-                "reference": "3e49d25e047530a2a43c08af3a8fc821feaa7ae8",
+                "url": "https://api.github.com/repos/Bit-Apps-Pro/wp-kit/zipball/6052fcfd1b94ccb452d2cb4ecfd93e63617503e3",
+                "reference": "6052fcfd1b94ccb452d2cb4ecfd93e63617503e3",
                 "shasum": ""
             },
             "require": {
@@ -83,7 +83,7 @@
                 "phpcompatibility/phpcompatibility-wp": "*",
                 "sirbrillig/phpcs-variable-analysis": "*"
             },
-            "time": "2025-08-31T08:06:19+00:00",
+            "time": "2025-11-25T05:45:21+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -108,7 +108,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Bit-Apps-Pro/wp-kit/issues",
-                "source": "https://github.com/Bit-Apps-Pro/wp-kit/tree/2.1"
+                "source": "https://github.com/Bit-Apps-Pro/wp-kit/tree/2.2"
             },
             "install-path": "../bitapps/wp-kit"
         },
@@ -169,17 +169,17 @@
         },
         {
             "name": "bitapps/wp-validator",
-            "version": "1.2.1",
-            "version_normalized": "1.2.1.0",
+            "version": "1.2.2",
+            "version_normalized": "1.2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Bit-Apps-Pro/wp-validator.git",
-                "reference": "294d6a7c35436419060dc067f58a9c5a0d72b37e"
+                "reference": "856b3685c6e6673af4e3f7fea5083500ce011b99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Bit-Apps-Pro/wp-validator/zipball/294d6a7c35436419060dc067f58a9c5a0d72b37e",
-                "reference": "294d6a7c35436419060dc067f58a9c5a0d72b37e",
+                "url": "https://api.github.com/repos/Bit-Apps-Pro/wp-validator/zipball/856b3685c6e6673af4e3f7fea5083500ce011b99",
+                "reference": "856b3685c6e6673af4e3f7fea5083500ce011b99",
                 "shasum": ""
             },
             "require": {
@@ -191,7 +191,7 @@
                 "rector/rector": "^1.2",
                 "squizlabs/php_codesniffer": "*"
             },
-            "time": "2024-10-31T05:50:19+00:00",
+            "time": "2026-02-02T07:09:21+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {

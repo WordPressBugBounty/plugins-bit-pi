@@ -91,6 +91,7 @@ final class InstallerProvider
             'BitAppsPiCustomMachinesTableMigration',
             'BitAppsPiFlowHistoryTableMigration',
             'BitAppsPiFlowLogsTableMigration',
+            // 'BitAppsPiFlowLogsAddParentNodeIdMigration', TODO:: Add next version
             'BitAppsPiFlowTagTableMigration',
             'BitAppsPiPluginOptions',
         ];
@@ -112,6 +113,7 @@ final class InstallerProvider
             'BitAppsPiFlowTagTableMigration',
             'BitAppsPiFlowNodesTableMigration',
             'BitAppsPiFlowLogsTableMigration',
+            // 'BitAppsPiFlowLogsAddParentNodeIdMigration', TODO:: Add next version
             'BitAppsPiFlowHistoryTableMigration',
             'BitAppsPiWebhooksTableMigration',
             'BitAppsPiFlowsTableMigration',

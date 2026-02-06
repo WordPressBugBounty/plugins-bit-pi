@@ -4,9 +4,9 @@
  * @copyright 2025 Bit Apps
  *
  * Plugin Name:  Bit Flows
- * Plugin URI:   https://bitapps.pro/bit-pi
+ * Plugin URI:   https://bitapps.pro/bit-flows
  * Description:  Integrates with other platform
- * Version:     1.6.1
+ * Version:     1.16.0
  * Author:       Bit Apps
  * Author URI:   https://bitapps.pro
  * Text Domain:  bit-pi

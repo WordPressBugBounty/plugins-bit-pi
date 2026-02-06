@@ -75,8 +75,6 @@ final class SystemIoService
      *
      * @param mixed $contactId
      * @param mixed $tagId
-     *
-     * @return collection
      */
     public function addTag($tagId, $contactId)
     {

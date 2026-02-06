@@ -70,6 +70,7 @@ class Head
                 'redirectUri'    => Config::get('REDIRECT_URI'),
                 'ajaxURL'        => admin_url('admin-ajax.php'),
                 'apiURL'         => Config::get('API_URL'),
+                'wpApiURL'       => Config::get('WP_API_URL'),
                 'routePrefix'    => Config::VAR_PREFIX,
                 'settings'       => Config::getOption('settings'),
                 'dateFormat'     => Config::getOption('date_format', false, true),

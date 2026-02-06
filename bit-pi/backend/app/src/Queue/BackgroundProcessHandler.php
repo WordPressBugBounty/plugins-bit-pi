@@ -2,7 +2,6 @@
 
 namespace BitApps\Pi\src\Queue;
 
-use BitApps\Pi\Config;
 use stdClass;
 
 if (!\defined('ABSPATH')) {
@@ -253,8 +252,6 @@ abstract class BackgroundProcessHandler extends AsyncRequest
             // No data to process.
             return $this->maybeWpDie();
         }
-
-        check_ajax_referer(Config::withPrefix('nonce'), '_ajax_nonce');
 
         $this->handle();
 

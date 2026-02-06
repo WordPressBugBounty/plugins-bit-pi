@@ -14,6 +14,7 @@ use BitApps\Pi\Deps\BitApps\WPKit\Http\Request\Request;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitApps\Pi\Model\Flow;
 use BitApps\Pi\Model\FlowNode;
+use BitApps\Pi\src\Tools\Schedule\ScheduleTool;
 
 final class HookListenerController
 {
@@ -38,6 +39,20 @@ final class HookListenerController
 
         if (!$flow) {
             return Response::error('Flow does not exist');
+        }
+
+        $nodeInfo = FlowNode::select(['machine_slug'])->where('node_id', $validated['node_id'])->first();
+
+        if ($nodeInfo && $nodeInfo->machine_slug === 'schedule') {
+            $flow->listener_type = Flow::LISTENER_TYPE['RUN_ONCE'];
+
+            if (!$flow->save()) {
+                return Response::error('Error updating flow');
+            }
+
+            (new ScheduleTool())->scheduleTriggerHandler($validated['node_id'], null, null, true);
+
+            return Response::success('Schedule node detected, executing flow directly.');
         }
 
         $currentDateTime = (new DateTimeHelper())->getCurrentDateTime();

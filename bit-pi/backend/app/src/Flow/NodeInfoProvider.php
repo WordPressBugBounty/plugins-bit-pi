@@ -57,7 +57,8 @@ class NodeInfoProvider
     {
         $valueFromPath = Utility::getValueFromPath($this->fieldMap['configs'] ?? [], $path);
 
-        return MixInputHandler::processConfigs($valueFromPath);
+
+        return MixInputHandler::processConfigs($valueFromPath, $this->getNodeId());
     }
 
     /**
@@ -72,7 +73,7 @@ class NodeInfoProvider
      */
     public function getFieldMapData()
     {
-        return MixInputHandler::processData($this->fieldMap['data'] ?? []);
+        return MixInputHandler::processData($this->fieldMap['data'] ?? [], $this->getNodeId());
     }
 
     /**
@@ -108,7 +109,7 @@ class NodeInfoProvider
     ) {
         $valueFromPath = Utility::getValueFromPath($this->fieldMap['repeaters'] ?? [], $path);
 
-        return MixInputHandler::processRepeaters($valueFromPath, $isArrayAssociative, $isArrayColumn, $keyColumnName, $valueColumnName);
+        return MixInputHandler::processRepeaters($valueFromPath, $isArrayAssociative, $isArrayColumn, $keyColumnName, $valueColumnName, $this->getNodeId(), $path);
     }
 
     public function getFlowId()

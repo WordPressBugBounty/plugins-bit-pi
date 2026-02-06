@@ -24,7 +24,7 @@ class Config
 
     public const VAR_PREFIX = 'bit_pi_';
 
-    public const VERSION = '1.6.1';
+    public const VERSION = '1.16.0';
 
     public const DB_VERSION = '0.1.0';
 
@@ -52,6 +52,8 @@ class Config
      */
     public static function get($type, $default = null)
     {
+        global $wp_rewrite;
+
         switch ($type) {
             case 'MAIN_FILE':
                 return realpath(__DIR__ . DIRECTORY_SEPARATOR . self::APP_BASE);
@@ -79,10 +81,14 @@ class Config
                 return str_replace(self::get('SITE_URL'), '', get_admin_url());
 
             case 'API_URL':
-                global $wp_rewrite;
-
                 return [
                     'base'      => get_rest_url(null, self::SLUG . '/v1'),
+                    'separator' => $wp_rewrite->permalink_structure ? '?' : '&',
+                ];
+
+            case 'WP_API_URL':
+                return [
+                    'base'      => get_rest_url(),
                     'separator' => $wp_rewrite->permalink_structure ? '?' : '&',
                 ];
 

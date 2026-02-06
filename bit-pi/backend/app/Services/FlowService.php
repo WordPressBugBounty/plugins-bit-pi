@@ -16,6 +16,7 @@ use BitApps\Pi\Model\Flow;
 use BitApps\Pi\Model\FlowNode;
 use BitApps\Pi\Model\FlowTag;
 use BitApps\Pi\Model\Tag;
+
 use BitApps\Pi\Rules\UniqueRule;
 
 class FlowService
@@ -154,20 +155,35 @@ class FlowService
             return Utility::deleteTransientCache('trigger_nodes');
         }
 
-        $nodes = FlowNode::select(['app_slug', 'machine_slug', 'field_mapping'])
+        $nodes = FlowNode::select(['app_slug', 'machine_slug', 'field_mapping', 'data', 'node_id'])
             ->whereIn('node_id', $nodeIds)
             ->get();
 
+        Utility::clearFlowSchedules();
+
         $data = [];
+
+        $scheduleNodes = [];
 
         foreach ($nodes as $node) {
             $machineSlug = $node->machine_slug;
-
-            if ($node->app_slug === 'wordPress' && $node->machine_slug === 'addAction') {
+            if (\in_array($node->app_slug, ['wordPress', 'wordPressActionHooks']) && $node->machine_slug === 'addAction') {
                 $machineSlug = Utility::convertToMachineSlug($node->field_mapping->configs->{'hook-name'}->value) ?? null;
             }
 
             $data[$node->app_slug][] = $machineSlug;
+
+            $jsonDecodedData = $node->data;
+
+            if ($jsonDecodedData && isset($jsonDecodedData->schedule)) {
+                $scheduleNodes[$node->node_id] = wp_json_encode($jsonDecodedData->schedule);
+            }
+        }
+
+        if (empty($scheduleNodes)) {
+            Utility::deleteTransientCache('schedules');
+        } else {
+            Utility::setTransientCache('schedules', $scheduleNodes, DAY_IN_SECONDS);
         }
 
         Utility::setTransientCache('trigger_nodes', $data, DAY_IN_SECONDS);

@@ -56,7 +56,7 @@ final class IntegrationHookLoader
 
                 $priority = $trigger['priority'] ?? 10;
 
-                $acceptedArgs = $trigger['accepted_args'] ?? '';
+                $acceptedArgs = $trigger['accepted_args'] ?? 1;
 
                 if (!\is_callable($callback)) {
                     continue;

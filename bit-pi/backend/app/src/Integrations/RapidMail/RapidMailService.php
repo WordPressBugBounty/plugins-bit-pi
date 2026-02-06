@@ -41,9 +41,7 @@ class RapidMailService
     public function addRecipient($data)
     {
         $url = $this->baseUrl . '/recipients';
-
         $jsonData = JSON::encode((object) $data);
-
         $response = $this->http->request($url, 'POST', $jsonData, $this->headers);
 
         return [

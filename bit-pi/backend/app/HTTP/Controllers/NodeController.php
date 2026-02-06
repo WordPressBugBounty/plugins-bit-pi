@@ -8,7 +8,6 @@ if (!\defined('ABSPATH')) {
 }
 
 
-use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Request\Request;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitApps\Pi\HTTP\Requests\NodeStoreRequest;
@@ -84,6 +83,21 @@ final class NodeController
 
         (new FlowNode($node->id))->delete();
 
+        // remove flow_id from webhook table if first node
+        if (str_ends_with($validated['node'], '-1')) {
+            (new WebhookController())->removeWebhookByFlowId($node->flow_id);
+        }
+
+        $flowId = explode('-', $validated['node']);
+
+        $flowIdIndexPosition = 0;
+
+        $cratedNodeId = $flowId[$flowIdIndexPosition] . '-1';
+
+        if ($validated['node'] === $cratedNodeId) {
+            FlowService::updateTriggerNodeInCache();
+        }
+
         return Response::success($node->node_id);
     }
 
@@ -93,15 +107,24 @@ final class NodeController
 
         $flowId = $validated['flow_id'];
 
+        $separator = '-';
+
+        $firstNodeId = '1';
+
+        $cratedNodeId = $flowId . $separator . $firstNodeId;
+
         $nodeId = $validated['node_id'];
 
         $node = FlowNode::findOne(['flow_id' => $flowId, 'node_id' => $nodeId]);
 
         if (!$node) {
             $newNode = FlowNode::insert($validated);
-
             if (!$newNode) {
                 return Response::error('Node not created');
+            }
+
+            if ($newNode->node_id === $cratedNodeId) {
+                FlowService::updateTriggerNodeInCache();
             }
 
             return Response::success($newNode);
@@ -114,17 +137,45 @@ final class NodeController
 
         $node->save();
 
-        $separator = '-';
-
-        $firstNodeId = '1';
-
-        $cratedNodeId = $flowId . $separator . $firstNodeId;
-
         if ($node->node_id === $cratedNodeId) {
             FlowService::updateTriggerNodeInCache();
         }
 
         return Response::success($node);
+    }
+
+    public function cloneNode(Request $request)
+    {
+        $validated = $request->validate(
+            [
+                'flowId'    => ['required', 'integer'],
+                'nodeId'    => ['required', 'string', 'sanitize:text'],
+                'newNodeId' => ['required', 'string', 'sanitize:text'],
+            ]
+        );
+
+        $originalNode = FlowNode::findOne(['flow_id' => $validated['flowId'], 'node_id' => $validated['nodeId']]);
+
+        if (!$originalNode) {
+            return Response::error('Original node not found');
+        }
+
+        // Check if new node ID already exists
+        $existingNode = FlowNode::findOne(['flow_id' => $validated['flowId'], 'node_id' => $validated['newNodeId']]);
+        if ($existingNode) {
+            return Response::error('Node with this ID already exists');
+        }
+
+        $clonedNodeData = $originalNode->getAttributes();
+        $clonedNodeData['node_id'] = $validated['newNodeId'];
+
+        $clonedNode = FlowNode::insert($clonedNodeData);
+
+        if (!$clonedNode) {
+            return Response::error('Failed to clone node');
+        }
+
+        return Response::success($clonedNode);
     }
 
     private function resetMachineRelatedData($machineSlug, $validated)
@@ -138,10 +189,8 @@ final class NodeController
             $validated['variables'] = null;
 
             // remove flow_id from webhook table if first node
-            if (explode('-', $validated['node_id'])[1] === '1' && is_plugin_active(Config::PRO_PLUGIN_SLUG . '/' . Config::PRO_PLUGIN_SLUG . '.php')) {
-                $webhookControllerPath = Config::PRO_PLUGIN_NAMESPACE . 'HTTP\Controllers\WebhookController';
-
-                (new $webhookControllerPath())->removeWebhookByFlowId($validated['flow_id']);
+            if (str_ends_with($validated['node_id'], '-1')) {
+                (new WebhookController())->removeWebhookByFlowId($validated['flow_id']);
             }
         }
 
