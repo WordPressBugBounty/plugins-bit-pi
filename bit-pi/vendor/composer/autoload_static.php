@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitea51af6c08176aadc028d16533e215ca
+class ComposerStaticInit9da7701626d117822deb38b9767bdc59
 {
     public static $prefixLengthsPsr4 = array (
         'T' =>
@@ -15,7 +15,6 @@ class ComposerStaticInitea51af6c08176aadc028d16533e215ca
         'B' =>
         array (
             'BitApps\\WPValidator\\' => 20,
-            'BitApps\\WPTelemetry\\' => 20,
             'BitApps\\WPKit\\' => 14,
             'BitApps\\WPDatabase\\' => 19,
             'BitApps\\Pi\\' => 11,
@@ -34,10 +33,6 @@ class ComposerStaticInitea51af6c08176aadc028d16533e215ca
         'BitApps\\WPValidator\\' =>
         array (
             0 => __DIR__ . '/..' . '/bitapps/wp-validator/src',
-        ),
-        'BitApps\\WPTelemetry\\' =>
-        array (
-            0 => __DIR__ . '/..' . '/bitapps/wp-telemetry/src',
         ),
         'BitApps\\WPKit\\' =>
         array (
@@ -87,11 +82,6 @@ class ComposerStaticInitea51af6c08176aadc028d16533e215ca
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Shortcode\\Shortcode' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Shortcode/Shortcode.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Shortcode\\ShortcodeWrapper' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Shortcode/ShortcodeWrapper.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Utils\\Capabilities' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Utils/Capabilities.php',
-        'BitApps\\Pi\\Deps\\BitApps\\WPTelemetry\\Telemetry\\Feedback\\Feedback' => __DIR__ . '/..' . '/bitapps/wp-telemetry/src/Telemetry/Feedback/Feedback.php',
-        'BitApps\\Pi\\Deps\\BitApps\\WPTelemetry\\Telemetry\\Report\\Report' => __DIR__ . '/..' . '/bitapps/wp-telemetry/src/Telemetry/Report/Report.php',
-        'BitApps\\Pi\\Deps\\BitApps\\WPTelemetry\\Telemetry\\Report\\ReportInfo' => __DIR__ . '/..' . '/bitapps/wp-telemetry/src/Telemetry/Report/ReportInfo.php',
-        'BitApps\\Pi\\Deps\\BitApps\\WPTelemetry\\Telemetry\\Telemetry' => __DIR__ . '/..' . '/bitapps/wp-telemetry/src/Telemetry/Telemetry.php',
-        'BitApps\\Pi\\Deps\\BitApps\\WPTelemetry\\Telemetry\\TelemetryConfig' => __DIR__ . '/..' . '/bitapps/wp-telemetry/src/Telemetry/TelemetryConfig.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPValidator\\ErrorBag' => __DIR__ . '/..' . '/bitapps/wp-validator/src/ErrorBag.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPValidator\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/bitapps/wp-validator/src/Exception/InvalidArgumentException.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPValidator\\Exception\\MethodNotFoundException' => __DIR__ . '/..' . '/bitapps/wp-validator/src/Exception/MethodNotFoundException.php',
@@ -141,11 +131,12 @@ class ComposerStaticInitea51af6c08176aadc028d16533e215ca
         'BitApps\\Pi\\HTTP\\Controllers\\GlobalSettingsController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/GlobalSettingsController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\HistoryController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/HistoryController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\HookListenerController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/HookListenerController.php',
+        'BitApps\\Pi\\HTTP\\Controllers\\McpClientController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/McpClientController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\NodeController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/NodeController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\OauthCallbackController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/OauthCallbackController.php',
-        'BitApps\\Pi\\HTTP\\Controllers\\PluginImprovementController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/PluginImprovementController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\ProxyController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/ProxyController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\RedirectController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/RedirectController.php',
+        'BitApps\\Pi\\HTTP\\Controllers\\SmtpController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/SmtpController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\SystemInfoController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/SystemInfoController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\TagController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/TagController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\WebhookController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/WebhookController.php',
@@ -160,6 +151,7 @@ class ComposerStaticInitea51af6c08176aadc028d16533e215ca
         'BitApps\\Pi\\HTTP\\Requests\\FlowRequests' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/FlowRequests.php',
         'BitApps\\Pi\\HTTP\\Requests\\FlowStoreRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/FlowStoreRequest.php',
         'BitApps\\Pi\\HTTP\\Requests\\FlowUpdateRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/FlowUpdateRequest.php',
+        'BitApps\\Pi\\HTTP\\Requests\\McpToolsRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/McpToolsRequest.php',
         'BitApps\\Pi\\HTTP\\Requests\\NodeStoreRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/NodeStoreRequest.php',
         'BitApps\\Pi\\HTTP\\Requests\\ProxyRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/ProxyRequest.php',
         'BitApps\\Pi\\HTTP\\Requests\\RefreshTokenRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/RefreshTokenRequest.php',
@@ -256,6 +248,7 @@ class ComposerStaticInitea51af6c08176aadc028d16533e215ca
         'BitApps\\Pi\\src\\Integrations\\IntegrationHookLoader' => __DIR__ . '/../..' . '/backend/app/src/Integrations/IntegrationHookLoader.php',
         'BitApps\\Pi\\src\\Integrations\\Mail\\MailAction' => __DIR__ . '/../..' . '/backend/app/src/Integrations/Mail/MailAction.php',
         'BitApps\\Pi\\src\\Integrations\\Mail\\MailServices' => __DIR__ . '/../..' . '/backend/app/src/Integrations/Mail/MailServices.php',
+        'BitApps\\Pi\\src\\Integrations\\McpClientTool\\McpClientToolAction' => __DIR__ . '/../..' . '/backend/app/src/Integrations/McpClientTool/McpClientToolAction.php',
         'BitApps\\Pi\\src\\Integrations\\OpenAi\\OpenAiAction' => __DIR__ . '/../..' . '/backend/app/src/Integrations/OpenAi/OpenAiAction.php',
         'BitApps\\Pi\\src\\Integrations\\OpenAi\\OpenAiService' => __DIR__ . '/../..' . '/backend/app/src/Integrations/OpenAi/OpenAiService.php',
         'BitApps\\Pi\\src\\Integrations\\OpenAi\\helpers\\OpenAiActionHandler' => __DIR__ . '/../..' . '/backend/app/src/Integrations/OpenAi/helpers/OpenAiActionHandler.php',
@@ -291,6 +284,7 @@ class ComposerStaticInitea51af6c08176aadc028d16533e215ca
         'BitApps\\Pi\\src\\Integrations\\WpForms\\WpFormsTrigger' => __DIR__ . '/../..' . '/backend/app/src/Integrations/WpForms/WpFormsTrigger.php',
         'BitApps\\Pi\\src\\Interfaces\\ActionInterface' => __DIR__ . '/../..' . '/backend/app/src/Interfaces/ActionInterface.php',
         'BitApps\\Pi\\src\\Log\\LogHandler' => __DIR__ . '/../..' . '/backend/app/src/Log/LogHandler.php',
+        'BitApps\\Pi\\src\\Mcp\\McpClient' => __DIR__ . '/../..' . '/backend/app/src/Mcp/McpClient.php',
         'BitApps\\Pi\\src\\Menu' => __DIR__ . '/../..' . '/backend/app/src/Menu.php',
         'BitApps\\Pi\\src\\Queue\\AsyncRequest' => __DIR__ . '/../..' . '/backend/app/src/Queue/AsyncRequest.php',
         'BitApps\\Pi\\src\\Queue\\BackgroundProcessHandler' => __DIR__ . '/../..' . '/backend/app/src/Queue/BackgroundProcessHandler.php',
@@ -346,9 +340,9 @@ class ComposerStaticInitea51af6c08176aadc028d16533e215ca
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitea51af6c08176aadc028d16533e215ca::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitea51af6c08176aadc028d16533e215ca::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitea51af6c08176aadc028d16533e215ca::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit9da7701626d117822deb38b9767bdc59::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit9da7701626d117822deb38b9767bdc59::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit9da7701626d117822deb38b9767bdc59::$classMap;
 
         }, null, ClassLoader::class);
     }

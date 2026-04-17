@@ -70,9 +70,7 @@ class WordPressTasks
         'created_term' => [
             'args' => 4
         ],
-        'customize_register' => [
-
-        ],
+        'customize_register' => [],
         'deactivated_plugin' => [
             'args' => 2
         ],
@@ -82,34 +80,22 @@ class WordPressTasks
         'delete_comment' => [
             'args' => 2
         ],
-        'delete_option' => [
-
-        ],
-        'delete_post' => [
+        'delete_option' => [],
+        'delete_post'   => [
             'args' => 2
         ],
-        'wp_insert_site' => [
-
-        ],
-        'delete_site' => [
-
-        ],
-        'delete_term' => [
+        'wp_insert_site' => [],
+        'delete_site'    => [],
+        'delete_term'    => [
             'args' => 5
         ],
-        'delete_term_taxonomy' => [
-
-        ],
-        'delete_user' => [
+        'delete_term_taxonomy' => [],
+        'delete_user'          => [
             'args' => 3
         ],
-        'deleted_option' => [
-
-        ],
-        'edit_attachment' => [
-
-        ],
-        'edit_comment' => [
+        'deleted_option'  => [],
+        'edit_attachment' => [],
+        'edit_comment'    => [
             'args' => 2
         ],
         'edit_term' => [
@@ -118,49 +104,25 @@ class WordPressTasks
         'edit_terms' => [
             'args' => 3
         ],
-        'edit_user' => [
-
-        ],
-        'edit_user_profile' => [
-
-        ],
-        'edit_user_profile_update' => [
-
-        ],
-        'edited_term' => [
+        'edit_user'                => [],
+        'edit_user_profile'        => [],
+        'edit_user_profile_update' => [],
+        'edited_term'              => [
             'args' => 4
         ],
-        'generate_rewrite_rules' => [
-
-        ],
-        'image_size_names_choose' => [
-
-        ],
-        'login_footer' => [
-
-        ],
-        'login_form' => [
-
-        ],
-        'login_head' => [
-
-        ],
-        'login_init' => [
-
-        ],
-        'lostpassword_form' => [
-
-        ],
-        'media_upload_tabs' => [
-
-        ],
-        'password_reset' => [
+        'generate_rewrite_rules'  => [],
+        'image_size_names_choose' => [],
+        'login_footer'            => [],
+        'login_form'              => [],
+        'login_head'              => [],
+        'login_init'              => [],
+        'lostpassword_form'       => [],
+        'media_upload_tabs'       => [],
+        'password_reset'          => [
             'args' => 2
         ],
-        'personal_options_update' => [
-
-        ],
-        'post_updated' => [
+        'personal_options_update' => [],
+        'post_updated'            => [
             'args' => 3
         ],
         'pre_comment_approved' => [
@@ -169,40 +131,24 @@ class WordPressTasks
         'profile_update' => [
             'args' => 3
         ],
-        'register_form' => [
-
-        ],
+        'register_form'         => [],
         'remove_user_from_blog' => [
             'args' => 3
         ],
-        'rest_api_init' => [
-
-        ],
-        'retrieve_password' => [
-
-        ],
-        'save_post' => [
+        'rest_api_init'     => [],
+        'retrieve_password' => [],
+        'save_post'         => [
             'args' => 3
         ],
         'set_user_role' => [
             'args' => 3
         ],
-        'show_user_profile' => [
-
-        ],
-        'signup_blogform' => [
-
-        ],
-        'signup_extra_fields' => [
-
-        ],
-        'signup_finished' => [
-
-        ],
-        'signup_header' => [
-
-        ],
-        'switch_blog' => [
+        'show_user_profile'   => [],
+        'signup_blogform'     => [],
+        'signup_extra_fields' => [],
+        'signup_finished'     => [],
+        'signup_header'       => [],
+        'switch_blog'         => [
             'args' => 3
         ],
         'switch_theme' => [
@@ -229,10 +175,8 @@ class WordPressTasks
         'updated_option' => [
             'args' => 3
         ],
-        'upgrader_process_complete' => [
-
-        ],
-        'user_register' => [
+        'upgrader_process_complete' => [],
+        'user_register'             => [
             'args' => 2
         ],
         'validate_password_reset' => [
@@ -262,9 +206,7 @@ class WordPressTasks
         'wp_login_failed' => [
             'args' => 2
         ],
-        'wp_logout' => [
-
-        ],
+        'wp_logout'             => [],
         'wp_set_comment_status' => [
             'args' => 2
         ],
@@ -289,10 +231,8 @@ class WordPressTasks
         'wpmu_new_blog' => [
             'args' => 6
         ],
-        'wpmu_new_user' => [
-
-        ],
-        'wp_login' => [
+        'wpmu_new_user' => [],
+        'wp_login'      => [
             'args' => 2
         ],
         'update_option' => [

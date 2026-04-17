@@ -9,7 +9,6 @@ return array(
     'TypistTech\\Imposter\\Plugin\\' => array($vendorDir . '/typisttech/imposter-plugin/src'),
     'TypistTech\\Imposter\\' => array($vendorDir . '/typisttech/imposter/src'),
     'BitApps\\WPValidator\\' => array($vendorDir . '/bitapps/wp-validator/src'),
-    'BitApps\\WPTelemetry\\' => array($vendorDir . '/bitapps/wp-telemetry/src'),
     'BitApps\\WPKit\\' => array($vendorDir . '/bitapps/wp-kit/src'),
     'BitApps\\WPDatabase\\' => array($vendorDir . '/bitapps/wp-database/src'),
     'BitApps\\Pi\\' => array($baseDir . '/backend/app'),

@@ -11,7 +11,9 @@ use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Helpers\MixInputHandler;
 use BitApps\Pi\Helpers\Node;
 use BitApps\Pi\Helpers\Utility;
+use BitApps\Pi\Model\FlowNode;
 use BitApps\Pi\src\Flow\NodeInfoProvider;
+use BitApps\Pi\src\Mcp\McpClient;
 
 /**
  * Universal AI tool schema generator.
@@ -22,6 +24,8 @@ use BitApps\Pi\src\Flow\NodeInfoProvider;
  */
 class AIToolSchema
 {
+    public const MCP_TOOL_SCHEMA_CLEANUP_HOOK = 'mcp_tool_schema_cleanup';
+
     /**
      * Generate tool schemas for multiple tool node IDs.
      *
@@ -37,18 +41,51 @@ class AIToolSchema
 
         foreach ($toolNodeIds as $toolNodeId) {
             $node = Node::getNodeInfoById($toolNodeId, $nodes);
-
+            $mcpToolSchema = [];
+            $schema = [];
             if (empty($node)) {
                 continue;
             }
 
-            $schema = (new self())->createSchema($node);
+            if ($node->app_slug === 'mcpClientTool') {
+                $cached = self::decompressSchemas($node->data->schemas ?? null);
+
+                if ($cached !== null) {
+                    $mcpToolSchema = self::normalizeToolSchemasAfterCacheDecode($cached);
+                } else {
+                    $nodeInfo = new NodeInfoProvider($node);
+                    $configs = $nodeInfo->getFieldMapConfigs();
+                    $connectionId = $configs['connection-id']['value'] ?? null;
+                    $transport = $configs['server-transport']['value'] ?? 'http';
+                    $serverUrl = MixInputHandler::replaceMixTagValue($configs['server-url']['value'] ?? []);
+                    $selectedTools = $configs['selected-tools']['value'] ?? [];
+                    $exceptSelectedTools = $configs['except-selected-tools']['value'] ?? [];
+
+                    $mcpClient = new McpClient($serverUrl, $transport, $connectionId);
+
+                    $result = $mcpClient->getTools();
+                    if ($result['success']) {
+                        $mcpToolSchema = self::convertMcpToolsToSchemas(
+                            $result['tools'] ?? [],
+                            $selectedTools,
+                            $exceptSelectedTools,
+                            $toolNodeId
+                        );
+                        self::storeToolSchemasInNodeData($node, $mcpToolSchema);
+                    }
+                }
+            } else {
+                $schema = (new self())->createSchema($node);
+            }
 
             if (!empty($schema)) {
                 $schemas[] = $schema;
             }
-        }
 
+            if (!empty($mcpToolSchema)) {
+                $schemas = array_merge($schemas, $mcpToolSchema);
+            }
+        }
 
         return $schemas;
     }
@@ -92,15 +129,9 @@ class AIToolSchema
      */
     public static function buildResponseStructureFormat(string $json, string $formatType): array
     {
-        if ($formatType === 'text') {
+        if (\in_array($formatType, ['text', 'json_object'])) {
             return [
-                'type' => 'text',
-            ];
-        }
-
-        if ($formatType === 'json_object') {
-            return [
-                'type' => 'json_object',
+                'type' => $formatType,
             ];
         }
 
@@ -130,6 +161,35 @@ class AIToolSchema
                 'schema' => $schema,
             ],
         ];
+    }
+
+    /**
+     * Remove stored MCP schemas for nodes using "tools-to-include: all".
+     */
+    public static function cleanupMcpSchemasForAllToolsSelection(): void
+    {
+        $nodes = FlowNode::where('app_slug', 'mcpClientTool')->get(['id', 'field_mapping', 'data']);
+
+        if (empty($nodes)) {
+            return;
+        }
+
+        foreach ($nodes as $node) {
+            if (!self::isToolsToIncludeAll($node->field_mapping ?? null)) {
+                continue;
+            }
+
+            $data = $node->data ? JSON::decode(JSON::encode($node->data), true) : [];
+
+            if (!\is_array($data) || !\array_key_exists('schemas', $data)) {
+                continue;
+            }
+
+            unset($data['schemas']);
+
+            $node->update(['data' => $data]);
+            $node->save();
+        }
     }
 
     /**
@@ -170,7 +230,6 @@ class AIToolSchema
     protected function extractParameters($node)
     {
         $nodeInfo = new NodeInfoProvider($node);
-
 
         $fieldMap = $nodeInfo->getFieldMap();
         $fieldMapData = $fieldMap['data'] ?? [];
@@ -253,6 +312,170 @@ class AIToolSchema
         return $appSlug . '_' . $nodeId;
     }
 
+    private static function storeToolSchemasInNodeData($node, array $schemas): void
+    {
+        $flowNode = FlowNode::findOne(['id' => $node->id]);
+        if (!$flowNode) {
+            return;
+        }
+
+        $encoded = JSON::encode($schemas);
+
+        if (\function_exists('gzcompress')) {
+            $encoded = base64_encode(gzcompress($encoded));
+        }
+
+        $data = $flowNode->data ? JSON::decode(JSON::encode($flowNode->data), true) : [];
+        $data['schemas'] = $encoded;
+        $flowNode->update(['data' => $data]);
+        $flowNode->save();
+    }
+
+    private static function isToolsToIncludeAll($fieldMapping): bool
+    {
+        $fieldMappingData = JSON::decode(JSON::encode($fieldMapping), true);
+
+        if (!\is_array($fieldMappingData)) {
+            return false;
+        }
+
+        $configs = $fieldMappingData['configs'] ?? [];
+        $toolsToInclude = $configs['tools-to-include']['value'] ?? null;
+
+        return $toolsToInclude === 'all';
+    }
+
+    private static function decompressSchemas($cached): ?array
+    {
+        if (empty($cached) || !\is_string($cached)) {
+            return null;
+        }
+
+        if (\function_exists('gzuncompress')) {
+            $decoded = base64_decode($cached, true);
+            if ($decoded !== false) {
+                $uncompressed = @gzuncompress($decoded);
+                if ($uncompressed !== false) {
+                    return JSON::maybeDecode($uncompressed, true) ?: null;
+                }
+            }
+        }
+
+        $result = JSON::maybeDecode($cached, true);
+
+        return \is_array($result) ? $result : null;
+    }
+
+    /**
+     * Fix tool schemas loaded from cache for JSON encoding (e.g. OpenAI tools[].function.parameters).
+     *
+     * Associative decoding turns JSON objects into PHP arrays, but empty objects become [].
+     * Encoding then emits [] instead of {}, while APIs expect parameters as a JSON object.
+     * Recursively promote ambiguous [] to stdClass where JSON Schema uses objects; keep []
+     * only for true JSON arrays (required, enum, combinators, etc.).
+     *
+     * @param array $schemas Tool schema list as returned from decompressSchemas
+     *
+     * @return array Schemas safe to pass through wp_json_encode
+     */
+    private static function normalizeToolSchemasAfterCacheDecode(array $schemas): array
+    {
+        foreach ($schemas as $i => $tool) {
+            if (($tool['type'] ?? '') !== 'function' || !isset($tool['function']['parameters'])) {
+                continue;
+            }
+            $schemas[$i]['function']['parameters'] = self::normalizeJsonSchemaValueAfterAssocDecode(
+                $tool['function']['parameters'],
+                null
+            );
+        }
+
+        return $schemas;
+    }
+
+    /**
+     * Normalize a decoded JSON Schema fragment so empty objects survive json_encode.
+     *
+     * @param mixed $value Decoded JSON value
+     */
+    private static function normalizeJsonSchemaValueAfterAssocDecode($value, ?string $parentKey)
+    {
+        if ($value === null) {
+            return (object) [];
+        }
+
+        if (\is_object($value)) {
+            foreach (get_object_vars($value) as $k => $v) {
+                $value->{$k} = self::normalizeJsonSchemaValueAfterAssocDecode($v, (string) $k);
+            }
+
+            return $value;
+        }
+
+        if (!\is_array($value)) {
+            return $value;
+        }
+
+        if ($value === []) {
+            $jsonArrayKeys = ['required', 'enum', 'allOf', 'anyOf', 'oneOf', 'prefixItems'];
+
+            if ($parentKey !== null && \in_array($parentKey, $jsonArrayKeys, true)) {
+                return [];
+            }
+
+            return (object) [];
+        }
+
+        if (Utility::isSequentialArray($value)) {
+            $normalized = [];
+            foreach ($value as $item) {
+                $normalized[] = self::normalizeJsonSchemaValueAfterAssocDecode($item, null);
+            }
+
+            return $normalized;
+        }
+
+        $normalized = [];
+        foreach ($value as $k => $v) {
+            $normalized[$k] = self::normalizeJsonSchemaValueAfterAssocDecode($v, (string) $k);
+        }
+
+        return $normalized;
+    }
+
+    private static function convertMcpToolsToSchemas(array $mcpTools, array $selectedTools = [], array $exceptSelectedTools = [], $toolNodeId = null): array
+    {
+        $schemas = [];
+        foreach ($mcpTools as $tool) {
+            $toolName = $tool->name ?? 'unnamed_tool';
+
+            if (!empty($selectedTools) && !\in_array($toolName, $selectedTools, true)) {
+                continue;
+            }
+
+            if (!empty($exceptSelectedTools) && \in_array($toolName, $exceptSelectedTools, true)) {
+                continue;
+            }
+
+            $parameters = $tool->inputSchema ?? (object) [];
+
+            if (empty($parameters->properties)) {
+                $parameters = (object) [];
+            }
+
+            $schemas[] = [
+                'type'     => 'function',
+                'function' => [
+                    'name'        => $toolName . '_' . $toolNodeId,
+                    'description' => $tool->description ?? 'No description provided',
+                    'parameters'  => $parameters
+                ],
+            ];
+        }
+
+        return $schemas;
+    }
+
     private function getModelDefinedMappings(array $data): array
     {
         $result = [];
@@ -297,8 +520,6 @@ class AIToolSchema
      */
     private function createParameterInfo(string $fieldKey): array
     {
-        // Determine parameter type based on field value
-
         return [
             'property' => [
                 'type'        => 'string',

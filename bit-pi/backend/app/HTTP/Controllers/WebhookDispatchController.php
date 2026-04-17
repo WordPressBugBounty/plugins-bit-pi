@@ -13,6 +13,7 @@ use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitApps\Pi\Model\Flow;
 use BitApps\Pi\Model\Webhook;
 use BitApps\Pi\src\Flow\FlowExecutor;
+use BitApps\Pi\src\Flow\NodeExecutor;
 
 final class WebhookDispatchController
 {
@@ -43,10 +44,18 @@ final class WebhookDispatchController
             return Response::error('Webhook not found');
         }
 
+
+
         $flow = Flow::select(['id', 'title', 'settings', 'is_active', 'map', 'trigger_type', 'listener_type', 'is_hook_capture'])->where('id', $webhook->flow_id)->first();
 
         if (!$flow) {
             return Response::error('Flow does not exist');
+        }
+
+        $triggerClass = (new NodeExecutor())->isExistClass($webhook->app_slug, 'Trigger');
+
+        if ($triggerClass && method_exists($triggerClass, 'handle')) {
+            return (new $triggerClass())->handle($request);
         }
 
         if ($flow->listener_type === Flow::LISTENER_TYPE['NONE'] && $flow->is_active === Flow::STATUS['IN_ACTIVE']) {

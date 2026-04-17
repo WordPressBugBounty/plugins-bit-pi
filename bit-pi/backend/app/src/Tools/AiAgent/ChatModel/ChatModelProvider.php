@@ -95,6 +95,7 @@ class ChatModelProvider
 
         $toolSchemas = AIToolSchema::generateSchemas($agentSubNode, $allNodes);
 
+
         $accessToken = AuthorizationFactory::getAuthorizationHandler(
             AuthorizationType::API_KEY,
             $connectionId
@@ -217,7 +218,8 @@ class ChatModelProvider
             $apiUrl,
             'POST',
             wp_json_encode($payload),
-            $headers
+            $headers,
+            ['timeout' => 120]
         );
 
         return JSON::decode(JSON::encode($response), true);
@@ -267,13 +269,17 @@ class ChatModelProvider
 
         $nodes = $nodeInstance->getAllNodeData();
 
-        $appSlug = explode('_', $functionName)[0];
+        $strPos = strrpos($functionName, '_');
 
-        $nodeId = explode('_', $functionName)[1] ?? '';
+        $nodeId = substr($functionName, $strPos + 1);
 
         $node = Node::getNodeInfoById($nodeId, $nodes);
 
-        $appClass = (new NodeExecutor())->isExistClass($appSlug);
+        if (!$node) {
+            return ['error' => 'Tool node not found for ' . $functionName];
+        }
+
+        $appClass = (new NodeExecutor())->isExistClass($node->app_slug ?? '');
 
         if (!$appClass) {
             return ['error' => 'Tool class not found for ' . $functionName];
@@ -281,7 +287,11 @@ class ChatModelProvider
 
         $provider = new NodeInfoProvider($node, $functionArgs);
 
-        $instance = new $appClass($provider);
+        $instance = new $appClass($provider, $functionName, $functionArgs);
+
+        if (!method_exists($instance, 'execute')) {
+            return ['error' => 'Tool class does not have execute method for ' . $functionName];
+        }
 
         return $instance->execute()['output'] ?? [];
     }

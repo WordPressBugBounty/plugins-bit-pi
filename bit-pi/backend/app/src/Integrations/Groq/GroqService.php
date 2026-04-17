@@ -5,8 +5,8 @@ namespace BitApps\Pi\src\Integrations\Groq;
 use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
-use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\src\Integrations\AIIntegrationHelper;
+use Exception;
 
 // Prevent direct script access
 if (!defined('ABSPATH')) {
@@ -64,170 +64,29 @@ class GroqService
         ];
     }
 
-    // /**
-    //  * Transcribe Audio.
-    //  *
-    //  * @param array $infoData
-    //  *
-    //  * @return array
-    //  */
-    // public function transcribeAudio($infoData)
-    // {
-    //     $filePath = Utility::getFilePath($infoData['file']);
-    //     if (empty($filePath)) {
-    //         return [
-    //             'response'    => 'File is required',
-    //             'payload'     => $infoData,
-    //             'status_code' => 400
-    //         ];
-    //     }
+    /**
+     * Transcribe Audio.
+     *
+     * @param array $infoData
+     *
+     * @return array
+     */
+    public function transcribeAudio($infoData)
+    {
+        return $this->processAudioRequest('audio/transcriptions', $infoData, ['language', 'prompt', 'temperature', 'response_format']);
+    }
 
-    //     if (\is_array($filePath)) {
-    //         $filePath = $filePath[0];
-    //     }
-
-    //     $payload = [
-    //         'model' => !empty($infoData['model']) ? $infoData['model'] : 'whisper-large-v3',
-    //     ];
-
-    //     if (!empty($infoData['language'])) {
-    //         $payload['language'] = $infoData['language'];
-    //     }
-
-    //     if (!empty($infoData['prompt'])) {
-    //         $payload['prompt'] = $infoData['prompt'];
-    //     }
-
-    //     if (isset($infoData['temperature'])) {
-    //         $payload['temperature'] = \floatval($infoData['temperature']);
-    //     }
-
-    //     if (!empty($infoData['response_format'])) {
-    //         $payload['response_format'] = $infoData['response_format'];
-    //     }
-
-    //     $this->http->setMultipart([]);
-    //     $this->http->addFile('file', $filePath);
-
-    //     foreach ($payload as $key => $value) {
-    //         $this->http->addPostField($key, $value);
-    //     }
-
-    //     $response = $this->http->request(self::BASE_URL . 'audio/transcriptions', 'POST', []);
-
-    //     return [
-    //         'response'    => $response,
-    //         'payload'     => $payload,
-    //         'status_code' => $this->http->getResponseCode()
-    //     ];
-    // }
-
-    // /**
-    //  * Translate Audio.
-    //  *
-    //  * @param array $infoData
-    //  *
-    //  * @return array
-    //  */
-    // public function translateAudio($infoData)
-    // {
-    //     $filePath = Utility::getFilePath($infoData['file']);
-    //     if (empty($filePath)) {
-    //         return [
-    //             'response'    => 'File is required',
-    //             'payload'     => $infoData,
-    //             'status_code' => 400
-    //         ];
-    //     }
-
-    //     if (\is_array($filePath)) {
-    //         $filePath = $filePath[0];
-    //     }
-
-    //     $payload = [
-    //         'model' => !empty($infoData['model']) ? $infoData['model'] : 'whisper-large-v3',
-    //     ];
-
-    //     if (!empty($infoData['prompt'])) {
-    //         $payload['prompt'] = $infoData['prompt'];
-    //     }
-
-    //     if (isset($infoData['temperature'])) {
-    //         $payload['temperature'] = \floatval($infoData['temperature']);
-    //     }
-
-    //     if (!empty($infoData['response_format'])) {
-    //         $payload['response_format'] = $infoData['response_format'];
-    //     }
-
-    //     $this->http->setMultipart([]);
-    //     $this->http->addFile('file', $filePath);
-
-    //     foreach ($payload as $key => $value) {
-    //         $this->http->addPostField($key, $value);
-    //     }
-
-    //     $response = $this->http->request(self::BASE_URL . 'audio/translations', 'POST', []);
-
-    //     return [
-    //         'response'    => $response,
-    //         'payload'     => $payload,
-    //         'status_code' => $this->http->getResponseCode()
-    //     ];
-    // }
-
-    // /**
-    //  * Analyze Image.
-    //  *
-    //  * @param array $infoData
-    //  *
-    //  * @return array
-    //  */
-    // public function analyzeImage($infoData)
-    // {
-    //     $payload = [
-    //         'model'       => !empty($infoData['model']) ? $infoData['model'] : 'llama-3.2-11b-vision-preview',
-    //         'temperature' => isset($infoData['temperature']) ? \floatval($infoData['temperature']) : 1,
-    //         'max_tokens'  => isset($infoData['max_tokens']) ? \intval($infoData['max_tokens']) : 1024,
-    //         'messages'    => [
-    //             [
-    //                 'role'    => 'user',
-    //                 'content' => [
-    //                     [
-    //                         'type' => 'text',
-    //                         'text' => !empty($infoData['prompt']) ? $infoData['prompt'] : 'What is in this image?',
-    //                     ],
-    //                     [
-    //                         'type'      => 'image_url',
-    //                         'image_url' => [
-    //                             'url' => $infoData['image_url'],
-    //                         ],
-    //                     ],
-    //                 ],
-    //             ],
-    //         ],
-    //     ];
-
-    //     if (isset($infoData['top_p'])) {
-    //         $payload['top_p'] = \floatval($infoData['top_p']);
-    //     }
-
-    //     if (isset($infoData['frequency_penalty'])) {
-    //         $payload['frequency_penalty'] = \floatval($infoData['frequency_penalty']);
-    //     }
-
-    //     if (isset($infoData['seed'])) {
-    //         $payload['seed'] = \intval($infoData['seed']);
-    //     }
-
-    //     $response = $this->http->request(self::BASE_URL . 'chat/completions', 'POST', JSON::encode($payload));
-
-    //     return [
-    //         'response'    => $response,
-    //         'payload'     => $payload,
-    //         'status_code' => $this->http->getResponseCode()
-    //     ];
-    // }
+    /**
+     * Translate Audio.
+     *
+     * @param array $infoData
+     *
+     * @return array
+     */
+    public function translateAudio($infoData)
+    {
+        return $this->processAudioRequest('audio/translations', $infoData, ['prompt', 'temperature', 'response_format']);
+    }
 
     public static function handleMemoryContext(array $memoryData, object $response, string $memoryKey, int $contextLength): void
     {
@@ -248,25 +107,78 @@ class GroqService
         Config::updateOption($key, $memoryData);
     }
 
-    // TODO: Uncomment and use if needed in future
-    // private function formatPayloadStructure($data)
-    // {
-    //     if (isset($data['max_tokens']) && !\is_array($data['max_tokens'])) {
-    //         $data['max_tokens'] = (int) $data['max_tokens'];
-    //     }
-    //     if (isset($data['temperature']) && !\is_array($data['temperature'])) {
-    //         $data['temperature'] = (float) $data['temperature'];
-    //     }
-    //     if (isset($data['top_p']) && !\is_array($data['top_p'])) {
-    //         $data['top_p'] = (float) $data['top_p'];
-    //     }
-    //     if (isset($data['seed']) && !\is_array($data['seed'])) {
-    //         $data['seed'] = (int) $data['seed'];
-    //     }
-    //     if (isset($data['frequency_penalty']) && !\is_array($data['frequency_penalty'])) {
-    //         $data['frequency_penalty'] = (float) $data['frequency_penalty'];
-    //     }
+    /**
+     * Shared handler for audio transcription and translation requests.
+     */
+    private function processAudioRequest(string $endpoint, array $infoData, array $optionalFields): array
+    {
+        $boundary = uniqid('boundary_');
+        $body = '';
 
-    //     return $data;
-    // }
+        $textFields = ['model' => !empty($infoData['model']) ? $infoData['model'] : 'whisper-large-v3'];
+
+        foreach ($optionalFields as $field) {
+            if (isset($infoData[$field]) && $infoData[$field] !== '') {
+                $textFields[$field] = $infoData[$field];
+            }
+        }
+
+        foreach ($textFields as $name => $value) {
+            $body .= "--{$boundary}\r\n";
+            $body .= "Content-Disposition: form-data; name=\"{$name}\"\r\n\r\n";
+            $body .= "{$value}\r\n";
+        }
+
+        if (empty($infoData['file'])) {
+            throw new Exception('Audio file is required for this action.');
+        }
+
+        $fileData = $this->resolveFileContent($infoData['file']);
+        $body .= "--{$boundary}\r\n";
+        $body .= "Content-Disposition: form-data; name=\"file\"; filename=\"{$fileData['filename']}\"\r\n";
+        $body .= "Content-Type: application/octet-stream\r\n\r\n";
+        $body .= "{$fileData['content']}\r\n";
+
+        $body .= "--{$boundary}--";
+
+        $headers = $this->http->getHeaders();
+        $headers['Content-Type'] = 'multipart/form-data; boundary=' . $boundary;
+
+        $response = $this->http->request(self::BASE_URL . $endpoint, 'POST', $body, $headers);
+
+        return [
+            'response'    => $response,
+            'payload'     => $infoData,
+            'status_code' => $this->http->getResponseCode()
+        ];
+    }
+
+    /**
+     * Resolve file content from remote URL.
+     *
+     * @throws Exception
+     *
+     * @return array{content: string, filename: string}
+     */
+    private function resolveFileContent(string $fileUrl): array
+    {
+        $response = wp_remote_get($fileUrl, ['timeout' => 60]);
+
+        if (is_wp_error($response) || wp_remote_retrieve_response_code($response) !== 200) {
+            $errorMessage = is_wp_error($response) ? $response->get_error_message() : 'HTTP code ' . wp_remote_retrieve_response_code($response);
+
+            throw new Exception('Failed to download audio from URL: ' . $fileUrl . '. Error: ' . $errorMessage);
+        }
+
+        $content = wp_remote_retrieve_body($response);
+
+        if (\strlen($content) === 0) {
+            throw new Exception('Empty response from URL: ' . $fileUrl);
+        }
+
+        $extension = pathinfo(parse_url($fileUrl, PHP_URL_PATH), PATHINFO_EXTENSION);
+        $filename = 'downloaded_audio.' . ($extension ?: 'mp3');
+
+        return ['content' => $content, 'filename' => $filename];
+    }
 }

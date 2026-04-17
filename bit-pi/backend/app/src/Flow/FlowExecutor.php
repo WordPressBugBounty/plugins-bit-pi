@@ -183,6 +183,9 @@ class FlowExecutor extends BackgroundProcessHandler
 
                 case 'action':
                     $response = $this->nodeExecutor->handleActionNode($currentNodeInfo, $flowHistoryId, $flowId);
+                    if ($response === FlowLog::STATUS['PENDING']) {
+                        return true;
+                    }
 
                     if ($response === FlowLog::STATUS['ERROR']) {
                         $this->sendTaskFailedNotification($currentNodeInfo, $flowId);
@@ -199,6 +202,8 @@ class FlowExecutor extends BackgroundProcessHandler
             }
 
             if (class_exists(FlowToolsFactory::class)) {
+                GlobalNodeVariables::getInstance($flowHistoryId, $flowId);
+
                 return FlowToolsFactory::executeToolWithLogging($currentNode, $currentNodeInfo, $flowHistoryId);
             }
         } catch (Throwable $th) {

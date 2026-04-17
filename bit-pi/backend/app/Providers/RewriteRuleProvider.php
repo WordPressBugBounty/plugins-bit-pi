@@ -18,10 +18,12 @@ class RewriteRuleProvider
 
     private array $rewriteRules;
 
-    public function __construct(
-        string $route
-    ) {
+    private bool $shouldFlush;
+
+    public function __construct(string $route, bool $shouldFlush = false)
+    {
         $this->route = $route;
+        $this->shouldFlush = $shouldFlush;
         $this->makeRewriteRule();
         Hooks::addAction('init', [$this, 'rewriteUrl']);
         Hooks::addAction('query_vars', [$this, 'addQueryVars']);
@@ -36,8 +38,10 @@ class RewriteRuleProvider
         foreach ($this->rewriteRules as $regex => $query) {
             add_rewrite_rule($regex, $query, 'top');
         }
-
-        flush_rewrite_rules();
+        // Flush rewrite rules if needed
+        if ($this->shouldFlush) {
+            flush_rewrite_rules();
+        }
     }
 
     public function makeRewriteRule()

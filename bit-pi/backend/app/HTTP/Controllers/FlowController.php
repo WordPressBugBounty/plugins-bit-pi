@@ -48,7 +48,7 @@ final class FlowController
             ->with(
                 'nodes',
                 function ($query) {
-                    $query->select(['id', 'node_id', 'app_slug', 'machine_slug', 'flow_id', "IF(`app_slug` = 'tools', `data`, null) as data"]);
+                    $query->select(['id', 'node_id', 'app_slug', 'machine_slug', 'machine_label', 'flow_id', "IF(`app_slug` = 'tools', `data`, null) as data"]);
                 }
             )
             ->findOne(['id' => $validatedData['flow_id']]);

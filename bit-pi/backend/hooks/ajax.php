@@ -17,9 +17,10 @@ use BitApps\Pi\HTTP\Controllers\FlowSettingsController;
 use BitApps\Pi\HTTP\Controllers\GlobalSettingsController;
 use BitApps\Pi\HTTP\Controllers\HistoryController;
 use BitApps\Pi\HTTP\Controllers\HookListenerController;
+use BitApps\Pi\HTTP\Controllers\McpClientController;
 use BitApps\Pi\HTTP\Controllers\NodeController;
-use BitApps\Pi\HTTP\Controllers\PluginImprovementController;
 use BitApps\Pi\HTTP\Controllers\ProxyController;
+use BitApps\Pi\HTTP\Controllers\SmtpController;
 use BitApps\Pi\HTTP\Controllers\SystemInfoController;
 use BitApps\Pi\HTTP\Controllers\TagController;
 use BitApps\Pi\HTTP\Controllers\WebhookController;
@@ -97,6 +98,7 @@ Route::group(
         // others
         Route::post('test-run-node', [FlowNodeTestController::class, 'runNode']);
         Route::post('proxy/route', [ProxyController::class, 'proxyRequest']);
+        Route::post('mcp-client/tools', [McpClientController::class, 'getTools']);
         Route::post('refresh-token', [AuthorizationController::class, 'refreshToken']);
         Route::get('hook-capture/{flow_id}/{node_id}', [HookListenerController::class, 'captureResponse']);
         Route::post('stop-hook-listener', [HookListenerController::class, 'stopHookListener']);
@@ -104,8 +106,8 @@ Route::group(
         Route::get('histories/{history_id}', [HistoryController::class, 'show']);
         Route::get('dashboard', [DashboardController::class, 'index']);
         Route::get('system-info', [SystemInfoController::class, 'index']);
-        Route::get('plugin-improvement', [PluginImprovementController::class, 'getOpt']);
-        Route::post('plugin-improvement', [PluginImprovementController::class, 'updateOpt']);
+        Route::get('smtp/status', [SmtpController::class, 'status']);
+        Route::post('smtp/install', [SmtpController::class, 'install']);
     }
 )->middleware('nonce', 'isAdmin');
 

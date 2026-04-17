@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'bitapps/pi',
-        'pretty_version' => '1.17.1',
-        'version' => '1.17.1.0',
-        'reference' => '665a402bc815d21b8c01b9e5c097ed2e9b09a2bd',
+        'pretty_version' => '1.18.0',
+        'version' => '1.18.0.0',
+        'reference' => 'f8a72426ded405d7c725d12a05ec88f12ed0a0cb',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'bitapps/pi' => array(
-            'pretty_version' => '1.17.1',
-            'version' => '1.17.1.0',
-            'reference' => '665a402bc815d21b8c01b9e5c097ed2e9b09a2bd',
+            'pretty_version' => '1.18.0',
+            'version' => '1.18.0.0',
+            'reference' => 'f8a72426ded405d7c725d12a05ec88f12ed0a0cb',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -37,19 +37,10 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'bitapps/wp-telemetry' => array(
-            'pretty_version' => 'v0.0.9',
-            'version' => '0.0.9.0',
-            'reference' => '6d9f5577396fe5e0ee96a7c9f05838d9f47e8721',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../bitapps/wp-telemetry',
-            'aliases' => array(),
-            'dev_requirement' => false,
-        ),
         'bitapps/wp-validator' => array(
-            'pretty_version' => '1.2.2',
-            'version' => '1.2.2.0',
-            'reference' => '856b3685c6e6673af4e3f7fea5083500ce011b99',
+            'pretty_version' => '1.2.3',
+            'version' => '1.2.3.0',
+            'reference' => '43a6f68414f5c580122f136cda45624e9fcaf837',
             'type' => 'library',
             'install_path' => __DIR__ . '/../bitapps/wp-validator',
             'aliases' => array(),

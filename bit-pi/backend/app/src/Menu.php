@@ -41,6 +41,8 @@ final class Menu
             'Webhooks'    => self::getWebhookMenuAttributes(),
             'Custom Apps' => self::getCustomAppsMenuAttributes(),
             'Settings'    => self::getSettingsMenuAttributes(),
+            'System Info' => self::getSystemInfoMenuAttributes(),
+            'SMTP'        => self::getSmtpMenuAttributes(),
             'Support'     => self::getSupportMenuAttributes(),
         ];
     }
@@ -133,6 +135,28 @@ final class Menu
             'name'       => 'Support',
             'capability' => 'manage_options',
             'slug'       => Config::SLUG . '#/license',
+        ];
+    }
+
+    private static function getSmtpMenuAttributes()
+    {
+        return [
+            'parent'     => Config::SLUG,
+            'type'       => 'submenu',
+            'name'       => 'SMTP',
+            'capability' => 'manage_options',
+            'slug'       => Config::SLUG . '#/smtp',
+        ];
+    }
+
+    private static function getSystemInfoMenuAttributes()
+    {
+        return [
+            'parent'     => Config::SLUG,
+            'type'       => 'submenu',
+            'name'       => 'System Info',
+            'capability' => 'manage_options',
+            'slug'       => Config::SLUG . '#/system-info',
         ];
     }
 }

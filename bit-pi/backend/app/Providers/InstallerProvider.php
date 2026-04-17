@@ -11,6 +11,7 @@ if (!defined('ABSPATH')) {
 use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Hooks\Hooks;
 use BitApps\Pi\Deps\BitApps\WPKit\Installer;
+use BitApps\Pi\src\Tools\AiAgent\Schema\AIToolSchema;
 
 final class InstallerProvider
 {
@@ -61,6 +62,7 @@ final class InstallerProvider
     public function deactivate()
     {
         wp_clear_scheduled_hook(Config::VAR_PREFIX . 'flow_history_cleanup');
+        wp_clear_scheduled_hook(Config::VAR_PREFIX . AIToolSchema::MCP_TOOL_SCHEMA_CLEANUP_HOOK);
         flush_rewrite_rules();
     }
 
@@ -85,6 +87,7 @@ final class InstallerProvider
             'BitAppsPiFlowsTableMigration',
             'BitAppsPiWebhooksTableMigration',
             'BitAppsPiFlowNodesTableMigration',
+            'BitAppsPiFlowNodesAddMachineLabelMigration',
             'BitAppsPiTagsTableMigration',
             'BitAppsPiAppConnectionsTableMigration',
             'BitAppsPiCustomAppsTableMigration',

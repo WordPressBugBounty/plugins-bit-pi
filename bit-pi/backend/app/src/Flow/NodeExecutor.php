@@ -22,6 +22,8 @@ class NodeExecutor
 
     public const BASE_INTEGRATION_NAMESPACE_PRO = 'BitApps\PiPro\src\Integrations\\';
 
+    public const BASE_HUMAN_IN_THE_LOOP_NAMESPACE = 'BitApps\PiPro\src\HumanInTheLoop\\';
+
     /**
      * Execute the node action.
      *
@@ -43,7 +45,7 @@ class NodeExecutor
 
         $startTime = microtime(true);
 
-        $action = new $app(new NodeInfoProvider($currentNodeInfo));
+        $action = new $app(new NodeInfoProvider($currentNodeInfo, [], $flowHistoryId));
 
         $response = $action->execute();
 
@@ -71,12 +73,15 @@ class NodeExecutor
 
         $nodeVariableInstance->setNodeResponse($currentNodeInfo->node_id, $response['output']);
 
-        $details = [
-            'duration'     => $duration,
-            'data_size'    => number_format(mb_strlen($log['input'] ?? '', '8bit') / 1024, 2),
-            'app_slug'     => $currentNodeInfo->app_slug ?? '',
-            'machine_slug' => $currentNodeInfo->machine_slug ?? '',
-        ];
+        $details = array_merge(
+            [
+                'duration'     => $duration,
+                'data_size'    => number_format(mb_strlen(JSON::encode($response['input'] ?? []), '8bit') / 1024, 2),
+                'app_slug'     => $currentNodeInfo->app_slug ?? '',
+                'machine_slug' => $currentNodeInfo->machine_slug ?? '',
+            ],
+            $response['details'] ?? []
+        );
 
         LogHandler::getInstance()->addLog(
             $flowHistoryId,
@@ -137,6 +142,10 @@ class NodeExecutor
             return self::BASE_INTEGRATION_NAMESPACE_PRO . "{$appSlug}\\{$appSlug}{$appType}";
         }
 
+        if (class_exists(self::BASE_HUMAN_IN_THE_LOOP_NAMESPACE . "{$appSlug}\\{$appSlug}{$appType}")) {
+            return self::BASE_HUMAN_IN_THE_LOOP_NAMESPACE . "{$appSlug}\\{$appSlug}{$appType}";
+        }
+
         return false;
     }
 
@@ -165,7 +174,6 @@ class NodeExecutor
             if ($foundMatchingNodeId) {
                 $nodeDetails = Node::getNodeInfoById($id, $nodes);
                 $result = Node::searchNodeKey(JSON::maybeDecode($nodeDetails['field_mapping']), 'nodeId', $errorNode->id);
-
                 $hasErrorId = $result !== null;
 
                 if ($hasErrorId) {

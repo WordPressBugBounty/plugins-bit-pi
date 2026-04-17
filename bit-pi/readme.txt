@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 6.9.4
 Requires PHP: 7.4
-Stable tag: 1.17.1
+Stable tag: 1.18.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -488,6 +488,32 @@ Detailed external service disclosure (what data is sent, when it is sent, and li
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.18.0 (Apr 17, 2026) =
+* **Features**:
+  * Human in the Loop 🔥 — pause a flow and wait for manual approval via email (Mail & Gmail)
+  * MCP Client node 🔥 — connect any MCP-compatible server directly inside a flow
+  * Editable node label — rename any action or trigger node inline in the builder
+
+* **Actions (17)**:
+  * Facebook Lead (05) 🌟
+  * Groq (02)
+  * Events Manager (02)
+  * User Registration and Membership (02)
+  * ProfilePress (06)
+
+* **Triggers (20)**:
+  * Facebook Lead (01) 🌟
+  * WP All Import (03)
+  * Events Manager (11)
+  * User Registration and Membership (03)
+  * ProfilePress (02)
+
+* **Fixes**:
+  * Fixed ClickUp assignees not populating correctly
+  * Fixed Mailchimp field fetching issue
+  * Improved MixInput tag handling and caret highlight reliability
+
 = v1.17.1 (Mar 20, 2026) =
 * **Fixes**:
   * Fixes an issue where the AI agent could not resolve the correct flow path when conditional or router tools were placed before it in the builder.

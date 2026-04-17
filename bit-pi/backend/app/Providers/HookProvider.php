@@ -16,6 +16,7 @@ use BitApps\Pi\Plugin;
 use BitApps\Pi\Services\ConnectionService;
 use BitApps\Pi\Services\FlowHistoryService;
 use BitApps\Pi\src\Integrations\IntegrationHookLoader;
+use BitApps\Pi\src\Tools\AiAgent\Schema\AIToolSchema;
 use BitApps\Pi\src\Tools\Delay\DelayTool;
 use FilesystemIterator;
 
@@ -30,6 +31,10 @@ class HookProvider
         IntegrationHookLoader::loadActionHooks();
         $this->loadAppAjaxHooks();
         Hooks::addAction(Config::VAR_PREFIX . 'flow_history_cleanup', [FlowHistoryService::class, 'flowHistoryCleanup']);
+        Hooks::addAction(
+            Config::VAR_PREFIX . AIToolSchema::MCP_TOOL_SCHEMA_CLEANUP_HOOK,
+            [AIToolSchema::class, 'cleanupMcpSchemasForAllToolsSelection']
+        );
         Hooks::addAction('rest_api_init', [$this, 'loadAppApiHooks']);
         Hooks::addFilter('safe_style_css', [$this, 'allowStyleProperties']);
         Hooks::addFilter(Config::VAR_PREFIX . 'before_store_connection_auth_details', [ConnectionService::class, 'modifyAuthDetails'], 10, 2);
@@ -37,6 +42,10 @@ class HookProvider
 
         if (!wp_next_scheduled(Config::VAR_PREFIX . 'flow_history_cleanup')) {
             wp_schedule_event(time(), 'daily', Config::VAR_PREFIX . 'flow_history_cleanup');
+        }
+
+        if (!wp_next_scheduled(Config::VAR_PREFIX . AIToolSchema::MCP_TOOL_SCHEMA_CLEANUP_HOOK)) {
+            wp_schedule_event(time(), 'daily', Config::VAR_PREFIX . AIToolSchema::MCP_TOOL_SCHEMA_CLEANUP_HOOK);
         }
 
         if (Config::getEnv('CLI_ACTIVE')) {

@@ -29,6 +29,7 @@ class FlowNode extends Model
         'flow_id',
         'app_slug',
         'machine_slug',
+        'machine_label',
         'field_mapping',
         'data',
         'variables',

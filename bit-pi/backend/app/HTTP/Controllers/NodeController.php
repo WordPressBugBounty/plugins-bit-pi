@@ -136,6 +136,10 @@ final class NodeController
         // machine related variables will removed from db if machine changed
         $validated = $this->resetMachineRelatedData($node->machine_slug, $validated);
 
+        if (isset($validated['app_slug']) && $validated['app_slug'] === 'mcpClientTool') {
+            $validated = $this->clearMcpToolSchemasFromNodeData($validated);
+        }
+
         $node->update($validated);
 
         $node->save();
@@ -179,6 +183,17 @@ final class NodeController
         }
 
         return Response::success($clonedNode);
+    }
+
+    private function clearMcpToolSchemasFromNodeData($validated)
+    {
+        $data = $validated['data'] ?? [];
+        if (\is_array($data)) {
+            unset($data['schemas']);
+            $validated['data'] = $data;
+        }
+
+        return $validated;
     }
 
     private function resetMachineRelatedData($machineSlug, $validated)

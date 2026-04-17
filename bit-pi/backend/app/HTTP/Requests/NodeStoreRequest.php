@@ -19,6 +19,7 @@ class NodeStoreRequest extends Request
             'node_id'       => ['required', 'string', 'sanitize:text'],
             'app_slug'      => ['nullable', 'string', 'sanitize:text'],
             'machine_slug'  => ['nullable', 'string', 'sanitize:text'],
+            'machine_label' => ['nullable', 'string', 'sanitize:text'],
             'field_mapping' => ['nullable', 'array'],
             'data'          => ['nullable', 'array'],
         ];

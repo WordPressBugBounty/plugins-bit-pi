@@ -32,7 +32,9 @@ class NodeInfoProvider
 
     private $aiToolArgs;
 
-    public function __construct($node, $aiToolArgs = [])
+    private $flowHistoryId;
+
+    public function __construct($node, $aiToolArgs = [], $flowHistoryId = null)
     {
         $this->flowId = $node['flow_id'];
         $this->nodeId = $node['node_id'];
@@ -41,6 +43,12 @@ class NodeInfoProvider
         $this->fieldMap = JSON::decode(JSON::encode($node['field_mapping']), true);
         $this->data = JSON::decode(JSON::encode($node['data']), true);
         $this->aiToolArgs = $aiToolArgs;
+        $this->flowHistoryId = $flowHistoryId;
+    }
+
+    public function getFlowHistoryId()
+    {
+        return $this->flowHistoryId;
     }
 
     /**

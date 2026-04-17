@@ -58,9 +58,6 @@ class GroqAction implements ActionInterface
 
             case 'translateAudio':
                 return $this->groqService->translateAudio($data);
-
-            case 'analyzeImage':
-                return $this->groqService->analyzeImage($data);
         }
     }
 
@@ -78,14 +75,17 @@ class GroqAction implements ActionInterface
 
         $apiKey = $tokenAuthorization->getAccessToken();
 
-        $httpClient = new HttpClient(
-            [
-                'headers' => [
-                    'Authorization' => 'Bearer ' . $apiKey,
-                    'Content-Type'  => 'application/json',
-                ],
-            ]
-        );
+        $headers = [
+            'Authorization' => 'Bearer ' . $apiKey,
+        ];
+
+        $multipartMachines = ['transcribeAudio', 'translateAudio'];
+
+        if (!\in_array($machineSlug, $multipartMachines, true)) {
+            $headers['Content-Type'] = 'application/json';
+        }
+
+        $httpClient = new HttpClient(['headers' => $headers]);
 
         $this->groqService = new GroqService($httpClient);
 

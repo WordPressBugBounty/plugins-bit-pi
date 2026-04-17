@@ -226,7 +226,14 @@ final class MailServices
         $uniqueFilename = wp_unique_filename($tmpDir, $filename);
         $namedTmp = $tmpDir . \DIRECTORY_SEPARATOR . $uniqueFilename;
 
-        if ($namedTmp !== $tmp && rename($tmp, $namedTmp)) {
+        global $wp_filesystem;
+
+        if (empty($wp_filesystem)) {
+            include_once ABSPATH . 'wp-admin/includes/file.php';
+            WP_Filesystem();
+        }
+
+        if ($namedTmp !== $tmp && $wp_filesystem && $wp_filesystem->move($tmp, $namedTmp, true)) {
             $this->tempFiles[] = $namedTmp;
 
             return $namedTmp;

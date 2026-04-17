@@ -25,8 +25,6 @@ final class BitAppsPiPluginOptions extends Migration // phpcs:ignore WordPress.N
             Config::withPrefix('installed'),
             Config::withPrefix('version'),
             Config::withPrefix('app_settings'),
-            Config::withPrefix('tracking_notice_dismissed'),
-            Config::withPrefix('tracking_skipped'),
             Config::withPrefix('secret_key'),
         ];
 

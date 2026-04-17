@@ -32,6 +32,8 @@ final class TagController
 
         $validated['slug'] = Slug::generate($validated['title']);
 
+        $validated['status'] = true;
+
         $tag = Tag::insert($validated);
 
         if (!$tag) {

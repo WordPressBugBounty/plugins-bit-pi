@@ -75,7 +75,7 @@ class OAuth2Authorization extends AbstractBaseAuthorization
             return $tokenDetails;
         }
 
-        if ($this->isTokenExpired($tokenDetails['generated_at'], $tokenDetails['expires_in'])) {
+        if (isset($tokenDetails['generated_at'], $tokenDetails['expires_in']) && ($this->isTokenExpired($tokenDetails['generated_at'], $tokenDetails['expires_in']))) {
             $newAuthDetails = $this->refreshAccessToken();
 
             if (isset($newAuthDetails['error'])) {

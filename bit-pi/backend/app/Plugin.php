@@ -12,10 +12,7 @@ use BitApps\Pi\Deps\BitApps\WPKit\Hooks\Hooks;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\RequestType;
 use BitApps\Pi\Deps\BitApps\WPKit\Migration\MigrationHelper;
 use BitApps\Pi\Deps\BitApps\WPKit\Utils\Capabilities;
-use BitApps\Pi\Deps\BitApps\WPTelemetry\Telemetry\Telemetry;
-use BitApps\Pi\Deps\BitApps\WPTelemetry\Telemetry\TelemetryConfig;
 use BitApps\Pi\HTTP\Controllers\OauthCallbackController;
-use BitApps\Pi\HTTP\Controllers\PluginImprovementController;
 use BitApps\Pi\HTTP\Middleware\AdminCheckerMiddleware;
 use BitApps\Pi\HTTP\Middleware\NonceCheckerMiddleware;
 use BitApps\Pi\Providers\HookProvider;
@@ -55,22 +52,12 @@ final class Plugin
             $rewriteRules = get_option('rewrite_rules');
 
             $oAuthCallbackRoute = '^' . Config::SLUG . '/oauth-callback/?$';
-
-            // check if bit-pi/oauth-callback exists in rewrite rules
-            if (!isset($rewriteRules[$oAuthCallbackRoute])) {
-                new RewriteRuleProvider(Config::SLUG . '/oauth-callback');
-            }
-
+            $needFlush = !isset($rewriteRules[$oAuthCallbackRoute]);
+            new RewriteRuleProvider(Config::SLUG . '/oauth-callback', $needFlush);
             Hooks::addAction('template_include', [new OauthCallbackController(), 'handleOauthCallback']);
         }
 
         Hooks::addAction('plugins_loaded', [$this, 'loaded']);
-
-        Hooks::addFilter(Config::withPrefix('telemetry_additional_data'), [new PluginImprovementController(), 'filterTrackingData']);
-
-        if (!Config::getEnv('DEV')) {
-            $this->initWPTelemetry();
-        }
     }
 
     public function registerInstaller()
@@ -93,21 +80,6 @@ final class Plugin
         Hooks::addAction(Config::VAR_PREFIX . 'background_process_request_cron', [new FlowExecutor(), 'checkQueueAndRestartBackgroundProcess']);
 
         $this->maybeMigrateDB();
-    }
-
-    public function initWPTelemetry()
-    {
-        TelemetryConfig::setSlug(Config::SLUG);
-        TelemetryConfig::setTitle(Config::TITLE);
-        TelemetryConfig::setVersion(Config::VERSION);
-        TelemetryConfig::setPrefix(Config::VAR_PREFIX);
-
-        TelemetryConfig::setServerBaseUrl('https://wp-api.bitapps.pro/public/');
-        TelemetryConfig::setTermsUrl('https://bitapps.pro/terms-of-service/');
-        TelemetryConfig::setPolicyUrl('https://bitapps.pro/privacy-policy/');
-
-        Telemetry::report()->init();
-        Telemetry::feedback()->init();
     }
 
     public function middlewares()
