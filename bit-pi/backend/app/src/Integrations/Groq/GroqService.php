@@ -9,7 +9,7 @@ use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\src\Integrations\AIIntegrationHelper;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

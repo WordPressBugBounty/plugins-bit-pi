@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Integrations\WpForms;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

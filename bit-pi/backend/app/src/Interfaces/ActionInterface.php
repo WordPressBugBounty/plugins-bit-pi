@@ -2,7 +2,7 @@
 
 namespace BitApps\Pi\src\Interfaces;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

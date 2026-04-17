@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Tools\Csv;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -141,7 +141,7 @@ class CsvTool
             return ['error' => 'Invalid URL format: ' . $url];
         }
 
-        $parsedUrl = parse_url($url);
+        $parsedUrl = wp_parse_url($url);
 
         if (!isset($parsedUrl['scheme']) || !\in_array($parsedUrl['scheme'], ['http', 'https'])) {
             return ['error' => 'URL must use HTTP or HTTPS protocol.'];
@@ -172,20 +172,38 @@ class CsvTool
      */
     private function getContentFromFile($filePath)
     {
-        // Sanitize file path
-        $sanitizedPath = sanitize_text_field($filePath);
+        $uploadDir = wp_upload_dir();
 
-        // Check if it's an absolute path and file exists
-        if (file_exists($sanitizedPath) && is_readable($sanitizedPath)) {
-            $content = file_get_contents($sanitizedPath);
-            if ($content === false) {
-                return ['error' => 'Failed to read file: ' . $sanitizedPath];
-            }
-
-            return ['content' => $content];
+        if (empty($uploadDir['basedir'])) {
+            return ['error' => 'Unable to determine uploads directory.'];
         }
 
-        return ['error' => 'File not found or not readable: ' . $sanitizedPath];
+        if (str_starts_with($filePath, $uploadDir['baseurl'])) {
+            $file = $uploadDir['basedir'] . substr($filePath, \strlen($uploadDir['baseurl']));
+        } elseif (str_starts_with($filePath, $uploadDir['basedir'])) {
+            $file = $filePath;
+        } else {
+            return ['error' => 'File path must be within the WordPress uploads directory.'];
+        }
+
+        $realFile = realpath($file);
+        $realUploads = realpath($uploadDir['basedir']);
+
+        if ($realFile === false || $realUploads === false) {
+            return ['error' => 'File not found or not readable.'];
+        }
+
+        if (!str_starts_with($realFile, $realUploads . \DIRECTORY_SEPARATOR)) {
+            return ['error' => 'File path must be within the WordPress uploads directory.'];
+        }
+
+        $content = file_get_contents($realFile);
+
+        if ($content === false) {
+            return ['error' => 'Failed to read file.'];
+        }
+
+        return ['content' => $content];
     }
 
     /**
@@ -222,7 +240,7 @@ class CsvTool
                 continue; // Skip empty lines
             }
 
-            $rowData = str_getcsv($line, $delimiter);
+            $rowData = str_getcsv($line, $delimiter, '"', '\\');
 
             if ($lineNumber === 0) {
                 if (!$containsHeaders) {

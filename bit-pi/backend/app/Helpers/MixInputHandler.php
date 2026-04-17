@@ -7,7 +7,7 @@ use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\src\Flow\GlobalNodeVariables;
 use Exception;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -56,11 +56,10 @@ class MixInputHandler
 
             switch ($item['type']) {
                 case 'variable':
-                    global $nodeIndexPosition;
+                    $nodeIndex = GlobalNodeVariables::getInstance()->getNodeIndexPosition($item['nodeId']);
 
-                    if ($nodeIndexPosition !== null && isset($nodeIndexPosition[$item['nodeId']])) {
-                        $index = $nodeIndexPosition[$item['nodeId']];
-                        $platformValues = empty($nodeResponseData[$item['nodeId']]) ? [] : $nodeResponseData[$item['nodeId']][$index];
+                    if ($nodeIndex !== null) {
+                        $platformValues = empty($nodeResponseData[$item['nodeId']]) ? [] : $nodeResponseData[$item['nodeId']][$nodeIndex];
                     } else {
                         $platformValues = empty($nodeResponseData[$item['nodeId']]) ? [] : $nodeResponseData[$item['nodeId']];
                     }
@@ -91,7 +90,9 @@ class MixInputHandler
             }
 
             if (is_plugin_active(Config::PRO_PLUGIN_SLUG . '/' . Config::PRO_PLUGIN_SLUG . '.php')) {
+                // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound -- Prefixed via Config::VAR_PREFIX (bit_pi_).
                 $value = apply_filters(Config::VAR_PREFIX . 'mix_tag_input', $values, $item);
+
                 if (!empty($value) || is_numeric($value)) {
                     $values[] = $value;
                 }
@@ -112,11 +113,10 @@ class MixInputHandler
 
         $nodeData = $allNodeResponses[$nodeId];
 
-        global $nodeIndexPosition;
+        $nodeIndex = GlobalNodeVariables::getInstance()->getNodeIndexPosition($nodeId);
 
-        if ($nodeIndexPosition !== null && isset($nodeIndexPosition[$nodeId])) {
-            $index = $nodeIndexPosition[$nodeId];
-            $nodeData = $nodeData[$index] ?? $nodeData;
+        if ($nodeIndex !== null) {
+            $nodeData = $nodeData[$nodeIndex] ?? $nodeData;
         }
 
         $indexPath = '';
@@ -143,20 +143,19 @@ class MixInputHandler
      * Generate payload with field map.
      *
      * @param array $fieldMap
-     * @param null|mixed $nodeId
+     * @param mixed $aiToolArgs
      *
      * @return array
      */
-    public static function processData($fieldMap, $nodeId = null)
+    public static function processData($fieldMap, $aiToolArgs = [])
     {
         $payload = [];
 
         foreach ($fieldMap as $fieldPair) {
             $keys = explode('.', $fieldPair['path'] ?? '');
 
-            if (isset($fieldPair['modelDefined']) && $nodeId) {
-                $llmData = get_option('ai_agent_tool_args_' . $nodeId);
-                $value = $llmData[$fieldPair['path']] ?? '';
+            if (isset($fieldPair['modelDefined']) && $aiToolArgs) {
+                $value = $aiToolArgs[$fieldPair['path']] ?? '';
                 static::assignValueToKey($payload, $keys, $value);
 
                 continue;
@@ -174,7 +173,7 @@ class MixInputHandler
         return $payload;
     }
 
-    public static function processRepeaters($data, $isArrayAssociative, $isArrayColumn, $keyColumnName, $valueColumnName, $nodeId = null, $path = null)
+    public static function processRepeaters($data, $isArrayAssociative, $isArrayColumn, $keyColumnName, $valueColumnName, $aiToolArgs = [], $path = null)
     {
         $output = [];
         foreach ($data as $items) {
@@ -183,11 +182,10 @@ class MixInputHandler
             foreach ($items as $item) {
                 if (isset($item['key'], $item['value'])) {
                     $key = static::replaceMixTagValue($item['key']);
-                    if (isset($item['modelDefined'], $items[0]['value'])) {
-                        $llmData = get_option('ai_agent_tool_args_' . $nodeId);
+                    if (isset($item['modelDefined'], $items[0]['value']) && $aiToolArgs) {
                         $llmFldName = explode('.value', $path)[0] . '.' . $items[0]['value'];
-                        if (isset($llmData[$llmFldName])) {
-                            $value = $llmData[$llmFldName];
+                        if (isset($aiToolArgs[$llmFldName])) {
+                            $value = $aiToolArgs[$llmFldName];
                         }
                     } else {
                         $value = static::replaceMixTagValue($item['value']);
@@ -210,21 +208,23 @@ class MixInputHandler
         return $output;
     }
 
-    public static function processConfigs($data, $nodeId = null)
+    public static function processConfigs($data, $aiToolArgs = [])
     {
         if (!is_iterable($data)) {
             return $data;
         }
 
-        foreach ($data as $key => $value) {
-            if (isset($value['modelDefined']) && $nodeId) {
-                $llmData = get_option('ai_agent_tool_args_' . $nodeId);
+        if (self::isMixInput($data) && !isset($data['modelDefined'])) {
+            return static::replaceMixTagValue($data);
+        }
 
-                $data[$key] = $llmData[$key] ?? '';
+        foreach ($data as $key => $value) {
+            if (isset($value['modelDefined']) && $aiToolArgs) {
+                $data[$key] = $aiToolArgs[$key] ?? '';
 
                 continue;
             }
-            $data[$key] = \is_array($value) ? static::processConfigs($value) : static::replaceMixTagValue($value);
+            $data[$key] = \is_array($value) && !self::isMixInput($value) ? static::processConfigs($value) : static::replaceMixTagValue($value);
         }
 
         return $data;
@@ -275,7 +275,6 @@ class MixInputHandler
         if ($returnFormat === 'array') {
             return $values;
         }
-
 
         return self::checkAndTransformScalarValue($processedValues);
     }

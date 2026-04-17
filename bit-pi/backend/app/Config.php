@@ -7,7 +7,7 @@ use BitApps\Pi\Views\Body;
 use BitApps\Pi\Views\PluginPageActions;
 use BitApps\PiPro\Config as ProConfig;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -24,7 +24,7 @@ class Config
 
     public const VAR_PREFIX = 'bit_pi_';
 
-    public const VERSION = '1.16.0';
+    public const VERSION = '1.17.1';
 
     public const DB_VERSION = '0.1.0';
 

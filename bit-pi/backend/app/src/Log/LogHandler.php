@@ -4,7 +4,7 @@ namespace BitApps\Pi\src\Log;
 
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-final class BitAppsPiTagsTableMigration extends Migration
+final class BitAppsPiTagsTableMigration extends Migration // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedClassFound
 {
     public function up(): void
     {
@@ -21,7 +21,7 @@ final class BitAppsPiTagsTableMigration extends Migration
                 $table->string('title');
                 $table->string('slug');
                 $table->string('filter')->nullable();
-                $table->boolean('status')->defaultValue(0);
+                $table->boolean('status')->defaultValue(1);
                 $table->timestamps();
             }
         );

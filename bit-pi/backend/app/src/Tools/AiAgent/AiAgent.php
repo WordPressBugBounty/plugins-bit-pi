@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Tools\AiAgent;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -240,6 +240,19 @@ class AiAgent
         if (empty($flowMap)) {
             return;
         }
+
+        if (\is_array($flowMap)) {
+            foreach ($flowMap as $nextFlowMap) {
+                $subNode = $this->findSubNode($nextFlowMap, $nodeId);
+
+                if (!empty($subNode)) {
+                    return $subNode;
+                }
+            }
+
+            return;
+        }
+
         if (isset($flowMap->id) && $flowMap->id === $nodeId) {
             return (array) $flowMap->subNode;
         }

@@ -4,7 +4,7 @@ namespace BitApps\Pi\src\Integrations\WordPressActionHooks;
 
 use BitApps\Pi\src\Integrations\WordPress\WordPressAction;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

@@ -7,7 +7,7 @@ use BitApps\Pi\Services\FlowService;
 use BitApps\Pi\src\Flow\FlowExecutor;
 use BitApps\Pi\src\Flow\NodeInfoProvider;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

@@ -7,7 +7,7 @@ use BitApps\Pi\Helpers\MixInputHandler;
 use BitApps\Pi\Helpers\Utility;
 use Exception;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -30,7 +30,9 @@ class NodeInfoProvider
 
     private $data;
 
-    public function __construct($node)
+    private $aiToolArgs;
+
+    public function __construct($node, $aiToolArgs = [])
     {
         $this->flowId = $node['flow_id'];
         $this->nodeId = $node['node_id'];
@@ -38,6 +40,7 @@ class NodeInfoProvider
         $this->machineSlug = $node['machine_slug'];
         $this->fieldMap = JSON::decode(JSON::encode($node['field_mapping']), true);
         $this->data = JSON::decode(JSON::encode($node['data']), true);
+        $this->aiToolArgs = $aiToolArgs;
     }
 
     /**
@@ -58,7 +61,7 @@ class NodeInfoProvider
         $valueFromPath = Utility::getValueFromPath($this->fieldMap['configs'] ?? [], $path);
 
 
-        return MixInputHandler::processConfigs($valueFromPath, $this->getNodeId());
+        return MixInputHandler::processConfigs($valueFromPath, $this->aiToolArgs);
     }
 
     /**
@@ -73,7 +76,7 @@ class NodeInfoProvider
      */
     public function getFieldMapData()
     {
-        return MixInputHandler::processData($this->fieldMap['data'] ?? [], $this->getNodeId());
+        return MixInputHandler::processData($this->fieldMap['data'] ?? [], $this->aiToolArgs);
     }
 
     /**
@@ -109,7 +112,7 @@ class NodeInfoProvider
     ) {
         $valueFromPath = Utility::getValueFromPath($this->fieldMap['repeaters'] ?? [], $path);
 
-        return MixInputHandler::processRepeaters($valueFromPath, $isArrayAssociative, $isArrayColumn, $keyColumnName, $valueColumnName, $this->getNodeId(), $path);
+        return MixInputHandler::processRepeaters($valueFromPath, $isArrayAssociative, $isArrayColumn, $keyColumnName, $valueColumnName, $this->aiToolArgs, $path);
     }
 
     public function getFlowId()

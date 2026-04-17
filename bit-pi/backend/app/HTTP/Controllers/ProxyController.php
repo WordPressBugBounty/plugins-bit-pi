@@ -2,13 +2,9 @@
 
 namespace BitApps\Pi\HTTP\Controllers;
 
-// Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
-
-
-\define('strict_types', 1); // phpcs:ignore Generic.NamingConventions.UpperCaseConstantName.ConstantNotUpperCase
 
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
@@ -86,8 +82,16 @@ final class ProxyController
             return 'Only HTTP and HTTPS URLs are allowed.';
         }
 
-        if (isset($parsedUrl['host']) && site_url() === $parsedUrl['host']) {
+        $host = $parsedUrl['host'] ?? '';
+
+        if ($host === wp_parse_url(site_url(), PHP_URL_HOST)) {
             return 'Self request is not allowed.';
+        }
+
+        $resolvedIp = gethostbyname($host);
+
+        if (!filter_var($resolvedIp, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE)) {
+            return 'Requests to private or reserved IP ranges are not allowed.';
         }
 
         return false;

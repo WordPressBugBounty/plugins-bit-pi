@@ -7,7 +7,7 @@ use BitApps\Pi\src\Authorization\AuthorizationFactory;
 use BitApps\Pi\src\Authorization\AuthorizationType;
 use SimpleXMLElement;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

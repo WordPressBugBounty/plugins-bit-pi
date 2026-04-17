@@ -3,7 +3,7 @@
 namespace BitApps\Pi\HTTP\Controllers;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -21,8 +21,9 @@ class OauthCallbackController
 
         header('X-Robots-Tag: noindex, nofollow');
 
+        // Nonce verification is not applicable here -- this handles OAuth redirects from external providers
         $validation = (new Validator())->make(
-            wp_unslash($_GET),
+            wp_unslash($_GET), // phpcs:ignore WordPress.Security.NonceVerification.Recommended
             [
                 'state' => ['required', 'url', 'sanitize:url'],
                 '*'     => ['string', 'sanitize:text'],

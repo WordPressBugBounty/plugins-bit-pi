@@ -6,7 +6,7 @@ use BitApps\Pi\src\Authorization\AuthorizationFactory;
 use BitApps\Pi\src\Authorization\AuthorizationType;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

@@ -3,11 +3,10 @@
 namespace BitApps\Pi\src\Integrations\DeepSeek;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
-use BitApps\Pi\Helpers\MixInputHandler;
 use BitApps\Pi\src\API\BaseAPI;
 use BitApps\Pi\src\Authorization\ApiKey\ApiKeyAuthorization;
 
@@ -61,14 +60,5 @@ class DeepSeekHelper extends BaseAPI
             'payload'     => $payLoad,
             'status_code' => $this->http->getResponseCode()
         ];
-    }
-
-    private function getMixInputValue($value)
-    {
-        if (!empty($value)) {
-            return MixInputHandler::replaceMixTagValue($value);
-        }
-
-        return $value;
     }
 }

@@ -5,7 +5,7 @@ namespace BitApps\Pi\src\Integrations\CustomApp;
 use BitApps\Pi\Model\CustomMachine;
 use BitApps\Pi\src\Integrations\HookRegisterInterface;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

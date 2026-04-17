@@ -9,7 +9,7 @@ use BitApps\Pi\src\Integrations\WpActionHookListener\WpActionHookListener;
 use WP_Roles;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -97,7 +97,7 @@ class WordPressActionHelper
         }
 
         if (!empty($metaQuery)) {
-            $args['meta_query'] = $metaQuery;
+            $args['meta_query'] = $metaQuery; // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_query -- Required for WP_Query meta filtering
         }
 
         if (!empty($search)) {

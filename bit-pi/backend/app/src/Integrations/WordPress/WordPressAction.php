@@ -6,7 +6,7 @@ use BitApps\Pi\src\Flow\NodeInfoProvider;
 use BitApps\Pi\src\Integrations\WordPress\helpers\WordPressActionHandler;
 use BitApps\Pi\src\Interfaces\ActionInterface;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

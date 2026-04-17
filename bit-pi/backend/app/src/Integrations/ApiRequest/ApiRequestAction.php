@@ -3,10 +3,9 @@
 namespace BitApps\Pi\src\Integrations\ApiRequest;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
-
 
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
 use BitApps\Pi\Helpers\MixInputHandler;
@@ -70,7 +69,7 @@ class ApiRequestAction implements ActionInterface
 
         $headers['Content-Type'] = $contentType;
 
-        $url = MixInputHandler::replaceMixTagValue($this->nodeInfoProvider->getFieldMapConfigs('url.value'));
+        $url = $machineConfig['url']['value'];
 
         if ($queryParams) {
             $url .= (strpos($url, '?') === false) ? '?' : '&';
@@ -83,7 +82,7 @@ class ApiRequestAction implements ActionInterface
 
         $isEnableRawBody = $machineConfig['is-enable-raw-body']['value'] ?? false;
 
-        $rawBodyContent = $machineConfig['raw-body-content']['value'] ?? '';
+        $rawBodyContent = $this->nodeInfoProvider->getFieldMap('configs.raw-body-content.value');
 
         if ($isEnableRawBody && !empty($rawBodyContent)) {
             $bodyParams = MixInputHandler::replaceMixTagValue($rawBodyContent, 'array');

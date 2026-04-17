@@ -2,8 +2,12 @@
 
 namespace BitApps\Pi\Services;
 
+use BitApps\Pi\Config;
+use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
+use BitApps\Pi\src\Abstracts\AbstractPollingTrigger;
+
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -13,25 +17,27 @@ class Polling
      * Compare two multidimensional arrays and detect changes intelligently.
      *
      * Identifies new records and updated records based on a unique identifier field.
-     * Optionally returns only one type of change based on the $actionType parameter.
+     * Optionally returns only one type of change based on the $pollingType parameter.
      *
-     * @param array       $oldResponse previous dataset from the last polling
-     * @param array       $newResponse current dataset from the latest polling
-     * @param string      $idField     field name used as the unique identifier (default: 'id')
-     * @param string      $actionType  type of changes to return: 'new' for new items, 'updated' for modified items
+     * @param array  $oldResponse previous dataset from the last polling
+     * @param array  $newResponse current dataset from the latest polling
+     * @param string $idField     field name used as the unique identifier (default: 'id')
+     * @param string $pollingType type of polling: AbstractPollingTrigger::TYPE_NEW or TYPE_UPDATED
      *
      * @return array|false returns the requested type of changes (array of items) or false if no changes detected
      */
-    public function detectNewOrUpdatedData($oldResponse, $newResponse, $idField = 'id', $actionType = 'new')
+    public function detectNewOrUpdatedData($oldResponse, $newResponse, $idField = 'id', $pollingType = AbstractPollingTrigger::TYPE_NEW)
     {
+        if (!\is_array($oldResponse) || !\is_array($newResponse)) {
+            return false;
+        }
+
         $changes = [
-            'new'     => [],
-            'updated' => [],
+            AbstractPollingTrigger::TYPE_NEW     => [],
+            AbstractPollingTrigger::TYPE_UPDATED => [],
         ];
 
         $oldMap = [];
-
-        $newMap = [];
 
         foreach ($oldResponse as $item) {
             if (isset($item[$idField])) {
@@ -41,32 +47,40 @@ class Polling
 
         foreach ($newResponse as $item) {
             if (!isset($item[$idField])) {
-                // Items without ID are considered new
-                $changes['new'][] = $item;
+                $changes[AbstractPollingTrigger::TYPE_NEW][] = $item;
 
                 continue;
             }
 
             $itemId = $item[$idField];
 
-            $newMap[$itemId] = $item;
-
             if (!isset($oldMap[$itemId])) {
-                // ID doesn't exist in old data - it's new
-                $changes['new'][] = $item;
-            } elseif (wp_json_encode($oldMap[$itemId]) !== wp_json_encode($item)) {
-                // ID exists but content is different - it's modified
-                $changes['updated'][] = [
+                $changes[AbstractPollingTrigger::TYPE_NEW][] = $item;
+            } elseif (JSON::encode($oldMap[$itemId]) !== JSON::encode($item)) {
+                $changes[AbstractPollingTrigger::TYPE_UPDATED][] = [
                     'old' => $oldMap[$itemId],
                     'new' => $item
                 ];
             }
         }
 
-        if (empty($changes['new']) && empty($changes['updated'])) {
+        if (empty($changes[AbstractPollingTrigger::TYPE_NEW]) && empty($changes[AbstractPollingTrigger::TYPE_UPDATED])) {
             return false;
         }
 
-        return $changes[$actionType];
+        return $changes[$pollingType];
+    }
+
+    public static function deletePollingData($flowId)
+    {
+        $indexPosition = 1;
+
+        $nodeId = $flowId . '-' . $indexPosition;
+
+        $optionKey = 'poll_response_' . $nodeId;
+
+        if (Config::getOption($optionKey)) {
+            Config::deleteOption($optionKey);
+        }
     }
 }

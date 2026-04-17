@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Flow;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -26,7 +26,7 @@ use BitApps\Pi\src\Tools\FlowToolsFactory;
 use stdClass;
 use Throwable;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -110,7 +110,6 @@ class FlowExecutor extends BackgroundProcessHandler
                 $parentFlowHistoryId = $flowHistoryId;
                 $flowHistoryId = null;
             }
-
             $flowHistoryId = FlowHistoryService::createHistoryWithTriggerNode(
                 $flow->id,
                 $flowHistoryId,
@@ -137,7 +136,7 @@ class FlowExecutor extends BackgroundProcessHandler
                 'listener_type'   => $flow->listener_type
             ];
 
-            if (\defined('BACKGROUND_PROCESS_DISABLE') && BACKGROUND_PROCESS_DISABLE) {
+            if (defined('BACKGROUND_PROCESS_DISABLE') && BACKGROUND_PROCESS_DISABLE) {
                 $obj = new stdClass();
 
                 $obj->data = $queueData;
@@ -246,9 +245,7 @@ class FlowExecutor extends BackgroundProcessHandler
 
         $this->flowSettings = $batch->data['settings'] ?? [];
 
-        global $globalFlowId;
-
-        $globalFlowId = $this->flowId;
+        GlobalFlow::setFlowId($this->flowId);
 
         $batch = $this->processFlowMap($flowMap, $batch);
 
@@ -363,10 +360,8 @@ class FlowExecutor extends BackgroundProcessHandler
                         $flowMap[] = $defaultConditionNode;
                     }
                 } elseif (\in_array($currentNode->type, ['iterator', 'repeater'])) {
-                    global $nodeIndexPosition;
-
                     for ($i = $response['start'] - 1; $i < $response['end']; ++$i) {
-                        $nodeIndexPosition[$currentNode->id] = $i;
+                        GlobalNodeVariables::getInstance()->setNodeIndexPosition($currentNode->id, $i);
 
                         $this->processFlowMap([$currentNode->next], $batch);
 

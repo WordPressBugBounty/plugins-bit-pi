@@ -5,7 +5,7 @@ namespace BitApps\Pi\src\Flow;
 use BitApps\Pi\Model\FlowLog;
 use BitApps\Pi\Model\FlowNode;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -17,6 +17,8 @@ class GlobalNodeVariables
     private $nodeVariables = [];
 
     private $nodeResponseData = [];
+
+    private $nodeIndexPosition = [];
 
     private function __construct($flowHistoryId = null, $flowId = null)
     {
@@ -53,8 +55,22 @@ class GlobalNodeVariables
         $this->nodeVariables[$nodeId] = $response;
     }
 
+    public function setNodeIndexPosition($nodeId, $index)
+    {
+        $this->nodeIndexPosition[$nodeId] = $index;
+    }
+
+    public function getNodeIndexPosition($nodeId)
+    {
+        return $this->nodeIndexPosition[$nodeId] ?? null;
+    }
+
     public static function destroy()
     {
+        if (self::$instance !== null) {
+            self::$instance->nodeIndexPosition = [];
+        }
+
         self::$instance = null;
     }
 

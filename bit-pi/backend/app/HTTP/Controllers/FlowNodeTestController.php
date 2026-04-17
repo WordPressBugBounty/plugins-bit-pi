@@ -2,6 +2,7 @@
 
 namespace BitApps\Pi\HTTP\Controllers;
 
+use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Request\Request;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitApps\Pi\Helpers\Parser;
@@ -57,7 +58,7 @@ class FlowNodeTestController
 
         $flowId = $this->getFlowId($nodeId);
 
-        $nodeType = isset($nodeData->data->schedule) ? 'Trigger' : 'Action';
+        $nodeType = isset($nodeData->data->schedule) ? 'PollingTrigger' : 'Action';
 
         $this->loadNodeVariables($flowId);
 
@@ -143,7 +144,12 @@ class FlowNodeTestController
         $provider = new NodeInfoProvider($nodeData);
         $instance = new $appClass($provider);
 
-        $executionResponse = $nodeType === 'Trigger' ? $instance->pull() : $instance->execute();
+        $executionResponse = $nodeType === 'PollingTrigger' ? $instance->poll() : $instance->execute();
+        if ($nodeType === 'PollingTrigger') {
+            $optionName = 'poll_response_' . $nodeData->node_id;
+            $compressedResponse = base64_encode(gzcompress(wp_json_encode($executionResponse['output'])));
+            Config::updateOption($optionName, $compressedResponse);
+        }
 
         if (
             !empty($executionResponse['output'])
@@ -175,10 +181,10 @@ class FlowNodeTestController
             $currentNodeVariable = $instance->getVariables()[$nodeId];
         }
 
-        if ($nodeType === 'Trigger') {
+        if ($nodeType === 'PollingTrigger') {
             $firstIndexPosition = 0;
             $currentNodeVariable = \is_array($executionResponse)
-                ? ($executionResponse['output'][$firstIndexPosition] ?? [])
+                ? ($executionResponse['output']['data'][$firstIndexPosition] ?? [])
                 : [];
         }
 

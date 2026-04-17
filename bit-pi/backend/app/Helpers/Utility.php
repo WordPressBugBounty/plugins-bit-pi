@@ -6,7 +6,7 @@ use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use Exception;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -418,7 +418,10 @@ class Utility
     private static function sanitizeMetadata($metadata, $key = '', $single = false)
     {
         if (!empty($key) && $single) {
-            return ['meta_key' => $key, 'meta_value' => $metadata];
+            return [
+                'meta_key'   => $key, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Preparing data for a meta query, not executing it.
+                'meta_value' => $metadata, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value -- Preparing data for a meta query, not executing it.
+            ];
         }
 
         if (empty($metadata)) {

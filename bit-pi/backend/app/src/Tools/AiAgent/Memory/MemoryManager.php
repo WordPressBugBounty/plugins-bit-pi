@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Tools\AiAgent\Memory;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -41,14 +41,14 @@ class MemoryManager
     public static function create(string $memorySlug, string $nodeId, array $config = []): MemoryInterface
     {
         if (!isset(self::$memoryTypes[$memorySlug])) {
-            throw new Exception("Memory type '{$memorySlug}' is not registered. Available types: " . implode(', ', array_keys(self::$memoryTypes)));
+            throw new Exception(esc_html("Memory type '{$memorySlug}' is not registered. Available types: " . implode(', ', array_keys(self::$memoryTypes))));
         }
 
         $className = self::$memoryTypes[$memorySlug];
 
         // Check if class exists
         if (!class_exists($className)) {
-            throw new Exception("Memory class '{$className}' does not exist.");
+            throw new Exception(esc_html("Memory class '{$className}' does not exist."));
         }
 
         // Create and return the memory instance
@@ -56,7 +56,7 @@ class MemoryManager
 
         // Verify it implements the interface
         if (!$instance instanceof MemoryInterface) {
-            throw new Exception("Memory class '{$className}' must implement MemoryInterface.");
+            throw new Exception(esc_html("Memory class '{$className}' must implement MemoryInterface."));
         }
 
         return $instance;
@@ -77,11 +77,11 @@ class MemoryManager
         $slug = strtolower(trim($slug));
 
         if (isset(self::$memoryTypes[$slug])) {
-            throw new Exception("Memory type '{$slug}' is already registered.");
+            throw new Exception(esc_html("Memory type '{$slug}' is already registered."));
         }
 
         if (!class_exists($className)) {
-            throw new Exception("Memory class '{$className}' does not exist.");
+            throw new Exception(esc_html("Memory class '{$className}' does not exist."));
         }
 
         self::$memoryTypes[$slug] = $className;

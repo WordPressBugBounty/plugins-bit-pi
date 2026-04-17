@@ -7,7 +7,7 @@ namespace BitApps\Pi\Views;
 use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Hooks\Hooks;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

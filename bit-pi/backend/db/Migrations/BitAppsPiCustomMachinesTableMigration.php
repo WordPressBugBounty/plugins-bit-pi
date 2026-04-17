@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-final class BitAppsPiCustomMachinesTableMigration extends Migration
+final class BitAppsPiCustomMachinesTableMigration extends Migration // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedClassFound
 {
     public function up(): void
     {

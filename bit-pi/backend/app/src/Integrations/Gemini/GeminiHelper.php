@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Integrations\Gemini;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -109,7 +109,7 @@ class GeminiHelper
                     filter_var($url, FILTER_VALIDATE_URL)
                     && (str_starts_with($url, 'http://') || str_starts_with($url, 'https://'))
                 ) {
-                    $ip = gethostbyname(parse_url($url, PHP_URL_HOST));
+                    $ip = gethostbyname(wp_parse_url($url, PHP_URL_HOST));
                     if (filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE)) {
                         $imageData = @file_get_contents(
                             $url,

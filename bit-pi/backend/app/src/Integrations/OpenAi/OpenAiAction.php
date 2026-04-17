@@ -3,11 +3,10 @@
 namespace BitApps\Pi\src\Integrations\OpenAi;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
-use BitApps\Pi\Helpers\MixInputHandler;
 use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\src\Authorization\AuthorizationFactory;
 use BitApps\Pi\src\Authorization\AuthorizationType;
@@ -54,9 +53,6 @@ class OpenAiAction implements ActionInterface
         $batchLimit = $this->nodeInfoProvider->getFieldMapConfigs('batch-limit.value');
         $memoryKey = $this->nodeInfoProvider->getFieldMapConfigs('memory-key.value');
         $contextLength = $this->nodeInfoProvider->getFieldMapConfigs('context-length.value');
-        $batchLimit = MixInputHandler::replaceMixTagValue($batchLimit);
-        $memoryKey = MixInputHandler::replaceMixTagValue($memoryKey);
-        $contextLength = MixInputHandler::replaceMixTagValue($contextLength);
         $fieldMapData = OpenAiActionHandler::handleConditions($fieldMapData, $stopSequence, $messageList, $inputFormat, $inputText, $optionalFields);
 
         if (!empty($optionalFields)) {

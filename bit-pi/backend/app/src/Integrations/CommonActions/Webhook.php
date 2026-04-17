@@ -3,12 +3,11 @@
 namespace BitApps\Pi\src\Integrations\CommonActions;
 
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
-use BitApps\Pi\Helpers\MixInputHandler;
 use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\src\Flow\NodeInfoProvider;
 use BitApps\Pi\src\Interfaces\ActionInterface;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -68,7 +67,7 @@ class Webhook implements ActionInterface
 
         $headers['Content-Type'] = $contentType;
 
-        $url = MixInputHandler::replaceMixTagValue($this->nodeInfoProvider->getFieldMapConfigs('url.value'));
+        $url = $machineConfig['url']['value'];
 
         if ($queryParams) {
             $url .= (strpos($url, '?') === false) ? '?' : '&';

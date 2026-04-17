@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Tools\AiAgent\Schema;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -317,10 +317,7 @@ class AIToolSchema
      */
     private function getDescription($toolConfig): string
     {
-        $description = MixInputHandler::replaceMixTagValue($toolConfig->description ?? 'No description provided');
-
-        // Process any mix input tags in the description
-        return $description ?? 'No description provided';
+        return $toolConfig->description ? MixInputHandler::replaceMixTagValue($toolConfig->description) : 'No description provided';
     }
 
     /**

@@ -9,7 +9,7 @@ use BitApps\Pi\src\Flow\NodeInfoProvider;
 use WPCF7_ContactForm;
 use WPCF7_Submission;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

@@ -3,12 +3,11 @@
 namespace BitApps\Pi\src\Integrations\Groq;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
-use BitApps\Pi\Helpers\MixInputHandler;
 use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\src\Authorization\AuthorizationFactory;
 use BitApps\Pi\src\Authorization\AuthorizationType;
@@ -45,9 +44,6 @@ class GroqAction implements ActionInterface
                 $memoryKey = $configs['memory-key']['value'] ?? '';
                 $contextLength = $configs['context-length']['value'] ?? '';
                 $isMemoryEnabled = $configs['memory-key-switch']['value'] ?? false;
-
-                $memoryKey = MixInputHandler::replaceMixTagValue($memoryKey);
-                $contextLength = MixInputHandler::replaceMixTagValue($contextLength);
 
                 return $this->groqService->createChatCompletion(
                     $messages,

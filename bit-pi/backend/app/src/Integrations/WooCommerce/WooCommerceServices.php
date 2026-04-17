@@ -10,7 +10,7 @@ use WC_Customer;
 use WC_Product_Attribute;
 use WC_Product_Variation;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -2343,7 +2343,7 @@ final class WooCommerceServices
             [
                 'post_type' => 'product',
                 'status'    => 'approve',
-                'meta_key'  => 'rating',
+                'meta_key'  => 'rating', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Required to filter reviews by rating
             ]
         );
 

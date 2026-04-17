@@ -4,7 +4,7 @@ namespace BitApps\Pi\src\Queue;
 
 use BitApps\Pi\Config;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -117,6 +117,10 @@ abstract class AsyncRequest
      */
     protected function getQueryArgs($identifier)
     {
+        if (defined('REST_REQUEST') && REST_REQUEST && ((int) wp_get_current_user()->ID) === 0) {
+            $_COOKIE = [];
+        }
+
         $args = [
             'action'      => $identifier,
             '_ajax_nonce' => wp_create_nonce(Config::withPrefix('nonce')),
@@ -127,7 +131,7 @@ abstract class AsyncRequest
          *
          * @param array $url
          */
-        return apply_filters($identifier . '_query_args', $args);
+        return apply_filters($identifier . '_query_args', $args); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
     }
 
     /**
@@ -141,7 +145,7 @@ abstract class AsyncRequest
     {
         $url = admin_url('admin-ajax.php');
 
-        return apply_filters($identifier . '_query_url', $url);
+        return apply_filters($identifier . '_query_url', $url); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
     }
 
     /**
@@ -153,12 +157,18 @@ abstract class AsyncRequest
      */
     protected function getPostArgs($identifier)
     {
+        $unslashedCookies = wp_unslash($_COOKIE); // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized -- sanitized below
+        $sanitizedCookies = array_combine(
+            array_map('sanitize_text_field', array_keys($unslashedCookies)),
+            array_map('sanitize_text_field', $unslashedCookies)
+        );
+
         $args = [
             'timeout'   => 0.01,
             'blocking'  => false,
+            'cookies'   => $sanitizedCookies,
             'body'      => $this->getBodyParams(),
-            'cookies'   => $_COOKIE, // Passing cookies ensures request is performed as initiating user.
-            'sslverify' => apply_filters('https_local_ssl_verify', false), // Local requests, fine to pass false.
+            'sslverify' => apply_filters('https_local_ssl_verify', false), // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound -- WordPress core hook.
         ];
 
         /*
@@ -166,7 +176,7 @@ abstract class AsyncRequest
          *
          * @param array $args
          */
-        return apply_filters($identifier . '_post_args', $args);
+        return apply_filters($identifier . '_post_args', $args); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
     }
 
     /**
@@ -183,7 +193,7 @@ abstract class AsyncRequest
          *
          * @return bool
          */
-        if (apply_filters($this->identifier . '_wp_die', true)) {
+        if (apply_filters($this->identifier . '_wp_die', true)) { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
             wp_die();
         }
 

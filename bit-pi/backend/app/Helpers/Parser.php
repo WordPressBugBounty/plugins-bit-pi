@@ -2,7 +2,7 @@
 
 namespace BitApps\Pi\Helpers;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -22,7 +22,7 @@ class Parser
 
         foreach ($response as $key => $value) {
             if (\is_array($value) || \is_object($value)) {
-                if (Utility::isMultiDimensionArray($value) || Utility::isSequentialArray($value)) {
+                if ((Utility::isMultiDimensionArray($value) && Utility::isSequentialArray($value)) || Utility::isSequentialArray($value)) {
                     $parsed[] = [
                         'key'   => $key,
                         'type'  => 'array',

@@ -2,12 +2,13 @@
 
 namespace BitApps\Pi\src\Queue;
 
-use stdClass;
-
-if (!\defined('ABSPATH')) {
+// Prevent direct script access
+if (!defined('ABSPATH')) {
     exit;
 }
 
+use BitApps\Pi\Config;
+use stdClass;
 
 abstract class BackgroundProcessHandler extends AsyncRequest
 {
@@ -252,7 +253,7 @@ abstract class BackgroundProcessHandler extends AsyncRequest
             // No data to process.
             return $this->maybeWpDie();
         }
-
+        check_ajax_referer(Config::withPrefix('nonce'), '_ajax_nonce');
         $this->handle();
 
         return $this->maybeWpDie();
@@ -297,6 +298,9 @@ abstract class BackgroundProcessHandler extends AsyncRequest
 
         $key = $wpdb->esc_like($this->identifier . '_batch_') . '%';
 
+        // Table and column names come from $wpdb->options / $wpdb->sitemeta (WordPress core values).
+        // They cannot be parameterized with $wpdb->prepare() as SQL identifiers don't support placeholders.
+        // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared, PluginCheck.Security.DirectDB.UnescapedDBParameter
         $sql = '
 			SELECT *
 			FROM ' . $table . '
@@ -307,11 +311,13 @@ abstract class BackgroundProcessHandler extends AsyncRequest
         $args = [$key];
 
         if ($limit !== 0) {
+            // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared, PluginCheck.Security.DirectDB.UnescapedDBParameter
             $sql .= ' LIMIT %d';
 
             $args[] = $limit;
         }
 
+        // phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching, WordPress.DB.PreparedSQL.NotPrepared, PluginCheck.Security.DirectDB.UnescapedDBParameter
         $items = $wpdb->get_results($wpdb->prepare($sql, $args));
 
         if (!empty($items)) {
@@ -380,6 +386,8 @@ abstract class BackgroundProcessHandler extends AsyncRequest
 
     public function batchProcessHandle()
     {
+        check_ajax_referer(Config::withPrefix('nonce'), '_ajax_nonce');
+
         $this->startTime = time();
 
         $batch = $this->getBatch();
@@ -414,7 +422,7 @@ abstract class BackgroundProcessHandler extends AsyncRequest
      */
     public function getCronInterval()
     {
-        $interval = apply_filters($this->cronIntervalIdentifier, 5);
+        $interval = apply_filters($this->cronIntervalIdentifier, 5); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
 
         return \is_int($interval) && $interval > 0 ? $interval : 5;
     }
@@ -424,7 +432,7 @@ abstract class BackgroundProcessHandler extends AsyncRequest
      */
     protected function cancelled()
     {
-        do_action($this->identifier . '_cancelled');
+        do_action($this->identifier . '_cancelled'); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
     }
 
     /**
@@ -432,7 +440,7 @@ abstract class BackgroundProcessHandler extends AsyncRequest
      */
     protected function paused()
     {
-        do_action($this->identifier . '_paused');
+        do_action($this->identifier . '_paused'); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
     }
 
     /**
@@ -440,7 +448,7 @@ abstract class BackgroundProcessHandler extends AsyncRequest
      */
     protected function resumed()
     {
-        do_action($this->identifier . '_resumed');
+        do_action($this->identifier . '_resumed'); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
     }
 
     /**
@@ -495,7 +503,7 @@ abstract class BackgroundProcessHandler extends AsyncRequest
         $this->startTime = time(); // Set start time of current process.
 
         // $lock_duration = property_exists($this, 'queue_lock_time') ? $this->queue_lock_time : 60;  1 minute
-        $lockDuration = apply_filters($this->identifier . '_queue_lock_time', $this->queueLockTime);
+        $lockDuration = apply_filters($this->identifier . '_queue_lock_time', $this->queueLockTime); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
 
         set_site_transient($this->identifier . '_process_lock', microtime(), $lockDuration);
     }
@@ -572,7 +580,7 @@ abstract class BackgroundProcessHandler extends AsyncRequest
             $return = true;
         }
 
-        return apply_filters($this->identifier . '_memory_exceeded', $return);
+        return apply_filters($this->identifier . '_memory_exceeded', $return); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
     }
 
     /**
@@ -602,18 +610,18 @@ abstract class BackgroundProcessHandler extends AsyncRequest
      */
     protected function timeExceeded()
     {
-        if (\defined('BACKGROUND_PROCESS_DISABLE') && BACKGROUND_PROCESS_DISABLE) {
+        if (defined('BACKGROUND_PROCESS_DISABLE') && BACKGROUND_PROCESS_DISABLE) {
             return false;
         }
 
-        $finish = $this->startTime + apply_filters($this->identifier . '_default_time_limit', 20); // 20
+        $finish = $this->startTime + apply_filters($this->identifier . '_default_time_limit', 20); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
         $return = false;
 
         if (time() >= $finish) {
             $return = true;
         }
 
-        return apply_filters($this->identifier . '_time_exceeded', $return);
+        return apply_filters($this->identifier . '_time_exceeded', $return); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
     }
 
     /**
@@ -637,7 +645,7 @@ abstract class BackgroundProcessHandler extends AsyncRequest
      */
     protected function completed()
     {
-        do_action($this->identifier . '_completed');
+        do_action($this->identifier . '_completed'); // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound
     }
 
     /**

@@ -5,7 +5,7 @@ namespace BitApps\Pi\src\Integrations\BitForm;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitCode\BitForm\API\BitForm_Public\BitForm_Public;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

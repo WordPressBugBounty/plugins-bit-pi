@@ -8,7 +8,7 @@ use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Hooks\Hooks;
 use BitApps\Pi\Deps\BitApps\WPKit\Utils\Capabilities;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

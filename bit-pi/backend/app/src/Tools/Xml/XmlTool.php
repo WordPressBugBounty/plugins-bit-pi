@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Tools\Xml;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -182,7 +182,7 @@ class XmlTool
                 return JSON::decode(JSON::encode($xmlElement), true);
 
             default:
-                throw new InvalidArgumentException("Unsupported type: {$type}");
+                throw new InvalidArgumentException(esc_html("Unsupported type: {$type}"));
         }
     }
 

@@ -3,7 +3,7 @@
 namespace BitApps\Pi;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -49,7 +49,9 @@ final class Plugin
         $this->registerInstaller();
 
 
-        if (!RequestType::is(RequestType::API) && !RequestType::is(RequestType::AJAX) && !RequestType::is(RequestType::CRON) && strpos($_SERVER['REQUEST_URI'], 'wp-content') === false) {
+        $requestUri = isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])) : '';
+
+        if (!RequestType::is(RequestType::API) && !RequestType::is(RequestType::AJAX) && !RequestType::is(RequestType::CRON) && strpos($requestUri, 'wp-content') === false) {
             $rewriteRules = get_option('rewrite_rules');
 
             $oAuthCallbackRoute = '^' . Config::SLUG . '/oauth-callback/?$';
@@ -142,7 +144,6 @@ final class Plugin
             new Layout();
             new HtmlTagModifier();
         }
-
 
         new HookProvider();
     }

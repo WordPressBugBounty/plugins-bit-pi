@@ -5,7 +5,7 @@ namespace BitApps\Pi\src\Authorization\Basic;
 use BitApps\Pi\Helpers\Hash;
 use BitApps\Pi\src\Authorization\AbstractBaseAuthorization;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

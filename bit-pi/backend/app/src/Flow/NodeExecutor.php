@@ -8,10 +8,10 @@ use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\Model\CustomApp;
 use BitApps\Pi\Model\FlowLog;
 use BitApps\Pi\src\Exception\MissingKeyException;
-use BitApps\Pi\src\Exception\PlatformNotFoundException;
 use BitApps\Pi\src\Log\LogHandler;
+use Exception;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -38,7 +38,7 @@ class NodeExecutor
         $app = $this->isExistClass($currentNodeInfo->app_slug);
 
         if (!$app) {
-            throw new PlatformNotFoundException($currentNodeInfo->app_slug);
+            throw new Exception(esc_html("Error: Platform '{$currentNodeInfo->app_slug}' not found."));
         }
 
         $startTime = microtime(true);

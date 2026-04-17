@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Tools;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -13,6 +13,7 @@ use BitApps\Pi\src\Tools\AiAgent\AiAgent;
 use BitApps\Pi\src\Tools\Condition\ConditionTool;
 use BitApps\Pi\src\Tools\Condition\DefaultConditionTool;
 use BitApps\Pi\src\Tools\Csv\CsvTool;
+use BitApps\Pi\src\Tools\DateTime\DateTimeTool;
 use BitApps\Pi\src\Tools\Delay\DelayTool;
 use BitApps\Pi\src\Tools\ImageHelper\ImageHelperTool;
 use BitApps\Pi\src\Tools\Iterator\IteratorTool;
@@ -109,6 +110,13 @@ class FlowToolsFactory
                 }
 
                 return new CsvTool(new NodeInfoProvider($currentNodeInfo), $flowHistoryId);
+
+            case 'dateTime':
+                if (!class_exists(DateTimeTool::class)) {
+                    return false;
+                }
+
+                return new DateTimeTool(new NodeInfoProvider($currentNodeInfo), $flowHistoryId);
 
             case 'imageHelper':
                 if (!class_exists(ImageHelperTool::class)) {

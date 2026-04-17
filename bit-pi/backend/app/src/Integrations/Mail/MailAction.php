@@ -5,7 +5,7 @@ namespace BitApps\Pi\src\Integrations\Mail;
 use BitApps\Pi\src\Flow\NodeInfoProvider;
 use BitApps\Pi\src\Interfaces\ActionInterface;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

@@ -7,7 +7,7 @@ use BitApps\Pi\src\Flow\NodeInfoProvider;
 use BitApps\Pi\src\Integrations\WordPress\helpers\WordPressActionHelper;
 use WP_User;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -340,7 +340,7 @@ final class WordPressServices
         $metaKey = $data['metaKey'] ?? null;
         $payload = [
             'user_id'  => $userId,
-            'meta_key' => $metaKey
+            'meta_key' => $metaKey // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Data payload, not a direct query
         ];
 
         if (empty($userId)) {
@@ -787,8 +787,8 @@ final class WordPressServices
 
         $payload = [
             'post_type'  => $postType,
-            'meta_key'   => $metaKey,
-            'meta_value' => $metaValue,
+            'meta_key'   => $metaKey, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Data payload, not a direct query
+            'meta_value' => $metaValue, // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value -- Data payload, not a direct query
         ];
 
         if (empty($postType)) {
@@ -847,7 +847,7 @@ final class WordPressServices
         $metaKey = $data['metaKey'] ?? null;
         $payload = [
             'post_id'  => $postId,
-            'meta_key' => $metaKey
+            'meta_key' => $metaKey // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Data payload, not a direct query
         ];
 
         if (empty($postId)) {
@@ -1204,7 +1204,7 @@ final class WordPressServices
         $metaKey = $data['metaKey'] ?? null;
         $payload = [
             'comment_id' => $commentId,
-            'meta_key'   => $metaKey
+            'meta_key'   => $metaKey // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key -- Data payload, not a direct query
         ];
 
         if (empty($commentId)) {

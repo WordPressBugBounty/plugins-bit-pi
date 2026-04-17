@@ -3,7 +3,7 @@
 namespace BitApps\Pi\HTTP\Controllers;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -21,6 +21,7 @@ use BitApps\Pi\Model\FlowLog;
 use BitApps\Pi\Model\FlowNode;
 use BitApps\Pi\Model\Tag;
 use BitApps\Pi\Services\FlowService;
+use BitApps\Pi\Services\Polling;
 use BitApps\Pi\src\Flow\FlowExecutor;
 use WP_Error;
 
@@ -43,7 +44,7 @@ final class FlowController
     {
         $validatedData = $request->validated();
 
-        $flow = Flow::select(['id', 'title', 'map', 'data'])
+        $flow = Flow::select(['id', 'title', 'map', 'data', 'is_active'])
             ->with(
                 'nodes',
                 function ($query) {
@@ -251,6 +252,8 @@ final class FlowController
         $getFlow->delete();
 
         FlowService::updateTriggerNodeInCache();
+
+        Polling::deletePollingData($request->id);
 
         return Response::success('Flow deleted successfully');
     }

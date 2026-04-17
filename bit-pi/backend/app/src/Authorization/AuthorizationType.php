@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Authorization;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

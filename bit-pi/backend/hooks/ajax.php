@@ -20,6 +20,7 @@ use BitApps\Pi\HTTP\Controllers\HookListenerController;
 use BitApps\Pi\HTTP\Controllers\NodeController;
 use BitApps\Pi\HTTP\Controllers\PluginImprovementController;
 use BitApps\Pi\HTTP\Controllers\ProxyController;
+use BitApps\Pi\HTTP\Controllers\SystemInfoController;
 use BitApps\Pi\HTTP\Controllers\TagController;
 use BitApps\Pi\HTTP\Controllers\WebhookController;
 use BitApps\Pi\src\Flow\FlowExecutor;
@@ -34,7 +35,7 @@ if (!headers_sent()) {
     header('Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With');
     header('Access-Control-Allow-Origin: *');
 
-    if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
         status_header(200);
 
         exit;
@@ -102,6 +103,7 @@ Route::group(
         Route::get('histories/{flow_id}/{page_number}/{page_limit}', [HistoryController::class, 'index']);
         Route::get('histories/{history_id}', [HistoryController::class, 'show']);
         Route::get('dashboard', [DashboardController::class, 'index']);
+        Route::get('system-info', [SystemInfoController::class, 'index']);
         Route::get('plugin-improvement', [PluginImprovementController::class, 'getOpt']);
         Route::post('plugin-improvement', [PluginImprovementController::class, 'updateOpt']);
     }

@@ -3,12 +3,11 @@
 namespace BitApps\Pi\src\Integrations\OpenRouter;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
-use BitApps\Pi\Helpers\MixInputHandler;
 use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\src\Authorization\AuthorizationFactory;
 use BitApps\Pi\src\Authorization\AuthorizationType;
@@ -43,10 +42,8 @@ class OpenRouterAction implements ActionInterface
             case 'createChatCompletion':
                 $fieldMapData['messages'] = $messagesList;
                 $isMemoryEnabled = $configs['memory-key-switch']['value'] ?? null;
-                $memoryKeyMixInput = $this->nodeInfoProvider->getFieldMapConfigs('memory-key.value');
-                $memoryKey = MixInputHandler::replaceMixTagValue($memoryKeyMixInput);
+                $memoryKey = $this->nodeInfoProvider->getFieldMapConfigs('memory-key.value');
                 $contextLength = $this->nodeInfoProvider->getFieldMapConfigs('context-length.value');
-                $contextLength = MixInputHandler::replaceMixTagValue($contextLength);
 
                 return $this->openRouterService->createChatCompletion($fieldMapData, $isMemoryEnabled, $memoryKey, $contextLength);
 

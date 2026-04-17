@@ -5,7 +5,7 @@ namespace BitApps\Pi\src;
 use BitApps\Pi\Config;
 use BitApps\Pi\Views\Body;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

@@ -2,10 +2,11 @@
 
 namespace BitApps\Pi\src\Authorization\OAuth2;
 
+use BitApps\Pi\Config;
 use BitApps\Pi\Helpers\Hash;
 use BitApps\Pi\src\Authorization\AbstractBaseAuthorization;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -19,6 +20,8 @@ class OAuth2Authorization extends AbstractBaseAuthorization
     private $tokenDetails;
 
     private $refreshTokenUrl;
+
+    private $expiresIn;
 
     public function __construct($connectionId)
     {
@@ -41,9 +44,7 @@ class OAuth2Authorization extends AbstractBaseAuthorization
         }
 
         $tokenDetails['access_token'] = Hash::encrypt($response->access_token);
-
-        $tokenDetails['expires_in'] = $response->expires_in;
-
+        $tokenDetails = apply_filters(Config::VAR_PREFIX . 'before_store_connection_auth_details', $tokenDetails, $this->connection->app_slug ?? '');
         $tokenDetails['generated_at'] = time();
 
         return $this->updateConnection($this->connection, $tokenDetails);

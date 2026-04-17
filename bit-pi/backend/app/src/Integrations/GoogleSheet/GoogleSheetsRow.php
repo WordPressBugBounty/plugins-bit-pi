@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Integrations\GoogleSheet;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -104,10 +104,8 @@ final class GoogleSheetsRow
 
         $workSheetName = empty($configs['sheet-title']['value']) ? '' : $configs['sheet-title']['value'];
 
-
         if (empty($spreadsheetsId) || empty($workSheetName)) {
             return [
-                'status'   => 'error',
                 'message'  => 'Spreadsheet ID or Sheet Title is missing',
                 'response' => []
             ];
@@ -152,7 +150,6 @@ final class GoogleSheetsRow
             return ['response' => $rows, 'payload' => ['sheet_name' => $workSheetName, 'id' => $spreadsheetsId]];
         } catch (Exception $e) {
             return [
-                'status'   => 'error',
                 'message'  => 'Error fetching rows: ' . $e->getMessage(),
                 'response' => []
             ];

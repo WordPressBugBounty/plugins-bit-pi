@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Tools\ImageHelper;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -429,7 +429,7 @@ class ImageHelperTool
     private function cleanupTempFile($tmpFile)
     {
         if ($tmpFile && file_exists($tmpFile)) {
-            unlink($tmpFile);
+            wp_delete_file($tmpFile);
         }
     }
 
@@ -575,7 +575,7 @@ class ImageHelperTool
 
             if (!$attachmentId) {
                 if (file_exists($uploadPath)) {
-                    unlink($uploadPath);
+                    wp_delete_file($uploadPath);
                 }
 
                 return ['error' => 'Failed to create attachment in database'];

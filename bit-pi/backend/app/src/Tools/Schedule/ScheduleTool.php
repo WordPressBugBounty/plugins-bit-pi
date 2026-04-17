@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Tools\Schedule;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -12,15 +12,15 @@ use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Model\Flow;
 use BitApps\Pi\Model\FlowNode;
 use BitApps\Pi\Services\Polling;
+use BitApps\Pi\src\Abstracts\AbstractPollingTrigger;
 use BitApps\Pi\src\Flow\FlowExecutor;
 use BitApps\Pi\src\Flow\NodeExecutor;
-
 use BitApps\Pi\src\Flow\NodeInfoProvider;
 
 /**
  * ScheduleTool.
  *
- * Handles the execution of scheduled flows in Bit Pi Pro.
+ * Handles the execution of scheduled flows in Bit Pi.
  * This tool manages the triggering of flows based on scheduled events,
  * including both direct schedule triggers and polling-based triggers for external data sources.
  *
@@ -77,11 +77,11 @@ class ScheduleTool
 
         $machineSlug = $nodeInfo->machine_slug ?? null;
 
-        if ($dayOfMonth !== null && $dayOfMonth !== date('j') && !$isTestFlow) {
+        if ($dayOfMonth !== null && $dayOfMonth !== wp_date('j') && !$isTestFlow) {
             return;
         }
 
-        if ($day !== null && $day !== date('w') && !$isTestFlow) {
+        if ($day !== null && $day !== wp_date('w') && !$isTestFlow) {
             return;
         }
 
@@ -105,9 +105,9 @@ class ScheduleTool
             return;
         }
 
-        $triggerApp = (new NodeExecutor())->isExistClass($appSlug, 'Trigger');
+        $triggerApp = (new NodeExecutor())->isExistClass($appSlug, 'PollingTrigger');
 
-        if (!$triggerApp || !method_exists($triggerApp, 'pull')) {
+        if (!$triggerApp || !method_exists($triggerApp, 'poll')) {
             return;
         }
 
@@ -115,33 +115,46 @@ class ScheduleTool
 
         $pollingUniqueFieldName = 'id';
 
-        if (method_exists($triggerApp, 'getUniquePollingFieldName')) {
-            $pollingUniqueFieldName = $triggerApp->getUniquePollingFieldName();
+        $pollingType = AbstractPollingTrigger::TYPE_NEW;
+
+        if (method_exists($triggerApp, 'getPollingUniqueFieldName')) {
+            $pollingUniqueFieldName = $triggerApp->getPollingUniqueFieldName();
         }
 
-        $response = $triggerApp->pull()['output'] ?? [];
+        if (method_exists($triggerApp, 'getPollingType')) {
+            $pollingType = $triggerApp->getPollingType();
+        }
+
+        $response = $triggerApp->poll()['output'] ?? [];
 
         if (empty($response)) {
             return;
         }
 
-        $optionName = Config::VAR_PREFIX . 'pool_response_' . $nodeId;
+        $optionName = 'poll_response_' . $nodeId;
 
         $storedResponse = Config::getOption($optionName);
 
         // If no previous response exists, cache current response and exit
         if (!$storedResponse) {
-            $compressedResponse = base64_encode(gzcompress(wp_json_encode($response)));
-            Config::updateOption($optionName, $compressedResponse);
+            $compressedResponse = base64_encode(gzcompress(JSON::encode($response)));
+            Config::updateOption($optionName, $compressedResponse, false);
 
             return;
         }
 
         $decompressedStoredResponse = gzuncompress(base64_decode($storedResponse));
 
+        if ($decompressedStoredResponse === false) {
+            // If decompression fails, clear the stored response to avoid future errors
+            Config::deleteOption($optionName);
+
+            return;
+        }
+
         $decodedStoredResponse = JSON::maybeDecode($decompressedStoredResponse, true);
 
-        $changeDetected = (new Polling())->detectNewOrUpdatedData($decodedStoredResponse, $response, $pollingUniqueFieldName);
+        $changeDetected = (new Polling())->detectNewOrUpdatedData($decodedStoredResponse, $response, $pollingUniqueFieldName, $pollingType);
 
         if (!$changeDetected) {
             return;
@@ -149,7 +162,7 @@ class ScheduleTool
 
         $newResponse = base64_encode(gzcompress(wp_json_encode($response)));
 
-        Config::updateOption(Config::VAR_PREFIX . 'pool_response_' . $nodeId, $newResponse);
+        Config::updateOption('poll_response_' . $nodeId, $newResponse, false);
 
         foreach ($changeDetected as $newItem) {
             FlowExecutor::execute($flow, $newItem);

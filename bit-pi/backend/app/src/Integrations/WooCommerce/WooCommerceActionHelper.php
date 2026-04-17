@@ -7,7 +7,7 @@ use WC_Coupon;
 use WC_Product;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

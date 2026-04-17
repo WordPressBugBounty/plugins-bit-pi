@@ -1,0 +1,1 @@
+import{default as r}from"./doaction-whole-deer-marry-346.js";import"./utilscss-whole-deer-marry-457.js";import"./lodash-whole-deer-marry-824.js";import"./main-whole-deer-marry.js";globalThis.jotaiAtomCache=globalThis.jotaiAtomCache||{cache:new Map,get(t,e){return this.cache.has(t)?this.cache.get(t):(this.cache.set(t,e),e)}};export{r as default};

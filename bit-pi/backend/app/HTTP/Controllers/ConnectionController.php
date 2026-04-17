@@ -3,11 +3,12 @@
 namespace BitApps\Pi\HTTP\Controllers;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
 
+use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitApps\Pi\Helpers\Hash;
@@ -34,11 +35,13 @@ final class ConnectionController
     public function store(ConnectionStoreRequest $request)
     {
         $reqData = $request->validated();
+        $appSlug = $reqData['app_slug'] ?? '';
 
         $encrypt_keys = $request->get('encrypt_keys', []);
         $reqData['encrypt_keys'] = implode(',', $encrypt_keys);
         $authDetails = $reqData['auth_details'];
         $authDetails['generated_at'] = time();
+        $authDetails = apply_filters(Config::VAR_PREFIX . 'before_store_connection_auth_details', $authDetails, $appSlug);
 
         if (\count($encrypt_keys) > 0) {
             foreach ($encrypt_keys as $value) {

@@ -6,7 +6,7 @@ use BitApps\Pi\src\Flow\NodeInfoProvider;
 use BitApps\Pi\src\Integrations\WordPress\WordPressServices;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

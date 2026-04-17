@@ -5,7 +5,7 @@ namespace BitApps\Pi\Views;
 use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\DateTimeHelper;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -34,11 +34,14 @@ class Head
         wp_enqueue_style($slug . '-font', self::FONT_URL, [], $version);
 
         if (Config::getEnv('DEV')) {
-            // wp_enqueue_script($slug, 'https://unpkg.com/react-scan/dist/auto.global.js', [], $version);
+            // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion, WordPress.WP.EnqueuedResourceParameters.NotInFooter -- Dev server scripts; version and footer loading not applicable.
             wp_enqueue_script($slug . '-vite-client-helper-MODULE', Config::getEnv('DEV_URL') . '/src/config/devHotModule.js', [], null);
+            // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion, WordPress.WP.EnqueuedResourceParameters.NotInFooter
             wp_enqueue_script($slug . '-vite-client-MODULE', Config::getEnv('DEV_URL') . '/@vite/client', [], null);
+            // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion, WordPress.WP.EnqueuedResourceParameters.NotInFooter
             wp_enqueue_script($slug . '-index-MODULE', Config::getEnv('DEV_URL') . '/src/main.tsx', [], null);
         } else {
+            // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.NoExplicitVersion, WordPress.WP.EnqueuedResourceParameters.NotInFooter -- Version is embedded in the filename via build code name.
             wp_enqueue_script($slug . '-index-MODULE', Config::get('ASSET_URI') . "/main-{$codeName}.js", [], ''); // WARNING: Do not add version in production, it may cause unexpected behavior.
             wp_enqueue_style($slug . '-styles', Config::get('ASSET_URI') . "/main-{$slug}-ba-assets-{$codeName}.css", null, $version, 'screen');
         }
@@ -58,6 +61,7 @@ class Head
     public static function createConfigVariable()
     {
         $frontendVars = apply_filters(
+            // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound -- Prefixed via Config::withPrefix() (bit_pi_).
             Config::withPrefix('localized_script'),
             [
                 'nonce'          => wp_create_nonce(Config::withPrefix('nonce')),

@@ -7,7 +7,7 @@ use BitApps\Pi\src\Integrations\HookRegisterInterface;
 use BitApps\Pi\src\Integrations\WordPress\helpers\WordPressActionHelper;
 use BitApps\Pi\src\Integrations\WpActionHookListener\WpActionHookListener;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

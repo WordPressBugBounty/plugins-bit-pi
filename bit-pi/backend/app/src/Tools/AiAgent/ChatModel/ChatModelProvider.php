@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Tools\AiAgent\ChatModel;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -279,16 +279,10 @@ class ChatModelProvider
             return ['error' => 'Tool class not found for ' . $functionName];
         }
 
-        update_option('ai_agent_tool_args_' . $nodeId, $functionArgs);
-
-        $provider = new NodeInfoProvider($node);
+        $provider = new NodeInfoProvider($node, $functionArgs);
 
         $instance = new $appClass($provider);
 
-        $output = $instance->execute()['output'] ?? [];
-
-        delete_option('ai_agent_tool_args_' . $nodeId);
-
-        return $output;
+        return $instance->execute()['output'] ?? [];
     }
 }

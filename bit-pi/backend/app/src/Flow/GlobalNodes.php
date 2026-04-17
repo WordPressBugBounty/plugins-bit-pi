@@ -4,7 +4,7 @@ namespace BitApps\Pi\src\Flow;
 
 use BitApps\Pi\Model\FlowNode;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

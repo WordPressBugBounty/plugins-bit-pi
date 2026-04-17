@@ -1,4 +1,9 @@
 <?php
+
+if ( ! defined( 'ABSPATH' ) ) {
+    exit;
+}
+
 /* THIS IS A GENERATED FILE. DO NOT EDIT DIRECTLY. */
 return [
     '1' => __('1', 'bit-pi'),
@@ -61,6 +66,7 @@ return [
 
     'Your license is invalid' => __('Your license is invalid', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     'Plugin Update Required (%s)' => __('Plugin Update Required (%s)', 'bit-pi'),
 
     'Please update both Free and Pro plugins to the latest version. Keeping them the same is crucial to avoid potential issues.' => __('Please update both Free and Pro plugins to the latest version. Keeping them the same is crucial to avoid potential issues.', 'bit-pi'),
@@ -89,6 +95,7 @@ return [
 
     'Write a review' => __('Write a review', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     'of your experience with %s, and we\'ll send you a' => __('of your experience with %s, and we\'ll send you a', 'bit-pi'),
 
     '$10 Cash back' => __('$10 Cash back', 'bit-pi'),
@@ -409,6 +416,10 @@ return [
 
     'Back' => __('Back', 'bit-pi'),
 
+    'Active' => __('Active', 'bit-pi'),
+
+    'Inactive' => __('Inactive', 'bit-pi'),
+
     'Try Pro' => __('Try Pro', 'bit-pi'),
 
     'Saving' => __('Saving', 'bit-pi'),
@@ -575,7 +586,8 @@ return [
 
     'Clone' => __('Clone', 'bit-pi'),
 
-    'Are you sure %s this %s?' => __('Are you sure %s this %s?', 'bit-pi'),
+    /* translators: 1: placeholder value, 2: placeholder value */
+    'Are you sure %1$s this %2$s?' => __('Are you sure %1$s this %2$s?', 'bit-pi'),
 
     'Chat Model' => __('Chat Model', 'bit-pi'),
 
@@ -590,6 +602,8 @@ return [
     'Add more condition' => __('Add more condition', 'bit-pi'),
 
     'CSV Tool' => __('CSV Tool', 'bit-pi'),
+
+    'Date Time Node' => __('Date Time Node', 'bit-pi'),
 
     'Delay Node' => __('Delay Node', 'bit-pi'),
 
@@ -606,6 +620,8 @@ return [
     'CSV' => __('CSV', 'bit-pi'),
 
     'Custom Code' => __('Custom Code', 'bit-pi'),
+
+    'Date Time' => __('Date Time', 'bit-pi'),
 
     'Default Condition Logic' => __('Default Condition Logic', 'bit-pi'),
 
@@ -627,6 +643,7 @@ return [
 
     'Are you sure to delete this' => __('Are you sure to delete this', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     'Delete the %s' => __('Delete the %s', 'bit-pi'),
 
     'Schedule Node' => __('Schedule Node', 'bit-pi'),
@@ -637,23 +654,35 @@ return [
 
     'Flow deleted successfully' => __('Flow deleted successfully', 'bit-pi'),
 
-    'Status updated successfully' => __('Status updated successfully', 'bit-pi'),
-
     'Flow updated successfully' => __('Flow updated successfully', 'bit-pi'),
 
     'If you delete you can\'t recover it' => __('If you delete you can\'t recover it', 'bit-pi'),
 
     'Are you Confirm to Delete?' => __('Are you Confirm to Delete?', 'bit-pi'),
 
+    'Rename' => __('Rename', 'bit-pi'),
+
+    'Deactivate flow' => __('Deactivate flow', 'bit-pi'),
+
+    'Activate flow' => __('Activate flow', 'bit-pi'),
+
+    'Flow execution count' => __('Flow execution count', 'bit-pi'),
+
+    'Manage tags' => __('Manage tags', 'bit-pi'),
+
     'Update' => __('Update', 'bit-pi'),
 
-    'Edit Flow' => __('Edit Flow', 'bit-pi'),
+    'Edit Tags' => __('Edit Tags', 'bit-pi'),
 
-    'Title' => __('Title', 'bit-pi'),
+    'Rename Flow' => __('Rename Flow', 'bit-pi'),
 
     'Edit flow title' => __('Edit flow title', 'bit-pi'),
 
     'Tags' => __('Tags', 'bit-pi'),
+
+    'Flow activated.' => __('Flow activated.', 'bit-pi'),
+
+    'Flow deactivated.' => __('Flow deactivated.', 'bit-pi'),
 
     'Search variables' => __('Search variables', 'bit-pi'),
 
@@ -743,12 +772,14 @@ return [
 
     'Select App' => __('Select App', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     'Select %s' => __('Select %s', 'bit-pi'),
 
     'Select Event' => __('Select Event', 'bit-pi'),
 
     'Integrations' => __('Integrations', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     'No apps found for "%s"' => __('No apps found for "%s"', 'bit-pi'),
 
     'Request for new Integration' => __('Request for new Integration', 'bit-pi'),
@@ -767,6 +798,54 @@ return [
 
     'CSV contains headers' => __('CSV contains headers', 'bit-pi'),
 
+    'F j, Y' => __('F j, Y', 'bit-pi'),
+
+    'F, Y' => __('F, Y', 'bit-pi'),
+
+    'Y-m-d' => __('Y-m-d', 'bit-pi'),
+
+    'm/d/Y' => __('m/d/Y', 'bit-pi'),
+
+    'd/m/Y' => __('d/m/Y', 'bit-pi'),
+
+    'd.m.Y' => __('d.m.Y', 'bit-pi'),
+
+    'Unix Timestamp' => __('Unix Timestamp', 'bit-pi'),
+
+    'Custom' => __('Custom', 'bit-pi'),
+
+    'Format Date' => __('Format Date', 'bit-pi'),
+
+    'Parse Date' => __('Parse Date', 'bit-pi'),
+
+    'Add Time' => __('Add Time', 'bit-pi'),
+
+    'Subtract Time' => __('Subtract Time', 'bit-pi'),
+
+    'Get Current Date/Time' => __('Get Current Date/Time', 'bit-pi'),
+
+    'Get Time Between Dates' => __('Get Time Between Dates', 'bit-pi'),
+
+    'Enter the date/time value to process' => __('Enter the date/time value to process', 'bit-pi'),
+
+    'Date/Time Value' => __('Date/Time Value', 'bit-pi'),
+
+    'Date Format' => __('Date Format', 'bit-pi'),
+
+    'Source Date Format' => __('Source Date Format', 'bit-pi'),
+
+    'Select date format' => __('Select date format', 'bit-pi'),
+
+    'Enter custom date format (e.g., Y-m-d H:i:s)' => __('Enter custom date format (e.g., Y-m-d H:i:s)', 'bit-pi'),
+
+    'Custom Format' => __('Custom Format', 'bit-pi'),
+
+    'Duration' => __('Duration', 'bit-pi'),
+
+    'Unit' => __('Unit', 'bit-pi'),
+
+    'Seconds' => __('Seconds', 'bit-pi'),
+
     'Minutes' => __('Minutes', 'bit-pi'),
 
     'Hours' => __('Hours', 'bit-pi'),
@@ -776,6 +855,42 @@ return [
     'Weeks' => __('Weeks', 'bit-pi'),
 
     'Months' => __('Months', 'bit-pi'),
+
+    'Years' => __('Years', 'bit-pi'),
+
+    'Result Date Format' => __('Result Date Format', 'bit-pi'),
+
+    'Select result date format' => __('Select result date format', 'bit-pi'),
+
+    'Enter custom result date format (e.g., Y-m-d H:i:s)' => __('Enter custom result date format (e.g., Y-m-d H:i:s)', 'bit-pi'),
+
+    'Custom Output Format' => __('Custom Output Format', 'bit-pi'),
+
+    'Enter the start date/time' => __('Enter the start date/time', 'bit-pi'),
+
+    'Start Date' => __('Start Date', 'bit-pi'),
+
+    'Enter the end date/time' => __('Enter the end date/time', 'bit-pi'),
+
+    'End Date' => __('End Date', 'bit-pi'),
+
+    'Units' => __('Units', 'bit-pi'),
+
+    'Year' => __('Year', 'bit-pi'),
+
+    'Month' => __('Month', 'bit-pi'),
+
+    'Week' => __('Week', 'bit-pi'),
+
+    'Day' => __('Day', 'bit-pi'),
+
+    'Hour' => __('Hour', 'bit-pi'),
+
+    'Minute' => __('Minute', 'bit-pi'),
+
+    'Second' => __('Second', 'bit-pi'),
+
+    'Select units' => __('Select units', 'bit-pi'),
 
     'Select time & unit how long the delay should be to execute the next node' => __('Select time & unit how long the delay should be to execute the next node', 'bit-pi'),
 
@@ -827,6 +942,8 @@ return [
 
     'The title for the uploaded image. This will be used as the attachment title in WordPress Media Library.' => __('The title for the uploaded image. This will be used as the attachment title in WordPress Media Library.', 'bit-pi'),
 
+    'Title' => __('Title', 'bit-pi'),
+
     'Alternative text for accessibility. This describes the image for screen readers and improves SEO.' => __('Alternative text for accessibility. This describes the image for screen readers and improves SEO.', 'bit-pi'),
 
     'Alternative Text' => __('Alternative Text', 'bit-pi'),
@@ -858,16 +975,6 @@ return [
     'Add Schedule' => __('Add Schedule', 'bit-pi'),
 
     'Trigger Interval' => __('Trigger Interval', 'bit-pi'),
-
-    'Minute' => __('Minute', 'bit-pi'),
-
-    'Hour' => __('Hour', 'bit-pi'),
-
-    'Day' => __('Day', 'bit-pi'),
-
-    'Week' => __('Week', 'bit-pi'),
-
-    'Month' => __('Month', 'bit-pi'),
 
     'Minutes Between Triggers' => __('Minutes Between Triggers', 'bit-pi'),
 
@@ -1005,10 +1112,13 @@ return [
 
     'Write tag name' => __('Write tag name', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     'Array start is missing for "%s", try remove and add it again' => __('Array start is missing for "%s", try remove and add it again', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     'Array path is invalid for "%s", try remove and add it again' => __('Array path is invalid for "%s", try remove and add it again', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     'Array end is missing for "%s", try remove and add it again' => __('Array end is missing for "%s", try remove and add it again', 'bit-pi'),
 
     'Question' => __('Question', 'bit-pi'),
@@ -1025,9 +1135,12 @@ return [
 
     'label-action' => __('label-action', 'bit-pi'),
 
+    /* translators: %d: placeholder value */
     'Item %d' => __('Item %d', 'bit-pi'),
 
     'Load More...' => __('Load More...', 'bit-pi'),
+
+    'Map' => __('Map', 'bit-pi'),
 
     'Tag 1' => __('Tag 1', 'bit-pi'),
 
@@ -1155,6 +1268,8 @@ return [
 
     'Module deleted successfully' => __('Module deleted successfully', 'bit-pi'),
 
+    'Status updated successfully' => __('Status updated successfully', 'bit-pi'),
+
     'WP action hook' => __('WP action hook', 'bit-pi'),
 
     'Trigger name should be unique and descriptive. For example, "New Order Received".' => __('Trigger name should be unique and descriptive. For example, "New Order Received".', 'bit-pi'),
@@ -1203,10 +1318,13 @@ return [
 
     'Logs' => __('Logs', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     '%s (Tools)' => __('%s (Tools)', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     'Duration: %s\'s' => __('Duration: %s\'s', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     'Size: %s KB' => __('Size: %s KB', 'bit-pi'),
 
     'Re-execute' => __('Re-execute', 'bit-pi'),
@@ -1254,6 +1372,8 @@ return [
     'Webhooks' => __('Webhooks', 'bit-pi'),
 
     'Settings' => __('Settings', 'bit-pi'),
+
+    'System Info' => __('System Info', 'bit-pi'),
 
     'Bit Pi Logo' => __('Bit Pi Logo', 'bit-pi'),
 
@@ -1306,6 +1426,84 @@ return [
     'Pro Feature' => __('Pro Feature', 'bit-pi'),
 
     'Enable this option to trigger cron jobs from the cloud, ensuring they run more accurately.' => __('Enable this option to trigger cron jobs from the cloud, ensuring they run more accurately.', 'bit-pi'),
+
+    'Installed' => __('Installed', 'bit-pi'),
+
+    'Missing' => __('Missing', 'bit-pi'),
+
+    'System Information' => __('System Information', 'bit-pi'),
+
+    'Overview of your server environment and plugin configuration.' => __('Overview of your server environment and plugin configuration.', 'bit-pi'),
+
+    'WordPress' => __('WordPress', 'bit-pi'),
+
+    'SSL' => __('SSL', 'bit-pi'),
+
+    'Enabled' => __('Enabled', 'bit-pi'),
+
+    'Disabled' => __('Disabled', 'bit-pi'),
+
+    'Multisite' => __('Multisite', 'bit-pi'),
+
+    'Debug Mode' => __('Debug Mode', 'bit-pi'),
+
+    'Debug Log' => __('Debug Log', 'bit-pi'),
+
+    'Timezone' => __('Timezone', 'bit-pi'),
+
+    'WP Cron' => __('WP Cron', 'bit-pi'),
+
+    'Recommended: Enabled' => __('Recommended: Enabled', 'bit-pi'),
+
+    'Server' => __('Server', 'bit-pi'),
+
+    'Software' => __('Software', 'bit-pi'),
+
+    'PHP Version' => __('PHP Version', 'bit-pi'),
+
+    'Recommended: 8.1+' => __('Recommended: 8.1+', 'bit-pi'),
+
+    'PHP SAPI' => __('PHP SAPI', 'bit-pi'),
+
+    'OS' => __('OS', 'bit-pi'),
+
+    'Database' => __('Database', 'bit-pi'),
+
+    'Type' => __('Type', 'bit-pi'),
+
+    'Table Prefix' => __('Table Prefix', 'bit-pi'),
+
+    'PHP Configuration' => __('PHP Configuration', 'bit-pi'),
+
+    'Memory Limit' => __('Memory Limit', 'bit-pi'),
+
+    'Recommended: 512M' => __('Recommended: 512M', 'bit-pi'),
+
+    'Max Upload Size' => __('Max Upload Size', 'bit-pi'),
+
+    'Post Max Size' => __('Post Max Size', 'bit-pi'),
+
+    'Max Execution Time' => __('Max Execution Time', 'bit-pi'),
+
+    'Recommended: 180–300s' => __('Recommended: 180–300s', 'bit-pi'),
+
+    'Max Input Vars' => __('Max Input Vars', 'bit-pi'),
+
+    'Allow URL Fopen' => __('Allow URL Fopen', 'bit-pi'),
+
+    'PHP Extensions' => __('PHP Extensions', 'bit-pi'),
+
+    'cURL' => __('cURL', 'bit-pi'),
+
+    'mbstring' => __('mbstring', 'bit-pi'),
+
+    'zip' => __('zip', 'bit-pi'),
+
+    'fileinfo' => __('fileinfo', 'bit-pi'),
+
+    'JSON' => __('JSON', 'bit-pi'),
+
+    'OpenSSL' => __('OpenSSL', 'bit-pi'),
 
     'Go to Flow' => __('Go to Flow', 'bit-pi'),
 
@@ -1824,8 +2022,6 @@ return [
     'Database Remove' => __('Database Remove', 'bit-pi'),
 
     'Database View' => __('Database View', 'bit-pi'),
-
-    'Database' => __('Database', 'bit-pi'),
 
     'Desktop' => __('Desktop', 'bit-pi'),
 
@@ -2687,6 +2883,76 @@ return [
 
     'Map the fields to update the record. Select field names and provide their new values.' => __('Map the fields to update the record. Select field names and provide their new values.', 'bit-pi'),
 
+    'Find Records' => __('Find Records', 'bit-pi'),
+
+    'Delete Records' => __('Delete Records', 'bit-pi'),
+
+    'Select your AITable Space from the list.' => __('Select your AITable Space from the list.', 'bit-pi'),
+
+    'Select Space' => __('Select Space', 'bit-pi'),
+
+    'Select the datasheet where you want to create a record.' => __('Select the datasheet where you want to create a record.', 'bit-pi'),
+
+    'Select Datasheet' => __('Select Datasheet', 'bit-pi'),
+
+    'Select the datasheet to delete records from.' => __('Select the datasheet to delete records from.', 'bit-pi'),
+
+    'Select single or multiple records to delete.' => __('Select single or multiple records to delete.', 'bit-pi'),
+
+    'Select Records' => __('Select Records', 'bit-pi'),
+
+    'Select records to delete' => __('Select records to delete', 'bit-pi'),
+
+    'Select the datasheet where you want to find records.' => __('Select the datasheet where you want to find records.', 'bit-pi'),
+
+    'Filter by Formula' => __('Filter by Formula', 'bit-pi'),
+
+    'The returned record results are limited to the specified fields. Enter field names separated by commas.' => __('The returned record results are limited to the specified fields. Enter field names separated by commas.', 'bit-pi'),
+
+    'Field Names' => __('Field Names', 'bit-pi'),
+
+    'Enter the record IDs to find. You can add multiple record IDs.' => __('Enter the record IDs to find. You can add multiple record IDs.', 'bit-pi'),
+
+    'Record ID #{COUNT}' => __('Record ID #{COUNT}', 'bit-pi'),
+
+    'Record IDs' => __('Record IDs', 'bit-pi'),
+
+    'How many records are returned in total.' => __('How many records are returned in total.', 'bit-pi'),
+
+    'Max Records' => __('Max Records', 'bit-pi'),
+
+    'How many records are returned per page (max 1000).' => __('How many records are returned per page (max 1000).', 'bit-pi'),
+
+    'Page Size' => __('Page Size', 'bit-pi'),
+
+    'Specifies the page number of the page.' => __('Specifies the page number of the page.', 'bit-pi'),
+
+    'Page Number' => __('Page Number', 'bit-pi'),
+
+    'The View ID to limit the search to a specific view.' => __('The View ID to limit the search to a specific view.', 'bit-pi'),
+
+    'View ID' => __('View ID', 'bit-pi'),
+
+    'Select the datasheet to retrieve records from.' => __('Select the datasheet to retrieve records from.', 'bit-pi'),
+
+    'Maximum number of records to retrieve (default: 100, max: 1000).' => __('Maximum number of records to retrieve (default: 100, max: 1000).', 'bit-pi'),
+
+    'Enter max records (e.g., 100)' => __('Enter max records (e.g., 100)', 'bit-pi'),
+
+    'You can generate your AITable token from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://apitable.com/workbench">Here</a>' => __('You can generate your AITable token from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://apitable.com/workbench">Here</a>', 'bit-pi'),
+
+    'AITable Token' => __('AITable Token', 'bit-pi'),
+
+    'Select the datasheet where you want to update a record.' => __('Select the datasheet where you want to update a record.', 'bit-pi'),
+
+    'Select the record you want to update.' => __('Select the record you want to update.', 'bit-pi'),
+
+    'Select Record' => __('Select Record', 'bit-pi'),
+
+    'Select record to update' => __('Select record to update', 'bit-pi'),
+
+    'Map the fields to update a record. Select field names and provide their values.' => __('Map the fields to update a record. Select field names and provide their values.', 'bit-pi'),
+
     'Watch Submission' => __('Watch Submission', 'bit-pi'),
 
     'New Appointment Added' => __('New Appointment Added', 'bit-pi'),
@@ -2738,8 +3004,6 @@ return [
     'Task Run Finished' => __('Task Run Finished', 'bit-pi'),
 
     'Select whether to monitor an actor or a task.' => __('Select whether to monitor an actor or a task.', 'bit-pi'),
-
-    'Type' => __('Type', 'bit-pi'),
 
     'Actor' => __('Actor', 'bit-pi'),
 
@@ -3427,8 +3691,6 @@ return [
 
     'Time Estimate' => __('Time Estimate', 'bit-pi'),
 
-    'Start Date' => __('Start Date', 'bit-pi'),
-
     'Start Date Time' => __('Start Date Time', 'bit-pi'),
 
     'Points' => __('Points', 'bit-pi'),
@@ -3700,8 +3962,6 @@ return [
     'Select a Account list' => __('Select a Account list', 'bit-pi'),
 
     'Subscriber Status' => __('Subscriber Status', 'bit-pi'),
-
-    'Active' => __('Active', 'bit-pi'),
 
     'Unsubscribed' => __('Unsubscribed', 'bit-pi'),
 
@@ -3975,8 +4235,6 @@ return [
 
     'Abuse' => __('Abuse', 'bit-pi'),
 
-    'Inactive' => __('Inactive', 'bit-pi'),
-
     'Stale' => __('Stale', 'bit-pi'),
 
     'NotConfirmed' => __('NotConfirmed', 'bit-pi'),
@@ -3996,6 +4254,196 @@ return [
     'Custom Field Mapping' => __('Custom Field Mapping', 'bit-pi'),
 
     'Forms New Record' => __('Forms New Record', 'bit-pi'),
+
+    'Some models may not be available in the free tier, may require a subscription to use.' => __('Some models may not be available in the free tier, may require a subscription to use.', 'bit-pi'),
+
+    'Speech' => __('Speech', 'bit-pi'),
+
+    'Text to Speech' => __('Text to Speech', 'bit-pi'),
+
+    'Speech to Text' => __('Speech to Text', 'bit-pi'),
+
+    'Agents' => __('Agents', 'bit-pi'),
+
+    'Create Agent' => __('Create Agent', 'bit-pi'),
+
+    'Get Agent' => __('Get Agent', 'bit-pi'),
+
+    'Delete Agent' => __('Delete Agent', 'bit-pi'),
+
+    'List Agents' => __('List Agents', 'bit-pi'),
+
+    'Voices' => __('Voices', 'bit-pi'),
+
+    'List Voices' => __('List Voices', 'bit-pi'),
+
+    'List all available voices.' => __('List all available voices.', 'bit-pi'),
+
+    'Get Voice' => __('Get Voice', 'bit-pi'),
+
+    'Delete Voice' => __('Delete Voice', 'bit-pi'),
+
+    'Voice Removal Notice' => __('Voice Removal Notice', 'bit-pi'),
+
+    'Transcription Completed' => __('Transcription Completed', 'bit-pi'),
+
+    'Enter the name for the agent.' => __('Enter the name for the agent.', 'bit-pi'),
+
+    'Select the voice for the agent.' => __('Select the voice for the agent.', 'bit-pi'),
+
+    'Voice' => __('Voice', 'bit-pi'),
+
+    'Enter the prompt/system message for the agent.' => __('Enter the prompt/system message for the agent.', 'bit-pi'),
+
+    'Prompt' => __('Prompt', 'bit-pi'),
+
+    'Select the LLM (Large Language Model) to use.' => __('Select the LLM (Large Language Model) to use.', 'bit-pi'),
+
+    'LLM' => __('LLM', 'bit-pi'),
+
+    'Controls randomness in responses. Range: 0.0 to 2.0. Default: 1.0.' => __('Controls randomness in responses. Range: 0.0 to 2.0. Default: 1.0.', 'bit-pi'),
+
+    'Temperature' => __('Temperature', 'bit-pi'),
+
+    'The first message the agent will say.' => __('The first message the agent will say.', 'bit-pi'),
+
+    'First Message' => __('First Message', 'bit-pi'),
+
+    'Language code for the agent (e.g., "en" for English, "es" for Spanish).' => __('Language code for the agent (e.g., "en" for English, "es" for Spanish).', 'bit-pi'),
+
+    'Language Code' => __('Language Code', 'bit-pi'),
+
+    'Select the model to use for the agent.' => __('Select the model to use for the agent.', 'bit-pi'),
+
+    'Maximum duration for agent responses in seconds.' => __('Maximum duration for agent responses in seconds.', 'bit-pi'),
+
+    'Max Duration Seconds' => __('Max Duration Seconds', 'bit-pi'),
+
+    'Enter the ID of the agent you want to delete.' => __('Enter the ID of the agent you want to delete.', 'bit-pi'),
+
+    'Agent ID' => __('Agent ID', 'bit-pi'),
+
+    'Enter the ID of the voice you want to delete.' => __('Enter the ID of the voice you want to delete.', 'bit-pi'),
+
+    'Voice ID' => __('Voice ID', 'bit-pi'),
+
+    'Enter the ID of the agent you want to retrieve.' => __('Enter the ID of the agent you want to retrieve.', 'bit-pi'),
+
+    'Select the voice to retrieve details for.' => __('Select the voice to retrieve details for.', 'bit-pi'),
+
+    'You can find your API key in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://elevenlabs.io/app/settings/api-keys">ElevenLabs API Keys</a>' => __('You can find your API key in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://elevenlabs.io/app/settings/api-keys">ElevenLabs API Keys</a>', 'bit-pi'),
+
+    'Api Key' => __('Api Key', 'bit-pi'),
+
+    'Maximum number of agents to return. The default value as well as the maximum is 100.' => __('Maximum number of agents to return. The default value as well as the maximum is 100.', 'bit-pi'),
+
+    'Select the model to use for speech-to-text conversion.' => __('Select the model to use for speech-to-text conversion.', 'bit-pi'),
+
+    'Scribe V1' => __('Scribe V1', 'bit-pi'),
+
+    'Scribe V2' => __('Scribe V2', 'bit-pi'),
+
+    'Enter the URL of the audio file to transcribe.' => __('Enter the URL of the audio file to transcribe.', 'bit-pi'),
+
+    'File URL' => __('File URL', 'bit-pi'),
+
+    'Language code for the audio (e.g., "en" for English, "es" for Spanish). Optional.' => __('Language code for the audio (e.g., "en" for English, "es" for Spanish). Optional.', 'bit-pi'),
+
+    'Enable tagging of audio events in the transcription.' => __('Enable tagging of audio events in the transcription.', 'bit-pi'),
+
+    'Tag Audio Events' => __('Tag Audio Events', 'bit-pi'),
+
+    'Select the voice to use for text-to-speech conversion.' => __('Select the voice to use for text-to-speech conversion.', 'bit-pi'),
+
+    'Select the model to use for text-to-speech. E.g. eleven_multilingual_v2.' => __('Select the model to use for text-to-speech. E.g. eleven_multilingual_v2.', 'bit-pi'),
+
+    'Enter the text you want to convert to speech.' => __('Enter the text you want to convert to speech.', 'bit-pi'),
+
+    'Show advanced settings for voice stability and similarity boost.' => __('Show advanced settings for voice stability and similarity boost.', 'bit-pi'),
+
+    'Show Advanced Settings' => __('Show Advanced Settings', 'bit-pi'),
+
+    'Controls the stability of the voice. Higher values make the voice more consistent. Range: 0.0 to 1.0. Default: 0.5.' => __('Controls the stability of the voice. Higher values make the voice more consistent. Range: 0.0 to 1.0. Default: 0.5.', 'bit-pi'),
+
+    'Stability' => __('Stability', 'bit-pi'),
+
+    'Controls how closely the voice matches the original. Higher values increase similarity. Range: 0.0 to 1.0. Default: 0.75.' => __('Controls how closely the voice matches the original. Higher values increase similarity. Range: 0.0 to 1.0. Default: 0.75.', 'bit-pi'),
+
+    'Similarity Boost' => __('Similarity Boost', 'bit-pi'),
+
+    'Controls the style exaggeration. Higher values make the voice more expressive. Range: 0.0 to 1.0. Default: 0.0.' => __('Controls the style exaggeration. Higher values make the voice more expressive. Range: 0.0 to 1.0. Default: 0.0.', 'bit-pi'),
+
+    'Style' => __('Style', 'bit-pi'),
+
+    'Whether to use speaker boost for better quality.' => __('Whether to use speaker boost for better quality.', 'bit-pi'),
+
+    'Use Speaker Boost' => __('Use Speaker Boost', 'bit-pi'),
+
+    'Controls the speed of speech generation. Range: 0.25 to 4.0. Default: 1.0.' => __('Controls the speed of speech generation. Range: 0.25 to 4.0. Default: 1.0.', 'bit-pi'),
+
+    'Speed' => __('Speed', 'bit-pi'),
+
+    'Language code for the text (e.g., "en" for English, "es" for Spanish). Optional.' => __('Language code for the text (e.g., "en" for English, "es" for Spanish). Optional.', 'bit-pi'),
+
+    'Select the audio output format.' => __('Select the audio output format.', 'bit-pi'),
+
+    'Output Format' => __('Output Format', 'bit-pi'),
+
+    'ALAW 8000' => __('ALAW 8000', 'bit-pi'),
+
+    'MP3 22050 32' => __('MP3 22050 32', 'bit-pi'),
+
+    'MP3 24000 48' => __('MP3 24000 48', 'bit-pi'),
+
+    'MP3 44100 128' => __('MP3 44100 128', 'bit-pi'),
+
+    'MP3 44100 192' => __('MP3 44100 192', 'bit-pi'),
+
+    'MP3 44100 32' => __('MP3 44100 32', 'bit-pi'),
+
+    'MP3 44100 64' => __('MP3 44100 64', 'bit-pi'),
+
+    'MP3 44100 96' => __('MP3 44100 96', 'bit-pi'),
+
+    'OPUS 48000 128' => __('OPUS 48000 128', 'bit-pi'),
+
+    'OPUS 48000 192' => __('OPUS 48000 192', 'bit-pi'),
+
+    'OPUS 48000 32' => __('OPUS 48000 32', 'bit-pi'),
+
+    'OPUS 48000 64' => __('OPUS 48000 64', 'bit-pi'),
+
+    'OPUS 48000 96' => __('OPUS 48000 96', 'bit-pi'),
+
+    'PCM 16000' => __('PCM 16000', 'bit-pi'),
+
+    'PCM 22050' => __('PCM 22050', 'bit-pi'),
+
+    'PCM 24000' => __('PCM 24000', 'bit-pi'),
+
+    'PCM 32000' => __('PCM 32000', 'bit-pi'),
+
+    'PCM 44100' => __('PCM 44100', 'bit-pi'),
+
+    'PCM 48000' => __('PCM 48000', 'bit-pi'),
+
+    'PCM 8000' => __('PCM 8000', 'bit-pi'),
+
+    'ULAW 8000' => __('ULAW 8000', 'bit-pi'),
+
+    'WAV 16000' => __('WAV 16000', 'bit-pi'),
+
+    'WAV 22050' => __('WAV 22050', 'bit-pi'),
+
+    'WAV 24000' => __('WAV 24000', 'bit-pi'),
+
+    'WAV 32000' => __('WAV 32000', 'bit-pi'),
+
+    'WAV 44100' => __('WAV 44100', 'bit-pi'),
+
+    'WAV 48000' => __('WAV 48000', 'bit-pi'),
+
+    'WAV 8000' => __('WAV 8000', 'bit-pi'),
 
     'Send Email' => __('Send Email', 'bit-pi'),
 
@@ -5849,8 +6297,6 @@ return [
 
     'The prompt describing the image you want to generate.' => __('The prompt describing the image you want to generate.', 'bit-pi'),
 
-    'Prompt' => __('Prompt', 'bit-pi'),
-
     'Select the aspect ratio for the generated image.' => __('Select the aspect ratio for the generated image.', 'bit-pi'),
 
     'Aspect Ratio' => __('Aspect Ratio', 'bit-pi'),
@@ -5872,8 +6318,6 @@ return [
     'Reference Images URL' => __('Reference Images URL', 'bit-pi'),
 
     'Controls randomness. Lower values make output more deterministic. Range: 0.0 to 2.0' => __('Controls randomness. Lower values make output more deterministic. Range: 0.0 to 2.0', 'bit-pi'),
-
-    'Temperature' => __('Temperature', 'bit-pi'),
 
     'Limits the next token selection to the K most probable tokens. Range: 1 to 100' => __('Limits the next token selection to the K most probable tokens. Range: 1 to 100', 'bit-pi'),
 
@@ -6127,23 +6571,23 @@ return [
 
     'Choose from pre-existing tags or add new tags by writing and pressing Enter.' => __('Choose from pre-existing tags or add new tags by writing and pressing Enter.', 'bit-pi'),
 
-    'Select contact(s) to add to campaign.' => __('Select contact(s) to add to campaign.', 'bit-pi'),
+    'Select contact or enter the contact Id to add to campaign.' => __('Select contact or enter the contact Id to add to campaign.', 'bit-pi'),
 
     'Select Contacts' => __('Select Contacts', 'bit-pi'),
 
-    'Select the campaign to add contacts to.' => __('Select the campaign to add contacts to.', 'bit-pi'),
+    'Select campaign or enter the campaign Id to add contacts to.' => __('Select campaign or enter the campaign Id to add contacts to.', 'bit-pi'),
 
     'Select Campaign' => __('Select Campaign', 'bit-pi'),
 
-    'Select the contact to add to the workflow.' => __('Select the contact to add to the workflow.', 'bit-pi'),
+    'Select contact or enter the contact Id to add to the workflow.' => __('Select contact or enter the contact Id to add to the workflow.', 'bit-pi'),
 
     'Select the workflow to add the contact to.' => __('Select the workflow to add the contact to.', 'bit-pi'),
 
     'Select Workflow' => __('Select Workflow', 'bit-pi'),
 
-    'Select the contact to add a note to.' => __('Select the contact to add a note to.', 'bit-pi'),
+    'Select contact or enter the contact Id to add a note to.' => __('Select contact or enter the contact Id to add a note to.', 'bit-pi'),
 
-    'Select the user adding the note.' => __('Select the user adding the note.', 'bit-pi'),
+    'Select user or enter the user Id adding the note.' => __('Select user or enter the user Id adding the note.', 'bit-pi'),
 
     'Enter the note to add to the contact.' => __('Enter the note to add to the contact.', 'bit-pi'),
 
@@ -6155,7 +6599,7 @@ return [
 
     'Enter the title of the opportunity.' => __('Enter the title of the opportunity.', 'bit-pi'),
 
-    'Select the contact to associate with the opportunity.' => __('Select the contact to associate with the opportunity.', 'bit-pi'),
+    'Select contact or enter the contact Id to associate with the opportunity.' => __('Select contact or enter the contact Id to associate with the opportunity.', 'bit-pi'),
 
     'Select the status of the opportunity.' => __('Select the status of the opportunity.', 'bit-pi'),
 
@@ -6173,7 +6617,7 @@ return [
 
     'Monetary Value' => __('Monetary Value', 'bit-pi'),
 
-    'Select the contact to associate this task with.' => __('Select the contact to associate this task with.', 'bit-pi'),
+    'Select contact or enter the contact Id to associate this task with.' => __('Select contact or enter the contact Id to associate this task with.', 'bit-pi'),
 
     'Enter the title of the task.' => __('Enter the title of the task.', 'bit-pi'),
 
@@ -6207,11 +6651,11 @@ return [
 
     'Select Pipeline' => __('Select Pipeline', 'bit-pi'),
 
-    'Select opportunity to update.' => __('Select opportunity to update.', 'bit-pi'),
+    'Select opportunity or enter the opportunity Id to update.' => __('Select opportunity or enter the opportunity Id to update.', 'bit-pi'),
 
     'Select Opportunity' => __('Select Opportunity', 'bit-pi'),
 
-    'Select the task you want to update.' => __('Select the task you want to update.', 'bit-pi'),
+    'Select task or enter the task Id to update.' => __('Select task or enter the task Id to update.', 'bit-pi'),
 
     'Enter the due date and time in ISO 8601 format (e.g., 2024-12-31T23:59:59Z).' => __('Enter the due date and time in ISO 8601 format (e.g., 2024-12-31T23:59:59Z).', 'bit-pi'),
 
@@ -6296,8 +6740,6 @@ return [
     'Enter the event start date. You can enter date and time together, e.g., 2025-12-20 07:30' => __('Enter the event start date. You can enter date and time together, e.g., 2025-12-20 07:30', 'bit-pi'),
 
     'Enter the event end date. You can enter date and time together, e.g., 2025-12-20 08:30' => __('Enter the event end date. You can enter date and time together, e.g., 2025-12-20 08:30', 'bit-pi'),
-
-    'End Date' => __('End Date', 'bit-pi'),
 
     'Enter the location of the event.' => __('Enter the location of the event.', 'bit-pi'),
 
@@ -6737,8 +7179,6 @@ return [
 
     'Refetch Columns' => __('Refetch Columns', 'bit-pi'),
 
-    'Show Advanced Settings' => __('Show Advanced Settings', 'bit-pi'),
-
     'Choose how new data is added relative to existing sheet content. \'Overwrite\' updates empty columns without affecting existing data; \'Insert Rows\' always adds new rows.' => __('Choose how new data is added relative to existing sheet content. \'Overwrite\' updates empty columns without affecting existing data; \'Insert Rows\' always adds new rows.', 'bit-pi'),
 
     'Insert Data Option' => __('Insert Data Option', 'bit-pi'),
@@ -6863,8 +7303,6 @@ return [
 
     'You can find your API key in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.groq.com/keys">Groq Console API Keys</a>' => __('You can find your API key in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.groq.com/keys">Groq Console API Keys</a>', 'bit-pi'),
 
-    'Api Key' => __('Api Key', 'bit-pi'),
-
     'Choose the Groq model to use for transcription.' => __('Choose the Groq model to use for transcription.', 'bit-pi'),
 
     'whisper-large-v3' => __('whisper-large-v3', 'bit-pi'),
@@ -6884,8 +7322,6 @@ return [
     'The sampling temperature, between 0 and 1. Default is 0.' => __('The sampling temperature, between 0 and 1. Default is 0.', 'bit-pi'),
 
     'The format of the transcript output.' => __('The format of the transcript output.', 'bit-pi'),
-
-    'JSON' => __('JSON', 'bit-pi'),
 
     'Verbose JSON' => __('Verbose JSON', 'bit-pi'),
 
@@ -7843,6 +8279,7 @@ return [
 
     '**Note**: You must have Advanced KDP enabled to use this endpoint.' => __('**Note**: You must have Advanced KDP enabled to use this endpoint.', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     'Please refer to the [Klaviyo Webhooks API Overview](%s) for more information.' => __('Please refer to the [Klaviyo Webhooks API Overview](%s) for more information.', 'bit-pi'),
 
     'Create a Profile' => __('Create a Profile', 'bit-pi'),
@@ -7945,8 +8382,6 @@ return [
 
     'ZIP/Postal Code' => __('ZIP/Postal Code', 'bit-pi'),
 
-    'Timezone' => __('Timezone', 'bit-pi'),
-
     'You can find your API key in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://www.klaviyo.com/settings/account/api-keys">Klaviyo Api Settings</a>' => __('You can find your API key in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://www.klaviyo.com/settings/account/api-keys">Klaviyo Api Settings</a>', 'bit-pi'),
 
     'Klaviyo API' => __('Klaviyo API', 'bit-pi'),
@@ -8026,8 +8461,6 @@ return [
     'Service ID' => __('Service ID', 'bit-pi'),
 
     'Enter the LatePoint service ID' => __('Enter the LatePoint service ID', 'bit-pi'),
-
-    'Agent ID' => __('Agent ID', 'bit-pi'),
 
     'Enter the LatePoint agent ID' => __('Enter the LatePoint agent ID', 'bit-pi'),
 
@@ -8447,9 +8880,17 @@ return [
 
     'Content of the email. You can map an HTML field here. If you map an HTML field, you must set the "Is this email in HTML format?" option to true.' => __('Content of the email. You can map an HTML field here. If you map an HTML field, you must set the "Is this email in HTML format?" option to true.', 'bit-pi'),
 
-    'Attachments to be included in the email.' => __('Attachments to be included in the email.', 'bit-pi'),
+    'Enter file URLs or paths separated by commas, or use the button below to pick files directly from the WordPress media library.' => __('Enter file URLs or paths separated by commas, or use the button below to pick files directly from the WordPress media library.', 'bit-pi'),
 
     'Attachments' => __('Attachments', 'bit-pi'),
+
+    'Select from Media Library' => __('Select from Media Library', 'bit-pi'),
+
+    'Pick one or more files from the WordPress media library and append their URLs to the field above.' => __('Pick one or more files from the WordPress media library and append their URLs to the field above.', 'bit-pi'),
+
+    'Select Files' => __('Select Files', 'bit-pi'),
+
+    'Select Attachments' => __('Select Attachments', 'bit-pi'),
 
     'Add Lead' => __('Add Lead', 'bit-pi'),
 
@@ -8969,7 +9410,89 @@ return [
 
     'The ID of the list you want to update.' => __('The ID of the list you want to update.', 'bit-pi'),
 
+    'Add Subscriber To List' => __('Add Subscriber To List', 'bit-pi'),
+
     'Subscriber subscribed' => __('Subscriber subscribed', 'bit-pi'),
+
+    'Enter the email address of the subscriber.' => __('Enter the email address of the subscriber.', 'bit-pi'),
+
+    'Subscriber Email' => __('Subscriber Email', 'bit-pi'),
+
+    'Enter the first name of the subscriber.' => __('Enter the first name of the subscriber.', 'bit-pi'),
+
+    'Enter the last name of the subscriber.' => __('Enter the last name of the subscriber.', 'bit-pi'),
+
+    'Select the status of the subscriber.' => __('Select the status of the subscriber.', 'bit-pi'),
+
+    'Hardbounced' => __('Hardbounced', 'bit-pi'),
+
+    'Select the list(s) to add the subscriber to.' => __('Select the list(s) to add the subscriber to.', 'bit-pi'),
+
+    'Add Custom Field' => __('Add Custom Field', 'bit-pi'),
+
+    'Map custom fields to their values. Each row will have the field-value pairs you define here.' => __('Map custom fields to their values. Each row will have the field-value pairs you define here.', 'bit-pi'),
+
+    'Search Subscribers by Email' => __('Search Subscribers by Email', 'bit-pi'),
+
+    'Transactional Email' => __('Transactional Email', 'bit-pi'),
+
+    'Select the list to add the subscriber to.' => __('Select the list to add the subscriber to.', 'bit-pi'),
+
+    'Failed to fetch subscribers' => __('Failed to fetch subscribers', 'bit-pi'),
+
+    'Please fill in all connection details' => __('Please fill in all connection details', 'bit-pi'),
+
+    'No lists found' => __('No lists found', 'bit-pi'),
+
+    'Enter your MailWizz installation URL and API key. You can find your API key in your MailWizz settings.' => __('Enter your MailWizz installation URL and API key. You can find your API key in your MailWizz settings.', 'bit-pi'),
+
+    'MailWizz URL' => __('MailWizz URL', 'bit-pi'),
+
+    'https://your-mailwizz-domain.com' => __('https://your-mailwizz-domain.com', 'bit-pi'),
+
+    'Select the list to search the subscriber in.' => __('Select the list to search the subscriber in.', 'bit-pi'),
+
+    'Enter the email address to find the subscriber.' => __('Enter the email address to find the subscriber.', 'bit-pi'),
+
+    'Enter the recipient email address.' => __('Enter the recipient email address.', 'bit-pi'),
+
+    'To Email' => __('To Email', 'bit-pi'),
+
+    'Enter the recipient name.' => __('Enter the recipient name.', 'bit-pi'),
+
+    'To Name' => __('To Name', 'bit-pi'),
+
+    'Enter the subject of the email.' => __('Enter the subject of the email.', 'bit-pi'),
+
+    'Enter the HTML body of the email.' => __('Enter the HTML body of the email.', 'bit-pi'),
+
+    'Body (HTML)' => __('Body (HTML)', 'bit-pi'),
+
+    'Enter the plain text version of the email body.' => __('Enter the plain text version of the email body.', 'bit-pi'),
+
+    'Body (Plain Text)' => __('Body (Plain Text)', 'bit-pi'),
+
+    'Enter the sender name.' => __('Enter the sender name.', 'bit-pi'),
+
+    'Enter the sender email address.' => __('Enter the sender email address.', 'bit-pi'),
+
+    'Enter the reply-to name.' => __('Enter the reply-to name.', 'bit-pi'),
+
+    'Reply To Name' => __('Reply To Name', 'bit-pi'),
+
+    'Enter the reply-to email address.' => __('Enter the reply-to email address.', 'bit-pi'),
+
+    'Enter the date and time to send the email (UTC). Format: YYYY-MM-DD HH:MM:SS' => __('Enter the date and time to send the email (UTC). Format: YYYY-MM-DD HH:MM:SS', 'bit-pi'),
+
+    'Send At' => __('Send At', 'bit-pi'),
+
+    'Add Attachment' => __('Add Attachment', 'bit-pi'),
+
+    'File URL/Content' => __('File URL/Content', 'bit-pi'),
+
+    'Select the list.' => __('Select the list.', 'bit-pi'),
+
+    'Select the subscriber to unsubscribe.' => __('Select the subscriber to unsubscribe.', 'bit-pi'),
 
     'Course Completed' => __('Course Completed', 'bit-pi'),
 
@@ -9092,6 +9615,152 @@ return [
     'Select the worksheet to delete.' => __('Select the worksheet to delete.', 'bit-pi'),
 
     'The range where the new row will be added, e.g., A1:C1.' => __('The range where the new row will be added, e.g., A1:C1.', 'bit-pi'),
+
+    'boards & workspaces' => __('boards & workspaces', 'bit-pi'),
+
+    'Get a Board' => __('Get a Board', 'bit-pi'),
+
+    'Get Boards' => __('Get Boards', 'bit-pi'),
+
+    'Archive Board' => __('Archive Board', 'bit-pi'),
+
+    'Get Workspaces' => __('Get Workspaces', 'bit-pi'),
+
+    'Returns the list of workspaces in the connected monday.com account.' => __('Returns the list of workspaces in the connected monday.com account.', 'bit-pi'),
+
+    'groups management' => __('groups management', 'bit-pi'),
+
+    'Get Many Groups' => __('Get Many Groups', 'bit-pi'),
+
+    'Duplicate Group' => __('Duplicate Group', 'bit-pi'),
+
+    'Delete Group' => __('Delete Group', 'bit-pi'),
+
+    'Archive Group' => __('Archive Group', 'bit-pi'),
+
+    'items management' => __('items management', 'bit-pi'),
+
+    'Get an Item' => __('Get an Item', 'bit-pi'),
+
+    'List Group Items' => __('List Group Items', 'bit-pi'),
+
+    'Update Item' => __('Update Item', 'bit-pi'),
+
+    'Create Subitem' => __('Create Subitem', 'bit-pi'),
+
+    'Move Item to Group' => __('Move Item to Group', 'bit-pi'),
+
+    'Archive Item' => __('Archive Item', 'bit-pi'),
+
+    'Delete Item' => __('Delete Item', 'bit-pi'),
+
+    'columns management' => __('columns management', 'bit-pi'),
+
+    'Create Column' => __('Create Column', 'bit-pi'),
+
+    'Get File Column Values' => __('Get File Column Values', 'bit-pi'),
+
+    'user & account' => __('user & account', 'bit-pi'),
+
+    'Get User Details' => __('Get User Details', 'bit-pi'),
+
+    'Returns details of the user connected to the monday.com account.' => __('Returns details of the user connected to the monday.com account.', 'bit-pi'),
+
+    'Find User by Name' => __('Find User by Name', 'bit-pi'),
+
+    'Select the board you want to archive.' => __('Select the board you want to archive.', 'bit-pi'),
+
+    'Select Board' => __('Select Board', 'bit-pi'),
+
+    'Select the board containing the group.' => __('Select the board containing the group.', 'bit-pi'),
+
+    'Select the group you want to archive.' => __('Select the group you want to archive.', 'bit-pi'),
+
+    'Select the board containing the item.' => __('Select the board containing the item.', 'bit-pi'),
+
+    'Select the item you want to archive.' => __('Select the item you want to archive.', 'bit-pi'),
+
+    'Select Item' => __('Select Item', 'bit-pi'),
+
+    'Select the board where the column will be created.' => __('Select the board where the column will be created.', 'bit-pi'),
+
+    'Select the type of column to create.' => __('Select the type of column to create.', 'bit-pi'),
+
+    'Column Type' => __('Column Type', 'bit-pi'),
+
+    'Enter the title for the new column.' => __('Enter the title for the new column.', 'bit-pi'),
+
+    'Column Title' => __('Column Title', 'bit-pi'),
+
+    'Select the board where the group will be created.' => __('Select the board where the group will be created.', 'bit-pi'),
+
+    'Enter the name for the new group.' => __('Enter the name for the new group.', 'bit-pi'),
+
+    'Select the board containing the parent item.' => __('Select the board containing the parent item.', 'bit-pi'),
+
+    'Select the parent item for the subitem.' => __('Select the parent item for the subitem.', 'bit-pi'),
+
+    'Enter the name for the new subitem.' => __('Enter the name for the new subitem.', 'bit-pi'),
+
+    'Subitem Name' => __('Subitem Name', 'bit-pi'),
+
+    'Select the group you want to delete.' => __('Select the group you want to delete.', 'bit-pi'),
+
+    'Enter the ID of the item to delete.' => __('Enter the ID of the item to delete.', 'bit-pi'),
+
+    'Item ID' => __('Item ID', 'bit-pi'),
+
+    'Select the board containing the group to duplicate.' => __('Select the board containing the group to duplicate.', 'bit-pi'),
+
+    'Select the group to duplicate.' => __('Select the group to duplicate.', 'bit-pi'),
+
+    'Enter the title for the duplicated group.' => __('Enter the title for the duplicated group.', 'bit-pi'),
+
+    'New Group Title' => __('New Group Title', 'bit-pi'),
+
+    'Add the duplicated group to the top of the board.' => __('Add the duplicated group to the top of the board.', 'bit-pi'),
+
+    'Add Group to Top' => __('Add Group to Top', 'bit-pi'),
+
+    'Enter the name to search for users.' => __('Enter the name to search for users.', 'bit-pi'),
+
+    'User Name' => __('User Name', 'bit-pi'),
+
+    'Select the board you want to fetch.' => __('Select the board you want to fetch.', 'bit-pi'),
+
+    'Enter the maximum number of boards to retrieve (default: 50).' => __('Enter the maximum number of boards to retrieve (default: 50).', 'bit-pi'),
+
+    'Select the item.' => __('Select the item.', 'bit-pi'),
+
+    'Select the column to get values from.' => __('Select the column to get values from.', 'bit-pi'),
+
+    'Select Column' => __('Select Column', 'bit-pi'),
+
+    'Enter the ID of the item to retrieve.' => __('Enter the ID of the item to retrieve.', 'bit-pi'),
+
+    'Select the board to get groups from.' => __('Select the board to get groups from.', 'bit-pi'),
+
+    'Enter the maximum number of groups to retrieve (optional).' => __('Enter the maximum number of groups to retrieve (optional).', 'bit-pi'),
+
+    'You can find your API token in' => __('You can find your API token in', 'bit-pi'),
+
+    'Monday.com API Settings' => __('Monday.com API Settings', 'bit-pi'),
+
+    'Select the group to list items from.' => __('Select the group to list items from.', 'bit-pi'),
+
+    'Enter the maximum number of items to retrieve (optional).' => __('Enter the maximum number of items to retrieve (optional).', 'bit-pi'),
+
+    'Select the board containing the item and target group.' => __('Select the board containing the item and target group.', 'bit-pi'),
+
+    'Select the target group to move the item to.' => __('Select the target group to move the item to.', 'bit-pi'),
+
+    'Select the item to move.' => __('Select the item to move.', 'bit-pi'),
+
+    'Select the group containing the item.' => __('Select the group containing the item.', 'bit-pi'),
+
+    'Select the item to update.' => __('Select the item to update.', 'bit-pi'),
+
+    'Column Values' => __('Column Values', 'bit-pi'),
 
     'Award Points' => __('Award Points', 'bit-pi'),
 
@@ -9239,6 +9908,44 @@ return [
 
     'User Status Set To Deny' => __('User Status Set To Deny', 'bit-pi'),
 
+    'Add Row in Table' => __('Add Row in Table', 'bit-pi'),
+
+    'Delete Row in Table' => __('Delete Row in Table', 'bit-pi'),
+
+    'Update Row in Table' => __('Update Row in Table', 'bit-pi'),
+
+    'Get All Tables' => __('Get All Tables', 'bit-pi'),
+
+    'List Rows in Table' => __('List Rows in Table', 'bit-pi'),
+
+    'New Row Added' => __('New Row Added', 'bit-pi'),
+
+    'Row Updated' => __('Row Updated', 'bit-pi'),
+
+    'Table ID' => __('Table ID', 'bit-pi'),
+
+    'Enter table ID' => __('Enter table ID', 'bit-pi'),
+
+    'Owner ID' => __('Owner ID', 'bit-pi'),
+
+    'Column Name' => __('Column Name', 'bit-pi'),
+
+    'Enter column name' => __('Enter column name', 'bit-pi'),
+
+    'Column Value' => __('Column Value', 'bit-pi'),
+
+    'Enter column value' => __('Enter column value', 'bit-pi'),
+
+    'Map column names to their values for the new row.' => __('Map column names to their values for the new row.', 'bit-pi'),
+
+    'Row Fields' => __('Row Fields', 'bit-pi'),
+
+    'Row ID' => __('Row ID', 'bit-pi'),
+
+    'Owner ID - Optional' => __('Owner ID - Optional', 'bit-pi'),
+
+    'Map column names to their updated values.' => __('Map column names to their updated values.', 'bit-pi'),
+
     'Get a Database' => __('Get a Database', 'bit-pi'),
 
     'Get a Page' => __('Get a Page', 'bit-pi'),
@@ -9284,8 +9991,6 @@ return [
     'Enter the start cursor' => __('Enter the start cursor', 'bit-pi'),
 
     'The returned user-list size. Maximum: 100' => __('The returned user-list size. Maximum: 100', 'bit-pi'),
-
-    'Page Size' => __('Page Size', 'bit-pi'),
 
     'Enter the page size' => __('Enter the page size', 'bit-pi'),
 
@@ -9749,7 +10454,39 @@ return [
 
     'User UnApproved By Admin' => __('User UnApproved By Admin', 'bit-pi'),
 
-    'User login giveaway' => __('User login giveaway', 'bit-pi'),
+    'Get All Giveaways' => __('Get All Giveaways', 'bit-pi'),
+
+    'Retrieves all giveaways from RafflePress.' => __('Retrieves all giveaways from RafflePress.', 'bit-pi'),
+
+    'Get Giveaway Details' => __('Get Giveaway Details', 'bit-pi'),
+
+    'Retrieves details of a specific giveaway.' => __('Retrieves details of a specific giveaway.', 'bit-pi'),
+
+    'Get All Contestants in Giveaway' => __('Get All Contestants in Giveaway', 'bit-pi'),
+
+    'Retrieves all contestants who participated in a specific giveaway.' => __('Retrieves all contestants who participated in a specific giveaway.', 'bit-pi'),
+
+    'Register Participant to Giveaway' => __('Register Participant to Giveaway', 'bit-pi'),
+
+    'Registers a new participant to a giveaway contest.' => __('Registers a new participant to a giveaway contest.', 'bit-pi'),
+
+    'Participant Submits Giveaway Entry' => __('Participant Submits Giveaway Entry', 'bit-pi'),
+
+    'Triggers when a participant submits a new giveaway entry.' => __('Triggers when a participant submits a new giveaway entry.', 'bit-pi'),
+
+    'New Giveaway Registration Received' => __('New Giveaway Registration Received', 'bit-pi'),
+
+    'Triggers when a new participant registers for a giveaway.' => __('Triggers when a new participant registers for a giveaway.', 'bit-pi'),
+
+    'Giveaway Entry with Specific Task' => __('Giveaway Entry with Specific Task', 'bit-pi'),
+
+    'Triggers when a participant completes a specific task in a giveaway.' => __('Triggers when a participant completes a specific task in a giveaway.', 'bit-pi'),
+
+    'Giveaway ID' => __('Giveaway ID', 'bit-pi'),
+
+    'Giveaway' => __('Giveaway', 'bit-pi'),
+
+    'Choose a giveaway' => __('Choose a giveaway', 'bit-pi'),
 
     'Add Recipient' => __('Add Recipient', 'bit-pi'),
 
@@ -9797,6 +10534,86 @@ return [
 
     'Select a level' => __('Select a level', 'bit-pi'),
 
+    'account' => __('account', 'bit-pi'),
+
+    'contact' => __('contact', 'bit-pi'),
+
+    'lead' => __('lead', 'bit-pi'),
+
+    'Update Lead' => __('Update Lead', 'bit-pi'),
+
+    'task' => __('task', 'bit-pi'),
+
+    'opportunity' => __('opportunity', 'bit-pi'),
+
+    'case' => __('case', 'bit-pi'),
+
+    'Create Case' => __('Create Case', 'bit-pi'),
+
+    'campaign' => __('campaign', 'bit-pi'),
+
+    'Add Lead to Campaign' => __('Add Lead to Campaign', 'bit-pi'),
+
+    'Get User' => __('Get User', 'bit-pi'),
+
+    'Get All Users' => __('Get All Users', 'bit-pi'),
+
+    'attachments' => __('attachments', 'bit-pi'),
+
+    'Create Attachment' => __('Create Attachment', 'bit-pi'),
+
+    'Select the campaign to add the contact to.' => __('Select the campaign to add the contact to.', 'bit-pi'),
+
+    'Campaign' => __('Campaign', 'bit-pi'),
+
+    'Select a campaign' => __('Select a campaign', 'bit-pi'),
+
+    'The ID of the contact to add to the campaign.' => __('The ID of the contact to add to the campaign.', 'bit-pi'),
+
+    'Select the campaign to add the lead to.' => __('Select the campaign to add the lead to.', 'bit-pi'),
+
+    'The ID of the lead to add to the campaign.' => __('The ID of the lead to add to the campaign.', 'bit-pi'),
+
+    'Lead ID' => __('Lead ID', 'bit-pi'),
+
+    'Account Fields' => __('Account Fields', 'bit-pi'),
+
+    'Attachment Fields' => __('Attachment Fields', 'bit-pi'),
+
+    'Case Fields' => __('Case Fields', 'bit-pi'),
+
+    'Lead Fields' => __('Lead Fields', 'bit-pi'),
+
+    'Opportunity Fields' => __('Opportunity Fields', 'bit-pi'),
+
+    'Task Fields' => __('Task Fields', 'bit-pi'),
+
+    'return all users without limit.' => __('return all users without limit.', 'bit-pi'),
+
+    'Limit the number of users to retrieve.' => __('Limit the number of users to retrieve.', 'bit-pi'),
+
+    'Select the contact you want to retrieve.' => __('Select the contact you want to retrieve.', 'bit-pi'),
+
+    'Select the user you want to retrieve.' => __('Select the user you want to retrieve.', 'bit-pi'),
+
+    'Select a user' => __('Select a user', 'bit-pi'),
+
+    'Select the account you want to update.' => __('Select the account you want to update.', 'bit-pi'),
+
+    'Select Account' => __('Select Account', 'bit-pi'),
+
+    'Select an account' => __('Select an account', 'bit-pi'),
+
+    'Select the contact you want to update.' => __('Select the contact you want to update.', 'bit-pi'),
+
+    'Select the lead you want to update.' => __('Select the lead you want to update.', 'bit-pi'),
+
+    'Select Lead' => __('Select Lead', 'bit-pi'),
+
+    'Select a lead' => __('Select a lead', 'bit-pi'),
+
+    'Select the task you want to update.' => __('Select the task you want to update.', 'bit-pi'),
+
     'You can get your API key from <a class="text-blue-600 underline" href="https://cp.selzy.com/en/v5/user/info/api" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API key from <a class="text-blue-600 underline" href="https://cp.selzy.com/en/v5/user/info/api" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
 
     'Override' => __('Override', 'bit-pi'),
@@ -9820,8 +10637,6 @@ return [
     'Enter the name of the list to create.' => __('Enter the name of the list to create.', 'bit-pi'),
 
     'Select the contact whose information you want to retrieve.' => __('Select the contact whose information you want to retrieve.', 'bit-pi'),
-
-    'Select the contact you want to retrieve.' => __('Select the contact you want to retrieve.', 'bit-pi'),
 
     'You can find your API key in your SendFox account settings under OAuth Apps.' => __('You can find your API key in your SendFox account settings under OAuth Apps.', 'bit-pi'),
 
@@ -9850,10 +10665,6 @@ return [
     'Select the brand.' => __('Select the brand.', 'bit-pi'),
 
     'Brand' => __('Brand', 'bit-pi'),
-
-    'Select the list to add the subscriber to.' => __('Select the list to add the subscriber to.', 'bit-pi'),
-
-    'Enter the email address of the subscriber.' => __('Enter the email address of the subscriber.', 'bit-pi'),
 
     'Enter the name of the subscriber.' => __('Enter the name of the subscriber.', 'bit-pi'),
 
@@ -10029,7 +10840,11 @@ return [
 
     'Simple Memory' => __('Simple Memory', 'bit-pi'),
 
-    'Enter key' => __('Enter key', 'bit-pi'),
+    'Saves past messages with a unique **Key** so the AI Agent can remember earlier conversations. Set **Context Window Length** to control how many past messages are sent to the model (default: 5).' => __('Saves past messages with a unique **Key** so the AI Agent can remember earlier conversations. Set **Context Window Length** to control how many past messages are sent to the model (default: 5).', 'bit-pi'),
+
+    'Enter a unique key to store the conversation history for the AI Agent.' => __('Enter a unique key to store the conversation history for the AI Agent.', 'bit-pi'),
+
+    'Unique Key' => __('Unique Key', 'bit-pi'),
 
     'How many past interactions the model receives as context' => __('How many past interactions the model receives as context', 'bit-pi'),
 
@@ -10317,6 +11132,7 @@ return [
 
     '**Guide**: Create a Webhook endpoint, copy the URL, and add it to your Suite Dash' => __('**Guide**: Create a Webhook endpoint, copy the URL, and add it to your Suite Dash', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     '[Webhook Integration](%s) settings' => __('[Webhook Integration](%s) settings', 'bit-pi'),
 
     '. Then, select the desired events.' => __('. Then, select the desired events.', 'bit-pi'),
@@ -10360,8 +11176,6 @@ return [
     'Chose Company type' => __('Chose Company type', 'bit-pi'),
 
     'Page number must be a numeric value.' => __('Page number must be a numeric value.', 'bit-pi'),
-
-    'Page Number' => __('Page Number', 'bit-pi'),
 
     'Chose Contacts' => __('Chose Contacts', 'bit-pi'),
 
@@ -10409,9 +11223,13 @@ return [
 
     'Checkout Confirmed' => __('Checkout Confirmed', 'bit-pi'),
 
+    'Create Mockup' => __('Create Mockup', 'bit-pi'),
+
     'New Comment On Site' => __('New Comment On Site', 'bit-pi'),
 
     'Comment Marked As Resolved' => __('Comment Marked As Resolved', 'bit-pi'),
+
+    'Post Name (Title)' => __('Post Name (Title)', 'bit-pi'),
 
     'Add User to Access Group' => __('Add User to Access Group', 'bit-pi'),
 
@@ -10432,6 +11250,58 @@ return [
     'Select one or more access groups to integrate the user into.' => __('Select one or more access groups to integrate the user into.', 'bit-pi'),
 
     'Select Access Groups' => __('Select Access Groups', 'bit-pi'),
+
+    'responses' => __('responses', 'bit-pi'),
+
+    'Response Completed' => __('Response Completed', 'bit-pi'),
+
+    'Response Created' => __('Response Created', 'bit-pi'),
+
+    'Response Updated' => __('Response Updated', 'bit-pi'),
+
+    'Response Disqualified' => __('Response Disqualified', 'bit-pi'),
+
+    'Response Deleted' => __('Response Deleted', 'bit-pi'),
+
+    'Response Overquota' => __('Response Overquota', 'bit-pi'),
+
+    'surveys' => __('surveys', 'bit-pi'),
+
+    'Survey Created' => __('Survey Created', 'bit-pi'),
+
+    'Survey Updated' => __('Survey Updated', 'bit-pi'),
+
+    'Survey Deleted' => __('Survey Deleted', 'bit-pi'),
+
+    'collectors' => __('collectors', 'bit-pi'),
+
+    'Collector Created' => __('Collector Created', 'bit-pi'),
+
+    'Collector Updated' => __('Collector Updated', 'bit-pi'),
+
+    'Collector Deleted' => __('Collector Deleted', 'bit-pi'),
+
+    'SurveyMonkey Developer Portal' => __('SurveyMonkey Developer Portal', 'bit-pi'),
+
+    'Choose the survey to watch.' => __('Choose the survey to watch.', 'bit-pi'),
+
+    'Select Survey' => __('Select Survey', 'bit-pi'),
+
+    'Select what type of object you want to watch. Survey allows you to watch for changes to the survey and its responses. Collector allows you to watch for changes to a specific collector and its responses.' => __('Select what type of object you want to watch. Survey allows you to watch for changes to the survey and its responses. Collector allows you to watch for changes to a specific collector and its responses.', 'bit-pi'),
+
+    'Select Object Type' => __('Select Object Type', 'bit-pi'),
+
+    'Survey' => __('Survey', 'bit-pi'),
+
+    'Collector' => __('Collector', 'bit-pi'),
+
+    'Choose the collector to watch.' => __('Choose the collector to watch.', 'bit-pi'),
+
+    'Select Collector' => __('Select Collector', 'bit-pi'),
+
+    'Select the survey to filter collectors.' => __('Select the survey to filter collectors.', 'bit-pi'),
+
+    'Choose the surveys to watch.' => __('Choose the surveys to watch.', 'bit-pi'),
 
     'You can get your API key from <a class="text-blue-600 underline" href="https://systeme.io/dashboard/profile/public-api-settings" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API key from <a class="text-blue-600 underline" href="https://systeme.io/dashboard/profile/public-api-settings" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
 
@@ -10629,8 +11499,6 @@ return [
 
     'Select Media Type' => __('Select Media Type', 'bit-pi'),
 
-    'File URL' => __('File URL', 'bit-pi'),
-
     'Enter the caption.' => __('Enter the caption.', 'bit-pi'),
 
     'Caption Text' => __('Caption Text', 'bit-pi'),
@@ -10805,8 +11673,6 @@ return [
 
     'Select the voice gender for the call.' => __('Select the voice gender for the call.', 'bit-pi'),
 
-    'Voice' => __('Voice', 'bit-pi'),
-
     'Man' => __('Man', 'bit-pi'),
 
     'Woman' => __('Woman', 'bit-pi'),
@@ -10873,11 +11739,25 @@ return [
 
     'Enter the Phone Number ID for the Twilio number you want to monitor transcriptions.' => __('Enter the Phone Number ID for the Twilio number you want to monitor transcriptions.', 'bit-pi'),
 
+    'Add User Role' => __('Add User Role', 'bit-pi'),
+
+    'Add a role to the user\'s roles.' => __('Add a role to the user\'s roles.', 'bit-pi'),
+
+    'Set User Role' => __('Set User Role', 'bit-pi'),
+
+    'Set the user\'s role to a specific role' => __('Set the user\'s role to a specific role', 'bit-pi'),
+
     'User Login via Form' => __('User Login via Form', 'bit-pi'),
 
     'User Registration Complete' => __('User Registration Complete', 'bit-pi'),
 
     'User Role Change' => __('User Role Change', 'bit-pi'),
+
+    'Enter the user ID or email address.' => __('Enter the user ID or email address.', 'bit-pi'),
+
+    'Select the role to add to the user.' => __('Select the role to add to the user.', 'bit-pi'),
+
+    'User Role' => __('User Role', 'bit-pi'),
 
     'Survey Response' => __('Survey Response', 'bit-pi'),
 
@@ -12007,8 +12887,6 @@ return [
 
     'Add Prospect Fields' => __('Add Prospect Fields', 'bit-pi'),
 
-    'Select a campaign' => __('Select a campaign', 'bit-pi'),
-
     'Select Prospect to Delete' => __('Select Prospect to Delete', 'bit-pi'),
 
     'Select a Prospect' => __('Select a Prospect', 'bit-pi'),
@@ -12061,8 +12939,6 @@ return [
 
     'Add Prospects To' => __('Add Prospects To', 'bit-pi'),
 
-    'Campaign' => __('Campaign', 'bit-pi'),
-
     'Prospect List' => __('Prospect List', 'bit-pi'),
 
     'Select where to add prospects' => __('Select where to add prospects', 'bit-pi'),
@@ -12072,8 +12948,6 @@ return [
     'Update User' => __('Update User', 'bit-pi'),
 
     'Delete User' => __('Delete User', 'bit-pi'),
-
-    'Get All Users' => __('Get All Users', 'bit-pi'),
 
     'Want to see your users? Just hit **Test Run** to fetch them.' => __('Want to see your users? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
@@ -12094,8 +12968,6 @@ return [
     'Create Role' => __('Create Role', 'bit-pi'),
 
     'Delete Role' => __('Delete Role', 'bit-pi'),
-
-    'Add User Role' => __('Add User Role', 'bit-pi'),
 
     'Remove User Role' => __('Remove User Role', 'bit-pi'),
 
@@ -12253,6 +13125,7 @@ return [
 
     'You can find the plugin file name in the' => __('You can find the plugin file name in the', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     '[Plugin File Editor](%s)' => __('[Plugin File Editor](%s)', 'bit-pi'),
 
     'Activate Plugin' => __('Activate Plugin', 'bit-pi'),
@@ -12263,6 +13136,7 @@ return [
 
     '*Fires after a post status is updated.*' => __('*Fires after a post status is updated.*', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
     '[Learn More](%s)' => __('[Learn More](%s)', 'bit-pi'),
 
     'User Added to a Role' => __('User Added to a Role', 'bit-pi'),
@@ -12302,8 +13176,6 @@ return [
     '**When Trigger**: After plugin is activated' => __('**When Trigger**: After plugin is activated', 'bit-pi'),
 
     '*Fires after a plugin has been activated.*' => __('*Fires after a plugin has been activated.*', 'bit-pi'),
-
-    'Add Attachment' => __('Add Attachment', 'bit-pi'),
 
     '**When Trigger**: When an attachment (media file) is added to the database.' => __('**When Trigger**: When an attachment (media file) is added to the database.', 'bit-pi'),
 
@@ -12584,8 +13456,6 @@ return [
     '**When Trigger**: When a post or page is created or updated.' => __('**When Trigger**: When a post or page is created or updated.', 'bit-pi'),
 
     '*Used to perform actions (e.g., updating meta data) when a post is saved.*' => __('*Used to perform actions (e.g., updating meta data) when a post is saved.*', 'bit-pi'),
-
-    'Set User Role' => __('Set User Role', 'bit-pi'),
 
     '**When Trigger**: During role change' => __('**When Trigger**: During role change', 'bit-pi'),
 
@@ -13093,6 +13963,10 @@ return [
 
     'Enter notes (optional)' => __('Enter notes (optional)', 'bit-pi'),
 
+    'Enter the user email address' => __('Enter the user email address', 'bit-pi'),
+
+    'Select the course' => __('Select the course', 'bit-pi'),
+
     'New topic added' => __('New topic added', 'bit-pi'),
 
     'New reply added' => __('New reply added', 'bit-pi'),
@@ -13120,8 +13994,6 @@ return [
     'Select a topic' => __('Select a topic', 'bit-pi'),
 
     'Users' => __('Users', 'bit-pi'),
-
-    'Select a user' => __('Select a user', 'bit-pi'),
 
     'Forums' => __('Forums', 'bit-pi'),
 
@@ -13209,8 +14081,6 @@ return [
 
     'Create a Lead' => __('Create a Lead', 'bit-pi'),
 
-    'User Name' => __('User Name', 'bit-pi'),
-
     'Create Project' => __('Create Project', 'bit-pi'),
 
     'Update Project' => __('Update Project', 'bit-pi'),
@@ -13238,8 +14108,6 @@ return [
     'Enter the milestone end date in MM-DD-YYYY format (e.g., 12-31-2025).' => __('Enter the milestone end date in MM-DD-YYYY format (e.g., 12-31-2025).', 'bit-pi'),
 
     'Select the owner of the milestone.' => __('Select the owner of the milestone.', 'bit-pi'),
-
-    'Owner ID' => __('Owner ID', 'bit-pi'),
 
     'Select the flag type for the milestone.' => __('Select the flag type for the milestone.', 'bit-pi'),
 

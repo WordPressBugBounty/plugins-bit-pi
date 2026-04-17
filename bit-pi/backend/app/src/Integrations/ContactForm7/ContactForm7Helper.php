@@ -5,7 +5,7 @@ namespace BitApps\Pi\src\Integrations\ContactForm7;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use WPCF7_ContactForm;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

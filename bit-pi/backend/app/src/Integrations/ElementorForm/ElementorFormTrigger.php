@@ -6,7 +6,7 @@ use BitApps\Pi\Helpers\Node;
 use BitApps\Pi\Services\FlowService;
 use BitApps\Pi\src\Flow\FlowExecutor;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

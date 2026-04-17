@@ -1,331 +1,403 @@
-=== Bit Flows: AI Agent For Your Website with ChatGPT, Gemini, Claude, Grok & More
+=== Bit Flows: AI Agent Automation with ChatGPT, Gemini, Claude, Perplexity, Google Sheets and More ===
 Contributors: bitpressadmin,akaioum,arif25897,mazharul78,shuvomohajan
-Tags: automation, integration, webhook, form, workflow
+Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
-Tested up to:  6.9.1
+Tested up to: 6.9.4
 Requires PHP: 7.4
-Stable tag: 1.16.0
+Stable tag: 1.17.1
 License: GPL-2.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Create AI powered automation workflows on a visual canvas, like n8n inside WordPress. Unlimited tasks, unlimited workflows, and unlimited steps.
+Intelligent automation handles your workflows, CRM, forms, WooCommerce, ChatGPT, and more tasks to maximize your marketing and business efficiency.
 
 == Description ==
 
-Bit Flows is an Advanced, Super Fast, Drag & Drop automation plugin. Automation feels like Zapier inside WordPress.
+= AI Agent inside Bit Flows makes WordPress think, decide, and automate. Experience true AI automation in WordPress. =
+This plugin works like Zapier or n8n, but it offers stronger integrations with WordPress plugins and other external tools. It helps to build WordPress workflow automation with AI and make your site proactive and efficient.
 
-Bit Flows isn't limited to WordPress; it allows you to automate events outside of WordPress as well as process and send data to third-party platforms. This capability takes Bit Flows to the next level.
+Bit Flows can automate tasks across platforms like ChatGPT for content creation, Google Sheets for data, or updates on multiple platforms.
 
-** EXPERIENCE Effortless WordPress Workflow Automation With Bit Flows - By WPTuts **
+It routes form or order submissions automatically to CRMs, Slack, WhatsApp, Gmail, and more, letting its AI Agent decide the best flow.
 
-https://youtu.be/pj68xS2H4-8?si=6xke7abZUppiUu0B
+With Bit Flows, your WordPress automations run on autopilot; everything is automated behind the scenes.
 
-For example, after a form submission or based on any event, the data can be processed and sent to over 150 platforms.
+https://youtu.be/pj68xS2H4-8
 
-Bit Flows advanced features are:
-1. Drag & Drop builder
-2. [Multi-Step Workflow](https://bit-flows.com/users-guide/tools/how-to-use-router-tool-in-bit-flows/)
-1. [Router](https://bit-flows.com/users-guide/tools/how-to-use-router-tool-in-bit-flows/)
-2. [Repeater/Loop](https://bit-flows.com/users-guide/tools/how-to-use-repeater-tool-in-bit-flows/)
-3. [Delay](https://bit-flows.com/users-guide/tools/how-to-use-delay-tool-in-bit-flows/)
-4. [Conditional Logic](https://bit-flows.com/users-guide/tools/how-to-use-conditional-logic-in-bit-flows/)
-5. [JSON parser](https://bit-flows.com/users-guide/tools/how-to-use-the-json-parser-tool-in-bit-flows-for-data-extraction/)
-6. [Iterator](https://bit-flows.com/users-guide/tools/how-to-use-iterator-tool-in-bit-flows/)
-7. Incoming & Outgoing Webhook
-8. [Custom App](https://bit-flows.com/users-guide/custom-apps/)
-9. [150+ platform integration](https://bit-flows.com/integrations-list/)
-	
-Automate your repetitive tasks using Bit Flows in a super fast & easy way.
+For example, after a form submission or based on any event, the data can be processed and sent to over 150+ platforms.
 
-Bit Flows is a powerful automation(like Zapier)  plugin that sends your WordPress & outside of WordPress data to all types of platforms like WordPress plugins, saas, Shopify & all.
+What You Can Build with **Bit Flows**
 
-** Bitflows: Unlimited WP Automations (Zapier/n8n for WordPress) - by Brendan **
-
-https://youtu.be/7slAjYUe3P4?si=DTSPyOXe5Fb3VcOd
-
-Bit Flows helps you automate outside of WordPress platforms, like any user submit Typeform that you can send that data into, like Google sheet, CRM, Email Marketing platforms, webhook, LMS, and all kinds of platforms.
-
-** WordPress Workflow AUTOMATION MADE EASY With BitFlows - Unlimited Everything! By WPLearningLab **
-
-https://youtu.be/ahYkmcmG2Ik?si=3Ldrs4sD_sc3LfDo
+* Run Zapier / n8n-like workflows directly inside WordPress  
+* Build powerful AI Agents without writing a single line of code  
+* Connect 320+ apps and services in just minutes  
+* Automate WordPress, WooCommerce, and SaaS apps from a single platform  
+* Build AI-driven customer support & HR workflows  
+* Automate content, emails, CRM, and lead management.  
+* Add AI decision-making to your real business workflows  
 
 
-**Useful Links**
+== 🔥 Features & Tools ==
+
+* **AI Agent**: A built-in AI assistant that analyzes data, makes decisions, and runs multi-step workflows for you.
+* **Unlimited Workflows and Tasks**: Create as many multi-step automations as you want, without limits. Automate every process on your site.
+* **Drag & Drop Builder**: Intuitive visual workflow editor, no coding needed. Just drag steps and link them to automate tasks with ease.
+* **Multi-step Automation**: Build complex automation flows with multiple actions, conditions, and branches.
+* **Conditional Logic**: Automate decision-making in your workflows with powerful if/else logic.
+* **Scheduling and Delay (Cloud Cron)**: Run automations on a schedule or pause between steps for timed tasks.
+* **Repeater / Loop and Iterator**: Repeat actions or iterate lists for bulk automated operations effortlessly.
+* **JSON/XML Parser**: Automatically parse and extract data from API responses or webhook payloads.
+* **Incoming & Outgoing Webhooks**: Use standard webhooks with any service. Trigger automation flows from external events.
+* **Custom App / API Connector**: Create custom integrations by integrating any API endpoint and automating data exchange.
+* **Fail Task Notifications & Logging**: Keep detailed logs of each step and get notified on failures or retries.
+* **Deep WordPress & WooCommerce Integration**: Works with Elementor, WPForms, Contact Form 7, Fluent Forms, Fluent CRM, WooCommerce, FluentCart, Tutor LMS, LearnDash, and more for AI automation.
+* **Dark Mode & Quick Testing**: Modern interface with a dark theme and instant flow testing. 
+
+https://youtu.be/7slAjYUe3P4
+
+🔗 **Useful Links**
 🚀[Try Full Version Demo](https://towp.io/) | 🚀[Docs](https://bit-flows.com/users-guide/) | 🚀[Video Tutorials](https://www.youtube.com/playlist?list=PL7c6CDwwm-AIGRtAIE2ZoCCW8YkkIvIDL) | 🚀[Support](https://tawk.to/chat/60eac4b6d6e7610a49aab375/1faah0r3e) | 🚀[Facebook Group](https://www.facebook.com/groups/3308027439209387) | 🚀[Upgrade to Pro](https://bit-flows.com) | 🚀[Bit Flows Repository](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin)
 
+= WooCommerce Automation =
 
-** WordPress Automation: Publish Posts Between WordPress Sites - by Tobi Salami **
+Bit Flows helps e-commerce businesses optimize operations by automating order and customer workflows.
+When an order is placed or a customer registers, Bit Flows can send that data to Google Sheets or your CRM. 
+You can also automate inventory updates, coupon generation, or email notifications. For example, you can automate follow-ups, inventory checks, and coupon creation instantly.
 
-https://youtu.be/tOupB9Ctzps?si=g8DKhh--eN1fvx1P
+= WordPress Automation =
 
+Automating WordPress tasks is now smarter with Bit Flows. 
+Connect plugins like Elementor, Fluent Forms, Tutor LMS, or Contact Form 7 to your workflows. 
+For example, when a form is submitted, Bit Flows can create a post, send emails, and update CRM records (e.g. FluentCRM) automatically. 
 
-📢 Join our Bit Apps community & get updates on our plugins.
+https://youtu.be/ahYkmcmG2Ik
 
-### I try to give a simple use case below:
+= AI Agent for Agentic Workflow Automation =
 
-1. Elementor Form submits then send data to Google Sheet, CRM, Email Marketing platforms, Zapier, webhook, LMS & any platforms
-2. TypeForm Form (saas platform) submit then send data to Google Sheet, CRM, Email Marketing platforms, webhook, LMS & any platforms
-3. WooCommerce order creates then data send to Google Sheet, Zapier, CRM, Email Marketing platforms, webhook, LMS & any platforms
-4. Shopify order creation, then data sent to Google Sheet, Zapier, CRM, Email Marketing platforms, webhook, LMS & any platforms
+The AI Agent acts as a brain inside your WordPress dashboard. It understands context and goals, making workflows truly agentic. You can use it to analyze form input or support queries and automatically decide the next steps. This turns your site into a smart assistant that can think and act, not just execute fixed rules.
 
-** BitFlows - Easily Boost Your WordPress Automation! - EZ WP 4U **
+= Content Generation with AI =
 
-https://youtu.be/dUZHYmKC-dw?si=9ITzzi7AdIJG7hXX
+Bit Flows connects ChatGPT, Gemini, Claude, Deepseek, and Perplexity to generate content automatically. Generate blog posts, marketing copy, or FAQs on demand. For example, feed headlines or keywords into a Bit Flows workflow and let the AI create full articles or social media captions. For research or summarization tasks, Deepseek or Perplexity can fetch relevant info or summarize text before publishing. 
 
-You can use advanced tools like Delay, Repeater, Conditional Logic, and JSON parser to customize automation.)
+= Autoblogging with ChatGPT, Gemini, and Claude =
 
-## Multi-Step Workflow/Router
+Set up an autoblogging workflow using ChatGPT, Gemini, or Claude. When you add a new topic or keyword, Bit Flows can call the AI model to write a draft post and publish it. Integrate images or formatting and go live without manual writing.
 
-Connect the Unlimited platform in a single automation workflow, Router helps you to connect multiple platforms.
-Ex: Submit an Elementor Form, then send to Google Sheet, with Elementor & Google Sheet response send to CRM & continue.
+https://youtu.be/tOupB9Ctzps
 
-** Is Bit Flows Good? (My Honest Review)- by Mark Szymanski **
+= Google Sheets Integrations =
 
-https://youtu.be/Qk1hn8DzvAs?si=ugXIsu2WUwbGpfzZ
+Track and log data automatically with Google Sheets integrations. 
+Any form submission, e-commerce order, or user registration can be sent to a spreadsheet for reporting. 
 
-## 🔁 Repeater/Loop
+= CRM Integrations =
 
-The Repeater Tool in Bit Flows lets you loop through a list or repeat actions a set number of times within a workflow.
-Perfect for automating bulk tasks like sending multiple emails or processing items one by one.
+Bit Flows integrates with popular CRMs like HubSpot, Salesforce, and FluentCRM. 
+New leads from forms or stores can be added instantly.
+Workflow automation and AI help update contacts, track interactions, and keep your CRM in sync across platforms.
 
+https://youtu.be/v5zqE23cPK4
 
-### ⏳ Delay
-Add a pause between automation steps to control timing.
-Useful for rate limits, scheduling, or spaced-out actions.
+= Email Marketing Automation =
 
-Ex: Send a welcome email → Delay 10 minutes → Add user to CRM.
+Automate your email campaigns using Bit Flows. Connect form submissions and order leads to email tools like Mailchimp or SendGrid. When someone signs up on your site, Bit Flows can add them to a campaign, send welcome emails, or schedule newsletters. It takes care of repetitive email tasks while you focus on content, making email marketing automation effortless.
 
-## 🔀 Conditional Logic
-Run different actions/tasks based on specific conditions or values.
-Ex: If a user purchases a product, send them welcome mail; otherwise, add them to the  Email Marketing tool or CRM.
+= Webhook Integrations =
 
-## 🧩 JSON Parser
-Extract specific data from a JSON response to use in your workflow.
-Perfect for handling data from APIs or webhooks.
+Use webhooks to integrate any SaaS or custom app. Incoming webhooks trigger flows from external events, and outgoing webhooks send data to any endpoint. This flexibility means you can integrate with services like n8n or any API-driven platform.
 
-Example:
-Receive order data in JSON → Parse → Add customer info to CRM.
+https://youtu.be/dUZHYmKC-dw
 
-## 🔁 Iterator
-Breaks down an array or list into individual items and processes them one by one.
-Ideal for automating actions on multiple items.
+= Image Generation with Nano Banana and DALL·E =
 
-Example:
-List of products in an order → Iterate each product → Add to inventory.
+Enhance your content with AI-generated images. Bit Flows’ Image Helper integrates Nano Banana (a lightweight image AI) and DALL·E. You can automatically create visuals for posts or products. For example, generate a featured image based on your blog topic or a custom product graphic using AI, all within your workflow.
 
-** Bitflows: Automate WordPress like a PRO 🔥 Complete Tutorial**
+= WhatsApp, Telegram, Discord, Slack Integrations =
 
-https://youtu.be/qzto2JXnxZI?si=VA-6X-to-pgqMiGw
+Communicate and notify through messaging apps. Bit Flows supports WhatsApp, Telegram, Discord, Slack. Send automated alerts or messages when events occur. For example, get a Slack notification of new orders or send order updates to customers on WhatsApp. 
 
-### 🌐 Webhook Integration
-Bit Flows makes it easy to connect your WordPress site with external platforms using incoming and outgoing webhooks. Incoming webhooks allow you to trigger automation flows from other applications, while outgoing webhooks let you send processed data to third-party services. For example, when a form is submitted on your site, Bit Flows can process that data and send it to your CRM automatically. This seamless two-way communication ensures your tools stay in sync—no manual transfers are needed.
+= SaaS Integration (Shopify, Mailchimp, JotForm) =
 
-** بديل Zapier في ووردبريس - مراجعة Bit Flows **
+Link popular SaaS tools easily. Use Shopify triggers for new orders or sync data with Mailchimp for email marketing. You can also push form entries from JotForm. For example, automatically sync Shopify orders or trigger automation when JotForm entries arrive.
 
-https://youtu.be/v5zqE23cPK4?si=91afCzWf6AQ9kJMc
+https://youtu.be/Qk1hn8DzvAs
 
-### 🛠️ Custom App Integration
-When native integrations aren't available, Bit Flows lets you build your own custom app connection using API endpoints. You can define authentication, enter endpoint URLs, and set up the logic to interact with any external API. For instance, if you need to connect your site with a shipping provider, you can use their API to fetch tracking info, update order status, or automate delivery notifications—all directly through Bit Flows, without coding.
+= LMS Integrations =
 
-** My First Look at the new automation tool - Bit Flows! - Is it Zapier for Wordpress? **
+Automate your online learning platform with Bit Flows. When a user enrolls or completes a course, automatically update records, send certificates, or email reminders. Bit Flows works with Tutor LMS, LearnDash, and other course plugins.
 
-https://youtu.be/Nv5CnWshapw?si=Uv_WBO3hAUlSjjpR
+= Form Automation =
 
-### ⚡ Does Bit Flows Slow Down Your Site?
-No, even large or complex automation flows won't affect your site speed. Bit Flows is built to run tasks asynchronously, meaning everything happens in the background while your site remains fast and responsive. It uses an internal queue system to distribute tasks efficiently, preventing overloads during high-traffic or heavy-processing times. If your server resources are stretched, Bit Flows can temporarily pause tasks and automatically resume them when capacity becomes available. It's smart, efficient, and performance-conscious.
+Turn form submissions into automated processes. When a user submits a form (WPForms, Contact Form 7, Fluent Forms, etc.), Bit Flows can route the data anywhere: email, CRM, Google Sheets, or even trigger the AI Agent to draft a response.
 
-** The Best No-Code WordPress Automation Tool - Bit Flows in Action! **
+https://youtu.be/qzto2JXnxZI
 
-https://youtu.be/EwGoEHvsFGs?si=e8cgI5AU01jZ_yHR
+= AI Integrations (ChatGPT, Gemini, Deepseek, Perplexity, Claude) =
 
-### 🛒 WooCommerce Automation
-Bit Flows helps e-commerce businesses streamline their operations by automating order and customer workflows. When a new order is placed or a customer registers, Bit Flows can instantly send that data to platforms like Google Sheets, CRMs such as HubSpot or Salesforce, or email marketing tools. This eliminates repetitive work and ensures your data is always where it needs to be—accurate and up to date.
+Connect the latest AI models in your workflows. Bit Flows supports ChatGPT, Gemini, Claude, Deepseek, and Perplexity via OpenAI actions. Create workflows that call these AI services for content, analysis, translation, or image generation.
 
-### 📊 Google Sheets Integration
-Tracking and reporting business data becomes effortless with Bit Flows and Google Sheets. Whether it's a form submission, course enrollment, or WooCommerce order, the information is automatically logged in your Google Sheets. This gives you real-time visibility into your data without manual entry, making reporting faster and more reliable.
+== Free Triggers ==
 
-### 📇 CRM Integration
-Managing customer relationships is smoother with built-in CRM automation. Bit Flows integrates with leading CRMs like HubSpot, Salesforce, and Zoho. It can automatically add new leads, update customer records, and track interactions triggered by form submissions, purchases, or course activity. Your CRM stays current without manual syncing, helping you focus more on customer engagement and less on admin tasks.
+* Bit Form
+* Bit Assist
+* Contact Form 7
+* WPForms
+* Webhook
+* WordPress
+* WooCommerce
+* Elementor Form
 
-### 📧 Email Marketing Integration
-Bit Flows connects directly to email platforms like MailChimp, Sendinblue, and ActiveCampaign. New subscribers, customers, or course participants are automatically added to your email lists. You can even segment contacts and trigger targeted email campaigns based on user activity—without lifting a finger. It's email automation made simple and efficient.
+== Free Actions ==
 
-### 🔁 Webhook Automation
-Whether you're sending data out or bringing it in, Bit Flows supports full webhook automation. Incoming webhooks let external platforms trigger workflows on your site, while outgoing webhooks push processed data to apps you use for marketing, reporting, or CRM. This enables powerful cross-platform workflows, especially in cases where native integrations don't exist.
+* ChatGPT (OpenAI)
+* Perplexity
+* Claude
+* DeepSeek
+* Gemini
+* Google Sheet
+* WhatsApp
+* API Request
+* HTTP
+* SMTP Mail
+* Webhook
+* WordPress
+* Telegram
+* OpenRouter
+* Groq
 
-### 🎓 LMS Integration (LearnDash, Tutor LMS)
-For online learning platforms, Bit Flows automates essential LMS tasks. When a user enrolls, completes a lesson, or submits a quiz, Bit Flows can sync that data to your CRM, update a spreadsheet, or trigger follow-up emails. This improves course management, automates student tracking, and reduces the manual effort involved in running an LMS.
+== Free Tools ==
 
-### 🧩 Page Builder Automation (Elementor, Divi, Bricks)
-If you're using page builders like Elementor, WPBakery, or Beaver Builder, Bit Flows lets you automate form submissions and user actions directly within the page builder. Collected data can be sent to your CRM, Google Sheets, or email platforms, creating a smoother workflow and eliminating the need for third-party connectors or manual steps.
+* AI Agent
+* Condition
+* Router
+* Iterator
+* Repeater/Loop
+* Parsers (CSV, XML, JSON)
+* Delay
+* Image Helper
 
-### 📝 Form Builder Automation
-Bit Flows supports popular WordPress form plugins like Contact Form 7, Gravity Forms, WPForms, Fluent Forms and Ninja Forms. You can automatically trigger workflows from form submissions—whether it's adding leads to your CRM, logging data in Google Sheets, or starting an email campaign. It's a powerful way to turn simple form entries into full business processes.
-Bit Flows integrates with over 150 platforms, giving you the freedom to automate your workflows across tools without writing any code. Connect your forms, CRMs, email tools, and more—all from one place.
+== Free Features ==
 
-Available popular integrated platforms are:
+* Unlimited workflows
+* Unlimited tasks
+* Multi-step workflows
+* Details logs
+* Notification of Failed Tasks
+* Tasks re-execution
+* Custom app with API, Webhook, or WP Action Hook
 
-1. Academy LMS
-2. ActivePieces
-3. Affiliate WP
-4. AidaForm
-5. Albato
-6. Amelia
-7. API Request
-8. ARForms
-9. ARMember
-10. Asana
-11. Asgaros Forum
-12. Automatisch
-13. AutomatorWP
-14. Beaver Builder
-15. Benchmark
-16. BitAssist
-17. Bit Form
-18. Brevo (Sendinblue)
-19. BricksForge
-20. brizy
-21. CartFlows
-22. ClickUp
-23. CoBlocks
-24. Cognito Forms
-25. Contact Form 7
-26. Demio
-27. Divi Builder
-28. Divi Form Builder
-29. Dokan
-30. Drip
-31. eForm
-32. Elastic Email
-33. Elementor Form
-34. EmailOctopus
-35. Encharge
-36. Essential Blocks
-37. Eventin
-38. The Events Calendar
-39. Everest Forms
-40. Fillout
-41. FlowMattic
-42. Fluent Booking
-43. FluentCRM
-44. Fluent Forms
-45. Fluent Support
-46. 123FormBuilder
-47. FormCraft 3
-48. Formaloo
-49. Formester
-50. Formidable Forms
-51. Forminator
-52. forms.app
-53. Forms.io by 500apps
-54. Formstack Forms
-55. GamiPress
-56. GetGist
-57. GetResponse
-58. GiveWP
-59. GoHighLevel
-60. GoZen Forms
-61. Google Forms
-62. Google Sheet
-63. Gravity Forms
-64. Groundhogg
-65. Gutena Forms
-66. Happyforms
-67. HTTP
-68. HubSpot
-69. Hustle
-70. Integrately
-71. Involve.me
-72. JetEngine
-73. JetForm Builder
-74. Jot Form
-75. Kadence Blocks Form
-76. Kali Forms
-77. KonnectzIT
-78. LearnDash
-79. Lemlist
-80. MailBluster
-81. Mailchimp
-82. MailPoet
-83. Mailchimp Forms
-84. MailerCloud
-85. MailerLite
-86. MailerLite Forms
-87. Mailster
-88. Make
-89. MakeForms
-90. MasterStudy LMS
-91. MetaBox
-92. Microsoft Forms
-93. MightyForms
-94. Moosend Forms
-95. n8n
-96. Ninja Forms
-97. OptinMonster Forms
-98. Pabbly Connect
-99. Paid Memberships Pro
-100. Paperform
-101. Pie Forms
-102. Piotnet Addon Form
-103. Piotnet Forms
-104. Popup Maker
-105. RafflePress
-106. Rapidmail
-107. Restrict Content
-108. Selzy
-109. Shopify
-110. SiteOrigin Widgets
-111. SliceWP
-112. Solid Affiliate
-113. Spectra
-114. Sperseio
-115. Squarespace Forms
-116. SureCart
-117. SureForms
-118. SureMembers
-119. SureTriggers
-120. Survey Monkey
-121. SurveyNinja
-122. SurveySparrow
-123. SyncSpider
-124. System.io
-125. Tally Forms
-126. Thrive Automator
-127. Tripetto
-128. Tutor LMS
-129. Typeform
-130. Ultimate Member
-131. Unbounce Forms
-132. Uncanny Automator
-133. voxel
-134. WooCommerce Bookings
-135. weForms
-136. Webflow Forms
-137. Webhook
-138. Wispform
-139. WooCommerce
-140. Woodpecker
-141. Woorise
-142. WordPress
-143. wpForms
-144. wpForo Forum
-145. WPFunnels
-146. WP Fusion
-147. WP Job Manager
-148. WS Form
-149. Wufoo
-150. Zapier
-151. Zoho Flow
-152. Zoho Forms
+== Available Popular Integrated Platforms ==
 
-⭐ User Reviews
+* ACPT
+* ActivePieces
+* Airtable
+* Albato
+* Asana
+* Automatisch
+* AutomatorWP
+* Benchmark
+* Brevo (Sendinblue)
+* ClickUp
+* Demio
+* Discord
+* Drip
+* Dropbox
+* Elastic Email
+* EmailOctopus
+* Emailit
+* Encharge
+* FlowMattic
+* Flowlu
+* GetGist
+* GetResponse
+* Gmail
+* GoHighLevel
+* Google Calendar
+* Google Drive
+* Google Meet
+* Google Tasks
+* HubSpot
+* Integrately
+* JetEngine
+* KonnectzIT
+* Lemlist
+* Line
+* MailBluster
+* MailerCloud
+* MailerPress
+* Make
+* Microsoft Excel
+* n8n
+* Newsletter
+* Notion
+* Rapidmail
+* Selzy
+* SendFox
+* Sperseio
+* SyncSpider
+* System.io
+* Thrive Automator
+* Twilio
+* Uncanny Automator
+* Woodpecker
+* WP Fusion
+* Zapier
+* Zoho Flow
+* Zoho Project
+* bbPress
+* EasyCommerce
+* FluentAffiliate
+* FormGent
+* Nex Forms
+* Paymattic
+* Profile Builder
+* Quill Forms
+* SureFeedback
+* SureMail
+* UserFeedback
+* WP Travel Engine
+* WP User Frontend
+* Academy LMS
+* Affiliate WP
+* AidaForm
+* Amelia Booking
+* ARForms
+* ARMember
+* Asgaros Forum
+* Avada Forms
+* Beaver Builder
+* Bit Social
+* Booking Calendar Contact Form
+* Breakdance
+* Bricks Builder
+* BricksForge
+* brizy
+* CartFlows
+* CoBlocks
+* Cognito Forms
+* Contact Form Email
+* Divi Form Builder
+* Dokan Multivendor
+* eForm
+* Easy Digital Downloads
+* Essential Addons for Elementor
+* Essential Blocks
+* Eventin
+* The Events Calendar
+* Everest Forms
+* Fillout
+* Fluent Booking
+* FluentCart
+* Fluent Forms
+* FluentSMTP
+* Fluent Support
+* 123FormBuilder
+* FormCraft 3
+* Formaloo
+* Formester
+* Formidable Forms
+* Forminator
+* forms.app
+* Forms.io by 500apps
+* Formstack Forms
+* GamiPress
+* GeoDirectory
+* GiveWP
+* GoZen Forms
+* Google Forms
+* Google Sheet
+* Gravity Forms
+* Groundhogg
+* Gutena Forms
+* Happyforms
+* Hustle
+* Involve.me
+* JetForm Builder
+* Kadence Blocks Form
+* Kali Forms
+* Klaviyo
+* LearnDash
+* LifterLMS
+* Line
+* Mailchimp Forms
+* MailerLite Forms
+* Mailster
+* MakeForms
+* MasterStudy LMS
+* MemberPress
+* MetForm
+* MetaBox
+* Microsoft Forms
+* MightyForms
+* Moosend Forms
+* New User Approve
+* Ninja Forms
+* OptinMonster Forms
+* Paperform
+* Pie Forms
+* Piotnet Addon Form
+* Piotnet Forms
+* Poptics
+* Popup Maker
+* RafflePress
+* Restrict Content
+* Shopify
+* SiteOrigin Widgets
+* SliceWP
+* Solid Affiliate
+* Spectra
+* Squarespace Forms
+* StoreEngine
+* SureCart
+* SureForms
+* Survey Monkey
+* SurveyNinja
+* SurveySparrow
+* Tally Forms
+* Telegram
+* Tidio
+* Tripetto
+* Tutor LMS
+* Typeform
+* Ultimate Member
+* Unbounce Forms
+* Voxel
+* WPSubscription
+* WooCommerce Bookings
+* weForms
+* Webflow Forms
+* Wispform
+* WooCommerce Memberships
+* WooCommerce Subscriptions
+* Woorise
+* wpForo Forum
+* WPFunnels
+* WP Job Manager
+* WS Form
+* Wufoo
+* Zoho Forms
 
-Goudima - ⭐⭐⭐⭐⭐
-[`The best automation plugin, Zapier and Make replacements`](https://wordpress.org/support/topic/the-best-automation-plugin-zapier-and-make-replacements/)
- 
+== Some Real-World Use Cases with Bit Flows ==
 
-Tobi Salami - ⭐⭐⭐⭐⭐
-[`The N8N of WordPress`](https://wordpress.org/support/topic/the-n8n-of-wordpress/)
+* **Lead Qualification and Routing with AI Agent**
+When a WPForms or Elementor form submission comes in, Bit Flows uses an AI Agent to analyze the message and route the lead to the appropriate CRM or Google Sheets. The workflow can automatically send a personalized response via Gmail and qualify the lead without manual effort.
 
+* **Autoblogging**
+Automatically generate blog posts with ChatGPT, Gemini, or Claude. Use Bit Flows to publish AI-generated content directly to WordPress on a schedule.
+
+* **AI-Powered Product Descriptions**
+When a new WooCommerce product is added, use Bit Flows to call ChatGPT or Gemini and craft a product description. The AI Agent can update the product automatically.
+
+* **E-commerce Automation**
+When a new WooCommerce order or Shopify sale occurs, Bit Flows can add the customer to your CRM, update Google Sheets, and send a confirmation email. You can also trigger an AI workflow to generate personalized discounts or related product suggestions automatically.
+
+* **Customer Support Automation**
+When a customer submits a support question, Bit Flows can send it to Claude or ChatGPT for a draft reply. The answer can be emailed to the customer and logged in a Google Sheet. Your team is notified on Slack for a final review, automating your support workflow.
+
+* **Custom App Integration**
+Use Bit Flows to integrate an external API. For example, integrate a shipping system: Bit Flows can send shipment data to an API and parse the response to update your WooCommerce order status, all automatically.
+
+== ⭐ User Reviews ==
 
 bubdev - ⭐⭐⭐⭐⭐
 [`The Missing Piece in WordPress Automation`](https://wordpress.org/support/topic/the-missing-piece-in-wordpress-automation/)
@@ -340,19 +412,21 @@ downtownboogie - ⭐⭐⭐⭐⭐
 
 🎉 Overview of other products we are offering :
 
-[Bit Integrations](https://bit-integrations.com): Automate 290+ platforms and Contact Form 7, Elementor Form, WooCommerce, Google Sheet, wpforms, Forminator, BuddyBoss, LearnDash, Hubspot, Mail poet, MailChimp, Webhook, ACF, Zapier, Fluent CRM, Forms, CRM, LMS, Membership & many more.
+[Bit Form](https://bit-form.com): A powerful WordPress form builder that lets you create **multi-step and conversational forms** with a **smart drag-and-drop builder**.
 
-[Bit Form](https://bit-form.com): – Advanced, Super Fast, lightweight, Drag & drag-and-drop form builder for WordPress. Users can create Multi-Step forms, Conversational forms, Payment Form & more.
+[Bit Integrations](https://bit-integrations.com): A no-code WordPress automation plugin that lets you connect **300+ apps and services** to automate your workflows in minutes. With its **3 easy automation methods,** you can automate tasks, sync data, and maximize productivity.
 
-[Bit Social](https://bit-social.com): – Auto Post, Schedule & Share WordPress post to Facebook, LinkedIn, Twitter with Bit Social Auto Poster. Scheduling & sharing posts on social media easily.
+[Bit Assist](https://bitapps.pro/bit-assist): Connect all your customer support channels with a single button. Integrate Floating Chat Widget, WhatsApp, Email, SMS, Telegram, Messenger, and more with Bit Assist.
 
-[Bit Assist](https://bitapps.pro/bit-assist): Connect all your support assistants in a single button. Floating Chat Widget, Contact Chat Icons, Telegram Chat, Line Messenger, WeChat, WhatsApp, Email, SMS, Call Button & more.
+[Bit Social](https://bit-social.com): A social media automation tool that lets you **auto-post, schedule, and share instantly** across **12+ platforms** like Facebook, Instagram, LinkedIn, X, Pinterest, and more with a smart calendar view.
 
-[Bit File Manager](https://bitapps.pro/bit-file-manager/): – 100% free WordPress file manager plugin.
+[Bit SMTP](https://bitapps.pro/bit-smtp/): Bit SMTP makes sending emails from your WordPress site easy and secure, ensuring they reach the right inbox every time.
 
-[Bit SMTP](https://bitapps.pro/bit-smtp/): – 100% free WordPress SMTP plugin.
+[Bit File Manager](https://bitapps.pro/bit-file-manager/): Bit File Manager is a WordPress plugin for easy file management. Upload, organize, and control from your WordPress dashboard.
 
-[Webhook.is](https://webhook.is): – Test your incoming webhook response & send outgoing webhook requests for free.
+[Webhook.is](https://webhook.is): Test your incoming webhook response & send outgoing webhook requests for free.
+
+📢 Join our [Bit Apps community](https://www.facebook.com/groups/bitapps/) & get updates on our plugins.
 
 == Installation ==
 
@@ -370,75 +444,90 @@ Need help? Check out our [installation guide](https://bit-flows.com/users-guide/
 
 = What is Bit Flows? =
 
-Bit Flows is a drag & drop automation and integration plugin that works like Zapier or Make (n8n) — right inside WordPress. It lets you automate workflows across 150+ platforms using triggers, conditions, and webhooks—no coding required.
+Bit Flows is a WordPress plugin that automates tasks and integrates your site with hundreds of platforms. It lets you create no-code multi-step agentic workflows for forms, e-commerce, and more.
 
-= How is Bit Flows different from Zapier or n8n? =
+= How do I automate tasks with Bit Flows? =
 
-Unlike Zapier or n8n, Bit Flows runs *natively* within your WordPress dashboard, giving you:
-- Total control over workflows and data
-- No monthly fees or external dependencies
-- Direct access to WordPress plugins, forms, and user actions
-- High-performance background task handling
+Use the visual drag-and-drop workflow builder to set up triggers (like form submission or order placed) and actions (such as sending email, updating CRM, or calling AI). Bit Flows runs these automations on your site automatically.
+
+= What is the AI Agent in Bit Flows? =
+
+The AI Agent is a smart assistant. It uses AI models like ChatGPT, Gemini, or Claude to analyze data and make decisions within a workflow, enabling agentic automation rather than fixed rules.
 
 = Is Bit Flows beginner-friendly? =
 
-Absolutely. Bit Flows is designed with a visual, drag-and-drop interface so anyone can create automations without coding. Advanced users can dig deeper with API requests, JSON parsing, and custom apps.
-
-= What tools can I automate with Bit Flows? =
-
-Bit Flows supports 150+ integrations including:
-- CRMs (HubSpot, Salesforce, Zoho)
-- Email Marketing (Mailchimp, Brevo, MailerLite)
-- Form Builders (Elementor Forms, WPForms, Typeform)
-- LMS (LearnDash, Tutor LMS)
-- WooCommerce, Shopify, Google Sheets, Webhooks, and more.
-
-View the full list here: [bit-flows.com/integrations-list](https://bit-flows.com/integrations-list)
-
-= Can I use webhooks? =
-
-Yes! Bit Flows supports both:
-- **Incoming Webhooks** to trigger workflows from outside apps
-- **Outgoing Webhooks** to send data to external platforms
-
-= Will Bit Flows slow down my site? =
-
-No. Bit Flows is optimized for performance and runs all flows in the background asynchronously. It uses an internal queue to avoid overloading your server during high-traffic periods.
+Yes. Bit Flows offers a visual drag-and-drop workflow builder, ready triggers, and simple field mapping. Beginners can start fast, while advanced users can build powerful AI automations.
 
 = Can I build complex workflows? =
 
-Yes. Bit Flows supports:
-- Multi-step flows
-- Conditional logic
-- Repeaters/Loops
-- Delays and scheduling
-- JSON parsing
-- Iterators for handling arrays or lists
+Absolutely. Create multi-step workflows with conditions, routers, delays, repeaters, APIs, and AI Agents. Build advanced automation flows without writing code.
 
-= Can I connect to platforms not listed? =
+= How is Bit Flows different from Zapier or n8n? =
 
-Definitely. You can use the **Custom App** feature to connect with any API or webhook-enabled service by defining endpoints, authentication, and logic—no third-party connectors needed.
+Bit Flows runs inside your WordPress site, so your data stays on your server. Like Zapier or n8n, it offers multi-step workflows, but it adds native WordPress and WooCommerce integrations, plus an AI Agent. There are no per-task fees, since it uses your server’s resources.
 
-= Is there a Pro version of Bit Flows? =
+= Can Bit Flows generate content automatically? =
 
-Yes! The Pro version unlocks all premium tools, unlimited workflows, priority support, and access to future updates.
+Yes. With AI integrations (ChatGPT, Gemini, Claude, etc.), Bit Flows can write blog posts, product descriptions, emails, or any text based on prompts. You can automate content generation for faster publishing.
 
-[Upgrade to Pro](https://bit-flows.com)
+= Does Bit Flows support form plugins? =
 
-= Where can I get support or help? =
+Yes. It works with WPForms, Contact Form 7, Fluent Forms, and more. You can trigger workflows when forms are submitted to send data to CRMs, email, Google Sheets, or AI services.
 
-- [Documentation](https://bit-flows.com/users-guide/)
-- [Video Tutorials](https://www.youtube.com/playlist?list=PL7c6CDwwm-AIGRtAIE2ZoCCW8YkkIvIDL)
-- [Live Chat Support](https://tawk.to/chat/60eac4b6d6e7610a49aab375/1faah0r3e)
-- [Facebook Community](https://www.facebook.com/groups/3308027439209387)
-- [Submit a Ticket](https://bit-flows.com/contact/)
+= Where can I learn more about Bit Flows? =
 
+There are [Documentations](https://bit-flows.com/users-guide/), a support forum, [Live Chat Support](https://tawk.to/chat/60eac4b6d6e7610a49aab375/1faah0r3e), and a [Facebook Community](https://www.facebook.com/groups/3308027439209387) group. We also provide [Video Tutorials](https://www.youtube.com/playlist?list=PL7c6CDwwm-AIGRtAIE2ZoCCW8YkkIvIDL) and [Ticket Based](https://bit-flows.com/contact/) support.
 
+== External services ==
+
+Bit Flows connects to third-party services only when a site administrator explicitly configures and activates those integrations within a workflow. No data is transmitted to any external service without deliberate user action.
+
+Depending on the nodes used, this may include AI providers, messaging APIs, and Google APIs.
+
+Detailed external service disclosure (what data is sent, when it is sent, and links to each service's Terms of Use and Privacy Policy):
+[Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+= v1.17.1 (Mar 20, 2026) =
+* **Fixes**:
+  * Fixes an issue where the AI agent could not resolve the correct flow path when conditional or router tools were placed before it in the builder.
+
+= v1.17.0 (Mar 12, 2026) =
+* **Features**:
+  * Added Date Time tool
+  
+* **Actions (66)**:
+  * MailWizz (04)
+  * AITable (05)
+  * Salesforce (16)
+  * Monday.com (20)
+  * ElevenLabs (09)
+  * Mailster (01)
+  * Ninja Tables (05)
+  * WP Courseware (01)
+  * SureFeedback (01)
+  * RafflePress (04)
+
+* **Triggers (18)**:
+  * Survey Monkey (12)
+  * Ninja Tables (02)
+  * RafflePress (02)
+  * ElevenLabs (02)
+
+* **Fixes**:
+  * Fixed minor bugs.
+
+
+= v1.16.2 (Feb 26, 2026) =
+* **Fixes**:
+  * Fixed WordPress Plugin Check compliance issues
+
+= v1.16.1 (Feb 19, 2026) =
+* **Fixes**:
+  * Fixed WordPress Plugin Check compliance issues
+  * Fixed minor bugs and improvements
 
 = v1.16.0 (Feb 5, 2026) =
-
 * **Actions (91)**:
   * Google Docs (08)
   * AcademyLMS (2)

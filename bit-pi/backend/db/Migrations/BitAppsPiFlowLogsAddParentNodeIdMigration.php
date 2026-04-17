@@ -7,7 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-final class BitAppsPiFlowLogsAddParentNodeIdMigration extends Migration
+final class BitAppsPiFlowLogsAddParentNodeIdMigration extends Migration // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedClassFound
 {
     public function up()
     {

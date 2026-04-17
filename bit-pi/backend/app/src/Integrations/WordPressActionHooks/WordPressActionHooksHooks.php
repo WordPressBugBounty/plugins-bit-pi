@@ -5,7 +5,7 @@ namespace BitApps\Pi\src\Integrations\WordPressActionHooks;
 use BitApps\Pi\src\Integrations\HookRegisterInterface;
 use BitApps\Pi\src\Integrations\WordPress\helpers\WordPressActionHelper;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

@@ -3,7 +3,7 @@
 namespace BitApps\Pi\src\Tools\Iterator;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

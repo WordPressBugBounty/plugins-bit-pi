@@ -5,7 +5,7 @@ namespace BitApps\Pi\src\Integrations\OpenAi\helpers;
 use BitApps\Pi\Config;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

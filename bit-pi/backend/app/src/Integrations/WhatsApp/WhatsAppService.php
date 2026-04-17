@@ -4,7 +4,7 @@ namespace BitApps\Pi\src\Integrations\WhatsApp;
 
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 class WhatsAppService

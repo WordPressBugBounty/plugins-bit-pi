@@ -3,7 +3,7 @@
 namespace BitApps\Pi\Providers;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -13,6 +13,7 @@ use BitApps\Pi\Deps\BitApps\WPKit\Hooks\Hooks;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\RequestType;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Router\Router;
 use BitApps\Pi\Plugin;
+use BitApps\Pi\Services\ConnectionService;
 use BitApps\Pi\Services\FlowHistoryService;
 use BitApps\Pi\src\Integrations\IntegrationHookLoader;
 use BitApps\Pi\src\Tools\Delay\DelayTool;
@@ -31,6 +32,7 @@ class HookProvider
         Hooks::addAction(Config::VAR_PREFIX . 'flow_history_cleanup', [FlowHistoryService::class, 'flowHistoryCleanup']);
         Hooks::addAction('rest_api_init', [$this, 'loadAppApiHooks']);
         Hooks::addFilter('safe_style_css', [$this, 'allowStyleProperties']);
+        Hooks::addFilter(Config::VAR_PREFIX . 'before_store_connection_auth_details', [ConnectionService::class, 'modifyAuthDetails'], 10, 2);
         Hooks::addAction(Config::VAR_PREFIX . 'run_scheduled_flow_node', [DelayTool::class, 'runScheduledFlowNode'], 10, 2);
 
         if (!wp_next_scheduled(Config::VAR_PREFIX . 'flow_history_cleanup')) {

@@ -4,7 +4,7 @@ namespace BitApps\Pi\src\Integrations\WpForms;
 
 use BitApps\Pi\src\Integrations\HookRegisterInterface;
 
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 

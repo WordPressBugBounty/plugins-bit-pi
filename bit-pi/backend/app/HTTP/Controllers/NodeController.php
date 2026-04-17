@@ -3,7 +3,7 @@
 namespace BitApps\Pi\HTTP\Controllers;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
@@ -14,6 +14,7 @@ use BitApps\Pi\HTTP\Requests\NodeStoreRequest;
 use BitApps\Pi\Model\Connection;
 use BitApps\Pi\Model\FlowNode;
 use BitApps\Pi\Services\FlowService;
+use BitApps\Pi\Services\Polling;
 
 final class NodeController
 {
@@ -97,6 +98,8 @@ final class NodeController
         if ($validated['node'] === $cratedNodeId) {
             FlowService::updateTriggerNodeInCache();
         }
+
+        Polling::deletePollingData($node->flow_id);
 
         return Response::success($node->node_id);
     }

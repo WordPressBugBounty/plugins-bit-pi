@@ -9,7 +9,7 @@ use BitApps\Pi\Deps\BitApps\WPKit\Migration\Migration;
 if (!defined('ABSPATH')) {
     exit;
 }
-final class BitAppsPiFlowNodesTableMigration extends Migration
+final class BitAppsPiFlowNodesTableMigration extends Migration // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedClassFound
 {
     public function up(): void
     {

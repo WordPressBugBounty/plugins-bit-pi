@@ -3,7 +3,7 @@
 namespace BitApps\Pi\Rules;
 
 // Prevent direct script access
-if (!\defined('ABSPATH')) {
+if (!defined('ABSPATH')) {
     exit;
 }
 
