@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Fri Apr 17 2026 12:11:32 GMT+0000 (Coordinated Universal "
+"POT-Creation-Date: Tue Apr 21 2026 11:36:17 GMT+0000 (Coordinated Universal "
 "Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -706,7 +706,8 @@ msgstr ""
 #: frontend/src/services/machines/myCred/revokePoints.myCred.machine.pro.ts:48
 #: frontend/src/services/machines/seoPress/helpers/seoPressFields.ts:5
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:32
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:33
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:34
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:58
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:58
 #: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:33
 #: frontend/src/services/machines/wooCommerce/commonMachines/createTerm.machine.ts:34
@@ -905,7 +906,8 @@ msgstr ""
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.pro.ts:91
 #: frontend/src/services/machines/seoPress/updatePostMeta.seoPress.machine.pro.ts:59
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:131
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:104
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:181
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:145
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:77
 #: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:65
 #: frontend/src/services/machines/stripe/createSubscription.stripe.machine.pro.ts:52
@@ -1057,7 +1059,8 @@ msgstr ""
 #: frontend/src/services/machines/klaviyo/createEvent.klaviyo.machine.pro.ts:43
 #: frontend/src/services/machines/klaviyo/createProfile.klaviyo.machine.pro.ts:140
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:124
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:97
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:174
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:138
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:70
 #: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:58
 #: frontend/src/services/machines/stripe/createSubscription.stripe.machine.pro.ts:45
@@ -1279,7 +1282,7 @@ msgstr ""
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.pro.ts:114
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.pro.ts:122
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.pro.ts:140
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:47
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:124
 #: frontend/src/services/machines/suiteDash/createCompany.suiteDash.machine.pro.ts:48
 #: frontend/src/services/machines/telegram/createInviteLink.telegram.machine.free.ts:73
 #: frontend/src/services/machines/telegram/sendContact.telegram.machine.free.ts:71
@@ -1332,7 +1335,7 @@ msgstr ""
 #: frontend/src/services/machines/mailChimp/createSubscriber.mailChimp.machine.pro.ts:178
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.pro.ts:113
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.pro.ts:139
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:46
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:123
 #: frontend/src/services/machines/suiteDash/createCompany.suiteDash.machine.pro.ts:47
 #: frontend/src/services/machines/telegram/createInviteLink.telegram.machine.free.ts:72
 #: frontend/src/services/machines/telegram/sendContact.telegram.machine.free.ts:70
@@ -1993,6 +1996,7 @@ msgstr ""
 #: frontend/src/services/machines/mailster/addSubscriberToList.mailster.machine.pro.ts:27
 #: frontend/src/services/machines/newsletter/helpers/commonUtils.newsletter.ts:66
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:32
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:34
 #: frontend/src/services/machines/rafflepress/registerContestParticipant.rafflepress.machine.pro.ts:38
 #: frontend/src/services/machines/sendFox/createContact.sendFox.machine.pro.ts:30
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:11
@@ -2031,6 +2035,7 @@ msgstr ""
 #: frontend/src/services/machines/mailster/addSubscriberToList.mailster.machine.pro.ts:37
 #: frontend/src/services/machines/newsletter/helpers/commonUtils.newsletter.ts:67
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:37
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:43
 #: frontend/src/services/machines/rafflepress/registerContestParticipant.rafflepress.machine.pro.ts:47
 #: frontend/src/services/machines/sendFox/createContact.sendFox.machine.pro.ts:40
 #: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:13
@@ -4537,6 +4542,7 @@ msgstr ""
 #: frontend/src/services/machines/eventsManager/unregisterUserFromEvent.eventsManager.machine.pro.ts:29
 #: frontend/src/services/machines/learnDashAchievements/awardAchievement.learnDashAchievements.machine.pro.ts:16
 #: frontend/src/services/machines/learnPress/commonMachines/enrollment.learnPress.machine.ts:15
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:14
 #: frontend/src/services/machines/slack/findUserByEmail.slack.machine.pro.ts:18
 #: frontend/src/services/machines/teamsForWoocommerceMemberships/addMemberToTeam.teamsForWoocommerceMemberships.machine.pro.ts:31
 #: frontend/src/services/machines/teamsForWoocommerceMemberships/removeMemberFromTeam.teamsForWoocommerceMemberships.machine.pro.ts:31
@@ -6877,7 +6883,7 @@ msgstr ""
 
 #: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:123
 #: frontend/src/services/machines/Omnisend/_omnisendMachines.ts:72
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:96
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:130
 msgid "Webhook Automation"
 msgstr ""
 
@@ -7001,6 +7007,7 @@ msgstr ""
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:45
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:74
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:178
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:47
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:37
 #: frontend/src/services/machines/zohoProject/createProject.zohoProject.machine.pro.ts:192
 #: frontend/src/services/machines/zohoProject/updateProject.zohoProject.machine.pro.ts:212
@@ -7483,6 +7490,7 @@ msgstr ""
 #: frontend/src/services/machines/mailerPress/createOrUpdateContact.mailerPress.machine.pro.ts:52
 #: frontend/src/services/machines/mailster/addSubscriberToList.mailster.machine.pro.ts:50
 #: frontend/src/services/machines/Paymattic/changePaymentStatus.paymattic.machine.pro.ts:31
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:49
 #: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:70
 #: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:81
 #: frontend/src/services/machines/wpCafe/updateReservation.wpCafe.machine.pro.ts:29
@@ -8848,6 +8856,7 @@ msgstr ""
 #: frontend/src/services/machines/googleTasks/updateTask.googleTasks.machine.pro.ts:83
 #: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:30
 #: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:42
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:50
 msgid "Completed"
 msgstr ""
 
@@ -10180,7 +10189,7 @@ msgstr ""
 #: frontend/src/services/machines/goHighLevel/updateTask.goHighLevel.machine.pro.ts:64
 #: frontend/src/services/machines/googleTasks/createTask.googleTasks.machine.pro.ts:55
 #: frontend/src/services/machines/googleTasks/updateTask.googleTasks.machine.pro.ts:69
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:73
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:150
 msgid "Due Date"
 msgstr ""
 
@@ -12900,6 +12909,8 @@ msgstr ""
 #: frontend/src/services/machines/flowlu/createOpportunity.flowlu.machine.pro.ts:73
 #: frontend/src/services/machines/flowlu/updateOpportunity.flowlu.machine.pro.ts:84
 #: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:4
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:36
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:36
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:24
 msgid "Amount"
 msgstr ""
@@ -14958,7 +14969,9 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/commonMachines/customerId.fluentCart.machine.ts:14
 #: frontend/src/services/machines/fluentCart/updateCustomer.fluentCart.machine.pro.ts:16
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:22
+#: frontend/src/services/machines/profilePress/getCustomerDetailsById.profilePress.machine.pro.ts:14
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:23
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:23
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:48
 #: frontend/src/services/machines/stripe/createSubscription.stripe.machine.pro.ts:22
 #: frontend/src/services/machines/stripe/retrieveCustomerById.stripe.machine.pro.ts:22
@@ -14979,6 +14992,7 @@ msgstr ""
 #: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:14
 #: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:14
 #: frontend/src/services/machines/fluentCart/updateShippingStatus.fluentCart.machine.pro.ts:14
+#: frontend/src/services/machines/profilePress/getOrderDetailsById.profilePress.machine.pro.ts:14
 #: frontend/src/services/machines/wooCommerce/addOrUpdateOrderMeta.wooCommerce.machine.pro.ts:15
 #: frontend/src/services/machines/wooCommerce/getOrderById.wooCommerce.machine.pro.ts:14
 #: frontend/src/services/machines/wooCommerce/updateOrderStatus.wooCommerce.machine.pro.ts:16
@@ -15139,6 +15153,7 @@ msgstr ""
 #: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:24
 #: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:24
 #: frontend/src/services/machines/fluentCart/updateShippingStatus.fluentCart.machine.pro.ts:24
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:46
 #: frontend/src/services/machines/wooCommerce/createOrder.wooCommerce.machine.pro.ts:74
 #: frontend/src/services/machines/wooCommerce/getOrderByStatus.wooCommerce.machine.pro.ts:16
 #: frontend/src/services/machines/wooCommerce/updateOrderStatus.wooCommerce.machine.pro.ts:27
@@ -15180,6 +15195,7 @@ msgstr ""
 #: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:31
 #: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:17
 #: frontend/src/services/machines/Paymattic/changePaymentStatus.paymattic.machine.pro.ts:33
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:51
 msgid "Refunded"
 msgstr ""
 
@@ -15190,6 +15206,7 @@ msgstr ""
 #: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:34
 #: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:33
 #: frontend/src/services/machines/Paymattic/changePaymentStatus.paymattic.machine.pro.ts:32
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:52
 msgid "Failed"
 msgstr ""
 
@@ -15295,6 +15312,7 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:150
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:116
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:62
 msgid "Payment Method"
 msgstr ""
 
@@ -21066,6 +21084,9 @@ msgid "Enter the Company ID"
 msgstr ""
 
 #: frontend/src/services/machines/jetpackCrm/commonMachines/invoiceId.jetpackCrm.machine.ts:14
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:70
+#: frontend/src/services/machines/stripe/finalizeInvoice.stripe.machine.pro.ts:18
+#: frontend/src/services/machines/stripe/voidInvoice.stripe.machine.pro.ts:18
 msgid "Invoice ID"
 msgstr ""
 
@@ -21082,6 +21103,7 @@ msgid "Enter the Quote ID"
 msgstr ""
 
 #: frontend/src/services/machines/jetpackCrm/commonMachines/transactionId.jetpackCrm.machine.ts:14
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:71
 msgid "Transaction ID"
 msgstr ""
 
@@ -21729,6 +21751,7 @@ msgid "Booking Updated"
 msgstr ""
 
 #: frontend/src/services/machines/latePoint/_latePointMachines.ts:115
+#: frontend/src/services/machines/profilePress/_profilePressMachines.ts:54
 #: frontend/src/services/machines/stripe/helpers/commonUtils.stripe.ts:100
 msgid "Customer Updated"
 msgstr ""
@@ -23357,6 +23380,7 @@ msgid "Enter last name"
 msgstr ""
 
 #: frontend/src/services/machines/mailerPress/createOrUpdateContact.mailerPress.machine.pro.ts:55
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:55
 #: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:73
 #: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:84
 msgid "Select status"
@@ -26418,6 +26442,133 @@ msgstr ""
 msgid "User UnApproved By Admin"
 msgstr ""
 
+#: frontend/src/services/machines/profilePress/_profilePressMachines.ts:16
+msgid "Add New Order"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/_profilePressMachines.ts:22
+msgid "Add or Update Customer"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/_profilePressMachines.ts:28
+msgid "Get Customer Details by ID"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/_profilePressMachines.ts:34
+msgid "Get Order Details by ID"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/_profilePressMachines.ts:40
+msgid "Get Plan Details by ID"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/_profilePressMachines.ts:46
+msgid "Get Subscription Details by ID"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/_profilePressMachines.ts:61
+#: frontend/src/services/machines/wPSubscription/_wPSubscriptionMachines.ts:17
+msgid "Subscription Activated"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:14
+msgid "Plan Id"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:17
+msgid "Enter a plan ID"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:25
+msgid "Customer Id"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:28
+msgid "Enter a customer ID"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:39
+msgid "Leave empty to use plan price"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:80
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:62
+msgid "Billing Address"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:89
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:71
+msgid "Billing City"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:98
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:80
+msgid "Billing Country"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:107
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:89
+msgid "Billing State"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:116
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:98
+msgid "Billing Postcode"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:125
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:107
+msgid "Billing Phone"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:134
+msgid "Order Date"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:137
+msgid "Leave empty to use current date"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:143
+msgid "Check to send the order receipt to the customer."
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:145
+msgid "Send Receipt"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:24
+#: frontend/src/services/machines/wishlistMember/createMember.wishlistMember.machine.pro.ts:26
+#: frontend/src/services/machines/wishlistMember/updateMember.wishlistMember.machine.pro.ts:36
+#: frontend/src/services/machines/wooCommerce/createNewCustomer.wooCommerce.machine.pro.ts:58
+#: frontend/src/services/machines/wordPress/helpers/wpUserFields.ts:5
+msgid "Username"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:52
+#: frontend/src/services/machines/wishlistMember/createMember.wishlistMember.machine.pro.ts:68
+#: frontend/src/services/machines/wooCommerce/createNewCustomer.wooCommerce.machine.pro.ts:68
+#: frontend/src/services/machines/zoom/createMeeting.zoom.machine.pro.ts:67
+#: frontend/src/services/machines/zoom/createWebinar.zoom.machine.pro.ts:67
+#: frontend/src/services/machines/zoom/updateMeeting.zoom.machine.pro.ts:100
+msgid "Password"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:55
+msgid "Leave empty to auto-generate"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/getPlanDetailsById.profilePress.machine.pro.ts:14
+msgid "Plan ID"
+msgstr ""
+
+#: frontend/src/services/machines/profilePress/getSubscriptionDetailsById.profilePress.machine.pro.ts:14
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:46
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:80
+#: frontend/src/services/machines/stripe/retrieveSubscriptionById.stripe.machine.pro.ts:22
+msgid "Subscription ID"
+msgstr ""
+
 #: frontend/src/services/machines/rafflepress/_rafflepressMachines.ts:16
 msgid "Get All Giveaways"
 msgstr ""
@@ -27530,55 +27681,67 @@ msgstr ""
 msgid "Order Restored"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:16
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:17
 msgid "Create a Customer"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:22
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:24
 msgid "Create an Invoice"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:28
-msgid "Create a Product"
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:31
+msgid "Create an Invoice Item"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:34
-msgid "Create a Subscription"
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:38
+msgid "Finalize Invoice"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:40
-msgid "Create a PaymentIntent"
-msgstr ""
-
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:46
-msgid "Cancel a Subscription"
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:45
+msgid "Void Invoice"
 msgstr ""
 
 #: frontend/src/services/machines/stripe/_stripeMachines.ts:52
+msgid "Create a Product"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:59
+msgid "Create a Subscription"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:66
+msgid "Create a PaymentIntent"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:73
+msgid "Cancel a Subscription"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:80
 msgid "Retrieve Balance"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:58
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:87
 msgid "Retrieve Customer"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:64
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:94
 msgid "Retrieve Customer By ID"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:70
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:101
 msgid "Retrieve Price"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:76
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:108
 msgid "Retrieve Subscriptions"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:82
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:115
 msgid "Retrieve Subscriptions By Subscription ID"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/_stripeMachines.ts:88
+#: frontend/src/services/machines/stripe/_stripeMachines.ts:122
 msgid "Retrieve Subscription By Customer ID"
 msgstr ""
 
@@ -27635,59 +27798,182 @@ msgid "Enter State, county, province, or region of the customer"
 msgstr ""
 
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:138
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:111
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:188
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:152
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:84
 #: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:72
 #: frontend/src/services/machines/stripe/createSubscription.stripe.machine.pro.ts:59
 msgid "Meta Data"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:20
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:21
 msgid "Enter the customer ID for creating invoice"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:31
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:32
 msgid "Enter the description of the invoice"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:41
-msgid "Select the auto advance option for the invoice"
-msgstr ""
-
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:43
-msgid "Auto advance"
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:42
+msgid ""
+"The ID of the subscription to invoice. If set, the invoice will be created "
+"with subscription line items."
 msgstr ""
 
 #: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:55
+msgid ""
+"How to handle pending invoice items: exclude, include, or "
+"include_and_require."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:59
+msgid "Pending Invoice Items Behavior"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:62
+msgid "Exclude"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:63
+msgid "Include"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:71
+msgid "The tax rates that apply to this invoice. Fetched from your Stripe account."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:73
+msgid "Default Tax Rates ID"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:84
+msgid "The ID of the default payment method for this invoice."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:86
+msgid "Default Payment Method ID"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:94
+msgid ""
+"The ID of the default payment source (legacy). Use a card or bank account "
+"ID attached to the customer."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:98
+msgid "Default Payment Source ID"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:106
+msgid "Footer text shown on the invoice PDF and in the hosted invoice page."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:108
+msgid "Footer"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:116
+msgid ""
+"Select the Auto-Advance option for the invoice. Choose ‘Yes’ to send the "
+"invoice."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:120
+msgid "Auto advance"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:132
 msgid "Select the collection method of the invoice"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:57
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:134
 msgid "Collection Method"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:60
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:137
 msgid "Charge automatically"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:61
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:138
 msgid "Send invoice"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:69
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:146
 msgid ""
 "Either Days Until Due or Due Date must be supplied. The date on which "
 "payment for this invoice is due. Enter the time (as a Unix timestamp)"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:81
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:158
 msgid ""
 "Either Days Until Due or Due Date must be supplied. The date on which "
 "payment for this invoice is due."
 msgstr ""
 
-#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:85
+#: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:162
 msgid "Days Until Due"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:21
+msgid "Enter the customer ID"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:32
+msgid ""
+"The integer amount in cents of the charge to be applied to the upcoming "
+"invoice."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:45
+msgid "Three-letter ISO currency code, in lowercase. Must be a supported currency."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:56
+msgid "An arbitrary string which you can attach to the invoice item."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:66
+msgid ""
+"The ID of the invoice this invoice item belongs to. If not provided, the "
+"invoice item will be added to the next upcoming drafts or invoices."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:78
+msgid "The ID of a subscription to add this invoice item to."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:88
+msgid "Controls whether discounts apply to this invoice item."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:90
+msgid "Discountable"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:99
+msgid "The integer timestamp in seconds representing the start of the period."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:101
+msgid "Period Start"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:109
+msgid "The integer timestamp in seconds representing the end of the period."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:111
+msgid "Period End"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:119
+msgid ""
+"The tax rates which apply to the invoice item. When set, the "
+"default_tax_rates on the invoice do not apply to this invoice item."
+msgstr ""
+
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:123
+msgid "Tax Rates"
 msgstr ""
 
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:20
@@ -27736,6 +28022,10 @@ msgstr ""
 
 #: frontend/src/services/machines/stripe/createSubscription.stripe.machine.pro.ts:33
 msgid "Price"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/finalizeInvoice.stripe.machine.pro.ts:16
+msgid "Enter the draft Invoice ID you want to Finalize"
 msgstr ""
 
 #: frontend/src/services/machines/stripe/helpers/commonUtils.stripe.ts:7
@@ -27887,12 +28177,12 @@ msgstr ""
 msgid "Enter subscription ID to retrieve the subscription"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/retrieveSubscriptionById.stripe.machine.pro.ts:22
-msgid "Subscription ID"
-msgstr ""
-
 #: frontend/src/services/machines/stripe/retrieveSubscriptionCustomerId.stripe.machine.pro.ts:20
 msgid "Enter customer ID to retrieve the subscription"
+msgstr ""
+
+#: frontend/src/services/machines/stripe/voidInvoice.stripe.machine.pro.ts:16
+msgid "Enter the ID of the only open invoice"
 msgstr ""
 
 #: frontend/src/services/machines/stripe/webhookAutomation.stripe.machine.pro.ts:26
@@ -29949,13 +30239,6 @@ msgstr ""
 msgid "The username of the member to create."
 msgstr ""
 
-#: frontend/src/services/machines/wishlistMember/createMember.wishlistMember.machine.pro.ts:26
-#: frontend/src/services/machines/wishlistMember/updateMember.wishlistMember.machine.pro.ts:36
-#: frontend/src/services/machines/wooCommerce/createNewCustomer.wooCommerce.machine.pro.ts:58
-#: frontend/src/services/machines/wordPress/helpers/wpUserFields.ts:5
-msgid "Username"
-msgstr ""
-
 #: frontend/src/services/machines/wishlistMember/createMember.wishlistMember.machine.pro.ts:35
 #: frontend/src/services/machines/wishlistMember/updateMember.wishlistMember.machine.pro.ts:44
 msgid "The email address of the member to create."
@@ -29973,14 +30256,6 @@ msgstr ""
 
 #: frontend/src/services/machines/wishlistMember/createMember.wishlistMember.machine.pro.ts:66
 msgid "The password of the member to create."
-msgstr ""
-
-#: frontend/src/services/machines/wishlistMember/createMember.wishlistMember.machine.pro.ts:68
-#: frontend/src/services/machines/wooCommerce/createNewCustomer.wooCommerce.machine.pro.ts:68
-#: frontend/src/services/machines/zoom/createMeeting.zoom.machine.pro.ts:67
-#: frontend/src/services/machines/zoom/createWebinar.zoom.machine.pro.ts:67
-#: frontend/src/services/machines/zoom/updateMeeting.zoom.machine.pro.ts:100
-msgid "Password"
 msgstr ""
 
 #: frontend/src/services/machines/wishlistMember/createMember.wishlistMember.machine.pro.ts:78
@@ -34643,8 +34918,34 @@ msgstr ""
 msgid "User submits a poll"
 msgstr ""
 
-#: frontend/src/services/machines/wPSubscription/_wPSubscriptionMachines.ts:17
-msgid "Subscription Activated"
+#: frontend/src/services/machines/wpSimplePay/_wpSimplePayMachines.ts:17
+msgid "User completes payment for a form"
+msgstr ""
+
+#: frontend/src/services/machines/wpSimplePay/_wpSimplePayMachines.ts:20
+msgid ""
+"**When Trigger**: A payment is completed successfully. This trigger fires "
+"when a Stripe payment intent succeeds for a WP Simple Pay form."
+msgstr ""
+
+#: frontend/src/services/machines/wpSimplePay/_wpSimplePayMachines.ts:27
+msgid "User creates a subscription for a form"
+msgstr ""
+
+#: frontend/src/services/machines/wpSimplePay/_wpSimplePayMachines.ts:30
+msgid ""
+"**When Trigger**: A subscription is created. This trigger fires when a new "
+"subscription is created via WP Simple Pay."
+msgstr ""
+
+#: frontend/src/services/machines/wpSimplePay/_wpSimplePayMachines.ts:37
+msgid "User renews a subscription for a form"
+msgstr ""
+
+#: frontend/src/services/machines/wpSimplePay/_wpSimplePayMachines.ts:40
+msgid ""
+"**When Trigger**: A subscription is renewed. This trigger fires when a "
+"subscription payment succeeds for a WP Simple Pay form."
 msgstr ""
 
 #: frontend/src/services/machines/wPSubscription/_wPSubscriptionMachines.ts:24

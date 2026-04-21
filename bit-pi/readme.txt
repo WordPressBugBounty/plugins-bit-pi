@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 6.9.4
 Requires PHP: 7.4
-Stable tag: 1.18.0
+Stable tag: 1.19.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -488,6 +488,15 @@ Detailed external service disclosure (what data is sent, when it is sent, and li
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.19.0 (Apr 21, 2026) =
+* **Triggers (03)**:
+  * WP Simple Pay (03)
+
+* **Actions (03)**:
+  * Stripe (03)
+
+* **Improvement:** Added new fields in Stripe Create Invoice action.
 
 = v1.18.0 (Apr 17, 2026) =
 * **Features**:

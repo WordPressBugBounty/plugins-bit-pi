@@ -10729,6 +10729,60 @@ return [
 
     'User UnApproved By Admin' => __('User UnApproved By Admin', 'bit-pi'),
 
+    'Add New Order' => __('Add New Order', 'bit-pi'),
+
+    'Add or Update Customer' => __('Add or Update Customer', 'bit-pi'),
+
+    'Get Customer Details by ID' => __('Get Customer Details by ID', 'bit-pi'),
+
+    'Get Order Details by ID' => __('Get Order Details by ID', 'bit-pi'),
+
+    'Get Plan Details by ID' => __('Get Plan Details by ID', 'bit-pi'),
+
+    'Get Subscription Details by ID' => __('Get Subscription Details by ID', 'bit-pi'),
+
+    'Subscription Activated' => __('Subscription Activated', 'bit-pi'),
+
+    'Plan Id' => __('Plan Id', 'bit-pi'),
+
+    'Enter a plan ID' => __('Enter a plan ID', 'bit-pi'),
+
+    'Customer Id' => __('Customer Id', 'bit-pi'),
+
+    'Enter a customer ID' => __('Enter a customer ID', 'bit-pi'),
+
+    'Leave empty to use plan price' => __('Leave empty to use plan price', 'bit-pi'),
+
+    'Billing Address' => __('Billing Address', 'bit-pi'),
+
+    'Billing City' => __('Billing City', 'bit-pi'),
+
+    'Billing Country' => __('Billing Country', 'bit-pi'),
+
+    'Billing State' => __('Billing State', 'bit-pi'),
+
+    'Billing Postcode' => __('Billing Postcode', 'bit-pi'),
+
+    'Billing Phone' => __('Billing Phone', 'bit-pi'),
+
+    'Order Date' => __('Order Date', 'bit-pi'),
+
+    'Leave empty to use current date' => __('Leave empty to use current date', 'bit-pi'),
+
+    'Check to send the order receipt to the customer.' => __('Check to send the order receipt to the customer.', 'bit-pi'),
+
+    'Send Receipt' => __('Send Receipt', 'bit-pi'),
+
+    'Username' => __('Username', 'bit-pi'),
+
+    'Password' => __('Password', 'bit-pi'),
+
+    'Leave empty to auto-generate' => __('Leave empty to auto-generate', 'bit-pi'),
+
+    'Plan ID' => __('Plan ID', 'bit-pi'),
+
+    'Subscription ID' => __('Subscription ID', 'bit-pi'),
+
     'Get All Giveaways' => __('Get All Giveaways', 'bit-pi'),
 
     'Retrieves all giveaways from RafflePress.' => __('Retrieves all giveaways from RafflePress.', 'bit-pi'),
@@ -11233,6 +11287,12 @@ return [
 
     'Create an Invoice' => __('Create an Invoice', 'bit-pi'),
 
+    'Create an Invoice Item' => __('Create an Invoice Item', 'bit-pi'),
+
+    'Finalize Invoice' => __('Finalize Invoice', 'bit-pi'),
+
+    'Void Invoice' => __('Void Invoice', 'bit-pi'),
+
     'Create a Product' => __('Create a Product', 'bit-pi'),
 
     'Create a Subscription' => __('Create a Subscription', 'bit-pi'),
@@ -11287,7 +11347,33 @@ return [
 
     'Enter the description of the invoice' => __('Enter the description of the invoice', 'bit-pi'),
 
-    'Select the auto advance option for the invoice' => __('Select the auto advance option for the invoice', 'bit-pi'),
+    'The ID of the subscription to invoice. If set, the invoice will be created with subscription line items.' => __('The ID of the subscription to invoice. If set, the invoice will be created with subscription line items.', 'bit-pi'),
+
+    'How to handle pending invoice items: exclude, include, or include_and_require.' => __('How to handle pending invoice items: exclude, include, or include_and_require.', 'bit-pi'),
+
+    'Pending Invoice Items Behavior' => __('Pending Invoice Items Behavior', 'bit-pi'),
+
+    'Exclude' => __('Exclude', 'bit-pi'),
+
+    'Include' => __('Include', 'bit-pi'),
+
+    'The tax rates that apply to this invoice. Fetched from your Stripe account.' => __('The tax rates that apply to this invoice. Fetched from your Stripe account.', 'bit-pi'),
+
+    'Default Tax Rates ID' => __('Default Tax Rates ID', 'bit-pi'),
+
+    'The ID of the default payment method for this invoice.' => __('The ID of the default payment method for this invoice.', 'bit-pi'),
+
+    'Default Payment Method ID' => __('Default Payment Method ID', 'bit-pi'),
+
+    'The ID of the default payment source (legacy). Use a card or bank account ID attached to the customer.' => __('The ID of the default payment source (legacy). Use a card or bank account ID attached to the customer.', 'bit-pi'),
+
+    'Default Payment Source ID' => __('Default Payment Source ID', 'bit-pi'),
+
+    'Footer text shown on the invoice PDF and in the hosted invoice page.' => __('Footer text shown on the invoice PDF and in the hosted invoice page.', 'bit-pi'),
+
+    'Footer' => __('Footer', 'bit-pi'),
+
+    'Select the Auto-Advance option for the invoice. Choose ‘Yes’ to send the invoice.' => __('Select the Auto-Advance option for the invoice. Choose ‘Yes’ to send the invoice.', 'bit-pi'),
 
     'Auto advance' => __('Auto advance', 'bit-pi'),
 
@@ -11304,6 +11390,34 @@ return [
     'Either Days Until Due or Due Date must be supplied. The date on which payment for this invoice is due.' => __('Either Days Until Due or Due Date must be supplied. The date on which payment for this invoice is due.', 'bit-pi'),
 
     'Days Until Due' => __('Days Until Due', 'bit-pi'),
+
+    'Enter the customer ID' => __('Enter the customer ID', 'bit-pi'),
+
+    'The integer amount in cents of the charge to be applied to the upcoming invoice.' => __('The integer amount in cents of the charge to be applied to the upcoming invoice.', 'bit-pi'),
+
+    'Three-letter ISO currency code, in lowercase. Must be a supported currency.' => __('Three-letter ISO currency code, in lowercase. Must be a supported currency.', 'bit-pi'),
+
+    'An arbitrary string which you can attach to the invoice item.' => __('An arbitrary string which you can attach to the invoice item.', 'bit-pi'),
+
+    'The ID of the invoice this invoice item belongs to. If not provided, the invoice item will be added to the next upcoming drafts or invoices.' => __('The ID of the invoice this invoice item belongs to. If not provided, the invoice item will be added to the next upcoming drafts or invoices.', 'bit-pi'),
+
+    'The ID of a subscription to add this invoice item to.' => __('The ID of a subscription to add this invoice item to.', 'bit-pi'),
+
+    'Controls whether discounts apply to this invoice item.' => __('Controls whether discounts apply to this invoice item.', 'bit-pi'),
+
+    'Discountable' => __('Discountable', 'bit-pi'),
+
+    'The integer timestamp in seconds representing the start of the period.' => __('The integer timestamp in seconds representing the start of the period.', 'bit-pi'),
+
+    'Period Start' => __('Period Start', 'bit-pi'),
+
+    'The integer timestamp in seconds representing the end of the period.' => __('The integer timestamp in seconds representing the end of the period.', 'bit-pi'),
+
+    'Period End' => __('Period End', 'bit-pi'),
+
+    'The tax rates which apply to the invoice item. When set, the default_tax_rates on the invoice do not apply to this invoice item.' => __('The tax rates which apply to the invoice item. When set, the default_tax_rates on the invoice do not apply to this invoice item.', 'bit-pi'),
+
+    'Tax Rates' => __('Tax Rates', 'bit-pi'),
 
     'Enter the amount for the PaymentIntent as a numeric value in the smallest unit of the currency. For example, for USD, enter 1000 to represent $10.00.' => __('Enter the amount for the PaymentIntent as a numeric value in the smallest unit of the currency. For example, for USD, enter 1000 to represent $10.00.', 'bit-pi'),
 
@@ -11326,6 +11440,8 @@ return [
     'Enter the price ID for creating subscription' => __('Enter the price ID for creating subscription', 'bit-pi'),
 
     'Price' => __('Price', 'bit-pi'),
+
+    'Enter the draft Invoice ID you want to Finalize' => __('Enter the draft Invoice ID you want to Finalize', 'bit-pi'),
 
     'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://dashboard.stripe.com/account/apikeys">Here</a>. Please click on "Create Secret Key"' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://dashboard.stripe.com/account/apikeys">Here</a>. Please click on "Create Secret Key"', 'bit-pi'),
 
@@ -11399,9 +11515,9 @@ return [
 
     'Enter subscription ID to retrieve the subscription' => __('Enter subscription ID to retrieve the subscription', 'bit-pi'),
 
-    'Subscription ID' => __('Subscription ID', 'bit-pi'),
-
     'Enter customer ID to retrieve the subscription' => __('Enter customer ID to retrieve the subscription', 'bit-pi'),
+
+    'Enter the ID of the only open invoice' => __('Enter the ID of the only open invoice', 'bit-pi'),
 
     'Select an event, that will attach to the webhook. The webhook will be triggered when the selected event occurs in stripe.' => __('Select an event, that will attach to the webhook. The webhook will be triggered when the selected event occurs in stripe.', 'bit-pi'),
 
@@ -12310,8 +12426,6 @@ return [
 
     'The username of the member to create.' => __('The username of the member to create.', 'bit-pi'),
 
-    'Username' => __('Username', 'bit-pi'),
-
     'The email address of the member to create.' => __('The email address of the member to create.', 'bit-pi'),
 
     'The first name of the member to create.' => __('The first name of the member to create.', 'bit-pi'),
@@ -12319,8 +12433,6 @@ return [
     'The last name of the member to create.' => __('The last name of the member to create.', 'bit-pi'),
 
     'The password of the member to create.' => __('The password of the member to create.', 'bit-pi'),
-
-    'Password' => __('Password', 'bit-pi'),
 
     'Generate a random password for the member.' => __('Generate a random password for the member.', 'bit-pi'),
 
@@ -14362,7 +14474,17 @@ return [
 
     'User submits a poll' => __('User submits a poll', 'bit-pi'),
 
-    'Subscription Activated' => __('Subscription Activated', 'bit-pi'),
+    'User completes payment for a form' => __('User completes payment for a form', 'bit-pi'),
+
+    '**When Trigger**: A payment is completed successfully. This trigger fires when a Stripe payment intent succeeds for a WP Simple Pay form.' => __('**When Trigger**: A payment is completed successfully. This trigger fires when a Stripe payment intent succeeds for a WP Simple Pay form.', 'bit-pi'),
+
+    'User creates a subscription for a form' => __('User creates a subscription for a form', 'bit-pi'),
+
+    '**When Trigger**: A subscription is created. This trigger fires when a new subscription is created via WP Simple Pay.' => __('**When Trigger**: A subscription is created. This trigger fires when a new subscription is created via WP Simple Pay.', 'bit-pi'),
+
+    'User renews a subscription for a form' => __('User renews a subscription for a form', 'bit-pi'),
+
+    '**When Trigger**: A subscription is renewed. This trigger fires when a subscription payment succeeds for a WP Simple Pay form.' => __('**When Trigger**: A subscription is renewed. This trigger fires when a subscription payment succeeds for a WP Simple Pay form.', 'bit-pi'),
 
     'Subscription Cancelled' => __('Subscription Cancelled', 'bit-pi'),
 

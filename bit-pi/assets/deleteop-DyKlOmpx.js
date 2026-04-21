@@ -1,0 +1,1 @@
+import{c as r}from"./createwp-U1FqnXMS.js";import"./_flowdet--u9m-Bbv.js";import"./main-many-chairs-wear.js";import"./lodash-D8NT0xPp.js";globalThis.jotaiAtomCache=globalThis.jotaiAtomCache||{cache:new Map,get(t,a){return this.cache.has(t)?this.cache.get(t):(this.cache.set(t,a),a)}};export{r as default};

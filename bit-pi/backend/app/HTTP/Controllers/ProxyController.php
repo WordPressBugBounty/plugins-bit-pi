@@ -32,7 +32,7 @@ final class ProxyController
 
         $contentType = $headers['Content-Type'] ?? null;
 
-        $error = $this->isInvalidURL($url);
+        // $error = $this->isInvalidURL($url);
 
         $uuid = null;
 
@@ -46,9 +46,9 @@ final class ProxyController
             $headers['Content-Type'] = $contentType;
         }
 
-        if ($error) {
-            return Response::error($error);
-        }
+        // if ($error) {
+        //     return Response::error($error);
+        // }
 
         if (!\is_null($queryParams)) {
             $url .= '?' . http_build_query($queryParams);
@@ -67,33 +67,33 @@ final class ProxyController
         return Response::success($response);
     }
 
-    /**
-     * Check if the URL is invalid.
-     *
-     * @param string $url
-     *
-     * @return bool|string
-     */
-    private function isInvalidURL($url)
-    {
-        $parsedUrl = wp_parse_url($url);
+    // TODO: Need to implement for self host protection and private IP ranges protection. For now, we are allowing all URLs.
+    //  * Check if the URL is invalid.
+    //  *
+    //  * @param string $url
+    //  *
+    //  * @return bool|string
+    //  */
+    // private function isInvalidURL($url)
+    // {
+    //     $parsedUrl = wp_parse_url($url);
 
-        if ($parsedUrl === false || !\in_array($parsedUrl['scheme'], ['http', 'https'], true)) {
-            return 'Only HTTP and HTTPS URLs are allowed.';
-        }
+    //     if ($parsedUrl === false || !\in_array($parsedUrl['scheme'], ['http', 'https'], true)) {
+    //         return 'Only HTTP and HTTPS URLs are allowed.';
+    //     }
 
-        $host = $parsedUrl['host'] ?? '';
+    //     $host = $parsedUrl['host'] ?? '';
 
-        if ($host === wp_parse_url(site_url(), PHP_URL_HOST)) {
-            return 'Self request is not allowed.';
-        }
+    //     if ($host === wp_parse_url(site_url(), PHP_URL_HOST)) {
+    //         return 'Self request is not allowed.';
+    //     }
 
-        $resolvedIp = gethostbyname($host);
+    //     $resolvedIp = gethostbyname($host);
 
-        if (!filter_var($resolvedIp, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE)) {
-            return 'Requests to private or reserved IP ranges are not allowed.';
-        }
+    //     if (!filter_var($resolvedIp, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE)) {
+    //         return 'Requests to private or reserved IP ranges are not allowed.';
+    //     }
 
-        return false;
-    }
+    //     return false;
+    // }
 }
