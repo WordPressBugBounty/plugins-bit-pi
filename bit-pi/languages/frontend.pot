@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Tue Apr 21 2026 11:36:17 GMT+0000 (Coordinated Universal "
+"POT-Creation-Date: Mon May 04 2026 07:06:43 GMT+0000 (Coordinated Universal "
 "Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -653,7 +653,7 @@ msgid "Select App & Action"
 msgstr ""
 
 #: frontend/src/components/features/AppDrawer/internals/DrawerListItem.tsx:71
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:82
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:67
 #: frontend/src/components/features/FlowBuilder/internals/Tool/Tool.tsx:51
 #: frontend/src/components/features/NodeDetails/internals/AppHeaderPopoverContent/appHeaderPopoverUtils.tsx:120
 #: frontend/src/components/utilities/ProTag.tsx:17
@@ -695,7 +695,7 @@ msgstr ""
 #: frontend/src/services/machines/goHighLevel/addTask.goHighLevel.machine.pro.ts:60
 #: frontend/src/services/machines/goHighLevel/updateTask.goHighLevel.machine.pro.ts:75
 #: frontend/src/services/machines/googleCalendar/createCalendar.googleCalendar.machine.pro.ts:29
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:44
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:45
 #: frontend/src/services/machines/googleCalendar/updateCalendar.googleCalendar.machine.pro.ts:66
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:59
 #: frontend/src/services/machines/klaviyo/watchEventsCommon.klaviyo.machine.pro.ts:30
@@ -710,6 +710,7 @@ msgstr ""
 #: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:58
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:58
 #: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:33
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:80
 #: frontend/src/services/machines/wooCommerce/commonMachines/createTerm.machine.ts:34
 #: frontend/src/services/machines/wooCommerce/commonMachines/updateTerm.machine.ts:44
 #: frontend/src/services/machines/wordPress/addNewImage.wordPress.machine.free.ts:52
@@ -825,6 +826,7 @@ msgstr ""
 #: frontend/src/services/machines/commonMachines/apiClient.machine.ts:132
 #: frontend/src/services/machines/demio/registerEvent.demio.machine.pro.ts:87
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.pro.ts:119
+#: frontend/src/services/machines/easyDigitalDownload/createPurchase.easyDigitalDownload.machine.pro.ts:27
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.pro.ts:100
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.pro.ts:127
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.pro.ts:80
@@ -840,7 +842,7 @@ msgstr ""
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.pro.ts:81
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.pro.ts:32
 #: frontend/src/services/machines/goHighLevel/updateContact.goHighLevel.machine.pro.ts:48
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:92
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:93
 #: frontend/src/services/machines/googleSheet/addRow.googleSheet.machine.free.ts:67
 #: frontend/src/services/machines/googleSheet/appendOrUpdateRow.googleSheet.machine.free.ts:97
 #: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.pro.ts:105
@@ -1039,6 +1041,7 @@ msgid "Client Secret"
 msgstr ""
 
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/CustomOauth2Connection/CustomOauth2Connection.tsx:304
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:96
 msgid "Scope"
 msgstr ""
 
@@ -1123,34 +1126,39 @@ msgstr ""
 msgid "No apps or tools found"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:33
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:30
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:34
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:31
 msgid "AI Agent"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:42
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:44
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:43
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:45
 msgid "Router"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:51
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:31
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:52
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:32
 msgid "Condition"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:61
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:37
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:62
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:38
 msgid "Delay"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:71
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:40
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:72
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:41
 msgid "Iterator"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:81
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:43
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:82
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:44
 msgid "Repeater/Loop"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:156
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:47
+msgid "Sticky Note"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/internals/FlowTitle.tsx:23
@@ -1178,8 +1186,10 @@ msgid "Back"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/BuilderTopBar/BuilderTopBar.tsx:33
-#: frontend/src/pages/root/Root.tsx:61
+#: frontend/src/pages/root/Root.tsx:65
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.pro.ts:67
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:43
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:34
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.pro.ts:68
 #: frontend/src/services/machines/fluentCommunity/changeMemberStatus.fluentCommunity.machine.pro.ts:29
 #: frontend/src/services/machines/latePoint/createAgent.latePoint.machine.pro.ts:65
@@ -1190,6 +1200,8 @@ msgid "Active"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/BuilderTopBar/BuilderTopBar.tsx:33
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:44
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:35
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.pro.ts:72
 #: frontend/src/services/machines/fluentCommunity/changeMemberStatus.fluentCommunity.machine.pro.ts:30
 #: frontend/src/services/machines/latePoint/createAgent.latePoint.machine.pro.ts:66
@@ -1241,7 +1253,7 @@ msgid "Test Flow Once"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/BuilderTopBar/TryProButton.tsx:16
-#: frontend/src/pages/root/Root.tsx:43
+#: frontend/src/pages/root/Root.tsx:46
 msgid "Try Pro"
 msgstr ""
 
@@ -1255,8 +1267,8 @@ msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/ConditionItem/ConditionItem.tsx:124
 #: frontend/src/components/features/FlowBuilder/internals/EdgeWithBtn/internals/EdgeActions.tsx:65
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:139
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:103
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:138
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeActionButtons.tsx:34
 #: frontend/src/pages/Connections/ui/Connections.tsx:58
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppActions.tsx:48
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppModules.tsx:50
@@ -1309,8 +1321,8 @@ msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/ConditionItem/ConditionItem.tsx:127
 #: frontend/src/components/features/FlowBuilder/internals/EdgeWithBtn/internals/EdgeActions.tsx:68
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:147
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:106
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:146
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeActionButtons.tsx:37
 #: frontend/src/pages/Connections/ui/Connections.tsx:62
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppActions.tsx:50
 #: frontend/src/pages/CustomApps/internals/CustomAppsList/CustomAppModules.tsx:52
@@ -1559,7 +1571,7 @@ msgid "This node is not connected to the data flow."
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/FlowNodeValidate/ui/FlowNodeValidate.tsx:44
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:77
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:62
 #: frontend/src/components/features/NodeDetails/internals/ProFeatureAlert.tsx:17
 msgid ""
 "This tool requires a Pro plan. Flows containing this node will not run "
@@ -1631,11 +1643,12 @@ msgstr ""
 msgid "Select an app"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:113
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:112
 msgid "Unlink"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:113
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:112
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeActionButtons.tsx:42
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:109
 #: frontend/src/components/features/FlowItem/FlowItem.tsx:164
 #: frontend/src/components/utilities/ContextMenu/ContextMenu.stories.tsx:52
@@ -1647,17 +1660,17 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:121
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:120
 #: frontend/src/components/utilities/EditableTextField/EditableTextField.tsx:78
 #: frontend/src/services/machines/acpt/helpers/commonUtils.acpt.ts:155
 msgid "Edit"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:134
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:133
 msgid "Clone"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:140
+#: frontend/src/components/features/FlowBuilder/internals/NodeEdgeContextMenu/NodeEdgeContextMenu.tsx:139
 msgid "Are you sure %1$s this %2$s?"
 msgstr ""
 
@@ -1715,7 +1728,15 @@ msgstr ""
 msgid "Json Parser Node"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:29
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeActionButtons.tsx:35
+msgid "Are you sure to delete this %s?"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeActionButtons.tsx:39
+msgid "Delete %s"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:30
 #: frontend/src/components/features/NodeDetails/internals/DateTimeConfig/DateTimeConfig.tsx:53
 #: frontend/src/pages/CustomApps/internals/AddModuleModal/AddModuleModal.tsx:62
 #: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:43
@@ -1725,71 +1746,86 @@ msgstr ""
 msgid "Action"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:32
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:33
 msgid "Condition Logic"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:33
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:34
 msgid "CSV"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:34
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:35
 msgid "Custom Code"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:35
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:36
 msgid "Date Time"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:36
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:37
 msgid "Default Condition Logic"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:38
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:39
 msgid "Email Parser"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:39
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:40
 msgid "Image Helper"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:41
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:42
 msgid "Json Parser"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:42
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:43
 msgid "PDF Parser"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:45
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:46
 #: frontend/src/services/machines/acpt/helpers/commonUtils.acpt.ts:311
 msgid "Schedule"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:46
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:48
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/SubNode/SubNodeNodeContent.tsx:27
 msgid "Sub Node"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:47
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:49
 #: frontend/src/pages/CustomApps/internals/AddModuleModal/AddModuleModal.tsx:65
 msgid "Trigger"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:48
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:50
 msgid "XML"
-msgstr ""
-
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:104
-msgid "Are you sure to delete this"
-msgstr ""
-
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeWrapper.tsx:108
-msgid "Delete the %s"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/Schedule/ScheduleNodeContent.tsx:24
 msgid "Schedule Node"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/StickyNote/StickyNoteEditor.tsx:36
+msgid "You can style with"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/StickyNote/StickyNoteEditor.tsx:36
+#: frontend/src/services/machines/telegram/sendMedia.telegram.machine.free.ts:80
+#: frontend/src/services/machines/telegram/sendOrReplyMessage.telegram.machine.free.ts:64
+#: frontend/src/services/machines/telegram/sendPoll.telegram.machine.free.ts:155
+msgid "Markdown"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/StickyNote/StickyNoteToolbar.tsx:32
+msgid "Set color"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/StickyNote/StickyNoteToolbar.tsx:46
+msgid "Custom color"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/StickyNote/StickyNoteToolbar.tsx:65
+msgid "Change color"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/Xml/XmlNodeContent.tsx:22
@@ -1872,6 +1908,7 @@ msgstr ""
 #: frontend/src/services/machines/fluentCrm/addTag.fluentCrm.machine.pro.ts:33
 #: frontend/src/services/machines/fluentCrm/createContact.fluentCrm.machine.pro.ts:36
 #: frontend/src/services/machines/fluentCrm/removeTag.fluentCrm.machine.pro.ts:33
+#: frontend/src/services/machines/fluentSupport/addTagToTicket.fluentSupport.machine.pro.ts:26
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.pro.ts:43
 #: frontend/src/services/machines/getResponse/addContact.getResponse.machine.pro.ts:108
 #: frontend/src/services/machines/goHighLevel/addContact.goHighLevel.machine.pro.ts:61
@@ -1982,10 +2019,12 @@ msgstr ""
 #: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:44
 #: frontend/src/services/machines/activeCampaign/updateContactByEmail.activeCampaign.machine.pro.ts:34
 #: frontend/src/services/machines/benchMark/helpers/machineHelper.benchmark.ts:83
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:5
 #: frontend/src/services/machines/emailit/subscribeToAudience.emailit.machine.pro.ts:43
 #: frontend/src/services/machines/flowlu/createAccount.flowlu.machine.pro.ts:53
 #: frontend/src/services/machines/flowlu/updateAccount.flowlu.machine.pro.ts:41
 #: frontend/src/services/machines/fluentCart/helpers/commonUtils.fluentCart.ts:5
+#: frontend/src/services/machines/fluentSupport/createOrObtainCustomer.fluentSupport.machine.pro.ts:26
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:102
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:5
 #: frontend/src/services/machines/klaviyo/createProfile.klaviyo.machine.pro.ts:55
@@ -2020,10 +2059,12 @@ msgstr ""
 #: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:54
 #: frontend/src/services/machines/activeCampaign/updateContactByEmail.activeCampaign.machine.pro.ts:44
 #: frontend/src/services/machines/benchMark/helpers/machineHelper.benchmark.ts:87
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:6
 #: frontend/src/services/machines/emailit/subscribeToAudience.emailit.machine.pro.ts:54
 #: frontend/src/services/machines/flowlu/createAccount.flowlu.machine.pro.ts:64
 #: frontend/src/services/machines/flowlu/updateAccount.flowlu.machine.pro.ts:52
 #: frontend/src/services/machines/fluentCart/helpers/commonUtils.fluentCart.ts:6
+#: frontend/src/services/machines/fluentSupport/createOrObtainCustomer.fluentSupport.machine.pro.ts:37
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.pro.ts:72
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:103
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:6
@@ -2222,6 +2263,7 @@ msgstr ""
 #: frontend/src/services/machines/asana/createTask.asana.machine.pro.ts:41
 #: frontend/src/services/machines/benchMark/createContact.benchmark.machine.pro.ts:39
 #: frontend/src/services/machines/benchMark/updateContact.benchmark.machine.pro.ts:39
+#: frontend/src/services/machines/blueSky/helpers/blueSkyCommons.ts:66
 #: frontend/src/services/machines/brevo/helpers/brevoCommons.ts:30
 #: frontend/src/services/machines/claude/helpers/commonUtils.claude.ts:30
 #: frontend/src/services/machines/clickUp/createTask.clickUp.machine.pro.ts:47
@@ -2607,9 +2649,10 @@ msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/DateTimeConfig/DateTimeConfig.tsx:173
 #: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:281
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:56
-#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:58
-#: frontend/src/services/machines/googleCalendar/findAvailability.googleCalendar.machine.pro.ts:34
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:140
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:57
+#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:59
+#: frontend/src/services/machines/googleCalendar/findAvailability.googleCalendar.machine.pro.ts:35
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:71
 #: frontend/src/services/machines/zohoProject/createMilestone.zohoProject.machine.pro.ts:64
 #: frontend/src/services/machines/zohoProject/createProject.zohoProject.machine.pro.ts:73
@@ -2623,9 +2666,10 @@ msgid "Enter the end date/time"
 msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/DateTimeConfig/DateTimeConfig.tsx:180
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:69
-#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:71
-#: frontend/src/services/machines/googleCalendar/findAvailability.googleCalendar.machine.pro.ts:45
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:151
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:70
+#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:72
+#: frontend/src/services/machines/googleCalendar/findAvailability.googleCalendar.machine.pro.ts:46
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:83
 #: frontend/src/services/machines/zohoProject/createMilestone.zohoProject.machine.pro.ts:74
 #: frontend/src/services/machines/zohoProject/createProject.zohoProject.machine.pro.ts:84
@@ -2727,6 +2771,7 @@ msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/ImageHelperConfig/ImageHelperConfig.tsx:78
 #: frontend/src/components/features/NodeDetails/internals/ImageHelperConfig/ImageHelperConfig.tsx:106
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:62
 #: frontend/src/services/machines/googleDocs/insertImage.googleDocs.machine.pro.ts:62
 #: frontend/src/services/machines/klaviyo/createProfile.klaviyo.machine.pro.ts:95
 #: frontend/src/services/machines/whatsApp/sendImage.whatsApp.machine.free.ts:28
@@ -3295,6 +3340,7 @@ msgid "All tags"
 msgstr ""
 
 #: frontend/src/components/utilities/TagFilter/TagFilter.tsx:118
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:129
 #: frontend/src/services/machines/mcpClientTool/connectToMcpServer.mcpClientTool.machine.free.ts:66
 #: frontend/src/services/machines/microsoftExcel/clearWorksheet.microsoftExcel.machine.pro.ts:66
 msgid "All"
@@ -3709,7 +3755,7 @@ msgstr ""
 #: frontend/src/pages/Flows/internal/CreateFlowModal/CreateFlowModal.tsx:42
 #: frontend/src/pages/Flows/ui/FlowList.tsx:31
 #: frontend/src/pages/Flows/ui/FlowList.tsx:38
-#: frontend/src/pages/root/Root.tsx:46
+#: frontend/src/pages/root/Root.tsx:50
 msgid "Create Flow"
 msgstr ""
 
@@ -3925,6 +3971,9 @@ msgstr ""
 #: frontend/src/services/machines/apify/getUserRunsList.apify.machine.pro.ts:53
 #: frontend/src/services/machines/buddyBoss/setUserStatus.buddyBoss.machine.pro.ts:26
 #: frontend/src/services/machines/clickUp/helpers/machineHelper.clickUp.ts:276
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:40
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:10
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:29
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.pro.ts:119
 #: frontend/src/services/machines/fluentBoards/createStage.fluentBoards.machine.pro.ts:49
 #: frontend/src/services/machines/fluentCart/helpers/commonUtils.fluentCart.ts:7
@@ -3943,6 +3992,10 @@ msgstr ""
 #: frontend/src/services/machines/mailPoet/getSubscriberCount.mailPoet.machine.pro.ts:25
 #: frontend/src/services/machines/mailster/addSubscriberToList.mailster.machine.pro.ts:47
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:193
+#: frontend/src/services/machines/ultimateAffiliatePro/changeTransactionStatus.ultimateAffiliatePro.machine.pro.ts:28
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:28
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllVisit.ultimateAffiliatePro.machine.pro.ts:28
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:88
 #: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:65
 #: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:76
 #: frontend/src/services/machines/wpCafe/helpers/wpCafeFields.ts:15
@@ -3959,24 +4012,24 @@ msgstr ""
 msgid "Top Executed Flows"
 msgstr ""
 
-#: frontend/src/pages/root/Root.tsx:32
+#: frontend/src/pages/root/Root.tsx:34
 msgid "Welcome"
 msgstr ""
 
-#: frontend/src/pages/root/Root.tsx:68
+#: frontend/src/pages/root/Root.tsx:72
 msgid "Total Workflows"
 msgstr ""
 
-#: frontend/src/pages/root/Root.tsx:77
-#: frontend/src/pages/root/Root.tsx:92
+#: frontend/src/pages/root/Root.tsx:81
+#: frontend/src/pages/root/Root.tsx:96
 msgid "View all"
 msgstr ""
 
-#: frontend/src/pages/root/Root.tsx:83
+#: frontend/src/pages/root/Root.tsx:87
 msgid "Total Connections"
 msgstr ""
 
-#: frontend/src/pages/root/Root.tsx:98
+#: frontend/src/pages/root/Root.tsx:102
 msgid "Total Custom App"
 msgstr ""
 
@@ -4154,6 +4207,7 @@ msgstr ""
 #: frontend/src/pages/SystemInfo/ui/SystemInfo.tsx:120
 #: frontend/src/pages/SystemInfo/ui/SystemInfo.tsx:125
 #: frontend/src/pages/SystemInfo/ui/SystemInfo.tsx:210
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:37
 msgid "Disabled"
 msgstr ""
 
@@ -4385,8 +4439,8 @@ msgstr ""
 #: frontend/src/services/machines/cartFlow/orderCreateWc.cartFlow.machine.pro.ts:45
 #: frontend/src/services/machines/commonMachines/createWpActionHookListener.machine.ts:14
 #: frontend/src/services/machines/contactForm7/formSubmitted.contactForm7.machine.free.ts:32
-#: frontend/src/services/machines/easyDigitalDownload/purchaseProduct.easyDigitalDownload.machine.pro.ts:45
-#: frontend/src/services/machines/easyDigitalDownload/purchaseProductDiscount.easyDigitalDownload.machine.pro.ts:45
+#: frontend/src/services/machines/easyDigitalDownload/purchaseProduct.easyDigitalDownload.machine.pro.ts:49
+#: frontend/src/services/machines/easyDigitalDownload/purchaseProductDiscount.easyDigitalDownload.machine.pro.ts:49
 #: frontend/src/services/machines/eForm/submissionSuccess.eForm.machine.pro.ts:45
 #: frontend/src/services/machines/eventsCalendar/attendeeRegistered.eventsCalendar.machine.pro.ts:45
 #: frontend/src/services/machines/eventsCalendar/attendeeRegisteredWc.eventsCalendar.machine.pro.ts:45
@@ -4539,9 +4593,13 @@ msgstr ""
 #: frontend/src/services/machines/buddyBoss/setUserExtendedProfile.buddyBoss.machine.pro.ts:19
 #: frontend/src/services/machines/buddyBoss/setUserStatus.buddyBoss.machine.pro.ts:15
 #: frontend/src/services/machines/buddyBoss/subscribeUserToForum.buddyBoss.machine.pro.ts:16
+#: frontend/src/services/machines/easyDigitalDownload/commonMachines/userHasDownload.easyDigitalDownload.machine.ts:16
 #: frontend/src/services/machines/eventsManager/unregisterUserFromEvent.eventsManager.machine.pro.ts:29
 #: frontend/src/services/machines/learnDashAchievements/awardAchievement.learnDashAchievements.machine.pro.ts:16
 #: frontend/src/services/machines/learnPress/commonMachines/enrollment.learnPress.machine.ts:15
+#: frontend/src/services/machines/modernEventsCalendar/registerUserForEvent.modernEventsCalendar.machine.pro.ts:46
+#: frontend/src/services/machines/peepSo/addPostActivityStream.peepSo.machine.pro.ts:14
+#: frontend/src/services/machines/peepSo/changeUserRole.peepSo.machine.pro.ts:22
 #: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:14
 #: frontend/src/services/machines/slack/findUserByEmail.slack.machine.pro.ts:18
 #: frontend/src/services/machines/teamsForWoocommerceMemberships/addMemberToTeam.teamsForWoocommerceMemberships.machine.pro.ts:31
@@ -4823,6 +4881,7 @@ msgstr ""
 
 #: frontend/src/services/machines/acpt/createCustomPostType.acpt.machine.pro.ts:74
 #: frontend/src/services/machines/acpt/registerTaxonomy.acpt.machine.pro.ts:46
+#: frontend/src/services/machines/easyDigitalDownload/createPurchase.easyDigitalDownload.machine.pro.ts:13
 #: frontend/src/services/machines/fluentCart/createCustomer.fluentCart.machine.pro.ts:17
 #: frontend/src/services/machines/fluentCart/createProduct.fluentCart.machine.pro.ts:99
 #: frontend/src/services/machines/fluentCart/updateCustomer.fluentCart.machine.pro.ts:24
@@ -4876,6 +4935,7 @@ msgstr ""
 #: frontend/src/services/machines/buddyBoss/setUserExtendedProfile.buddyBoss.machine.pro.ts:31
 #: frontend/src/services/machines/demio/registerEvent.demio.machine.pro.ts:77
 #: frontend/src/services/machines/drip/createOrUpdateContact.drip.machine.pro.ts:110
+#: frontend/src/services/machines/easyDigitalDownload/createPurchase.easyDigitalDownload.machine.pro.ts:18
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.pro.ts:69
 #: frontend/src/services/machines/fluentCrm/createCompany.fluentCrm.machine.pro.ts:19
 #: frontend/src/services/machines/fluentCrm/createCompany.fluentCrm.machine.pro.ts:52
@@ -5737,6 +5797,7 @@ msgid "Dismiss"
 msgstr ""
 
 #: frontend/src/services/machines/acpt/helpers/commonUtils.acpt.ts:151
+#: frontend/src/services/machines/easyDigitalDownload/commonMachines/userHasDownload.easyDigitalDownload.machine.ts:30
 msgid "Download"
 msgstr ""
 
@@ -6188,7 +6249,7 @@ msgid "Location Alt"
 msgstr ""
 
 #: frontend/src/services/machines/acpt/helpers/commonUtils.acpt.ts:255
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:80
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:81
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:93
 #: frontend/src/services/machines/klaviyo/createProfile.klaviyo.machine.pro.ts:128
 msgid "Location"
@@ -6399,7 +6460,7 @@ msgid "Privacy"
 msgstr ""
 
 #: frontend/src/services/machines/acpt/helpers/commonUtils.acpt.ts:303
-#: frontend/src/services/machines/easyDigitalDownload/purchaseProduct.easyDigitalDownload.machine.pro.ts:33
+#: frontend/src/services/machines/easyDigitalDownload/purchaseProduct.easyDigitalDownload.machine.pro.ts:37
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:46
 #: frontend/src/services/machines/sureCart/purchaseCreated.sureCart.machine.pro.ts:33
 #: frontend/src/services/machines/sureCart/purchaseInvoked.sureCart.machine.pro.ts:33
@@ -6645,7 +6706,7 @@ msgid "Video Alt3"
 msgstr ""
 
 #: frontend/src/services/machines/acpt/helpers/commonUtils.acpt.ts:366
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:114
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:115
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:113
 msgid "Visibility"
 msgstr ""
@@ -6849,7 +6910,7 @@ msgid "Subscribe Or Unsubscribe Contact from List"
 msgstr ""
 
 #: frontend/src/services/machines/activeCampaign/_activeCampaignMachines.ts:73
-#: frontend/src/services/machines/discord/_discordMachines.ts:100
+#: frontend/src/services/machines/discord/_discordMachines.ts:115
 msgid "Find User"
 msgstr ""
 
@@ -6965,7 +7026,7 @@ msgstr ""
 #: frontend/src/services/machines/github/createIssue.github.machine.pro.ts:31
 #: frontend/src/services/machines/github/createIssueComment.github.machine.pro.ts:31
 #: frontend/src/services/machines/github/getRepository.github.machine.pro.ts:22
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:50
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:51
 #: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:85
 #: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:156
 msgid "Owner"
@@ -7003,12 +7064,15 @@ msgstr ""
 #: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:43
 #: frontend/src/services/machines/activeCampaign/createDeal.activeCampaign.machine.pro.ts:119
 #: frontend/src/services/machines/activeCampaign/updateAccount.activeCampaign.machine.pro.ts:79
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:12
 #: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:15
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:45
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:74
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:178
 #: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:47
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:37
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:100
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:76
 #: frontend/src/services/machines/zohoProject/createProject.zohoProject.machine.pro.ts:192
 #: frontend/src/services/machines/zohoProject/updateProject.zohoProject.machine.pro.ts:212
 msgid "Currency"
@@ -7341,12 +7405,13 @@ msgstr ""
 
 #: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:96
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:115
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:48
 msgid "Source"
 msgstr ""
 
 #: frontend/src/services/machines/activeCampaign/watchWebhookEvents.activeCampaign.machine.pro.ts:100
 #: frontend/src/services/machines/buddyBoss/createGroup.buddyBoss.machine.pro.ts:30
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:118
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:119
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:117
 #: frontend/src/services/machines/wordPress/registerPostType.wordPress.machine.free.ts:51
 msgid "Public"
@@ -7474,6 +7539,7 @@ msgid "Draft"
 msgstr ""
 
 #: frontend/src/services/machines/advancedAds/setAdStatus.advancedAds.machine.pro.ts:31
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:42
 #: frontend/src/services/machines/emailOctopus/addContact.emailOctopus.machine.pro.ts:124
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:75
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:173
@@ -7491,6 +7557,11 @@ msgstr ""
 #: frontend/src/services/machines/mailster/addSubscriberToList.mailster.machine.pro.ts:50
 #: frontend/src/services/machines/Paymattic/changePaymentStatus.paymattic.machine.pro.ts:31
 #: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:49
+#: frontend/src/services/machines/ultimateAffiliatePro/changeTransactionStatus.ultimateAffiliatePro.machine.pro.ts:32
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:133
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:49
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:32
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:92
 #: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:70
 #: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:81
 #: frontend/src/services/machines/wpCafe/updateReservation.wpCafe.machine.pro.ts:29
@@ -7498,6 +7569,7 @@ msgid "Pending"
 msgstr ""
 
 #: frontend/src/services/machines/advancedAds/setAdStatus.advancedAds.machine.pro.ts:32
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:36
 msgid "Expired"
 msgstr ""
 
@@ -7723,6 +7795,8 @@ msgid "Enter the row index (0-based)."
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/updateRepeaterFieldValue.advancedCustomFields.machine.pro.ts:37
+#: frontend/src/services/machines/wpTableBuilder/getCellFromTable.wpTableBuilder.machine.pro.ts:32
+#: frontend/src/services/machines/wpTableBuilder/getRowFromTable.wpTableBuilder.machine.pro.ts:32
 msgid "Row Index"
 msgstr ""
 
@@ -8113,7 +8187,7 @@ msgstr ""
 
 #: frontend/src/services/machines/amelia/_ameliaMachines.ts:17
 #: frontend/src/services/machines/bitAssist/_bitAssistMachines.ts:16
-#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:17
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:54
 #: frontend/src/services/machines/jetForm/_jetFormMachines.ts:17
 #: frontend/src/services/machines/jotForm/_jotFormMachines.ts:24
 #: frontend/src/services/machines/wpFunnels/_wpFunnelsMachines.ts:17
@@ -8142,6 +8216,7 @@ msgstr ""
 
 #: frontend/src/services/machines/amelia/_ameliaMachines.ts:59
 #: frontend/src/services/machines/fluentBooking/_fluentBookingMachines.ts:31
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:84
 msgid "Booking Cancelled"
 msgstr ""
 
@@ -8375,6 +8450,8 @@ msgstr ""
 #: frontend/src/services/machines/apify/getDatasetItems.apify.machine.pro.ts:29
 #: frontend/src/services/machines/apify/getRuns.apify.machine.pro.ts:35
 #: frontend/src/services/machines/apify/getUserRunsList.apify.machine.pro.ts:20
+#: frontend/src/services/machines/blueSky/getFollowers.blueSky.machine.pro.ts:34
+#: frontend/src/services/machines/blueSky/getFollows.blueSky.machine.pro.ts:34
 #: frontend/src/services/machines/elevenLabs/listAgents.elevenLabs.machine.free.ts:20
 #: frontend/src/services/machines/googleDocs/listDocuments.googleDocs.machine.pro.ts:47
 #: frontend/src/services/machines/googleDrive/listDrives.googleDrive.machine.pro.ts:29
@@ -8387,6 +8464,10 @@ msgstr ""
 #: frontend/src/services/machines/Omnisend/listContacts.omnisend.machine.pro.ts:29
 #: frontend/src/services/machines/Omnisend/listProduct.omnisend.machine.pro.ts:29
 #: frontend/src/services/machines/salesforce/getAllUsers.salesforce.machine.pro.ts:29
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllAffiliate.ultimateAffiliatePro.machine.pro.ts:16
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:60
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:44
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllVisit.ultimateAffiliatePro.machine.pro.ts:42
 #: frontend/src/services/machines/wooCommerce/topSellingProductsReport.wooCommerce.machine.pro.ts:35
 #: frontend/src/services/machines/zoom/getManyMeetings.zoom.machine.pro.ts:31
 msgid "Limit"
@@ -8401,6 +8482,10 @@ msgstr ""
 #: frontend/src/services/machines/apify/getUserRunsList.apify.machine.pro.ts:32
 #: frontend/src/services/machines/jetEngine/getCustomContentTypeRecordsByField.jetEngine.machine.pro.ts:91
 #: frontend/src/services/machines/Omnisend/listProduct.omnisend.machine.pro.ts:18
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllAffiliate.ultimateAffiliatePro.machine.pro.ts:26
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:70
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:54
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllVisit.ultimateAffiliatePro.machine.pro.ts:52
 msgid "Offset"
 msgstr ""
 
@@ -8857,6 +8942,7 @@ msgstr ""
 #: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:30
 #: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:42
 #: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:50
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:33
 msgid "Completed"
 msgstr ""
 
@@ -9121,6 +9207,204 @@ msgstr ""
 msgid "Post Published From Any Platform"
 msgstr ""
 
+#: frontend/src/services/machines/blueSky/_blueSkyMachines.ts:16
+#: frontend/src/services/machines/jetEngine/_jetEngineMachines.ts:73
+msgid "Create Post"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/_blueSkyMachines.ts:22
+msgid "Like Post"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/_blueSkyMachines.ts:28
+msgid "Repost Post"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/_blueSkyMachines.ts:34
+msgid "Get Followers"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/_blueSkyMachines.ts:40
+msgid "Get Follows"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/_blueSkyMachines.ts:46
+msgid "Get Profile"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/_blueSkyMachines.ts:52
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:194
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1018
+msgid "Delete Post"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/_blueSkyMachines.ts:58
+msgid "Find Post"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:21
+msgid "Choose Post Type"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:23
+#: frontend/src/services/machines/jetEngine/addRepeaterItemToCustomPostType.jetEngine.machine.pro.ts:17
+#: frontend/src/services/machines/jetEngine/createPost.jetEngine.machine.pro.ts:17
+#: frontend/src/services/machines/jetEngine/getPostsByPostType.jetEngine.machine.pro.ts:16
+#: frontend/src/services/machines/jetEngine/updatePost.jetEngine.machine.pro.ts:17
+#: frontend/src/services/machines/jetEngine/updatePostMeta.jetEngine.machine.pro.ts:17
+#: frontend/src/services/machines/seoPress/getAllPostsWithMeta.seoPress.machine.pro.ts:17
+#: frontend/src/services/machines/seoPress/getPostMeta.seoPress.machine.pro.ts:18
+#: frontend/src/services/machines/seoPress/getTitleTemplate.seoPress.machine.pro.ts:17
+#: frontend/src/services/machines/seoPress/updatePostMeta.seoPress.machine.pro.ts:19
+#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.free.ts:34
+#: frontend/src/services/machines/wordPress/getPostsByMetadata.wordPress.machine.free.ts:18
+#: frontend/src/services/machines/wordPress/getPostsByPostType.wordPress.machine.free.ts:18
+#: frontend/src/services/machines/wordPress/postStatusUpdated.wordPress.machine.free.ts:17
+#: frontend/src/services/machines/wordPress/unregisterPostType.wordPress.machine.free.ts:16
+#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.free.ts:43
+msgid "Post Type"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:26
+msgid "Text Only"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:27
+#: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:73
+#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:87
+#: frontend/src/services/machines/openAi/createModeration.openAi.machine.free.ts:38
+msgid "Image"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:28
+#: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:74
+#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:199
+#: frontend/src/services/machines/telegram/sendMedia.telegram.machine.free.ts:28
+msgid "Video"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:31
+msgid "Select Post Type"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:38
+msgid "The text of your post. (Max 300 characters)"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:40
+msgid "Post Text"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:49
+msgid "The primary language of the post (e.g., en, es, fr). Leave empty for none."
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:51
+#: frontend/src/services/machines/elevenLabs/createAgent.elevenLabs.machine.free.ts:86
+#: frontend/src/services/machines/elevenLabs/speechToText.elevenLabs.machine.free.ts:49
+#: frontend/src/services/machines/elevenLabs/textToSpeech.elevenLabs.machine.free.ts:134
+msgid "Language Code"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:60
+msgid "Direct URL to the image file (JPEG/PNG, max 1MB)"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:71
+msgid "Alt text describing the image for accessibility"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:73
+msgid "Image Alt Text"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:82
+msgid "Direct URL to the video file (MP4, max 50MB)"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:84
+#: frontend/src/services/machines/whatsApp/sendVideo.whatsApp.machine.free.ts:28
+msgid "Video URL"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:93
+msgid "Alt text describing the video for accessibility"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/createPost.blueSky.machine.pro.ts:95
+msgid "Video Alt Text"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/getFollowers.blueSky.machine.pro.ts:21
+#: frontend/src/services/machines/blueSky/getProfile.blueSky.machine.pro.ts:21
+msgid "Handle or DID of the actor to fetch followers for."
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/getFollowers.blueSky.machine.pro.ts:23
+#: frontend/src/services/machines/blueSky/getFollows.blueSky.machine.pro.ts:23
+#: frontend/src/services/machines/blueSky/getProfile.blueSky.machine.pro.ts:23
+msgid "Actor Handle"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/getFollowers.blueSky.machine.pro.ts:32
+#: frontend/src/services/machines/blueSky/getFollows.blueSky.machine.pro.ts:32
+msgid "Maximum number of results to return (1-100)."
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/getFollowers.blueSky.machine.pro.ts:43
+#: frontend/src/services/machines/blueSky/getFollows.blueSky.machine.pro.ts:43
+msgid "Pagination cursor for the next page of results."
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/getFollowers.blueSky.machine.pro.ts:45
+#: frontend/src/services/machines/blueSky/getFollows.blueSky.machine.pro.ts:45
+msgid "Next Page Cursor"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/getFollows.blueSky.machine.pro.ts:21
+msgid "Handle or DID of the actor to fetch follows for."
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/helpers/blueSkyCommons.ts:9
+msgid ""
+"Enter PDS Host, Identifier, and App Password to connect your BlueSky "
+"account."
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/helpers/blueSkyCommons.ts:16
+msgid "BlueSky"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/helpers/blueSkyCommons.ts:19
+msgid "App Password"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/helpers/blueSkyCommons.ts:40
+msgid "PDS Host"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/helpers/blueSkyCommons.ts:42
+msgid "https://bsky.social"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/helpers/blueSkyCommons.ts:52
+msgid "Identifier"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/helpers/blueSkyCommons.ts:54
+msgid "yourhandle.bsky.social or email"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/helpers/blueSkyCommons.ts:133
+msgid ""
+"The BlueSky post URL (e.g., "
+"https://bsky.app/profile/username.bsky.social/post/xxx)"
+msgstr ""
+
+#: frontend/src/services/machines/blueSky/helpers/blueSkyCommons.ts:135
+msgid "Post URL"
+msgstr ""
+
 #: frontend/src/services/machines/brevo/_brevoMachines.ts:22
 msgid "Add Contacts To list"
 msgstr ""
@@ -9320,6 +9604,7 @@ msgid "Remove Friend Connection"
 msgstr ""
 
 #: frontend/src/services/machines/buddyBoss/_buddyBossMachines.ts:58
+#: frontend/src/services/machines/peepSo/_peepSoMachines.ts:28
 msgid "Follow User"
 msgstr ""
 
@@ -9549,7 +9834,7 @@ msgid "Group Privacy Status"
 msgstr ""
 
 #: frontend/src/services/machines/buddyBoss/createGroup.buddyBoss.machine.pro.ts:31
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:122
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:123
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:121
 #: frontend/src/services/machines/jetEngine/createPost.jetEngine.machine.pro.ts:59
 #: frontend/src/services/machines/jetEngine/updatePost.jetEngine.machine.pro.ts:70
@@ -9647,6 +9932,7 @@ msgid "Enter the content of the reply."
 msgstr ""
 
 #: frontend/src/services/machines/buddyBoss/postReplyTopicForum.buddyBoss.machine.pro.ts:52
+#: frontend/src/services/machines/fluentSupport/replyToTicketAsAgent.fluentSupport.machine.pro.ts:26
 msgid "Reply Content"
 msgstr ""
 
@@ -10044,7 +10330,7 @@ msgstr ""
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.free.ts:60
 #: frontend/src/services/machines/fluentCommunity/addUserToSpace.fluentCommunity.machine.pro.ts:37
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.free.ts:41
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:34
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:35
 #: frontend/src/services/machines/googleDrive/shareFile.googleDrive.machine.pro.ts:35
 #: frontend/src/services/machines/googleDrive/shareFolder.googleDrive.machine.pro.ts:35
 #: frontend/src/services/machines/groq/createChatCompletion.groq.machine.free.ts:87
@@ -10056,7 +10342,7 @@ msgstr ""
 #: frontend/src/services/machines/claude/createCompletion.claude.machine.free.ts:44
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.free.ts:63
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.free.ts:44
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:71
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:72
 #: frontend/src/services/machines/googleDrive/shareFile.googleDrive.machine.pro.ts:58
 #: frontend/src/services/machines/googleDrive/shareFolder.googleDrive.machine.pro.ts:58
 #: frontend/src/services/machines/groq/createChatCompletion.groq.machine.free.ts:91
@@ -10360,7 +10646,7 @@ msgid "Register an event"
 msgstr ""
 
 #: frontend/src/services/machines/demio/_demioMachines.ts:22
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:52
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:59
 msgid "Get Event"
 msgstr ""
 
@@ -10386,6 +10672,8 @@ msgstr ""
 #: frontend/src/services/machines/demio/infoEvent.demio.machine.pro.ts:47
 #: frontend/src/services/machines/demio/registerEvent.demio.machine.pro.ts:47
 #: frontend/src/services/machines/eventsManager/unregisterUserFromEvent.eventsManager.machine.pro.ts:16
+#: frontend/src/services/machines/modernEventsCalendar/getEventTickets.modernEventsCalendar.machine.pro.ts:17
+#: frontend/src/services/machines/modernEventsCalendar/registerUserForEvent.modernEventsCalendar.machine.pro.ts:17
 msgid "Event"
 msgstr ""
 
@@ -10396,6 +10684,8 @@ msgstr ""
 #: frontend/src/services/machines/eventsCalendar/attendeeRegisteredWc.eventsCalendar.machine.pro.ts:37
 #: frontend/src/services/machines/eventsCalendar/newAttendee.eventsCalendar.machine.pro.ts:37
 #: frontend/src/services/machines/eventsManager/unregisterUserFromEvent.eventsManager.machine.pro.ts:21
+#: frontend/src/services/machines/modernEventsCalendar/getEventTickets.modernEventsCalendar.machine.pro.ts:22
+#: frontend/src/services/machines/modernEventsCalendar/registerUserForEvent.modernEventsCalendar.machine.pro.ts:22
 msgid "Select an event"
 msgstr ""
 
@@ -10439,65 +10729,65 @@ msgstr ""
 msgid "Session"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:16
+#: frontend/src/services/machines/discord/_discordMachines.ts:17
 msgid "Create a Channel"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:22
+#: frontend/src/services/machines/discord/_discordMachines.ts:24
 msgid "Update a Channel"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:28
+#: frontend/src/services/machines/discord/_discordMachines.ts:31
 msgid "Get Channel By Name"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:34
+#: frontend/src/services/machines/discord/_discordMachines.ts:38
 msgid "Send Channel Message"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:40
+#: frontend/src/services/machines/discord/_discordMachines.ts:45
 msgid "Find Channel"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:46
+#: frontend/src/services/machines/discord/_discordMachines.ts:52
 msgid "Create a Channel Invite"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:52
+#: frontend/src/services/machines/discord/_discordMachines.ts:59
 #: frontend/src/services/machines/slack/_slackMachines.ts:31
 msgid "Send Direct Message"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:58
+#: frontend/src/services/machines/discord/_discordMachines.ts:66
 msgid "Delete a Message"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:64
+#: frontend/src/services/machines/discord/_discordMachines.ts:73
 #: frontend/src/services/machines/twilio/_twilioMachines.ts:22
 msgid "Get a Message"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:70
+#: frontend/src/services/machines/discord/_discordMachines.ts:80
 msgid "Get Many Messages"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:76
+#: frontend/src/services/machines/discord/_discordMachines.ts:87
 msgid "React with an Emoji to a Message"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:82
+#: frontend/src/services/machines/discord/_discordMachines.ts:94
 msgid "Get Many Members"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:88
+#: frontend/src/services/machines/discord/_discordMachines.ts:101
 msgid "Add a Role to a Member"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:94
+#: frontend/src/services/machines/discord/_discordMachines.ts:108
 msgid "Remove a Role from a Member"
 msgstr ""
 
-#: frontend/src/services/machines/discord/_discordMachines.ts:106
+#: frontend/src/services/machines/discord/_discordMachines.ts:122
 msgid "Create New Forum Post"
 msgstr ""
 
@@ -10505,20 +10795,20 @@ msgstr ""
 msgid "Select the member to add the role to."
 msgstr ""
 
-#: frontend/src/services/machines/discord/addRoleToMember.discord.machine.pro.ts:29
-#: frontend/src/services/machines/discord/removeRoleFromMember.discord.machine.pro.ts:29
+#: frontend/src/services/machines/discord/addRoleToMember.discord.machine.pro.ts:30
+#: frontend/src/services/machines/discord/removeRoleFromMember.discord.machine.pro.ts:30
 msgid "Select Member"
 msgstr ""
 
-#: frontend/src/services/machines/discord/addRoleToMember.discord.machine.pro.ts:41
+#: frontend/src/services/machines/discord/addRoleToMember.discord.machine.pro.ts:42
 msgid ""
 "Select the role to add to the member.( Note: The person or bot assigning "
 "the role must have a highest role that is higher in the role hierarchy to "
 "add the role to the member.)"
 msgstr ""
 
-#: frontend/src/services/machines/discord/addRoleToMember.discord.machine.pro.ts:45
-#: frontend/src/services/machines/discord/removeRoleFromMember.discord.machine.pro.ts:43
+#: frontend/src/services/machines/discord/addRoleToMember.discord.machine.pro.ts:47
+#: frontend/src/services/machines/discord/removeRoleFromMember.discord.machine.pro.ts:45
 #: frontend/src/services/machines/suiteDash/createCompany.suiteDash.machine.pro.ts:26
 #: frontend/src/services/machines/suiteDash/createContact.suiteDash.machine.pro.ts:21
 msgid "Select Role"
@@ -10607,6 +10897,7 @@ msgstr ""
 #: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:15
 #: frontend/src/services/machines/jetEngine/createPost.jetEngine.machine.pro.ts:32
 #: frontend/src/services/machines/jetEngine/updatePost.jetEngine.machine.pro.ts:43
+#: frontend/src/services/machines/peepSo/addPostActivityStream.peepSo.machine.pro.ts:24
 #: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.free.ts:23
 #: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.free.ts:33
 msgid "Post Title"
@@ -10740,7 +11031,7 @@ msgstr ""
 msgid "Select the member to remove the role from."
 msgstr ""
 
-#: frontend/src/services/machines/discord/removeRoleFromMember.discord.machine.pro.ts:41
+#: frontend/src/services/machines/discord/removeRoleFromMember.discord.machine.pro.ts:42
 msgid "Select the role to remove from the member."
 msgstr ""
 
@@ -10783,7 +11074,7 @@ msgid "New Channel Topic"
 msgstr ""
 
 #: frontend/src/services/machines/dokan/_dokanMachines.ts:17
-msgid "New vendor added"
+msgid "New vendor added from dashboard"
 msgstr ""
 
 #: frontend/src/services/machines/dokan/_dokanMachines.ts:24
@@ -10909,6 +11200,7 @@ msgid "Address 2"
 msgstr ""
 
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:126
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:16
 #: frontend/src/services/machines/fluentCart/helpers/commonUtils.fluentCart.ts:9
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.pro.ts:68
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:108
@@ -10929,6 +11221,7 @@ msgid "City"
 msgstr ""
 
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:127
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:17
 #: frontend/src/services/machines/fluentCart/helpers/commonUtils.fluentCart.ts:10
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.pro.ts:74
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:109
@@ -10951,6 +11244,7 @@ msgid "Zip"
 msgstr ""
 
 #: frontend/src/services/machines/drip/helpers/machineHelper.drip.ts:129
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:19
 #: frontend/src/services/machines/fluentCart/helpers/commonUtils.fluentCart.ts:8
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.pro.ts:67
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:110
@@ -11226,7 +11520,7 @@ msgid "Enter the maximum number of results to return (default: 100)."
 msgstr ""
 
 #: frontend/src/services/machines/dropbox/searchFiles.dropbox.machine.pro.ts:58
-#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:71
+#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:72
 #: frontend/src/services/machines/googleCalendar/listCalendars.googleCalendar.machine.pro.ts:18
 msgid "Max Results"
 msgstr ""
@@ -11326,6 +11620,7 @@ msgid "Coupon Deleted (Bulk)"
 msgstr ""
 
 #: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:101
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:186
 #: frontend/src/services/machines/fluentCart/_fluentCartMachines.ts:567
 #: frontend/src/services/machines/latePoint/_latePointMachines.ts:122
 #: frontend/src/services/machines/shopify/_shopifyMachines.ts:17
@@ -11407,110 +11702,538 @@ msgstr ""
 msgid "Abandoned Cart Reminder Sent"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:17
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:16
+msgid "Create Discount"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:22
+msgid "Delete Discount"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:28
+msgid "Get Discount Details"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:34
+msgid "Find User Purchased Download"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:40
+msgid "Find User Subscription for Download"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:46
+msgid "Find User License for Download"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:52
+msgid "Create Purchase or Order"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:58
+msgid "Revoke Purchase"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:64
+msgid "Update License Status"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:70
+msgid "Update Purchase Meta"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:76
+msgid "Update Purchase"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:84
 #: frontend/src/services/machines/sureCart/_sureCartMachines.ts:17
 msgid "User purchased a product"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:20
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:87
 msgid ""
 "**When Trigger**: A user purchases a product. This trigger is fired when a "
 "user completes a purchase."
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:27
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:94
 msgid "Product purchased with a discount code"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:30
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:97
 msgid ""
 "**When Trigger**: A user purchases a product with a discount code. This "
 "trigger is fired when a user completes a purchase with a discount code."
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:37
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:104
 msgid "User order refunded via Stripe gateway"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:40
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:107
 msgid ""
 "**When Trigger**: A user order is refunded via the Stripe gateway. This "
 "trigger is fired when an order is refunded via the Stripe gateway."
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:47
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:114
 msgid "User Subscription Renewed"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:50
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:117
 msgid "**When Trigger**: A subscription is renewed."
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:55
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:122
 msgid "User License Key Create"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:58
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:125
 msgid "**When Trigger**: A new license is created."
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:63
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:130
 msgid "User License Key Activated"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:66
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:133
 msgid "**When Trigger**: A license key is activated ."
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:71
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:138
 msgid "User License Key Deactivated"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:74
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:141
 msgid "**When Trigger**: A license key is deactivated."
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:79
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:146
 msgid "User License Key Status Change To Active"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:82
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:149
 msgid ""
 "**When Trigger**: A license key status is changed from inactive / disabled "
 "to active."
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:89
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:156
 msgid "User License Key Status Change To Inactive"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:92
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:159
 msgid ""
 "**When Trigger**: A license key status is changed from active / disabled to "
 "inactive."
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:99
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:166
 msgid "User License Key Status Change To Disabled"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:102
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:169
 msgid ""
 "**When Trigger**: A license key status is changed from active / inactive to "
 "disabled."
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:109
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:176
 msgid "User License Key Status Change To Expired"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:112
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:179
 msgid ""
 "**When Trigger**: A license key status is changed from active / disabled to "
 "expired."
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/purchaseProduct.easyDigitalDownload.machine.pro.ts:37
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:189
+msgid "**When Trigger**: An order is created."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:194
+msgid "Order Status Changes"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:197
+msgid "**When Trigger**: An order status changes."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:202
+msgid "License Renewed"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:205
+msgid "**When Trigger**: A license is renewed."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:210
+msgid "License Updated"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/_easyDigitalDownloadMachines.ts:213
+msgid "**When Trigger**: A license is updated."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/commonMachines/userHasDownload.easyDigitalDownload.machine.ts:25
+msgid ""
+"For custom field mapping, download id should be mapped to a field with "
+"numeric value."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/commonMachines/userHasDownload.easyDigitalDownload.machine.ts:35
+msgid "Select download"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/commonMachines/userHasDownload.easyDigitalDownload.machine.ts:43
+msgid "Price ID (optional)"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:15
+msgid "A name for the discount code (e.g., Summer Sale)."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:17
+msgid "Discount Name"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:26
+msgid "The code customers will enter at checkout (e.g., SUMMER20)."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:28
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:9
+msgid "Discount Code"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:37
+msgid "Whether the discount is currently active or inactive."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:52
+msgid "Type of discount: percentage off or fixed amount."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:55
+msgid "Amount Type"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:58
+#: frontend/src/services/machines/fluentCart/createCoupon.fluentCart.machine.pro.ts:39
+#: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:10
+msgid "Percentage"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:59
+msgid "Flat Amount"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:67
+msgid "The discount amount (percentage or fixed value based on amount type)."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:69
+#: frontend/src/services/machines/fluentCart/createCoupon.fluentCart.machine.pro.ts:51
+msgid "Discount Amount"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:78
+msgid "Products that must be in the cart for this discount to apply."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:81
+msgid "Required Products"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:87
+#: frontend/src/services/machines/wooCommerce/createCoupon.wooCommerce.machine.pro.ts:151
+#: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:393
+#: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:409
+#: frontend/src/services/machines/wooCommerce/updateCoupon.wooCommerce.machine.pro.ts:147
+#: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:413
+#: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:429
+msgid "Select products"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:93
+msgid "Whether the discount applies globally or only to specific products."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:99
+msgid "Global"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:100
+msgid "Not Global"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:108
+msgid "Products that are excluded from this discount."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:111
+msgid "Excluded Products"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:117
+msgid "Select products to exclude"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:123
+msgid "Condition for required products: all must be in cart or any one."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:126
+msgid "Product Condition"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:130
+msgid "Any"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:138
+msgid "Date when the discount becomes active. Format: YYYY-MM-DD HH:MM:SS."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:143
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:154
+#: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:125
+msgid "YYYY-MM-DD HH:MM:SS"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:149
+msgid "Date when the discount expires. Format: YYYY-MM-DD HH:MM:SS."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:160
+msgid "Maximum number of times this discount can be used (0 for unlimited)."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:162
+msgid "Maximum Uses"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:170
+msgid "Minimum cart amount required to use this discount."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:172
+msgid "Minimum Purchase Amount"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:180
+msgid "If enabled, each customer can only use this discount once."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:182
+msgid "Once Per Customer"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:191
+msgid "Product categories this discount applies to."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:194
+#: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:343
+#: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:361
+msgid "Categories"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:200
+#: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:349
+#: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:367
+msgid "Select categories"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:206
+msgid "Terms and conditions for the discount."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:208
+msgid "Terms & Conditions"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/createPurchase.easyDigitalDownload.machine.pro.ts:35
+msgid "Purchase Fields"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/deleteDiscount.easyDigitalDownload.machine.pro.ts:14
+msgid "Discount ID"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/fetchDiscountDetails.easyDigitalDownload.machine.pro.ts:14
+msgid "Discount Code or ID"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:4
+#: frontend/src/services/machines/fluentSupport/blockUser.fluentSupport.machine.pro.ts:15
+#: frontend/src/services/machines/fluentSupport/createOrObtainCustomer.fluentSupport.machine.pro.ts:15
+msgid "Customer Email"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:7
+msgid "Download ID"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:8
+msgid "Price ID"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:11
+#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:150
+#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:116
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:62
+msgid "Payment Method"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:13
+#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:269
+#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:235
+msgid "Total Amount"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:14
+#: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:8
+#: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:24
+#: frontend/src/services/machines/klaviyo/helpers/commonFields.klaviyo.ts:4
+#: frontend/src/services/machines/mailMint/createContact.mailMint.machine.pro.ts:119
+#: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:62
+#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:26
+#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:51
+#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:72
+#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:90
+#: frontend/src/services/machines/wooCommerce/helpers/commonUtils.wooCommerce.ts:9
+msgid "Address Line 1"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:15
+#: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:9
+#: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:25
+#: frontend/src/services/machines/klaviyo/helpers/commonFields.klaviyo.ts:5
+#: frontend/src/services/machines/mailMint/createContact.mailMint.machine.pro.ts:129
+#: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:72
+#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:27
+#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:52
+#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:73
+#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:91
+#: frontend/src/services/machines/wooCommerce/helpers/commonUtils.wooCommerce.ts:10
+msgid "Address Line 2"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:18
+msgid "ZIP"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:23
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchaseMeta.easyDigitalDownload.machine.pro.ts:29
+#: frontend/src/services/machines/fluentCart/commonMachines/orderIdAndMetaKey.fluentCart.machine.ts:24
+#: frontend/src/services/machines/fluentCart/updateOrderMetadata.fluentCart.machine.pro.ts:24
+#: frontend/src/services/machines/wooCommerce/addOrUpdateOrderMeta.wooCommerce.machine.pro.ts:28
+#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.free.ts:108
+#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.free.ts:59
+#: frontend/src/services/machines/wordPress/updateUserMetadata.wordPress.machine.free.ts:28
+msgid "Meta Key"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:24
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchaseMeta.easyDigitalDownload.machine.pro.ts:38
+#: frontend/src/services/machines/fluentCart/updateOrderMetadata.fluentCart.machine.pro.ts:34
+#: frontend/src/services/machines/wooCommerce/addOrUpdateOrderMeta.wooCommerce.machine.pro.ts:36
+msgid "Meta Value"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:28
+#: frontend/src/services/machines/easyDigitalDownload/revokePurchase.easyDigitalDownload.machine.pro.ts:15
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchase.easyDigitalDownload.machine.pro.ts:16
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchaseMeta.easyDigitalDownload.machine.pro.ts:15
+msgid "Purchase ID"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:30
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchase.easyDigitalDownload.machine.pro.ts:42
+#: frontend/src/services/machines/fluentBoards/helpers/commonUtils.fluentBoards.ts:31
+#: frontend/src/services/machines/goHighLevel/addNoteToContact.goHighLevel.machine.pro.ts:51
+#: frontend/src/services/machines/mailMint/addContactNote.mailMint.machine.pro.ts:26
+#: frontend/src/services/machines/newsletter/helpers/commonUtils.newsletter.ts:31
+#: frontend/src/services/machines/twilio/watchCalls.twilio.machine.pro.ts:44
+#: frontend/src/services/machines/twilio/watchEvents.twilio.machine.pro.ts:42
+#: frontend/src/services/machines/twilio/watchMessages.twilio.machine.pro.ts:44
+#: frontend/src/services/machines/twilio/watchRecordings.twilio.machine.pro.ts:44
+#: frontend/src/services/machines/twilio/watchStatus.twilio.machine.pro.ts:44
+#: frontend/src/services/machines/twilio/watchTranscriptions.twilio.machine.pro.ts:44
+msgid "Note"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:38
+msgid "Site Inactive"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:43
+#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:76
+#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:42
+#: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:28
+msgid "Processing"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:44
+msgid "Complete"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:45
+#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:81
+#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:177
+#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:47
+#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:143
+#: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:33
+#: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:31
+#: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:17
+#: frontend/src/services/machines/Paymattic/changePaymentStatus.paymattic.machine.pro.ts:33
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:51
+msgid "Refunded"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:46
+msgid "Revoked"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:47
+#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:82
+#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:179
+#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:48
+#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:145
+#: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:34
+#: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:33
+#: frontend/src/services/machines/Paymattic/changePaymentStatus.paymattic.machine.pro.ts:32
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:52
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:34
+msgid "Failed"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:48
+#: frontend/src/services/machines/goHighLevel/addOpportunity.goHighLevel.machine.pro.ts:82
+#: frontend/src/services/machines/goHighLevel/updateOpportunity.goHighLevel.machine.pro.ts:97
+msgid "Abandoned"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:49
+#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:79
+#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:45
+#: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:31
+#: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:28
+#: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:41
+#: frontend/src/services/machines/wpCafe/updateReservation.wpCafe.machine.pro.ts:31
+msgid "Cancelled"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/purchaseProduct.easyDigitalDownload.machine.pro.ts:32
+msgid ""
+"For custom field mapping, product id should be mapped to a field with "
+"numeric value."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/purchaseProduct.easyDigitalDownload.machine.pro.ts:41
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:21
 #: frontend/src/services/machines/sureCart/purchaseCreated.sureCart.machine.pro.ts:37
 #: frontend/src/services/machines/sureCart/purchaseInvoked.sureCart.machine.pro.ts:37
@@ -11518,12 +12241,99 @@ msgstr ""
 msgid "Select a product"
 msgstr ""
 
-#: frontend/src/services/machines/easyDigitalDownload/purchaseProductDiscount.easyDigitalDownload.machine.pro.ts:33
-msgid "Discounts"
+#: frontend/src/services/machines/easyDigitalDownload/purchaseProductDiscount.easyDigitalDownload.machine.pro.ts:32
+msgid ""
+"For custom field mapping, discount id should be mapped to a field with "
+"numeric value."
 msgstr ""
 
 #: frontend/src/services/machines/easyDigitalDownload/purchaseProductDiscount.easyDigitalDownload.machine.pro.ts:37
+msgid "Discounts"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/purchaseProductDiscount.easyDigitalDownload.machine.pro.ts:41
 msgid "Select a discount"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/revokePurchase.easyDigitalDownload.machine.pro.ts:13
+msgid "Enter the purchase/order ID to revoke"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/revokePurchase.easyDigitalDownload.machine.pro.ts:18
+msgid "Enter purchase ID"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updateLicenseStatus.easyDigitalDownload.machine.pro.ts:14
+msgid "Enter the license key"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updateLicenseStatus.easyDigitalDownload.machine.pro.ts:16
+msgid "License Key"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updateLicenseStatus.easyDigitalDownload.machine.pro.ts:19
+msgid "Enter license key"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updateLicenseStatus.easyDigitalDownload.machine.pro.ts:26
+msgid "Select the new license status"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updateLicenseStatus.easyDigitalDownload.machine.pro.ts:29
+msgid "License Status"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchase.easyDigitalDownload.machine.pro.ts:14
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchaseMeta.easyDigitalDownload.machine.pro.ts:13
+msgid "Enter the purchase/order ID"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchase.easyDigitalDownload.machine.pro.ts:19
+msgid "Enter the purchase ID"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchase.easyDigitalDownload.machine.pro.ts:27
+msgid "Select the new order status (optional)"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchase.easyDigitalDownload.machine.pro.ts:30
+#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:72
+#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:38
+#: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:24
+#: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:24
+#: frontend/src/services/machines/fluentCart/updateShippingStatus.fluentCart.machine.pro.ts:24
+#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:46
+#: frontend/src/services/machines/wooCommerce/createOrder.wooCommerce.machine.pro.ts:74
+#: frontend/src/services/machines/wooCommerce/getOrderByStatus.wooCommerce.machine.pro.ts:16
+#: frontend/src/services/machines/wooCommerce/updateOrderStatus.wooCommerce.machine.pro.ts:27
+msgid "Order Status"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchase.easyDigitalDownload.machine.pro.ts:40
+msgid "Add a note to the purchase (optional)"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchase.easyDigitalDownload.machine.pro.ts:45
+msgid "Enter the note."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchaseMeta.easyDigitalDownload.machine.pro.ts:18
+msgid "Enter the purchase ID."
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchaseMeta.easyDigitalDownload.machine.pro.ts:24
+#: frontend/src/services/machines/jetEngine/createPost.jetEngine.machine.pro.ts:77
+#: frontend/src/services/machines/jetEngine/updatePost.jetEngine.machine.pro.ts:88
+#: frontend/src/services/machines/jetEngine/updatePostMeta.jetEngine.machine.pro.ts:41
+msgid "Add Meta Field"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchaseMeta.easyDigitalDownload.machine.pro.ts:31
+msgid "e.g., custom_field"
+msgstr ""
+
+#: frontend/src/services/machines/easyDigitalDownload/updatePurchaseMeta.easyDigitalDownload.machine.pro.ts:46
+msgid "Purchase Meta Fields"
 msgstr ""
 
 #: frontend/src/services/machines/elasticMail/createContact.elasticMail.machine.pro.ts:14
@@ -11753,12 +12563,6 @@ msgstr ""
 
 #: frontend/src/services/machines/elevenLabs/createAgent.elevenLabs.machine.free.ts:84
 msgid "Language code for the agent (e.g., \"en\" for English, \"es\" for Spanish)."
-msgstr ""
-
-#: frontend/src/services/machines/elevenLabs/createAgent.elevenLabs.machine.free.ts:86
-#: frontend/src/services/machines/elevenLabs/speechToText.elevenLabs.machine.free.ts:49
-#: frontend/src/services/machines/elevenLabs/textToSpeech.elevenLabs.machine.free.ts:134
-msgid "Language Code"
 msgstr ""
 
 #: frontend/src/services/machines/elevenLabs/createAgent.elevenLabs.machine.free.ts:94
@@ -12291,6 +13095,7 @@ msgid "User Registration"
 msgstr ""
 
 #: frontend/src/services/machines/eventin/_eventinMachines.ts:17
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:92
 msgid "Event Created"
 msgstr ""
 
@@ -12360,6 +13165,7 @@ msgid "Select a event"
 msgstr ""
 
 #: frontend/src/services/machines/eventsManager/_eventsManagerMachines.ts:16
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:16
 msgid "Get All Events"
 msgstr ""
 
@@ -12605,12 +13411,12 @@ msgid "Delete Account Type"
 msgstr ""
 
 #: frontend/src/services/machines/flowlu/_flowluMachines.ts:48
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:16
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:17
 msgid "Create Calendar"
 msgstr ""
 
 #: frontend/src/services/machines/flowlu/_flowluMachines.ts:54
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:28
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:31
 msgid "Update Calendar"
 msgstr ""
 
@@ -12619,12 +13425,12 @@ msgid "Get Calendar"
 msgstr ""
 
 #: frontend/src/services/machines/flowlu/_flowluMachines.ts:66
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:22
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:24
 msgid "List Calendars"
 msgstr ""
 
 #: frontend/src/services/machines/flowlu/_flowluMachines.ts:72
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:40
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:45
 msgid "Delete Calendar"
 msgstr ""
 
@@ -12912,6 +13718,8 @@ msgstr ""
 #: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:36
 #: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:36
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:24
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:37
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:27
 msgid "Amount"
 msgstr ""
 
@@ -13105,7 +13913,7 @@ msgid ""
 msgstr ""
 
 #: frontend/src/services/machines/flowlu/helpers/flowluCommons.ts:55
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:79
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:80
 #: frontend/src/services/machines/googleDrive/shareFile.googleDrive.machine.pro.ts:60
 #: frontend/src/services/machines/googleDrive/shareFile.googleDrive.machine.pro.ts:83
 #: frontend/src/services/machines/googleDrive/shareFolder.googleDrive.machine.pro.ts:60
@@ -13186,6 +13994,7 @@ msgid "Affiliate Created"
 msgstr ""
 
 #: frontend/src/services/machines/FluentAffiliate/_fluentAffiliateMachines.ts:24
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:109
 msgid "Affiliate Updated"
 msgstr ""
 
@@ -14150,19 +14959,6 @@ msgstr ""
 msgid "Enter the Comment ID"
 msgstr ""
 
-#: frontend/src/services/machines/fluentBoards/helpers/commonUtils.fluentBoards.ts:31
-#: frontend/src/services/machines/goHighLevel/addNoteToContact.goHighLevel.machine.pro.ts:51
-#: frontend/src/services/machines/mailMint/addContactNote.mailMint.machine.pro.ts:26
-#: frontend/src/services/machines/newsletter/helpers/commonUtils.newsletter.ts:31
-#: frontend/src/services/machines/twilio/watchCalls.twilio.machine.pro.ts:44
-#: frontend/src/services/machines/twilio/watchEvents.twilio.machine.pro.ts:42
-#: frontend/src/services/machines/twilio/watchMessages.twilio.machine.pro.ts:44
-#: frontend/src/services/machines/twilio/watchRecordings.twilio.machine.pro.ts:44
-#: frontend/src/services/machines/twilio/watchStatus.twilio.machine.pro.ts:44
-#: frontend/src/services/machines/twilio/watchTranscriptions.twilio.machine.pro.ts:44
-msgid "Note"
-msgstr ""
-
 #: frontend/src/services/machines/fluentBoards/helpers/commonUtils.fluentBoards.ts:33
 msgid "**Username**: Your WordPress username"
 msgstr ""
@@ -14238,6 +15034,7 @@ msgid "Booking Scheduled"
 msgstr ""
 
 #: frontend/src/services/machines/fluentBooking/_fluentBookingMachines.ts:24
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:60
 msgid "Booking Completed"
 msgstr ""
 
@@ -14969,6 +15766,7 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/commonMachines/customerId.fluentCart.machine.ts:14
 #: frontend/src/services/machines/fluentCart/updateCustomer.fluentCart.machine.pro.ts:16
+#: frontend/src/services/machines/fluentSupport/createTicket.fluentSupport.machine.pro.ts:37
 #: frontend/src/services/machines/profilePress/getCustomerDetailsById.profilePress.machine.pro.ts:14
 #: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:23
 #: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:23
@@ -14997,15 +15795,6 @@ msgstr ""
 #: frontend/src/services/machines/wooCommerce/getOrderById.wooCommerce.machine.pro.ts:14
 #: frontend/src/services/machines/wooCommerce/updateOrderStatus.wooCommerce.machine.pro.ts:16
 msgid "Order ID"
-msgstr ""
-
-#: frontend/src/services/machines/fluentCart/commonMachines/orderIdAndMetaKey.fluentCart.machine.ts:24
-#: frontend/src/services/machines/fluentCart/updateOrderMetadata.fluentCart.machine.pro.ts:24
-#: frontend/src/services/machines/wooCommerce/addOrUpdateOrderMeta.wooCommerce.machine.pro.ts:28
-#: frontend/src/services/machines/wordPress/createNewUser.wordPress.machine.free.ts:108
-#: frontend/src/services/machines/wordPress/updateUser.wordPress.machine.free.ts:59
-#: frontend/src/services/machines/wordPress/updateUserMetadata.wordPress.machine.free.ts:28
-msgid "Meta Key"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCart/commonMachines/productId.fluentCart.machine.ts:14
@@ -15046,21 +15835,12 @@ msgstr ""
 msgid "Discount Type"
 msgstr ""
 
-#: frontend/src/services/machines/fluentCart/createCoupon.fluentCart.machine.pro.ts:39
-#: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:10
-msgid "Percentage"
-msgstr ""
-
 #: frontend/src/services/machines/fluentCart/createCoupon.fluentCart.machine.pro.ts:40
 msgid "Fixed Amount"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createCoupon.fluentCart.machine.pro.ts:43
 msgid "Select discount type"
-msgstr ""
-
-#: frontend/src/services/machines/fluentCart/createCoupon.fluentCart.machine.pro.ts:51
-msgid "Discount Amount"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createCoupon.fluentCart.machine.pro.ts:54
@@ -15148,66 +15928,16 @@ msgstr ""
 msgid "Select a customer"
 msgstr ""
 
-#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:72
-#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:38
-#: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:24
-#: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:24
-#: frontend/src/services/machines/fluentCart/updateShippingStatus.fluentCart.machine.pro.ts:24
-#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:46
-#: frontend/src/services/machines/wooCommerce/createOrder.wooCommerce.machine.pro.ts:74
-#: frontend/src/services/machines/wooCommerce/getOrderByStatus.wooCommerce.machine.pro.ts:16
-#: frontend/src/services/machines/wooCommerce/updateOrderStatus.wooCommerce.machine.pro.ts:27
-msgid "Order Status"
-msgstr ""
-
-#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:76
-#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:42
-#: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:28
-msgid "Processing"
-msgstr ""
-
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:77
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:43
 #: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:29
 msgid "On Hold"
 msgstr ""
 
-#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:79
-#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:45
-#: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:31
-#: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:28
-#: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:41
-#: frontend/src/services/machines/wpCafe/updateReservation.wpCafe.machine.pro.ts:31
-msgid "Cancelled"
-msgstr ""
-
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:80
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:46
 #: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:32
 msgid "Archived"
-msgstr ""
-
-#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:81
-#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:177
-#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:47
-#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:143
-#: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:33
-#: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:31
-#: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:17
-#: frontend/src/services/machines/Paymattic/changePaymentStatus.paymattic.machine.pro.ts:33
-#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:51
-msgid "Refunded"
-msgstr ""
-
-#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:82
-#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:179
-#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:48
-#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:145
-#: frontend/src/services/machines/fluentCart/updateOrderStatus.fluentCart.machine.pro.ts:34
-#: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:33
-#: frontend/src/services/machines/Paymattic/changePaymentStatus.paymattic.machine.pro.ts:32
-#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:52
-msgid "Failed"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:85
@@ -15310,12 +16040,6 @@ msgstr ""
 msgid "Select order mode"
 msgstr ""
 
-#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:150
-#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:116
-#: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:62
-msgid "Payment Method"
-msgstr ""
-
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:153
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:119
 msgid "Enter payment method"
@@ -15334,6 +16058,8 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:170
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:136
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:129
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:45
 msgid "Payment Status"
 msgstr ""
 
@@ -15342,6 +16068,10 @@ msgstr ""
 #: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:28
 #: frontend/src/services/machines/latePoint/helpers/commonUtils.latePoint.ts:16
 #: frontend/src/services/machines/Paymattic/changePaymentStatus.paymattic.machine.pro.ts:30
+#: frontend/src/services/machines/ultimateAffiliatePro/changeTransactionStatus.ultimateAffiliatePro.machine.pro.ts:33
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:134
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:50
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:93
 msgid "Paid"
 msgstr ""
 
@@ -15412,11 +16142,6 @@ msgstr ""
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:259
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:225
 msgid "Tax Total"
-msgstr ""
-
-#: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:269
-#: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:235
-msgid "Total Amount"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:279
@@ -15579,11 +16304,6 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:18
 msgid "Enter order ID"
-msgstr ""
-
-#: frontend/src/services/machines/fluentCart/updateOrderMetadata.fluentCart.machine.pro.ts:34
-#: frontend/src/services/machines/wooCommerce/addOrUpdateOrderMeta.wooCommerce.machine.pro.ts:36
-msgid "Meta Value"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCommunity/_fluentCommunityMachines.ts:9
@@ -15886,6 +16606,7 @@ msgid "Member Status"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCommunity/changeMemberStatus.fluentCommunity.machine.pro.ts:31
+#: frontend/src/services/machines/peepSo/changeUserRole.peepSo.machine.pro.ts:10
 msgid "Banned"
 msgstr ""
 
@@ -15954,6 +16675,7 @@ msgstr ""
 #: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:26
 #: frontend/src/services/machines/jetEngine/createPost.jetEngine.machine.pro.ts:43
 #: frontend/src/services/machines/jetEngine/updatePost.jetEngine.machine.pro.ts:53
+#: frontend/src/services/machines/peepSo/addPostActivityStream.peepSo.machine.pro.ts:34
 #: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.free.ts:105
 #: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.free.ts:113
 msgid "Post Content"
@@ -15991,18 +16713,6 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:70
 msgid "Embed Content Type"
-msgstr ""
-
-#: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:73
-#: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:87
-#: frontend/src/services/machines/openAi/createModeration.openAi.machine.free.ts:38
-msgid "Image"
-msgstr ""
-
-#: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:74
-#: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:199
-#: frontend/src/services/machines/telegram/sendMedia.telegram.machine.free.ts:28
-msgid "Video"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:75
@@ -16048,10 +16758,6 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:122
 msgid "Schedule Post Date/Time"
-msgstr ""
-
-#: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:125
-msgid "YYYY-MM-DD HH:MM:SS"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCommunity/getAllCoursesList.fluentCommunity.machine.pro.ts:13
@@ -16416,6 +17122,19 @@ msgstr ""
 msgid "Submission Inserted"
 msgstr ""
 
+#: frontend/src/services/machines/fluentForms/_fluentFormsMachines.ts:24
+msgid "PDF Attached To Email"
+msgstr ""
+
+#: frontend/src/services/machines/fluentForms/_fluentFormsMachines.ts:27
+#: frontend/src/services/machines/fluentForms/_fluentFormsMachines.ts:35
+msgid "Fluent PDF Generator addon is required for this trigger"
+msgstr ""
+
+#: frontend/src/services/machines/fluentForms/_fluentFormsMachines.ts:32
+msgid "PDF Download Requested"
+msgstr ""
+
 #: frontend/src/services/machines/fluentSmtp/_fluentSmtpMachines.ts:17
 #: frontend/src/services/machines/SureMail/_sureMailMachines.ts:17
 msgid "Email was sent successfully"
@@ -16424,6 +17143,145 @@ msgstr ""
 #: frontend/src/services/machines/fluentSmtp/_fluentSmtpMachines.ts:24
 #: frontend/src/services/machines/SureMail/_sureMailMachines.ts:24
 msgid "Failed to send email"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:16
+msgid "Create Ticket"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:22
+msgid "Add Tag to Ticket"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:28
+msgid "Reply to Ticket as Agent"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:34
+msgid "Block User"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:40
+msgid "Create or Obtain Customer"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:46
+msgid "Get All Tickets"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:61
+msgid "Ticket Created"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:68
+msgid "Response Added by Agent"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:75
+msgid "Response Added by Customer"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:82
+msgid "Ticket Closed by Agent"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:89
+msgid "Ticket Closed by Customer"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:96
+msgid "Ticket Closed (Product)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:103
+msgid "Ticket Created (Product)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:110
+msgid "Ticket Product Replied Agent"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/_fluentSupportMachines.ts:117
+msgid "Ticket Product Replied Customer"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/addTagToTicket.fluentSupport.machine.pro.ts:13
+#: frontend/src/services/machines/fluentSupport/replyToTicketAsAgent.fluentSupport.machine.pro.ts:13
+msgid "Enter the ticket ID"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/addTagToTicket.fluentSupport.machine.pro.ts:15
+#: frontend/src/services/machines/fluentSupport/replyToTicketAsAgent.fluentSupport.machine.pro.ts:15
+msgid "Ticket ID"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/addTagToTicket.fluentSupport.machine.pro.ts:24
+msgid "Enter tags (comma-separated)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/blockUser.fluentSupport.machine.pro.ts:13
+msgid "Enter the customer email to block"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/createOrObtainCustomer.fluentSupport.machine.pro.ts:13
+msgid "Enter the customer email"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/createOrObtainCustomer.fluentSupport.machine.pro.ts:24
+msgid "Enter the first name"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/createOrObtainCustomer.fluentSupport.machine.pro.ts:35
+msgid "Enter the last name"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/createTicket.fluentSupport.machine.pro.ts:13
+msgid "Enter the ticket subject"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/createTicket.fluentSupport.machine.pro.ts:15
+msgid "Ticket Subject"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/createTicket.fluentSupport.machine.pro.ts:24
+msgid "Enter the ticket details"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/createTicket.fluentSupport.machine.pro.ts:26
+msgid "Ticket Details"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/createTicket.fluentSupport.machine.pro.ts:35
+#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:21
+msgid "Enter the customer ID"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/createTicket.fluentSupport.machine.pro.ts:46
+msgid "Enter the mailbox ID (optional)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/createTicket.fluentSupport.machine.pro.ts:48
+msgid "Mailbox ID"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/replyToTicketAsAgent.fluentSupport.machine.pro.ts:24
+msgid "Enter the reply content"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/replyToTicketAsAgent.fluentSupport.machine.pro.ts:35
+msgid "Enter the agent user ID"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/replyToTicketAsAgent.fluentSupport.machine.pro.ts:37
+msgid "Agent User ID"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/replyToTicketAsAgent.fluentSupport.machine.pro.ts:46
+msgid "Enter conversation type (default: response)"
+msgstr ""
+
+#: frontend/src/services/machines/fluentSupport/replyToTicketAsAgent.fluentSupport.machine.pro.ts:48
+msgid "Conversation Type"
 msgstr ""
 
 #: frontend/src/services/machines/FormGent/_formGentMachines.ts:17
@@ -17416,11 +18274,6 @@ msgstr ""
 msgid "Lost"
 msgstr ""
 
-#: frontend/src/services/machines/goHighLevel/addOpportunity.goHighLevel.machine.pro.ts:82
-#: frontend/src/services/machines/goHighLevel/updateOpportunity.goHighLevel.machine.pro.ts:97
-msgid "Abandoned"
-msgstr ""
-
 #: frontend/src/services/machines/goHighLevel/addOpportunity.goHighLevel.machine.pro.ts:91
 #: frontend/src/services/machines/goHighLevel/updateOpportunity.goHighLevel.machine.pro.ts:105
 msgid "Select the user to assign the opportunity to."
@@ -17540,55 +18393,55 @@ msgstr ""
 msgid "Enter the due date and time in ISO 8601 format (e.g., 2024-12-31T23:59:59Z)."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:34
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:38
 msgid "Clear Calendar"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:46
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:52
 msgid "Create Event"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:58
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:66
 msgid "Get Many Events"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:64
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:73
 msgid "Update Event"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:70
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:80
 msgid "Duplicate Event"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:76
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:87
 msgid "Delete Event"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:82
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:94
 msgid "Add Attendees to Event"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:88
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:101
 msgid "Remove Attendees from Event"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:94
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:108
 msgid "Create Access Control Rule"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:100
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:115
 msgid "List Access Control Rules"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:106
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:122
 msgid "Get Access Control Rule"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:112
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:129
 msgid "Delete Access Control Rule"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:118
+#: frontend/src/services/machines/googleCalendar/_googleCalendarMachines.ts:136
 msgid "Find Availability"
 msgstr ""
 
@@ -17599,17 +18452,17 @@ msgstr ""
 
 #: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:20
 #: frontend/src/services/machines/googleCalendar/clearCalendar.googleCalendar.machine.pro.ts:41
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:20
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:20
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:21
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:21
 #: frontend/src/services/machines/googleCalendar/deleteAccessControlRule.googleCalendar.machine.pro.ts:20
 #: frontend/src/services/machines/googleCalendar/deleteCalendar.googleCalendar.machine.pro.ts:41
-#: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:20
-#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:20
-#: frontend/src/services/machines/googleCalendar/findAvailability.googleCalendar.machine.pro.ts:20
+#: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:21
+#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:21
+#: frontend/src/services/machines/googleCalendar/findAvailability.googleCalendar.machine.pro.ts:21
 #: frontend/src/services/machines/googleCalendar/getAccessControlRule.googleCalendar.machine.pro.ts:20
-#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:22
-#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:33
-#: frontend/src/services/machines/googleCalendar/listAccessControlRules.googleCalendar.machine.pro.ts:20
+#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:23
+#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:34
+#: frontend/src/services/machines/googleCalendar/listAccessControlRules.googleCalendar.machine.pro.ts:21
 #: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:20
 #: frontend/src/services/machines/googleCalendar/updateCalendar.googleCalendar.machine.pro.ts:41
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:20
@@ -17618,40 +18471,40 @@ msgid "Select Calendar"
 msgstr ""
 
 #: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:32
-#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:56
+#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:57
 #: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:32
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:32
 msgid "Select an event from the calendar."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:34
-#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:58
-#: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:34
+#: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:35
+#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:59
+#: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:35
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:34
 #: frontend/src/services/machines/telegram/telegramWebhookEvents.telegram.machine.pro.ts:26
 msgid "Select Event"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:47
+#: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:48
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:101
 #: frontend/src/services/machines/googleMeet/createMeeting.googleMeet.machine.pro.ts:77
 msgid "Enter attendee email addresses separated by commas."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:49
-#: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:49
+#: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:50
+#: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:50
 msgid "Attendee Emails"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:58
-#: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:58
+#: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:59
+#: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:59
 msgid "Whether to send notifications about the event update."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:60
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:134
-#: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:45
-#: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:60
+#: frontend/src/services/machines/googleCalendar/addAttendeesToEvent.googleCalendar.machine.pro.ts:61
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:135
+#: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:46
+#: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:61
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:133
 msgid "Send Notifications"
 msgstr ""
@@ -17679,40 +18532,40 @@ msgstr ""
 msgid "Select the calendar for the access control rule."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:32
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:33
 msgid "Select the role for the access control rule."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:38
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:39
 msgid "Free Busy Reader"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:42
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:43
 #: frontend/src/services/machines/googleDrive/shareFile.googleDrive.machine.pro.ts:41
 #: frontend/src/services/machines/googleDrive/shareFolder.googleDrive.machine.pro.ts:41
 msgid "Reader"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:46
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:47
 #: frontend/src/services/machines/googleDrive/shareFile.googleDrive.machine.pro.ts:42
 #: frontend/src/services/machines/googleDrive/shareFolder.googleDrive.machine.pro.ts:42
 #: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:201
 msgid "Writer"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:61
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:62
 msgid "Select the scope type for the access control rule."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:63
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:64
 msgid "Scope Type"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:67
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:68
 msgid "Default"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:75
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:76
 #: frontend/src/services/machines/googleDrive/shareFile.googleDrive.machine.pro.ts:59
 #: frontend/src/services/machines/googleDrive/shareFolder.googleDrive.machine.pro.ts:59
 #: frontend/src/services/machines/line/getMemberProfile.line.machine.pro.ts:20
@@ -17722,7 +18575,7 @@ msgstr ""
 msgid "Group"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:90
+#: frontend/src/services/machines/googleCalendar/createAccessControlRule.googleCalendar.machine.pro.ts:91
 msgid "Enter the email address or domain value based on the scope type."
 msgstr ""
 
@@ -17736,75 +18589,75 @@ msgstr ""
 msgid "Select the calendar where you want to create the event."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:32
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:33
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:47
 msgid "Enter the event title or subject."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:34
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:35
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:49
 #: frontend/src/services/machines/googleMeet/createMeeting.googleMeet.machine.pro.ts:33
 msgid "Summary"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:42
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:43
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:57
 msgid "Enter a description for the event."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:52
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:53
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:67
 msgid ""
 "Enter the event start date. You can enter date and time together, e.g., "
 "2025-12-20 07:30"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:65
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:66
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:79
 msgid ""
 "Enter the event end date. You can enter date and time together, e.g., "
 "2025-12-20 08:30"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:78
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:79
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:91
 msgid "Enter the location of the event."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:93
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:94
 msgid "Attendee Email"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:100
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:101
 msgid "Enter attendee email addresses."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:103
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:104
 msgid "Attendee #{COUNT}"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:105
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:106
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:103
 #: frontend/src/services/machines/googleMeet/createMeeting.googleMeet.machine.pro.ts:79
 msgid "Attendees"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:112
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:113
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:111
 msgid "Select the visibility of the event."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:132
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:133
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:131
 msgid "Whether to send notifications about the creation of the event."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:143
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:144
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:142
 msgid "Whether attendees other than the organizer can modify the event."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:145
+#: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:146
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:144
 msgid "Guests Can Modify"
 msgstr ""
@@ -17817,8 +18670,8 @@ msgstr ""
 msgid "Select the access control rule to delete."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/deleteAccessControlRule.googleCalendar.machine.pro.ts:34
-#: frontend/src/services/machines/googleCalendar/getAccessControlRule.googleCalendar.machine.pro.ts:34
+#: frontend/src/services/machines/googleCalendar/deleteAccessControlRule.googleCalendar.machine.pro.ts:35
+#: frontend/src/services/machines/googleCalendar/getAccessControlRule.googleCalendar.machine.pro.ts:35
 msgid "Select Access Control Rule"
 msgstr ""
 
@@ -17830,17 +18683,17 @@ msgstr ""
 msgid "Select the calendar containing the event to delete."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:32
+#: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:33
 msgid "Enter the event ID to delete."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:34
-#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:34
-#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:47
+#: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:35
+#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:35
+#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:48
 msgid "Event ID"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:43
+#: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:44
 msgid "Whether to send notifications about the deletion of the event."
 msgstr ""
 
@@ -17848,26 +18701,26 @@ msgstr ""
 msgid "Select the calendar containing the event to duplicate."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:32
+#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:33
 msgid "Enter the event ID to duplicate."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:43
+#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:44
 msgid "Enter the new title for the duplicated event."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:45
+#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:46
 #: frontend/src/services/machines/wordPress/renameMedia.wordPress.machine.free.ts:25
 msgid "New Title"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:54
+#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:55
 msgid ""
 "Enter the start date for the duplicated event. You can enter date and time "
 "together, e.g., 2025-12-20 07:30"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:67
+#: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:68
 msgid ""
 "Enter the end date for the duplicated event. You can enter date and time "
 "together, e.g., 2025-12-20 08:30"
@@ -17877,11 +18730,11 @@ msgstr ""
 msgid "Select the calendar to check availability for."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/findAvailability.googleCalendar.machine.pro.ts:32
+#: frontend/src/services/machines/googleCalendar/findAvailability.googleCalendar.machine.pro.ts:33
 msgid "Enter the start time for the availability check (e.g., 2025-12-20 00:00)."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/findAvailability.googleCalendar.machine.pro.ts:43
+#: frontend/src/services/machines/googleCalendar/findAvailability.googleCalendar.machine.pro.ts:44
 msgid "Enter the end time for the availability check (e.g., 2025-12-20 23:59)."
 msgstr ""
 
@@ -17899,15 +18752,15 @@ msgid ""
 "calendar will be listed."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:35
+#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:36
 msgid "Turn on to select any event from the calendar."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:37
+#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:38
 msgid "Turn on to select any event from it"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:45
+#: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:46
 msgid "Enter the event ID to retrieve."
 msgstr ""
 
@@ -17930,37 +18783,37 @@ msgstr ""
 msgid "Select the calendar to retrieve events from."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:45
+#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:46
 msgid ""
 "Enter the start time for the time range (e.g., 2025-01-14T07:09:50.000Z). "
 "Leave empty to use current time."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:49
+#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:50
 msgid "Start Time (After)"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:57
+#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:58
 msgid ""
 "Enter the end time for the time range (e.g., 2025-01-20T07:09:50.000Z). "
 "Leave empty to use one week from now."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:61
+#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:62
 msgid "End Time (Before)"
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:69
+#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:70
 msgid "Enter the maximum number of results to return."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:79
+#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:80
 msgid ""
 "Whether to expand recurring events into instances and only return single "
 "one-off events."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:83
+#: frontend/src/services/machines/googleCalendar/getManyEvents.googleCalendar.machine.pro.ts:84
 msgid "Single Events"
 msgstr ""
 
@@ -17987,7 +18840,7 @@ msgstr ""
 msgid "Enter the maximum number of calendars to return."
 msgstr ""
 
-#: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:47
+#: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:48
 msgid "Enter attendee email addresses separated by commas to remove."
 msgstr ""
 
@@ -20471,10 +21324,6 @@ msgstr ""
 msgid "Get Custom Content Type records filtered by a specific field value."
 msgstr ""
 
-#: frontend/src/services/machines/jetEngine/_jetEngineMachines.ts:73
-msgid "Create Post"
-msgstr ""
-
 #: frontend/src/services/machines/jetEngine/_jetEngineMachines.ts:76
 msgid "Create a new post in a specified post type."
 msgstr ""
@@ -20698,24 +21547,6 @@ msgstr ""
 msgid "Repeater Fields"
 msgstr ""
 
-#: frontend/src/services/machines/jetEngine/addRepeaterItemToCustomPostType.jetEngine.machine.pro.ts:17
-#: frontend/src/services/machines/jetEngine/createPost.jetEngine.machine.pro.ts:17
-#: frontend/src/services/machines/jetEngine/getPostsByPostType.jetEngine.machine.pro.ts:16
-#: frontend/src/services/machines/jetEngine/updatePost.jetEngine.machine.pro.ts:17
-#: frontend/src/services/machines/jetEngine/updatePostMeta.jetEngine.machine.pro.ts:17
-#: frontend/src/services/machines/seoPress/getAllPostsWithMeta.seoPress.machine.pro.ts:17
-#: frontend/src/services/machines/seoPress/getPostMeta.seoPress.machine.pro.ts:18
-#: frontend/src/services/machines/seoPress/getTitleTemplate.seoPress.machine.pro.ts:17
-#: frontend/src/services/machines/seoPress/updatePostMeta.seoPress.machine.pro.ts:19
-#: frontend/src/services/machines/wordPress/createNewPost.wordPress.machine.free.ts:34
-#: frontend/src/services/machines/wordPress/getPostsByMetadata.wordPress.machine.free.ts:18
-#: frontend/src/services/machines/wordPress/getPostsByPostType.wordPress.machine.free.ts:18
-#: frontend/src/services/machines/wordPress/postStatusUpdated.wordPress.machine.free.ts:17
-#: frontend/src/services/machines/wordPress/unregisterPostType.wordPress.machine.free.ts:16
-#: frontend/src/services/machines/wordPress/updateExistingPost.wordPress.machine.free.ts:43
-msgid "Post Type"
-msgstr ""
-
 #: frontend/src/services/machines/jetEngine/addRepeaterItemToCustomPostType.jetEngine.machine.pro.ts:23
 msgid "Select post type"
 msgstr ""
@@ -20784,12 +21615,6 @@ msgstr ""
 
 #: frontend/src/services/machines/jetEngine/createPost.jetEngine.machine.pro.ts:72
 msgid "Enter user ID or leave empty for current user"
-msgstr ""
-
-#: frontend/src/services/machines/jetEngine/createPost.jetEngine.machine.pro.ts:77
-#: frontend/src/services/machines/jetEngine/updatePost.jetEngine.machine.pro.ts:88
-#: frontend/src/services/machines/jetEngine/updatePostMeta.jetEngine.machine.pro.ts:41
-msgid "Add Meta Field"
 msgstr ""
 
 #: frontend/src/services/machines/jetEngine/createPost.jetEngine.machine.pro.ts:82
@@ -21104,6 +21929,7 @@ msgstr ""
 
 #: frontend/src/services/machines/jetpackCrm/commonMachines/transactionId.jetpackCrm.machine.ts:14
 #: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:71
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:56
 msgid "Transaction ID"
 msgstr ""
 
@@ -21113,32 +21939,6 @@ msgstr ""
 
 #: frontend/src/services/machines/jetpackCrm/getContactByEmail.jetpackCrm.machine.pro.ts:17
 msgid "Enter the Contact Email"
-msgstr ""
-
-#: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:8
-#: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:24
-#: frontend/src/services/machines/klaviyo/helpers/commonFields.klaviyo.ts:4
-#: frontend/src/services/machines/mailMint/createContact.mailMint.machine.pro.ts:119
-#: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:62
-#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:26
-#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:51
-#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:72
-#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:90
-#: frontend/src/services/machines/wooCommerce/helpers/commonUtils.wooCommerce.ts:9
-msgid "Address Line 1"
-msgstr ""
-
-#: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:9
-#: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:25
-#: frontend/src/services/machines/klaviyo/helpers/commonFields.klaviyo.ts:5
-#: frontend/src/services/machines/mailMint/createContact.mailMint.machine.pro.ts:129
-#: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:72
-#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:27
-#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:52
-#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:73
-#: frontend/src/services/machines/suiteDash/helpers/suiteDashContactFields.ts:91
-#: frontend/src/services/machines/wooCommerce/helpers/commonUtils.wooCommerce.ts:10
-msgid "Address Line 2"
 msgstr ""
 
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:11
@@ -24310,10 +25110,12 @@ msgid "Enter the course ID to reset progress for."
 msgstr ""
 
 #: frontend/src/services/machines/microsoftExcel/_microsoftExcelMachines.ts:17
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:30
 msgid "Create Table"
 msgstr ""
 
 #: frontend/src/services/machines/microsoftExcel/_microsoftExcelMachines.ts:24
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:44
 msgid "Delete Table"
 msgstr ""
 
@@ -24514,6 +25316,100 @@ msgstr ""
 #: frontend/src/services/machines/microsoftExcel/listWorksheetRows.microsoftExcel.machine.pro.ts:61
 #: frontend/src/services/machines/microsoftExcel/updateWorksheetRow.microsoftExcel.machine.pro.ts:66
 msgid "The range where the new row will be added, e.g., A1:C1."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:19
+msgid "Retrieves all events from Modern Events Calendar."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:23
+msgid "Get Next Upcoming Event"
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:26
+msgid "Retrieves the next upcoming event."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:30
+msgid "Get Upcoming Events"
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:33
+msgid "Retrieves all upcoming events."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:37
+msgid "Get Expired Events"
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:40
+msgid "Retrieves all expired events."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:44
+msgid "Get Event Tickets"
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:47
+msgid "Retrieves all tickets for a specific event."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:51
+msgid "User Registration for Event"
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:54
+msgid "Registers a user for a specific event."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:63
+msgid "Triggers when an event booking is completed."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:68
+msgid "Booking Confirmed"
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:71
+msgid "Triggers when an event booking is confirmed."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:76
+msgid "Booking Pending"
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:79
+msgid "Triggers when an event booking is pending."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:87
+msgid "Triggers when an event booking is cancelled."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:95
+msgid "Triggers when a new event is created."
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/getEventTickets.modernEventsCalendar.machine.pro.ts:14
+#: frontend/src/services/machines/modernEventsCalendar/registerUserForEvent.modernEventsCalendar.machine.pro.ts:14
+msgid "Select the event or map custom event ID"
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/registerUserForEvent.modernEventsCalendar.machine.pro.ts:29
+msgid "Select the ticket or map custom ticket ID"
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/registerUserForEvent.modernEventsCalendar.machine.pro.ts:32
+msgid "Ticket"
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/registerUserForEvent.modernEventsCalendar.machine.pro.ts:37
+msgid "Select a ticket"
+msgstr ""
+
+#: frontend/src/services/machines/modernEventsCalendar/registerUserForEvent.modernEventsCalendar.machine.pro.ts:44
+#: frontend/src/services/machines/wpCourseware/commonMachines/courseEnrollment.wpCourseware.machine.ts:14
+msgid "Enter the user email address"
 msgstr ""
 
 #: frontend/src/services/machines/mondayCom/_mondayComMachines.ts:15
@@ -25182,6 +26078,7 @@ msgid "Get All Tables"
 msgstr ""
 
 #: frontend/src/services/machines/ninjaTables/_ninjaTablesMachines.ts:40
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:58
 msgid "List Rows in Table"
 msgstr ""
 
@@ -25196,6 +26093,13 @@ msgstr ""
 #: frontend/src/services/machines/ninjaTables/addRowInTable.ninjaTables.machine.pro.ts:14
 #: frontend/src/services/machines/ninjaTables/listRowsInTable.ninjaTables.machine.pro.ts:14
 #: frontend/src/services/machines/ninjaTables/updateRowInTable.ninjaTables.machine.pro.ts:14
+#: frontend/src/services/machines/wpTableBuilder/deleteTable.wpTableBuilder.machine.pro.ts:17
+#: frontend/src/services/machines/wpTableBuilder/getCellFromTable.wpTableBuilder.machine.pro.ts:17
+#: frontend/src/services/machines/wpTableBuilder/getColumnFromTable.wpTableBuilder.machine.pro.ts:17
+#: frontend/src/services/machines/wpTableBuilder/getRowFromTable.wpTableBuilder.machine.pro.ts:17
+#: frontend/src/services/machines/wpTableBuilder/getTableById.wpTableBuilder.machine.pro.ts:17
+#: frontend/src/services/machines/wpTableBuilder/listRowsInTable.wpTableBuilder.machine.pro.ts:17
+#: frontend/src/services/machines/wpTableBuilder/updateTable.wpTableBuilder.machine.pro.ts:17
 msgid "Table ID"
 msgstr ""
 
@@ -26214,6 +27118,79 @@ msgstr ""
 msgid "New Status"
 msgstr ""
 
+#: frontend/src/services/machines/peepSo/_peepSoMachines.ts:16
+msgid "Add Post to Activity Stream"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/_peepSoMachines.ts:22
+msgid "Change User Role"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/_peepSoMachines.ts:36
+msgid "User Follows PeepSo Member"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/_peepSoMachines.ts:43
+msgid "User Gains Follower"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/_peepSoMachines.ts:50
+msgid "User Loses Follower"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/_peepSoMachines.ts:57
+msgid "User Unfollows PeepSo Member"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/_peepSoMachines.ts:64
+msgid "User Updates Avatar"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/_peepSoMachines.ts:71
+msgid "User Updates Specific Profile Field Value"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/_peepSoMachines.ts:78
+msgid "User Updates Specific Profile Field"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/_peepSoMachines.ts:85
+msgid "New Activity Post"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/changeUserRole.peepSo.machine.pro.ts:8
+msgid "Community Member"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/changeUserRole.peepSo.machine.pro.ts:9
+msgid "Community Administrator"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/changeUserRole.peepSo.machine.pro.ts:11
+msgid "Pending user email verification"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/changeUserRole.peepSo.machine.pro.ts:12
+msgid "Pending admin approval"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/changeUserRole.peepSo.machine.pro.ts:33
+#: frontend/src/services/machines/teamsForWoocommerceMemberships/updateMemberRole.teamsForWoocommerceMemberships.machine.pro.ts:43
+msgid "New Role"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/changeUserRole.peepSo.machine.pro.ts:37
+msgid "Select role"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/followUser.peepSo.machine.pro.ts:14
+msgid "User Email (Follower)"
+msgstr ""
+
+#: frontend/src/services/machines/peepSo/followUser.peepSo.machine.pro.ts:24
+msgid "User Email to Follow"
+msgstr ""
+
 #: frontend/src/services/machines/perplexity/_perplexityMachines.ts:20
 msgid "Ask Perplexity"
 msgstr ""
@@ -26805,6 +27782,7 @@ msgstr ""
 
 #: frontend/src/services/machines/salesforce/addContactToCampaign.salesforce.machine.pro.ts:19
 #: frontend/src/services/machines/salesforce/addLeadToCampaign.salesforce.machine.pro.ts:19
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:70
 #: frontend/src/services/machines/woodpecker/updateProspect.woodpecker.machine.pro.ts:105
 msgid "Campaign"
 msgstr ""
@@ -27914,10 +28892,6 @@ msgstr ""
 msgid "Days Until Due"
 msgstr ""
 
-#: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:21
-msgid "Enter the customer ID"
-msgstr ""
-
 #: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:32
 msgid ""
 "The integer amount in cents of the charge to be applied to the upcoming "
@@ -28590,6 +29564,34 @@ msgid ""
 "target=\"_blank\" rel=\"noopener noreferrer nofollow\">here</a>"
 msgstr ""
 
+#: frontend/src/services/machines/tawkTo/_tawkToMachines.ts:5
+msgid "You can set up a webhook by going to Administration → Settings → Webhooks."
+msgstr ""
+
+#: frontend/src/services/machines/tawkTo/_tawkToMachines.ts:18
+msgid "Triggers when a new ticket is created in Tawk.to"
+msgstr ""
+
+#: frontend/src/services/machines/tawkTo/_tawkToMachines.ts:20
+msgid "New Ticket"
+msgstr ""
+
+#: frontend/src/services/machines/tawkTo/_tawkToMachines.ts:27
+msgid "Triggers when a chat starts in Tawk.to"
+msgstr ""
+
+#: frontend/src/services/machines/tawkTo/_tawkToMachines.ts:29
+msgid "Chat Start"
+msgstr ""
+
+#: frontend/src/services/machines/tawkTo/_tawkToMachines.ts:36
+msgid "Triggers when a chat ends in Tawk.to"
+msgstr ""
+
+#: frontend/src/services/machines/tawkTo/_tawkToMachines.ts:38
+msgid "Chat End"
+msgstr ""
+
 #: frontend/src/services/machines/teamsForWoocommerceMemberships/_teamsForWoocommerceMembershipsMachines.ts:16
 msgid "Add Member to Team"
 msgstr ""
@@ -28765,10 +29767,6 @@ msgstr ""
 
 #: frontend/src/services/machines/teamsForWoocommerceMemberships/updateMemberRole.teamsForWoocommerceMemberships.machine.pro.ts:41
 msgid "Select the new role"
-msgstr ""
-
-#: frontend/src/services/machines/teamsForWoocommerceMemberships/updateMemberRole.teamsForWoocommerceMemberships.machine.pro.ts:43
-msgid "New Role"
 msgstr ""
 
 #: frontend/src/services/machines/telegram/_telegramMachines.ts:15
@@ -29066,12 +30064,6 @@ msgstr ""
 #: frontend/src/services/machines/telegram/sendOrReplyMessage.telegram.machine.free.ts:63
 #: frontend/src/services/machines/telegram/sendPoll.telegram.machine.free.ts:154
 msgid "HTML"
-msgstr ""
-
-#: frontend/src/services/machines/telegram/sendMedia.telegram.machine.free.ts:80
-#: frontend/src/services/machines/telegram/sendOrReplyMessage.telegram.machine.free.ts:64
-#: frontend/src/services/machines/telegram/sendPoll.telegram.machine.free.ts:155
-msgid "Markdown"
 msgstr ""
 
 #: frontend/src/services/machines/telegram/sendMedia.telegram.machine.free.ts:90
@@ -29603,6 +30595,368 @@ msgid ""
 "transcriptions."
 msgstr ""
 
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:16
+msgid "Get All Affiliate"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:19
+msgid "Fetch all affiliates with optional pagination."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:23
+msgid "Get Affiliate"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:26
+msgid "Fetch a single affiliate by affiliate ID."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:30
+msgid "Get All Referral"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:33
+msgid "Fetch all referrals with optional filters."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:37
+msgid "Get Referral"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:40
+msgid "Fetch a single referral by referral ID."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:44
+msgid "Get All Transaction"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:47
+msgid "Fetch all payment transactions with optional filters."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:51
+msgid "Get Transaction"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:54
+msgid "Fetch a single transaction by payment ID or transaction ID."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:58
+msgid "Get All Visit"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:61
+msgid "Fetch all visits with optional filters."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:65
+msgid "Get Visit"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:68
+msgid "Fetch a single visit by visit ID."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:72
+msgid "Create Affiliate"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:75
+msgid "Create a new affiliate from an existing WordPress user."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:79
+msgid "Create Referral"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:82
+msgid "Create a referral record for an affiliate."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:86
+msgid "Insert Payment"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:89
+msgid "Insert a payment record for an affiliate."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:93
+msgid "Change Transaction Status"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:96
+msgid "Update the payment transaction status."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:102
+msgid "Affiliate Registered"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:116
+msgid "Affiliate Saved"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:123
+msgid "Referral Saved"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:130
+msgid "Referral Inserted From Main"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:137
+msgid "Visit Tracked"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:144
+msgid "Payment Inserted"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:151
+msgid "Transaction Status Changed"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/_ultimateAffiliateProMachines.ts:158
+msgid "MLM Relation Created"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/changeTransactionStatus.ultimateAffiliatePro.machine.pro.ts:14
+msgid "Enter payment transaction ID from Ultimate Affiliate Pro payments table."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/changeTransactionStatus.ultimateAffiliatePro.machine.pro.ts:16
+msgid "Payment ID"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/changeTransactionStatus.ultimateAffiliatePro.machine.pro.ts:25
+msgid "Select new transaction status."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/changeTransactionStatus.ultimateAffiliatePro.machine.pro.ts:31
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:132
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:48
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:31
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:91
+msgid "Unpaid"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createAffiliate.ultimateAffiliatePro.machine.pro.ts:14
+msgid "Enter a WordPress user ID, email, or username."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createAffiliate.ultimateAffiliatePro.machine.pro.ts:16
+msgid "User Identifier"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:14
+msgid "Enter the affiliate ID."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:16
+#: frontend/src/services/machines/ultimateAffiliatePro/getAffiliate.ultimateAffiliatePro.machine.pro.ts:15
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:16
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:16
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllVisit.ultimateAffiliatePro.machine.pro.ts:16
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:16
+msgid "Affiliate ID"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:25
+msgid "Enter referred user ID, email, or username (optional)."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:27
+msgid "Referred User"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:35
+msgid "Enter referral amount."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:46
+msgid "Enter referral source, e.g. woo, edd, or custom."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:57
+msgid "Enter reference value, e.g. order ID."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:59
+msgid "Reference"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:68
+msgid "Optional campaign name."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:78
+msgid "Optional description."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:88
+msgid "Optional reference details."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:90
+msgid "Reference Details"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:98
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:74
+msgid "Optional currency code, e.g. USD."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:109
+msgid "Optional referral status."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:112
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:28
+msgid "Referral Status"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:115
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:32
+msgid "Unverified"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:116
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:33
+msgid "Verified"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:117
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:31
+msgid "Rejected"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:126
+msgid "Optional payment status."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getAffiliate.ultimateAffiliatePro.machine.pro.ts:18
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:14
+msgid "Enter affiliate ID."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllAffiliate.ultimateAffiliatePro.machine.pro.ts:14
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:58
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:42
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllVisit.ultimateAffiliatePro.machine.pro.ts:40
+msgid "Optional result limit. Default: 50."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllAffiliate.ultimateAffiliatePro.machine.pro.ts:24
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:68
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:52
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllVisit.ultimateAffiliatePro.machine.pro.ts:50
+msgid "Optional offset for pagination. Default: 0."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:14
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:14
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllVisit.ultimateAffiliatePro.machine.pro.ts:14
+msgid "Optional affiliate ID filter."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:25
+msgid "Optional referral status filter."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:42
+msgid "Optional payment status filter."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllTransaction.ultimateAffiliatePro.machine.pro.ts:25
+msgid "Optional transaction status filter."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllVisit.ultimateAffiliatePro.machine.pro.ts:25
+msgid "Optional visit status filter."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllVisit.ultimateAffiliatePro.machine.pro.ts:31
+msgid "Invalid"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getAllVisit.ultimateAffiliatePro.machine.pro.ts:32
+msgid "Valid"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getReferral.ultimateAffiliatePro.machine.pro.ts:15
+msgid "Referral ID"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getReferral.ultimateAffiliatePro.machine.pro.ts:18
+msgid "Enter referral ID."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getTransaction.ultimateAffiliatePro.machine.pro.ts:14
+msgid "Enter payment ID or transaction ID."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getTransaction.ultimateAffiliatePro.machine.pro.ts:16
+msgid "Transaction Identifier"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getVisit.ultimateAffiliatePro.machine.pro.ts:14
+msgid "Enter visit ID."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/getVisit.ultimateAffiliatePro.machine.pro.ts:16
+msgid "Visit ID"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:25
+msgid "Enter payment amount."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:37
+msgid "Select payment type."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:40
+msgid "Payment Type"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:43
+#: frontend/src/services/machines/zoom/createMeeting.zoom.machine.pro.ts:109
+#: frontend/src/services/machines/zoom/createWebinar.zoom.machine.pro.ts:109
+#: frontend/src/services/machines/zoom/updateMeeting.zoom.machine.pro.ts:142
+msgid "Manual"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:44
+msgid "PayPal"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:45
+msgid "Stripe"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:46
+msgid "Bank Transfer"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:54
+msgid "Optional transaction ID."
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:64
+msgid "Optional comma-separated referral IDs, e.g. 11,12,13"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:66
+msgid "Referral IDs"
+msgstr ""
+
+#: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:85
+msgid "Select payment status."
+msgstr ""
+
 #: frontend/src/services/machines/ultimateMember/_ultimateMemberMachines.ts:16
 #: frontend/src/services/machines/wordPress/_wordPressMachines.ts:103
 msgid "Add User Role"
@@ -30014,10 +31368,6 @@ msgstr ""
 msgid ""
 "Enter the direct link to the media (image, video or document) you want to "
 "send. Must be publicly accessible. Ex: https://example.com/file.jpg"
-msgstr ""
-
-#: frontend/src/services/machines/whatsApp/sendVideo.whatsApp.machine.free.ts:28
-msgid "Video URL"
 msgstr ""
 
 #: frontend/src/services/machines/whatsApp/sendVideo.whatsApp.machine.free.ts:37
@@ -31259,15 +32609,6 @@ msgstr ""
 msgid "Exclude Products"
 msgstr ""
 
-#: frontend/src/services/machines/wooCommerce/createCoupon.wooCommerce.machine.pro.ts:151
-#: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:393
-#: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:409
-#: frontend/src/services/machines/wooCommerce/updateCoupon.wooCommerce.machine.pro.ts:147
-#: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:413
-#: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:429
-msgid "Select products"
-msgstr ""
-
 #: frontend/src/services/machines/wooCommerce/createCoupon.wooCommerce.machine.pro.ts:158
 #: frontend/src/services/machines/wooCommerce/getAllProductsByCategory.wooCommerce.machine.pro.ts:16
 #: frontend/src/services/machines/wooCommerce/updateCoupon.wooCommerce.machine.pro.ts:155
@@ -31825,16 +33166,6 @@ msgstr ""
 #: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:359
 #: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:387
 msgid "Assign product to one or more categories."
-msgstr ""
-
-#: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:343
-#: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:361
-msgid "Categories"
-msgstr ""
-
-#: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:349
-#: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:367
-msgid "Select categories"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:355
@@ -32496,11 +33827,6 @@ msgstr ""
 
 #: frontend/src/services/machines/wordPress/_wordPressMachines.ts:188
 msgid "Update Post Status"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:194
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:1018
-msgid "Delete Post"
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/_wordPressMachines.ts:200
@@ -34428,6 +35754,7 @@ msgid "Whether to bypass Trash and force deletion."
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/helpers/commonUtils.wordPress.ts:475
+#: frontend/src/services/machines/wpTableBuilder/deleteTable.wpTableBuilder.machine.pro.ts:33
 msgid "Force Delete"
 msgstr ""
 
@@ -34692,10 +36019,6 @@ msgstr ""
 msgid "Enter notes (optional)"
 msgstr ""
 
-#: frontend/src/services/machines/wpCourseware/commonMachines/courseEnrollment.wpCourseware.machine.ts:14
-msgid "Enter the user email address"
-msgstr ""
-
 #: frontend/src/services/machines/wpCourseware/commonMachines/courseEnrollment.wpCourseware.machine.ts:26
 msgid "Select the course"
 msgstr ""
@@ -34954,6 +36277,171 @@ msgstr ""
 
 #: frontend/src/services/machines/wPSubscription/_wPSubscriptionMachines.ts:31
 msgid "Subscription Status Changed"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:16
+msgid "Get Table (All)"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:19
+msgid "Fetches all tables."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:23
+msgid "Get Table (Single)"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:26
+msgid "Fetches a single table by ID."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:33
+msgid "Creates a new table."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:37
+msgid "Update Table"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:40
+msgid "Updates an existing table."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:47
+msgid "Deletes a table."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:51
+msgid "Get Row from Table"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:54
+msgid "Gets a specific row from a table."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:61
+msgid "Lists all rows in a table."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:65
+msgid "Get Column from Table"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:68
+msgid "Gets a specific column from a table."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:72
+msgid "Get Cell from Table"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:75
+msgid "Gets the value of a specific cell."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:82
+msgid "Table Created"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:85
+msgid "Triggers when a new table is created."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:90
+msgid "Table Updated"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:93
+msgid "Triggers when a table is updated."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:98
+msgid "Table Trashed"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:101
+msgid "Triggers when a table is moved to trash."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:106
+msgid "Table Restored"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/_wpTableBuilderMachines.ts:109
+msgid "Triggers when a table is restored from trash."
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/createTable.wpTableBuilder.machine.pro.ts:14
+#: frontend/src/services/machines/wpTableBuilder/updateTable.wpTableBuilder.machine.pro.ts:32
+msgid "Table Title"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/createTable.wpTableBuilder.machine.pro.ts:17
+msgid "Enter the table title"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/createTable.wpTableBuilder.machine.pro.ts:24
+msgid "Enter the table content (HTML)"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/createTable.wpTableBuilder.machine.pro.ts:26
+#: frontend/src/services/machines/wpTableBuilder/updateTable.wpTableBuilder.machine.pro.ts:43
+msgid "Table Content"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/createTable.wpTableBuilder.machine.pro.ts:29
+#: frontend/src/services/machines/wpTableBuilder/updateTable.wpTableBuilder.machine.pro.ts:46
+msgid "<table>...</table>"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/deleteTable.wpTableBuilder.machine.pro.ts:14
+#: frontend/src/services/machines/wpTableBuilder/getCellFromTable.wpTableBuilder.machine.pro.ts:14
+#: frontend/src/services/machines/wpTableBuilder/getColumnFromTable.wpTableBuilder.machine.pro.ts:14
+#: frontend/src/services/machines/wpTableBuilder/getRowFromTable.wpTableBuilder.machine.pro.ts:14
+#: frontend/src/services/machines/wpTableBuilder/getTableById.wpTableBuilder.machine.pro.ts:14
+#: frontend/src/services/machines/wpTableBuilder/listRowsInTable.wpTableBuilder.machine.pro.ts:14
+#: frontend/src/services/machines/wpTableBuilder/updateTable.wpTableBuilder.machine.pro.ts:14
+msgid "for custom mapping table id should be provided in the input data"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/deleteTable.wpTableBuilder.machine.pro.ts:23
+msgid "Select a table to delete"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/deleteTable.wpTableBuilder.machine.pro.ts:31
+msgid "Force delete (bypass trash)"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/getCellFromTable.wpTableBuilder.machine.pro.ts:23
+#: frontend/src/services/machines/wpTableBuilder/getColumnFromTable.wpTableBuilder.machine.pro.ts:23
+#: frontend/src/services/machines/wpTableBuilder/getRowFromTable.wpTableBuilder.machine.pro.ts:23
+#: frontend/src/services/machines/wpTableBuilder/getTableById.wpTableBuilder.machine.pro.ts:23
+#: frontend/src/services/machines/wpTableBuilder/listRowsInTable.wpTableBuilder.machine.pro.ts:23
+#: frontend/src/services/machines/wpTableBuilder/updateTable.wpTableBuilder.machine.pro.ts:23
+msgid "Select a table"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/getCellFromTable.wpTableBuilder.machine.pro.ts:35
+#: frontend/src/services/machines/wpTableBuilder/getRowFromTable.wpTableBuilder.machine.pro.ts:35
+msgid "Enter the row index (0-based)"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/getCellFromTable.wpTableBuilder.machine.pro.ts:43
+#: frontend/src/services/machines/wpTableBuilder/getColumnFromTable.wpTableBuilder.machine.pro.ts:32
+msgid "Column Index"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/getCellFromTable.wpTableBuilder.machine.pro.ts:46
+#: frontend/src/services/machines/wpTableBuilder/getColumnFromTable.wpTableBuilder.machine.pro.ts:35
+msgid "Enter the column index (0-based)"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/updateTable.wpTableBuilder.machine.pro.ts:35
+msgid "Enter the new table title"
+msgstr ""
+
+#: frontend/src/services/machines/wpTableBuilder/updateTable.wpTableBuilder.machine.pro.ts:41
+msgid "Enter the new table content (HTML)"
 msgstr ""
 
 #: frontend/src/services/machines/WPTravelEngine/_wPTravelEngineMachines.ts:40
@@ -35513,12 +37001,6 @@ msgstr ""
 #: frontend/src/services/machines/zoom/createWebinar.zoom.machine.pro.ts:108
 #: frontend/src/services/machines/zoom/updateMeeting.zoom.machine.pro.ts:141
 msgid "Auto"
-msgstr ""
-
-#: frontend/src/services/machines/zoom/createMeeting.zoom.machine.pro.ts:109
-#: frontend/src/services/machines/zoom/createWebinar.zoom.machine.pro.ts:109
-#: frontend/src/services/machines/zoom/updateMeeting.zoom.machine.pro.ts:142
-msgid "Manual"
 msgstr ""
 
 #: frontend/src/services/machines/zoom/createMeeting.zoom.machine.pro.ts:119

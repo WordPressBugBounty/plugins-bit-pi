@@ -406,6 +406,8 @@ return [
 
     'Repeater/Loop' => __('Repeater/Loop', 'bit-pi'),
 
+    'Sticky Note' => __('Sticky Note', 'bit-pi'),
+
     'Enter flow title' => __('Enter flow title', 'bit-pi'),
 
     'Zoom In' => __('Zoom In', 'bit-pi'),
@@ -615,6 +617,12 @@ return [
 
     'Json Parser Node' => __('Json Parser Node', 'bit-pi'),
 
+    /* translators: %s: placeholder value */
+    'Are you sure to delete this %s?' => __('Are you sure to delete this %s?', 'bit-pi'),
+
+    /* translators: %s: placeholder value */
+    'Delete %s' => __('Delete %s', 'bit-pi'),
+
     'Action' => __('Action', 'bit-pi'),
 
     'Condition Logic' => __('Condition Logic', 'bit-pi'),
@@ -643,12 +651,17 @@ return [
 
     'XML' => __('XML', 'bit-pi'),
 
-    'Are you sure to delete this' => __('Are you sure to delete this', 'bit-pi'),
-
-    /* translators: %s: placeholder value */
-    'Delete the %s' => __('Delete the %s', 'bit-pi'),
-
     'Schedule Node' => __('Schedule Node', 'bit-pi'),
+
+    'You can style with' => __('You can style with', 'bit-pi'),
+
+    'Markdown' => __('Markdown', 'bit-pi'),
+
+    'Set color' => __('Set color', 'bit-pi'),
+
+    'Custom color' => __('Custom color', 'bit-pi'),
+
+    'Change color' => __('Change color', 'bit-pi'),
 
     'XML Node' => __('XML Node', 'bit-pi'),
 
@@ -3384,6 +3397,86 @@ return [
 
     'Post Published From Any Platform' => __('Post Published From Any Platform', 'bit-pi'),
 
+    'Create Post' => __('Create Post', 'bit-pi'),
+
+    'Like Post' => __('Like Post', 'bit-pi'),
+
+    'Repost Post' => __('Repost Post', 'bit-pi'),
+
+    'Get Followers' => __('Get Followers', 'bit-pi'),
+
+    'Get Follows' => __('Get Follows', 'bit-pi'),
+
+    'Get Profile' => __('Get Profile', 'bit-pi'),
+
+    'Delete Post' => __('Delete Post', 'bit-pi'),
+
+    'Find Post' => __('Find Post', 'bit-pi'),
+
+    'Choose Post Type' => __('Choose Post Type', 'bit-pi'),
+
+    'Post Type' => __('Post Type', 'bit-pi'),
+
+    'Text Only' => __('Text Only', 'bit-pi'),
+
+    'Image' => __('Image', 'bit-pi'),
+
+    'Video' => __('Video', 'bit-pi'),
+
+    'Select Post Type' => __('Select Post Type', 'bit-pi'),
+
+    'The text of your post. (Max 300 characters)' => __('The text of your post. (Max 300 characters)', 'bit-pi'),
+
+    'Post Text' => __('Post Text', 'bit-pi'),
+
+    'The primary language of the post (e.g., en, es, fr). Leave empty for none.' => __('The primary language of the post (e.g., en, es, fr). Leave empty for none.', 'bit-pi'),
+
+    'Language Code' => __('Language Code', 'bit-pi'),
+
+    'Direct URL to the image file (JPEG/PNG, max 1MB)' => __('Direct URL to the image file (JPEG/PNG, max 1MB)', 'bit-pi'),
+
+    'Alt text describing the image for accessibility' => __('Alt text describing the image for accessibility', 'bit-pi'),
+
+    'Image Alt Text' => __('Image Alt Text', 'bit-pi'),
+
+    'Direct URL to the video file (MP4, max 50MB)' => __('Direct URL to the video file (MP4, max 50MB)', 'bit-pi'),
+
+    'Video URL' => __('Video URL', 'bit-pi'),
+
+    'Alt text describing the video for accessibility' => __('Alt text describing the video for accessibility', 'bit-pi'),
+
+    'Video Alt Text' => __('Video Alt Text', 'bit-pi'),
+
+    'Handle or DID of the actor to fetch followers for.' => __('Handle or DID of the actor to fetch followers for.', 'bit-pi'),
+
+    'Actor Handle' => __('Actor Handle', 'bit-pi'),
+
+    'Maximum number of results to return (1-100).' => __('Maximum number of results to return (1-100).', 'bit-pi'),
+
+    'Pagination cursor for the next page of results.' => __('Pagination cursor for the next page of results.', 'bit-pi'),
+
+    'Next Page Cursor' => __('Next Page Cursor', 'bit-pi'),
+
+    'Handle or DID of the actor to fetch follows for.' => __('Handle or DID of the actor to fetch follows for.', 'bit-pi'),
+
+    'Enter PDS Host, Identifier, and App Password to connect your BlueSky account.' => __('Enter PDS Host, Identifier, and App Password to connect your BlueSky account.', 'bit-pi'),
+
+    'BlueSky' => __('BlueSky', 'bit-pi'),
+
+    'App Password' => __('App Password', 'bit-pi'),
+
+    'PDS Host' => __('PDS Host', 'bit-pi'),
+
+    'https://bsky.social' => __('https://bsky.social', 'bit-pi'),
+
+    'Identifier' => __('Identifier', 'bit-pi'),
+
+    'yourhandle.bsky.social or email' => __('yourhandle.bsky.social or email', 'bit-pi'),
+
+    'The BlueSky post URL (e.g., https://bsky.app/profile/username.bsky.social/post/xxx)' => __('The BlueSky post URL (e.g., https://bsky.app/profile/username.bsky.social/post/xxx)', 'bit-pi'),
+
+    'Post URL' => __('Post URL', 'bit-pi'),
+
     'Add Contacts To list' => __('Add Contacts To list', 'bit-pi'),
 
     'Delete a Contact' => __('Delete a Contact', 'bit-pi'),
@@ -4022,7 +4115,7 @@ return [
 
     'New Channel Topic' => __('New Channel Topic', 'bit-pi'),
 
-    'New vendor added' => __('New vendor added', 'bit-pi'),
+    'New vendor added from dashboard' => __('New vendor added from dashboard', 'bit-pi'),
 
     'User became a vendor or registered as a vendor' => __('User became a vendor or registered as a vendor', 'bit-pi'),
 
@@ -4254,6 +4347,28 @@ return [
 
     'Abandoned Cart Reminder Sent' => __('Abandoned Cart Reminder Sent', 'bit-pi'),
 
+    'Create Discount' => __('Create Discount', 'bit-pi'),
+
+    'Delete Discount' => __('Delete Discount', 'bit-pi'),
+
+    'Get Discount Details' => __('Get Discount Details', 'bit-pi'),
+
+    'Find User Purchased Download' => __('Find User Purchased Download', 'bit-pi'),
+
+    'Find User Subscription for Download' => __('Find User Subscription for Download', 'bit-pi'),
+
+    'Find User License for Download' => __('Find User License for Download', 'bit-pi'),
+
+    'Create Purchase or Order' => __('Create Purchase or Order', 'bit-pi'),
+
+    'Revoke Purchase' => __('Revoke Purchase', 'bit-pi'),
+
+    'Update License Status' => __('Update License Status', 'bit-pi'),
+
+    'Update Purchase Meta' => __('Update Purchase Meta', 'bit-pi'),
+
+    'Update Purchase' => __('Update Purchase', 'bit-pi'),
+
     'User purchased a product' => __('User purchased a product', 'bit-pi'),
 
     '**When Trigger**: A user purchases a product. This trigger is fired when a user completes a purchase.' => __('**When Trigger**: A user purchases a product. This trigger is fired when a user completes a purchase.', 'bit-pi'),
@@ -4298,11 +4413,189 @@ return [
 
     '**When Trigger**: A license key status is changed from active / disabled to expired.' => __('**When Trigger**: A license key status is changed from active / disabled to expired.', 'bit-pi'),
 
+    '**When Trigger**: An order is created.' => __('**When Trigger**: An order is created.', 'bit-pi'),
+
+    'Order Status Changes' => __('Order Status Changes', 'bit-pi'),
+
+    '**When Trigger**: An order status changes.' => __('**When Trigger**: An order status changes.', 'bit-pi'),
+
+    'License Renewed' => __('License Renewed', 'bit-pi'),
+
+    '**When Trigger**: A license is renewed.' => __('**When Trigger**: A license is renewed.', 'bit-pi'),
+
+    'License Updated' => __('License Updated', 'bit-pi'),
+
+    '**When Trigger**: A license is updated.' => __('**When Trigger**: A license is updated.', 'bit-pi'),
+
+    'For custom field mapping, download id should be mapped to a field with numeric value.' => __('For custom field mapping, download id should be mapped to a field with numeric value.', 'bit-pi'),
+
+    'Select download' => __('Select download', 'bit-pi'),
+
+    'Price ID (optional)' => __('Price ID (optional)', 'bit-pi'),
+
+    'A name for the discount code (e.g., Summer Sale).' => __('A name for the discount code (e.g., Summer Sale).', 'bit-pi'),
+
+    'Discount Name' => __('Discount Name', 'bit-pi'),
+
+    'The code customers will enter at checkout (e.g., SUMMER20).' => __('The code customers will enter at checkout (e.g., SUMMER20).', 'bit-pi'),
+
+    'Discount Code' => __('Discount Code', 'bit-pi'),
+
+    'Whether the discount is currently active or inactive.' => __('Whether the discount is currently active or inactive.', 'bit-pi'),
+
+    'Type of discount: percentage off or fixed amount.' => __('Type of discount: percentage off or fixed amount.', 'bit-pi'),
+
+    'Amount Type' => __('Amount Type', 'bit-pi'),
+
+    'Percentage' => __('Percentage', 'bit-pi'),
+
+    'Flat Amount' => __('Flat Amount', 'bit-pi'),
+
+    'The discount amount (percentage or fixed value based on amount type).' => __('The discount amount (percentage or fixed value based on amount type).', 'bit-pi'),
+
+    'Discount Amount' => __('Discount Amount', 'bit-pi'),
+
+    'Products that must be in the cart for this discount to apply.' => __('Products that must be in the cart for this discount to apply.', 'bit-pi'),
+
+    'Required Products' => __('Required Products', 'bit-pi'),
+
+    'Select products' => __('Select products', 'bit-pi'),
+
+    'Whether the discount applies globally or only to specific products.' => __('Whether the discount applies globally or only to specific products.', 'bit-pi'),
+
+    'Global' => __('Global', 'bit-pi'),
+
+    'Not Global' => __('Not Global', 'bit-pi'),
+
+    'Products that are excluded from this discount.' => __('Products that are excluded from this discount.', 'bit-pi'),
+
+    'Excluded Products' => __('Excluded Products', 'bit-pi'),
+
+    'Select products to exclude' => __('Select products to exclude', 'bit-pi'),
+
+    'Condition for required products: all must be in cart or any one.' => __('Condition for required products: all must be in cart or any one.', 'bit-pi'),
+
+    'Product Condition' => __('Product Condition', 'bit-pi'),
+
+    'Any' => __('Any', 'bit-pi'),
+
+    'Date when the discount becomes active. Format: YYYY-MM-DD HH:MM:SS.' => __('Date when the discount becomes active. Format: YYYY-MM-DD HH:MM:SS.', 'bit-pi'),
+
+    'YYYY-MM-DD HH:MM:SS' => __('YYYY-MM-DD HH:MM:SS', 'bit-pi'),
+
+    'Date when the discount expires. Format: YYYY-MM-DD HH:MM:SS.' => __('Date when the discount expires. Format: YYYY-MM-DD HH:MM:SS.', 'bit-pi'),
+
+    'Maximum number of times this discount can be used (0 for unlimited).' => __('Maximum number of times this discount can be used (0 for unlimited).', 'bit-pi'),
+
+    'Maximum Uses' => __('Maximum Uses', 'bit-pi'),
+
+    'Minimum cart amount required to use this discount.' => __('Minimum cart amount required to use this discount.', 'bit-pi'),
+
+    'Minimum Purchase Amount' => __('Minimum Purchase Amount', 'bit-pi'),
+
+    'If enabled, each customer can only use this discount once.' => __('If enabled, each customer can only use this discount once.', 'bit-pi'),
+
+    'Once Per Customer' => __('Once Per Customer', 'bit-pi'),
+
+    'Product categories this discount applies to.' => __('Product categories this discount applies to.', 'bit-pi'),
+
+    'Categories' => __('Categories', 'bit-pi'),
+
+    'Select categories' => __('Select categories', 'bit-pi'),
+
+    'Terms and conditions for the discount.' => __('Terms and conditions for the discount.', 'bit-pi'),
+
+    'Terms & Conditions' => __('Terms & Conditions', 'bit-pi'),
+
+    'Purchase Fields' => __('Purchase Fields', 'bit-pi'),
+
+    'Discount ID' => __('Discount ID', 'bit-pi'),
+
+    'Discount Code or ID' => __('Discount Code or ID', 'bit-pi'),
+
+    'Customer Email' => __('Customer Email', 'bit-pi'),
+
+    'Download ID' => __('Download ID', 'bit-pi'),
+
+    'Price ID' => __('Price ID', 'bit-pi'),
+
+    'Payment Method' => __('Payment Method', 'bit-pi'),
+
+    'Total Amount' => __('Total Amount', 'bit-pi'),
+
+    'Address Line 1' => __('Address Line 1', 'bit-pi'),
+
+    'Address Line 2' => __('Address Line 2', 'bit-pi'),
+
+    'ZIP' => __('ZIP', 'bit-pi'),
+
+    'Meta Key' => __('Meta Key', 'bit-pi'),
+
+    'Meta Value' => __('Meta Value', 'bit-pi'),
+
+    'Purchase ID' => __('Purchase ID', 'bit-pi'),
+
+    'Note' => __('Note', 'bit-pi'),
+
+    'Site Inactive' => __('Site Inactive', 'bit-pi'),
+
+    'Processing' => __('Processing', 'bit-pi'),
+
+    'Complete' => __('Complete', 'bit-pi'),
+
+    'Refunded' => __('Refunded', 'bit-pi'),
+
+    'Revoked' => __('Revoked', 'bit-pi'),
+
+    'Failed' => __('Failed', 'bit-pi'),
+
+    'Abandoned' => __('Abandoned', 'bit-pi'),
+
+    'Cancelled' => __('Cancelled', 'bit-pi'),
+
+    'For custom field mapping, product id should be mapped to a field with numeric value.' => __('For custom field mapping, product id should be mapped to a field with numeric value.', 'bit-pi'),
+
     'Select a product' => __('Select a product', 'bit-pi'),
+
+    'For custom field mapping, discount id should be mapped to a field with numeric value.' => __('For custom field mapping, discount id should be mapped to a field with numeric value.', 'bit-pi'),
 
     'Discounts' => __('Discounts', 'bit-pi'),
 
     'Select a discount' => __('Select a discount', 'bit-pi'),
+
+    'Enter the purchase/order ID to revoke' => __('Enter the purchase/order ID to revoke', 'bit-pi'),
+
+    'Enter purchase ID' => __('Enter purchase ID', 'bit-pi'),
+
+    'Enter the license key' => __('Enter the license key', 'bit-pi'),
+
+    'License Key' => __('License Key', 'bit-pi'),
+
+    'Enter license key' => __('Enter license key', 'bit-pi'),
+
+    'Select the new license status' => __('Select the new license status', 'bit-pi'),
+
+    'License Status' => __('License Status', 'bit-pi'),
+
+    'Enter the purchase/order ID' => __('Enter the purchase/order ID', 'bit-pi'),
+
+    'Enter the purchase ID' => __('Enter the purchase ID', 'bit-pi'),
+
+    'Select the new order status (optional)' => __('Select the new order status (optional)', 'bit-pi'),
+
+    'Order Status' => __('Order Status', 'bit-pi'),
+
+    'Add a note to the purchase (optional)' => __('Add a note to the purchase (optional)', 'bit-pi'),
+
+    'Enter the note.' => __('Enter the note.', 'bit-pi'),
+
+    'Enter the purchase ID.' => __('Enter the purchase ID.', 'bit-pi'),
+
+    'Add Meta Field' => __('Add Meta Field', 'bit-pi'),
+
+    'e.g., custom_field' => __('e.g., custom_field', 'bit-pi'),
+
+    'Purchase Meta Fields' => __('Purchase Meta Fields', 'bit-pi'),
 
     'You can get your API key from <a class="text-blue-600 underline" href="https://app.elasticemail.com/marketing/settings/new" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API key from <a class="text-blue-600 underline" href="https://app.elasticemail.com/marketing/settings/new" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
 
@@ -4395,8 +4688,6 @@ return [
     'First Message' => __('First Message', 'bit-pi'),
 
     'Language code for the agent (e.g., "en" for English, "es" for Spanish).' => __('Language code for the agent (e.g., "en" for English, "es" for Spanish).', 'bit-pi'),
-
-    'Language Code' => __('Language Code', 'bit-pi'),
 
     'Select the model to use for the agent.' => __('Select the model to use for the agent.', 'bit-pi'),
 
@@ -5392,8 +5683,6 @@ return [
 
     'Enter the Comment ID' => __('Enter the Comment ID', 'bit-pi'),
 
-    'Note' => __('Note', 'bit-pi'),
-
     '**Username**: Your WordPress username' => __('**Username**: Your WordPress username', 'bit-pi'),
 
     '## Create New Application Password :' => __('## Create New Application Password :', 'bit-pi'),
@@ -5782,8 +6071,6 @@ return [
 
     'Order ID' => __('Order ID', 'bit-pi'),
 
-    'Meta Key' => __('Meta Key', 'bit-pi'),
-
     'Product ID' => __('Product ID', 'bit-pi'),
 
     'Order Transaction ID' => __('Order Transaction ID', 'bit-pi'),
@@ -5798,13 +6085,9 @@ return [
 
     'Discount Type' => __('Discount Type', 'bit-pi'),
 
-    'Percentage' => __('Percentage', 'bit-pi'),
-
     'Fixed Amount' => __('Fixed Amount', 'bit-pi'),
 
     'Select discount type' => __('Select discount type', 'bit-pi'),
-
-    'Discount Amount' => __('Discount Amount', 'bit-pi'),
 
     'Enter discount amount (e.g., 10)' => __('Enter discount amount (e.g., 10)', 'bit-pi'),
 
@@ -5834,19 +6117,9 @@ return [
 
     'Select a customer' => __('Select a customer', 'bit-pi'),
 
-    'Order Status' => __('Order Status', 'bit-pi'),
-
-    'Processing' => __('Processing', 'bit-pi'),
-
     'On Hold' => __('On Hold', 'bit-pi'),
 
-    'Cancelled' => __('Cancelled', 'bit-pi'),
-
     'Archived' => __('Archived', 'bit-pi'),
-
-    'Refunded' => __('Refunded', 'bit-pi'),
-
-    'Failed' => __('Failed', 'bit-pi'),
 
     'Select an order status' => __('Select an order status', 'bit-pi'),
 
@@ -5886,8 +6159,6 @@ return [
 
     'Select order mode' => __('Select order mode', 'bit-pi'),
 
-    'Payment Method' => __('Payment Method', 'bit-pi'),
-
     'Enter payment method' => __('Enter payment method', 'bit-pi'),
 
     'Payment Method Title' => __('Payment Method Title', 'bit-pi'),
@@ -5923,8 +6194,6 @@ return [
     'Shipping Total' => __('Shipping Total', 'bit-pi'),
 
     'Tax Total' => __('Tax Total', 'bit-pi'),
-
-    'Total Amount' => __('Total Amount', 'bit-pi'),
 
     'Exchange Rate' => __('Exchange Rate', 'bit-pi'),
 
@@ -5997,8 +6266,6 @@ return [
     'Enter customer ID' => __('Enter customer ID', 'bit-pi'),
 
     'Enter order ID' => __('Enter order ID', 'bit-pi'),
-
-    'Meta Value' => __('Meta Value', 'bit-pi'),
 
     'Fluent Community' => __('Fluent Community', 'bit-pi'),
 
@@ -6180,10 +6447,6 @@ return [
 
     'Embed Content Type' => __('Embed Content Type', 'bit-pi'),
 
-    'Image' => __('Image', 'bit-pi'),
-
-    'Video' => __('Video', 'bit-pi'),
-
     'Giphy' => __('Giphy', 'bit-pi'),
 
     'Iframe HTML' => __('Iframe HTML', 'bit-pi'),
@@ -6205,8 +6468,6 @@ return [
     'Enter scheduled date/time (YYYY-MM-DD HH:MM:SS)' => __('Enter scheduled date/time (YYYY-MM-DD HH:MM:SS)', 'bit-pi'),
 
     'Schedule Post Date/Time' => __('Schedule Post Date/Time', 'bit-pi'),
-
-    'YYYY-MM-DD HH:MM:SS' => __('YYYY-MM-DD HH:MM:SS', 'bit-pi'),
 
     'This action will fetch all courses from Fluent Community.' => __('This action will fetch all courses from Fluent Community.', 'bit-pi'),
 
@@ -6350,9 +6611,83 @@ return [
 
     'Submission Inserted' => __('Submission Inserted', 'bit-pi'),
 
+    'PDF Attached To Email' => __('PDF Attached To Email', 'bit-pi'),
+
+    'Fluent PDF Generator addon is required for this trigger' => __('Fluent PDF Generator addon is required for this trigger', 'bit-pi'),
+
+    'PDF Download Requested' => __('PDF Download Requested', 'bit-pi'),
+
     'Email was sent successfully' => __('Email was sent successfully', 'bit-pi'),
 
     'Failed to send email' => __('Failed to send email', 'bit-pi'),
+
+    'Create Ticket' => __('Create Ticket', 'bit-pi'),
+
+    'Add Tag to Ticket' => __('Add Tag to Ticket', 'bit-pi'),
+
+    'Reply to Ticket as Agent' => __('Reply to Ticket as Agent', 'bit-pi'),
+
+    'Block User' => __('Block User', 'bit-pi'),
+
+    'Create or Obtain Customer' => __('Create or Obtain Customer', 'bit-pi'),
+
+    'Get All Tickets' => __('Get All Tickets', 'bit-pi'),
+
+    'Ticket Created' => __('Ticket Created', 'bit-pi'),
+
+    'Response Added by Agent' => __('Response Added by Agent', 'bit-pi'),
+
+    'Response Added by Customer' => __('Response Added by Customer', 'bit-pi'),
+
+    'Ticket Closed by Agent' => __('Ticket Closed by Agent', 'bit-pi'),
+
+    'Ticket Closed by Customer' => __('Ticket Closed by Customer', 'bit-pi'),
+
+    'Ticket Closed (Product)' => __('Ticket Closed (Product)', 'bit-pi'),
+
+    'Ticket Created (Product)' => __('Ticket Created (Product)', 'bit-pi'),
+
+    'Ticket Product Replied Agent' => __('Ticket Product Replied Agent', 'bit-pi'),
+
+    'Ticket Product Replied Customer' => __('Ticket Product Replied Customer', 'bit-pi'),
+
+    'Enter the ticket ID' => __('Enter the ticket ID', 'bit-pi'),
+
+    'Ticket ID' => __('Ticket ID', 'bit-pi'),
+
+    'Enter tags (comma-separated)' => __('Enter tags (comma-separated)', 'bit-pi'),
+
+    'Enter the customer email to block' => __('Enter the customer email to block', 'bit-pi'),
+
+    'Enter the customer email' => __('Enter the customer email', 'bit-pi'),
+
+    'Enter the first name' => __('Enter the first name', 'bit-pi'),
+
+    'Enter the last name' => __('Enter the last name', 'bit-pi'),
+
+    'Enter the ticket subject' => __('Enter the ticket subject', 'bit-pi'),
+
+    'Ticket Subject' => __('Ticket Subject', 'bit-pi'),
+
+    'Enter the ticket details' => __('Enter the ticket details', 'bit-pi'),
+
+    'Ticket Details' => __('Ticket Details', 'bit-pi'),
+
+    'Enter the customer ID' => __('Enter the customer ID', 'bit-pi'),
+
+    'Enter the mailbox ID (optional)' => __('Enter the mailbox ID (optional)', 'bit-pi'),
+
+    'Mailbox ID' => __('Mailbox ID', 'bit-pi'),
+
+    'Enter the reply content' => __('Enter the reply content', 'bit-pi'),
+
+    'Enter the agent user ID' => __('Enter the agent user ID', 'bit-pi'),
+
+    'Agent User ID' => __('Agent User ID', 'bit-pi'),
+
+    'Enter conversation type (default: response)' => __('Enter conversation type (default: response)', 'bit-pi'),
+
+    'Conversation Type' => __('Conversation Type', 'bit-pi'),
 
     'Form Submitted' => __('Form Submitted', 'bit-pi'),
 
@@ -6781,8 +7116,6 @@ return [
     'Won' => __('Won', 'bit-pi'),
 
     'Lost' => __('Lost', 'bit-pi'),
-
-    'Abandoned' => __('Abandoned', 'bit-pi'),
 
     'Select the user to assign the opportunity to.' => __('Select the user to assign the opportunity to.', 'bit-pi'),
 
@@ -8126,8 +8459,6 @@ return [
 
     'Get Custom Content Type records filtered by a specific field value.' => __('Get Custom Content Type records filtered by a specific field value.', 'bit-pi'),
 
-    'Create Post' => __('Create Post', 'bit-pi'),
-
     'Create a new post in a specified post type.' => __('Create a new post in a specified post type.', 'bit-pi'),
 
     'Update Post' => __('Update Post', 'bit-pi'),
@@ -8226,8 +8557,6 @@ return [
 
     'Repeater Fields' => __('Repeater Fields', 'bit-pi'),
 
-    'Post Type' => __('Post Type', 'bit-pi'),
-
     'Select post type' => __('Select post type', 'bit-pi'),
 
     'Enter the ID of the post you want to update.' => __('Enter the ID of the post you want to update.', 'bit-pi'),
@@ -8253,8 +8582,6 @@ return [
     'Post Author (User ID)' => __('Post Author (User ID)', 'bit-pi'),
 
     'Enter user ID or leave empty for current user' => __('Enter user ID or leave empty for current user', 'bit-pi'),
-
-    'Add Meta Field' => __('Add Meta Field', 'bit-pi'),
 
     'Meta Field' => __('Meta Field', 'bit-pi'),
 
@@ -8401,10 +8728,6 @@ return [
     'Enter the Transaction ID' => __('Enter the Transaction ID', 'bit-pi'),
 
     'Enter the Contact Email' => __('Enter the Contact Email', 'bit-pi'),
-
-    'Address Line 1' => __('Address Line 1', 'bit-pi'),
-
-    'Address Line 2' => __('Address Line 2', 'bit-pi'),
 
     'County' => __('County', 'bit-pi'),
 
@@ -9891,6 +10214,52 @@ return [
 
     'The range where the new row will be added, e.g., A1:C1.' => __('The range where the new row will be added, e.g., A1:C1.', 'bit-pi'),
 
+    'Retrieves all events from Modern Events Calendar.' => __('Retrieves all events from Modern Events Calendar.', 'bit-pi'),
+
+    'Get Next Upcoming Event' => __('Get Next Upcoming Event', 'bit-pi'),
+
+    'Retrieves the next upcoming event.' => __('Retrieves the next upcoming event.', 'bit-pi'),
+
+    'Get Upcoming Events' => __('Get Upcoming Events', 'bit-pi'),
+
+    'Retrieves all upcoming events.' => __('Retrieves all upcoming events.', 'bit-pi'),
+
+    'Get Expired Events' => __('Get Expired Events', 'bit-pi'),
+
+    'Retrieves all expired events.' => __('Retrieves all expired events.', 'bit-pi'),
+
+    'Get Event Tickets' => __('Get Event Tickets', 'bit-pi'),
+
+    'Retrieves all tickets for a specific event.' => __('Retrieves all tickets for a specific event.', 'bit-pi'),
+
+    'User Registration for Event' => __('User Registration for Event', 'bit-pi'),
+
+    'Registers a user for a specific event.' => __('Registers a user for a specific event.', 'bit-pi'),
+
+    'Triggers when an event booking is completed.' => __('Triggers when an event booking is completed.', 'bit-pi'),
+
+    'Booking Confirmed' => __('Booking Confirmed', 'bit-pi'),
+
+    'Triggers when an event booking is confirmed.' => __('Triggers when an event booking is confirmed.', 'bit-pi'),
+
+    'Booking Pending' => __('Booking Pending', 'bit-pi'),
+
+    'Triggers when an event booking is pending.' => __('Triggers when an event booking is pending.', 'bit-pi'),
+
+    'Triggers when an event booking is cancelled.' => __('Triggers when an event booking is cancelled.', 'bit-pi'),
+
+    'Triggers when a new event is created.' => __('Triggers when a new event is created.', 'bit-pi'),
+
+    'Select the event or map custom event ID' => __('Select the event or map custom event ID', 'bit-pi'),
+
+    'Select the ticket or map custom ticket ID' => __('Select the ticket or map custom ticket ID', 'bit-pi'),
+
+    'Ticket' => __('Ticket', 'bit-pi'),
+
+    'Select a ticket' => __('Select a ticket', 'bit-pi'),
+
+    'Enter the user email address' => __('Enter the user email address', 'bit-pi'),
+
     'boards & workspaces' => __('boards & workspaces', 'bit-pi'),
 
     'Get a Board' => __('Get a Board', 'bit-pi'),
@@ -10634,6 +11003,42 @@ return [
     'Select the new payment status.' => __('Select the new payment status.', 'bit-pi'),
 
     'New Status' => __('New Status', 'bit-pi'),
+
+    'Add Post to Activity Stream' => __('Add Post to Activity Stream', 'bit-pi'),
+
+    'Change User Role' => __('Change User Role', 'bit-pi'),
+
+    'User Follows PeepSo Member' => __('User Follows PeepSo Member', 'bit-pi'),
+
+    'User Gains Follower' => __('User Gains Follower', 'bit-pi'),
+
+    'User Loses Follower' => __('User Loses Follower', 'bit-pi'),
+
+    'User Unfollows PeepSo Member' => __('User Unfollows PeepSo Member', 'bit-pi'),
+
+    'User Updates Avatar' => __('User Updates Avatar', 'bit-pi'),
+
+    'User Updates Specific Profile Field Value' => __('User Updates Specific Profile Field Value', 'bit-pi'),
+
+    'User Updates Specific Profile Field' => __('User Updates Specific Profile Field', 'bit-pi'),
+
+    'New Activity Post' => __('New Activity Post', 'bit-pi'),
+
+    'Community Member' => __('Community Member', 'bit-pi'),
+
+    'Community Administrator' => __('Community Administrator', 'bit-pi'),
+
+    'Pending user email verification' => __('Pending user email verification', 'bit-pi'),
+
+    'Pending admin approval' => __('Pending admin approval', 'bit-pi'),
+
+    'New Role' => __('New Role', 'bit-pi'),
+
+    'Select role' => __('Select role', 'bit-pi'),
+
+    'User Email (Follower)' => __('User Email (Follower)', 'bit-pi'),
+
+    'User Email to Follow' => __('User Email to Follow', 'bit-pi'),
 
     'Ask Perplexity' => __('Ask Perplexity', 'bit-pi'),
 
@@ -11391,8 +11796,6 @@ return [
 
     'Days Until Due' => __('Days Until Due', 'bit-pi'),
 
-    'Enter the customer ID' => __('Enter the customer ID', 'bit-pi'),
-
     'The integer amount in cents of the charge to be applied to the upcoming invoice.' => __('The integer amount in cents of the charge to be applied to the upcoming invoice.', 'bit-pi'),
 
     'Three-letter ISO currency code, in lowercase. Must be a supported currency.' => __('Three-letter ISO currency code, in lowercase. Must be a supported currency.', 'bit-pi'),
@@ -11696,6 +12099,20 @@ return [
 
     'You can get your API key from <a class="text-blue-600 underline" href="https://systeme.io/dashboard/profile/public-api-settings" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API key from <a class="text-blue-600 underline" href="https://systeme.io/dashboard/profile/public-api-settings" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
 
+    'You can set up a webhook by going to Administration → Settings → Webhooks.' => __('You can set up a webhook by going to Administration → Settings → Webhooks.', 'bit-pi'),
+
+    'Triggers when a new ticket is created in Tawk.to' => __('Triggers when a new ticket is created in Tawk.to', 'bit-pi'),
+
+    'New Ticket' => __('New Ticket', 'bit-pi'),
+
+    'Triggers when a chat starts in Tawk.to' => __('Triggers when a chat starts in Tawk.to', 'bit-pi'),
+
+    'Chat Start' => __('Chat Start', 'bit-pi'),
+
+    'Triggers when a chat ends in Tawk.to' => __('Triggers when a chat ends in Tawk.to', 'bit-pi'),
+
+    'Chat End' => __('Chat End', 'bit-pi'),
+
     'Add Member to Team' => __('Add Member to Team', 'bit-pi'),
 
     'This action will add a member to a team.' => __('This action will add a member to a team.', 'bit-pi'),
@@ -11781,8 +12198,6 @@ return [
     'Enter the user email to remove' => __('Enter the user email to remove', 'bit-pi'),
 
     'Select the new role' => __('Select the new role', 'bit-pi'),
-
-    'New Role' => __('New Role', 'bit-pi'),
 
     'Send Text Message or a Reply' => __('Send Text Message or a Reply', 'bit-pi'),
 
@@ -11899,8 +12314,6 @@ return [
     'Caption Text Format' => __('Caption Text Format', 'bit-pi'),
 
     'HTML' => __('HTML', 'bit-pi'),
-
-    'Markdown' => __('Markdown', 'bit-pi'),
 
     'Choose if to send the message silently. iOS users will not receive a notification,Android users will receive  notification with no sound.' => __('Choose if to send the message silently. iOS users will not receive a notification,Android users will receive  notification with no sound.', 'bit-pi'),
 
@@ -12130,6 +12543,174 @@ return [
 
     'Enter the Phone Number ID for the Twilio number you want to monitor transcriptions.' => __('Enter the Phone Number ID for the Twilio number you want to monitor transcriptions.', 'bit-pi'),
 
+    'Get All Affiliate' => __('Get All Affiliate', 'bit-pi'),
+
+    'Fetch all affiliates with optional pagination.' => __('Fetch all affiliates with optional pagination.', 'bit-pi'),
+
+    'Get Affiliate' => __('Get Affiliate', 'bit-pi'),
+
+    'Fetch a single affiliate by affiliate ID.' => __('Fetch a single affiliate by affiliate ID.', 'bit-pi'),
+
+    'Get All Referral' => __('Get All Referral', 'bit-pi'),
+
+    'Fetch all referrals with optional filters.' => __('Fetch all referrals with optional filters.', 'bit-pi'),
+
+    'Get Referral' => __('Get Referral', 'bit-pi'),
+
+    'Fetch a single referral by referral ID.' => __('Fetch a single referral by referral ID.', 'bit-pi'),
+
+    'Get All Transaction' => __('Get All Transaction', 'bit-pi'),
+
+    'Fetch all payment transactions with optional filters.' => __('Fetch all payment transactions with optional filters.', 'bit-pi'),
+
+    'Get Transaction' => __('Get Transaction', 'bit-pi'),
+
+    'Fetch a single transaction by payment ID or transaction ID.' => __('Fetch a single transaction by payment ID or transaction ID.', 'bit-pi'),
+
+    'Get All Visit' => __('Get All Visit', 'bit-pi'),
+
+    'Fetch all visits with optional filters.' => __('Fetch all visits with optional filters.', 'bit-pi'),
+
+    'Get Visit' => __('Get Visit', 'bit-pi'),
+
+    'Fetch a single visit by visit ID.' => __('Fetch a single visit by visit ID.', 'bit-pi'),
+
+    'Create Affiliate' => __('Create Affiliate', 'bit-pi'),
+
+    'Create a new affiliate from an existing WordPress user.' => __('Create a new affiliate from an existing WordPress user.', 'bit-pi'),
+
+    'Create Referral' => __('Create Referral', 'bit-pi'),
+
+    'Create a referral record for an affiliate.' => __('Create a referral record for an affiliate.', 'bit-pi'),
+
+    'Insert Payment' => __('Insert Payment', 'bit-pi'),
+
+    'Insert a payment record for an affiliate.' => __('Insert a payment record for an affiliate.', 'bit-pi'),
+
+    'Change Transaction Status' => __('Change Transaction Status', 'bit-pi'),
+
+    'Update the payment transaction status.' => __('Update the payment transaction status.', 'bit-pi'),
+
+    'Affiliate Registered' => __('Affiliate Registered', 'bit-pi'),
+
+    'Affiliate Saved' => __('Affiliate Saved', 'bit-pi'),
+
+    'Referral Saved' => __('Referral Saved', 'bit-pi'),
+
+    'Referral Inserted From Main' => __('Referral Inserted From Main', 'bit-pi'),
+
+    'Visit Tracked' => __('Visit Tracked', 'bit-pi'),
+
+    'Payment Inserted' => __('Payment Inserted', 'bit-pi'),
+
+    'Transaction Status Changed' => __('Transaction Status Changed', 'bit-pi'),
+
+    'MLM Relation Created' => __('MLM Relation Created', 'bit-pi'),
+
+    'Enter payment transaction ID from Ultimate Affiliate Pro payments table.' => __('Enter payment transaction ID from Ultimate Affiliate Pro payments table.', 'bit-pi'),
+
+    'Payment ID' => __('Payment ID', 'bit-pi'),
+
+    'Select new transaction status.' => __('Select new transaction status.', 'bit-pi'),
+
+    'Unpaid' => __('Unpaid', 'bit-pi'),
+
+    'Enter a WordPress user ID, email, or username.' => __('Enter a WordPress user ID, email, or username.', 'bit-pi'),
+
+    'User Identifier' => __('User Identifier', 'bit-pi'),
+
+    'Enter the affiliate ID.' => __('Enter the affiliate ID.', 'bit-pi'),
+
+    'Affiliate ID' => __('Affiliate ID', 'bit-pi'),
+
+    'Enter referred user ID, email, or username (optional).' => __('Enter referred user ID, email, or username (optional).', 'bit-pi'),
+
+    'Referred User' => __('Referred User', 'bit-pi'),
+
+    'Enter referral amount.' => __('Enter referral amount.', 'bit-pi'),
+
+    'Enter referral source, e.g. woo, edd, or custom.' => __('Enter referral source, e.g. woo, edd, or custom.', 'bit-pi'),
+
+    'Enter reference value, e.g. order ID.' => __('Enter reference value, e.g. order ID.', 'bit-pi'),
+
+    'Reference' => __('Reference', 'bit-pi'),
+
+    'Optional campaign name.' => __('Optional campaign name.', 'bit-pi'),
+
+    'Optional description.' => __('Optional description.', 'bit-pi'),
+
+    'Optional reference details.' => __('Optional reference details.', 'bit-pi'),
+
+    'Reference Details' => __('Reference Details', 'bit-pi'),
+
+    'Optional currency code, e.g. USD.' => __('Optional currency code, e.g. USD.', 'bit-pi'),
+
+    'Optional referral status.' => __('Optional referral status.', 'bit-pi'),
+
+    'Referral Status' => __('Referral Status', 'bit-pi'),
+
+    'Unverified' => __('Unverified', 'bit-pi'),
+
+    'Verified' => __('Verified', 'bit-pi'),
+
+    'Rejected' => __('Rejected', 'bit-pi'),
+
+    'Optional payment status.' => __('Optional payment status.', 'bit-pi'),
+
+    'Enter affiliate ID.' => __('Enter affiliate ID.', 'bit-pi'),
+
+    'Optional result limit. Default: 50.' => __('Optional result limit. Default: 50.', 'bit-pi'),
+
+    'Optional offset for pagination. Default: 0.' => __('Optional offset for pagination. Default: 0.', 'bit-pi'),
+
+    'Optional affiliate ID filter.' => __('Optional affiliate ID filter.', 'bit-pi'),
+
+    'Optional referral status filter.' => __('Optional referral status filter.', 'bit-pi'),
+
+    'Optional payment status filter.' => __('Optional payment status filter.', 'bit-pi'),
+
+    'Optional transaction status filter.' => __('Optional transaction status filter.', 'bit-pi'),
+
+    'Optional visit status filter.' => __('Optional visit status filter.', 'bit-pi'),
+
+    'Invalid' => __('Invalid', 'bit-pi'),
+
+    'Valid' => __('Valid', 'bit-pi'),
+
+    'Referral ID' => __('Referral ID', 'bit-pi'),
+
+    'Enter referral ID.' => __('Enter referral ID.', 'bit-pi'),
+
+    'Enter payment ID or transaction ID.' => __('Enter payment ID or transaction ID.', 'bit-pi'),
+
+    'Transaction Identifier' => __('Transaction Identifier', 'bit-pi'),
+
+    'Enter visit ID.' => __('Enter visit ID.', 'bit-pi'),
+
+    'Visit ID' => __('Visit ID', 'bit-pi'),
+
+    'Enter payment amount.' => __('Enter payment amount.', 'bit-pi'),
+
+    'Select payment type.' => __('Select payment type.', 'bit-pi'),
+
+    'Payment Type' => __('Payment Type', 'bit-pi'),
+
+    'Manual' => __('Manual', 'bit-pi'),
+
+    'PayPal' => __('PayPal', 'bit-pi'),
+
+    'Stripe' => __('Stripe', 'bit-pi'),
+
+    'Bank Transfer' => __('Bank Transfer', 'bit-pi'),
+
+    'Optional transaction ID.' => __('Optional transaction ID.', 'bit-pi'),
+
+    'Optional comma-separated referral IDs, e.g. 11,12,13' => __('Optional comma-separated referral IDs, e.g. 11,12,13', 'bit-pi'),
+
+    'Referral IDs' => __('Referral IDs', 'bit-pi'),
+
+    'Select payment status.' => __('Select payment status.', 'bit-pi'),
+
     'Add User Role' => __('Add User Role', 'bit-pi'),
 
     'Add a role to the user\'s roles.' => __('Add a role to the user\'s roles.', 'bit-pi'),
@@ -12317,8 +12898,6 @@ return [
     'Select Template Name' => __('Select Template Name', 'bit-pi'),
 
     'Enter the direct link to the media (image, video or document) you want to send. Must be publicly accessible. Ex: https://example.com/file.jpg' => __('Enter the direct link to the media (image, video or document) you want to send. Must be publicly accessible. Ex: https://example.com/file.jpg', 'bit-pi'),
-
-    'Video URL' => __('Video URL', 'bit-pi'),
 
     'Enter the caption you want to send with the Video.' => __('Enter the caption you want to send with the Video.', 'bit-pi'),
 
@@ -12876,8 +13455,6 @@ return [
 
     'Exclude Products' => __('Exclude Products', 'bit-pi'),
 
-    'Select products' => __('Select products', 'bit-pi'),
-
     'Product Category' => __('Product Category', 'bit-pi'),
 
     'Select category' => __('Select category', 'bit-pi'),
@@ -13089,10 +13666,6 @@ return [
     'Product URL' => __('Product URL', 'bit-pi'),
 
     'Assign product to one or more categories.' => __('Assign product to one or more categories.', 'bit-pi'),
-
-    'Categories' => __('Categories', 'bit-pi'),
-
-    'Select categories' => __('Select categories', 'bit-pi'),
 
     'Assign product to one or more brands.' => __('Assign product to one or more brands.', 'bit-pi'),
 
@@ -13401,8 +13974,6 @@ return [
     'Create New Post' => __('Create New Post', 'bit-pi'),
 
     'Update Post Status' => __('Update Post Status', 'bit-pi'),
-
-    'Delete Post' => __('Delete Post', 'bit-pi'),
 
     'Get Post (All)' => __('Get Post (All)', 'bit-pi'),
 
@@ -14378,8 +14949,6 @@ return [
 
     'Enter notes (optional)' => __('Enter notes (optional)', 'bit-pi'),
 
-    'Enter the user email address' => __('Enter the user email address', 'bit-pi'),
-
     'Select the course' => __('Select the course', 'bit-pi'),
 
     'New topic added' => __('New topic added', 'bit-pi'),
@@ -14489,6 +15058,80 @@ return [
     'Subscription Cancelled' => __('Subscription Cancelled', 'bit-pi'),
 
     'Subscription Status Changed' => __('Subscription Status Changed', 'bit-pi'),
+
+    'Get Table (All)' => __('Get Table (All)', 'bit-pi'),
+
+    'Fetches all tables.' => __('Fetches all tables.', 'bit-pi'),
+
+    'Get Table (Single)' => __('Get Table (Single)', 'bit-pi'),
+
+    'Fetches a single table by ID.' => __('Fetches a single table by ID.', 'bit-pi'),
+
+    'Creates a new table.' => __('Creates a new table.', 'bit-pi'),
+
+    'Update Table' => __('Update Table', 'bit-pi'),
+
+    'Updates an existing table.' => __('Updates an existing table.', 'bit-pi'),
+
+    'Deletes a table.' => __('Deletes a table.', 'bit-pi'),
+
+    'Get Row from Table' => __('Get Row from Table', 'bit-pi'),
+
+    'Gets a specific row from a table.' => __('Gets a specific row from a table.', 'bit-pi'),
+
+    'Lists all rows in a table.' => __('Lists all rows in a table.', 'bit-pi'),
+
+    'Get Column from Table' => __('Get Column from Table', 'bit-pi'),
+
+    'Gets a specific column from a table.' => __('Gets a specific column from a table.', 'bit-pi'),
+
+    'Get Cell from Table' => __('Get Cell from Table', 'bit-pi'),
+
+    'Gets the value of a specific cell.' => __('Gets the value of a specific cell.', 'bit-pi'),
+
+    'Table Created' => __('Table Created', 'bit-pi'),
+
+    'Triggers when a new table is created.' => __('Triggers when a new table is created.', 'bit-pi'),
+
+    'Table Updated' => __('Table Updated', 'bit-pi'),
+
+    'Triggers when a table is updated.' => __('Triggers when a table is updated.', 'bit-pi'),
+
+    'Table Trashed' => __('Table Trashed', 'bit-pi'),
+
+    'Triggers when a table is moved to trash.' => __('Triggers when a table is moved to trash.', 'bit-pi'),
+
+    'Table Restored' => __('Table Restored', 'bit-pi'),
+
+    'Triggers when a table is restored from trash.' => __('Triggers when a table is restored from trash.', 'bit-pi'),
+
+    'Table Title' => __('Table Title', 'bit-pi'),
+
+    'Enter the table title' => __('Enter the table title', 'bit-pi'),
+
+    'Enter the table content (HTML)' => __('Enter the table content (HTML)', 'bit-pi'),
+
+    'Table Content' => __('Table Content', 'bit-pi'),
+
+    '<table>...</table>' => __('<table>...</table>', 'bit-pi'),
+
+    'for custom mapping table id should be provided in the input data' => __('for custom mapping table id should be provided in the input data', 'bit-pi'),
+
+    'Select a table to delete' => __('Select a table to delete', 'bit-pi'),
+
+    'Force delete (bypass trash)' => __('Force delete (bypass trash)', 'bit-pi'),
+
+    'Select a table' => __('Select a table', 'bit-pi'),
+
+    'Enter the row index (0-based)' => __('Enter the row index (0-based)', 'bit-pi'),
+
+    'Column Index' => __('Column Index', 'bit-pi'),
+
+    'Enter the column index (0-based)' => __('Enter the column index (0-based)', 'bit-pi'),
+
+    'Enter the new table title' => __('Enter the new table title', 'bit-pi'),
+
+    'Enter the new table content (HTML)' => __('Enter the new table content (HTML)', 'bit-pi'),
 
     'Enquiry Created' => __('Enquiry Created', 'bit-pi'),
 
@@ -14727,8 +15370,6 @@ return [
     'Registrant Approval' => __('Registrant Approval', 'bit-pi'),
 
     'Auto' => __('Auto', 'bit-pi'),
-
-    'Manual' => __('Manual', 'bit-pi'),
 
     'Allowed audio options for participants.' => __('Allowed audio options for participants.', 'bit-pi'),
 

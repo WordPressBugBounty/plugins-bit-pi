@@ -56,12 +56,7 @@ class OpenAiService
             $key = 'chatgpt-' . $memoryKey;
             $memoryData = Config::getOption($key, []);
 
-            $fieldMapData = array_merge(
-                $fieldMapData,
-                [
-                    'prompt_cache_key' => $key,
-                ]
-            );
+            $fieldMapData['prompt_cache_key'] = $key;
 
             if (!empty($memoryData)) {
                 $fieldMapData['messages'] = array_merge($memoryData, $fieldMapData['messages']);
@@ -69,6 +64,13 @@ class OpenAiService
         }
 
         $fieldMapData = AIIntegrationHelper::castPayloadTypes($fieldMapData);
+
+        $model = $fieldMapData['model'] ?? '';
+        if (strpos($model, 'gpt-5') === 0 && isset($fieldMapData['max_tokens'])) {
+            $fieldMapData['max_completion_tokens'] = $fieldMapData['max_tokens'];
+            unset($fieldMapData['max_tokens']);
+        }
+
         $response = $this->http->request($endPoint, 'POST', JSON::encode($fieldMapData), $this->headers);
 
         if ($hasMemoryKey) {
