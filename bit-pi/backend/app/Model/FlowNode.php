@@ -34,4 +34,9 @@ class FlowNode extends Model
         'data',
         'variables',
     ];
+
+    public function flow()
+    {
+        return $this->belongsTo(Flow::class, 'id', 'flow_id');
+    }
 }

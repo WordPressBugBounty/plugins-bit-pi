@@ -10,4 +10,4 @@ if (!defined('ABSPATH')) {
 
 
 Route::get('oauthCallback', [RedirectController::class, 'handleCallback']);
-Route::match(['post', 'get'], 'webhook/callback/{trigger_id}', [WebhookDispatchController::class, 'handleWebhook']);
+Route::match(['post', 'get', 'head'], 'webhook/callback/{trigger_id}', [WebhookDispatchController::class, 'handleWebhook']);

@@ -790,6 +790,8 @@ return [
     /* translators: %s: placeholder value */
     'Select %s' => __('Select %s', 'bit-pi'),
 
+    'Node' => __('Node', 'bit-pi'),
+
     'Integrations' => __('Integrations', 'bit-pi'),
 
     /* translators: %s: placeholder value */
@@ -1108,23 +1110,9 @@ return [
 
     'Choose a webhook' => __('Choose a webhook', 'bit-pi'),
 
-    'Component/ContextMenu' => __('Component/ContextMenu', 'bit-pi'),
-
     'Are you sure delete this item?' => __('Are you sure delete this item?', 'bit-pi'),
 
     'Right Mouse Click Here' => __('Right Mouse Click Here', 'bit-pi'),
-
-    'Component/DropDown' => __('Component/DropDown', 'bit-pi'),
-
-    'Outline Input' => __('Outline Input', 'bit-pi'),
-
-    'large' => __('large', 'bit-pi'),
-
-    'middle' => __('middle', 'bit-pi'),
-
-    'small' => __('small', 'bit-pi'),
-
-    'Component/Input' => __('Component/Input', 'bit-pi'),
 
     'Tag name' => __('Tag name', 'bit-pi'),
 
@@ -3368,6 +3356,14 @@ return [
     'Unique Tag' => __('Unique Tag', 'bit-pi'),
 
     'Submit Success' => __('Submit Success', 'bit-pi'),
+
+    'Create a short link' => __('Create a short link', 'bit-pi'),
+
+    'Enter the URL you want to shorten.' => __('Enter the URL you want to shorten.', 'bit-pi'),
+
+    'Long URL' => __('Long URL', 'bit-pi'),
+
+    'You can get your API token from your Bitly account settings at <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://app.bitly.com/settings/api/">Bitly Api Settings</a>' => __('You can get your API token from your Bitly account settings at <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://app.bitly.com/settings/api/">Bitly Api Settings</a>', 'bit-pi'),
 
     'Facebook Post Published' => __('Facebook Post Published', 'bit-pi'),
 
@@ -9986,6 +9982,10 @@ return [
 
     'The ID of the list you want to update.' => __('The ID of the list you want to update.', 'bit-pi'),
 
+    'Verify Single Email' => __('Verify Single Email', 'bit-pi'),
+
+    'Enter your Mailrefine account API Key. Your credentials are stored securely in your site.' => __('Enter your Mailrefine account API Key. Your credentials are stored securely in your site.', 'bit-pi'),
+
     'Add Subscriber To List' => __('Add Subscriber To List', 'bit-pi'),
 
     'Subscriber subscribed' => __('Subscriber subscribed', 'bit-pi'),
@@ -11082,6 +11082,436 @@ return [
 
     'Select a newRecord' => __('Select a newRecord', 'bit-pi'),
 
+    'Add Person' => __('Add Person', 'bit-pi'),
+
+    'Delete Person' => __('Delete Person', 'bit-pi'),
+
+    'Get Person' => __('Get Person', 'bit-pi'),
+
+    'Get Many Persons' => __('Get Many Persons', 'bit-pi'),
+
+    'Search Person' => __('Search Person', 'bit-pi'),
+
+    'Update Person' => __('Update Person', 'bit-pi'),
+
+    'Delete Deal' => __('Delete Deal', 'bit-pi'),
+
+    'Duplicate Deal' => __('Duplicate Deal', 'bit-pi'),
+
+    'Get Deal' => __('Get Deal', 'bit-pi'),
+
+    'Get Many Deals' => __('Get Many Deals', 'bit-pi'),
+
+    'Search Deal' => __('Search Deal', 'bit-pi'),
+
+    'Delete Lead' => __('Delete Lead', 'bit-pi'),
+
+    'Get Lead' => __('Get Lead', 'bit-pi'),
+
+    'Get Many Leads' => __('Get Many Leads', 'bit-pi'),
+
+    'Update Lead' => __('Update Lead', 'bit-pi'),
+
+    'Create Organization' => __('Create Organization', 'bit-pi'),
+
+    'Delete Organization' => __('Delete Organization', 'bit-pi'),
+
+    'Get Organization' => __('Get Organization', 'bit-pi'),
+
+    'Get Many Organizations' => __('Get Many Organizations', 'bit-pi'),
+
+    'Search Organization' => __('Search Organization', 'bit-pi'),
+
+    'Update Organization' => __('Update Organization', 'bit-pi'),
+
+    'Create Activity' => __('Create Activity', 'bit-pi'),
+
+    'Delete Activity' => __('Delete Activity', 'bit-pi'),
+
+    'Get Activity' => __('Get Activity', 'bit-pi'),
+
+    'Get Many Activities' => __('Get Many Activities', 'bit-pi'),
+
+    'Update Activity' => __('Update Activity', 'bit-pi'),
+
+    'Add Product to Deal' => __('Add Product to Deal', 'bit-pi'),
+
+    'Delete Product from Deal' => __('Delete Product from Deal', 'bit-pi'),
+
+    'Get Many Deal Products' => __('Get Many Deal Products', 'bit-pi'),
+
+    'Update Product in Deal' => __('Update Product in Deal', 'bit-pi'),
+
+    'Get Many Products' => __('Get Many Products', 'bit-pi'),
+
+    'Update Product' => __('Update Product', 'bit-pi'),
+
+    'Activity' => __('Activity', 'bit-pi'),
+
+    'Activity Created' => __('Activity Created', 'bit-pi'),
+
+    'Activity Deleted' => __('Activity Deleted', 'bit-pi'),
+
+    'Activity Changed' => __('Activity Changed', 'bit-pi'),
+
+    'Deal' => __('Deal', 'bit-pi'),
+
+    'Deal Created' => __('Deal Created', 'bit-pi'),
+
+    'Deal Changed' => __('Deal Changed', 'bit-pi'),
+
+    'Lead Created' => __('Lead Created', 'bit-pi'),
+
+    'Lead Deleted' => __('Lead Deleted', 'bit-pi'),
+
+    'Lead Changed' => __('Lead Changed', 'bit-pi'),
+
+    'Note Created' => __('Note Created', 'bit-pi'),
+
+    'Note Deleted' => __('Note Deleted', 'bit-pi'),
+
+    'Note Changed' => __('Note Changed', 'bit-pi'),
+
+    'Organization Created' => __('Organization Created', 'bit-pi'),
+
+    'Organization Deleted' => __('Organization Deleted', 'bit-pi'),
+
+    'Organization Changed' => __('Organization Changed', 'bit-pi'),
+
+    'Person' => __('Person', 'bit-pi'),
+
+    'Person Created' => __('Person Created', 'bit-pi'),
+
+    'Person Deleted' => __('Person Deleted', 'bit-pi'),
+
+    'Person Changed' => __('Person Changed', 'bit-pi'),
+
+    'Pipeline Created' => __('Pipeline Created', 'bit-pi'),
+
+    'Pipeline Deleted' => __('Pipeline Deleted', 'bit-pi'),
+
+    'Pipeline Changed' => __('Pipeline Changed', 'bit-pi'),
+
+    'Product Changed' => __('Product Changed', 'bit-pi'),
+
+    'Stage Created' => __('Stage Created', 'bit-pi'),
+
+    'Stage Deleted' => __('Stage Deleted', 'bit-pi'),
+
+    'Stage Changed' => __('Stage Changed', 'bit-pi'),
+
+    'User Changed' => __('User Changed', 'bit-pi'),
+
+    'Select or enter the deal ID .' => __('Select or enter the deal ID .', 'bit-pi'),
+
+    'Select the product.' => __('Select the product.', 'bit-pi'),
+
+    'Item Price' => __('Item Price', 'bit-pi'),
+
+    'Comments' => __('Comments', 'bit-pi'),
+
+    'Discount Percentage' => __('Discount Percentage', 'bit-pi'),
+
+    'Product Variation ID' => __('Product Variation ID', 'bit-pi'),
+
+    'Enter the person name.' => __('Enter the person name.', 'bit-pi'),
+
+    'Add Email' => __('Add Email', 'bit-pi'),
+
+    'Enter the labels and email addresses.' => __('Enter the labels and email addresses.', 'bit-pi'),
+
+    'Add Phone' => __('Add Phone', 'bit-pi'),
+
+    'Enter the labels and phone numbers.' => __('Enter the labels and phone numbers.', 'bit-pi'),
+
+    'Select person labels.' => __('Select person labels.', 'bit-pi'),
+
+    'Select marketing status (only for users with permission).' => __('Select marketing status (only for users with permission).', 'bit-pi'),
+
+    'Marketing Status' => __('Marketing Status', 'bit-pi'),
+
+    'No Consent' => __('No Consent', 'bit-pi'),
+
+    'Select the organization.' => __('Select the organization.', 'bit-pi'),
+
+    'Select the owner.' => __('Select the owner.', 'bit-pi'),
+
+    'Select who can see this.' => __('Select who can see this.', 'bit-pi'),
+
+    'Visible To' => __('Visible To', 'bit-pi'),
+
+    'Field Name or ID' => __('Field Name or ID', 'bit-pi'),
+
+    'Add custom properties for the person.' => __('Add custom properties for the person.', 'bit-pi'),
+
+    'Custom Properties' => __('Custom Properties', 'bit-pi'),
+
+    'Enter the activity subject.' => __('Enter the activity subject.', 'bit-pi'),
+
+    'Select the activity type.' => __('Select the activity type.', 'bit-pi'),
+
+    'Select the deal.' => __('Select the deal.', 'bit-pi'),
+
+    'Select the lead.' => __('Select the lead.', 'bit-pi'),
+
+    'Enter the project ID.' => __('Enter the project ID.', 'bit-pi'),
+
+    'Project ID' => __('Project ID', 'bit-pi'),
+
+    'Select the person.' => __('Select the person.', 'bit-pi'),
+
+    'Select if the activity is already done.' => __('Select if the activity is already done.', 'bit-pi'),
+
+    'Done' => __('Done', 'bit-pi'),
+
+    'Select the due date.' => __('Select the due date.', 'bit-pi'),
+
+    'Select the due time.' => __('Select the due time.', 'bit-pi'),
+
+    'Due Time' => __('Due Time', 'bit-pi'),
+
+    'Enter the duration (e.g. 01:30).' => __('Enter the duration (e.g. 01:30).', 'bit-pi'),
+
+    'Duration (HH:mm)' => __('Duration (HH:mm)', 'bit-pi'),
+
+    'Select the activity owner.' => __('Select the activity owner.', 'bit-pi'),
+
+    'Enter the priority level.' => __('Enter the priority level.', 'bit-pi'),
+
+    'Enter a note for the activity.' => __('Enter a note for the activity.', 'bit-pi'),
+
+    'Add Participant' => __('Add Participant', 'bit-pi'),
+
+    'Person ID' => __('Person ID', 'bit-pi'),
+
+    'Primary?' => __('Primary?', 'bit-pi'),
+
+    'True' => __('True', 'bit-pi'),
+
+    'False' => __('False', 'bit-pi'),
+
+    'Add participants to the activity.' => __('Add participants to the activity.', 'bit-pi'),
+
+    'Participants' => __('Participants', 'bit-pi'),
+
+    'Add Attendee' => __('Add Attendee', 'bit-pi'),
+
+    'Add attendees to the activity.' => __('Add attendees to the activity.', 'bit-pi'),
+
+    'Enter the public description.' => __('Enter the public description.', 'bit-pi'),
+
+    'Public Description' => __('Public Description', 'bit-pi'),
+
+    'Toggle if the owner is busy during the activity.' => __('Toggle if the owner is busy during the activity.', 'bit-pi'),
+
+    'Busy' => __('Busy', 'bit-pi'),
+
+    'Enter the deal title.' => __('Enter the deal title.', 'bit-pi'),
+
+    'Enter the monetary value of the deal.' => __('Enter the monetary value of the deal.', 'bit-pi'),
+
+    'Enter the currency code (e.g. USD).' => __('Enter the currency code (e.g. USD).', 'bit-pi'),
+
+    'Select the deal owner.' => __('Select the deal owner.', 'bit-pi'),
+
+    'Select the person associated with this deal.' => __('Select the person associated with this deal.', 'bit-pi'),
+
+    'Select the organization associated with this deal.' => __('Select the organization associated with this deal.', 'bit-pi'),
+
+    'Select the pipeline stage for this deal.' => __('Select the pipeline stage for this deal.', 'bit-pi'),
+
+    'Select the current status of the deal.' => __('Select the current status of the deal.', 'bit-pi'),
+
+    'Deleted' => __('Deleted', 'bit-pi'),
+
+    'Expected Close Date' => __('Expected Close Date', 'bit-pi'),
+
+    'Probability' => __('Probability', 'bit-pi'),
+
+    'Lost Reason' => __('Lost Reason', 'bit-pi'),
+
+    'Select who can see this deal.' => __('Select who can see this deal.', 'bit-pi'),
+
+    'Labels' => __('Labels', 'bit-pi'),
+
+    'Add custom properties for the deal.' => __('Add custom properties for the deal.', 'bit-pi'),
+
+    'Enter the lead title.' => __('Enter the lead title.', 'bit-pi'),
+
+    'Select the lead owner.' => __('Select the lead owner.', 'bit-pi'),
+
+    'Select the person associated with this lead.' => __('Select the person associated with this lead.', 'bit-pi'),
+
+    'Select the organization associated with this lead.' => __('Select the organization associated with this lead.', 'bit-pi'),
+
+    'Enter the lead amount.' => __('Enter the lead amount.', 'bit-pi'),
+
+    'Value Amount' => __('Value Amount', 'bit-pi'),
+
+    'Value Currency' => __('Value Currency', 'bit-pi'),
+
+    'Select the date when the lead is expected to close.' => __('Select the date when the lead is expected to close.', 'bit-pi'),
+
+    'Select who can see this lead.' => __('Select who can see this lead.', 'bit-pi'),
+
+    'Select if the lead was seen.' => __('Select if the lead was seen.', 'bit-pi'),
+
+    'Was Seen' => __('Was Seen', 'bit-pi'),
+
+    'Select the labels for this lead.' => __('Select the labels for this lead.', 'bit-pi'),
+
+    'Add custom properties for the lead.' => __('Add custom properties for the lead.', 'bit-pi'),
+
+    'Enter the name.' => __('Enter the name.', 'bit-pi'),
+
+    'Enter the creation time.' => __('Enter the creation time.', 'bit-pi'),
+
+    'Enter the address.' => __('Enter the address.', 'bit-pi'),
+
+    'Select the organization labels.' => __('Select the organization labels.', 'bit-pi'),
+
+    'Add custom properties for the organization.' => __('Add custom properties for the organization.', 'bit-pi'),
+
+    'Enter the product name.' => __('Enter the product name.', 'bit-pi'),
+
+    'Enter the product code.' => __('Enter the product code.', 'bit-pi'),
+
+    'Code' => __('Code', 'bit-pi'),
+
+    'Enter the product description.' => __('Enter the product description.', 'bit-pi'),
+
+    'Enter the unit of the product (e.g. piece, hour).' => __('Enter the unit of the product (e.g. piece, hour).', 'bit-pi'),
+
+    'Enter the tax percentage.' => __('Enter the tax percentage.', 'bit-pi'),
+
+    'Enter the product category.' => __('Enter the product category.', 'bit-pi'),
+
+    'Select the product owner.' => __('Select the product owner.', 'bit-pi'),
+
+    'Is Linkable' => __('Is Linkable', 'bit-pi'),
+
+    'Select who can see this product.' => __('Select who can see this product.', 'bit-pi'),
+
+    'Add Price' => __('Add Price', 'bit-pi'),
+
+    'Enter the product price.' => __('Enter the product price.', 'bit-pi'),
+
+    'Price' => __('Price', 'bit-pi'),
+
+    'Enter the product cost.' => __('Enter the product cost.', 'bit-pi'),
+
+    'Cost' => __('Cost', 'bit-pi'),
+
+    'Enter the direct cost.' => __('Enter the direct cost.', 'bit-pi'),
+
+    'Direct Cost' => __('Direct Cost', 'bit-pi'),
+
+    'Add pricing details for the product.' => __('Add pricing details for the product.', 'bit-pi'),
+
+    'Prices' => __('Prices', 'bit-pi'),
+
+    'Select or enter the activity ID to delete.' => __('Select or enter the activity ID to delete.', 'bit-pi'),
+
+    'Select or enter the deal ID to delete.' => __('Select or enter the deal ID to delete.', 'bit-pi'),
+
+    'Select or enter the deal ID.' => __('Select or enter the deal ID.', 'bit-pi'),
+
+    'Select the product attachment.' => __('Select the product attachment.', 'bit-pi'),
+
+    'Product Attachment' => __('Product Attachment', 'bit-pi'),
+
+    'Select or enter the lead ID to delete.' => __('Select or enter the lead ID to delete.', 'bit-pi'),
+
+    'Select or enter the organization ID to delete.' => __('Select or enter the organization ID to delete.', 'bit-pi'),
+
+    'Select or enter the person ID to delete.' => __('Select or enter the person ID to delete.', 'bit-pi'),
+
+    'Select or enter the product ID to delete.' => __('Select or enter the product ID to delete.', 'bit-pi'),
+
+    'Select or enter the deal ID to duplicate.' => __('Select or enter the deal ID to duplicate.', 'bit-pi'),
+
+    'Select or enter the activity ID to get details.' => __('Select or enter the activity ID to get details.', 'bit-pi'),
+
+    'Select or enter the deal ID to get details.' => __('Select or enter the deal ID to get details.', 'bit-pi'),
+
+    'Select or enter the lead ID to get details.' => __('Select or enter the lead ID to get details.', 'bit-pi'),
+
+    'Select the activity type to filter by.' => __('Select the activity type to filter by.', 'bit-pi'),
+
+    'Filter by completion status.' => __('Filter by completion status.', 'bit-pi'),
+
+    'Not Done' => __('Not Done', 'bit-pi'),
+
+    'Activities created from this date (YYYY-MM-DD).' => __('Activities created from this date (YYYY-MM-DD).', 'bit-pi'),
+
+    'Activities created up to this date (YYYY-MM-DD).' => __('Activities created up to this date (YYYY-MM-DD).', 'bit-pi'),
+
+    'Select the deal to list products from.' => __('Select the deal to list products from.', 'bit-pi'),
+
+    'Number of results to return.' => __('Number of results to return.', 'bit-pi'),
+
+    'Index to start from.' => __('Index to start from.', 'bit-pi'),
+
+    'Start' => __('Start', 'bit-pi'),
+
+    'Select the archived status of the leads.' => __('Select the archived status of the leads.', 'bit-pi'),
+
+    'Archived Status' => __('Archived Status', 'bit-pi'),
+
+    'Not Archived' => __('Not Archived', 'bit-pi'),
+
+    'Select or enter the organization ID to get details.' => __('Select or enter the organization ID to get details.', 'bit-pi'),
+
+    'Select or enter the person ID to get details.' => __('Select or enter the person ID to get details.', 'bit-pi'),
+
+    'Select or enter the product ID to get details.' => __('Select or enter the product ID to get details.', 'bit-pi'),
+
+    'Owner & followers (private)' => __('Owner & followers (private)', 'bit-pi'),
+
+    'Entire company (shared)' => __('Entire company (shared)', 'bit-pi'),
+
+    'Select the event you want to trigger.' => __('Select the event you want to trigger.', 'bit-pi'),
+
+    'Enter the text to search for.' => __('Enter the text to search for.', 'bit-pi'),
+
+    'Search Term' => __('Search Term', 'bit-pi'),
+
+    'Select or enter the activity ID to update.' => __('Select or enter the activity ID to update.', 'bit-pi'),
+
+    'Select the deal to update.' => __('Select the deal to update.', 'bit-pi'),
+
+    'Select the product attachment update.' => __('Select the product attachment update.', 'bit-pi'),
+
+    'Enter the item price.' => __('Enter the item price.', 'bit-pi'),
+
+    'Enter the quantity.' => __('Enter the quantity.', 'bit-pi'),
+
+    'Enter a comment.' => __('Enter a comment.', 'bit-pi'),
+
+    'Enter the discount percentage.' => __('Enter the discount percentage.', 'bit-pi'),
+
+    'Select or enter the lead ID to update.' => __('Select or enter the lead ID to update.', 'bit-pi'),
+
+    'Enter the lead value amount.' => __('Enter the lead value amount.', 'bit-pi'),
+
+    'Select or enter the organization ID to update.' => __('Select or enter the organization ID to update.', 'bit-pi'),
+
+    'Enter the organization name.' => __('Enter the organization name.', 'bit-pi'),
+
+    'Select the organization owner.' => __('Select the organization owner.', 'bit-pi'),
+
+    'Select who can see this organization.' => __('Select who can see this organization.', 'bit-pi'),
+
+    'Enter the address of the organization.' => __('Enter the address of the organization.', 'bit-pi'),
+
+    'Select the person to update.' => __('Select the person to update.', 'bit-pi'),
+
+    'Select or enter the product ID to update.' => __('Select or enter the product ID to update.', 'bit-pi'),
+
+    'Enter the unit (e.g. item, kg).' => __('Enter the unit (e.g. item, kg).', 'bit-pi'),
+
+    'Toggle if this product is linkable to deals.' => __('Toggle if this product is linkable to deals.', 'bit-pi'),
+
     'Get Campaign by ID' => __('Get Campaign by ID', 'bit-pi'),
 
     'Get Campaigns (All)' => __('Get Campaigns (All)', 'bit-pi'),
@@ -11258,6 +11688,340 @@ return [
 
     'The format of Birthdate field should be YYYY-MM-DD.' => __('The format of Birthdate field should be YYYY-MM-DD.', 'bit-pi'),
 
+    'Create Customer' => __('Create Customer', 'bit-pi'),
+
+    'Create Item' => __('Create Item', 'bit-pi'),
+
+    'Get Order' => __('Get Order', 'bit-pi'),
+
+    'Create Plan' => __('Create Plan', 'bit-pi'),
+
+    'Get Payment' => __('Get Payment', 'bit-pi'),
+
+    'Fetch Payments for Order' => __('Fetch Payments for Order', 'bit-pi'),
+
+    'Create Payment Link' => __('Create Payment Link', 'bit-pi'),
+
+    'Get Invoice' => __('Get Invoice', 'bit-pi'),
+
+    'Create Subscription' => __('Create Subscription', 'bit-pi'),
+
+    'Update Subscription' => __('Update Subscription', 'bit-pi'),
+
+    'Ensure that the Subscription status is either in the authenticated or active state.' => __('Ensure that the Subscription status is either in the authenticated or active state.', 'bit-pi'),
+
+    'Order Paid' => __('Order Paid', 'bit-pi'),
+
+    'Payment Authorized' => __('Payment Authorized', 'bit-pi'),
+
+    'Payment Captured' => __('Payment Captured', 'bit-pi'),
+
+    'Payment Downtime Started' => __('Payment Downtime Started', 'bit-pi'),
+
+    'Payment Downtime Resolved' => __('Payment Downtime Resolved', 'bit-pi'),
+
+    'Payment Downtime Updated' => __('Payment Downtime Updated', 'bit-pi'),
+
+    'Refund Created' => __('Refund Created', 'bit-pi'),
+
+    'Refund Processed' => __('Refund Processed', 'bit-pi'),
+
+    'Refund Failed' => __('Refund Failed', 'bit-pi'),
+
+    'Refund Speed Changed' => __('Refund Speed Changed', 'bit-pi'),
+
+    'Payment Dispute Created' => __('Payment Dispute Created', 'bit-pi'),
+
+    'Payment Dispute Won' => __('Payment Dispute Won', 'bit-pi'),
+
+    'Payment Dispute Lost' => __('Payment Dispute Lost', 'bit-pi'),
+
+    'Payment Dispute Closed' => __('Payment Dispute Closed', 'bit-pi'),
+
+    'Payment Dispute Under Review' => __('Payment Dispute Under Review', 'bit-pi'),
+
+    'Payment Dispute Action Required' => __('Payment Dispute Action Required', 'bit-pi'),
+
+    'Invoice Partially Paid' => __('Invoice Partially Paid', 'bit-pi'),
+
+    'Invoice Paid' => __('Invoice Paid', 'bit-pi'),
+
+    'Invoice Expired' => __('Invoice Expired', 'bit-pi'),
+
+    'Subscription Authenticated' => __('Subscription Authenticated', 'bit-pi'),
+
+    'Subscription Charged' => __('Subscription Charged', 'bit-pi'),
+
+    'Subscription Completed' => __('Subscription Completed', 'bit-pi'),
+
+    'Subscription Updated' => __('Subscription Updated', 'bit-pi'),
+
+    'Subscription Pending' => __('Subscription Pending', 'bit-pi'),
+
+    'Subscription Halted' => __('Subscription Halted', 'bit-pi'),
+
+    'Subscription Cancelled' => __('Subscription Cancelled', 'bit-pi'),
+
+    'Subscription Paused' => __('Subscription Paused', 'bit-pi'),
+
+    'Subscription Resumed' => __('Subscription Resumed', 'bit-pi'),
+
+    'Settlement Processed' => __('Settlement Processed', 'bit-pi'),
+
+    'Payment Link Paid' => __('Payment Link Paid', 'bit-pi'),
+
+    'Payment Link Partially Paid' => __('Payment Link Partially Paid', 'bit-pi'),
+
+    'Payment Link Cancelled' => __('Payment Link Cancelled', 'bit-pi'),
+
+    'Payment Link Expired' => __('Payment Link Expired', 'bit-pi'),
+
+    'Transfer Processed' => __('Transfer Processed', 'bit-pi'),
+
+    'Transfer Failed' => __('Transfer Failed', 'bit-pi'),
+
+    'Linked Account Under Review' => __('Linked Account Under Review', 'bit-pi'),
+
+    'Linked Account Needs Clarification' => __('Linked Account Needs Clarification', 'bit-pi'),
+
+    'Linked Account Activated' => __('Linked Account Activated', 'bit-pi'),
+
+    'QR Code Created' => __('QR Code Created', 'bit-pi'),
+
+    'QR Code Credited' => __('QR Code Credited', 'bit-pi'),
+
+    'QR Code Closed' => __('QR Code Closed', 'bit-pi'),
+
+    'Virtual Account Created' => __('Virtual Account Created', 'bit-pi'),
+
+    'Virtual Account Credited' => __('Virtual Account Credited', 'bit-pi'),
+
+    'Virtual Account Closed' => __('Virtual Account Closed', 'bit-pi'),
+
+    'Payout Pending' => __('Payout Pending', 'bit-pi'),
+
+    'Payout Rejected' => __('Payout Rejected', 'bit-pi'),
+
+    'Payout Queued' => __('Payout Queued', 'bit-pi'),
+
+    'Payout Initiated' => __('Payout Initiated', 'bit-pi'),
+
+    'Payout Processed' => __('Payout Processed', 'bit-pi'),
+
+    'Payout Updated' => __('Payout Updated', 'bit-pi'),
+
+    'Payout Reversed' => __('Payout Reversed', 'bit-pi'),
+
+    'Payout Failed' => __('Payout Failed', 'bit-pi'),
+
+    'Payout Downtime Started' => __('Payout Downtime Started', 'bit-pi'),
+
+    'Payout Downtime Resolved' => __('Payout Downtime Resolved', 'bit-pi'),
+
+    'Validation Completed' => __('Validation Completed', 'bit-pi'),
+
+    'Validation Failed' => __('Validation Failed', 'bit-pi'),
+
+    'Payout Link Pending' => __('Payout Link Pending', 'bit-pi'),
+
+    'Payout Link Issued' => __('Payout Link Issued', 'bit-pi'),
+
+    'Payout Link Processing' => __('Payout Link Processing', 'bit-pi'),
+
+    'Payout Link Processed' => __('Payout Link Processed', 'bit-pi'),
+
+    'Payout Link Attempted' => __('Payout Link Attempted', 'bit-pi'),
+
+    'Payout Link Cancelled' => __('Payout Link Cancelled', 'bit-pi'),
+
+    'Payout Link Rejected' => __('Payout Link Rejected', 'bit-pi'),
+
+    'Payout Link Expired' => __('Payout Link Expired', 'bit-pi'),
+
+    'Authorization Revoked' => __('Authorization Revoked', 'bit-pi'),
+
+    'Full name of the customer.' => __('Full name of the customer.', 'bit-pi'),
+
+    'Email address of the customer.' => __('Email address of the customer.', 'bit-pi'),
+
+    'Phone number of the customer.' => __('Phone number of the customer.', 'bit-pi'),
+
+    'Determines behavior if a customer with the same details already exists. "Yes" (default) throws an error; "No" fetches the existing customer.' => __('Determines behavior if a customer with the same details already exists. "Yes" (default) throws an error; "No" fetches the existing customer.', 'bit-pi'),
+
+    'Fail on Existing Customer' => __('Fail on Existing Customer', 'bit-pi'),
+
+    'Select an option' => __('Select an option', 'bit-pi'),
+
+    'Additional notes about the customer.' => __('Additional notes about the customer.', 'bit-pi'),
+
+    'Name of the item.' => __('Name of the item.', 'bit-pi'),
+
+    'Item Name' => __('Item Name', 'bit-pi'),
+
+    'Description of the item.' => __('Description of the item.', 'bit-pi'),
+
+    'Enter the price of the item' => __('Enter the price of the item', 'bit-pi'),
+
+    'Amount for the order in the smallest currency sub-unit (e.g. 500 paise = INR 5.00).' => __('Amount for the order in the smallest currency sub-unit (e.g. 500 paise = INR 5.00).', 'bit-pi'),
+
+    'A unique receipt number for this order (max 40 characters).' => __('A unique receipt number for this order (max 40 characters).', 'bit-pi'),
+
+    'Receipt Number' => __('Receipt Number', 'bit-pi'),
+
+    'The amount to be collected.' => __('The amount to be collected.', 'bit-pi'),
+
+    'A brief description of the payment link.' => __('A brief description of the payment link.', 'bit-pi'),
+
+    'Customer Name' => __('Customer Name', 'bit-pi'),
+
+    'Customer Contact' => __('Customer Contact', 'bit-pi'),
+
+    'Show advanced configuration options.' => __('Show advanced configuration options.', 'bit-pi'),
+
+    'Advance Options' => __('Advance Options', 'bit-pi'),
+
+    'Whether to create a UPI link for the payment.' => __('Whether to create a UPI link for the payment.', 'bit-pi'),
+
+    'UPI Link' => __('UPI Link', 'bit-pi'),
+
+    'Whether the customer can make partial payments.' => __('Whether the customer can make partial payments.', 'bit-pi'),
+
+    'Accept Partial Payments' => __('Accept Partial Payments', 'bit-pi'),
+
+    'The minimum amount for the first partial payment.' => __('The minimum amount for the first partial payment.', 'bit-pi'),
+
+    'First Min Partial Amount' => __('First Min Partial Amount', 'bit-pi'),
+
+    'The date/time at which the payment link should expire. Use Unix timestamp.' => __('The date/time at which the payment link should expire. Use Unix timestamp.', 'bit-pi'),
+
+    'Expiry Date' => __('Expiry Date', 'bit-pi'),
+
+    'A unique reference ID for the payment link.' => __('A unique reference ID for the payment link.', 'bit-pi'),
+
+    'Reference ID' => __('Reference ID', 'bit-pi'),
+
+    'Notify via SMS' => __('Notify via SMS', 'bit-pi'),
+
+    'Notify via Email' => __('Notify via Email', 'bit-pi'),
+
+    'Enable Reminders' => __('Enable Reminders', 'bit-pi'),
+
+    'Callback Method' => __('Callback Method', 'bit-pi'),
+
+    'GET' => __('GET', 'bit-pi'),
+
+    'POST' => __('POST', 'bit-pi'),
+
+    'The period for the charging interval.' => __('The period for the charging interval.', 'bit-pi'),
+
+    'Period' => __('Period', 'bit-pi'),
+
+    'Daily' => __('Daily', 'bit-pi'),
+
+    'Weekly' => __('Weekly', 'bit-pi'),
+
+    'Monthly' => __('Monthly', 'bit-pi'),
+
+    'Yearly' => __('Yearly', 'bit-pi'),
+
+    'The number of periods between each charge (e.g. interval 2 with period monthly = charge every 2 months).' => __('The number of periods between each charge (e.g. interval 2 with period monthly = charge every 2 months).', 'bit-pi'),
+
+    'Interval' => __('Interval', 'bit-pi'),
+
+    'The name of the plan.' => __('The name of the plan.', 'bit-pi'),
+
+    'Plan Name' => __('Plan Name', 'bit-pi'),
+
+    'The amount to be charged for the plan in smallest currency sub-unit.' => __('The amount to be charged for the plan in smallest currency sub-unit.', 'bit-pi'),
+
+    'A brief description of the plan.' => __('A brief description of the plan.', 'bit-pi'),
+
+    'The plan to which the customer is being subscribed.' => __('The plan to which the customer is being subscribed.', 'bit-pi'),
+
+    'Plan' => __('Plan', 'bit-pi'),
+
+    'The number of billing cycles for which the customer should be charged.' => __('The number of billing cycles for which the customer should be charged.', 'bit-pi'),
+
+    'Total Count' => __('Total Count', 'bit-pi'),
+
+    'The number of quantities of the plan to be purchased.' => __('The number of quantities of the plan to be purchased.', 'bit-pi'),
+
+    'The date/time at which the subscription should start. Use Unix timestamp.' => __('The date/time at which the subscription should start. Use Unix timestamp.', 'bit-pi'),
+
+    'The date/time at which the subscription should expire. Use Unix timestamp.' => __('The date/time at which the subscription should expire. Use Unix timestamp.', 'bit-pi'),
+
+    'Indicates whether the communication to the customer would be handled by businesses or Razorpay.' => __('Indicates whether the communication to the customer would be handled by businesses or Razorpay.', 'bit-pi'),
+
+    'Notify to Customer' => __('Notify to Customer', 'bit-pi'),
+
+    'The order to fetch payments for.' => __('The order to fetch payments for.', 'bit-pi'),
+
+    'Select Order' => __('Select Order', 'bit-pi'),
+
+    'The invoice to fetch details for.' => __('The invoice to fetch details for.', 'bit-pi'),
+
+    'Select Invoice' => __('Select Invoice', 'bit-pi'),
+
+    'The order to fetch details for.' => __('The order to fetch details for.', 'bit-pi'),
+
+    'The payment to fetch details for.' => __('The payment to fetch details for.', 'bit-pi'),
+
+    'Select Payment' => __('Select Payment', 'bit-pi'),
+
+    'Failed to fetch plans' => __('Failed to fetch plans', 'bit-pi'),
+
+    'Failed to fetch payments' => __('Failed to fetch payments', 'bit-pi'),
+
+    'Failed to fetch orders' => __('Failed to fetch orders', 'bit-pi'),
+
+    'Failed to fetch invoices' => __('Failed to fetch invoices', 'bit-pi'),
+
+    'Failed to fetch customers' => __('Failed to fetch customers', 'bit-pi'),
+
+    'Failed to fetch items' => __('Failed to fetch items', 'bit-pi'),
+
+    'Failed to fetch subscriptions' => __('Failed to fetch subscriptions', 'bit-pi'),
+
+    'Webhook added successfully' => __('Webhook added successfully', 'bit-pi'),
+
+    'Failed to add webhook' => __('Failed to add webhook', 'bit-pi'),
+
+    'You can find your API Key ID and Key Secret from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://dashboard.razorpay.com/app/keys">Here</a>. Enter your credentials as <strong>key_id:key_secret</strong>.' => __('You can find your API Key ID and Key Secret from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://dashboard.razorpay.com/app/keys">Here</a>. Enter your credentials as <strong>key_id:key_secret</strong>.', 'bit-pi'),
+
+    'Razorpay API Key' => __('Razorpay API Key', 'bit-pi'),
+
+    'The email address to receive alerts.' => __('The email address to receive alerts.', 'bit-pi'),
+
+    'Alert Email' => __('Alert Email', 'bit-pi'),
+
+    'The customer to update.' => __('The customer to update.', 'bit-pi'),
+
+    'Select Customer' => __('Select Customer', 'bit-pi'),
+
+    'The item to update.' => __('The item to update.', 'bit-pi'),
+
+    'ISO code for the currency in which you want to accept the payment. Refer the: [Supported Currencies List](https://razorpay.com/docs/payments/international-payments/#supported-currencies)' => __('ISO code for the currency in which you want to accept the payment. Refer the: [Supported Currencies List](https://razorpay.com/docs/payments/international-payments/#supported-currencies)', 'bit-pi'),
+
+    'The order to update.' => __('The order to update.', 'bit-pi'),
+
+    'The subscription to update.' => __('The subscription to update.', 'bit-pi'),
+
+    'Select Subscription' => __('Select Subscription', 'bit-pi'),
+
+    'The new plan for the subscription.' => __('The new plan for the subscription.', 'bit-pi'),
+
+    'New Plan' => __('New Plan', 'bit-pi'),
+
+    'The number of billing cycles remaining in the subscription.' => __('The number of billing cycles remaining in the subscription.', 'bit-pi'),
+
+    'Remaining Count' => __('Remaining Count', 'bit-pi'),
+
+    'The quantity of the plan for the subscription.' => __('The quantity of the plan for the subscription.', 'bit-pi'),
+
+    'Whether the customer should be notified about the change.' => __('Whether the customer should be notified about the change.', 'bit-pi'),
+
+    'Notify Customer' => __('Notify Customer', 'bit-pi'),
+
     'Purchased a membership level' => __('Purchased a membership level', 'bit-pi'),
 
     'Membership to a specific level canceled' => __('Membership to a specific level canceled', 'bit-pi'),
@@ -11273,8 +12037,6 @@ return [
     'contact' => __('contact', 'bit-pi'),
 
     'lead' => __('lead', 'bit-pi'),
-
-    'Update Lead' => __('Update Lead', 'bit-pi'),
 
     'task' => __('task', 'bit-pi'),
 
@@ -11842,8 +12604,6 @@ return [
 
     'Enter the price ID for creating subscription' => __('Enter the price ID for creating subscription', 'bit-pi'),
 
-    'Price' => __('Price', 'bit-pi'),
-
     'Enter the draft Invoice ID you want to Finalize' => __('Enter the draft Invoice ID you want to Finalize', 'bit-pi'),
 
     'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://dashboard.stripe.com/account/apikeys">Here</a>. Please click on "Create Secret Key"' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://dashboard.stripe.com/account/apikeys">Here</a>. Please click on "Create Secret Key"', 'bit-pi'),
@@ -11872,8 +12632,6 @@ return [
 
     'Invoice Finalized' => __('Invoice Finalized', 'bit-pi'),
 
-    'Invoice Paid' => __('Invoice Paid', 'bit-pi'),
-
     'Invoice Payment Failed' => __('Invoice Payment Failed', 'bit-pi'),
 
     'Invoice Sent' => __('Invoice Sent', 'bit-pi'),
@@ -11881,8 +12639,6 @@ return [
     'Subscriptions' => __('Subscriptions', 'bit-pi'),
 
     'Subscription Created' => __('Subscription Created', 'bit-pi'),
-
-    'Subscription Updated' => __('Subscription Updated', 'bit-pi'),
 
     'Subscription Deleted' => __('Subscription Deleted', 'bit-pi'),
 
@@ -11904,13 +12660,9 @@ return [
 
     'Payout Paid' => __('Payout Paid', 'bit-pi'),
 
-    'Payout Failed' => __('Payout Failed', 'bit-pi'),
-
     'Transfers' => __('Transfers', 'bit-pi'),
 
     'Transfer Created' => __('Transfer Created', 'bit-pi'),
-
-    'Transfer Failed' => __('Transfer Failed', 'bit-pi'),
 
     'Enter email ID to retrieve the corresponding customers' => __('Enter email ID to retrieve the corresponding customers', 'bit-pi'),
 
@@ -12404,6 +13156,366 @@ return [
     '**When Trigger**: A registration form is submitted. This trigger fires when a user submits a Thrive Leads registration form and a WordPress user is created.' => __('**When Trigger**: A registration form is submitted. This trigger fires when a user submits a Thrive Leads registration form and a WordPress user is created.', 'bit-pi'),
 
     'Contact Sent From Bot' => __('Contact Sent From Bot', 'bit-pi'),
+
+    'Create Card' => __('Create Card', 'bit-pi'),
+
+    'Get Card' => __('Get Card', 'bit-pi'),
+
+    'Update Card' => __('Update Card', 'bit-pi'),
+
+    'Delete Card' => __('Delete Card', 'bit-pi'),
+
+    'Create Board' => __('Create Board', 'bit-pi'),
+
+    'Get Board' => __('Get Board', 'bit-pi'),
+
+    'Update Board' => __('Update Board', 'bit-pi'),
+
+    'Delete Board' => __('Delete Board', 'bit-pi'),
+
+    'Create Label' => __('Create Label', 'bit-pi'),
+
+    'Get Label' => __('Get Label', 'bit-pi'),
+
+    'Update Label' => __('Update Label', 'bit-pi'),
+
+    'Delete Label' => __('Delete Label', 'bit-pi'),
+
+    'List Labels' => __('List Labels', 'bit-pi'),
+
+    'Add Label to Card' => __('Add Label to Card', 'bit-pi'),
+
+    'Remove Label from Card' => __('Remove Label from Card', 'bit-pi'),
+
+    'Add Board Member' => __('Add Board Member', 'bit-pi'),
+
+    'Invite Board Member' => __('Invite Board Member', 'bit-pi'),
+
+    'Remove Board Member' => __('Remove Board Member', 'bit-pi'),
+
+    'Get Attachment' => __('Get Attachment', 'bit-pi'),
+
+    'Get Many Attachments' => __('Get Many Attachments', 'bit-pi'),
+
+    'Delete Attachment' => __('Delete Attachment', 'bit-pi'),
+
+    'Create Checklist' => __('Create Checklist', 'bit-pi'),
+
+    'Create Checklist Item' => __('Create Checklist Item', 'bit-pi'),
+
+    'Delete Checklist' => __('Delete Checklist', 'bit-pi'),
+
+    'Delete Checklist Item' => __('Delete Checklist Item', 'bit-pi'),
+
+    'Get Checklist' => __('Get Checklist', 'bit-pi'),
+
+    'Get Checklist Items' => __('Get Checklist Items', 'bit-pi'),
+
+    'Get Completed Checklist Items' => __('Get Completed Checklist Items', 'bit-pi'),
+
+    'Get Many Checklists' => __('Get Many Checklists', 'bit-pi'),
+
+    'Update Checklist Item' => __('Update Checklist Item', 'bit-pi'),
+
+    'New Card' => __('New Card', 'bit-pi'),
+
+    'Card Move to List' => __('Card Move to List', 'bit-pi'),
+
+    'New Label' => __('New Label', 'bit-pi'),
+
+    'The board you want to add the member to.' => __('The board you want to add the member to.', 'bit-pi'),
+
+    'Select a Board' => __('Select a Board', 'bit-pi'),
+
+    'Select the member to add to the board or change their membership type.' => __('Select the member to add to the board or change their membership type.', 'bit-pi'),
+
+    'Select a Member' => __('Select a Member', 'bit-pi'),
+
+    'The type of membership the member should have.' => __('The type of membership the member should have.', 'bit-pi'),
+
+    'Normal' => __('Normal', 'bit-pi'),
+
+    'Observer' => __('Observer', 'bit-pi'),
+
+    'Whether to allow organization admins to add multi-board guests onto a board.' => __('Whether to allow organization admins to add multi-board guests onto a board.', 'bit-pi'),
+
+    'Allow Billable Guest' => __('Allow Billable Guest', 'bit-pi'),
+
+    'Select the board containing the card.' => __('Select the board containing the card.', 'bit-pi'),
+
+    'Select the list containing the card.' => __('Select the list containing the card.', 'bit-pi'),
+
+    'Select the card to add the label to.' => __('Select the card to add the label to.', 'bit-pi'),
+
+    'Select Card' => __('Select Card', 'bit-pi'),
+
+    'Select a Card' => __('Select a Card', 'bit-pi'),
+
+    'Select the label you want to add.' => __('Select the label you want to add.', 'bit-pi'),
+
+    'Select a Label' => __('Select a Label', 'bit-pi'),
+
+    'Select a board to monitor.' => __('Select a board to monitor.', 'bit-pi'),
+
+    'Board' => __('Board', 'bit-pi'),
+
+    'Select a board' => __('Select a board', 'bit-pi'),
+
+    'Select a list to monitor for card moves.' => __('Select a list to monitor for card moves.', 'bit-pi'),
+
+    'Optionally select a specific card to monitor.' => __('Optionally select a specific card to monitor.', 'bit-pi'),
+
+    'Card' => __('Card', 'bit-pi'),
+
+    'Select a card (optional)' => __('Select a card (optional)', 'bit-pi'),
+
+    'Please select a Board' => __('Please select a Board', 'bit-pi'),
+
+    'Please select a List' => __('Please select a List', 'bit-pi'),
+
+    'Select the card to add the attachment to.' => __('Select the card to add the attachment to.', 'bit-pi'),
+
+    'The URL of the attachment to add.' => __('The URL of the attachment to add.', 'bit-pi'),
+
+    'Source URL' => __('Source URL', 'bit-pi'),
+
+    'The name of the attachment to add (optional).' => __('The name of the attachment to add (optional).', 'bit-pi'),
+
+    'The MIME type of the attachment (optional).' => __('The MIME type of the attachment (optional).', 'bit-pi'),
+
+    'The name of the board (required).' => __('The name of the board (required).', 'bit-pi'),
+
+    'Board Name' => __('Board Name', 'bit-pi'),
+
+    'The description of the board.' => __('The description of the board.', 'bit-pi'),
+
+    'The permission level of the board.' => __('The permission level of the board.', 'bit-pi'),
+
+    'Permission Level' => __('Permission Level', 'bit-pi'),
+
+    'The ID of a custom background or one of: blue, orange, green, red, purple, pink, lime, sky, grey.' => __('The ID of a custom background or one of: blue, orange, green, red, purple, pink, lime, sky, grey.', 'bit-pi'),
+
+    'Background' => __('Background', 'bit-pi'),
+
+    'Select the Trello board where you want to create the card.' => __('Select the Trello board where you want to create the card.', 'bit-pi'),
+
+    'Select the list in the board where the card will be created.' => __('Select the list in the board where the card will be created.', 'bit-pi'),
+
+    'Enter the name of the card.' => __('Enter the name of the card.', 'bit-pi'),
+
+    'Card Name' => __('Card Name', 'bit-pi'),
+
+    'Enter a description for the card.' => __('Enter a description for the card.', 'bit-pi'),
+
+    'Enter the due date for the card (e.g., 2025-12-20T07:30:00.000Z).' => __('Enter the due date for the card (e.g., 2025-12-20T07:30:00.000Z).', 'bit-pi'),
+
+    'Set the position of the new card.' => __('Set the position of the new card.', 'bit-pi'),
+
+    'Top' => __('Top', 'bit-pi'),
+
+    'Bottom' => __('Bottom', 'bit-pi'),
+
+    'Enter comma-separated member IDs to assign to the card.' => __('Enter comma-separated member IDs to assign to the card.', 'bit-pi'),
+
+    'Member IDs' => __('Member IDs', 'bit-pi'),
+
+    'Enter comma-separated label IDs to add to the card.' => __('Enter comma-separated label IDs to add to the card.', 'bit-pi'),
+
+    'Label IDs' => __('Label IDs', 'bit-pi'),
+
+    'Select the card to add the checklist to.' => __('Select the card to add the checklist to.', 'bit-pi'),
+
+    'The name of the checklist.' => __('The name of the checklist.', 'bit-pi'),
+
+    'The ID of a source checklist to copy into the new one.' => __('The ID of a source checklist to copy into the new one.', 'bit-pi'),
+
+    'ID of Checklist Source' => __('ID of Checklist Source', 'bit-pi'),
+
+    'The position of the checklist on the card. One of: top, bottom, or a positive number.' => __('The position of the checklist on the card. One of: top, bottom, or a positive number.', 'bit-pi'),
+
+    'Select the card containing the checklist.' => __('Select the card containing the checklist.', 'bit-pi'),
+
+    'Select the checklist to add the item to.' => __('Select the checklist to add the item to.', 'bit-pi'),
+
+    'Select Checklist' => __('Select Checklist', 'bit-pi'),
+
+    'Select a Checklist' => __('Select a Checklist', 'bit-pi'),
+
+    'The name of the new checklist item.' => __('The name of the new checklist item.', 'bit-pi'),
+
+    'Whether the item is already checked when created.' => __('Whether the item is already checked when created.', 'bit-pi'),
+
+    'Checked' => __('Checked', 'bit-pi'),
+
+    'Select the board where you want to create the label.' => __('Select the board where you want to create the label.', 'bit-pi'),
+
+    'The name of the label.' => __('The name of the label.', 'bit-pi'),
+
+    'Label Name' => __('Label Name', 'bit-pi'),
+
+    'The color of the label.' => __('The color of the label.', 'bit-pi'),
+
+    'Color' => __('Color', 'bit-pi'),
+
+    'Black' => __('Black', 'bit-pi'),
+
+    'Blue' => __('Blue', 'bit-pi'),
+
+    'Green' => __('Green', 'bit-pi'),
+
+    'Lime' => __('Lime', 'bit-pi'),
+
+    'Null' => __('Null', 'bit-pi'),
+
+    'Orange' => __('Orange', 'bit-pi'),
+
+    'Pink' => __('Pink', 'bit-pi'),
+
+    'Purple' => __('Purple', 'bit-pi'),
+
+    'Red' => __('Red', 'bit-pi'),
+
+    'Sky' => __('Sky', 'bit-pi'),
+
+    'Yellow' => __('Yellow', 'bit-pi'),
+
+    'Select the card containing the attachment.' => __('Select the card containing the attachment.', 'bit-pi'),
+
+    'Select the attachment you want to delete.' => __('Select the attachment you want to delete.', 'bit-pi'),
+
+    'Select Attachment' => __('Select Attachment', 'bit-pi'),
+
+    'Select an Attachment' => __('Select an Attachment', 'bit-pi'),
+
+    'Select the Trello board you want to delete.' => __('Select the Trello board you want to delete.', 'bit-pi'),
+
+    'Select the Trello board containing the card to delete.' => __('Select the Trello board containing the card to delete.', 'bit-pi'),
+
+    'Select the card you want to delete.' => __('Select the card you want to delete.', 'bit-pi'),
+
+    'Select the checklist to delete.' => __('Select the checklist to delete.', 'bit-pi'),
+
+    'Select the checklist containing the item.' => __('Select the checklist containing the item.', 'bit-pi'),
+
+    'Select the checklist item to delete.' => __('Select the checklist item to delete.', 'bit-pi'),
+
+    'Select Check Item' => __('Select Check Item', 'bit-pi'),
+
+    'Select a Check Item' => __('Select a Check Item', 'bit-pi'),
+
+    'Select the board containing the label to delete.' => __('Select the board containing the label to delete.', 'bit-pi'),
+
+    'Select the label you want to delete.' => __('Select the label you want to delete.', 'bit-pi'),
+
+    'Select the attachment you want to retrieve.' => __('Select the attachment you want to retrieve.', 'bit-pi'),
+
+    'Select the Trello board to retrieve data for.' => __('Select the Trello board to retrieve data for.', 'bit-pi'),
+
+    'The board to get members from.' => __('The board to get members from.', 'bit-pi'),
+
+    'Select the Trello board to retrieve the card from.' => __('Select the Trello board to retrieve the card from.', 'bit-pi'),
+
+    'Select a card from the chosen list.' => __('Select a card from the chosen list.', 'bit-pi'),
+
+    'Select the checklist to retrieve data for.' => __('Select the checklist to retrieve data for.', 'bit-pi'),
+
+    'Select the checklist to retrieve items from.' => __('Select the checklist to retrieve items from.', 'bit-pi'),
+
+    'Select the card to retrieve completed checklist items from.' => __('Select the card to retrieve completed checklist items from.', 'bit-pi'),
+
+    'Select the board containing the label.' => __('Select the board containing the label.', 'bit-pi'),
+
+    'Select the label to retrieve data for.' => __('Select the label to retrieve data for.', 'bit-pi'),
+
+    'Select the card to retrieve attachments from.' => __('Select the card to retrieve attachments from.', 'bit-pi'),
+
+    'Select the card to retrieve checklists from.' => __('Select the card to retrieve checklists from.', 'bit-pi'),
+
+    'We have attached the webhook to your Trello board.' => __('We have attached the webhook to your Trello board.', 'bit-pi'),
+
+    'Untitled Card' => __('Untitled Card', 'bit-pi'),
+
+    'You can find your API Key and Token from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://trello.com/power-ups/admin">Trello Power-Ups Admin</a>. Make sure your Token has <b>read, write, and account</b> scopes.' => __('You can find your API Key and Token from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://trello.com/power-ups/admin">Trello Power-Ups Admin</a>. Make sure your Token has <b>read, write, and account</b> scopes.', 'bit-pi'),
+
+    'The board you want to invite the member to.' => __('The board you want to invite the member to.', 'bit-pi'),
+
+    'The email address of the member to invite.' => __('The email address of the member to invite.', 'bit-pi'),
+
+    'The full name of the user to invite.' => __('The full name of the user to invite.', 'bit-pi'),
+
+    'Select the board in order to list its labels.' => __('Select the board in order to list its labels.', 'bit-pi'),
+
+    'Select a board to monitor for new cards.' => __('Select a board to monitor for new cards.', 'bit-pi'),
+
+    'Select a list to monitor for new cards.' => __('Select a list to monitor for new cards.', 'bit-pi'),
+
+    'Select a board to monitor for new labels.' => __('Select a board to monitor for new labels.', 'bit-pi'),
+
+    'The board you want to remove the member from.' => __('The board you want to remove the member from.', 'bit-pi'),
+
+    'Select the member to remove from the board.' => __('Select the member to remove from the board.', 'bit-pi'),
+
+    'Select the card to remove the label from.' => __('Select the card to remove the label from.', 'bit-pi'),
+
+    'Select the label you want to remove.' => __('Select the label you want to remove.', 'bit-pi'),
+
+    'Select the Trello board you want to update.' => __('Select the Trello board you want to update.', 'bit-pi'),
+
+    'New name for the board.' => __('New name for the board.', 'bit-pi'),
+
+    'New Name' => __('New Name', 'bit-pi'),
+
+    'New description for the board.' => __('New description for the board.', 'bit-pi'),
+
+    'New Description' => __('New Description', 'bit-pi'),
+
+    'Whether the board is closed (archived).' => __('Whether the board is closed (archived).', 'bit-pi'),
+
+    'Whether the acting user is subscribed to the board.' => __('Whether the acting user is subscribed to the board.', 'bit-pi'),
+
+    'Select the Trello board containing the card to update.' => __('Select the Trello board containing the card to update.', 'bit-pi'),
+
+    'Select the card you want to update.' => __('Select the card you want to update.', 'bit-pi'),
+
+    'Enter the new name for the card.' => __('Enter the new name for the card.', 'bit-pi'),
+
+    'Enter the new description for the card.' => __('Enter the new description for the card.', 'bit-pi'),
+
+    'Enter the new due date for the card (e.g., 2025-12-20T07:30:00.000Z).' => __('Enter the new due date for the card (e.g., 2025-12-20T07:30:00.000Z).', 'bit-pi'),
+
+    'Whether the card is marked as complete.' => __('Whether the card is marked as complete.', 'bit-pi'),
+
+    'Due Complete' => __('Due Complete', 'bit-pi'),
+
+    'Set the position of the card in the list.' => __('Set the position of the card in the list.', 'bit-pi'),
+
+    'Whether the card is archived (closed).' => __('Whether the card is archived (closed).', 'bit-pi'),
+
+    'Enter comma-separated label IDs to set on the card.' => __('Enter comma-separated label IDs to set on the card.', 'bit-pi'),
+
+    'Enter the ID of a different list to move the card to.' => __('Enter the ID of a different list to move the card to.', 'bit-pi'),
+
+    'Move to List ID' => __('Move to List ID', 'bit-pi'),
+
+    'Select the checklist item to update.' => __('Select the checklist item to update.', 'bit-pi'),
+
+    'The new name for the checklist item.' => __('The new name for the checklist item.', 'bit-pi'),
+
+    'The state of the checklist item.' => __('The state of the checklist item.', 'bit-pi'),
+
+    'Incomplete' => __('Incomplete', 'bit-pi'),
+
+    'The ID of the checklist this item is in (if moving).' => __('The ID of the checklist this item is in (if moving).', 'bit-pi'),
+
+    'Checklist ID' => __('Checklist ID', 'bit-pi'),
+
+    'Select the label to update.' => __('Select the label to update.', 'bit-pi'),
+
+    'New name for the label.' => __('New name for the label.', 'bit-pi'),
+
+    'New color for the label.' => __('New color for the label.', 'bit-pi'),
+
+    'New Color' => __('New Color', 'bit-pi'),
 
     'Enroll User in Course' => __('Enroll User in Course', 'bit-pi'),
 
@@ -13107,8 +14219,6 @@ return [
 
     'Create a new product variation for an existing variable product.' => __('Create a new product variation for an existing variable product.', 'bit-pi'),
 
-    'Update Product' => __('Update Product', 'bit-pi'),
-
     'Make sure the Product ID exists in your WooCommerce store.' => __('Make sure the Product ID exists in your WooCommerce store.', 'bit-pi'),
 
     'Get All Products' => __('Get All Products', 'bit-pi'),
@@ -13306,8 +14416,6 @@ return [
     'Restore Order' => __('Restore Order', 'bit-pi'),
 
     'New Coupon Created' => __('New Coupon Created', 'bit-pi'),
-
-    'Create Customer' => __('Create Customer', 'bit-pi'),
 
     'Product Status Updated' => __('Product Status Updated', 'bit-pi'),
 
@@ -14833,8 +15941,6 @@ return [
 
     'Editor' => __('Editor', 'bit-pi'),
 
-    'Comments' => __('Comments', 'bit-pi'),
-
     'Revisions' => __('Revisions', 'bit-pi'),
 
     'Trackbacks' => __('Trackbacks', 'bit-pi'),
@@ -15055,8 +16161,6 @@ return [
 
     '**When Trigger**: A subscription is renewed. This trigger fires when a subscription payment succeeds for a WP Simple Pay form.' => __('**When Trigger**: A subscription is renewed. This trigger fires when a subscription payment succeeds for a WP Simple Pay form.', 'bit-pi'),
 
-    'Subscription Cancelled' => __('Subscription Cancelled', 'bit-pi'),
-
     'Subscription Status Changed' => __('Subscription Status Changed', 'bit-pi'),
 
     'Get Table (All)' => __('Get Table (All)', 'bit-pi'),
@@ -15166,8 +16270,6 @@ return [
     'Portal ID' => __('Portal ID', 'bit-pi'),
 
     'Select the project where you want to create the milestone.' => __('Select the project where you want to create the milestone.', 'bit-pi'),
-
-    'Project ID' => __('Project ID', 'bit-pi'),
 
     'Enter the title for the milestone.' => __('Enter the title for the milestone.', 'bit-pi'),
 

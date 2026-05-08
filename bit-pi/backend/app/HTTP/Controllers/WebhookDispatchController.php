@@ -44,8 +44,6 @@ final class WebhookDispatchController
             return Response::error('Webhook not found');
         }
 
-
-
         $flow = Flow::select(['id', 'title', 'settings', 'is_active', 'map', 'trigger_type', 'listener_type', 'is_hook_capture'])->where('id', $webhook->flow_id)->first();
 
         if (!$flow) {

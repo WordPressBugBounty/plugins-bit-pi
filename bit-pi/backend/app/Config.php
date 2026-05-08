@@ -24,7 +24,7 @@ class Config
 
     public const VAR_PREFIX = 'bit_pi_';
 
-    public const VERSION = '1.20.0';
+    public const VERSION = '1.21.0';
 
     public const DB_VERSION = '0.2.0';
 
@@ -73,6 +73,9 @@ class Config
 
             case 'UPLOAD_BASE_DIR':
                 return wp_upload_dir()['basedir'];
+
+            case 'BASE_URL':
+                return home_url();
 
             case 'SITE_URL':
                 return site_url();
@@ -128,10 +131,10 @@ class Config
                 $isPlainPermalink = get_option('permalink_structure') === '';
 
                 if ($isPlainPermalink) {
-                    return self::get('SITE_URL') . '/?pagename=' . self::SLUG . '-oauth-callback';
+                    return self::get('BASE_URL') . '/?pagename=' . self::SLUG . '-oauth-callback';
                 }
 
-                return self::get('SITE_URL') . '/' . Config::SLUG . '/oauth-callback/';
+                return self::get('BASE_URL') . '/' . Config::SLUG . '/oauth-callback/';
 
             default:
                 return $default;

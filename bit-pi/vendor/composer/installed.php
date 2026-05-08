@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'bitapps/pi',
-        'pretty_version' => '1.20.0',
-        'version' => '1.20.0.0',
-        'reference' => '6d33722f3004331cd4d0fde2e2e896bbaf5dd5dd',
+        'pretty_version' => '1.21.0',
+        'version' => '1.21.0.0',
+        'reference' => 'c4eb3fe7d3e1624288eb008fb50f4233854dd43e',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'bitapps/pi' => array(
-            'pretty_version' => '1.20.0',
-            'version' => '1.20.0.0',
-            'reference' => '6d33722f3004331cd4d0fde2e2e896bbaf5dd5dd',
+            'pretty_version' => '1.21.0',
+            'version' => '1.21.0.0',
+            'reference' => 'c4eb3fe7d3e1624288eb008fb50f4233854dd43e',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

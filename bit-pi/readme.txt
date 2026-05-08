@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 6.9.4
 Requires PHP: 7.4
-Stable tag: 1.20.0
+Stable tag: 1.21.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -513,6 +513,23 @@ Detailed external service disclosure (what data is sent, when it is sent, and li
 
 == Changelog ==
 
+= v1.21.0 (May 08, 2026) =
+
+* **Triggers (101)**:
+  * Pipedrive (29)
+  * Razorpay (68)
+  * Trello (04)
+
+* **Actions (86)**:
+  * Pipedrive (38)
+  * Trello (32)
+  * Razorpay (14)
+  * MailRefine (01)
+  * Bitly (01)
+
+* **Fixes**:
+  * Fixed Amelia appointment status update trigger so status change events are mapped to the correct handler.
+  
 = v1.20.0 (May 04, 2026) =
 
 * **Triggers (46)**:
@@ -612,9 +629,7 @@ Detailed external service disclosure (what data is sent, when it is sent, and li
   * RafflePress (02)
   * ElevenLabs (02)
 * **Fixes**:
-
   * Fixed minor bugs.
-
 
 
 = v1.16.2 (Feb 26, 2026) =
