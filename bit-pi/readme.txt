@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.22.0
+Stable tag: 1.22.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -90,7 +90,7 @@ The MCP Client lets Bit Flows connect with MCP-compatible servers inside AI Agen
 
 = Content Generation with AI =
 
-Bit Flows connects ChatGPT, Gemini, Claude, Deepseek, and Perplexity to generate content automatically. Generate blog posts, marketing copy, or FAQs on demand. For example, feed headlines or keywords into a Bit Flows workflow and let the AI create full articles or social media captions. For research or summarization tasks, Deepseek or Perplexity can fetch relevant info or summarize text before publishing.
+Bit Flows connects ChatGPT, Gemini, Claude, Deepseek, and Perplexity to generate content automatically. Generate blog posts, marketing copy, or FAQs on demand. For example, feed headlines or keywords into a Bit Flows workflow and let the AI create full articles or social media captions.
 
 = Autoblogging with ChatGPT, Gemini, and Claude =
 
@@ -113,7 +113,7 @@ https://youtu.be/v5zqE23cPK4
 
 = Email Marketing Automation =
 
-Automate your email campaigns using Bit Flows. Connect form submissions and order leads to email tools like Mailchimp or SendGrid. When someone signs up on your site, Bit Flows can add them to a campaign, send welcome emails, or schedule newsletters. It takes care of repetitive email tasks while you focus on content, making email marketing automation effortless.
+Automate your email campaigns using Bit Flows. Connect form submissions and order leads to email tools like Mailchimp or SendGrid. When someone signs up on your site, Bit Flows can add them to a campaign, send welcome emails, or schedule newsletters.
 
 = Webhook Integrations =
 
@@ -506,10 +506,15 @@ There are [Documentations](https://bit-flows.com/users-guide/), a support forum,
 
 Bit Flows only connects to third-party services when explicitly configured by the site administrator. No data is sent without deliberate user action.
 
-Full disclosure (data sent, timing, Terms of Use, Privacy Policy links):
+For full details on what data is sent, when it is sent, and each service's Terms of Use and Privacy Policy:
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.22.1 (May 25, 2026) =
+
+* **Improvements**:
+  * Updated plugin readme.
 
 = v1.22.0 (May 25, 2026) =
 
