@@ -1,0 +1,1 @@
+import{r as e,j as s,a as t}from"./main-tricky-lilies-help.js";import{s as o}from"./oauthhel-BsiYkJZY.js";import"./mutative-C6xjlr6O.js";function i(){return e.useEffect(()=>{window.opener&&o()},[]),s("h3",{children:t("Auth Response Captured","bit-pi")})}export{i as default};

@@ -2,9 +2,9 @@
 Contributors: bitpressadmin,akaioum,arif25897,mazharul78,shuvomohajan
 Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
-Tested up to: 6.9.4
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.21.0
+Stable tag: 1.22.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -502,16 +502,40 @@ There are [Documentations](https://bit-flows.com/users-guide/), a support forum,
 6. Detailed Execution Logs
 7. Custom App Builder
 
-== External services ==
+== External Services ==
 
-Bit Flows connects to third-party services only when a site administrator explicitly configures and activates those integrations within a workflow. No data is transmitted to any external service without deliberate user action.
+Bit Flows only connects to third-party services when explicitly configured by the site administrator. No data is sent without deliberate user action.
 
-Depending on the nodes used, this may include AI providers, messaging APIs, and Google APIs.
-
-Detailed external service disclosure (what data is sent, when it is sent, and links to each service's Terms of Use and Privacy Policy):
+Full disclosure (data sent, timing, Terms of Use, Privacy Policy links):
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.22.0 (May 25, 2026) =
+
+* **Triggers (61)**:
+  * Heffl CRM (26)
+  * weDocs (08)
+  * Creator LMS (05)
+  * Zoho CRM (03)
+  * WPLoyalty (01)
+  * SureDash (18)
+
+* **Actions (80)**:
+  * Asgaros Forum (22)
+  * Zoho CRM (20)
+  * Creator LMS (14)
+  * weDocs (09)
+  * WPLoyalty (02)
+  * Heffl CRM (03)
+  * SureDash (10)
+
+* **Features**:
+  * Added cURL import for custom app actions.
+
+* **Fixes**:
+  * Fixed common-variable nodes inside MixInput function args not resolving correctly.
+  * Fixed undefined nodeDetails causing tooltip crash in MixInput tags.
 
 = v1.21.0 (May 08, 2026) =
 
@@ -526,7 +550,7 @@ Detailed external service disclosure (what data is sent, when it is sent, and li
   * Razorpay (14)
   * MailRefine (01)
   * Bitly (01)
-
+  
 * **Fixes**:
   * Fixed Amelia appointment status update trigger so status change events are mapped to the correct handler.
   

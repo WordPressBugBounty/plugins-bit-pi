@@ -44,9 +44,13 @@ class XmlTool
 
         $xmlContent = $xmlConfig['content'] ?? '';
 
-        $xmlQueryExpression = MixInputHandler::replaceMixTagValue($xmlConfig['xpath_query'] ?? '');
+        $xmlQueryExpression = $xmlConfig['xpath_query'] ? MixInputHandler::replaceMixTagValue($xmlConfig['xpath_query']) : '';
 
-        $xmlContent = MixInputHandler::replaceMixTagValue($xmlContent);
+        if (\is_array($xmlQueryExpression)) {
+            $xmlQueryExpression = implode('', $xmlQueryExpression);
+        }
+
+        $xmlContent = $xmlContent ? MixInputHandler::replaceMixTagValue($xmlContent) : '';
 
         $convertedParsedData = $this->convertContentByType($xmlMode, $xmlContent, $xmlQueryExpression);
 
@@ -166,6 +170,11 @@ class XmlTool
 
 
             case 'parse_xml':
+                if (empty($content)) {
+                    return [
+                        'error' => 'XML content is empty.',
+                    ];
+                }
                 $result = $this->validateAndFormatXML($content);
 
                 if (isset($result['error'])) {

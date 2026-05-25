@@ -1232,6 +1232,18 @@ return [
 
     'Make this field Required' => __('Make this field Required', 'bit-pi'),
 
+    'Please paste a cURL command.' => __('Please paste a cURL command.', 'bit-pi'),
+
+    'Invalid cURL command. It should start with "curl".' => __('Invalid cURL command. It should start with "curl".', 'bit-pi'),
+
+    'Failed to parse the cURL command. Please check the syntax.' => __('Failed to parse the cURL command. Please check the syntax.', 'bit-pi'),
+
+    'Import from cURL' => __('Import from cURL', 'bit-pi'),
+
+    'cURL Command' => __('cURL Command', 'bit-pi'),
+
+    'Paste your cURL command here...' => __('Paste your cURL command here...', 'bit-pi'),
+
     'Body' => __('Body', 'bit-pi'),
 
     'Headers' => __('Headers', 'bit-pi'),
@@ -1239,6 +1251,8 @@ return [
     'Label' => __('Label', 'bit-pi'),
 
     'QueryParams' => __('QueryParams', 'bit-pi'),
+
+    'cURL imported successfully' => __('cURL imported successfully', 'bit-pi'),
 
     'Action name should be unique and descriptive. For example, "Create Lead".' => __('Action name should be unique and descriptive. For example, "Create Lead".', 'bit-pi'),
 
@@ -3287,9 +3301,89 @@ return [
 
     'Completed' => __('Completed', 'bit-pi'),
 
+    'Get All Forums' => __('Get All Forums', 'bit-pi'),
+
+    'Get All Categories' => __('Get All Categories', 'bit-pi'),
+
+    'Get Forums by Category' => __('Get Forums by Category', 'bit-pi'),
+
+    'Get Subforums by Forum' => __('Get Subforums by Forum', 'bit-pi'),
+
+    'Get Forum by ID' => __('Get Forum by ID', 'bit-pi'),
+
+    'Get All Subforums' => __('Get All Subforums', 'bit-pi'),
+
+    'Get Category IDs' => __('Get Category IDs', 'bit-pi'),
+
+    'Get Category Name by ID' => __('Get Category Name by ID', 'bit-pi'),
+
+    'Get Topic by ID' => __('Get Topic by ID', 'bit-pi'),
+
+    'Get Topic Title by ID' => __('Get Topic Title by ID', 'bit-pi'),
+
+    'Get Topics by Forum' => __('Get Topics by Forum', 'bit-pi'),
+
+    'Get Sticky Topics by Forum' => __('Get Sticky Topics by Forum', 'bit-pi'),
+
+    'Get Topic Starter by ID' => __('Get Topic Starter by ID', 'bit-pi'),
+
+    'Get Topic Counts' => __('Get Topic Counts', 'bit-pi'),
+
+    'Create a topic' => __('Create a topic', 'bit-pi'),
+
+    'Create a forum' => __('Create a forum', 'bit-pi'),
+
+    'Post a reply in a topic' => __('Post a reply in a topic', 'bit-pi'),
+
+    'Subscribe user to a forum' => __('Subscribe user to a forum', 'bit-pi'),
+
     'User created a new topic in a forum' => __('User created a new topic in a forum', 'bit-pi'),
 
     'User replied to a topic in a forum' => __('User replied to a topic in a forum', 'bit-pi'),
+
+    'Enter the category ID.' => __('Enter the category ID.', 'bit-pi'),
+
+    'Category ID' => __('Category ID', 'bit-pi'),
+
+    'Enter the forum ID.' => __('Enter the forum ID.', 'bit-pi'),
+
+    'Forum ID' => __('Forum ID', 'bit-pi'),
+
+    'Enter the topic ID.' => __('Enter the topic ID.', 'bit-pi'),
+
+    'Topic ID' => __('Topic ID', 'bit-pi'),
+
+    'Enter the parent ID (category ID, 0 for root).' => __('Enter the parent ID (category ID, 0 for root).', 'bit-pi'),
+
+    'Parent ID' => __('Parent ID', 'bit-pi'),
+
+    'Forum Name' => __('Forum Name', 'bit-pi'),
+
+    'Forum Description' => __('Forum Description', 'bit-pi'),
+
+    'Forum Icon' => __('Forum Icon', 'bit-pi'),
+
+    'Topic Name' => __('Topic Name', 'bit-pi'),
+
+    'Topic Content' => __('Topic Content', 'bit-pi'),
+
+    'Enter the author user ID (optional, defaults to current user).' => __('Enter the author user ID (optional, defaults to current user).', 'bit-pi'),
+
+    'Author ID' => __('Author ID', 'bit-pi'),
+
+    'Topic offset (optional, defaults to 0).' => __('Topic offset (optional, defaults to 0).', 'bit-pi'),
+
+    'Topic Offset' => __('Topic Offset', 'bit-pi'),
+
+    'Number of topics (optional, defaults to 20).' => __('Number of topics (optional, defaults to 20).', 'bit-pi'),
+
+    'Number of Topics' => __('Number of Topics', 'bit-pi'),
+
+    'Enter the reply content.' => __('Enter the reply content.', 'bit-pi'),
+
+    'Reply Content' => __('Reply Content', 'bit-pi'),
+
+    'Enter the user ID to subscribe.' => __('Enter the user ID to subscribe.', 'bit-pi'),
 
     'Award Achievement to User' => __('Award Achievement to User', 'bit-pi'),
 
@@ -3677,8 +3771,6 @@ return [
 
     'Enter the ID of the forum to get subscribers from.' => __('Enter the ID of the forum to get subscribers from.', 'bit-pi'),
 
-    'Forum ID' => __('Forum ID', 'bit-pi'),
-
     'Enter Forum ID' => __('Enter Forum ID', 'bit-pi'),
 
     'Select the forum containing the topic.' => __('Select the forum containing the topic.', 'bit-pi'),
@@ -3687,15 +3779,11 @@ return [
 
     'Enter the topic ID to reply to.' => __('Enter the topic ID to reply to.', 'bit-pi'),
 
-    'Topic ID' => __('Topic ID', 'bit-pi'),
-
     'Enter the title of the reply.' => __('Enter the title of the reply.', 'bit-pi'),
 
     'Reply Title' => __('Reply Title', 'bit-pi'),
 
     'Enter the content of the reply.' => __('Enter the content of the reply.', 'bit-pi'),
-
-    'Reply Content' => __('Reply Content', 'bit-pi'),
 
     'Enter the email address of the user who will create the reply.' => __('Enter the email address of the user who will create the reply.', 'bit-pi'),
 
@@ -3708,8 +3796,6 @@ return [
     'Topic Title' => __('Topic Title', 'bit-pi'),
 
     'Enter the content of the topic.' => __('Enter the content of the topic.', 'bit-pi'),
-
-    'Topic Content' => __('Topic Content', 'bit-pi'),
 
     'Enter the email address of the user who will create the topic.' => __('Enter the email address of the user who will create the topic.', 'bit-pi'),
 
@@ -3916,6 +4002,102 @@ return [
     'Method' => __('Method', 'bit-pi'),
 
     'Raw Body' => __('Raw Body', 'bit-pi'),
+
+    'Create Student' => __('Create Student', 'bit-pi'),
+
+    'Update Student Data' => __('Update Student Data', 'bit-pi'),
+
+    'Enroll User in Course' => __('Enroll User in Course', 'bit-pi'),
+
+    'Create Course' => __('Create Course', 'bit-pi'),
+
+    'Mark Lesson Completed' => __('Mark Lesson Completed', 'bit-pi'),
+
+    'Get All Courses' => __('Get All Courses', 'bit-pi'),
+
+    'Get Course By ID' => __('Get Course By ID', 'bit-pi'),
+
+    'Get Course Lessons' => __('Get Course Lessons', 'bit-pi'),
+
+    'Get Enrollment By Order ID' => __('Get Enrollment By Order ID', 'bit-pi'),
+
+    'Get Enrollment By Course ID' => __('Get Enrollment By Course ID', 'bit-pi'),
+
+    'Get Enrollment By User ID' => __('Get Enrollment By User ID', 'bit-pi'),
+
+    'Get All Enrollments' => __('Get All Enrollments', 'bit-pi'),
+
+    'Get Enrollment By User and Course' => __('Get Enrollment By User and Course', 'bit-pi'),
+
+    'Student Enrolled in Course' => __('Student Enrolled in Course', 'bit-pi'),
+
+    'Student Completed Course' => __('Student Completed Course', 'bit-pi'),
+
+    'Student Completed Lesson' => __('Student Completed Lesson', 'bit-pi'),
+
+    'Course Created' => __('Course Created', 'bit-pi'),
+
+    'Course Updated' => __('Course Updated', 'bit-pi'),
+
+    'Pending Review' => __('Pending Review', 'bit-pi'),
+
+    'Enter the course title.' => __('Enter the course title.', 'bit-pi'),
+
+    'Course Title' => __('Course Title', 'bit-pi'),
+
+    'Enter the course description.' => __('Enter the course description.', 'bit-pi'),
+
+    'Course Description' => __('Course Description', 'bit-pi'),
+
+    'Course Status' => __('Course Status', 'bit-pi'),
+
+    'Select status' => __('Select status', 'bit-pi'),
+
+    'Enter a valid student email address.' => __('Enter a valid student email address.', 'bit-pi'),
+
+    'Optional username. Leave empty to auto-generate.' => __('Optional username. Leave empty to auto-generate.', 'bit-pi'),
+
+    'Username' => __('Username', 'bit-pi'),
+
+    'Optional password. Minimum 8 characters if provided. Leave empty to auto-generate.' => __('Optional password. Minimum 8 characters if provided. Leave empty to auto-generate.', 'bit-pi'),
+
+    'Password' => __('Password', 'bit-pi'),
+
+    'For custom mapping - use the value of course ID.' => __('For custom mapping - use the value of course ID.', 'bit-pi'),
+
+    'Course' => __('Course', 'bit-pi'),
+
+    'Enter the student email address.' => __('Enter the student email address.', 'bit-pi'),
+
+    'Student Email' => __('Student Email', 'bit-pi'),
+
+    'For custom mapping, pass the course ID value directly.' => __('For custom mapping, pass the course ID value directly.', 'bit-pi'),
+
+    'Enter the related order ID for the enrollment lookup.' => __('Enter the related order ID for the enrollment lookup.', 'bit-pi'),
+
+    'Order ID' => __('Order ID', 'bit-pi'),
+
+    'Enter order ID' => __('Enter order ID', 'bit-pi'),
+
+    'Enter the related user ID for the enrollment lookup.' => __('Enter the related user ID for the enrollment lookup.', 'bit-pi'),
+
+    'Enter user ID' => __('Enter user ID', 'bit-pi'),
+
+    'Please select a course first.' => __('Please select a course first.', 'bit-pi'),
+
+    'For custom mapping - use the value of lesson ID.' => __('For custom mapping - use the value of lesson ID.', 'bit-pi'),
+
+    'Lesson' => __('Lesson', 'bit-pi'),
+
+    'Select a lesson' => __('Select a lesson', 'bit-pi'),
+
+    'Enter the existing student email.' => __('Enter the existing student email.', 'bit-pi'),
+
+    'Optional new email address.' => __('Optional new email address.', 'bit-pi'),
+
+    'New Email' => __('New Email', 'bit-pi'),
+
+    'Display Name' => __('Display Name', 'bit-pi'),
 
     'Create Chat Completion' => __('Create Chat Completion', 'bit-pi'),
 
@@ -5705,8 +5887,6 @@ return [
 
     'Enter the New Board ID' => __('Enter the New Board ID', 'bit-pi'),
 
-    'Display Name' => __('Display Name', 'bit-pi'),
-
     'Enter the display name to search' => __('Enter the display name to search', 'bit-pi'),
 
     'Enter the label ID' => __('Enter the label ID', 'bit-pi'),
@@ -6065,8 +6245,6 @@ return [
 
     'License ID' => __('License ID', 'bit-pi'),
 
-    'Order ID' => __('Order ID', 'bit-pi'),
-
     'Product ID' => __('Product ID', 'bit-pi'),
 
     'Order Transaction ID' => __('Order Transaction ID', 'bit-pi'),
@@ -6261,8 +6439,6 @@ return [
 
     'Enter customer ID' => __('Enter customer ID', 'bit-pi'),
 
-    'Enter order ID' => __('Enter order ID', 'bit-pi'),
-
     'Fluent Community' => __('Fluent Community', 'bit-pi'),
 
     'Add User To Space' => __('Add User To Space', 'bit-pi'),
@@ -6337,10 +6513,6 @@ return [
 
     'User Completes Lesson' => __('User Completes Lesson', 'bit-pi'),
 
-    'Course Created' => __('Course Created', 'bit-pi'),
-
-    'Course Updated' => __('Course Updated', 'bit-pi'),
-
     'Course Published' => __('Course Published', 'bit-pi'),
 
     'Course Deleted' => __('Course Deleted', 'bit-pi'),
@@ -6350,8 +6522,6 @@ return [
     'User Leveled Up' => __('User Leveled Up', 'bit-pi'),
 
     'Enter the WordPress user ID to enroll in the course' => __('Enter the WordPress user ID to enroll in the course', 'bit-pi'),
-
-    'Enter user ID' => __('Enter user ID', 'bit-pi'),
 
     'Enter the course ID to enroll the user in' => __('Enter the course ID to enroll the user in', 'bit-pi'),
 
@@ -7833,6 +8003,166 @@ return [
 
     'Tag removed from contact' => __('Tag removed from contact', 'bit-pi'),
 
+    'Create a new lead in Heffl CRM' => __('Create a new lead in Heffl CRM', 'bit-pi'),
+
+    'Create Lead' => __('Create Lead', 'bit-pi'),
+
+    'Create a new client (company or contact) in Heffl CRM' => __('Create a new client (company or contact) in Heffl CRM', 'bit-pi'),
+
+    'Create Client' => __('Create Client', 'bit-pi'),
+
+    'Create a new deal in a Heffl CRM pipeline' => __('Create a new deal in a Heffl CRM pipeline', 'bit-pi'),
+
+    'On Lead Created' => __('On Lead Created', 'bit-pi'),
+
+    'On Lead Updated' => __('On Lead Updated', 'bit-pi'),
+
+    'On Lead Deleted' => __('On Lead Deleted', 'bit-pi'),
+
+    'On Lead Stage Changed' => __('On Lead Stage Changed', 'bit-pi'),
+
+    'On Deal Created' => __('On Deal Created', 'bit-pi'),
+
+    'On Deal Updated' => __('On Deal Updated', 'bit-pi'),
+
+    'On Deal Deleted' => __('On Deal Deleted', 'bit-pi'),
+
+    'On Deal Stage Changed' => __('On Deal Stage Changed', 'bit-pi'),
+
+    'On Company Created' => __('On Company Created', 'bit-pi'),
+
+    'On Company Updated' => __('On Company Updated', 'bit-pi'),
+
+    'On Company Deleted' => __('On Company Deleted', 'bit-pi'),
+
+    'On Contact Created' => __('On Contact Created', 'bit-pi'),
+
+    'On Contact Updated' => __('On Contact Updated', 'bit-pi'),
+
+    'On Contact Deleted' => __('On Contact Deleted', 'bit-pi'),
+
+    'On Contact Stage Changed' => __('On Contact Stage Changed', 'bit-pi'),
+
+    'On Invoice Created' => __('On Invoice Created', 'bit-pi'),
+
+    'On Invoice Updated' => __('On Invoice Updated', 'bit-pi'),
+
+    'On Invoice Deleted' => __('On Invoice Deleted', 'bit-pi'),
+
+    'On Invoice Paid' => __('On Invoice Paid', 'bit-pi'),
+
+    'On Invoice Status Changed' => __('On Invoice Status Changed', 'bit-pi'),
+
+    'On Quotation Created' => __('On Quotation Created', 'bit-pi'),
+
+    'On Quotation Updated' => __('On Quotation Updated', 'bit-pi'),
+
+    'On Quotation Deleted' => __('On Quotation Deleted', 'bit-pi'),
+
+    'On Quotation Status Changed' => __('On Quotation Status Changed', 'bit-pi'),
+
+    'On Payment Received' => __('On Payment Received', 'bit-pi'),
+
+    'On Form Response Submitted' => __('On Form Response Submitted', 'bit-pi'),
+
+    'Whether this client is a company or an individual contact.' => __('Whether this client is a company or an individual contact.', 'bit-pi'),
+
+    'Client Type' => __('Client Type', 'bit-pi'),
+
+    'Company name (used when type is Company).' => __('Company name (used when type is Company).', 'bit-pi'),
+
+    'Contact\'s first name (used when type is Contact).' => __('Contact\'s first name (used when type is Contact).', 'bit-pi'),
+
+    'Phone number with country code.' => __('Phone number with country code.', 'bit-pi'),
+
+    'Tax Number' => __('Tax Number', 'bit-pi'),
+
+    'Deal title (minimum 1 character).' => __('Deal title (minimum 1 character).', 'bit-pi'),
+
+    'Select a pipeline' => __('Select a pipeline', 'bit-pi'),
+
+    'Select a stage' => __('Select a stage', 'bit-pi'),
+
+    'Client' => __('Client', 'bit-pi'),
+
+    'Select a client' => __('Select a client', 'bit-pi'),
+
+    'Select a source' => __('Select a source', 'bit-pi'),
+
+    'Price' => __('Price', 'bit-pi'),
+
+    'Expected close date (ISO 8601, e.g. 2026-04-30).' => __('Expected close date (ISO 8601, e.g. 2026-04-30).', 'bit-pi'),
+
+    'Expected Close Date' => __('Expected Close Date', 'bit-pi'),
+
+    'Lead\'s full name.' => __('Lead\'s full name.', 'bit-pi'),
+
+    'Email address.' => __('Email address.', 'bit-pi'),
+
+    'Mobile phone number with country code.' => __('Mobile phone number with country code.', 'bit-pi'),
+
+    'Mobile' => __('Mobile', 'bit-pi'),
+
+    'Secondary Mobile' => __('Secondary Mobile', 'bit-pi'),
+
+    'Title / Job Title' => __('Title / Job Title', 'bit-pi'),
+
+    'Expected Deal Value' => __('Expected Deal Value', 'bit-pi'),
+
+    'Lead Source' => __('Lead Source', 'bit-pi'),
+
+    'Lead Stage' => __('Lead Stage', 'bit-pi'),
+
+    'Company Created' => __('Company Created', 'bit-pi'),
+
+    'Company Updated' => __('Company Updated', 'bit-pi'),
+
+    'Company Deleted' => __('Company Deleted', 'bit-pi'),
+
+    'Contact Created' => __('Contact Created', 'bit-pi'),
+
+    'Contact Deleted' => __('Contact Deleted', 'bit-pi'),
+
+    'Contact Stage Changed' => __('Contact Stage Changed', 'bit-pi'),
+
+    'Deal Created' => __('Deal Created', 'bit-pi'),
+
+    'Deal Stage Changed' => __('Deal Stage Changed', 'bit-pi'),
+
+    'Form Response Submitted' => __('Form Response Submitted', 'bit-pi'),
+
+    'Invoice Created' => __('Invoice Created', 'bit-pi'),
+
+    'Invoice Updated' => __('Invoice Updated', 'bit-pi'),
+
+    'Invoice Deleted' => __('Invoice Deleted', 'bit-pi'),
+
+    'Invoice Paid' => __('Invoice Paid', 'bit-pi'),
+
+    'Invoice Status Changed' => __('Invoice Status Changed', 'bit-pi'),
+
+    'Lead Created' => __('Lead Created', 'bit-pi'),
+
+    'Lead Updated' => __('Lead Updated', 'bit-pi'),
+
+    'Lead Deleted' => __('Lead Deleted', 'bit-pi'),
+
+    'Lead Stage Changed' => __('Lead Stage Changed', 'bit-pi'),
+
+    'Payment Received' => __('Payment Received', 'bit-pi'),
+
+    'Quotation Created' => __('Quotation Created', 'bit-pi'),
+
+    'Quotation Updated' => __('Quotation Updated', 'bit-pi'),
+
+    'Quotation Deleted' => __('Quotation Deleted', 'bit-pi'),
+
+    'Quotation Status Changed' => __('Quotation Status Changed', 'bit-pi'),
+
+    'Select event(s)' => __('Select event(s)', 'bit-pi'),
+
+    'Please select an event' => __('Please select an event', 'bit-pi'),
+
     'Make a request to an API endpoint' => __('Make a request to an API endpoint', 'bit-pi'),
 
     'Create or Update Deal' => __('Create or Update Deal', 'bit-pi'),
@@ -8689,15 +9019,7 @@ return [
 
     'Get Quote (By Id)' => __('Get Quote (By Id)', 'bit-pi'),
 
-    'Contact Created' => __('Contact Created', 'bit-pi'),
-
-    'Contact Deleted' => __('Contact Deleted', 'bit-pi'),
-
-    'Company Created' => __('Company Created', 'bit-pi'),
-
     'Transaction Created' => __('Transaction Created', 'bit-pi'),
-
-    'Invoice Created' => __('Invoice Created', 'bit-pi'),
 
     'Quote Created' => __('Quote Created', 'bit-pi'),
 
@@ -8736,8 +9058,6 @@ return [
     'Prefix' => __('Prefix', 'bit-pi'),
 
     'Main Contact' => __('Main Contact', 'bit-pi'),
-
-    'Tax Number' => __('Tax Number', 'bit-pi'),
 
     'ID Number' => __('ID Number', 'bit-pi'),
 
@@ -9286,8 +9606,6 @@ return [
 
     'Canceled a membership' => __('Canceled a membership', 'bit-pi'),
 
-    'Select a lesson' => __('Select a lesson', 'bit-pi'),
-
     'Memberships' => __('Memberships', 'bit-pi'),
 
     'Select a membership' => __('Select a membership', 'bit-pi'),
@@ -9705,8 +10023,6 @@ return [
     'Enter first name' => __('Enter first name', 'bit-pi'),
 
     'Enter last name' => __('Enter last name', 'bit-pi'),
-
-    'Select status' => __('Select status', 'bit-pi'),
 
     'Add to Lists' => __('Add to Lists', 'bit-pi'),
 
@@ -10694,8 +11010,6 @@ return [
 
     'Select sort status' => __('Select sort status', 'bit-pi'),
 
-    'Create Lead' => __('Create Lead', 'bit-pi'),
-
     'You can get your API key from your OneHash My Settings > Settings > API Access' => __('You can get your API key from your OneHash My Settings > Settings > API Access', 'bit-pi'),
 
     'Enter Domain' => __('Enter Domain', 'bit-pi'),
@@ -11156,13 +11470,7 @@ return [
 
     'Deal' => __('Deal', 'bit-pi'),
 
-    'Deal Created' => __('Deal Created', 'bit-pi'),
-
     'Deal Changed' => __('Deal Changed', 'bit-pi'),
-
-    'Lead Created' => __('Lead Created', 'bit-pi'),
-
-    'Lead Deleted' => __('Lead Deleted', 'bit-pi'),
 
     'Lead Changed' => __('Lead Changed', 'bit-pi'),
 
@@ -11324,8 +11632,6 @@ return [
 
     'Deleted' => __('Deleted', 'bit-pi'),
 
-    'Expected Close Date' => __('Expected Close Date', 'bit-pi'),
-
     'Probability' => __('Probability', 'bit-pi'),
 
     'Lost Reason' => __('Lost Reason', 'bit-pi'),
@@ -11395,8 +11701,6 @@ return [
     'Add Price' => __('Add Price', 'bit-pi'),
 
     'Enter the product price.' => __('Enter the product price.', 'bit-pi'),
-
-    'Price' => __('Price', 'bit-pi'),
 
     'Enter the product cost.' => __('Enter the product cost.', 'bit-pi'),
 
@@ -11608,10 +11912,6 @@ return [
 
     'Send Receipt' => __('Send Receipt', 'bit-pi'),
 
-    'Username' => __('Username', 'bit-pi'),
-
-    'Password' => __('Password', 'bit-pi'),
-
     'Leave empty to auto-generate' => __('Leave empty to auto-generate', 'bit-pi'),
 
     'Plan ID' => __('Plan ID', 'bit-pi'),
@@ -11743,8 +12043,6 @@ return [
     'Payment Dispute Action Required' => __('Payment Dispute Action Required', 'bit-pi'),
 
     'Invoice Partially Paid' => __('Invoice Partially Paid', 'bit-pi'),
-
-    'Invoice Paid' => __('Invoice Paid', 'bit-pi'),
 
     'Invoice Expired' => __('Invoice Expired', 'bit-pi'),
 
@@ -12705,8 +13003,6 @@ return [
 
     'Project Deleted' => __('Project Deleted', 'bit-pi'),
 
-    'Client' => __('Client', 'bit-pi'),
-
     'Select a Role' => __('Select a Role', 'bit-pi'),
 
     'Select To Create Contact if not Exists' => __('Select To Create Contact if not Exists', 'bit-pi'),
@@ -12768,6 +13064,184 @@ return [
     'User unrevoked product purchase' => __('User unrevoked product purchase', 'bit-pi'),
 
     'Checkout Confirmed' => __('Checkout Confirmed', 'bit-pi'),
+
+    'Get All Spaces' => __('Get All Spaces', 'bit-pi'),
+
+    'Fetches all SureDash portal spaces.' => __('Fetches all SureDash portal spaces.', 'bit-pi'),
+
+    'Get All Members' => __('Get All Members', 'bit-pi'),
+
+    'Fetches all SureDash members.' => __('Fetches all SureDash members.', 'bit-pi'),
+
+    'Get All Posts' => __('Get All Posts', 'bit-pi'),
+
+    'Fetches all SureDash community posts.' => __('Fetches all SureDash community posts.', 'bit-pi'),
+
+    'Creates a new community post in a SureDash space.' => __('Creates a new community post in a SureDash space.', 'bit-pi'),
+
+    'Permanently deletes a community post by ID.' => __('Permanently deletes a community post by ID.', 'bit-pi'),
+
+    'Create Comment' => __('Create Comment', 'bit-pi'),
+
+    'Adds a comment to a SureDash community post.' => __('Adds a comment to a SureDash community post.', 'bit-pi'),
+
+    'Delete Comment' => __('Delete Comment', 'bit-pi'),
+
+    'Permanently deletes a comment by ID.' => __('Permanently deletes a comment by ID.', 'bit-pi'),
+
+    'Bookmark Item' => __('Bookmark Item', 'bit-pi'),
+
+    'Bookmarks or un-bookmarks an item for a SureDash user.' => __('Bookmarks or un-bookmarks an item for a SureDash user.', 'bit-pi'),
+
+    'React to Entity' => __('React to Entity', 'bit-pi'),
+
+    'Adds or removes a like reaction on a post or comment.' => __('Adds or removes a like reaction on a post or comment.', 'bit-pi'),
+
+    'Update User Profile' => __('Update User Profile', 'bit-pi'),
+
+    'Updates a SureDash user profile fields.' => __('Updates a SureDash user profile fields.', 'bit-pi'),
+
+    'Space Saved' => __('Space Saved', 'bit-pi'),
+
+    'Triggers when a SureDash space is saved.' => __('Triggers when a SureDash space is saved.', 'bit-pi'),
+
+    'Space Deleted' => __('Space Deleted', 'bit-pi'),
+
+    'Triggers when a SureDash space is deleted.' => __('Triggers when a SureDash space is deleted.', 'bit-pi'),
+
+    'Space Data Updated' => __('Space Data Updated', 'bit-pi'),
+
+    'Triggers when a SureDash space data is updated.' => __('Triggers when a SureDash space data is updated.', 'bit-pi'),
+
+    'Settings Updated' => __('Settings Updated', 'bit-pi'),
+
+    'Triggers when SureDash portal settings are updated.' => __('Triggers when SureDash portal settings are updated.', 'bit-pi'),
+
+    'User Profile Updated' => __('User Profile Updated', 'bit-pi'),
+
+    'Triggers when a SureDash user profile is updated.' => __('Triggers when a SureDash user profile is updated.', 'bit-pi'),
+
+    'User Data Updated' => __('User Data Updated', 'bit-pi'),
+
+    'Triggers when a specific SureDash user data key is updated.' => __('Triggers when a specific SureDash user data key is updated.', 'bit-pi'),
+
+    'User Registered' => __('User Registered', 'bit-pi'),
+
+    'Triggers when a new user registers via SureDash.' => __('Triggers when a new user registers via SureDash.', 'bit-pi'),
+
+    'Post Submitted' => __('Post Submitted', 'bit-pi'),
+
+    'Triggers when a community post is submitted.' => __('Triggers when a community post is submitted.', 'bit-pi'),
+
+    'Post Edited' => __('Post Edited', 'bit-pi'),
+
+    'Triggers when a community post is edited.' => __('Triggers when a community post is edited.', 'bit-pi'),
+
+    'Post Deleted' => __('Post Deleted', 'bit-pi'),
+
+    'Triggers when a community post is deleted.' => __('Triggers when a community post is deleted.', 'bit-pi'),
+
+    'Comment Submitted' => __('Comment Submitted', 'bit-pi'),
+
+    'Triggers when a comment is submitted on a community post.' => __('Triggers when a comment is submitted on a community post.', 'bit-pi'),
+
+    'Comment Edited' => __('Comment Edited', 'bit-pi'),
+
+    'Triggers when a comment is edited.' => __('Triggers when a comment is edited.', 'bit-pi'),
+
+    'Triggers when a comment is deleted.' => __('Triggers when a comment is deleted.', 'bit-pi'),
+
+    'File Uploaded' => __('File Uploaded', 'bit-pi'),
+
+    'Triggers when a file is uploaded by a SureDash user.' => __('Triggers when a file is uploaded by a SureDash user.', 'bit-pi'),
+
+    'Item Bookmarked' => __('Item Bookmarked', 'bit-pi'),
+
+    'Triggers when an item is bookmarked or un-bookmarked.' => __('Triggers when an item is bookmarked or un-bookmarked.', 'bit-pi'),
+
+    'Entity Reacted' => __('Entity Reacted', 'bit-pi'),
+
+    'Triggers when a like reaction is added or removed on a post or comment.' => __('Triggers when a like reaction is added or removed on a post or comment.', 'bit-pi'),
+
+    'Content Created For Space' => __('Content Created For Space', 'bit-pi'),
+
+    'Triggers when content is created for a SureDash space.' => __('Triggers when content is created for a SureDash space.', 'bit-pi'),
+
+    'Community Content Deleted' => __('Community Content Deleted', 'bit-pi'),
+
+    'Triggers when community content is deleted.' => __('Triggers when community content is deleted.', 'bit-pi'),
+
+    'The type of the item being bookmarked.' => __('The type of the item being bookmarked.', 'bit-pi'),
+
+    'Item Type' => __('Item Type', 'bit-pi'),
+
+    'Portal (Space)' => __('Portal (Space)', 'bit-pi'),
+
+    'Community Post' => __('Community Post', 'bit-pi'),
+
+    'Select item type' => __('Select item type', 'bit-pi'),
+
+    'The item to bookmark. Options load based on Item Type.' => __('The item to bookmark. Options load based on Item Type.', 'bit-pi'),
+
+    'Item' => __('Item', 'bit-pi'),
+
+    'Select an item' => __('Select an item', 'bit-pi'),
+
+    'The user who is bookmarking the item.' => __('The user who is bookmarking the item.', 'bit-pi'),
+
+    'The comment.' => __('The comment.', 'bit-pi'),
+
+    'Select a comment' => __('Select a comment', 'bit-pi'),
+
+    'The community post.' => __('The community post.', 'bit-pi'),
+
+    'Select a post' => __('Select a post', 'bit-pi'),
+
+    'The community post to comment on.' => __('The community post to comment on.', 'bit-pi'),
+
+    'The content of the comment.' => __('The content of the comment.', 'bit-pi'),
+
+    'Comment Content' => __('Comment Content', 'bit-pi'),
+
+    'The title of the new community post.' => __('The title of the new community post.', 'bit-pi'),
+
+    'The content/body of the new community post.' => __('The content/body of the new community post.', 'bit-pi'),
+
+    'The SureDash space where the post will be created.' => __('The SureDash space where the post will be created.', 'bit-pi'),
+
+    'Space' => __('Space', 'bit-pi'),
+
+    'The publish status of the new post.' => __('The publish status of the new post.', 'bit-pi'),
+
+    'The type of entity being reacted to.' => __('The type of entity being reacted to.', 'bit-pi'),
+
+    'Entity Type' => __('Entity Type', 'bit-pi'),
+
+    'Select entity type' => __('Select entity type', 'bit-pi'),
+
+    'The post or comment to react to. Options load based on Entity Type.' => __('The post or comment to react to. Options load based on Entity Type.', 'bit-pi'),
+
+    'Entity' => __('Entity', 'bit-pi'),
+
+    'Select an entity' => __('Select an entity', 'bit-pi'),
+
+    'The user adding or removing the reaction.' => __('The user adding or removing the reaction.', 'bit-pi'),
+
+    'The user whose profile will be updated.' => __('The user whose profile will be updated.', 'bit-pi'),
+
+    'The user\'s first name.' => __('The user\'s first name.', 'bit-pi'),
+
+    'The user\'s last name.' => __('The user\'s last name.', 'bit-pi'),
+
+    'The name that will appear publicly on the user\'s profile.' => __('The name that will appear publicly on the user\'s profile.', 'bit-pi'),
+
+    'The user\'s website URL.' => __('The user\'s website URL.', 'bit-pi'),
+
+    'Website URL' => __('Website URL', 'bit-pi'),
+
+    'The user\'s bio or profile description.' => __('The user\'s bio or profile description.', 'bit-pi'),
+
+    'Bio / Description' => __('Bio / Description', 'bit-pi'),
 
     'Create Mockup' => __('Create Mockup', 'bit-pi'),
 
@@ -13517,8 +13991,6 @@ return [
 
     'New Color' => __('New Color', 'bit-pi'),
 
-    'Enroll User in Course' => __('Enroll User in Course', 'bit-pi'),
-
     'List Enrolled Users' => __('List Enrolled Users', 'bit-pi'),
 
     'Mark Course Complete' => __('Mark Course Complete', 'bit-pi'),
@@ -13529,13 +14001,9 @@ return [
 
     'Achieved target percentage on a quiz' => __('Achieved target percentage on a quiz', 'bit-pi'),
 
-    'Course' => __('Course', 'bit-pi'),
-
     'Enter the email address of the user you want to enroll in the course. Leave empty to use current user email.' => __('Enter the email address of the user you want to enroll in the course. Leave empty to use current user email.', 'bit-pi'),
 
     'Enter the User ID of the user who completed the course.' => __('Enter the User ID of the user who completed the course.', 'bit-pi'),
-
-    'Lesson' => __('Lesson', 'bit-pi'),
 
     'Enter the email address of the user. Leave empty to use current user email.' => __('Enter the email address of the user. Leave empty to use current user email.', 'bit-pi'),
 
@@ -13853,8 +14321,6 @@ return [
 
     'Create User' => __('Create User', 'bit-pi'),
 
-    'User Registered' => __('User Registered', 'bit-pi'),
-
     'Select the form' => __('Select the form', 'bit-pi'),
 
     'User Field' => __('User Field', 'bit-pi'),
@@ -13870,8 +14336,6 @@ return [
     'Profile Approved' => __('Profile Approved', 'bit-pi'),
 
     'Profile Rejected' => __('Profile Rejected', 'bit-pi'),
-
-    'Post Submitted' => __('Post Submitted', 'bit-pi'),
 
     'Post Updated' => __('Post Updated', 'bit-pi'),
 
@@ -13937,8 +14401,6 @@ return [
 
     'Posts' => __('Posts', 'bit-pi'),
 
-    'Select a post' => __('Select a post', 'bit-pi'),
-
     'Booking created' => __('Booking created', 'bit-pi'),
 
     'Booking confirmed' => __('Booking confirmed', 'bit-pi'),
@@ -13950,6 +14412,88 @@ return [
     'Outgoing Webhook' => __('Outgoing Webhook', 'bit-pi'),
 
     'Incoming Webhook' => __('Incoming Webhook', 'bit-pi'),
+
+    'Create Documentation' => __('Create Documentation', 'bit-pi'),
+
+    'Create Section' => __('Create Section', 'bit-pi'),
+
+    'Create Article' => __('Create Article', 'bit-pi'),
+
+    'Get All Documentations' => __('Get All Documentations', 'bit-pi'),
+
+    'Get Documentation' => __('Get Documentation', 'bit-pi'),
+
+    'Get Sections' => __('Get Sections', 'bit-pi'),
+
+    'Get Section' => __('Get Section', 'bit-pi'),
+
+    'Get Articles' => __('Get Articles', 'bit-pi'),
+
+    'Get Article' => __('Get Article', 'bit-pi'),
+
+    'Documentation Created' => __('Documentation Created', 'bit-pi'),
+
+    'Documentation Updated' => __('Documentation Updated', 'bit-pi'),
+
+    'Section Created' => __('Section Created', 'bit-pi'),
+
+    'Section Updated' => __('Section Updated', 'bit-pi'),
+
+    'Article Created' => __('Article Created', 'bit-pi'),
+
+    'Article Updated' => __('Article Updated', 'bit-pi'),
+
+    'Document Moved to Trash' => __('Document Moved to Trash', 'bit-pi'),
+
+    'Article' => __('Article', 'bit-pi'),
+
+    'Select an article' => __('Select an article', 'bit-pi'),
+
+    'Documentation' => __('Documentation', 'bit-pi'),
+
+    'Select a documentation' => __('Select a documentation', 'bit-pi'),
+
+    'Documentation (Optional)' => __('Documentation (Optional)', 'bit-pi'),
+
+    'Filter by documentation' => __('Filter by documentation', 'bit-pi'),
+
+    'Section (Optional)' => __('Section (Optional)', 'bit-pi'),
+
+    'Filter by section' => __('Filter by section', 'bit-pi'),
+
+    'Select the documentation or map documentation ID from previous steps.' => __('Select the documentation or map documentation ID from previous steps.', 'bit-pi'),
+
+    'Select the section or map section ID from previous steps.' => __('Select the section or map section ID from previous steps.', 'bit-pi'),
+
+    'Section' => __('Section', 'bit-pi'),
+
+    'Enter the article title.' => __('Enter the article title.', 'bit-pi'),
+
+    'Article Title' => __('Article Title', 'bit-pi'),
+
+    'Enter article content.' => __('Enter article content.', 'bit-pi'),
+
+    'Article Content' => __('Article Content', 'bit-pi'),
+
+    'Enter the documentation title.' => __('Enter the documentation title.', 'bit-pi'),
+
+    'Documentation Title' => __('Documentation Title', 'bit-pi'),
+
+    'Enter documentation content.' => __('Enter documentation content.', 'bit-pi'),
+
+    'Documentation Content' => __('Documentation Content', 'bit-pi'),
+
+    'Default status is Draft. You can change it to Publish, Pending Review, or Private.' => __('Default status is Draft. You can change it to Publish, Pending Review, or Private.', 'bit-pi'),
+
+    'Enter the section title.' => __('Enter the section title.', 'bit-pi'),
+
+    'Section Title' => __('Section Title', 'bit-pi'),
+
+    'Enter section content.' => __('Enter section content.', 'bit-pi'),
+
+    'Section Content' => __('Section Content', 'bit-pi'),
+
+    'Filter sections by documentation' => __('Filter sections by documentation', 'bit-pi'),
 
     'Send Template Message' => __('Send Template Message', 'bit-pi'),
 
@@ -14815,8 +15359,6 @@ return [
 
     'Brand ID' => __('Brand ID', 'bit-pi'),
 
-    'Category ID' => __('Category ID', 'bit-pi'),
-
     'product ID' => __('product ID', 'bit-pi'),
 
     'Shipping Class ID' => __('Shipping Class ID', 'bit-pi'),
@@ -15121,8 +15663,6 @@ return [
 
     'Reply To Comment' => __('Reply To Comment', 'bit-pi'),
 
-    'Delete Comment' => __('Delete Comment', 'bit-pi'),
-
     'Want to see all post types? Just hit **Test Run** to fetch them.' => __('Want to see all post types? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
     'Get Post Type (Single Post)' => __('Get Post Type (Single Post)', 'bit-pi'),
@@ -15232,8 +15772,6 @@ return [
     '**When Trigger**: After post is moved to trash' => __('**When Trigger**: After post is moved to trash', 'bit-pi'),
 
     '*Fires after a post is moved to the trash.*' => __('*Fires after a post is moved to the trash.*', 'bit-pi'),
-
-    'Post Deleted' => __('Post Deleted', 'bit-pi'),
 
     '**When Trigger**: After post is deleted' => __('**When Trigger**: After post is deleted', 'bit-pi'),
 
@@ -16147,6 +16685,14 @@ return [
 
     'Select a Job Type' => __('Select a Job Type', 'bit-pi'),
 
+    'Add Points to Customer' => __('Add Points to Customer', 'bit-pi'),
+
+    'Remove Points from Customer' => __('Remove Points from Customer', 'bit-pi'),
+
+    'Points Awarded to Customer' => __('Points Awarded to Customer', 'bit-pi'),
+
+    'This trigger fires when a customer earns loyalty points.' => __('This trigger fires when a customer earns loyalty points.', 'bit-pi'),
+
     'User submits a poll' => __('User submits a poll', 'bit-pi'),
 
     'User completes payment for a form' => __('User completes payment for a form', 'bit-pi'),
@@ -16252,6 +16798,108 @@ return [
     'Note: navigate to the WS Form settings, select "Run WordPress Hook" as the action type, and enter the Hook Tag: bit_pi_do_action.' => __('Note: navigate to the WS Form settings, select "Run WordPress Hook" as the action type, and enter the Hook Tag: bit_pi_do_action.', 'bit-pi'),
 
     'Create a Lead' => __('Create a Lead', 'bit-pi'),
+
+    'Create Vendor' => __('Create Vendor', 'bit-pi'),
+
+    'Update Vendor' => __('Update Vendor', 'bit-pi'),
+
+    'Create Invoice' => __('Create Invoice', 'bit-pi'),
+
+    'Update Invoice' => __('Update Invoice', 'bit-pi'),
+
+    'Create Quote' => __('Create Quote', 'bit-pi'),
+
+    'Update Quote' => __('Update Quote', 'bit-pi'),
+
+    'Create Purchase Order' => __('Create Purchase Order', 'bit-pi'),
+
+    'Update Purchase Order' => __('Update Purchase Order', 'bit-pi'),
+
+    'Create Module Entry' => __('Create Module Entry', 'bit-pi'),
+
+    'Update Module Entry' => __('Update Module Entry', 'bit-pi'),
+
+    'Delete Module Entry' => __('Delete Module Entry', 'bit-pi'),
+
+    'Select a layout to view its stages.' => __('Select a layout to view its stages.', 'bit-pi'),
+
+    'Select Layout' => __('Select Layout', 'bit-pi'),
+
+    'Select a layout' => __('Select a layout', 'bit-pi'),
+
+    'Select a Stages for Deal. If none appear, there are no stages for that layout.' => __('Select a Stages for Deal. If none appear, there are no stages for that layout.', 'bit-pi'),
+
+    'Select a Stage' => __('Select a Stage', 'bit-pi'),
+
+    'Deals Fields' => __('Deals Fields', 'bit-pi'),
+
+    'Product Name or ID' => __('Product Name or ID', 'bit-pi'),
+
+    'List Price' => __('List Price', 'bit-pi'),
+
+    'Product Description' => __('Product Description', 'bit-pi'),
+
+    'Quantity in Stock' => __('Quantity in Stock', 'bit-pi'),
+
+    'Total After Discount' => __('Total After Discount', 'bit-pi'),
+
+    'Total (Net)' => __('Total (Net)', 'bit-pi'),
+
+    'Product Fields' => __('Product Fields', 'bit-pi'),
+
+    'Invoice Fields' => __('Invoice Fields', 'bit-pi'),
+
+    'Select the vendor for this purchase order.' => __('Select the vendor for this purchase order.', 'bit-pi'),
+
+    'Select Vendor' => __('Select Vendor', 'bit-pi'),
+
+    'Select a vendor' => __('Select a vendor', 'bit-pi'),
+
+    'Purchase Order Fields' => __('Purchase Order Fields', 'bit-pi'),
+
+    'Quote Fields' => __('Quote Fields', 'bit-pi'),
+
+    'Select the account for this sales order.' => __('Select the account for this sales order.', 'bit-pi'),
+
+    'Sales Order Fields' => __('Sales Order Fields', 'bit-pi'),
+
+    'Vendor Fields' => __('Vendor Fields', 'bit-pi'),
+
+    'You can find your OAuth credentials in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://api-console.zoho.com/">Zoho API Console</a>' => __('You can find your OAuth credentials in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://api-console.zoho.com/">Zoho API Console</a>', 'bit-pi'),
+
+    'Select the deal you want to update.' => __('Select the deal you want to update.', 'bit-pi'),
+
+    'Select Deal' => __('Select Deal', 'bit-pi'),
+
+    'Select a deal' => __('Select a deal', 'bit-pi'),
+
+    'Select the invoice you want to update.' => __('Select the invoice you want to update.', 'bit-pi'),
+
+    'Select an invoice' => __('Select an invoice', 'bit-pi'),
+
+    'Select the product you want to update.' => __('Select the product you want to update.', 'bit-pi'),
+
+    'Select Product' => __('Select Product', 'bit-pi'),
+
+    'Select the purchase order you want to update.' => __('Select the purchase order you want to update.', 'bit-pi'),
+
+    'Select Purchase Order' => __('Select Purchase Order', 'bit-pi'),
+
+    'Select a purchase order' => __('Select a purchase order', 'bit-pi'),
+
+    'Select the quote you want to update.' => __('Select the quote you want to update.', 'bit-pi'),
+
+    'Select Quote' => __('Select Quote', 'bit-pi'),
+
+    'Select a quote' => __('Select a quote', 'bit-pi'),
+
+    'Select the sales order you want to update.' => __('Select the sales order you want to update.', 'bit-pi'),
+
+    'Select Sales Order' => __('Select Sales Order', 'bit-pi'),
+
+    'Select a sales order' => __('Select a sales order', 'bit-pi'),
+
+    'Select the vendor you want to update.' => __('Select the vendor you want to update.', 'bit-pi'),
 
     'Create Project' => __('Create Project', 'bit-pi'),
 
@@ -16380,8 +17028,6 @@ return [
     'Select the portal where the project is located.' => __('Select the portal where the project is located.', 'bit-pi'),
 
     'Select the project you want to delete.' => __('Select the project you want to delete.', 'bit-pi'),
-
-    'You can find your OAuth credentials in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://api-console.zoho.com/">Zoho API Console</a>' => __('You can find your OAuth credentials in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://api-console.zoho.com/">Zoho API Console</a>', 'bit-pi'),
 
     'US (com)' => __('US (com)', 'bit-pi'),
 
