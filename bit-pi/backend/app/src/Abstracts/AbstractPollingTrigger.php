@@ -23,7 +23,7 @@ abstract class AbstractPollingTrigger
      *
      * @return string the name of the unique identifier field in the polled data (default: 'id')
      */
-    public function getPollingUniqueFieldName(): string
+    public function getUniquePollingFieldName(): string
     {
         return 'id';
     }

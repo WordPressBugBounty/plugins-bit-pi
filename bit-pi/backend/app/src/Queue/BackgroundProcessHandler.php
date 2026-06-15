@@ -253,7 +253,9 @@ abstract class BackgroundProcessHandler extends AsyncRequest
             // No data to process.
             return $this->maybeWpDie();
         }
+
         check_ajax_referer(Config::withPrefix('nonce'), '_ajax_nonce');
+
         $this->handle();
 
         return $this->maybeWpDie();
@@ -382,35 +384,6 @@ abstract class BackgroundProcessHandler extends AsyncRequest
         }
 
         $this->dispatch();
-    }
-
-    public function batchProcessHandle()
-    {
-        check_ajax_referer(Config::withPrefix('nonce'), '_ajax_nonce');
-
-        $this->startTime = time();
-
-        $batch = $this->getBatch();
-
-        if (!isset($batch->key)) {
-            return;
-        }
-
-        if (!$this->delete($batch->key)) {
-            return;
-        }
-
-        if ($this->checkCpuLoad(70)) {
-            sleep(5);
-        }
-
-        if (\function_exists('fastcgi_finish_request')) {
-            fastcgi_finish_request();
-        }
-
-        $this->executeBatchTasks($batch);
-
-        return $this->maybeWpDie();
     }
 
     /**
@@ -546,11 +519,31 @@ abstract class BackgroundProcessHandler extends AsyncRequest
     {
         $this->lockProcess();
 
-        do {
-            $this->batchDispatch();
-        } while (!$this->isQueueEmpty() && !$this->timeExceeded() && !$this->memoryExceeded());
+        // Return the response to the dispatcher and free the FPM worker's client
+        // connection while the queue keeps processing in the background.
+        if (\function_exists('fastcgi_finish_request')) {
+            fastcgi_finish_request();
+        }
 
-        $this->unlockProcess();
+        try {
+            do {
+                $batch = $this->getBatch();
+
+                if (!isset($batch->key)) {
+                    break;
+                }
+
+                if (!$this->delete($batch->key)) {
+                    break;
+                }
+
+                $this->executeBatchTasks($batch);
+            } while (!$this->isQueueEmpty() && !$this->timeExceeded() && !$this->memoryExceeded());
+        } finally {
+            // Always release the lock, even if a batch throws, so the queue
+            // isn't blocked until the lock transient expires.
+            $this->unlockProcess();
+        }
 
         if (!$this->isQueueEmpty()) {
             $this->dispatch();
@@ -686,69 +679,5 @@ abstract class BackgroundProcessHandler extends AsyncRequest
 
     abstract protected function batchComplete();
 
-    abstract protected function executeBatchTasks($batch);
-
-    private function checkCpuLoad($threshold = 75)
-    {
-        $cpuLoad = strtoupper(substr(PHP_OS, 0, 3)) === 'WIN' ? $this->getCpuLoadWindows() : $this->getCpuLoadLinux();
-
-        return $cpuLoad > $threshold;
-    }
-
-    private function getCpuLoadLinux()
-    {
-        if (file_exists('/proc/cpuinfo') && is_readable('/proc/cpuinfo')) {
-            $cpuCount = substr_count(file_get_contents('/proc/cpuinfo'), 'processor');
-        } elseif (\function_exists('shell_exec') && is_executable('/usr/bin/nproc')) {
-            $cpuCount = (int) trim(shell_exec('nproc'));
-        } else {
-            $cpuCount = 1;
-        }
-
-        $lastOneMinuteLoad = $this->getLastOneMinuteResourceLoad();
-
-        return ($lastOneMinuteLoad / max($cpuCount, 1)) * 100;
-    }
-
-    private function getLastOneMinuteResourceLoad()
-    {
-        $firstMinuteIndexPosition = 0;
-
-        if (\function_exists('sys_getloadavg')) {
-            $loadAvg = @sys_getloadavg();
-            if ($loadAvg !== false && isset($loadAvg[$firstMinuteIndexPosition])) {
-                return $loadAvg[$firstMinuteIndexPosition];
-            }
-        }
-
-        if (is_readable('/proc/loadavg')) {
-            $content = @file_get_contents('/proc/loadavg');
-            if ($content !== false) {
-                $loadAvg = preg_split('/\s+/', trim($content));
-                if (isset($loadAvg[$firstMinuteIndexPosition])) {
-                    return $loadAvg[$firstMinuteIndexPosition];
-                }
-            }
-        }
-
-        if (\function_exists('shell_exec')) {
-            $uptime = @shell_exec('uptime');
-            if ($uptime && preg_match('/load average[s]?:\s*([0-9\.]+)/i', $uptime, $matches)) {
-                return str_replace(',', '.', $matches[1]);
-            }
-        }
-
-        return 0;
-    }
-
-    private function getCpuLoadWindows()
-    {
-        $cpuLoad = trim(shell_exec('wmic cpu get loadpercentage'));
-
-        if (preg_match('/\d+/', $cpuLoad, $matches)) {
-            return (int) $matches[0];
-        }
-
-        return 0;
-    }
+    abstract protected function executeBatchTasks($batch, $isSynchronous = false);
 }

@@ -34,7 +34,7 @@ class Flow extends Model
 
     public const TOOLS = 'tools';
 
-    public const DEFAULT_SETTINGS = ['onNodeFail' => 'continue'];
+    public const DEFAULT_SETTINGS = ['onNodeFail' => 'continue', 'background_process' => true];
 
     protected $prefix = Config::VAR_PREFIX;
 

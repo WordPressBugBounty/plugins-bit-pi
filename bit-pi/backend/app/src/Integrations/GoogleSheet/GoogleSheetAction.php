@@ -7,81 +7,155 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
+use BitApps\Pi\Helpers\Utility;
+use BitApps\Pi\src\Authorization\AuthorizationFactory;
+use BitApps\Pi\src\Authorization\AuthorizationType;
 use BitApps\Pi\src\Flow\NodeInfoProvider;
-use BitApps\Pi\src\Integrations\GoogleSheet\Helpers\Common;
+use BitApps\Pi\src\Integrations\GoogleSheet\Helpers\GoogleSheetCommons;
 use BitApps\Pi\src\Interfaces\ActionInterface;
+use InvalidArgumentException;
 
 class GoogleSheetAction implements ActionInterface
 {
-    public const BASE_URL = 'https://sheets.googleapis.com/v4';
-
-    public const AUTH_TOKEN_URL = 'https://oauth2.googleapis.com/token';
-
-    public const ADD_ROW = 'addRow';
-
-    public const APPEND_OR_UPDATE_ROW = 'appendOrUpdateRow';
-
-    private GoogleSheetsRow $googleSheetRow;
-
     private NodeInfoProvider $nodeInfoProvider;
+
+    private GoogleSheetCommons $commons;
+
+    private GoogleSpreadsheetService $spreadsheetService;
+
+    private GoogleSheetService $sheetService;
+
+    private GoogleRowService $rowService;
 
     public function __construct(NodeInfoProvider $nodeInfoProvider)
     {
         $this->nodeInfoProvider = $nodeInfoProvider;
     }
 
-    /**
-     * Execute the action.
-     */
     public function execute(): array
     {
-        $data = $this->executeSheetAction();
+        $executedNodeAction = $this->executeSheetAction();
 
-        if (isset($data['response']->spreadsheetId)) {
-            return [
-                'status' => 'success',
-                'output' => $data['response'],
-                'input'  => $data['payload'],
-            ];
-        }
-
-        return [
-            'status' => 'error',
-            'output' => $data['response'],
-            'input'  => $data['payload'],
-        ];
+        return Utility::formatResponseData(
+            $executedNodeAction['status_code'],
+            $executedNodeAction['payload'],
+            $executedNodeAction['response']
+        );
     }
 
-    private function executeSheetAction()
+    private function executeMachine(string $machineSlug, array $configs, array $fieldMapData): array
     {
-        $configs = $this->nodeInfoProvider->getFieldMapConfigs();
-
-        $sheetAction = $this->nodeInfoProvider->getMachineSlug();
-
         $repeaters = $this->nodeInfoProvider->getFieldMapRepeaters('row-data.value', false, false);
 
         $mappedColumnValue = [];
-
         foreach ($repeaters as $repeater) {
-            $mappedColumnValue[Common::excelColumnToIndex($repeater['column'])] = $repeater['value'] ?? '';
+            $mappedColumnValue[$this->commons->excelColumnToIndex($repeater['column'])] = $repeater['value'] ?? '';
         }
 
-        $headers = Common::getAuthorizationHeader($configs['connection-id']['value']);
+        $title = $fieldMapData['title'] ?? '';
+        $limit = $fieldMapData['limit'] ?? 10;
+        $spreadsheetId = $configs['spreadsheet-id']['value'] ?? null;
+        $sheetTitle = $configs['sheet-title']['value'] ?? null;
 
-        if (isset($headers['error'])) {
-            return $headers;
+        switch ($machineSlug) {
+            case 'createSpreadsheet':
+                return $this->spreadsheetService->createSpreadsheet($fieldMapData);
+
+            case 'findSpreadsheets':
+                return $this->spreadsheetService->findSpreadsheets($title, $limit);
+
+            case 'deleteSpreadsheet':
+                return $this->spreadsheetService->deleteSpreadsheet($spreadsheetId);
+
+            case 'createSheet':
+                return $this->sheetService->createSheet($spreadsheetId, $fieldMapData);
+
+            case 'findWorksheet':
+                $exactMatch = $fieldMapData['exactMatch'] ?? false;
+
+                return $this->sheetService->findWorksheet($spreadsheetId, $title, $exactMatch);
+
+            case 'copySheet':
+                return $this->sheetService->copySheet($configs['spreadsheet-id']['value'] ?? null, $configs['sheet-title']['value'] ?? null, $fieldMapData);
+
+            case 'deleteSheet':
+                return $this->sheetService->deleteSheet($spreadsheetId, $sheetTitle);
+
+            case 'clearSheet':
+                return $this->sheetService->clearSheet($spreadsheetId, $sheetTitle, $configs['is-first-row-headers']['value'] ?? false);
+
+            case 'exportSheet':
+                return $this->sheetService->exportSheet($spreadsheetId, $sheetTitle, $configs['format']['value'] ?? 'csv');
+
+            case 'addRow':
+                return $this->rowService->addRow($configs, $mappedColumnValue);
+
+            case 'appendOrUpdateRow':
+                return $this->rowService->appendOrUpdateRow($configs, $mappedColumnValue);
+
+            case 'updateRow':
+                return $this->rowService->updateWorksheetRow($spreadsheetId, $sheetTitle, $fieldMapData, $mappedColumnValue);
+
+            case 'deleteRow':
+                return $this->rowService->deleteRow($spreadsheetId, $sheetTitle, $fieldMapData['rowId'] ?? null);
+
+            case 'getSingleRowById':
+                return $this->rowService->getRowByNumber($spreadsheetId, $sheetTitle, $fieldMapData['rowId'] ?? null);
+
+            case 'getAllRows':
+                return $this->rowService->getRows($spreadsheetId, $sheetTitle);
+
+            case 'createColumn':
+                return $this->rowService->createColumn($spreadsheetId, $sheetTitle, $fieldMapData['columnName'] ?? '', $fieldMapData['columnIndex'] ?? 0);
+
+            case 'onNewSheet':
+                return $this->sheetService->getWorksheets($spreadsheetId);
+
+            case 'onNewSpreadsheet':
+                return $this->spreadsheetService->getSpreadsheets();
+
+            case 'onRowAdded':
+                return $this->rowService->getRow($configs);
+
+            case 'onRowAddedOrUpdated':
+                return $this->rowService->getRows($spreadsheetId, $sheetTitle);
+
+            default:
+                throw new InvalidArgumentException("Unknown action: {$machineSlug}");
+        }
+    }
+
+    private function executeSheetAction(): array
+    {
+        $configs = $this->nodeInfoProvider->getFieldMapConfigs();
+        $machineSlug = $this->nodeInfoProvider->getMachineSlug();
+        $fieldMapData = $this->nodeInfoProvider->getFieldMapData();
+
+        $connectionId = $configs['connection-id']['value'] ?? $configs['connection-id'];
+        $accessToken = AuthorizationFactory::getAuthorizationHandler(
+            AuthorizationType::OAUTH2,
+            $connectionId
+        )->setRefreshTokenUrl('https://oauth2.googleapis.com/token')->getAccessToken();
+
+        if (\is_array($accessToken)) {
+            return [
+                'response'    => $accessToken,
+                'payload'     => [],
+                'status_code' => 401
+            ];
         }
 
-        $this->googleSheetRow = new GoogleSheetsRow(new HttpClient(['headers' => $headers]), static::BASE_URL);
+        $headers = [
+            'Authorization' => $accessToken,
+            'Content-Type'  => 'application/json',
+        ];
 
-        if ($sheetAction === self::ADD_ROW) {
-            return $this->googleSheetRow->createRow($configs, $mappedColumnValue);
-        }
+        $this->commons = new GoogleSheetCommons(new HttpClient(['headers' => $headers]));
+        $this->spreadsheetService = new GoogleSpreadsheetService($this->commons);
+        $this->sheetService = new GoogleSheetService($this->commons);
+        $this->rowService = new GoogleRowService($this->commons);
 
-        if ($sheetAction === self::APPEND_OR_UPDATE_ROW) {
-            return $this->googleSheetRow->appendOrUpdateRow($configs, $mappedColumnValue);
-        }
+        return $this->executeMachine($machineSlug, $configs, $fieldMapData);
     }
 }

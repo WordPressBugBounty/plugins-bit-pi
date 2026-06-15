@@ -7,20 +7,17 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
 use BitApps\Pi\src\Abstracts\AbstractPollingTrigger;
+use BitApps\Pi\src\Authorization\AuthorizationFactory;
+use BitApps\Pi\src\Authorization\AuthorizationType;
 use BitApps\Pi\src\Flow\NodeInfoProvider;
-use BitApps\Pi\src\Integrations\GoogleSheet\Helpers\Common;
+use BitApps\Pi\src\Integrations\GoogleSheet\Helpers\GoogleSheetCommons;
 
 class GoogleSheetPollingTrigger extends AbstractPollingTrigger
 {
-    public const BASE_URL = 'https://sheets.googleapis.com/v4';
-
-    public const ADD_ROW = 'addRow';
-
-    public const APPEND_OR_UPDATE_ROW = 'appendOrUpdateRow';
-
-    private const POLLING_UNIQUE_FIELD_NAME = '_row_number';
+    private string $poolingUniqueFieldName = '_row_number';
 
     private NodeInfoProvider $nodeInfoProvider;
 
@@ -32,35 +29,88 @@ class GoogleSheetPollingTrigger extends AbstractPollingTrigger
     public function poll(): array
     {
         $configs = $this->nodeInfoProvider->getFieldMapConfigs();
-
         $machineSlug = $this->nodeInfoProvider->getMachineSlug();
+        $connectionId = $configs['connection-id']['value'] ?? $configs['connection-id'];
+        $accessToken = AuthorizationFactory::getAuthorizationHandler(
+            AuthorizationType::OAUTH2,
+            $connectionId
+        )->setRefreshTokenUrl('https://oauth2.googleapis.com/token')->getAccessToken();
 
-        $headers = Common::getAuthorizationHeader($configs['connection-id']['value']);
-
-        $googleSheetRow = new GoogleSheetsRow(new HttpClient(['headers' => $headers]), static::BASE_URL);
-
-        if ($machineSlug === 'onRowAdded') {
-            $response = $googleSheetRow->getRow($configs);
+        if (!\is_string($accessToken)) {
+            return ['status' => 'error', 'output' => $accessToken, 'input' => []];
         }
 
-        if (empty($response) || !isset($response['response'])) {
-            return [
-                'status'  => 'error',
-                'output'  => [],
-                'input'   => $response['payload'] ?? [],
-                'message' => $response['message'] ?? 'Unknown error occurred while fetching rows.',
-            ];
+        $headers = [
+            'Authorization' => $accessToken,
+            'Content-Type'  => 'application/json',
+        ];
+
+        $commons = new GoogleSheetCommons(new HttpClient(['headers' => $headers]));
+        $sheetService = new GoogleSheetService($commons);
+        $spreadsheetService = new GoogleSpreadsheetService($commons);
+        $rowService = new GoogleRowService($commons);
+
+        switch ($machineSlug) {
+            case 'onNewSheet':
+                $spreadsheetId = $configs['spreadsheet-id']['value'] ?? $configs['spreadsheet-id'] ?? '';
+                $response = $sheetService->getWorksheets($spreadsheetId);
+
+                break;
+
+            case 'onNewSpreadsheet':
+                $response = $spreadsheetService->getSpreadsheets();
+
+                break;
+
+            case 'onRowAddedOrUpdated':
+                $spreadsheetId = $configs['spreadsheet-id']['value'] ?? $configs['spreadsheet-id'] ?? '';
+                $sheetTitle = $configs['sheet-title']['value'] ?? $configs['sheet-title'] ?? '';
+                $response = $rowService->getRows($spreadsheetId, $sheetTitle);
+                $triggerColumn = $configs['column-to-match-on']['value'] ?? $configs['column-to-match-on'] ?? 'all_columns';
+                $rows = $response['response'] ?? [];
+                foreach ($rows as &$row) {
+                    $hashData = $row;
+                    if ($triggerColumn !== 'all_columns') {
+                        $hashData = $row[$triggerColumn] ?? $row;
+                    }
+                    $row['_row_hash'] = md5(JSON::encode($hashData));
+                }
+                $response['response'] = $rows;
+
+                break;
+
+            default:
+                $response = $rowService->getRow($configs);
+
+                break;
         }
+
+        $status = $response['status'] ?? (isset($response['response']) ? 'success' : 'error');
+        $output = JSON::decode(JSON::encode($response['response'] ?? []), true) ?? [];
 
         return [
-            'status' => 'success',
-            'output' => $response['response'] ?? [],
+            'status' => $status,
+            'output' => $output,
             'input'  => $response['payload'] ?? [],
         ];
     }
 
-    public function getPollingUniqueFieldName(): string
+    public function getUniquePollingFieldName(): string
     {
-        return self::POLLING_UNIQUE_FIELD_NAME;
+        $machineSlug = $this->nodeInfoProvider->getMachineSlug();
+
+        switch ($machineSlug) {
+            case 'onNewSheet':
+                return 'sheetId';
+
+            case 'onNewSpreadsheet':
+                return 'id';
+
+            case 'onRowAddedOrUpdated':
+                return '_row_hash';
+
+            default:
+                return $this->poolingUniqueFieldName;
+        }
     }
 }

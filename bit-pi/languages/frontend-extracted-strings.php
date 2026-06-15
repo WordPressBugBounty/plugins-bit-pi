@@ -554,6 +554,10 @@ return [
 
     'Flow Settings' => __('Flow Settings', 'bit-pi'),
 
+    'Background Processing' => __('Background Processing', 'bit-pi'),
+
+    'Disable this if your server blocks internal requests. Nodes will execute directly instead of via background queue.' => __('Disable this if your server blocks internal requests. Nodes will execute directly instead of via background queue.', 'bit-pi'),
+
     'If Any Node Fail' => __('If Any Node Fail', 'bit-pi'),
 
     'When a node fails in the flow execution process' => __('When a node fails in the flow execution process', 'bit-pi'),
@@ -1351,17 +1355,39 @@ return [
 
     'Re-execute' => __('Re-execute', 'bit-pi'),
 
-    'Title is required' => __('Title is required', 'bit-pi'),
-
     'Create Flow' => __('Create Flow', 'bit-pi'),
 
-    'Flow title input' => __('Flow title input', 'bit-pi'),
+    'Start from a template or build from scratch' => __('Start from a template or build from scratch', 'bit-pi'),
 
-    'Write title here...' => __('Write title here...', 'bit-pi'),
+    'Please select a valid file to import' => __('Please select a valid file to import', 'bit-pi'),
 
-    'Requires Pro' => __('Requires Pro', 'bit-pi'),
+    'Imported Flow' => __('Imported Flow', 'bit-pi'),
 
-    'Choose template:' => __('Choose template:', 'bit-pi'),
+    'Invalid JSON file' => __('Invalid JSON file', 'bit-pi'),
+
+    'Blueprint missing required map/data fields' => __('Blueprint missing required map/data fields', 'bit-pi'),
+
+    'Failed to create flow' => __('Failed to create flow', 'bit-pi'),
+
+    'Flow import failed' => __('Flow import failed', 'bit-pi'),
+
+    'Import failed' => __('Import failed', 'bit-pi'),
+
+    'Blank' => __('Blank', 'bit-pi'),
+
+    'Create From Scratch' => __('Create From Scratch', 'bit-pi'),
+
+    'All Categories' => __('All Categories', 'bit-pi'),
+
+    'Flow Title' => __('Flow Title', 'bit-pi'),
+
+    'Search Flow' => __('Search Flow', 'bit-pi'),
+
+    'All Templates' => __('All Templates', 'bit-pi'),
+
+    'Get started (Guide)' => __('Get started (Guide)', 'bit-pi'),
+
+    'No templates found.' => __('No templates found.', 'bit-pi'),
 
     'Create Tag' => __('Create Tag', 'bit-pi'),
 
@@ -1369,17 +1395,105 @@ return [
 
     'Edit tag name' => __('Edit tag name', 'bit-pi'),
 
-    'Create from scratch.' => __('Create from scratch.', 'bit-pi'),
-
-    'Blank' => __('Blank', 'bit-pi'),
-
     'Manage bulk data and send it to MailChimp and Google Sheets  (handled and filtered by tools).' => __('Manage bulk data and send it to MailChimp and Google Sheets  (handled and filtered by tools).', 'bit-pi'),
 
     'Example Flow' => __('Example Flow', 'bit-pi'),
 
-    'Send data to MailerLite and Brevo using the router after forms new record.' => __('Send data to MailerLite and Brevo using the router after forms new record.', 'bit-pi'),
+    'Save every Contact Form 7 submission as a new row in Google Sheets.' => __('Save every Contact Form 7 submission as a new row in Google Sheets.', 'bit-pi'),
 
-    'Elementor Form to Email Marketing' => __('Elementor Form to Email Marketing', 'bit-pi'),
+    'Contact Form 7 to Google Sheets' => __('Contact Form 7 to Google Sheets', 'bit-pi'),
+
+    'Summarize Bit Form submissions with AI, then email, Telegram and log them to Sheets.' => __('Summarize Bit Form submissions with AI, then email, Telegram and log them to Sheets.', 'bit-pi'),
+
+    'AI Form Submission Summary' => __('AI Form Submission Summary', 'bit-pi'),
+
+    'Classify support tickets with an AI agent and route them to the right channel.' => __('Classify support tickets with an AI agent and route them to the right channel.', 'bit-pi'),
+
+    'AI Support Ticket Classifier' => __('AI Support Ticket Classifier', 'bit-pi'),
+
+    'Append each new WooCommerce order to a Google Sheets spreadsheet.' => __('Append each new WooCommerce order to a Google Sheets spreadsheet.', 'bit-pi'),
+
+    'WooCommerce Order to Google Sheets' => __('WooCommerce Order to Google Sheets', 'bit-pi'),
+
+    'Generate WooCommerce product descriptions automatically with OpenAI.' => __('Generate WooCommerce product descriptions automatically with OpenAI.', 'bit-pi'),
+
+    'AI Product Description Generator' => __('AI Product Description Generator', 'bit-pi'),
+
+    'Alert your team by email, Telegram and Sheets when a high-value order arrives.' => __('Alert your team by email, Telegram and Sheets when a high-value order arrives.', 'bit-pi'),
+
+    'High-Value WooCommerce Order Alert' => __('High-Value WooCommerce Order Alert', 'bit-pi'),
+
+    'Add new WooCommerce customers to FluentCRM as contacts.' => __('Add new WooCommerce customers to FluentCRM as contacts.', 'bit-pi'),
+
+    'WooCommerce New Customer to CRM' => __('WooCommerce New Customer to CRM', 'bit-pi'),
+
+    'Subscribe leads captured through Bit Form to a Mailchimp audience.' => __('Subscribe leads captured through Bit Form to a Mailchimp audience.', 'bit-pi'),
+
+    'Lead Form to Mailchimp' => __('Lead Form to Mailchimp', 'bit-pi'),
+
+    'Reply to support form submissions automatically with an AI-written email.' => __('Reply to support form submissions automatically with an AI-written email.', 'bit-pi'),
+
+    'Support Form Auto Reply' => __('Support Form Auto Reply', 'bit-pi'),
+
+    'Send a personalized AI-generated thank-you email after a WooCommerce order.' => __('Send a personalized AI-generated thank-you email after a WooCommerce order.', 'bit-pi'),
+
+    'WooCommerce Thank You Email' => __('WooCommerce Thank You Email', 'bit-pi'),
+
+    'A Telegram command bot powered by an AI agent with memory, email and replies.' => __('A Telegram command bot powered by an AI agent with memory, email and replies.', 'bit-pi'),
+
+    'Telegram Command AI Agent' => __('Telegram Command AI Agent', 'bit-pi'),
+
+    'Post every form submission to a Slack channel.' => __('Post every form submission to a Slack channel.', 'bit-pi'),
+
+    'Form Submission to Slack' => __('Form Submission to Slack', 'bit-pi'),
+
+    'Notify your team on Telegram with an AI summary of high-value orders.' => __('Notify your team on Telegram with an AI summary of high-value orders.', 'bit-pi'),
+
+    'WooCommerce High-Value Order Alert' => __('WooCommerce High-Value Order Alert', 'bit-pi'),
+
+    'Send an AI-summarized WooCommerce order alert to Slack.' => __('Send an AI-summarized WooCommerce order alert to Slack.', 'bit-pi'),
+
+    'WooCommerce Order Alert to Slack' => __('WooCommerce Order Alert to Slack', 'bit-pi'),
+
+    'Pick a topic from Google Sheets, draft a blog post with an AI agent, publish to WordPress and email it.' => __('Pick a topic from Google Sheets, draft a blog post with an AI agent, publish to WordPress and email it.', 'bit-pi'),
+
+    'AI Blog Draft From Google Sheet Topic' => __('AI Blog Draft From Google Sheet Topic', 'bit-pi'),
+
+    'Generate a weekly WooCommerce sales report with an AI agent and send it to email, Sheets and Telegram.' => __('Generate a weekly WooCommerce sales report with an AI agent and send it to email, Sheets and Telegram.', 'bit-pi'),
+
+    'Weekly WooCommerce Sales Intelligence Report' => __('Weekly WooCommerce Sales Intelligence Report', 'bit-pi'),
+
+    'Add Bit Form leads to FluentCRM, auto-tag them, then notify the team by email and Telegram.' => __('Add Bit Form leads to FluentCRM, auto-tag them, then notify the team by email and Telegram.', 'bit-pi'),
+
+    'Website Lead to FluentCRM with Auto Tagging' => __('Website Lead to FluentCRM with Auto Tagging', 'bit-pi'),
+
+    'Recover failed WooCommerce payments by logging them to Sheets and alerting via email and Telegram.' => __('Recover failed WooCommerce payments by logging them to Sheets and alerting via email and Telegram.', 'bit-pi'),
+
+    'WooCommerce Failed Payment Recovery' => __('WooCommerce Failed Payment Recovery', 'bit-pi'),
+
+    'Send a Telegram alert when a WooCommerce product runs low on stock.' => __('Send a Telegram alert when a WooCommerce product runs low on stock.', 'bit-pi'),
+
+    'WooCommerce Low Stock Telegram Alert' => __('WooCommerce Low Stock Telegram Alert', 'bit-pi'),
+
+    'Route leave requests for human approval over email before notifying the requester.' => __('Route leave requests for human approval over email before notifying the requester.', 'bit-pi'),
+
+    'Leave Request Approval System' => __('Leave Request Approval System', 'bit-pi'),
+
+    'Route contact form submissions to the right department via Telegram and log to Sheets.' => __('Route contact form submissions to the right department via Telegram and log to Sheets.', 'bit-pi'),
+
+    'Multi-Department Contact Routing' => __('Multi-Department Contact Routing', 'bit-pi'),
+
+    'Welcome new employees by email and alert HR on Telegram when a user registers.' => __('Welcome new employees by email and alert HR on Telegram when a user registers.', 'bit-pi'),
+
+    'New Employee Welcome and HR Alert' => __('New Employee Welcome and HR Alert', 'bit-pi'),
+
+    'Capture an incoming sports webhook, log it to Sheets and alert via email and Telegram.' => __('Capture an incoming sports webhook, log it to Sheets and alert via email and Telegram.', 'bit-pi'),
+
+    'Incoming sports Webhook' => __('Incoming sports Webhook', 'bit-pi'),
+
+    'Capture a website form webhook and reply with an AI-written email.' => __('Capture a website form webhook and reply with an AI-written email.', 'bit-pi'),
+
+    'Website Form Reply Writer' => __('Website Form Reply Writer', 'bit-pi'),
 
     'Flows' => __('Flows', 'bit-pi'),
 
@@ -3385,6 +3499,40 @@ return [
 
     'Enter the user ID to subscribe.' => __('Enter the user ID to subscribe.', 'bit-pi'),
 
+    'Update Customer Group' => __('Update Customer Group', 'bit-pi'),
+
+    'This action will update the customer group for a B2BKing user.' => __('This action will update the customer group for a B2BKing user.', 'bit-pi'),
+
+    'Approve Customer' => __('Approve Customer', 'bit-pi'),
+
+    'This action will approve a B2BKing customer account.' => __('This action will approve a B2BKing customer account.', 'bit-pi'),
+
+    'Enable B2B for User' => __('Enable B2B for User', 'bit-pi'),
+
+    'This action will enable B2B access for a user.' => __('This action will enable B2B access for a user.', 'bit-pi'),
+
+    'Get Customer Info' => __('Get Customer Info', 'bit-pi'),
+
+    'Want to see customer B2BKing info? Just hit **Test Run** to fetch it.' => __('Want to see customer B2BKing info? Just hit **Test Run** to fetch it.', 'bit-pi'),
+
+    'Get All Groups' => __('Get All Groups', 'bit-pi'),
+
+    'Want to see all B2BKing groups? Just hit **Test Run** to fetch them.' => __('Want to see all B2BKing groups? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Account Approved' => __('Account Approved', 'bit-pi'),
+
+    'User Group Updated' => __('User Group Updated', 'bit-pi'),
+
+    'New Message' => __('New Message', 'bit-pi'),
+
+    'Enter the user email' => __('Enter the user email', 'bit-pi'),
+
+    'Enter email address' => __('Enter email address', 'bit-pi'),
+
+    'Select the group to assign to the user' => __('Select the group to assign to the user', 'bit-pi'),
+
+    'Select Group' => __('Select Group', 'bit-pi'),
+
     'Award Achievement to User' => __('Award Achievement to User', 'bit-pi'),
 
     'Enter the user ID or email.' => __('Enter the user ID or email.', 'bit-pi'),
@@ -3567,6 +3715,142 @@ return [
 
     'Post URL' => __('Post URL', 'bit-pi'),
 
+    'Cancel Appointment' => __('Cancel Appointment', 'bit-pi'),
+
+    'Update Appointment Status' => __('Update Appointment Status', 'bit-pi'),
+
+    'Delete Appointment' => __('Delete Appointment', 'bit-pi'),
+
+    'Create Customer' => __('Create Customer', 'bit-pi'),
+
+    'Update Customer' => __('Update Customer', 'bit-pi'),
+
+    'Delete Customer' => __('Delete Customer', 'bit-pi'),
+
+    'Get Appointment' => __('Get Appointment', 'bit-pi'),
+
+    'Get Customer' => __('Get Customer', 'bit-pi'),
+
+    'Get All Appointments' => __('Get All Appointments', 'bit-pi'),
+
+    'Get All Customers' => __('Get All Customers', 'bit-pi'),
+
+    'Get All Services' => __('Get All Services', 'bit-pi'),
+
+    'Appointment Booked' => __('Appointment Booked', 'bit-pi'),
+
+    'Appointment Status Changed' => __('Appointment Status Changed', 'bit-pi'),
+
+    'Appointment Rescheduled' => __('Appointment Rescheduled', 'bit-pi'),
+
+    'Appointment Updated' => __('Appointment Updated', 'bit-pi'),
+
+    'Appointment Refunded' => __('Appointment Refunded', 'bit-pi'),
+
+    'Customer Created' => __('Customer Created', 'bit-pi'),
+
+    'Customer Updated' => __('Customer Updated', 'bit-pi'),
+
+    'Services' => __('Services', 'bit-pi'),
+
+    'Select a service' => __('Select a service', 'bit-pi'),
+
+    'Select Appointment' => __('Select Appointment', 'bit-pi'),
+
+    'Select the Appointment' => __('Select the Appointment', 'bit-pi'),
+
+    'Select Customer' => __('Select Customer', 'bit-pi'),
+
+    'Select the Customer' => __('Select the Customer', 'bit-pi'),
+
+    'Enter the first name' => __('Enter the first name', 'bit-pi'),
+
+    'Enter the last name' => __('Enter the last name', 'bit-pi'),
+
+    'Enter the email address' => __('Enter the email address', 'bit-pi'),
+
+    'Enter the phone number' => __('Enter the phone number', 'bit-pi'),
+
+    'Failed to fetch appointments' => __('Failed to fetch appointments', 'bit-pi'),
+
+    'Failed to fetch customers' => __('Failed to fetch customers', 'bit-pi'),
+
+    'Failed to fetch services' => __('Failed to fetch services', 'bit-pi'),
+
+    'Approved' => __('Approved', 'bit-pi'),
+
+    'Cancelled' => __('Cancelled', 'bit-pi'),
+
+    'Rejected' => __('Rejected', 'bit-pi'),
+
+    'Select a status' => __('Select a status', 'bit-pi'),
+
+    'Create Appointment' => __('Create Appointment', 'bit-pi'),
+
+    'Creates a new appointment in Bookly.' => __('Creates a new appointment in Bookly.', 'bit-pi'),
+
+    'Updates the status of an existing appointment in Bookly.' => __('Updates the status of an existing appointment in Bookly.', 'bit-pi'),
+
+    'Deletes an existing appointment in Bookly.' => __('Deletes an existing appointment in Bookly.', 'bit-pi'),
+
+    'Get Appointment (All)' => __('Get Appointment (All)', 'bit-pi'),
+
+    'Fetches all appointments.' => __('Fetches all appointments.', 'bit-pi'),
+
+    'Get Appointment (Single)' => __('Get Appointment (Single)', 'bit-pi'),
+
+    'Fetches a single appointment by ID.' => __('Fetches a single appointment by ID.', 'bit-pi'),
+
+    'Creates a new customer in Bookly.' => __('Creates a new customer in Bookly.', 'bit-pi'),
+
+    'Updates an existing customer in Bookly.' => __('Updates an existing customer in Bookly.', 'bit-pi'),
+
+    'Deletes an existing customer in Bookly.' => __('Deletes an existing customer in Bookly.', 'bit-pi'),
+
+    'Get Customer (All)' => __('Get Customer (All)', 'bit-pi'),
+
+    'Fetches all customers.' => __('Fetches all customers.', 'bit-pi'),
+
+    'Get Customer (Single)' => __('Get Customer (Single)', 'bit-pi'),
+
+    'Fetches a single customer by ID.' => __('Fetches a single customer by ID.', 'bit-pi'),
+
+    'Select a customer' => __('Select a customer', 'bit-pi'),
+
+    'Select Service' => __('Select Service', 'bit-pi'),
+
+    'Select Staff' => __('Select Staff', 'bit-pi'),
+
+    'Select a staff member' => __('Select a staff member', 'bit-pi'),
+
+    'Start Date & Time' => __('Start Date & Time', 'bit-pi'),
+
+    'YYYY-MM-DD HH:MM:SS' => __('YYYY-MM-DD HH:MM:SS', 'bit-pi'),
+
+    'End Date & Time' => __('End Date & Time', 'bit-pi'),
+
+    'Number of Persons' => __('Number of Persons', 'bit-pi'),
+
+    'Internal Note' => __('Internal Note', 'bit-pi'),
+
+    'Full Name' => __('Full Name', 'bit-pi'),
+
+    'WordPress User ID' => __('WordPress User ID', 'bit-pi'),
+
+    'Select an appointment to delete' => __('Select an appointment to delete', 'bit-pi'),
+
+    'Select a customer to delete' => __('Select a customer to delete', 'bit-pi'),
+
+    'Appointment ID' => __('Appointment ID', 'bit-pi'),
+
+    'Customer ID' => __('Customer ID', 'bit-pi'),
+
+    'Select an appointment' => __('Select an appointment', 'bit-pi'),
+
+    'New Status' => __('New Status', 'bit-pi'),
+
+    'Select a customer to update' => __('Select a customer to update', 'bit-pi'),
+
     'Add Contacts To list' => __('Add Contacts To list', 'bit-pi'),
 
     'Delete a Contact' => __('Delete a Contact', 'bit-pi'),
@@ -3720,8 +4004,6 @@ return [
     'Hide Sitewide' => __('Hide Sitewide', 'bit-pi'),
 
     'Select the group where you want to add the post.' => __('Select the group where you want to add the post.', 'bit-pi'),
-
-    'Select Group' => __('Select Group', 'bit-pi'),
 
     'Enter the user ID whose activity feed you want to post to.' => __('Enter the user ID whose activity feed you want to post to.', 'bit-pi'),
 
@@ -4659,8 +4941,6 @@ return [
 
     'Date when the discount becomes active. Format: YYYY-MM-DD HH:MM:SS.' => __('Date when the discount becomes active. Format: YYYY-MM-DD HH:MM:SS.', 'bit-pi'),
 
-    'YYYY-MM-DD HH:MM:SS' => __('YYYY-MM-DD HH:MM:SS', 'bit-pi'),
-
     'Date when the discount expires. Format: YYYY-MM-DD HH:MM:SS.' => __('Date when the discount expires. Format: YYYY-MM-DD HH:MM:SS.', 'bit-pi'),
 
     'Maximum number of times this discount can be used (0 for unlimited).' => __('Maximum number of times this discount can be used (0 for unlimited).', 'bit-pi'),
@@ -4728,8 +5008,6 @@ return [
     'Failed' => __('Failed', 'bit-pi'),
 
     'Abandoned' => __('Abandoned', 'bit-pi'),
-
-    'Cancelled' => __('Cancelled', 'bit-pi'),
 
     'For custom field mapping, product id should be mapped to a field with numeric value.' => __('For custom field mapping, product id should be mapped to a field with numeric value.', 'bit-pi'),
 
@@ -6029,12 +6307,6 @@ return [
 
     'Fetches all subscription transactions.' => __('Fetches all subscription transactions.', 'bit-pi'),
 
-    'Get Customer (All)' => __('Get Customer (All)', 'bit-pi'),
-
-    'Fetches all customers.' => __('Fetches all customers.', 'bit-pi'),
-
-    'Get Customer (Single)' => __('Get Customer (Single)', 'bit-pi'),
-
     'Fetches a single customer.' => __('Fetches a single customer.', 'bit-pi'),
 
     'Get Customer Orders' => __('Get Customer Orders', 'bit-pi'),
@@ -6073,11 +6345,7 @@ return [
 
     'Creates a single customer.' => __('Creates a single customer.', 'bit-pi'),
 
-    'Update Customer' => __('Update Customer', 'bit-pi'),
-
     'Updates a single customer.' => __('Updates a single customer.', 'bit-pi'),
-
-    'Delete Customer' => __('Delete Customer', 'bit-pi'),
 
     'Deletes a single customer.' => __('Deletes a single customer.', 'bit-pi'),
 
@@ -6235,13 +6503,9 @@ return [
 
     'Triggers when an order\'s customer information is changed.' => __('Triggers when an order\'s customer information is changed.', 'bit-pi'),
 
-    'Customer Created' => __('Customer Created', 'bit-pi'),
-
     'Triggers when a new user is successfully registered.' => __('Triggers when a new user is successfully registered.', 'bit-pi'),
 
     'Coupon ID' => __('Coupon ID', 'bit-pi'),
-
-    'Customer ID' => __('Customer ID', 'bit-pi'),
 
     'License ID' => __('License ID', 'bit-pi'),
 
@@ -6288,8 +6552,6 @@ return [
     'Refetch Products' => __('Refetch Products', 'bit-pi'),
 
     'Customer' => __('Customer', 'bit-pi'),
-
-    'Select a customer' => __('Select a customer', 'bit-pi'),
 
     'On Hold' => __('On Hold', 'bit-pi'),
 
@@ -6759,8 +7021,6 @@ return [
 
     'Primary Company' => __('Primary Company', 'bit-pi'),
 
-    'Select a status' => __('Select a status', 'bit-pi'),
-
     'Campaign ID' => __('Campaign ID', 'bit-pi'),
 
     'Contact Email Address' => __('Contact Email Address', 'bit-pi'),
@@ -6827,10 +7087,6 @@ return [
 
     'Enter the customer email' => __('Enter the customer email', 'bit-pi'),
 
-    'Enter the first name' => __('Enter the first name', 'bit-pi'),
-
-    'Enter the last name' => __('Enter the last name', 'bit-pi'),
-
     'Enter the ticket subject' => __('Enter the ticket subject', 'bit-pi'),
 
     'Ticket Subject' => __('Ticket Subject', 'bit-pi'),
@@ -6884,6 +7140,56 @@ return [
     'Select a poll' => __('Select a poll', 'bit-pi'),
 
     'Quizzes' => __('Quizzes', 'bit-pi'),
+
+    'Create Lead' => __('Create Lead', 'bit-pi'),
+
+    'Get Lead' => __('Get Lead', 'bit-pi'),
+
+    'Get Leads' => __('Get Leads', 'bit-pi'),
+
+    'Get Widget' => __('Get Widget', 'bit-pi'),
+
+    'Lead Created' => __('Lead Created', 'bit-pi'),
+
+    'Widget' => __('Widget', 'bit-pi'),
+
+    'Select a widget' => __('Select a widget', 'bit-pi'),
+
+    'Select the FormyChat widget to create the lead for.' => __('Select the FormyChat widget to create the lead for.', 'bit-pi'),
+
+    'Map form field key-value pairs for the lead.' => __('Map form field key-value pairs for the lead.', 'bit-pi'),
+
+    'Form Fields' => __('Form Fields', 'bit-pi'),
+
+    'Add Meta' => __('Add Meta', 'bit-pi'),
+
+    'Map additional meta key-value pairs for the lead.' => __('Map additional meta key-value pairs for the lead.', 'bit-pi'),
+
+    'Meta' => __('Meta', 'bit-pi'),
+
+    'Enter an optional note for the lead.' => __('Enter an optional note for the lead.', 'bit-pi'),
+
+    'Enter the ID of the lead to retrieve.' => __('Enter the ID of the lead to retrieve.', 'bit-pi'),
+
+    'Lead ID' => __('Lead ID', 'bit-pi'),
+
+    'Enter Lead ID' => __('Enter Lead ID', 'bit-pi'),
+
+    'Select the FormyChat widget to retrieve leads from.' => __('Select the FormyChat widget to retrieve leads from.', 'bit-pi'),
+
+    'Sort leads by ascending or descending order.' => __('Sort leads by ascending or descending order.', 'bit-pi'),
+
+    'Order' => __('Order', 'bit-pi'),
+
+    'Descending' => __('Descending', 'bit-pi'),
+
+    'Ascending' => __('Ascending', 'bit-pi'),
+
+    'Number of leads to retrieve per page (default: 20).' => __('Number of leads to retrieve per page (default: 20).', 'bit-pi'),
+
+    'Page number to retrieve (default: 1).' => __('Page number to retrieve (default: 1).', 'bit-pi'),
+
+    'Select the widget to retrieve details for.' => __('Select the widget to retrieve details for.', 'bit-pi'),
 
     'Add Contact to Lists' => __('Add Contact to Lists', 'bit-pi'),
 
@@ -7306,8 +7612,6 @@ return [
     'You can create an OAuth2 app and get credentials from' => __('You can create an OAuth2 app and get credentials from', 'bit-pi'),
 
     'GoHighLevel Marketplace' => __('GoHighLevel Marketplace', 'bit-pi'),
-
-    'Full Name' => __('Full Name', 'bit-pi'),
 
     'Date of Birth' => __('Date of Birth', 'bit-pi'),
 
@@ -7835,15 +8139,51 @@ return [
 
     'End Time' => __('End Time', 'bit-pi'),
 
-    'Add a new row to the sheet' => __('Add a new row to the sheet', 'bit-pi'),
+    'spreadsheet' => __('spreadsheet', 'bit-pi'),
+
+    'Create Spreadsheet' => __('Create Spreadsheet', 'bit-pi'),
+
+    'Find Spreadsheets' => __('Find Spreadsheets', 'bit-pi'),
+
+    'Delete Spreadsheet' => __('Delete Spreadsheet', 'bit-pi'),
+
+    'sheet' => __('sheet', 'bit-pi'),
+
+    'Create Sheet' => __('Create Sheet', 'bit-pi'),
+
+    'Find Sheet' => __('Find Sheet', 'bit-pi'),
+
+    'Copy Sheet' => __('Copy Sheet', 'bit-pi'),
+
+    'Delete Sheet' => __('Delete Sheet', 'bit-pi'),
+
+    'You must keep at least one sheet in the document. Deleting all sheets is not allowed.' => __('You must keep at least one sheet in the document. Deleting all sheets is not allowed.', 'bit-pi'),
+
+    'Clear Sheet' => __('Clear Sheet', 'bit-pi'),
+
+    'Export Sheet' => __('Export Sheet', 'bit-pi'),
 
     'Add Row' => __('Add Row', 'bit-pi'),
 
-    'Append or update a row by its value' => __('Append or update a row by its value', 'bit-pi'),
+    'Update Row' => __('Update Row', 'bit-pi'),
 
     'Append or Update Row (by value)' => __('Append or Update Row (by value)', 'bit-pi'),
 
+    'Get Single Row by ID' => __('Get Single Row by ID', 'bit-pi'),
+
+    'Get All Rows' => __('Get All Rows', 'bit-pi'),
+
+    'Delete Row' => __('Delete Row', 'bit-pi'),
+
+    'Create Column' => __('Create Column', 'bit-pi'),
+
+    'On New Spreadsheet' => __('On New Spreadsheet', 'bit-pi'),
+
+    'On New Sheet' => __('On New Sheet', 'bit-pi'),
+
     'On Row Added' => __('On Row Added', 'bit-pi'),
+
+    'On Row Added or Updated' => __('On Row Added or Updated', 'bit-pi'),
 
     'Spreadsheet' => __('Spreadsheet', 'bit-pi'),
 
@@ -7876,6 +8216,102 @@ return [
     'Column to match on' => __('Column to match on', 'bit-pi'),
 
     'Select a column to match on' => __('Select a column to match on', 'bit-pi'),
+
+    'Select the spreadsheet.' => __('Select the spreadsheet.', 'bit-pi'),
+
+    'Select the sheet.' => __('Select the sheet.', 'bit-pi'),
+
+    'If the first row contains headers, they will be preserved when clearing.' => __('If the first row contains headers, they will be preserved when clearing.', 'bit-pi'),
+
+    'Is First Row Headers?' => __('Is First Row Headers?', 'bit-pi'),
+
+    'Source Spreadsheet.' => __('Source Spreadsheet.', 'bit-pi'),
+
+    'Source Spreadsheet' => __('Source Spreadsheet', 'bit-pi'),
+
+    'Worksheet to copy.' => __('Worksheet to copy.', 'bit-pi'),
+
+    'Source Worksheet' => __('Source Worksheet', 'bit-pi'),
+
+    'Destination Spreadsheet.' => __('Destination Spreadsheet.', 'bit-pi'),
+
+    'Destination Spreadsheet' => __('Destination Spreadsheet', 'bit-pi'),
+
+    'The name of the new column.' => __('The name of the new column.', 'bit-pi'),
+
+    'Column Name' => __('Column Name', 'bit-pi'),
+
+    'The column index starts from 1. If empty, added at end.' => __('The column index starts from 1. If empty, added at end.', 'bit-pi'),
+
+    'Column Index' => __('Column Index', 'bit-pi'),
+
+    'The title of the new worksheet.' => __('The title of the new worksheet.', 'bit-pi'),
+
+    'Worksheet Title' => __('Worksheet Title', 'bit-pi'),
+
+    'The name of the spreadsheet to create.' => __('The name of the spreadsheet to create.', 'bit-pi'),
+
+    'Spreadsheet Name' => __('Spreadsheet Name', 'bit-pi'),
+
+    'The row number to delete.' => __('The row number to delete.', 'bit-pi'),
+
+    'Row Number' => __('Row Number', 'bit-pi'),
+
+    'Select the sheet to delete.' => __('Select the sheet to delete.', 'bit-pi'),
+
+    'Select the spreadsheet to delete permanently.' => __('Select the spreadsheet to delete permanently.', 'bit-pi'),
+
+    'The format to export the sheet to.' => __('The format to export the sheet to.', 'bit-pi'),
+
+    'Export Format' => __('Export Format', 'bit-pi'),
+
+    'Comma Separated Values (.csv)' => __('Comma Separated Values (.csv)', 'bit-pi'),
+
+    'Tab Separated Values (.tsv)' => __('Tab Separated Values (.tsv)', 'bit-pi'),
+
+    'The column to search in.' => __('The column to search in.', 'bit-pi'),
+
+    'The value to search for. Leave empty to return all rows.' => __('The value to search for. Leave empty to return all rows.', 'bit-pi'),
+
+    'Search Value' => __('Search Value', 'bit-pi'),
+
+    'If enabled, only an exact match will be returned.' => __('If enabled, only an exact match will be returned.', 'bit-pi'),
+
+    'Exact Match?' => __('Exact Match?', 'bit-pi'),
+
+    'The row number to start searching from.' => __('The row number to start searching from.', 'bit-pi'),
+
+    'Starting Row' => __('Starting Row', 'bit-pi'),
+
+    'The number of rows to return (default is 1).' => __('The number of rows to return (default is 1).', 'bit-pi'),
+
+    'Number of Rows' => __('Number of Rows', 'bit-pi'),
+
+    'Which row contains the headers? (Default is 1)' => __('Which row contains the headers? (Default is 1)', 'bit-pi'),
+
+    'Header Row' => __('Header Row', 'bit-pi'),
+
+    'The title of the spreadsheet to search for.' => __('The title of the spreadsheet to search for.', 'bit-pi'),
+
+    'Max number of spreadsheets to return. (Default: 10)' => __('Max number of spreadsheets to return. (Default: 10)', 'bit-pi'),
+
+    'The title of the sheet to search for.' => __('The title of the sheet to search for.', 'bit-pi'),
+
+    'If enabled, only an exact title match will be returned. Otherwise, it will return sheets that contain the title.' => __('If enabled, only an exact title match will be returned. Otherwise, it will return sheets that contain the title.', 'bit-pi'),
+
+    'The row ID (number) to get from the sheet.' => __('The row ID (number) to get from the sheet.', 'bit-pi'),
+
+    'Row ID' => __('Row ID', 'bit-pi'),
+
+    'The column to monitor for changes. Leave as "Any Column" or empty to track all column updates.' => __('The column to monitor for changes. Leave as "Any Column" or empty to track all column updates.', 'bit-pi'),
+
+    'Trigger Column' => __('Trigger Column', 'bit-pi'),
+
+    'Any Column' => __('Any Column', 'bit-pi'),
+
+    'The range where the row will be updated, e.g., A1:C1.' => __('The range where the row will be updated, e.g., A1:C1.', 'bit-pi'),
+
+    'Range' => __('Range', 'bit-pi'),
 
     'Select the task list where you want to create the task.' => __('Select the task list where you want to create the task.', 'bit-pi'),
 
@@ -8004,8 +8440,6 @@ return [
     'Tag removed from contact' => __('Tag removed from contact', 'bit-pi'),
 
     'Create a new lead in Heffl CRM' => __('Create a new lead in Heffl CRM', 'bit-pi'),
-
-    'Create Lead' => __('Create Lead', 'bit-pi'),
 
     'Create a new client (company or contact) in Heffl CRM' => __('Create a new client (company or contact) in Heffl CRM', 'bit-pi'),
 
@@ -8140,8 +8574,6 @@ return [
     'Invoice Paid' => __('Invoice Paid', 'bit-pi'),
 
     'Invoice Status Changed' => __('Invoice Status Changed', 'bit-pi'),
-
-    'Lead Created' => __('Lead Created', 'bit-pi'),
 
     'Lead Updated' => __('Lead Updated', 'bit-pi'),
 
@@ -8757,6 +9189,8 @@ return [
 
     'Configure SMTP Settings' => __('Configure SMTP Settings', 'bit-pi'),
 
+    'Create Entry' => __('Create Entry', 'bit-pi'),
+
     'Create Custom Content Type Item' => __('Create Custom Content Type Item', 'bit-pi'),
 
     'Create a new item in a Custom Content Type (CCT).' => __('Create a new item in a Custom Content Type (CCT).', 'bit-pi'),
@@ -9161,8 +9595,6 @@ return [
 
     'Submit' => __('Submit', 'bit-pi'),
 
-    'Order' => __('Order', 'bit-pi'),
-
     'Question #{COUNT}' => __('Question #{COUNT}', 'bit-pi'),
 
     'Questions' => __('Questions', 'bit-pi'),
@@ -9320,8 +9752,6 @@ return [
 
     'Booking Updated' => __('Booking Updated', 'bit-pi'),
 
-    'Customer Updated' => __('Customer Updated', 'bit-pi'),
-
     'Booking ID' => __('Booking ID', 'bit-pi'),
 
     'Enter the booking ID to cancel' => __('Enter the booking ID to cancel', 'bit-pi'),
@@ -9465,8 +9895,6 @@ return [
     'Flat amount' => __('Flat amount', 'bit-pi'),
 
     'Not paid' => __('Not paid', 'bit-pi'),
-
-    'Approved' => __('Approved', 'bit-pi'),
 
     'No show' => __('No show', 'bit-pi'),
 
@@ -10506,8 +10934,6 @@ return [
 
     'The sheet range to clear (e.g., A1:B2). Leave blank to clear entire worksheet.' => __('The sheet range to clear (e.g., A1:B2). Leave blank to clear entire worksheet.', 'bit-pi'),
 
-    'Range' => __('Range', 'bit-pi'),
-
     'Select how to determine the table range.' => __('Select how to determine the table range.', 'bit-pi'),
 
     'Select Range' => __('Select Range', 'bit-pi'),
@@ -10615,8 +11041,6 @@ return [
     'Delete Item' => __('Delete Item', 'bit-pi'),
 
     'columns management' => __('columns management', 'bit-pi'),
-
-    'Create Column' => __('Create Column', 'bit-pi'),
 
     'Get File Column Values' => __('Get File Column Values', 'bit-pi'),
 
@@ -10754,6 +11178,122 @@ return [
 
     'Reason for revoking points' => __('Reason for revoking points', 'bit-pi'),
 
+    'Execute Query' => __('Execute Query', 'bit-pi'),
+
+    'Insert Row' => __('Insert Row', 'bit-pi'),
+
+    'Update Rows' => __('Update Rows', 'bit-pi'),
+
+    'Select Rows' => __('Select Rows', 'bit-pi'),
+
+    'Delete Rows' => __('Delete Rows', 'bit-pi'),
+
+    'Select the table you want to delete rows from.' => __('Select the table you want to delete rows from.', 'bit-pi'),
+
+    'Select a table' => __('Select a table', 'bit-pi'),
+
+    'Rows where this column equals the match value will be deleted.' => __('Rows where this column equals the match value will be deleted.', 'bit-pi'),
+
+    'Match Column' => __('Match Column', 'bit-pi'),
+
+    'Select a column' => __('Select a column', 'bit-pi'),
+
+    'Enter the value to match for deletion.' => __('Enter the value to match for deletion.', 'bit-pi'),
+
+    'Match Value' => __('Match Value', 'bit-pi'),
+
+    'Use ? placeholders for values and provide them in order below.' => __('Use ? placeholders for values and provide them in order below.', 'bit-pi'),
+
+    'SQL Query' => __('SQL Query', 'bit-pi'),
+
+    'SELECT * FROM users WHERE status = ? AND created_at > ?' => __('SELECT * FROM users WHERE status = ? AND created_at > ?', 'bit-pi'),
+
+    'Add Parameter' => __('Add Parameter', 'bit-pi'),
+
+    'Bound to ? placeholders in order. Prevents SQL injection.' => __('Bound to ? placeholders in order. Prevents SQL injection.', 'bit-pi'),
+
+    'Parameter #{COUNT}' => __('Parameter #{COUNT}', 'bit-pi'),
+
+    'Query Parameters' => __('Query Parameters', 'bit-pi'),
+
+    'Enter the host, port, database, username and password of the MySQL server you want to connect to.' => __('Enter the host, port, database, username and password of the MySQL server you want to connect to.', 'bit-pi'),
+
+    'MySQL' => __('MySQL', 'bit-pi'),
+
+    'Password for the database user. Leave empty if the user has no password.' => __('Password for the database user. Leave empty if the user has no password.', 'bit-pi'),
+
+    'The IP address or hostname (e.g. db.example.com) where your MySQL server runs. Use localhost if the database is on this same server.' => __('The IP address or hostname (e.g. db.example.com) where your MySQL server runs. Use localhost if the database is on this same server.', 'bit-pi'),
+
+    'Host' => __('Host', 'bit-pi'),
+
+    'localhost or db.example.com' => __('localhost or db.example.com', 'bit-pi'),
+
+    'The port your MySQL server listens on. Default is 3306.' => __('The port your MySQL server listens on. Default is 3306.', 'bit-pi'),
+
+    'Port' => __('Port', 'bit-pi'),
+
+    'The name of the database you would like to interact with.' => __('The name of the database you would like to interact with.', 'bit-pi'),
+
+    'Database name' => __('Database name', 'bit-pi'),
+
+    'We recommend creating a dedicated database user with only the permissions this flow needs.' => __('We recommend creating a dedicated database user with only the permissions this flow needs.', 'bit-pi'),
+
+    'Database user' => __('Database user', 'bit-pi'),
+
+    'Advanced settings' => __('Advanced settings', 'bit-pi'),
+
+    'How long to wait (in seconds) when opening the connection before giving up. Default is 10.' => __('How long to wait (in seconds) when opening the connection before giving up. Default is 10.', 'bit-pi'),
+
+    'Connect Timeout' => __('Connect Timeout', 'bit-pi'),
+
+    'Character set used for the connection. Default is utf8mb4.' => __('Character set used for the connection. Default is utf8mb4.', 'bit-pi'),
+
+    'Charset' => __('Charset', 'bit-pi'),
+
+    'Server file path to the CA certificate (PEM) used to verify the server (PDO ssl-ca). Leave empty to use the system CA store.' => __('Server file path to the CA certificate (PEM) used to verify the server (PDO ssl-ca). Leave empty to use the system CA store.', 'bit-pi'),
+
+    'SSL CA Certificate Path' => __('SSL CA Certificate Path', 'bit-pi'),
+
+    '/path/to/ca.pem' => __('/path/to/ca.pem', 'bit-pi'),
+
+    'Server file path to the client certificate (PEM) that identifies this client (PDO ssl-cert). Only needed for mutual-TLS servers.' => __('Server file path to the client certificate (PEM) that identifies this client (PDO ssl-cert). Only needed for mutual-TLS servers.', 'bit-pi'),
+
+    'Client Certificate Path' => __('Client Certificate Path', 'bit-pi'),
+
+    '/path/to/client-cert.pem' => __('/path/to/client-cert.pem', 'bit-pi'),
+
+    'Server file path to the client private key (PEM) that pairs with the Client Certificate (PDO ssl-key). Must not be encrypted.' => __('Server file path to the client private key (PEM) that pairs with the Client Certificate (PDO ssl-key). Must not be encrypted.', 'bit-pi'),
+
+    'Client Private Key Path' => __('Client Private Key Path', 'bit-pi'),
+
+    '/path/to/client-key.pem' => __('/path/to/client-key.pem', 'bit-pi'),
+
+    'Select the table you want to insert data into.' => __('Select the table you want to insert data into.', 'bit-pi'),
+
+    'Column #{COUNT}' => __('Column #{COUNT}', 'bit-pi'),
+
+    'Column Mapping' => __('Column Mapping', 'bit-pi'),
+
+    'Select the table you want to query.' => __('Select the table you want to query.', 'bit-pi'),
+
+    'Optional. SQL WHERE clause without the WHERE keyword, e.g. status = ? AND age > ?' => __('Optional. SQL WHERE clause without the WHERE keyword, e.g. status = ? AND age > ?', 'bit-pi'),
+
+    'Where Condition' => __('Where Condition', 'bit-pi'),
+
+    'Bound to ? placeholders in the where condition, in order.' => __('Bound to ? placeholders in the where condition, in order.', 'bit-pi'),
+
+    'Where Parameters' => __('Where Parameters', 'bit-pi'),
+
+    'Optional. Maximum number of rows to return.' => __('Optional. Maximum number of rows to return.', 'bit-pi'),
+
+    'Select the table you want to update rows in.' => __('Select the table you want to update rows in.', 'bit-pi'),
+
+    'Rows where this column equals the match value will be updated.' => __('Rows where this column equals the match value will be updated.', 'bit-pi'),
+
+    'Enter the value to match for updating rows.' => __('Enter the value to match for updating rows.', 'bit-pi'),
+
+    'Columns to Update' => __('Columns to Update', 'bit-pi'),
+
     'Create New Subscriptions' => __('Create New Subscriptions', 'bit-pi'),
 
     'Create new subscription and send welcome email.' => __('Create new subscription and send welcome email.', 'bit-pi'),
@@ -10888,8 +11428,6 @@ return [
 
     'Owner ID' => __('Owner ID', 'bit-pi'),
 
-    'Column Name' => __('Column Name', 'bit-pi'),
-
     'Enter column name' => __('Enter column name', 'bit-pi'),
 
     'Column Value' => __('Column Value', 'bit-pi'),
@@ -10899,8 +11437,6 @@ return [
     'Map column names to their values for the new row.' => __('Map column names to their values for the new row.', 'bit-pi'),
 
     'Row Fields' => __('Row Fields', 'bit-pi'),
-
-    'Row ID' => __('Row ID', 'bit-pi'),
 
     'Owner ID - Optional' => __('Owner ID - Optional', 'bit-pi'),
 
@@ -11316,8 +11852,6 @@ return [
 
     'Select the new payment status.' => __('Select the new payment status.', 'bit-pi'),
 
-    'New Status' => __('New Status', 'bit-pi'),
-
     'Add Post to Activity Stream' => __('Add Post to Activity Stream', 'bit-pi'),
 
     'Change User Role' => __('Change User Role', 'bit-pi'),
@@ -11419,8 +11953,6 @@ return [
     'Search Deal' => __('Search Deal', 'bit-pi'),
 
     'Delete Lead' => __('Delete Lead', 'bit-pi'),
-
-    'Get Lead' => __('Get Lead', 'bit-pi'),
 
     'Get Many Leads' => __('Get Many Leads', 'bit-pi'),
 
@@ -11988,8 +12520,6 @@ return [
 
     'The format of Birthdate field should be YYYY-MM-DD.' => __('The format of Birthdate field should be YYYY-MM-DD.', 'bit-pi'),
 
-    'Create Customer' => __('Create Customer', 'bit-pi'),
-
     'Create Item' => __('Create Item', 'bit-pi'),
 
     'Get Order' => __('Get Order', 'bit-pi'),
@@ -12274,8 +12804,6 @@ return [
 
     'Failed to fetch invoices' => __('Failed to fetch invoices', 'bit-pi'),
 
-    'Failed to fetch customers' => __('Failed to fetch customers', 'bit-pi'),
-
     'Failed to fetch items' => __('Failed to fetch items', 'bit-pi'),
 
     'Failed to fetch subscriptions' => __('Failed to fetch subscriptions', 'bit-pi'),
@@ -12293,8 +12821,6 @@ return [
     'Alert Email' => __('Alert Email', 'bit-pi'),
 
     'The customer to update.' => __('The customer to update.', 'bit-pi'),
-
-    'Select Customer' => __('Select Customer', 'bit-pi'),
 
     'The item to update.' => __('The item to update.', 'bit-pi'),
 
@@ -12367,8 +12893,6 @@ return [
     'Select the campaign to add the lead to.' => __('Select the campaign to add the lead to.', 'bit-pi'),
 
     'The ID of the lead to add to the campaign.' => __('The ID of the lead to add to the campaign.', 'bit-pi'),
-
-    'Lead ID' => __('Lead ID', 'bit-pi'),
 
     'Account Fields' => __('Account Fields', 'bit-pi'),
 
@@ -12643,8 +13167,6 @@ return [
     'How many past interactions the model receives as context' => __('How many past interactions the model receives as context', 'bit-pi'),
 
     'Context Window Length' => __('Context Window Length', 'bit-pi'),
-
-    'Appointment Rescheduled' => __('Appointment Rescheduled', 'bit-pi'),
 
     'Appointment Canceled' => __('Appointment Canceled', 'bit-pi'),
 
@@ -13407,8 +13929,6 @@ return [
 
     'Select Team' => __('Select Team', 'bit-pi'),
 
-    'Enter the user email' => __('Enter the user email', 'bit-pi'),
-
     'Select the member role' => __('Select the member role', 'bit-pi'),
 
     'Member Role' => __('Member Role', 'bit-pi'),
@@ -13461,9 +13981,11 @@ return [
 
     'Watch Shipping Query' => __('Watch Shipping Query', 'bit-pi'),
 
-    'Enter the Chat ID with the prefix 100 here. For example, if your channel ID is -155545555, then the chat ID will be -100155545555 or the username of the target channel (in the format @channelusername or @supergroupusername).' => __('Enter the Chat ID with the prefix 100 here. For example, if your channel ID is -155545555, then the chat ID will be -100155545555 or the username of the target channel (in the format @channelusername or @supergroupusername).', 'bit-pi'),
+    'Select the target chat fetched from your bot, or map a Chat ID. Use the prefix 100 for channels (e.g. channel ID -155545555 becomes -100155545555) or a username like @channelusername.' => __('Select the target chat fetched from your bot, or map a Chat ID. Use the prefix 100 for channels (e.g. channel ID -155545555 becomes -100155545555) or a username like @channelusername.', 'bit-pi'),
 
-    'Chat ID' => __('Chat ID', 'bit-pi'),
+    'Select Chat' => __('Select Chat', 'bit-pi'),
+
+    'Select a chat' => __('Select a chat', 'bit-pi'),
 
     'The invite link to revoke.' => __('The invite link to revoke.', 'bit-pi'),
 
@@ -13482,6 +14004,10 @@ return [
     'Creates Join Request' => __('Creates Join Request', 'bit-pi'),
 
     'Choose to disable notification' => __('Choose to disable notification', 'bit-pi'),
+
+    'Cannot fetch chat list while a webhook is active. Please map or enter the Chat ID manually.' => __('Cannot fetch chat list while a webhook is active. Please map or enter the Chat ID manually.', 'bit-pi'),
+
+    'Failed to fetch chat list' => __('Failed to fetch chat list', 'bit-pi'),
 
     'Option 1' => __('Option 1', 'bit-pi'),
 
@@ -14233,8 +14759,6 @@ return [
 
     'Verified' => __('Verified', 'bit-pi'),
 
-    'Rejected' => __('Rejected', 'bit-pi'),
-
     'Optional payment status.' => __('Optional payment status.', 'bit-pi'),
 
     'Enter affiliate ID.' => __('Enter affiliate ID.', 'bit-pi'),
@@ -14400,6 +14924,84 @@ return [
     'Post Unfollowed' => __('Post Unfollowed', 'bit-pi'),
 
     'Posts' => __('Posts', 'bit-pi'),
+
+    'Update Affiliate Status' => __('Update Affiliate Status', 'bit-pi'),
+
+    'Update Referral Status' => __('Update Referral Status', 'bit-pi'),
+
+    'Create Transaction' => __('Create Transaction', 'bit-pi'),
+
+    'Update Transaction Status' => __('Update Transaction Status', 'bit-pi'),
+
+    'Affiliate Application Submitted' => __('Affiliate Application Submitted', 'bit-pi'),
+
+    'Affiliate Application Approved' => __('Affiliate Application Approved', 'bit-pi'),
+
+    'Affiliate Application Rejected' => __('Affiliate Application Rejected', 'bit-pi'),
+
+    'New Referral Created' => __('New Referral Created', 'bit-pi'),
+
+    'Commission Earned' => __('Commission Earned', 'bit-pi'),
+
+    'Enter the WordPress user ID to create as an affiliate.' => __('Enter the WordPress user ID to create as an affiliate.', 'bit-pi'),
+
+    'Affiliate Status' => __('Affiliate Status', 'bit-pi'),
+
+    'Commission Type' => __('Commission Type', 'bit-pi'),
+
+    'Optional: set a numeric commission amount for fixed/percent types.' => __('Optional: set a numeric commission amount for fixed/percent types.', 'bit-pi'),
+
+    'Commission Amount' => __('Commission Amount', 'bit-pi'),
+
+    'Enter referral commission amount.' => __('Enter referral commission amount.', 'bit-pi'),
+
+    'Commission' => __('Commission', 'bit-pi'),
+
+    'Enter order total amount for this referral.' => __('Enter order total amount for this referral.', 'bit-pi'),
+
+    'Order Total' => __('Order Total', 'bit-pi'),
+
+    'Optional WooCommerce order ID.' => __('Optional WooCommerce order ID.', 'bit-pi'),
+
+    'Optional visit ID related to this referral.' => __('Optional visit ID related to this referral.', 'bit-pi'),
+
+    'Visit' => __('Visit', 'bit-pi'),
+
+    'Optional transaction ID associated with this referral.' => __('Optional transaction ID associated with this referral.', 'bit-pi'),
+
+    'Optional referral timestamp (Unix time).' => __('Optional referral timestamp (Unix time).', 'bit-pi'),
+
+    'Optional products as JSON array or comma-separated list (e.g. [1,2,3] or 1, 2).' => __('Optional products as JSON array or comma-separated list (e.g. [1,2,3] or 1, 2).', 'bit-pi'),
+
+    'Referral Type' => __('Referral Type', 'bit-pi'),
+
+    'Enter transaction amount.' => __('Enter transaction amount.', 'bit-pi'),
+
+    'Transaction Status' => __('Transaction Status', 'bit-pi'),
+
+    'Optional external transaction ID.' => __('Optional external transaction ID.', 'bit-pi'),
+
+    'External Transaction ID' => __('External Transaction ID', 'bit-pi'),
+
+    'Optional internal notes.' => __('Optional internal notes.', 'bit-pi'),
+
+    'Suspended' => __('Suspended', 'bit-pi'),
+
+    'Fixed' => __('Fixed', 'bit-pi'),
+
+    'Percent' => __('Percent', 'bit-pi'),
+
+    'Sale' => __('Sale', 'bit-pi'),
+
+    'Optional admin message for this status update.' => __('Optional admin message for this status update.', 'bit-pi'),
+
+    'Admin Message' => __('Admin Message', 'bit-pi'),
+
+    'Enter the referral ID.' => __('Enter the referral ID.', 'bit-pi'),
+
+    'Enter the transaction ID.' => __('Enter the transaction ID.', 'bit-pi'),
+
+    'Optional external transaction ID to attach while updating.' => __('Optional external transaction ID to attach while updating.', 'bit-pi'),
 
     'Booking created' => __('Booking created', 'bit-pi'),
 
@@ -16595,6 +17197,186 @@ return [
 
     'Select the course' => __('Select the course', 'bit-pi'),
 
+    'Get Table (All)' => __('Get Table (All)', 'bit-pi'),
+
+    'Get Table (Single)' => __('Get Table (Single)', 'bit-pi'),
+
+    'Get Table Rows' => __('Get Table Rows', 'bit-pi'),
+
+    'Table Saved' => __('Table Saved', 'bit-pi'),
+
+    'Row Created' => __('Row Created', 'bit-pi'),
+
+    'Column Inserted' => __('Column Inserted', 'bit-pi'),
+
+    'Chart Deleted' => __('Chart Deleted', 'bit-pi'),
+
+    'for custom mapping table id should be provided in the input data' => __('for custom mapping table id should be provided in the input data', 'bit-pi'),
+
+    'Create Company' => __('Create Company', 'bit-pi'),
+
+    'Update Company' => __('Update Company', 'bit-pi'),
+
+    'Delete Company' => __('Delete Company', 'bit-pi'),
+
+    'Create Contact Group' => __('Create Contact Group', 'bit-pi'),
+
+    'Get Contact Group (All)' => __('Get Contact Group (All)', 'bit-pi'),
+
+    'Want to see contact groups? Just hit **Test Run** to fetch them.' => __('Want to see contact groups? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Add Contact To Group' => __('Add Contact To Group', 'bit-pi'),
+
+    'Remove Contact From Group' => __('Remove Contact From Group', 'bit-pi'),
+
+    'Add Note To Contact' => __('Add Note To Contact', 'bit-pi'),
+
+    'Create Employee' => __('Create Employee', 'bit-pi'),
+
+    'Update Employee' => __('Update Employee', 'bit-pi'),
+
+    'Get Employee (All)' => __('Get Employee (All)', 'bit-pi'),
+
+    'Want to see employees? Just hit **Test Run** to fetch them.' => __('Want to see employees? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Employee (By Id)' => __('Get Employee (By Id)', 'bit-pi'),
+
+    'Create Department' => __('Create Department', 'bit-pi'),
+
+    'Create Designation' => __('Create Designation', 'bit-pi'),
+
+    'Create Holiday' => __('Create Holiday', 'bit-pi'),
+
+    'Create Expense' => __('Create Expense', 'bit-pi'),
+
+    'Create Payment' => __('Create Payment', 'bit-pi'),
+
+    'A contact is created' => __('A contact is created', 'bit-pi'),
+
+    'A contact is updated' => __('A contact is updated', 'bit-pi'),
+
+    'A contact is deleted' => __('A contact is deleted', 'bit-pi'),
+
+    'A contact owner is assigned' => __('A contact owner is assigned', 'bit-pi'),
+
+    'A contact is unsubscribed' => __('A contact is unsubscribed', 'bit-pi'),
+
+    'A company is created' => __('A company is created', 'bit-pi'),
+
+    'A contact is added to group' => __('A contact is added to group', 'bit-pi'),
+
+    'A contact is removed from group' => __('A contact is removed from group', 'bit-pi'),
+
+    'A note is added to a contact' => __('A note is added to a contact', 'bit-pi'),
+
+    'A task is assigned' => __('A task is assigned', 'bit-pi'),
+
+    'A contact group is created' => __('A contact group is created', 'bit-pi'),
+
+    'An employee is created' => __('An employee is created', 'bit-pi'),
+
+    'An employee is updated' => __('An employee is updated', 'bit-pi'),
+
+    'An employee is deleted' => __('An employee is deleted', 'bit-pi'),
+
+    'A department is created' => __('A department is created', 'bit-pi'),
+
+    'A designation is created' => __('A designation is created', 'bit-pi'),
+
+    'A leave request is created' => __('A leave request is created', 'bit-pi'),
+
+    'A leave request is approved' => __('A leave request is approved', 'bit-pi'),
+
+    'A leave request is rejected' => __('A leave request is rejected', 'bit-pi'),
+
+    'A holiday is created' => __('A holiday is created', 'bit-pi'),
+
+    'A bill is created' => __('A bill is created', 'bit-pi'),
+
+    'A bill is updated' => __('A bill is updated', 'bit-pi'),
+
+    'A sales invoice is created' => __('A sales invoice is created', 'bit-pi'),
+
+    'A sales invoice is updated' => __('A sales invoice is updated', 'bit-pi'),
+
+    'A purchase is created' => __('A purchase is created', 'bit-pi'),
+
+    'A purchase is updated' => __('A purchase is updated', 'bit-pi'),
+
+    'An expense is created' => __('An expense is created', 'bit-pi'),
+
+    'A payment is received' => __('A payment is received', 'bit-pi'),
+
+    'A bill payment is created' => __('A bill payment is created', 'bit-pi'),
+
+    'A purchase payment is created' => __('A purchase payment is created', 'bit-pi'),
+
+    'Contact Groups' => __('Contact Groups', 'bit-pi'),
+
+    'Enter the content of the note.' => __('Enter the content of the note.', 'bit-pi'),
+
+    'Employee User Id' => __('Employee User Id', 'bit-pi'),
+
+    'Life Stage' => __('Life Stage', 'bit-pi'),
+
+    'Select a life stage' => __('Select a life stage', 'bit-pi'),
+
+    'Select contact groups' => __('Select contact groups', 'bit-pi'),
+
+    'WP user id of the department lead (optional).' => __('WP user id of the department lead (optional).', 'bit-pi'),
+
+    'Lead (User Id)' => __('Lead (User Id)', 'bit-pi'),
+
+    'Parent department id (optional).' => __('Parent department id (optional).', 'bit-pi'),
+
+    'Parent Department Id' => __('Parent Department Id', 'bit-pi'),
+
+    'Department' => __('Department', 'bit-pi'),
+
+    'Select a department' => __('Select a department', 'bit-pi'),
+
+    'Designation' => __('Designation', 'bit-pi'),
+
+    'Select a designation' => __('Select a designation', 'bit-pi'),
+
+    'Optional. People id (contact/vendor) linked to this expense.' => __('Optional. People id (contact/vendor) linked to this expense.', 'bit-pi'),
+
+    'People Id' => __('People Id', 'bit-pi'),
+
+    'Format: YYYY-MM-DD' => __('Format: YYYY-MM-DD', 'bit-pi'),
+
+    'Voucher Date' => __('Voucher Date', 'bit-pi'),
+
+    'Transaction Date' => __('Transaction Date', 'bit-pi'),
+
+    'Check No' => __('Check No', 'bit-pi'),
+
+    'Particulars' => __('Particulars', 'bit-pi'),
+
+    'Payment method id (1 = Cash by default).' => __('Payment method id (1 = Cash by default).', 'bit-pi'),
+
+    'Transaction By' => __('Transaction By', 'bit-pi'),
+
+    'Source ledger id (optional).' => __('Source ledger id (optional).', 'bit-pi'),
+
+    'Ledger Id' => __('Ledger Id', 'bit-pi'),
+
+    'Deposit ledger id.' => __('Deposit ledger id.', 'bit-pi'),
+
+    'Deposit To' => __('Deposit To', 'bit-pi'),
+
+    'WP user id to assign the task to. Leave empty to assign to current user.' => __('WP user id to assign the task to. Leave empty to assign to current user.', 'bit-pi'),
+
+    'Assigned To (User Id)' => __('Assigned To (User Id)', 'bit-pi'),
+
+    'Format: YYYY-MM-DD HH:mm:ss' => __('Format: YYYY-MM-DD HH:mm:ss', 'bit-pi'),
+
+    'Company Id' => __('Company Id', 'bit-pi'),
+
+    'Enable to permanently delete the company. Leave disabled for soft-delete.' => __('Enable to permanently delete the company. Leave disabled for soft-delete.', 'bit-pi'),
+
+    'Enable to permanently delete the contact. Leave disabled for soft-delete.' => __('Enable to permanently delete the contact. Leave disabled for soft-delete.', 'bit-pi'),
+
     'New topic added' => __('New topic added', 'bit-pi'),
 
     'New reply added' => __('New reply added', 'bit-pi'),
@@ -16709,11 +17491,7 @@ return [
 
     'Subscription Status Changed' => __('Subscription Status Changed', 'bit-pi'),
 
-    'Get Table (All)' => __('Get Table (All)', 'bit-pi'),
-
     'Fetches all tables.' => __('Fetches all tables.', 'bit-pi'),
-
-    'Get Table (Single)' => __('Get Table (Single)', 'bit-pi'),
 
     'Fetches a single table by ID.' => __('Fetches a single table by ID.', 'bit-pi'),
 
@@ -16765,17 +17543,11 @@ return [
 
     '<table>...</table>' => __('<table>...</table>', 'bit-pi'),
 
-    'for custom mapping table id should be provided in the input data' => __('for custom mapping table id should be provided in the input data', 'bit-pi'),
-
     'Select a table to delete' => __('Select a table to delete', 'bit-pi'),
 
     'Force delete (bypass trash)' => __('Force delete (bypass trash)', 'bit-pi'),
 
-    'Select a table' => __('Select a table', 'bit-pi'),
-
     'Enter the row index (0-based)' => __('Enter the row index (0-based)', 'bit-pi'),
-
-    'Column Index' => __('Column Index', 'bit-pi'),
 
     'Enter the column index (0-based)' => __('Enter the column index (0-based)', 'bit-pi'),
 

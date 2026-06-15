@@ -117,8 +117,8 @@ class ScheduleTool
 
         $pollingType = AbstractPollingTrigger::TYPE_NEW;
 
-        if (method_exists($triggerApp, 'getPollingUniqueFieldName')) {
-            $pollingUniqueFieldName = $triggerApp->getPollingUniqueFieldName();
+        if (method_exists($triggerApp, 'getUniquePollingFieldName')) {
+            $pollingUniqueFieldName = $triggerApp->getUniquePollingFieldName();
         }
 
         if (method_exists($triggerApp, 'getPollingType')) {

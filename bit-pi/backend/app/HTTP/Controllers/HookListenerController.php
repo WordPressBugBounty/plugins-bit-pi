@@ -60,12 +60,11 @@ final class HookListenerController
         if ($flow->listener_type === Flow::LISTENER_TYPE['NONE']) {
             $flow->listener_type = $validated['listener_type'] === 'CAPTURE' ? Flow::LISTENER_TYPE['CAPTURE'] : Flow::LISTENER_TYPE['RUN_ONCE'];
 
-            $flow->settings = wp_json_encode(
-                [
-                    'capture_start_time' => $currentDateTime
-                ],
-                true
-            );
+            $settings = $flow->settings ? JSON::maybeDecode($flow->settings, true) : [];
+
+            $settings['capture_start_time'] = $currentDateTime;
+
+            $flow->settings = wp_json_encode($settings, true);
 
             if (!$flow->save()) {
                 return Response::error('Error updating flow');

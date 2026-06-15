@@ -14,7 +14,7 @@ use BitApps\Pi\src\Tools\FlowToolsFactory;
 
 class DefaultConditionTool
 {
-    private const MACHINE_SLUG = 'default-condition';
+    private const MACHINE_SLUG = 'default-condition-logic';
 
     private $nodeInfo;
 

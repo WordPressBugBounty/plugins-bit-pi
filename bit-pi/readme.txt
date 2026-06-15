@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.22.1
+Stable tag: 1.23.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,40 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.23.0 (Jun 15, 2026) =
+
+* **Triggers (57)**:
+  * WP ERP (30)
+  * BookingPress (08)
+  * WC Affiliate (06)
+  * wpDataTables (04)
+  * B2BKing (03)
+  * Google Sheet (03)
+  * FormyChat (02)
+  * IvyForms (01)
+
+* **Actions (85)**:
+  * WP ERP (25)
+  * Google Sheet (14)
+  * BookingPress (11)
+  * Bookly (10)
+  * WC Affiliate (06)
+  * B2BKing (05)
+  * MySQL (05)
+  * FormyChat (04)
+  * wpDataTables (04)
+  * IvyForms (01)
+
+* **Features**:
+  * Added 25 ready made flow templates, browsable by category with search.
+
+* **Improvements**:
+  * Telegram chat ID is now a searchable chat selector.
+
+* **Fixes**:
+  * Fixed several custom API request issues, including request body handling and empty URL errors.
+  * Fixed variable resolution inside function arguments in mix inputs.
 
 = v1.22.1 (May 25, 2026) =
 

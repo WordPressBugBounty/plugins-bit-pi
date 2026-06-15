@@ -11,7 +11,6 @@ if (!defined('ABSPATH')) {
 use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\DateTimeHelper;
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
-use BitApps\Pi\Deps\BitApps\WPKit\Hooks\Hooks;
 use BitApps\Pi\Helpers\Node;
 use BitApps\Pi\HTTP\Controllers\HookListenerController;
 use BitApps\Pi\Model\Flow as FlowModel;
@@ -136,12 +135,19 @@ class FlowExecutor extends BackgroundProcessHandler
                 'listener_type'   => $flow->listener_type
             ];
 
-            if (defined('BACKGROUND_PROCESS_DISABLE') && BACKGROUND_PROCESS_DISABLE) {
+            $isBackgroundDisabled = (defined('BACKGROUND_PROCESS_DISABLE') && BACKGROUND_PROCESS_DISABLE)
+                || (isset($flowSettings['background_process']) && !$flowSettings['background_process']);
+
+            if ($isBackgroundDisabled) {
                 $obj = new stdClass();
 
                 $obj->data = $queueData;
+                // avoid time limit for long running flows
+                if (\function_exists('set_time_limit')) {
+                    set_time_limit(0);
+                }
 
-                $flowExecutorInstance->executeBatchTasks($obj);
+                $flowExecutorInstance->executeBatchTasks($obj, true);
             } else {
                 $flowExecutorInstance->pushToQueue($queueData)->save()->dispatch();
             }
@@ -152,6 +158,17 @@ class FlowExecutor extends BackgroundProcessHandler
         return false;
     }
 
+    /**
+     * Execute the current node and report how the flow should proceed.
+     *
+     * Condition/router/trigger nodes short-circuit to false (no task work). Action nodes
+     * run via the node executor: a PENDING response returns true to pause the batch, an
+     * ERROR response notifies the admin and may block (return true) or route to an error
+     * branch depending on the flow's onNodeFail setting. Tool nodes run through the tools
+     * factory. Any thrown error is logged and swallowed as false.
+     *
+     * @return bool|mixed true to pause/hold the batch, false to advance, or a tool/iterator response
+     */
     protected function task()
     {
         $currentNode = $this->currentNode;
@@ -188,7 +205,7 @@ class FlowExecutor extends BackgroundProcessHandler
                     }
 
                     if ($response === FlowLog::STATUS['ERROR']) {
-                        $this->sendTaskFailedNotification($currentNodeInfo, $flowId);
+                        FailedTaskNotifier::send($currentNodeInfo, $flowId);
 
                         if ($onNodeFail === 'block') {
                             return true;
@@ -232,7 +249,17 @@ class FlowExecutor extends BackgroundProcessHandler
         return false;
     }
 
-    protected function executeBatchTasks($batch)
+    /**
+     * Process one queued batch of flow tasks.
+     *
+     * Seeds the executor state (flow id, history id, listener type, settings) from the
+     * batch, runs the flow map, then either completes the batch (synchronous or no tasks
+     * left) or writes the remaining state back so the next dispatch resumes it.
+     *
+     * @param mixed $batch         queue batch holding the task map and flow metadata
+     * @param bool  $isSynchronous run inline without yielding on time/memory limits
+     */
+    protected function executeBatchTasks($batch, $isSynchronous = false)
     {
         $tasks = $batch->data['tasks'];
 
@@ -252,21 +279,23 @@ class FlowExecutor extends BackgroundProcessHandler
 
         GlobalFlow::setFlowId($this->flowId);
 
-        $batch = $this->processFlowMap($flowMap, $batch);
+        $batch = $this->processFlowMap($flowMap, $batch, $isSynchronous);
 
-        if (empty($batch->data)) {
+        if (empty($batch->data) || $isSynchronous) {
             $this->batchComplete();
         } else {
+            $batch->data['flow_history_id'] = $this->flowHistoryId;
+            $batch->data['flow_id'] = $this->flowId;
+            $batch->data['listener_type'] = $this->listenerType;
+            $batch->data['settings'] = $this->flowSettings;
+
             $this->update($batch->key, $batch->data);
-            $this->batchDispatch();
         }
     }
 
     protected function handleTaskTimeout()
     {
-        LogService::save(LogHandler::getLogs());
-
-        LogHandler::destroy();
+        $this->flushLogs();
     }
 
     protected function batchComplete()
@@ -297,6 +326,42 @@ class FlowExecutor extends BackgroundProcessHandler
         GlobalFlow::destroy();
     }
 
+    /**
+     * Persist the buffered logs and reset the handler.
+     */
+    private function flushLogs()
+    {
+        LogService::save(LogHandler::getLogs());
+
+        LogHandler::destroy();
+    }
+
+    /**
+     * Time or memory limit hit and we're not running synchronously.
+     *
+     * @param mixed $isSynchronous
+     *
+     * @return bool
+     */
+    private function reachedLimit($isSynchronous)
+    {
+        return ($this->timeExceeded() || $this->memoryExceeded()) && !$isSynchronous;
+    }
+
+    /**
+     * Write the remaining flow map back onto the batch (or clear it when empty).
+     *
+     * @param mixed $batch
+     */
+    private function syncBatchTasks($batch, array $flowMap)
+    {
+        if ($flowMap !== []) {
+            $batch->data['tasks'] = $flowMap;
+        } else {
+            $batch->data = [];
+        }
+    }
+
     private function checkAndCleanupProcessLock()
     {
         $identifier = $this->prefix . $this->action;
@@ -308,6 +373,14 @@ class FlowExecutor extends BackgroundProcessHandler
         }
     }
 
+    /**
+     * Recursively find the node matching $searchId and return its next node(s).
+     *
+     * @param mixed $node     node tree to search
+     * @param mixed $searchId id of the node whose successors are wanted
+     *
+     * @return mixed the matched node's next node(s), or null if not found
+     */
     private function findNextNode($node, $searchId)
     {
         if ($node->id === $searchId) {
@@ -329,65 +402,54 @@ class FlowExecutor extends BackgroundProcessHandler
         }
     }
 
-    private function processFlowMap($flowMap, $batch)
+    /**
+     * Walk the flow map, executing each node and queueing its successors.
+     *
+     * Pops nodes one at a time. A node carrying resume markers replays its saved range
+     * instead of re-running task(). A truthy bool response pauses the node (re-syncs the
+     * batch and skips successors). Otherwise successors are queued: router/condition nodes
+     * fan out, iterator/repeater nodes loop, all others append next. Stops early when a
+     * time/memory limit is reached so the batch can resume later.
+     *
+     * @param array $flowMap       remaining nodes to process
+     * @param mixed $batch         queue batch updated with leftover tasks
+     * @param bool  $isSynchronous run inline without yielding on time/memory limits
+     *
+     * @return mixed the batch with its task state synced
+     */
+    private function processFlowMap($flowMap, $batch, $isSynchronous)
     {
         while (\count($flowMap) > 0) {
             $currentNode = array_shift($flowMap);
             $this->currentNode = $currentNode;
 
-            $response = $this->task();
+            if (isset($currentNode->_resumeStart)) {
+                $response = ['start' => $currentNode->_resumeStart, 'end' => $currentNode->_resumeEnd];
+                unset($currentNode->_resumeStart, $currentNode->_resumeEnd);
+                GlobalNodeVariables::getInstance($batch->data['flow_history_id'], $batch->data['flow_id']);
+            } else {
+                $response = $this->task();
+            }
 
             if (\is_bool($response) && $response) {
-                if ($flowMap !== []) {
-                    $batch->data['tasks'] = $flowMap;
-                } else {
-                    $batch->data = [];
-                }
+                $this->syncBatchTasks($batch, $flowMap);
 
                 continue;
             }
 
             if (isset($currentNode->next)) {
                 if (\in_array($currentNode->type, ['router', 'condition'])) {
-                    $defaultConditionNode = null;
-
-                    foreach ($currentNode->next as $childNode) {
-                        if ($childNode->type === 'default-condition-logic') {
-                            $defaultConditionNode = $childNode;
-
-                            continue;
-                        }
-
-                        $flowMap[] = $childNode;
-                    }
-
-                    if ($defaultConditionNode) {
-                        $flowMap[] = $defaultConditionNode;
-                    }
+                    $this->fanOutConditionNodes($currentNode, $flowMap);
                 } elseif (\in_array($currentNode->type, ['iterator', 'repeater'])) {
-                    for ($i = $response['start'] - 1; $i < $response['end']; ++$i) {
-                        GlobalNodeVariables::getInstance()->setNodeIndexPosition($currentNode->id, $i);
-
-                        $this->processFlowMap([$currentNode->next], $batch);
-
-                        LogService::save(LogHandler::getLogs());
-
-                        LogHandler::destroy();
-                    }
+                    $this->runIteratorNode($currentNode, $batch, $response, $isSynchronous, $flowMap);
                 } else {
                     $flowMap[] = $currentNode->next;
                 }
             }
 
-            if ($flowMap !== []) {
-                $batch->data['tasks'] = $flowMap;
-            } else {
-                $batch->data = [];
-            }
+            $this->syncBatchTasks($batch, $flowMap);
 
-            usleep(25000);
-
-            if ($this->timeExceeded() || $this->memoryExceeded()) {
+            if ($this->reachedLimit($isSynchronous)) {
                 $this->handleTaskTimeout();
 
                 break;
@@ -397,56 +459,92 @@ class FlowExecutor extends BackgroundProcessHandler
         return $batch;
     }
 
-    private function sendTaskFailedNotification($nodeInfo, $flowId)
+    /**
+     * Queue a router/condition node's children, keeping the default branch last.
+     *
+     * @param mixed $currentNode
+     */
+    private function fanOutConditionNodes($currentNode, array &$flowMap)
     {
-        $globalSettings = Config::getOption('global_settings');
+        $defaultConditionNode = null;
 
-        if (empty($globalSettings['notify_user']) || empty($globalSettings['notification_email'])) {
+        foreach ($currentNode->next as $childNode) {
+            if ($childNode->type === 'default-condition-logic') {
+                $defaultConditionNode = $childNode;
+
+                continue;
+            }
+
+            $flowMap[] = $childNode;
+        }
+
+        if ($defaultConditionNode) {
+            $flowMap[] = $defaultConditionNode;
+        }
+    }
+
+    /**
+     * Run an iterator/repeater node's sub-flow once per item.
+     *
+     * On a time/memory limit it records resume markers on $currentNode and pushes it back
+     * onto $flowMap so the next dispatched batch continues where this one stopped.
+     *
+     * @param mixed $currentNode
+     * @param mixed $batch
+     * @param mixed $response
+     * @param mixed $isSynchronous
+     */
+    private function runIteratorNode($currentNode, $batch, $response, $isSynchronous, array &$flowMap)
+    {
+        $iterStart = $response['start'] - 1;
+        $iterEnd = $response['end'];
+        $timedOut = false;
+        $pendingTasks = isset($currentNode->_resumePendingTasks) ? $currentNode->_resumePendingTasks : null;
+
+        unset($currentNode->_resumePendingTasks);
+
+        for ($i = $iterStart; $i < $iterEnd; ++$i) {
+            GlobalNodeVariables::getInstance()->setNodeIndexPosition($currentNode->id, $i);
+
+            if ($pendingTasks !== null) {
+                $this->processFlowMap($pendingTasks, $batch, $isSynchronous);
+                $pendingTasks = null;
+            } else {
+                $this->processFlowMap([$currentNode->next], $batch, $isSynchronous);
+            }
+
+            $this->flushLogs();
+
+            if ($this->reachedLimit($isSynchronous)) {
+                $this->handleTaskTimeout();
+                $timedOut = true;
+
+                break;
+            }
+        }
+
+        if (!$timedOut) {
             return;
         }
 
-        $emailBody = $this->getEmailBody($flowId, $nodeInfo);
+        $iterPendingTasks = $batch->data['tasks'] ?? [];
+        $hasMoreIterations = ($i + 1) < $iterEnd;
 
-        Hooks::addFilter('wp_mail_content_type', (fn () => 'text/html; charset=UTF-8'));
+        if (!empty($iterPendingTasks) || $hasMoreIterations) {
+            // On resume, processFlowMap computes $iterStart = _resumeStart - 1, so
+            // _resumeStart = $i + 1 re-enters iteration $i with its pending sub-tasks,
+            // and $i + 2 moves on to the next iteration.
+            $currentNode->_resumeEnd = $iterEnd;
 
-        wp_mail(
-            $globalSettings['notification_email'],
-            'Failed Task Notification',
-            $emailBody
-        );
+            if (!empty($iterPendingTasks)) {
+                $currentNode->_resumeStart = $i + 1;
+                $currentNode->_resumePendingTasks = $iterPendingTasks;
+            } else {
+                $currentNode->_resumeStart = $i + 2;
+            }
 
-        remove_filter('wp_mail_content_type', (fn () => 'text/html; charset=UTF-8'));
-    }
-
-    private function getEmailBody($flowId, $nodeInfo)
-    {
-        $flowTitle = FlowModel::select('title')->findOne(['id' => $flowId])->title ?? '';
-
-        $emailBody = '<p>Hello, </p>';
-
-        $emailBody .= '<p>We hope you are doing well. We wanted to inform you that a task in your Flow [' . esc_html($flowTitle) . '], has failed to execute as expected.</p>';
-
-        $emailBody .= '<h4>Failed Task Details</h4>';
-
-        $emailBody .= '<ul>';
-
-        $emailBody .= '<li>Task Name: ' . esc_html(ucfirst($nodeInfo['app_slug']) . '-' . $this->convertMachineSlugToLabel($nodeInfo['machine_slug'])) . '</li>';
-
-        $emailBody .= '<li>Node Id: ' . esc_html($nodeInfo['node_id']) . '</li>';
-
-        $emailBody .= '</ul>';
-
-        $emailBody .= '<p>You can review the full workflow details and take further action by visiting the workflow page<p>';
-
-        $emailBody .= '<a href="' . esc_url(admin_url('admin.php?page=' . Config::SLUG . '#/flows/details/' . $flowId)) . '">Click here to view the Flow</a>';
-
-        return $emailBody . '<p> Please check the Flow and take necessary actions to resolve the issue.</p>';
-    }
-
-    private function convertMachineSlugToLabel($machineSlug)
-    {
-        $label = preg_replace('/(?<!^)([A-Z])/', ' $1', $machineSlug);
-
-        return ucwords($label);
+            array_unshift($flowMap, $currentNode);
+            $batch->data['tasks'] = $flowMap;
+        }
     }
 }

@@ -114,6 +114,5 @@ Route::group(
 Route::noAuth()->group(
     function (): void {
         Route::post('background_process_request', [FlowExecutor::class, 'maybeHandle']);
-        Route::post('batch_background_process_request', [FlowExecutor::class, 'batchProcessHandle']);
     }
 );

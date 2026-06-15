@@ -7,6 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
 use BitApps\Pi\Helpers\MixInputHandler;
 use BitApps\Pi\Helpers\Utility;
@@ -69,12 +70,7 @@ class ApiRequestAction implements ActionInterface
 
         $headers['Content-Type'] = $contentType;
 
-        $url = $machineConfig['url']['value'];
-
-        if ($queryParams) {
-            $url .= (strpos($url, '?') === false) ? '?' : '&';
-            $url .= http_build_query($queryParams);
-        }
+        $url = $machineConfig['url']['value'] ?? null;
 
         if ($method === 'GET') {
             $bodyParams = null;
@@ -90,6 +86,26 @@ class ApiRequestAction implements ActionInterface
             $bodyParams = $this->convertArrayToJsonWithProperTypes($bodyParams);
         }
 
+        $payload = [
+            'queryParams' => $queryParams,
+            'bodyParams'  => $contentType === 'application/json' ? JSON::maybeDecode($bodyParams, true) : $bodyParams
+        ];
+
+        if (!\is_string($url) || trim($url) === '') {
+            return Utility::formatResponseData(
+                400,
+                $payload,
+                [
+                    'error' => 'Invalid URL. Please provide a valid URL string.'
+                ],
+            );
+        }
+
+        if ($queryParams) {
+            $url .= (strpos($url, '?') === false) ? '?' : '&';
+            $url .= http_build_query($queryParams);
+        }
+
         $http = new HttpClient();
 
         $response = $http->request(
@@ -99,12 +115,6 @@ class ApiRequestAction implements ActionInterface
             $headers,
             ['sslverify' => true]
         );
-
-        if (\gettype($bodyParams) === 'string') {
-            $bodyParams = [$bodyParams];
-        }
-
-        $payload = $method === 'GET' ? $queryParams : array_merge($queryParams, $bodyParams);
 
         $response = \is_array($response) || \is_object($response) ? $response : ['data' => $response];
 

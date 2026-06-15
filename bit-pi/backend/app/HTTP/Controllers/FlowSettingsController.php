@@ -41,9 +41,10 @@ class FlowSettingsController
     {
         $validated = $request->validate(
             [
-                'flow_id'             => ['required', 'integer'],
-                'settings'            => ['required', 'array'],
-                'settings.onNodeFail' => ['nullable', 'string', 'sanitize:text'],
+                'flow_id'                     => ['required', 'integer'],
+                'settings'                    => ['required', 'array'],
+                'settings.onNodeFail'         => ['nullable', 'string', 'sanitize:text'],
+                'settings.background_process' => ['nullable', 'boolean'],
             ]
         );
 

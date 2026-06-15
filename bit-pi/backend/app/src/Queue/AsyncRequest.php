@@ -29,16 +29,12 @@ abstract class AsyncRequest
      */
     protected $action = 'async_request';
 
-    protected $batch_action = 'batch_background_process_request';
-
     /**
      * Identifier.
      *
      * @var mixed
      */
     protected $identifier;
-
-    protected $batchIdentifier;
 
     /**
      * Data.
@@ -55,7 +51,6 @@ abstract class AsyncRequest
     public function __construct()
     {
         $this->identifier = $this->prefix . $this->action;
-        $this->batchIdentifier = $this->prefix . $this->batch_action;
     }
 
     public function setBodyParams($data)
@@ -80,13 +75,6 @@ abstract class AsyncRequest
         $url = add_query_arg($this->getQueryArgs($this->identifier), $this->getQueryUrl($this->identifier));
 
         return wp_remote_post(esc_url_raw($url), $this->getPostArgs($this->identifier));
-    }
-
-    public function batchDispatch()
-    {
-        $url = add_query_arg($this->getQueryArgs($this->batchIdentifier), $this->getQueryUrl($this->batchIdentifier));
-
-        return wp_remote_post(esc_url_raw($url), $this->getPostArgs($this->batchIdentifier));
     }
 
     /**
