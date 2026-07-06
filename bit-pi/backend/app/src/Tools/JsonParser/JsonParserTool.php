@@ -39,28 +39,46 @@ class JsonParserTool
 
         $jsonStringValue = $this->nodeInfoProvider->getData()['jsonParser']['value'] ?? [];
 
-        $jsonDecoded = JSON::is(MixInputHandler::replaceMixTagValue($jsonStringValue), true);
-
-        $nodeVariableInstance->setVariables($nodeId, $jsonDecoded ?? []);
-
-        $nodeVariableInstance->setNodeResponse($nodeId, $jsonDecoded ?? []);
+        $parsedInput = MixInputHandler::replaceMixTagValue($jsonStringValue);
 
         $details = [
             'app_slug'     => FlowToolsFactory::APP_SLUG,
             'machine_slug' => self::MACHINE_SLUG,
         ];
 
-        $message = $jsonDecoded
-            ? 'Json parsed successfully'
-            : 'Json parsing failed';
+        $errorMessage = '';
 
-        $status = $jsonDecoded ? FlowLog::STATUS['SUCCESS'] : FlowLog::STATUS['ERROR'];
+        if (!\is_string($parsedInput) || trim($parsedInput) === '') {
+            $errorMessage = 'JSON string is empty';
+        }
+
+        $jsonDecoded = $errorMessage ? false : JSON::is($parsedInput, true);
+
+        if (!$errorMessage && $jsonDecoded === false) {
+            $errorMessage = 'Invalid JSON string';
+        }
+
+        if ($errorMessage) {
+            return FlowToolResponseDTO::create(
+                FlowLog::STATUS['ERROR'],
+                $jsonStringValue,
+                [
+                    'error' => $errorMessage
+                ],
+                $errorMessage,
+                $details,
+            );
+        }
+
+        $nodeVariableInstance->setVariables($nodeId, $jsonDecoded);
+
+        $nodeVariableInstance->setNodeResponse($nodeId, $jsonDecoded);
 
         return FlowToolResponseDTO::create(
-            $status,
+            FlowLog::STATUS['SUCCESS'],
             $jsonStringValue,
-            $jsonDecoded ? $jsonDecoded : [],
-            $message,
+            $jsonDecoded,
+            'Json parsed successfully',
             $details,
         );
     }

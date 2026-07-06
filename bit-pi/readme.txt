@@ -4,11 +4,11 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.23.0
+Stable tag: 1.24.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Advanced WordPress automation plugin to connect forms, CRM, eCommerce, LMS, Google Sheets, Mailchimp, and 320+ platforms.
+Advanced WordPress automation plugin to connect forms, CRM, eCommerce, LMS, Google Sheets, Mailchimp, ChatGPT and 320+ platforms.
 
 == Description ==
 
@@ -511,6 +511,44 @@ For full details on what data is sent, when it is sent, and each service's Terms
 
 == Changelog ==
 
+= v1.24.0 (Jul 06, 2026) =
+
+* **Triggers (197)**:
+  * Zendesk (139)
+  * Vimeo (17)
+  * MainWP Dashboard (11)
+  * Webba Booking Calendar (11)
+  * MoreConvert Wishlist (09)
+  * Sender (08)
+  * MasterStudy LMS (02)
+
+* **Actions (167)**:
+  * Sender (34)
+  * Vimeo (29)
+  * Zendesk (27)
+  * Webba Booking Calendar (21)
+  * MoreConvert Wishlist (20)
+  * Instagram (11)
+  * MainWP Dashboard (11)
+  * X (Twitter) (08)
+  * MasterStudy LMS (04)
+  * Privyr (02)
+
+* **Features**:
+  * Added a Pro badge in the node details header when the Pro plugin is inactive.
+
+* **Improvements**:
+  * Improved Vimeo upload validation, direct URL handling, compression guidance, and retrieval coverage.
+  * Improved MoreConvert Wishlist and Webba Booking machine loading with parallel fetch calls.
+  * Improved B2BKing user metadata support.
+  * Improved GiveWP donation meta fields to flow data
+
+* **Fixes**:
+  * Fixed flow builder node cloning and copied node state typing issues.
+  * Fixed JSON parser handling for empty arrays, empty objects, and invalid JSON.
+  * Fixed Google Drive parent folder field handling and upload mapping.
+  * Fixed Discord fetch helper response handling and tab change console errors.
+
 = v1.23.0 (Jun 15, 2026) =
 
 * **Triggers (57)**:
@@ -966,7 +1004,7 @@ For full details on what data is sent, when it is sent, and each service's Terms
 
 * **Feature**:
 
-  * Added  \*\* Node clone functionality.
+  * Added Node clone functionality.
 * **Actions (10)**:
 
   * Gmail (10) 🌟

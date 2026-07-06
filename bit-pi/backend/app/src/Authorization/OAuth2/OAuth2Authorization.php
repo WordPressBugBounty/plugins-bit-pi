@@ -21,8 +21,6 @@ class OAuth2Authorization extends AbstractBaseAuthorization
 
     private $refreshTokenUrl;
 
-    private $expiresIn;
-
     public function __construct($connectionId)
     {
         parent::__construct($connectionId);
@@ -33,7 +31,6 @@ class OAuth2Authorization extends AbstractBaseAuthorization
         $tokenDetails = $this->tokenDetails;
 
         $response = $this->http->request($this->refreshTokenUrl ?? $tokenDetails['refreshTokenUrl'], 'POST', $this->getRefreshTokenBodyParams($tokenDetails));
-
         if ($this->http->getResponseCode() !== 200 || isset($response->error)) {
             return [
                 'error'    => true,

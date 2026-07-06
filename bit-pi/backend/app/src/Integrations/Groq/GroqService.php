@@ -167,16 +167,16 @@ class GroqService
         if (is_wp_error($response) || wp_remote_retrieve_response_code($response) !== 200) {
             $errorMessage = is_wp_error($response) ? $response->get_error_message() : 'HTTP code ' . wp_remote_retrieve_response_code($response);
 
-            throw new Exception('Failed to download audio from URL: ' . $fileUrl . '. Error: ' . $errorMessage);
+            throw new Exception(esc_html('Failed to download audio from URL: ' . $fileUrl . '. Error: ' . $errorMessage));
         }
 
         $content = wp_remote_retrieve_body($response);
 
         if (\strlen($content) === 0) {
-            throw new Exception('Empty response from URL: ' . $fileUrl);
+            throw new Exception(esc_html('Empty response from URL: ' . $fileUrl));
         }
 
-        $extension = pathinfo(parse_url($fileUrl, PHP_URL_PATH), PATHINFO_EXTENSION);
+        $extension = pathinfo(wp_parse_url($fileUrl, PHP_URL_PATH), PATHINFO_EXTENSION);
         $filename = 'downloaded_audio.' . ($extension ?: 'mp3');
 
         return ['content' => $content, 'filename' => $filename];

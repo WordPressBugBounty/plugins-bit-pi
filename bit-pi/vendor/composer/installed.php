@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'bitapps/pi',
-        'pretty_version' => '1.23.0',
-        'version' => '1.23.0.0',
-        'reference' => '8461fd96e066a5a006c216b5a8893b0d2fa0a623',
+        'pretty_version' => '1.24.0',
+        'version' => '1.24.0.0',
+        'reference' => '38cf19a2643b76a8e4e4ff7c3d7ba270e7692372',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'bitapps/pi' => array(
-            'pretty_version' => '1.23.0',
-            'version' => '1.23.0.0',
-            'reference' => '8461fd96e066a5a006c216b5a8893b0d2fa0a623',
+            'pretty_version' => '1.24.0',
+            'version' => '1.24.0.0',
+            'reference' => '38cf19a2643b76a8e4e4ff7c3d7ba270e7692372',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => false,
         ),
         'bitapps/wp-kit' => array(
-            'pretty_version' => '2.2',
-            'version' => '2.2.0.0',
-            'reference' => '6052fcfd1b94ccb452d2cb4ecfd93e63617503e3',
+            'pretty_version' => '2.3',
+            'version' => '2.3.0.0',
+            'reference' => 'b24dd6d613ec271cffb63fdc25a0f3cbc72fa2b6',
             'type' => 'library',
             'install_path' => __DIR__ . '/../bitapps/wp-kit',
             'aliases' => array(),

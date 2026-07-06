@@ -122,7 +122,7 @@ class GoogleSheetAction implements ActionInterface
                 return $this->rowService->getRows($spreadsheetId, $sheetTitle);
 
             default:
-                throw new InvalidArgumentException("Unknown action: {$machineSlug}");
+                throw new InvalidArgumentException(esc_html("Unknown action: {$machineSlug}"));
         }
     }
 

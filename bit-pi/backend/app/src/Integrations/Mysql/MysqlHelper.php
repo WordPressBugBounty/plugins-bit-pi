@@ -30,8 +30,6 @@ class MysqlHelper
 
             return Response::success($service->listTables());
         } catch (Throwable $th) {
-            error_log('Error fetching MySQL tables: ' . $th->getMessage());
-
             return Response::error(['message' => $th->getMessage()]);
         }
     }
