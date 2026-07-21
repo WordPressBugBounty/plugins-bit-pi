@@ -13,6 +13,7 @@ use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\Services\FlowService;
 use BitApps\Pi\src\Flow\FlowExecutor;
 use BitApps\Pi\src\Integrations\IntegrationHelper;
+use WP_User;
 
 class WooCommerceTrigger
 {
@@ -99,7 +100,7 @@ class WooCommerceTrigger
 
         $customerInfo = Utility::getUserInfo($customerId);
         $customerMeta = array_map(fn ($value) => array_shift($value), get_user_meta($customerId));
-        $customerData = array_merge($importType, $customerInfo, $customerMeta);
+        $customerData = self::removeSensitiveData(array_merge($importType, $customerInfo, $customerMeta));
 
         return self::execute('createCustomer', $customerData);
     }
@@ -110,7 +111,11 @@ class WooCommerceTrigger
             return false;
         }
 
-        $customerData = ['customer_id' => $customerId, 'old_data' => $oldData, 'new_data' => $newData];
+        $customerData = [
+            'customer_id' => $customerId,
+            'old_data'    => self::removeSensitiveData($oldData),
+            'new_data'    => self::removeSensitiveData($newData),
+        ];
 
         return self::execute('updateCustomer', $customerData);
     }
@@ -341,6 +346,50 @@ class WooCommerceTrigger
         $acfFieldData = $wcHelper->getAcfFieldData($acfFieldGroups, $postId);
 
         return self::execute($machineSlug, array_merge($productData, $acfFieldData, $extra));
+    }
+
+    /**
+     * Strip sensitive credentials (passwords, hashes, session/app tokens) from
+     * user payloads before they are exposed as mappable trigger fields.
+     *
+     * @param array|WP_User $data
+     *
+     * @return array|WP_User
+     */
+    private static function removeSensitiveData($data)
+    {
+        $sensitiveKeys = [
+            'user_pass',
+            'user_activation_key',
+            'session_tokens',
+            'application_passwords',
+        ];
+
+        if ($data instanceof WP_User) {
+            $cloned = clone $data;
+
+            if (isset($cloned->data) && \is_object($cloned->data)) {
+                $cloned->data = clone $cloned->data;
+            }
+
+            foreach ($sensitiveKeys as $key) {
+                if (isset($cloned->data->{$key})) {
+                    unset($cloned->data->{$key});
+                }
+            }
+
+            return $cloned;
+        }
+
+        if (!\is_array($data)) {
+            return $data;
+        }
+
+        foreach ($sensitiveKeys as $key) {
+            unset($data[$key]);
+        }
+
+        return $data;
     }
 
     private static function execute($machineSlug, $data)

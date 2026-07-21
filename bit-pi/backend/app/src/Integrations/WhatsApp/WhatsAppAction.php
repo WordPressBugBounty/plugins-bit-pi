@@ -58,12 +58,25 @@ class WhatsAppAction implements ActionInterface
             'Authorization' => $token
         ];
 
+        $templateParams = [];
+
+        if ($machineSlug === 'sendTemplateMessage') {
+            $templateParams = $this->nodeInfoProvider->getFieldMapRepeaters(
+                'template-placeholders.value',
+                false,
+                true,
+                'placeholder',
+                'value'
+            );
+        }
+
         return [
-            'machineSlug'   => $machineSlug,
-            'configs'       => $configs,
-            'fieldMapData'  => $fieldMapData,
-            'header'        => $header,
-            'phoneNumberId' => $phoneNumberId
+            'machineSlug'    => $machineSlug,
+            'configs'        => $configs,
+            'fieldMapData'   => $fieldMapData,
+            'header'         => $header,
+            'phoneNumberId'  => $phoneNumberId,
+            'templateParams' => $templateParams
 
         ];
     }
@@ -75,7 +88,11 @@ class WhatsAppAction implements ActionInterface
             case 'sendTemplateMessage':
                 $whatsAppData['fieldMapData']['type'] = 'template';
 
-                return $this->whatsAppService->sendTemplateMessage($whatsAppData['fieldMapData'], $whatsAppData['phoneNumberId']);
+                return $this->whatsAppService->sendTemplateMessage(
+                    $whatsAppData['fieldMapData'],
+                    $whatsAppData['phoneNumberId'],
+                    $whatsAppData['templateParams']
+                );
 
             case 'sendMessage':
                 $whatsAppData['fieldMapData']['type'] = 'text';

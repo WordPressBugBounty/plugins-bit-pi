@@ -20,6 +20,7 @@ use BitApps\Pi\src\Tools\Iterator\IteratorTool;
 use BitApps\Pi\src\Tools\JsonParser\JsonParserTool;
 use BitApps\Pi\src\Tools\Repeater\RepeaterTool;
 use BitApps\Pi\src\Tools\Xml\XmlTool;
+use BitApps\PiPro\src\Tools\RunCode\RunCodeTool;
 
 /**
  * Factory class for creating and executing flow tools in the automation workflow.
@@ -131,6 +132,13 @@ class FlowToolsFactory
                 }
 
                 return new AiAgent(new NodeInfoProvider($currentNodeInfo), $flowHistoryId);
+
+            case 'runCode':
+                if (!class_exists(RunCodeTool::class)) {
+                    return false;
+                }
+
+                return new RunCodeTool(new NodeInfoProvider($currentNodeInfo), $flowHistoryId);
 
             default:
                 return false;

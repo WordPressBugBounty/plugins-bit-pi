@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Mon Jul 06 2026 09:09:46 GMT+0000 (Coordinated Universal "
+"POT-Creation-Date: Tue Jul 21 2026 12:29:33 GMT+0000 (Coordinated Universal "
 "Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -699,6 +699,7 @@ msgstr ""
 #: frontend/src/services/machines/googleCalendar/createEvent.googleCalendar.machine.pro.ts:45
 #: frontend/src/services/machines/googleCalendar/updateCalendar.googleCalendar.machine.pro.ts:66
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:59
+#: frontend/src/services/machines/instasent/createDatasource.instasent.machine.pro.ts:41
 #: frontend/src/services/machines/klaviyo/watchEventsCommon.klaviyo.machine.pro.ts:30
 #: frontend/src/services/machines/mailerPress/createList.mailerPress.machine.pro.ts:26
 #: frontend/src/services/machines/mailPoet/createList.mailPoet.machine.pro.ts:26
@@ -820,6 +821,7 @@ msgstr ""
 #: frontend/src/services/machines/googleDrive/createDrive.googleDrive.machine.pro.ts:19
 #: frontend/src/services/machines/googleDrive/updateDrive.googleDrive.machine.pro.ts:35
 #: frontend/src/services/machines/heffl/createLead.heffl.machine.pro.ts:23
+#: frontend/src/services/machines/instasent/createDatasource.instasent.machine.pro.ts:31
 #: frontend/src/services/machines/klaviyo/createList.klaviyo.machine.pro.ts:18
 #: frontend/src/services/machines/klaviyo/updateList.klaviyo.machine.pro.ts:36
 #: frontend/src/services/machines/mailWizz/transactionalEmail.mailWizz.machine.pro.ts:134
@@ -841,7 +843,7 @@ msgstr ""
 #: frontend/src/services/machines/trello/createChecklist.trello.machine.pro.ts:67
 #: frontend/src/services/machines/trello/updateChecklistItem.trello.machine.pro.ts:106
 #: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.free.ts:48
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:77
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:112
 #: frontend/src/services/machines/wooCommerce/commonMachines/createTerm.machine.ts:14
 #: frontend/src/services/machines/wooCommerce/createAttribute.wooCommerce.machine.pro.ts:56
 #: frontend/src/services/machines/wooCommerce/updateAttribute.wooCommerce.machine.pro.ts:64
@@ -849,6 +851,8 @@ msgstr ""
 #: frontend/src/services/machines/wpCafe/helpers/wpCafeFields.ts:4
 #: frontend/src/services/machines/wpErp/createContactGroup.wpErp.machine.pro.ts:14
 #: frontend/src/services/machines/wpErp/createExpense.wpErp.machine.pro.ts:72
+#: frontend/src/services/machines/wsms/addSubscriber.wsms.machine.pro.ts:16
+#: frontend/src/services/machines/wsms/updateSubscriber.wsms.machine.pro.ts:31
 #: frontend/src/services/machines/zendesk/createOrUpdateUser.zendesk.machine.pro.ts:28
 #: frontend/src/services/machines/zendesk/createUser.zendesk.machine.pro.ts:28
 #: frontend/src/services/machines/zendesk/updateUser.zendesk.machine.pro.ts:41
@@ -897,6 +901,8 @@ msgstr ""
 #: frontend/src/services/machines/hubSpot/createOrUpdateCompany.hubSpot.machine.pro.ts:105
 #: frontend/src/services/machines/hubSpot/createOrUpdateContact.hubSpot.machine.pro.ts:136
 #: frontend/src/services/machines/hubSpot/createOrUpdateDeal.hubSpot.machine.pro.ts:179
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:110
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:95
 #: frontend/src/services/machines/ivyForms/createEntry.ivyForms.machine.pro.ts:44
 #: frontend/src/services/machines/jetEngine/createPost.jetEngine.machine.pro.ts:92
 #: frontend/src/services/machines/jetEngine/updatePost.jetEngine.machine.pro.ts:103
@@ -999,6 +1005,7 @@ msgstr ""
 #: frontend/src/services/machines/suiteDash/updateAContact.suiteDash.machine.pro.ts:48
 #: frontend/src/services/machines/systemIo/createContact.systemIo.machine.pro.ts:74
 #: frontend/src/services/machines/userRegistrationMembership/createUser.userRegistrationMembership.machine.pro.ts:42
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:55
 #: frontend/src/services/machines/wooCommerce/createNewCustomer.wooCommerce.machine.pro.ts:100
 #: frontend/src/services/machines/wooCommerce/createNewCustomer.wooCommerce.machine.pro.ts:142
 #: frontend/src/services/machines/wooCommerce/createOrder.wooCommerce.machine.pro.ts:137
@@ -1050,6 +1057,7 @@ msgstr ""
 
 #: frontend/src/components/features/Connection/internals/ConnectionTypes/ApiKeyConnection/ApiKeyConnection.tsx:153
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:74
+#: frontend/src/services/machines/whatsApp/helpers/machineHelper.whatsApp.ts:91
 msgid "Header"
 msgstr ""
 
@@ -1251,39 +1259,44 @@ msgstr ""
 msgid "No apps or tools found"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:34
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:31
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:35
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:32
 msgid "AI Agent"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:43
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:45
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:44
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:46
 msgid "Router"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:52
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:32
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:53
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:33
 msgid "Condition"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:62
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:38
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:63
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:39
 msgid "Delay"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:72
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:41
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:73
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:42
 msgid "Iterator"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:82
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:44
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:83
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:45
 msgid "Repeater/Loop"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:156
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:47
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:157
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:49
 msgid "Sticky Note"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/data/toolListData.tsx:167
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:47
+msgid "Run PHP Code"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/BuilderLeftSideBar/internals/FlowTitle.tsx:17
@@ -1323,6 +1336,7 @@ msgstr ""
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.pro.ts:95
 #: frontend/src/services/machines/sender/updateSubscriber.sender.machine.pro.ts:11
 #: frontend/src/services/machines/wcAffiliate/helpers/machineHelper.wcAffiliate.ts:5
+#: frontend/src/services/machines/wsms/helpers/commonUtils.wsms.ts:4
 msgid "Active"
 msgstr ""
 
@@ -1335,6 +1349,7 @@ msgstr ""
 #: frontend/src/services/machines/mailChimp/addRemoveMemberTag.mailChimp.machine.pro.ts:61
 #: frontend/src/services/machines/mailPoet/getSubscriberByStatus.mailPoet.machine.pro.ts:20
 #: frontend/src/services/machines/mailPoet/getSubscriberCount.mailPoet.machine.pro.ts:31
+#: frontend/src/services/machines/wsms/helpers/commonUtils.wsms.ts:5
 msgid "Inactive"
 msgstr ""
 
@@ -1446,6 +1461,7 @@ msgstr ""
 #: frontend/src/services/machines/telegram/sendPoll.telegram.machine.free.ts:208
 #: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:217
 #: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:231
+#: frontend/src/services/machines/wsms/helpers/commonUtils.wsms.ts:9
 #: frontend/src/services/machines/zendesk/createGroup.zendesk.machine.pro.ts:15
 msgid "No"
 msgstr ""
@@ -1507,6 +1523,7 @@ msgstr ""
 #: frontend/src/services/machines/telegram/sendPoll.telegram.machine.free.ts:207
 #: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.pro.ts:219
 #: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:233
+#: frontend/src/services/machines/wsms/helpers/commonUtils.wsms.ts:10
 #: frontend/src/services/machines/zendesk/createGroup.zendesk.machine.pro.ts:14
 msgid "Yes"
 msgstr ""
@@ -1893,7 +1910,7 @@ msgstr ""
 msgid "Delete %s"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:30
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:31
 #: frontend/src/components/features/NodeDetails/internals/DateTimeConfig/DateTimeConfig.tsx:52
 #: frontend/src/pages/CustomApps/internals/AddModuleModal/AddModuleModal.tsx:63
 #: frontend/src/services/machines/activeCampaign/addOrRemoveContactAutomation.activeCampaign.machine.pro.ts:43
@@ -1903,60 +1920,64 @@ msgstr ""
 msgid "Action"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:33
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:34
 msgid "Condition Logic"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:34
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:35
 msgid "CSV"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:35
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:36
 msgid "Custom Code"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:36
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:37
 #: frontend/src/services/machines/sender/createField.sender.machine.pro.ts:33
 msgid "Date Time"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:37
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:38
 msgid "Default Condition Logic"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:39
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:40
 msgid "Email Parser"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:40
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:41
 msgid "Image Helper"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:42
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:43
 msgid "Json Parser"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:43
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:44
 msgid "PDF Parser"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:46
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:48
 #: frontend/src/services/machines/acpt/helpers/commonUtils.acpt.ts:311
 msgid "Schedule"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:48
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:50
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/SubNode/SubNodeNodeContent.tsx:26
 msgid "Sub Node"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:49
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:51
 #: frontend/src/pages/CustomApps/internals/AddModuleModal/AddModuleModal.tsx:66
 msgid "Trigger"
 msgstr ""
 
-#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:50
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/NodeTypeEnum.ts:52
 msgid "XML"
+msgstr ""
+
+#: frontend/src/components/features/FlowBuilder/internals/nodeTypes/RunCode/RunCodeNodeContent.tsx:20
+msgid "Run PHP Code Node"
 msgstr ""
 
 #: frontend/src/components/features/FlowBuilder/internals/nodeTypes/Schedule/ScheduleNodeContent.tsx:23
@@ -2190,6 +2211,7 @@ msgstr ""
 #: frontend/src/services/machines/fluentSupport/createOrObtainCustomer.fluentSupport.machine.pro.ts:26
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:102
 #: frontend/src/services/machines/heffl/createClient.heffl.machine.pro.ts:44
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:62
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:5
 #: frontend/src/services/machines/klaviyo/createProfile.klaviyo.machine.pro.ts:55
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.pro.ts:69
@@ -2242,6 +2264,7 @@ msgstr ""
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.pro.ts:72
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:103
 #: frontend/src/services/machines/heffl/createClient.heffl.machine.pro.ts:54
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:71
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:6
 #: frontend/src/services/machines/klaviyo/createProfile.klaviyo.machine.pro.ts:65
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.pro.ts:70
@@ -2303,6 +2326,7 @@ msgstr ""
 #: frontend/src/services/machines/heffl/createLead.heffl.machine.pro.ts:34
 #: frontend/src/services/machines/hubSpot/addContactsToList.hubSpot.machine.pro.ts:38
 #: frontend/src/services/machines/hubSpot/removeContactFromList.hubSpot.machine.pro.ts:38
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:80
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:4
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:23
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:76
@@ -2515,6 +2539,7 @@ msgstr ""
 #: frontend/src/services/machines/heffl/helpers/commons.heffl.ts:36
 #: frontend/src/services/machines/hubSpot/helpers/hubSpotCommons.ts:29
 #: frontend/src/services/machines/instagram/helpers/commons.instagram.ts:56
+#: frontend/src/services/machines/instasent/helpers/instasentCommons.ts:29
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:34
 #: frontend/src/services/machines/jotForm/watchSubmission.jotForm.machine.pro.ts:38
 #: frontend/src/services/machines/klaviyo/helpers/commons.klaviyo.ts:31
@@ -2641,6 +2666,8 @@ msgstr ""
 #: frontend/src/services/machines/groq/createChatCompletion.groq.machine.free.ts:149
 #: frontend/src/services/machines/groq/transcribeAudio.groq.machine.free.ts:87
 #: frontend/src/services/machines/groq/translateAudio.groq.machine.free.ts:74
+#: frontend/src/services/machines/instasent/createBulkSms.instasent.machine.pro.ts:36
+#: frontend/src/services/machines/instasent/createSms.instasent.machine.pro.ts:40
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.free.ts:142
 #: frontend/src/services/machines/openAi/createModeration.openAi.machine.free.ts:36
 #: frontend/src/services/machines/openAi/createModeration.openAi.machine.free.ts:63
@@ -3205,6 +3232,18 @@ msgstr ""
 msgid "Step"
 msgstr ""
 
+#: frontend/src/components/features/NodeDetails/internals/RunCodeConfig/RunCodeConfig.tsx:68
+msgid "Write your PHP code, then use return to pass the result to the next step."
+msgstr ""
+
+#: frontend/src/components/features/NodeDetails/internals/RunCodeConfig/RunCodeConfig.tsx:69
+msgid "PHP Code"
+msgstr ""
+
+#: frontend/src/components/features/NodeDetails/internals/RunCodeConfig/RunCodeConfig.tsx:71
+msgid "e.g. return strtoupper($data[0]);"
+msgstr ""
+
 #: frontend/src/components/features/NodeDetails/internals/ScheduleConfig/ScheduleConfig.tsx:10
 #: frontend/src/components/features/NodeDetails/internals/ScheduleSettings/ui/ScheduleSettings.tsx:114
 msgid "Add Schedule"
@@ -3352,7 +3391,7 @@ msgstr ""
 msgid "XPath Query"
 msgstr ""
 
-#: frontend/src/components/features/NodeDetails/NodeDetails.tsx:102
+#: frontend/src/components/features/NodeDetails/NodeDetails.tsx:107
 msgid "Unable to load configuration. Please try reloading the page."
 msgstr ""
 
@@ -3773,6 +3812,7 @@ msgstr ""
 #: frontend/src/services/machines/gmail/replyToEmail.gmail.machine.pro.ts:106
 #: frontend/src/services/machines/gmail/sendEmail.gmail.machine.pro.ts:96
 #: frontend/src/services/machines/mail/sendEmail.mail.machine.free.ts:112
+#: frontend/src/services/machines/whatsApp/helpers/machineHelper.whatsApp.ts:91
 msgid "Body"
 msgstr ""
 
@@ -5038,6 +5078,8 @@ msgstr ""
 #: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.pro.ts:76
 #: frontend/src/services/machines/wpCafe/helpers/wpCafeFields.ts:15
 #: frontend/src/services/machines/wpCafe/updateReservation.wpCafe.machine.pro.ts:26
+#: frontend/src/services/machines/wsms/addSubscriber.wsms.machine.pro.ts:53
+#: frontend/src/services/machines/wsms/updateSubscriber.wsms.machine.pro.ts:68
 #: frontend/src/services/machines/zendesk/createTicket.zendesk.machine.pro.ts:100
 #: frontend/src/services/machines/zendesk/updateTicket.zendesk.machine.pro.ts:85
 #: frontend/src/services/machines/zoom/getManyMeetings.zoom.machine.pro.ts:44
@@ -5264,6 +5306,7 @@ msgid "Debug Log"
 msgstr ""
 
 #: frontend/src/pages/SystemInfo/ui/SystemInfo.tsx:122
+#: frontend/src/services/machines/instasent/createDatasource.instasent.machine.pro.ts:71
 #: frontend/src/services/machines/klaviyo/helpers/commonFields.klaviyo.ts:12
 #: frontend/src/services/machines/mailBluster/helpers/machineHelper.mailBluster.ts:14
 #: frontend/src/services/machines/mailMint/createContact.mailMint.machine.pro.ts:109
@@ -6764,6 +6807,7 @@ msgid "Businesswoman"
 msgstr ""
 
 #: frontend/src/services/machines/acpt/helpers/commonUtils.acpt.ts:109
+#: frontend/src/services/machines/whatsApp/helpers/machineHelper.whatsApp.ts:88
 msgid "Button"
 msgstr ""
 
@@ -7939,6 +7983,8 @@ msgstr ""
 #: frontend/src/services/machines/acpt/helpers/commonUtils.acpt.ts:447
 #: frontend/src/services/machines/buddyBoss/createGroup.buddyBoss.machine.pro.ts:16
 #: frontend/src/services/machines/mondayCom/createGroup.mondayCom.machine.pro.ts:33
+#: frontend/src/services/machines/wsms/addGroup.wsms.machine.pro.ts:15
+#: frontend/src/services/machines/wsms/updateGroup.wsms.machine.pro.ts:31
 #: frontend/src/services/machines/zendesk/createGroup.zendesk.machine.pro.ts:26
 #: frontend/src/services/machines/zendesk/updateGroup.zendesk.machine.pro.ts:35
 msgid "Group Name"
@@ -8245,6 +8291,11 @@ msgstr ""
 #: frontend/src/services/machines/jetEngine/updateCustomContentTypeItem.jetEngine.machine.pro.ts:57
 #: frontend/src/services/machines/jetEngine/updateFieldById.jetEngine.machine.pro.ts:39
 #: frontend/src/services/machines/jetEngine/updateOptionPageField.jetEngine.machine.pro.ts:45
+#: frontend/src/services/machines/secureCustomFields/updateGroupFieldValue.secureCustomFields.machine.pro.ts:54
+#: frontend/src/services/machines/secureCustomFields/updateOptionScfValue.secureCustomFields.machine.pro.ts:26
+#: frontend/src/services/machines/secureCustomFields/updatePostScfValue.secureCustomFields.machine.pro.ts:43
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:61
+#: frontend/src/services/machines/secureCustomFields/updateUserScfValue.secureCustomFields.machine.pro.ts:43
 #: frontend/src/services/machines/wordPress/getTermByField.wordPress.machine.free.ts:27
 #: frontend/src/services/machines/wordPress/getUserByField.wordPress.machine.free.ts:29
 msgid "Field Value"
@@ -8391,6 +8442,7 @@ msgstr ""
 #: frontend/src/services/machines/activeCampaign/updateContact.activeCampaign.machine.pro.ts:64
 #: frontend/src/services/machines/activeCampaign/updateContactByEmail.activeCampaign.machine.pro.ts:54
 #: frontend/src/services/machines/demio/helpers/machineHelper.demio.ts:87
+#: frontend/src/services/machines/instasent/createLookup.instasent.machine.pro.ts:18
 #: frontend/src/services/machines/klaviyo/createProfile.klaviyo.machine.pro.ts:32
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:27
 msgid "Phone Number"
@@ -8879,46 +8931,57 @@ msgid "Credit Amount"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/_advancedCustomFieldsMachines.ts:23
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:16
 msgid "Get Options Page Field Value"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/_advancedCustomFieldsMachines.ts:29
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:22
 msgid "Get Post Custom Field Value"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/_advancedCustomFieldsMachines.ts:35
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:28
 msgid "Get User Custom Field Value"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/_advancedCustomFieldsMachines.ts:41
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:34
 msgid "Update Group Field Value"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/_advancedCustomFieldsMachines.ts:47
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:40
 msgid "Update Options Page Field Value"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/_advancedCustomFieldsMachines.ts:53
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:46
 msgid "Update Post Custom Field Value"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/_advancedCustomFieldsMachines.ts:59
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:52
 msgid "Update Repeater Field Value"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/_advancedCustomFieldsMachines.ts:65
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:58
 msgid "Update User Custom Field Value"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/_advancedCustomFieldsMachines.ts:74
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:67
 msgid "Options Page Field is Updated"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/_advancedCustomFieldsMachines.ts:81
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:74
 msgid "Post Custom Field is Updated"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/_advancedCustomFieldsMachines.ts:88
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:81
 msgid "User Custom Field is Updated"
 msgstr ""
 
@@ -8951,6 +9014,12 @@ msgstr ""
 #: frontend/src/services/machines/salesforce/updateContact.salesforce.machine.pro.ts:43
 #: frontend/src/services/machines/salesforce/updateLead.salesforce.machine.pro.ts:38
 #: frontend/src/services/machines/salesforce/updateTask.salesforce.machine.pro.ts:37
+#: frontend/src/services/machines/secureCustomFields/getOptionScfValue.secureCustomFields.machine.pro.ts:15
+#: frontend/src/services/machines/secureCustomFields/getPostScfValue.secureCustomFields.machine.pro.ts:16
+#: frontend/src/services/machines/secureCustomFields/getUserScfValue.secureCustomFields.machine.pro.ts:16
+#: frontend/src/services/machines/secureCustomFields/updateOptionScfValue.secureCustomFields.machine.pro.ts:15
+#: frontend/src/services/machines/secureCustomFields/updatePostScfValue.secureCustomFields.machine.pro.ts:32
+#: frontend/src/services/machines/secureCustomFields/updateUserScfValue.secureCustomFields.machine.pro.ts:32
 #: frontend/src/services/machines/zohoCrm/createAccount.zohoCrm.machine.pro.ts:22
 #: frontend/src/services/machines/zohoCrm/createContact.zohoCrm.machine.pro.ts:22
 #: frontend/src/services/machines/zohoCrm/createDeal.zohoCrm.machine.pro.ts:68
@@ -9022,6 +9091,10 @@ msgstr ""
 #: frontend/src/services/machines/fluentCommunity/removeUserFromMultipleCourses.fluentCommunity.machine.pro.ts:15
 #: frontend/src/services/machines/fluentCommunity/removeUserFromSpace.fluentCommunity.machine.pro.ts:15
 #: frontend/src/services/machines/fluentCommunity/verifyUserProfile.fluentCommunity.machine.pro.ts:15
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:52
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:52
+#: frontend/src/services/machines/instasent/deleteContact.instasent.machine.pro.ts:50
+#: frontend/src/services/machines/instasent/getAudienceContact.instasent.machine.pro.ts:31
 #: frontend/src/services/machines/learnDash/commonMachines/userAndCourseId.learnDash.machine.ts:16
 #: frontend/src/services/machines/learnDash/commonMachines/userAndGroupId.learnDash.machine.ts:15
 #: frontend/src/services/machines/learnDash/commonMachines/userId.learnDash.machine.ts:14
@@ -9047,20 +9120,25 @@ msgid "Enter the post ID."
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/updateGroupFieldValue.advancedCustomFields.machine.pro.ts:24
+#: frontend/src/services/machines/secureCustomFields/updateGroupFieldValue.secureCustomFields.machine.pro.ts:30
 msgid "Enter the group field name."
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/updateGroupFieldValue.advancedCustomFields.machine.pro.ts:26
+#: frontend/src/services/machines/secureCustomFields/updateGroupFieldValue.secureCustomFields.machine.pro.ts:32
 msgid "Group Field Name"
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/updateGroupFieldValue.advancedCustomFields.machine.pro.ts:35
 #: frontend/src/services/machines/advancedCustomFields/updateRepeaterFieldValue.advancedCustomFields.machine.pro.ts:46
+#: frontend/src/services/machines/secureCustomFields/updateGroupFieldValue.secureCustomFields.machine.pro.ts:41
 msgid "Enter the sub-field name."
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/updateGroupFieldValue.advancedCustomFields.machine.pro.ts:37
 #: frontend/src/services/machines/advancedCustomFields/updateRepeaterFieldValue.advancedCustomFields.machine.pro.ts:48
+#: frontend/src/services/machines/secureCustomFields/updateGroupFieldValue.secureCustomFields.machine.pro.ts:43
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:53
 msgid "Sub Field Name"
 msgstr ""
 
@@ -9069,6 +9147,10 @@ msgstr ""
 #: frontend/src/services/machines/advancedCustomFields/updatePostAcfValue.advancedCustomFields.machine.pro.ts:35
 #: frontend/src/services/machines/advancedCustomFields/updateRepeaterFieldValue.advancedCustomFields.machine.pro.ts:57
 #: frontend/src/services/machines/advancedCustomFields/updateUserAcfValue.advancedCustomFields.machine.pro.ts:35
+#: frontend/src/services/machines/secureCustomFields/updateGroupFieldValue.secureCustomFields.machine.pro.ts:52
+#: frontend/src/services/machines/secureCustomFields/updateOptionScfValue.secureCustomFields.machine.pro.ts:24
+#: frontend/src/services/machines/secureCustomFields/updatePostScfValue.secureCustomFields.machine.pro.ts:41
+#: frontend/src/services/machines/secureCustomFields/updateUserScfValue.secureCustomFields.machine.pro.ts:41
 msgid "Enter the field value."
 msgstr ""
 
@@ -9077,10 +9159,12 @@ msgid "Enter the post ID to update."
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/updateRepeaterFieldValue.advancedCustomFields.machine.pro.ts:24
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:30
 msgid "Enter the repeater field name."
 msgstr ""
 
 #: frontend/src/services/machines/advancedCustomFields/updateRepeaterFieldValue.advancedCustomFields.machine.pro.ts:26
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:32
 msgid "Repeater Field Name"
 msgstr ""
 
@@ -9906,6 +9990,7 @@ msgstr ""
 
 #: frontend/src/services/machines/apify/helpers/apifyCommons.ts:14
 #: frontend/src/services/machines/bitly/helpers/bitlyCommons.ts:14
+#: frontend/src/services/machines/instasent/helpers/instasentCommons.ts:14
 #: frontend/src/services/machines/zendesk/helpers/zendeskCommons.ts:17
 msgid "API Token"
 msgstr ""
@@ -11536,6 +11621,7 @@ msgid "Add Attributes"
 msgstr ""
 
 #: frontend/src/services/machines/brevo/createContact.brevo.machine.pro.ts:53
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:120
 msgid "Attribute #{COUNT}"
 msgstr ""
 
@@ -12218,6 +12304,7 @@ msgstr ""
 #: frontend/src/services/machines/twilio/cellPhone.twilio.machine.pro.ts:42
 #: frontend/src/services/machines/twilio/sendSms.twilio.machine.pro.ts:69
 #: frontend/src/services/machines/twitter/sendDm.twitter.machine.pro.ts:32
+#: frontend/src/services/machines/wsms/sendSms.wsms.machine.pro.ts:27
 #: frontend/src/services/machines/zoom/sendChatMessage.zoom.machine.pro.ts:65
 msgid "Message"
 msgstr ""
@@ -12411,6 +12498,8 @@ msgstr ""
 #: frontend/src/services/machines/pipeDrive/_pipeDriveMachines.ts:500
 #: frontend/src/services/machines/pipeDrive/_pipeDriveMachines.ts:508
 #: frontend/src/services/machines/salesforce/getUser.salesforce.machine.pro.ts:21
+#: frontend/src/services/machines/secureCustomFields/getUserScfValue.secureCustomFields.machine.pro.ts:28
+#: frontend/src/services/machines/secureCustomFields/updateUserScfValue.secureCustomFields.machine.pro.ts:17
 #: frontend/src/services/machines/slack/sendDirectMessage.slack.machine.pro.ts:19
 #: frontend/src/services/machines/sureDash/bookmarkItem.sureDash.machine.pro.ts:49
 #: frontend/src/services/machines/sureDash/reactToEntity.sureDash.machine.pro.ts:49
@@ -12435,6 +12524,7 @@ msgstr ""
 #: frontend/src/services/machines/deepSeek/createChatCompletion.deepSeek.machine.free.ts:80
 #: frontend/src/services/machines/gemini/createCompletion.gemini.machine.free.ts:60
 #: frontend/src/services/machines/groq/createChatCompletion.groq.machine.free.ts:111
+#: frontend/src/services/machines/instasent/createBulkSms.instasent.machine.pro.ts:48
 #: frontend/src/services/machines/openAi/createCompletion.openAi.machine.free.ts:118
 #: frontend/src/services/machines/openRouter/createChatCompletion.openRouter.machine.free.ts:110
 #: frontend/src/services/machines/perplexity/createCompletion.perplexity.machine.free.ts:65
@@ -13476,6 +13566,7 @@ msgstr ""
 #: frontend/src/services/machines/drip/_dripMachines.ts:21
 #: frontend/src/services/machines/fluentCrm/_fluentCrmMachines.ts:21
 #: frontend/src/services/machines/hubSpot/_hubSpotMachines.ts:21
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:122
 #: frontend/src/services/machines/jetpackCrm/_jetpackCrmMachines.ts:21
 #: frontend/src/services/machines/mailerPress/_mailerPressMachines.ts:21
 msgid "Create or Update Contact"
@@ -13500,6 +13591,8 @@ msgstr ""
 #: frontend/src/services/machines/mailPoet/getSubscriberByStatus.mailPoet.machine.pro.ts:14
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:36
 #: frontend/src/services/machines/sender/updateSubscriber.sender.machine.pro.ts:119
+#: frontend/src/services/machines/wsms/getSubscriberGroupsByNumber.wsms.machine.pro.ts:27
+#: frontend/src/services/machines/wsms/getSubscribers.wsms.machine.pro.ts:33
 msgid "Subscriber Status"
 msgstr ""
 
@@ -13967,6 +14060,7 @@ msgid "Add To Cart"
 msgstr ""
 
 #: frontend/src/services/machines/EasyCommerce/_easyCommerceMachines.ts:50
+#: frontend/src/services/machines/modernCart/_modernCartMachines.ts:61
 msgid "Cart Updated"
 msgstr ""
 
@@ -14615,6 +14709,7 @@ msgstr ""
 
 #: frontend/src/services/machines/easyDigitalDownload/purchaseProduct.easyDigitalDownload.machine.pro.ts:41
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:21
+#: frontend/src/services/machines/modernCart/helpers/modernCartCommons.ts:15
 #: frontend/src/services/machines/moreConvertWishlist/commonMachines/productId.moreConvertWishlist.machine.ts:21
 #: frontend/src/services/machines/moreConvertWishlist/commonMachines/wishlistProductIds.moreConvertWishlist.machine.ts:36
 #: frontend/src/services/machines/sureCart/purchaseCreated.sureCart.machine.pro.ts:37
@@ -18302,6 +18397,7 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:18
 #: frontend/src/services/machines/hubSpot/helpers/hubSpotCommonFields.ts:67
+#: frontend/src/services/machines/modernCart/helpers/modernCartCommons.ts:10
 #: frontend/src/services/machines/moreConvertWishlist/commonMachines/productId.moreConvertWishlist.machine.ts:16
 #: frontend/src/services/machines/moreConvertWishlist/commonMachines/wishlistProductIds.moreConvertWishlist.machine.ts:31
 #: frontend/src/services/machines/pipeDrive/_pipeDriveMachines.ts:452
@@ -18316,6 +18412,8 @@ msgid "Product"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:28
+#: frontend/src/services/machines/modernCart/addProductToCart.modernCart.machine.pro.ts:20
+#: frontend/src/services/machines/modernCart/updateCartQuantity.modernCart.machine.pro.ts:17
 #: frontend/src/services/machines/pipeDrive/addDealProduct.pipeDrive.machine.pro.ts:59
 #: frontend/src/services/machines/pipeDrive/updateDealProduct.pipeDrive.machine.pro.ts:61
 #: frontend/src/services/machines/razorpay/createSubscription.razorpay.machine.pro.ts:45
@@ -19139,7 +19237,7 @@ msgstr ""
 #: frontend/src/services/machines/fluentCommunity/createNewPostInFeed.fluentCommunity.machine.pro.ts:59
 #: frontend/src/services/machines/instagram/publishCarousel.instagram.machine.pro.ts:51
 #: frontend/src/services/machines/instagram/publishStory.instagram.machine.pro.ts:55
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:44
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:79
 msgid "Media URL"
 msgstr ""
 
@@ -21154,6 +21252,14 @@ msgstr ""
 #: frontend/src/services/machines/sender/commonMachines/webhookTrigger.sender.machine.ts:21
 #: frontend/src/services/machines/sender/removeSubscriberFromGroup.sender.machine.pro.ts:19
 #: frontend/src/services/machines/sender/updateGroup.sender.machine.pro.ts:19
+#: frontend/src/services/machines/wsms/addSubscriber.wsms.machine.pro.ts:38
+#: frontend/src/services/machines/wsms/deleteGroup.wsms.machine.pro.ts:17
+#: frontend/src/services/machines/wsms/deleteSubscriber.wsms.machine.pro.ts:28
+#: frontend/src/services/machines/wsms/getGroup.wsms.machine.pro.ts:16
+#: frontend/src/services/machines/wsms/getSubscriberCount.wsms.machine.pro.ts:17
+#: frontend/src/services/machines/wsms/getSubscribers.wsms.machine.pro.ts:18
+#: frontend/src/services/machines/wsms/updateGroup.wsms.machine.pro.ts:16
+#: frontend/src/services/machines/wsms/updateSubscriber.wsms.machine.pro.ts:53
 #: frontend/src/services/machines/zendesk/commonMachines/groupId.zendesk.machine.ts:23
 #: frontend/src/services/machines/zendesk/createTicket.zendesk.machine.pro.ts:122
 #: frontend/src/services/machines/zendesk/updateGroup.zendesk.machine.pro.ts:23
@@ -21280,6 +21386,7 @@ msgstr ""
 #: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:35
 #: frontend/src/services/machines/googleCalendar/duplicateEvent.googleCalendar.machine.pro.ts:35
 #: frontend/src/services/machines/googleCalendar/getEvent.googleCalendar.machine.pro.ts:48
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:63
 msgid "Event ID"
 msgstr ""
 
@@ -23665,6 +23772,8 @@ msgstr ""
 #: frontend/src/services/machines/sender/commonMachines/subscriberId.sender.machine.ts:20
 #: frontend/src/services/machines/sender/getSubscriberEvents.sender.machine.pro.ts:19
 #: frontend/src/services/machines/sender/updateSubscriber.sender.machine.pro.ts:27
+#: frontend/src/services/machines/wsms/getSubscriber.wsms.machine.pro.ts:16
+#: frontend/src/services/machines/wsms/updateSubscriber.wsms.machine.pro.ts:17
 msgid "Subscriber"
 msgstr ""
 
@@ -24916,6 +25025,371 @@ msgstr ""
 msgid "Hide"
 msgstr ""
 
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:18
+#: frontend/src/services/machines/twilio/_twilioMachines.ts:21
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:17
+msgid "Send SMS"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:25
+msgid "Send Bulk SMS"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:32
+msgid "Get SMS"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:39
+msgid "List SMS"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:42
+msgid "Want to see your SMS messages? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:47
+msgid "Get SMS Price"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:50
+msgid "Want to see SMS prices by country? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:57
+msgid "Create Lookup"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:64
+msgid "Get Lookup"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:71
+msgid "List Lookup"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:74
+msgid "Want to see your lookups? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:79
+msgid "Get Lookup Price"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:82
+msgid "Want to see lookup prices by country? Just hit **Test Run** to fetch them."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:89
+msgid "Get Account Balance"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:92
+msgid "Want to see your account balance? Just hit **Test Run** to fetch it."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:99
+msgid "Create Data Source"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:106
+msgid "List Data Sources"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:113
+msgid "Get Data Source"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:129
+#: frontend/src/services/machines/jetpackCrm/_jetpackCrmMachines.ts:52
+#: frontend/src/services/machines/mailerPress/_mailerPressMachines.ts:35
+#: frontend/src/services/machines/mailMint/_mailMintMachines.ts:175
+#: frontend/src/services/machines/wpErp/_wpErpMachines.ts:31
+msgid "Delete Contact"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:136
+msgid "Create Contact Event"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/_instasentMachines.ts:143
+msgid "Get Audience Contact"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createBulkSms.instasent.machine.pro.ts:15
+msgid "Add SMS"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createBulkSms.instasent.machine.pro.ts:20
+#: frontend/src/services/machines/instasent/createSms.instasent.machine.pro.ts:18
+#: frontend/src/services/machines/sender/createCampaign.sender.machine.pro.ts:39
+msgid "From"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createBulkSms.instasent.machine.pro.ts:28
+#: frontend/src/services/machines/instasent/createSms.instasent.machine.pro.ts:29
+#: frontend/src/services/machines/mail/sendEmail.mail.machine.free.ts:52
+#: frontend/src/services/machines/sender/sendTransactionalEmail.sender.machine.pro.ts:38
+msgid "To"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createBulkSms.instasent.machine.pro.ts:43
+msgid "Up to 100 SMS messages per request."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createBulkSms.instasent.machine.pro.ts:46
+msgid "SMS #{COUNT}"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createBulkSms.instasent.machine.pro.ts:55
+msgid "Send every message as Unicode (needed for emoji and non-GSM characters)."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createBulkSms.instasent.machine.pro.ts:57
+#: frontend/src/services/machines/instasent/createSms.instasent.machine.pro.ts:60
+msgid "Allow Unicode"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:17
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:17
+#: frontend/src/services/machines/instasent/deleteContact.instasent.machine.pro.ts:17
+#: frontend/src/services/machines/instasent/getDatasource.instasent.machine.pro.ts:17
+msgid ""
+"The project the data source belongs to. Find the ID in your Instasent "
+"project dashboard under Settings → General → Unique identifier."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:21
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:21
+#: frontend/src/services/machines/instasent/createDatasource.instasent.machine.pro.ts:20
+#: frontend/src/services/machines/instasent/deleteContact.instasent.machine.pro.ts:21
+#: frontend/src/services/machines/instasent/getAudienceContact.instasent.machine.pro.ts:20
+#: frontend/src/services/machines/instasent/getDatasource.instasent.machine.pro.ts:21
+#: frontend/src/services/machines/instasent/listDatasource.instasent.machine.pro.ts:20
+#: frontend/src/services/machines/pipeDrive/createActivity.pipeDrive.machine.pro.ts:86
+#: frontend/src/services/machines/pipeDrive/updateActivity.pipeDrive.machine.pro.ts:103
+#: frontend/src/services/machines/zohoProject/createMilestone.zohoProject.machine.pro.ts:39
+#: frontend/src/services/machines/zohoProject/createTask.zohoProject.machine.pro.ts:44
+#: frontend/src/services/machines/zohoProject/createTasklist.zohoProject.machine.pro.ts:39
+#: frontend/src/services/machines/zohoProject/deleteProject.zohoProject.machine.pro.ts:39
+msgid "Project ID"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:30
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:30
+#: frontend/src/services/machines/instasent/deleteContact.instasent.machine.pro.ts:30
+msgid ""
+"Select the data source, or map an ID. Enter the Project ID first to load "
+"the list."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:35
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:35
+#: frontend/src/services/machines/instasent/deleteContact.instasent.machine.pro.ts:35
+#: frontend/src/services/machines/instasent/getDatasource.instasent.machine.pro.ts:35
+msgid "Data Source"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:40
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:40
+#: frontend/src/services/machines/instasent/deleteContact.instasent.machine.pro.ts:40
+#: frontend/src/services/machines/instasent/getDatasource.instasent.machine.pro.ts:40
+msgid "Select a data source"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:48
+msgid ""
+"A unique ID you assign to this contact (max 32 characters). Contacts with "
+"the same user ID are merged across data sources."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:88
+msgid "Mobile phone including country code. Example: +34666555444."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:90
+#: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:14
+msgid "Mobile Phone"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:97
+msgid "Add Attribute"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:102
+msgid "Attribute"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:117
+msgid "Optional custom contact attributes."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContact.instasent.machine.pro.ts:122
+msgid "Custom Attributes"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:48
+msgid ""
+"The unique user ID of the contact producing the event — the same ID you "
+"assigned when creating it."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:61
+msgid "Your event identifier."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:72
+msgid "The event type. Check your data source for available event types."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:74
+msgid "Event Type"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:82
+#: frontend/src/services/machines/mysql/executeQuery.mysql.machine.free.ts:27
+#: frontend/src/services/machines/mysql/selectRows.mysql.machine.free.ts:49
+msgid "Add Parameter"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:87
+msgid "Parameter"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:102
+msgid "Event parameters as key/value pairs."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:105
+#: frontend/src/services/machines/mysql/executeQuery.mysql.machine.free.ts:42
+#: frontend/src/services/machines/mysql/selectRows.mysql.machine.free.ts:64
+msgid "Parameter #{COUNT}"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createContactEvent.instasent.machine.pro.ts:107
+msgid "Event Parameters"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createDatasource.instasent.machine.pro.ts:16
+msgid ""
+"The project the data source is created in. Find the ID in your Instasent "
+"project dashboard under Settings → General → Unique identifier."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createDatasource.instasent.machine.pro.ts:29
+msgid "Name of the data source to create."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createDatasource.instasent.machine.pro.ts:49
+msgid "Default country code, e.g. ES."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createDatasource.instasent.machine.pro.ts:51
+msgid "Default Country"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createDatasource.instasent.machine.pro.ts:59
+msgid "Locale, e.g. en_US."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createDatasource.instasent.machine.pro.ts:61
+msgid "Locale"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createDatasource.instasent.machine.pro.ts:69
+msgid "Timezone, e.g. America/New_York."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createLookup.instasent.machine.pro.ts:16
+msgid "Phone number to look up in E.164 format. Example: +34666555444."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createSms.instasent.machine.pro.ts:16
+msgid "Sender name (max 11 chars) or number (max 14 digits)."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createSms.instasent.machine.pro.ts:27
+msgid "Recipient phone number in E.164 format. Example: +34666555444."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createSms.instasent.machine.pro.ts:38
+msgid "The text content of the SMS."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createSms.instasent.machine.pro.ts:49
+msgid "Optional unique client reference for this SMS (max 40 chars)."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/createSms.instasent.machine.pro.ts:51
+msgid "Client ID"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/deleteContact.instasent.machine.pro.ts:48
+#: frontend/src/services/machines/instasent/getAudienceContact.instasent.machine.pro.ts:29
+msgid "The unique user ID you assigned to the contact when it was created."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/getAudienceContact.instasent.machine.pro.ts:16
+msgid ""
+"The project the audience belongs to. Find the ID in your Instasent project "
+"dashboard under Settings → General → Unique identifier."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/getDatasource.instasent.machine.pro.ts:30
+msgid ""
+"Select a data source, or map an ID. Enter the Project ID first to load the "
+"list."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/getLookup.instasent.machine.pro.ts:17
+msgid "Select the lookup to retrieve, or map an ID from a previous step."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/getLookup.instasent.machine.pro.ts:20
+msgid "Lookup"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/getLookup.instasent.machine.pro.ts:25
+msgid "Select a lookup"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/getSms.instasent.machine.pro.ts:17
+msgid "Select the SMS to retrieve, or map an ID from a previous step."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/getSms.instasent.machine.pro.ts:20
+#: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:25
+msgid "SMS"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/getSms.instasent.machine.pro.ts:25
+msgid "Select an SMS"
+msgstr ""
+
+#: frontend/src/services/machines/instasent/helpers/instasentCommons.ts:7
+msgid ""
+"You can create an API token in <a target=\"_blank\" class=\"text-blue-600 "
+"underline\" rel=\"noopener noreferrer nofollow\" "
+"href=\"https://dashboard.instasent.com\">your Instasent dashboard</a>."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/helpers/machineHelper.instasent.ts:38
+msgid "Failed to fetch SMS list."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/helpers/machineHelper.instasent.ts:81
+msgid "Failed to fetch lookup list."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/helpers/machineHelper.instasent.ts:136
+msgid "Failed to fetch data sources."
+msgstr ""
+
+#: frontend/src/services/machines/instasent/listDatasource.instasent.machine.pro.ts:16
+msgid ""
+"The project whose data sources you want to list. Find the ID in your "
+"Instasent project dashboard under Settings → General → Unique identifier."
+msgstr ""
+
 #: frontend/src/services/machines/ivyForms/_ivyFormsMachines.ts:16
 msgid "Create Entry"
 msgstr ""
@@ -25464,13 +25938,6 @@ msgstr ""
 msgid "Update Contact Status"
 msgstr ""
 
-#: frontend/src/services/machines/jetpackCrm/_jetpackCrmMachines.ts:52
-#: frontend/src/services/machines/mailerPress/_mailerPressMachines.ts:35
-#: frontend/src/services/machines/mailMint/_mailMintMachines.ts:175
-#: frontend/src/services/machines/wpErp/_wpErpMachines.ts:31
-msgid "Delete Contact"
-msgstr ""
-
 #: frontend/src/services/machines/jetpackCrm/_jetpackCrmMachines.ts:80
 msgid "Want to see transactions? Just hit **Test Run** to fetch them."
 msgstr ""
@@ -25587,10 +26054,6 @@ msgstr ""
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:11
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:27
 msgid "County"
-msgstr ""
-
-#: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:14
-msgid "Mobile Phone"
 msgstr ""
 
 #: frontend/src/services/machines/jetpackCrm/helpers/jetpackCrmFields.ts:15
@@ -25808,7 +26271,7 @@ msgstr ""
 #: frontend/src/services/machines/pipeDrive/updateOrganization.pipeDrive.machine.pro.ts:89
 #: frontend/src/services/machines/webbaBooking/createLocation.webbaBooking.machine.pro.ts:37
 #: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.free.ts:58
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:88
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:123
 #: frontend/src/services/machines/woodpecker/helpers/woodpeckerProspectFields.ts:15
 msgid "Address"
 msgstr ""
@@ -25912,6 +26375,7 @@ msgstr ""
 
 #: frontend/src/services/machines/klaviyo/_klaviyoMachines.ts:68
 #: frontend/src/services/machines/klaviyo/watchEventsCommon.klaviyo.machine.pro.ts:45
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:125
 msgid "SMS Sent"
 msgstr ""
 
@@ -26100,14 +26564,14 @@ msgstr ""
 #: frontend/src/services/machines/klaviyo/helpers/commonFields.klaviyo.ts:8
 #: frontend/src/services/machines/line/helpers/lineCommons.ts:292
 #: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.free.ts:26
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:55
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:90
 msgid "Latitude"
 msgstr ""
 
 #: frontend/src/services/machines/klaviyo/helpers/commonFields.klaviyo.ts:9
 #: frontend/src/services/machines/line/helpers/lineCommons.ts:300
 #: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.free.ts:37
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:66
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:101
 msgid "Longitude"
 msgstr ""
 
@@ -26696,6 +27160,14 @@ msgstr ""
 #: frontend/src/services/machines/sureMembers/groupUpdated.sureMembers.machine.pro.ts:37
 #: frontend/src/services/machines/wpErp/addContactToGroup.wpErp.machine.pro.ts:21
 #: frontend/src/services/machines/wpErp/removeContactFromGroup.wpErp.machine.pro.ts:21
+#: frontend/src/services/machines/wsms/addSubscriber.wsms.machine.pro.ts:43
+#: frontend/src/services/machines/wsms/deleteGroup.wsms.machine.pro.ts:22
+#: frontend/src/services/machines/wsms/deleteSubscriber.wsms.machine.pro.ts:33
+#: frontend/src/services/machines/wsms/getGroup.wsms.machine.pro.ts:21
+#: frontend/src/services/machines/wsms/getSubscriberCount.wsms.machine.pro.ts:22
+#: frontend/src/services/machines/wsms/getSubscribers.wsms.machine.pro.ts:23
+#: frontend/src/services/machines/wsms/updateGroup.wsms.machine.pro.ts:21
+#: frontend/src/services/machines/wsms/updateSubscriber.wsms.machine.pro.ts:58
 msgid "Select a group"
 msgstr ""
 
@@ -27221,11 +27693,6 @@ msgid ""
 "separated by commas."
 msgstr ""
 
-#: frontend/src/services/machines/mail/sendEmail.mail.machine.free.ts:52
-#: frontend/src/services/machines/sender/sendTransactionalEmail.sender.machine.pro.ts:38
-msgid "To"
-msgstr ""
-
 #: frontend/src/services/machines/mail/sendEmail.mail.machine.free.ts:61
 msgid ""
 "Email address to which a copy of the email will be sent. You can use "
@@ -27537,6 +28004,7 @@ msgstr ""
 #: frontend/src/services/machines/mailWizz/_mailWizzMachines.ts:20
 #: frontend/src/services/machines/newsletter/_newsletterMachines.ts:56
 #: frontend/src/services/machines/sender/_senderMachines.ts:24
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:31
 msgid "Update Subscriber"
 msgstr ""
 
@@ -27659,6 +28127,7 @@ msgid "Add subscriber to groups."
 msgstr ""
 
 #: frontend/src/services/machines/mailerLite/createSubscriber.mailerLite.machine.pro.ts:78
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:80
 msgid "Add Group"
 msgstr ""
 
@@ -28316,6 +28785,7 @@ msgid "Get Subscriber (By Status)"
 msgstr ""
 
 #: frontend/src/services/machines/mailPoet/_mailPoetMachines.ts:95
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:66
 msgid "Get Subscriber Count"
 msgstr ""
 
@@ -28514,6 +28984,7 @@ msgid "Select the list to add the subscriber to."
 msgstr ""
 
 #: frontend/src/services/machines/mailWizz/helpers/machineHelper.mailWizz.ts:36
+#: frontend/src/services/machines/wsms/helpers/machineHelper.wsms.ts:45
 msgid "Failed to fetch subscribers"
 msgstr ""
 
@@ -28733,6 +29204,10 @@ msgid "Site ID"
 msgstr ""
 
 #: frontend/src/services/machines/mainWp/createPost.mainWp.machine.pro.ts:39
+#: frontend/src/services/machines/secureCustomFields/getPostScfValue.secureCustomFields.machine.pro.ts:28
+#: frontend/src/services/machines/secureCustomFields/updateGroupFieldValue.secureCustomFields.machine.pro.ts:17
+#: frontend/src/services/machines/secureCustomFields/updatePostScfValue.secureCustomFields.machine.pro.ts:17
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:17
 #: frontend/src/services/machines/seoPress/getPostMeta.seoPress.machine.pro.ts:33
 #: frontend/src/services/machines/seoPress/updatePostMeta.seoPress.machine.pro.ts:34
 #: frontend/src/services/machines/sureDash/commonMachines/postId.sureDash.machine.ts:17
@@ -29183,6 +29658,73 @@ msgstr ""
 msgid "The range where the new row will be added, e.g., A1:C1."
 msgstr ""
 
+#: frontend/src/services/machines/modernCart/_modernCartMachines.ts:16
+msgid "Get Cart Summary"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/_modernCartMachines.ts:22
+msgid "Get Cart Items"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/_modernCartMachines.ts:28
+#: frontend/src/services/machines/Omnisend/_omnisendMachines.ts:52
+#: frontend/src/services/machines/pipeDrive/_pipeDriveMachines.ts:262
+msgid "Get Product"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/_modernCartMachines.ts:34
+msgid "Get Products"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/_modernCartMachines.ts:40
+msgid "Add Product to Cart"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/_modernCartMachines.ts:46
+msgid "Update Cart Quantity"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/_modernCartMachines.ts:52
+#: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:509
+msgid "Remove Product From Cart"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/addProductToCart.modernCart.machine.pro.ts:18
+msgid "Quantity to add. Defaults to 1."
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/addProductToCart.modernCart.machine.pro.ts:30
+msgid "Optional JSON object of variation attributes."
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/addProductToCart.modernCart.machine.pro.ts:32
+msgid "Variations JSON"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/helpers/modernCartCommons.ts:23
+msgid "Optional WooCommerce variation ID."
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/helpers/modernCartCommons.ts:26
+msgid "Variation ID"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/helpers/modernCartCommons.ts:31
+msgid "Select a variation"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/helpers/modernCartCommons.ts:41
+msgid "Cart Item"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/helpers/modernCartCommons.ts:46
+msgid "Select a cart item"
+msgstr ""
+
+#: frontend/src/services/machines/modernCart/updateCartQuantity.modernCart.machine.pro.ts:15
+msgid "Set to 0 to remove the cart item."
+msgstr ""
+
 #: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:19
 msgid "Retrieves all events from Modern Events Calendar."
 msgstr ""
@@ -29327,6 +29869,7 @@ msgstr ""
 
 #: frontend/src/services/machines/mondayCom/_mondayComMachines.ts:72
 #: frontend/src/services/machines/sender/_senderMachines.ts:94
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:94
 #: frontend/src/services/machines/zendesk/_zendeskMachines.ts:185
 msgid "Delete Group"
 msgstr ""
@@ -29857,6 +30400,8 @@ msgstr ""
 #: frontend/src/services/machines/moreConvertWishlist/commonMachines/userId.moreConvertWishlist.machine.ts:21
 #: frontend/src/services/machines/moreConvertWishlist/createWishlist.moreConvertWishlist.machine.pro.ts:70
 #: frontend/src/services/machines/salesforce/getUser.salesforce.machine.pro.ts:26
+#: frontend/src/services/machines/secureCustomFields/getUserScfValue.secureCustomFields.machine.pro.ts:33
+#: frontend/src/services/machines/secureCustomFields/updateUserScfValue.secureCustomFields.machine.pro.ts:22
 #: frontend/src/services/machines/sureDash/bookmarkItem.sureDash.machine.pro.ts:54
 #: frontend/src/services/machines/sureDash/reactToEntity.sureDash.machine.pro.ts:54
 #: frontend/src/services/machines/sureDash/updateUserProfile.sureDash.machine.pro.ts:22
@@ -30059,18 +30604,8 @@ msgstr ""
 msgid "SELECT * FROM users WHERE status = ? AND created_at > ?"
 msgstr ""
 
-#: frontend/src/services/machines/mysql/executeQuery.mysql.machine.free.ts:27
-#: frontend/src/services/machines/mysql/selectRows.mysql.machine.free.ts:49
-msgid "Add Parameter"
-msgstr ""
-
 #: frontend/src/services/machines/mysql/executeQuery.mysql.machine.free.ts:39
 msgid "Bound to ? placeholders in order. Prevents SQL injection."
-msgstr ""
-
-#: frontend/src/services/machines/mysql/executeQuery.mysql.machine.free.ts:42
-#: frontend/src/services/machines/mysql/selectRows.mysql.machine.free.ts:64
-msgid "Parameter #{COUNT}"
 msgstr ""
 
 #: frontend/src/services/machines/mysql/executeQuery.mysql.machine.free.ts:44
@@ -30742,17 +31277,8 @@ msgstr ""
 msgid "List Product"
 msgstr ""
 
-#: frontend/src/services/machines/Omnisend/_omnisendMachines.ts:52
-#: frontend/src/services/machines/pipeDrive/_pipeDriveMachines.ts:262
-msgid "Get Product"
-msgstr ""
-
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:19
 msgid "Subscriber Type"
-msgstr ""
-
-#: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:25
-msgid "SMS"
 msgstr ""
 
 #: frontend/src/services/machines/Omnisend/createSubscriber.omnisend.machine.pro.ts:42
@@ -32174,15 +32700,6 @@ msgstr ""
 #: frontend/src/services/machines/pipeDrive/createActivity.pipeDrive.machine.pro.ts:84
 #: frontend/src/services/machines/pipeDrive/updateActivity.pipeDrive.machine.pro.ts:101
 msgid "Enter the project ID."
-msgstr ""
-
-#: frontend/src/services/machines/pipeDrive/createActivity.pipeDrive.machine.pro.ts:86
-#: frontend/src/services/machines/pipeDrive/updateActivity.pipeDrive.machine.pro.ts:103
-#: frontend/src/services/machines/zohoProject/createMilestone.zohoProject.machine.pro.ts:39
-#: frontend/src/services/machines/zohoProject/createTask.zohoProject.machine.pro.ts:44
-#: frontend/src/services/machines/zohoProject/createTasklist.zohoProject.machine.pro.ts:39
-#: frontend/src/services/machines/zohoProject/deleteProject.zohoProject.machine.pro.ts:39
-msgid "Project ID"
 msgstr ""
 
 #: frontend/src/services/machines/pipeDrive/createActivity.pipeDrive.machine.pro.ts:112
@@ -34109,6 +34626,79 @@ msgstr ""
 msgid "Select the task you want to update."
 msgstr ""
 
+#: frontend/src/services/machines/secureCustomFields/_secureCustomFieldsMachines.ts:88
+msgid "Custom Fields are Saved"
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/getOptionScfValue.secureCustomFields.machine.pro.ts:13
+#: frontend/src/services/machines/secureCustomFields/updateOptionScfValue.secureCustomFields.machine.pro.ts:13
+msgid "Enter the Secure Custom Fields option field name."
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/getPostScfValue.secureCustomFields.machine.pro.ts:14
+#: frontend/src/services/machines/secureCustomFields/getUserScfValue.secureCustomFields.machine.pro.ts:14
+#: frontend/src/services/machines/secureCustomFields/updatePostScfValue.secureCustomFields.machine.pro.ts:30
+#: frontend/src/services/machines/secureCustomFields/updateUserScfValue.secureCustomFields.machine.pro.ts:30
+msgid "Enter the Secure Custom Fields field name."
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/getPostScfValue.secureCustomFields.machine.pro.ts:25
+#: frontend/src/services/machines/secureCustomFields/updateGroupFieldValue.secureCustomFields.machine.pro.ts:14
+#: frontend/src/services/machines/secureCustomFields/updatePostScfValue.secureCustomFields.machine.pro.ts:14
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:14
+msgid "Select the post."
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/getPostScfValue.secureCustomFields.machine.pro.ts:33
+#: frontend/src/services/machines/secureCustomFields/updateGroupFieldValue.secureCustomFields.machine.pro.ts:22
+#: frontend/src/services/machines/secureCustomFields/updatePostScfValue.secureCustomFields.machine.pro.ts:22
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:22
+#: frontend/src/services/machines/sureDash/commonMachines/postId.sureDash.machine.ts:22
+#: frontend/src/services/machines/sureDash/createComment.sureDash.machine.pro.ts:22
+#: frontend/src/services/machines/voxel/newUserWallPost.voxel.machine.pro.ts:37
+#: frontend/src/services/machines/voxel/postApproved.voxel.machine.pro.ts:37
+#: frontend/src/services/machines/voxel/postRejected.voxel.machine.pro.ts:37
+#: frontend/src/services/machines/voxel/postReviewed.voxel.machine.pro.ts:37
+#: frontend/src/services/machines/voxel/postSubmitted.voxel.machine.pro.ts:37
+#: frontend/src/services/machines/voxel/postUpdated.voxel.machine.pro.ts:37
+msgid "Select a post"
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/getUserScfValue.secureCustomFields.machine.pro.ts:25
+#: frontend/src/services/machines/secureCustomFields/updateUserScfValue.secureCustomFields.machine.pro.ts:14
+msgid "Select the user."
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:40
+msgid "Add Sub-field"
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:45
+msgid "Row Index (0-based)"
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:47
+msgid "Enter the row index"
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:55
+msgid "Enter the sub-field name"
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:63
+msgid "Enter the field value"
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:68
+msgid ""
+"Map each sub-field with its row index. Reuse the same row index to fill "
+"multiple sub-fields of one row."
+msgstr ""
+
+#: frontend/src/services/machines/secureCustomFields/updateRepeaterFieldValue.secureCustomFields.machine.pro.ts:72
+msgid "Sub-fields"
+msgstr ""
+
 #: frontend/src/services/machines/selzy/createContact.selzy.machine.pro.ts:19
 msgid ""
 "You can get your API key from <a class=\"text-blue-600 underline\" "
@@ -34149,6 +34739,7 @@ msgid "Create or Update Subscriber"
 msgstr ""
 
 #: frontend/src/services/machines/sender/_senderMachines.ts:31
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:45
 msgid "Get Subscriber"
 msgstr ""
 
@@ -34158,6 +34749,7 @@ msgstr ""
 
 #: frontend/src/services/machines/sender/_senderMachines.ts:45
 #: frontend/src/services/machines/sendy/_sendyMachines.ts:34
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:38
 msgid "Delete Subscriber"
 msgstr ""
 
@@ -34182,6 +34774,7 @@ msgid "Update / Rename Group"
 msgstr ""
 
 #: frontend/src/services/machines/sender/_senderMachines.ts:101
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:101
 #: frontend/src/services/machines/zendesk/_zendeskMachines.ts:192
 msgid "Get Group"
 msgstr ""
@@ -34354,6 +34947,8 @@ msgstr ""
 #: frontend/src/services/machines/sender/commonMachines/subscriberId.sender.machine.ts:25
 #: frontend/src/services/machines/sender/getSubscriberEvents.sender.machine.pro.ts:24
 #: frontend/src/services/machines/sender/updateSubscriber.sender.machine.pro.ts:32
+#: frontend/src/services/machines/wsms/getSubscriber.wsms.machine.pro.ts:21
+#: frontend/src/services/machines/wsms/updateSubscriber.wsms.machine.pro.ts:22
 msgid "Select a subscriber"
 msgstr ""
 
@@ -34371,10 +34966,6 @@ msgstr ""
 
 #: frontend/src/services/machines/sender/createCampaign.sender.machine.pro.ts:37
 msgid "Verified sender email."
-msgstr ""
-
-#: frontend/src/services/machines/sender/createCampaign.sender.machine.pro.ts:39
-msgid "From"
 msgstr ""
 
 #: frontend/src/services/machines/sender/createCampaign.sender.machine.pro.ts:59
@@ -34672,6 +35263,7 @@ msgid "Enter the email of the contact you want to unsubscribe."
 msgstr ""
 
 #: frontend/src/services/machines/sendy/_sendyMachines.ts:22
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:24
 msgid "Add Subscriber"
 msgstr ""
 
@@ -36302,17 +36894,6 @@ msgstr ""
 
 #: frontend/src/services/machines/sureDash/commonMachines/postId.sureDash.machine.ts:14
 msgid "The community post."
-msgstr ""
-
-#: frontend/src/services/machines/sureDash/commonMachines/postId.sureDash.machine.ts:22
-#: frontend/src/services/machines/sureDash/createComment.sureDash.machine.pro.ts:22
-#: frontend/src/services/machines/voxel/newUserWallPost.voxel.machine.pro.ts:37
-#: frontend/src/services/machines/voxel/postApproved.voxel.machine.pro.ts:37
-#: frontend/src/services/machines/voxel/postRejected.voxel.machine.pro.ts:37
-#: frontend/src/services/machines/voxel/postReviewed.voxel.machine.pro.ts:37
-#: frontend/src/services/machines/voxel/postSubmitted.voxel.machine.pro.ts:37
-#: frontend/src/services/machines/voxel/postUpdated.voxel.machine.pro.ts:37
-msgid "Select a post"
 msgstr ""
 
 #: frontend/src/services/machines/sureDash/createComment.sureDash.machine.pro.ts:14
@@ -38225,10 +38806,6 @@ msgstr ""
 msgid ""
 "Enter the email address of the user you want to unenroll from the course. "
 "Leave empty to use current user email."
-msgstr ""
-
-#: frontend/src/services/machines/twilio/_twilioMachines.ts:21
-msgid "Send SMS"
 msgstr ""
 
 #: frontend/src/services/machines/twilio/_twilioMachines.ts:33
@@ -40260,8 +40837,7 @@ msgid ""
 "To get access token and business ID information, please visit <a "
 "target=\"_blank\" class=\"text-blue-600 underline\" rel=\"noopener "
 "noreferrer nofollow\" "
-"href=\"https://developers.facebook.com/docs/whatsapp/business-management-"
-"api/get-started\">WhatsApp Business API</a>"
+"href=\"https://developers.facebook.com/apps/\">WhatsApp Business API</a>"
 msgstr ""
 
 #: frontend/src/services/machines/whatsApp/helpers/whatsAppCommons.ts:25
@@ -40319,22 +40895,22 @@ msgid "Enter the caption you want to send with the Image."
 msgstr ""
 
 #: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.free.ts:24
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:53
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:88
 msgid "Enter the latitude of the location in decimal format. Ex: 23.810331"
 msgstr ""
 
 #: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.free.ts:35
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:64
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:99
 msgid "Enter the longitude of the location in decimal format. Ex: 90.412521"
 msgstr ""
 
 #: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.free.ts:46
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:75
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:110
 msgid "Enter the name of the location. Ex: Dhaka City"
 msgstr ""
 
 #: frontend/src/services/machines/whatsApp/sendLocation.whatsApp.machine.free.ts:56
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:86
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:121
 msgid "Enter the full address of the location. Ex: Dhaka, Bangladesh"
 msgstr ""
 
@@ -40352,15 +40928,33 @@ msgstr ""
 msgid "Sticker URL"
 msgstr ""
 
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:25
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:29
 msgid "Select the name of the message template you want to send as message."
 msgstr ""
 
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:27
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:31
 msgid "Select Template Name"
 msgstr ""
 
-#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:40
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:47
+msgid "Placeholder"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:61
+msgid ""
+"Map a value for every placeholder of the selected template. Placeholders "
+"are detected from the template header, body and dynamic url buttons."
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:66
+msgid "Placeholder #{COUNT}"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:68
+msgid "Template Placeholders"
+msgstr ""
+
+#: frontend/src/services/machines/whatsApp/sendTemplateMessage.whatsApp.machine.free.ts:75
 msgid ""
 "Enter the direct link to the media (image, video or document) you want to "
 "send. Must be publicly accessible. Ex: https://example.com/file.jpg"
@@ -41163,10 +41757,6 @@ msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:505
 msgid "Add a specified product to the cart."
-msgstr ""
-
-#: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:509
-msgid "Remove Product From Cart"
 msgstr ""
 
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:512
@@ -45771,6 +46361,141 @@ msgid ""
 "the action type, and enter the Hook Tag: bit_pi_do_action."
 msgstr ""
 
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:52
+msgid "Get Subscriber by Mobile"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:59
+msgid "Get Subscribers"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:73
+msgid "Get Subscriber Groups by Number"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:87
+#: frontend/src/services/machines/zendesk/_zendeskMachines.ts:178
+msgid "Update Group"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:108
+msgid "Get Groups"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:115
+msgid "Get SMS Balance"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:133
+msgid "OTP Generated"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:141
+msgid "Subscriber Added"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:149
+msgid "Subscriber Verified"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/_wsmsMachines.ts:157
+msgid "Number Unsubscribed"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/addGroup.wsms.machine.pro.ts:13
+msgid "Name of the new subscriber group."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/addSubscriber.wsms.machine.pro.ts:25
+#: frontend/src/services/machines/wsms/updateSubscriber.wsms.machine.pro.ts:40
+msgid "Subscriber mobile number."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/addSubscriber.wsms.machine.pro.ts:27
+#: frontend/src/services/machines/wsms/deleteSubscriber.wsms.machine.pro.ts:16
+#: frontend/src/services/machines/wsms/getSubscriberByMobile.wsms.machine.pro.ts:15
+#: frontend/src/services/machines/wsms/getSubscriberGroupsByNumber.wsms.machine.pro.ts:16
+#: frontend/src/services/machines/wsms/updateSubscriber.wsms.machine.pro.ts:42
+msgid "Mobile Number"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/deleteGroup.wsms.machine.pro.ts:14
+msgid "The subscriber group to delete."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/deleteSubscriber.wsms.machine.pro.ts:14
+msgid "Mobile number of the subscriber to remove."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/deleteSubscriber.wsms.machine.pro.ts:25
+msgid "Limit removal to a specific group (optional)."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/getSubscriberByMobile.wsms.machine.pro.ts:13
+msgid "Mobile number to look up."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/getSubscriberCount.wsms.machine.pro.ts:14
+msgid "Count only within this group (optional). Leave empty for all subscribers."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/getSubscriberGroupsByNumber.wsms.machine.pro.ts:14
+msgid "Mobile number to look up groups for."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/getSubscribers.wsms.machine.pro.ts:15
+msgid "Limit the list to a specific group (optional)."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/helpers/commonUtils.wsms.ts:14
+msgid "All subscribers"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/helpers/commonUtils.wsms.ts:15
+msgid "Active only"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/helpers/machineHelper.wsms.ts:20
+#: frontend/src/services/machines/zendesk/helpers/machineHelper.zendesk.ts:100
+msgid "Failed to fetch groups"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/sendSms.wsms.machine.pro.ts:14
+msgid "One or more recipient numbers, separated by commas."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/sendSms.wsms.machine.pro.ts:16
+msgid "To (Mobile Number)"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/sendSms.wsms.machine.pro.ts:25
+msgid "The text message body."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/sendSms.wsms.machine.pro.ts:36
+msgid "Sender ID / from number (optional, gateway dependent)."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/sendSms.wsms.machine.pro.ts:38
+msgid "Sender ID"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/sendSms.wsms.machine.pro.ts:49
+msgid "Flash Message"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/sendSms.wsms.machine.pro.ts:59
+msgid "One or more media URLs for MMS, separated by commas (optional)."
+msgstr ""
+
+#: frontend/src/services/machines/wsms/sendSms.wsms.machine.pro.ts:61
+msgid "Media URLs"
+msgstr ""
+
+#: frontend/src/services/machines/wsms/updateGroup.wsms.machine.pro.ts:29
+msgid "New name for the group."
+msgstr ""
+
 #: frontend/src/services/machines/zendesk/_zendeskMachines.ts:24
 msgid "Update Ticket"
 msgstr ""
@@ -45817,10 +46542,6 @@ msgstr ""
 
 #: frontend/src/services/machines/zendesk/_zendeskMachines.ts:164
 msgid "List Organizations"
-msgstr ""
-
-#: frontend/src/services/machines/zendesk/_zendeskMachines.ts:178
-msgid "Update Group"
 msgstr ""
 
 #: frontend/src/services/machines/zendesk/_zendeskMachines.ts:199
@@ -46480,10 +47201,6 @@ msgstr ""
 
 #: frontend/src/services/machines/zendesk/helpers/machineHelper.zendesk.ts:75
 msgid "Failed to fetch tickets"
-msgstr ""
-
-#: frontend/src/services/machines/zendesk/helpers/machineHelper.zendesk.ts:100
-msgid "Failed to fetch groups"
 msgstr ""
 
 #: frontend/src/services/machines/zendesk/helpers/machineHelper.zendesk.ts:127

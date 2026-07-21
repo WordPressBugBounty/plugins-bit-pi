@@ -177,7 +177,7 @@ class WooCommerceHelper
 
             foreach ($this->getAcfFieldGroups(['product']) as $group) {
                 foreach (acf_get_fields($group['ID']) as $field) {
-                    $itemData[$field['_name']] = get_post_meta($productId, $field['_name'])[0];
+                    $itemData[$field['_name']] = get_post_meta($productId, $field['_name'], true);
                 }
             }
 

@@ -1,10 +1,10 @@
 === Bit Flows: AI Agent Automation & Integrations for Forms, CRM, eCommerce, Google Sheets, and More ===
-Contributors: bitpressadmin,akaioum,arif25897,mazharul78,shuvomohajan
+Contributors: bitpressadmin
 Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.24.0
+Stable tag: 1.25.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,31 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.25.0 (Jul 21, 2026) =
+
+* **Triggers (10)**:
+  * WSMS (WP SMS) (05)
+  * Secure Custom Fields (04)
+  * Modern Cart (01)
+
+* **Actions (47)**:
+  * Instasent (17)
+  * WSMS (WP SMS) (15)
+  * Secure Custom Fields (08)
+  * Modern Cart (07)
+
+* **Features**:
+  * Added the Run Code tool for executing custom PHP inside a flow step.
+
+* **Improvements**:
+  * Improved WhatsApp template messages with dynamic placeholder support.
+
+* **Fixes**:
+  * Fixed Gmail MIME header encoding and attachment handling, and hardened attachment fetching against SSRF.
+  * Fixed Voxel mutating user data when stripping sensitive fields, and handling of empty post type values.
+  * Fixed WooCommerce ACF meta reads and Bookly class lookup.
+  * Fixed the updater comparing the required free version before the installed free version was populated.
 
 = v1.24.0 (Jul 06, 2026) =
 
