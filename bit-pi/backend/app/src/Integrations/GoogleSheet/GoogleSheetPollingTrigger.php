@@ -68,13 +68,17 @@ class GoogleSheetPollingTrigger extends AbstractPollingTrigger
                 $response = $rowService->getRows($spreadsheetId, $sheetTitle);
                 $triggerColumn = $configs['column-to-match-on']['value'] ?? $configs['column-to-match-on'] ?? 'all_columns';
                 $rows = $response['response'] ?? [];
-                foreach ($rows as &$row) {
+                foreach ($rows as $index => &$row) {
                     $hashData = $row;
                     if ($triggerColumn !== 'all_columns') {
                         $hashData = $row[$triggerColumn] ?? $row;
                     }
+                    // _row_hash is the internal change-detection fingerprint used to diff
+                    // rows across polls; _row_number is the sheet row (index 0 is row 1).
                     $row['_row_hash'] = md5(JSON::encode($hashData));
+                    $row['_row_number'] = $index + 1;
                 }
+                unset($row);
                 $response['response'] = $rows;
 
                 break;

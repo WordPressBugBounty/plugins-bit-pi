@@ -2,9 +2,9 @@
 Contributors: bitpressadmin
 Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
-Tested up to: 7.0
+Tested up to: 7.0.2
 Requires PHP: 7.4
-Stable tag: 1.25.0
+Stable tag: 1.26.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,18 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.26.0 (Jul 29, 2026) =
+
+* **Actions (07)**:
+  * GamiPress (07)
+
+* **Improvements**:
+  * Google Sheets Add Row and Update Row actions and the On Row Added or Updated trigger now return the affected row number for use in later steps.
+
+* **Fixes**:
+  * Fixed FluentCRM Create Contact and Create Company Field Map values not persisting after refreshing the flow builder.
+  * Fixed Tutor LMS Enroll User in Course leaving students on paid courses in a pending state with no access.
 
 = v1.25.0 (Jul 21, 2026) =
 

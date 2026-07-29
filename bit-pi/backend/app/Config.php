@@ -24,7 +24,7 @@ class Config
 
     public const VAR_PREFIX = 'bit_pi_';
 
-    public const VERSION = '1.25.0';
+    public const VERSION = '1.26.0';
 
     public const DB_VERSION = '0.2.0';
 
@@ -146,7 +146,7 @@ class Config
      *
      * @param string $option Variable name
      *
-     * @return array
+     * @return string
      */
     public static function withPrefix($option)
     {

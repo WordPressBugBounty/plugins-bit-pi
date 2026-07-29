@@ -55,6 +55,9 @@ final class GoogleRowService
         $payload = ['majorDimension' => 'ROWS', 'values' => [$values]];
         $response = $this->commons->getHttp()->request($url, 'POST', JSON::encode($payload));
 
+        $updatedRange = $response->updates->updatedRange ?? null;
+        $response = $this->attachRowNumber($response, $this->extractRowNumber($updatedRange));
+
         return [
             'response'    => $response,
             'payload'     => $payload,
@@ -83,6 +86,8 @@ final class GoogleRowService
             $payload = $this->prepareDataForUpdate($sheetTitle, $rowToUpdate['matchedRow'], $rowToUpdate['values'], $mappedColumnValue);
             $response = $this->commons->getHttp()->request($url, 'POST', JSON::encode($payload));
 
+            $response = $this->attachRowNumber($response, $rowToUpdate['matchedRow'] + 1);
+
             return [
                 'response'    => $response,
                 'payload'     => $payload,
@@ -109,6 +114,9 @@ final class GoogleRowService
 
         $url = GoogleSheetCommons::BASE_URL . "/spreadsheets/{$spreadsheetId}/values/" . urlencode("{$sheetTitle}!{$targetRange}") . '?valueInputOption=USER_ENTERED';
         $response = $this->commons->getHttp()->request($url, 'PUT', $payload);
+
+        $updatedRange = $response->updatedRange ?? null;
+        $response = $this->attachRowNumber($response, $this->extractRowNumber($updatedRange));
 
         return [
             'response'    => $response,
@@ -267,6 +275,36 @@ final class GoogleRowService
             'payload'     => compact('columnName', 'columnIndex'),
             'status_code' => $this->commons->getHttp()->getResponseCode()
         ];
+    }
+
+    /**
+     * Parse the 1-based row number from a Google Sheets A1 range like "'Sheet'!A11:K11".
+     *
+     * @param mixed $range
+     */
+    private function extractRowNumber($range): ?int
+    {
+        if (\is_string($range) && preg_match('/![A-Z]+([0-9]+)/i', $range, $matches)) {
+            return (int) $matches[1];
+        }
+
+        return null;
+    }
+
+    /**
+     * Attach the affected row number to the API response so subsequent flow steps can
+     * reference the row that was added/updated.
+     *
+     * @param mixed    $response
+     * @param null|int $rowNumber
+     */
+    private function attachRowNumber($response, $rowNumber)
+    {
+        if (\is_object($response)) {
+            $response->row_number = $rowNumber;
+        }
+
+        return $response;
     }
 
     /**

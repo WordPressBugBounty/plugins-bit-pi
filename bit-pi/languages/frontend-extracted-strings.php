@@ -7375,6 +7375,20 @@ return [
 
     'Select Tag(s)' => __('Select Tag(s)', 'bit-pi'),
 
+    'Award a rank to the user' => __('Award a rank to the user', 'bit-pi'),
+
+    'Award an achievement to the user' => __('Award an achievement to the user', 'bit-pi'),
+
+    'Award points to the user' => __('Award points to the user', 'bit-pi'),
+
+    'Revoke a rank from the user' => __('Revoke a rank from the user', 'bit-pi'),
+
+    'Revoke all of a certain type of points from the user' => __('Revoke all of a certain type of points from the user', 'bit-pi'),
+
+    'Revoke an achievement from the user' => __('Revoke an achievement from the user', 'bit-pi'),
+
+    'Revoke points from the user' => __('Revoke points from the user', 'bit-pi'),
+
     'A user earns a rank' => __('A user earns a rank', 'bit-pi'),
 
     'A user gains an achievement' => __('A user gains an achievement', 'bit-pi'),
@@ -7393,13 +7407,43 @@ return [
 
     'any achievement' => __('any achievement', 'bit-pi'),
 
-    'Achievement Types' => __('Achievement Types', 'bit-pi'),
+    'Select the achievement type' => __('Select the achievement type', 'bit-pi'),
 
-    'Select a achievement type' => __('Select a achievement type', 'bit-pi'),
+    'Achievement Type' => __('Achievement Type', 'bit-pi'),
+
+    'Select an achievement type' => __('Select an achievement type', 'bit-pi'),
+
+    'Select the achievement or map custom achievement ID' => __('Select the achievement or map custom achievement ID', 'bit-pi'),
+
+    'Select an achievement' => __('Select an achievement', 'bit-pi'),
+
+    'Select the point type' => __('Select the point type', 'bit-pi'),
+
+    'Point Type' => __('Point Type', 'bit-pi'),
+
+    'Select a point type' => __('Select a point type', 'bit-pi'),
+
+    'Enter the number of points to award' => __('Enter the number of points to award', 'bit-pi'),
+
+    'Select the rank type' => __('Select the rank type', 'bit-pi'),
 
     'Rank Type' => __('Rank Type', 'bit-pi'),
 
     'Select a rank type' => __('Select a rank type', 'bit-pi'),
+
+    'Select the rank or map custom rank ID' => __('Select the rank or map custom rank ID', 'bit-pi'),
+
+    'Rank' => __('Rank', 'bit-pi'),
+
+    'Select a rank' => __('Select a rank', 'bit-pi'),
+
+    'Achievement Types' => __('Achievement Types', 'bit-pi'),
+
+    'Select a achievement type' => __('Select a achievement type', 'bit-pi'),
+
+    'Select the point type to revoke fully' => __('Select the point type to revoke fully', 'bit-pi'),
+
+    'Enter the number of points to revoke' => __('Enter the number of points to revoke', 'bit-pi'),
 
     'Ranks' => __('Ranks', 'bit-pi'),
 
@@ -11860,19 +11904,13 @@ return [
 
     'Enter badge ID' => __('Enter badge ID', 'bit-pi'),
 
-    'Enter the number of points to award' => __('Enter the number of points to award', 'bit-pi'),
-
     'Select point type (leave empty for default)' => __('Select point type (leave empty for default)', 'bit-pi'),
-
-    'Point Type' => __('Point Type', 'bit-pi'),
 
     'Reason for awarding points' => __('Reason for awarding points', 'bit-pi'),
 
     'Enter rank ID' => __('Enter rank ID', 'bit-pi'),
 
     'Rank ID' => __('Rank ID', 'bit-pi'),
-
-    'Enter the number of points to revoke' => __('Enter the number of points to revoke', 'bit-pi'),
 
     'Select point type (leave empty for default, -1 for all types)' => __('Select point type (leave empty for default, -1 for all types)', 'bit-pi'),
 
