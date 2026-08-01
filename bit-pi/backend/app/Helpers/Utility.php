@@ -407,6 +407,58 @@ class Utility
     }
 
     /**
+     * Convert a model/object/WP_Post into a plain array.
+     *
+     * @param mixed $object
+     *
+     * @return mixed
+     */
+    public static function extractObjectAttributes($object)
+    {
+        if (!\is_object($object)) {
+            return $object;
+        }
+
+        if (method_exists($object, 'getAttributes')) {
+            return $object->getAttributes();
+        }
+
+        if (method_exists($object, 'toArray')) {
+            return $object->toArray();
+        }
+
+        return get_object_vars($object);
+    }
+
+    /**
+     * Recursively normalize mixed model/object/array data into arrays. The depth
+     * cap stops runaway recursion on circular or pathologically deep object
+     * graphs (real data never nests this far).
+     *
+     * @param mixed $data
+     * @param int   $depth internal recursion counter
+     *
+     * @return mixed
+     */
+    public static function normalizeData($data, $depth = 0)
+    {
+        if (\is_object($data)) {
+            $data = self::extractObjectAttributes($data);
+        }
+
+        if (!\is_array($data) || $depth >= 20) {
+            return $data;
+        }
+
+        return array_map(
+            function ($value) use ($depth) {
+                return \is_object($value) || \is_array($value) ? self::normalizeData($value, $depth + 1) : $value;
+            },
+            $data
+        );
+    }
+
+    /**
      * Sanitize Metadata.
      *
      * @param null|array $metadata

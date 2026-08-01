@@ -3755,6 +3755,672 @@ return [
 
     'Unique Tag' => __('Unique Tag', 'bit-pi'),
 
+    'Create Lead' => __('Create Lead', 'bit-pi'),
+
+    'Update Lead' => __('Update Lead', 'bit-pi'),
+
+    'Delete Lead' => __('Delete Lead', 'bit-pi'),
+
+    'Get Lead (All)' => __('Get Lead (All)', 'bit-pi'),
+
+    'Want to see leads? Just hit **Test Run** to fetch them.' => __('Want to see leads? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Lead (By Id)' => __('Get Lead (By Id)', 'bit-pi'),
+
+    'Get Lead (By Email)' => __('Get Lead (By Email)', 'bit-pi'),
+
+    'Add Tag to Lead' => __('Add Tag to Lead', 'bit-pi'),
+
+    'Remove Tag from Lead' => __('Remove Tag from Lead', 'bit-pi'),
+
+    'Convert Lead' => __('Convert Lead', 'bit-pi'),
+
+    'Delete Contact' => __('Delete Contact', 'bit-pi'),
+
+    'Get Contact (All)' => __('Get Contact (All)', 'bit-pi'),
+
+    'Want to see contacts? Just hit **Test Run** to fetch them.' => __('Want to see contacts? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Contact (By Id)' => __('Get Contact (By Id)', 'bit-pi'),
+
+    'Get Contact (By Email)' => __('Get Contact (By Email)', 'bit-pi'),
+
+    'Add Tag to Contact' => __('Add Tag to Contact', 'bit-pi'),
+
+    'Remove Tag from Contact' => __('Remove Tag from Contact', 'bit-pi'),
+
+    'Create Company' => __('Create Company', 'bit-pi'),
+
+    'Update Company' => __('Update Company', 'bit-pi'),
+
+    'Delete Company' => __('Delete Company', 'bit-pi'),
+
+    'Get Company (All)' => __('Get Company (All)', 'bit-pi'),
+
+    'Want to see companies? Just hit **Test Run** to fetch them.' => __('Want to see companies? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Company (By Id)' => __('Get Company (By Id)', 'bit-pi'),
+
+    'Get Company (By Name)' => __('Get Company (By Name)', 'bit-pi'),
+
+    'Add Tag to Company' => __('Add Tag to Company', 'bit-pi'),
+
+    'Remove Tag from Company' => __('Remove Tag from Company', 'bit-pi'),
+
+    'Update Deal' => __('Update Deal', 'bit-pi'),
+
+    'Delete Deal' => __('Delete Deal', 'bit-pi'),
+
+    'Get Deal (All)' => __('Get Deal (All)', 'bit-pi'),
+
+    'Want to see deals? Just hit **Test Run** to fetch them.' => __('Want to see deals? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Deal (By Id)' => __('Get Deal (By Id)', 'bit-pi'),
+
+    'Get Deal (By Email)' => __('Get Deal (By Email)', 'bit-pi'),
+
+    'Add Tag to Deal' => __('Add Tag to Deal', 'bit-pi'),
+
+    'Remove Tag from Deal' => __('Remove Tag from Deal', 'bit-pi'),
+
+    'Update Deal Stage' => __('Update Deal Stage', 'bit-pi'),
+
+    'Create Product' => __('Create Product', 'bit-pi'),
+
+    'Update Product' => __('Update Product', 'bit-pi'),
+
+    'Delete Product' => __('Delete Product', 'bit-pi'),
+
+    'Get Product (All)' => __('Get Product (All)', 'bit-pi'),
+
+    'Want to see products? Just hit **Test Run** to fetch them.' => __('Want to see products? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Product (By Id)' => __('Get Product (By Id)', 'bit-pi'),
+
+    'Get Product (By Code)' => __('Get Product (By Code)', 'bit-pi'),
+
+    'Add Tag to Product' => __('Add Tag to Product', 'bit-pi'),
+
+    'Remove Tag from Product' => __('Remove Tag from Product', 'bit-pi'),
+
+    'Update Tag' => __('Update Tag', 'bit-pi'),
+
+    'Delete Tag' => __('Delete Tag', 'bit-pi'),
+
+    'Get Tag (All)' => __('Get Tag (All)', 'bit-pi'),
+
+    'Want to see tags? Just hit **Test Run** to fetch them.' => __('Want to see tags? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Tag (By Id)' => __('Get Tag (By Id)', 'bit-pi'),
+
+    'Get Tag (By Title)' => __('Get Tag (By Title)', 'bit-pi'),
+
+    'Create Note' => __('Create Note', 'bit-pi'),
+
+    'Update Note' => __('Update Note', 'bit-pi'),
+
+    'Delete Note' => __('Delete Note', 'bit-pi'),
+
+    'Get Note (All)' => __('Get Note (All)', 'bit-pi'),
+
+    'Want to see notes? Just hit **Test Run** to fetch them.' => __('Want to see notes? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Note (By Id)' => __('Get Note (By Id)', 'bit-pi'),
+
+    'Update Task' => __('Update Task', 'bit-pi'),
+
+    'Update Task Status' => __('Update Task Status', 'bit-pi'),
+
+    'Delete Task' => __('Delete Task', 'bit-pi'),
+
+    'Get Task (All)' => __('Get Task (All)', 'bit-pi'),
+
+    'Want to see tasks? Just hit **Test Run** to fetch them.' => __('Want to see tasks? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Task (By Id)' => __('Get Task (By Id)', 'bit-pi'),
+
+    'Create Meeting' => __('Create Meeting', 'bit-pi'),
+
+    'Update Meeting' => __('Update Meeting', 'bit-pi'),
+
+    'Update Meeting Status' => __('Update Meeting Status', 'bit-pi'),
+
+    'Delete Meeting' => __('Delete Meeting', 'bit-pi'),
+
+    'Get Meeting (All)' => __('Get Meeting (All)', 'bit-pi'),
+
+    'Want to see meetings? Just hit **Test Run** to fetch them.' => __('Want to see meetings? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Meeting (By Id)' => __('Get Meeting (By Id)', 'bit-pi'),
+
+    'Create Call' => __('Create Call', 'bit-pi'),
+
+    'Update Call' => __('Update Call', 'bit-pi'),
+
+    'Update Call Status' => __('Update Call Status', 'bit-pi'),
+
+    'Delete Call' => __('Delete Call', 'bit-pi'),
+
+    'Get Call (All)' => __('Get Call (All)', 'bit-pi'),
+
+    'Want to see calls? Just hit **Test Run** to fetch them.' => __('Want to see calls? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Call (By Id)' => __('Get Call (By Id)', 'bit-pi'),
+
+    'Create Invoice' => __('Create Invoice', 'bit-pi'),
+
+    'Update Invoice' => __('Update Invoice', 'bit-pi'),
+
+    'Update Invoice Status' => __('Update Invoice Status', 'bit-pi'),
+
+    'Delete Invoice' => __('Delete Invoice', 'bit-pi'),
+
+    'Get Invoice (All)' => __('Get Invoice (All)', 'bit-pi'),
+
+    'Want to see invoices? Just hit **Test Run** to fetch them.' => __('Want to see invoices? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Invoice (By Id)' => __('Get Invoice (By Id)', 'bit-pi'),
+
+    'Get Invoice (By Deal)' => __('Get Invoice (By Deal)', 'bit-pi'),
+
+    'Get Line Item (By Invoice)' => __('Get Line Item (By Invoice)', 'bit-pi'),
+
+    'Get Attachment (All)' => __('Get Attachment (All)', 'bit-pi'),
+
+    'Want to see attachments? Just hit **Test Run** to fetch them.' => __('Want to see attachments? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Attachment (By Id)' => __('Get Attachment (By Id)', 'bit-pi'),
+
+    'Get Link (All)' => __('Get Link (All)', 'bit-pi'),
+
+    'Want to see links? Just hit **Test Run** to fetch them.' => __('Want to see links? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Link (By Id)' => __('Get Link (By Id)', 'bit-pi'),
+
+    'Grant Portal Access' => __('Grant Portal Access', 'bit-pi'),
+
+    'Update Portal Capabilities' => __('Update Portal Capabilities', 'bit-pi'),
+
+    'Update Portal Password' => __('Update Portal Password', 'bit-pi'),
+
+    'Revoke Portal Access' => __('Revoke Portal Access', 'bit-pi'),
+
+    'Get Portal Access' => __('Get Portal Access', 'bit-pi'),
+
+    'A lead is created' => __('A lead is created', 'bit-pi'),
+
+    'A lead is updated' => __('A lead is updated', 'bit-pi'),
+
+    'A lead is trashed' => __('A lead is trashed', 'bit-pi'),
+
+    'A lead is converted' => __('A lead is converted', 'bit-pi'),
+
+    'A tag is added to a lead' => __('A tag is added to a lead', 'bit-pi'),
+
+    'A tag is removed from a lead' => __('A tag is removed from a lead', 'bit-pi'),
+
+    'Tags are added to leads (bulk)' => __('Tags are added to leads (bulk)', 'bit-pi'),
+
+    'Tags are removed from leads (bulk)' => __('Tags are removed from leads (bulk)', 'bit-pi'),
+
+    'A contact is created' => __('A contact is created', 'bit-pi'),
+
+    'A contact is updated' => __('A contact is updated', 'bit-pi'),
+
+    'A contact is trashed' => __('A contact is trashed', 'bit-pi'),
+
+    'A tag is added to a contact' => __('A tag is added to a contact', 'bit-pi'),
+
+    'A tag is removed from a contact' => __('A tag is removed from a contact', 'bit-pi'),
+
+    'Tags are added to contacts (bulk)' => __('Tags are added to contacts (bulk)', 'bit-pi'),
+
+    'Tags are removed from contacts (bulk)' => __('Tags are removed from contacts (bulk)', 'bit-pi'),
+
+    'A company is created' => __('A company is created', 'bit-pi'),
+
+    'A company is updated' => __('A company is updated', 'bit-pi'),
+
+    'A company is trashed' => __('A company is trashed', 'bit-pi'),
+
+    'A tag is added to a company' => __('A tag is added to a company', 'bit-pi'),
+
+    'A tag is removed from a company' => __('A tag is removed from a company', 'bit-pi'),
+
+    'Tags are added to companies (bulk)' => __('Tags are added to companies (bulk)', 'bit-pi'),
+
+    'Tags are removed from companies (bulk)' => __('Tags are removed from companies (bulk)', 'bit-pi'),
+
+    'A deal is created' => __('A deal is created', 'bit-pi'),
+
+    'A deal is updated' => __('A deal is updated', 'bit-pi'),
+
+    'A deal is trashed' => __('A deal is trashed', 'bit-pi'),
+
+    'A deal stage is updated' => __('A deal stage is updated', 'bit-pi'),
+
+    'A tag is added to a deal' => __('A tag is added to a deal', 'bit-pi'),
+
+    'A tag is removed from a deal' => __('A tag is removed from a deal', 'bit-pi'),
+
+    'Tags are added to deals (bulk)' => __('Tags are added to deals (bulk)', 'bit-pi'),
+
+    'Tags are removed from deals (bulk)' => __('Tags are removed from deals (bulk)', 'bit-pi'),
+
+    'A product is created' => __('A product is created', 'bit-pi'),
+
+    'A product is updated' => __('A product is updated', 'bit-pi'),
+
+    'A product is trashed' => __('A product is trashed', 'bit-pi'),
+
+    'A tag is added to a product' => __('A tag is added to a product', 'bit-pi'),
+
+    'A tag is removed from a product' => __('A tag is removed from a product', 'bit-pi'),
+
+    'Tags are added to products (bulk)' => __('Tags are added to products (bulk)', 'bit-pi'),
+
+    'Tags are removed from products (bulk)' => __('Tags are removed from products (bulk)', 'bit-pi'),
+
+    'A tag is created' => __('A tag is created', 'bit-pi'),
+
+    'A tag is updated' => __('A tag is updated', 'bit-pi'),
+
+    'A tag is deleted' => __('A tag is deleted', 'bit-pi'),
+
+    'A note is created' => __('A note is created', 'bit-pi'),
+
+    'A note is updated' => __('A note is updated', 'bit-pi'),
+
+    'A note is deleted' => __('A note is deleted', 'bit-pi'),
+
+    'A task is created' => __('A task is created', 'bit-pi'),
+
+    'A task is updated' => __('A task is updated', 'bit-pi'),
+
+    'A task status is updated' => __('A task status is updated', 'bit-pi'),
+
+    'A task is deleted' => __('A task is deleted', 'bit-pi'),
+
+    'A meeting is created' => __('A meeting is created', 'bit-pi'),
+
+    'A meeting is updated' => __('A meeting is updated', 'bit-pi'),
+
+    'A meeting status is updated' => __('A meeting status is updated', 'bit-pi'),
+
+    'A meeting is deleted' => __('A meeting is deleted', 'bit-pi'),
+
+    'A call is created' => __('A call is created', 'bit-pi'),
+
+    'A call is updated' => __('A call is updated', 'bit-pi'),
+
+    'A call status is updated' => __('A call status is updated', 'bit-pi'),
+
+    'A call is deleted' => __('A call is deleted', 'bit-pi'),
+
+    'An attachment is added' => __('An attachment is added', 'bit-pi'),
+
+    'An attachment is deleted' => __('An attachment is deleted', 'bit-pi'),
+
+    'A link is created' => __('A link is created', 'bit-pi'),
+
+    'A link is updated' => __('A link is updated', 'bit-pi'),
+
+    'A link is deleted' => __('A link is deleted', 'bit-pi'),
+
+    'A contact is granted portal access' => __('A contact is granted portal access', 'bit-pi'),
+
+    'A contact loses portal access' => __('A contact loses portal access', 'bit-pi'),
+
+    'An invoice is created' => __('An invoice is created', 'bit-pi'),
+
+    'An invoice is updated' => __('An invoice is updated', 'bit-pi'),
+
+    'An invoice status is updated' => __('An invoice status is updated', 'bit-pi'),
+
+    'An invoice is trashed' => __('An invoice is trashed', 'bit-pi'),
+
+    'Activity' => __('Activity', 'bit-pi'),
+
+    'Select an activity' => __('Select an activity', 'bit-pi'),
+
+    'Select a status' => __('Select a status', 'bit-pi'),
+
+    'Attachment' => __('Attachment', 'bit-pi'),
+
+    'Select an attachment' => __('Select an attachment', 'bit-pi'),
+
+    'Company' => __('Company', 'bit-pi'),
+
+    'Select a company' => __('Select a company', 'bit-pi'),
+
+    'Existing Tags' => __('Existing Tags', 'bit-pi'),
+
+    'Select existing tags' => __('Select existing tags', 'bit-pi'),
+
+    'New Tags' => __('New Tags', 'bit-pi'),
+
+    'Type to create and attach new tags' => __('Type to create and attach new tags', 'bit-pi'),
+
+    'Select tags' => __('Select tags', 'bit-pi'),
+
+    'Contact' => __('Contact', 'bit-pi'),
+
+    'Select a contact' => __('Select a contact', 'bit-pi'),
+
+    'Priority' => __('Priority', 'bit-pi'),
+
+    'Select a priority' => __('Select a priority', 'bit-pi'),
+
+    'Module' => __('Module', 'bit-pi'),
+
+    'Select a module' => __('Select a module', 'bit-pi'),
+
+    'The record this activity belongs to.' => __('The record this activity belongs to.', 'bit-pi'),
+
+    'Record' => __('Record', 'bit-pi'),
+
+    'Select a record' => __('Select a record', 'bit-pi'),
+
+    'Assigned To' => __('Assigned To', 'bit-pi'),
+
+    'Select a user' => __('Select a user', 'bit-pi'),
+
+    'Due date in YYYY-MM-DD format.' => __('Due date in YYYY-MM-DD format.', 'bit-pi'),
+
+    'Due Date' => __('Due Date', 'bit-pi'),
+
+    'Deal' => __('Deal', 'bit-pi'),
+
+    'Select a deal' => __('Select a deal', 'bit-pi'),
+
+    'Enter the email address of the record you want to fetch.' => __('Enter the email address of the record you want to fetch.', 'bit-pi'),
+
+    'Invoice' => __('Invoice', 'bit-pi'),
+
+    'Select an invoice' => __('Select an invoice', 'bit-pi'),
+
+    'Lead' => __('Lead', 'bit-pi'),
+
+    'Select a lead' => __('Select a lead', 'bit-pi'),
+
+    'Link' => __('Link', 'bit-pi'),
+
+    'Select a link' => __('Select a link', 'bit-pi'),
+
+    'Note' => __('Note', 'bit-pi'),
+
+    'Select a note' => __('Select a note', 'bit-pi'),
+
+    'Portal access is keyed to the contact email.' => __('Portal access is keyed to the contact email.', 'bit-pi'),
+
+    'Leave empty to apply the portal defaults from Bit CRM settings.' => __('Leave empty to apply the portal defaults from Bit CRM settings.', 'bit-pi'),
+
+    'Select capabilities' => __('Select capabilities', 'bit-pi'),
+
+    'Product' => __('Product', 'bit-pi'),
+
+    'Select a product' => __('Select a product', 'bit-pi'),
+
+    'Leave empty to fetch from every module.' => __('Leave empty to fetch from every module.', 'bit-pi'),
+
+    'Narrow the result to one record of the selected module.' => __('Narrow the result to one record of the selected module.', 'bit-pi'),
+
+    'Leave any field empty to keep its current value.' => __('Leave any field empty to keep its current value.', 'bit-pi'),
+
+    'Convert To' => __('Convert To', 'bit-pi'),
+
+    'Select modules' => __('Select modules', 'bit-pi'),
+
+    'Move Related Data To' => __('Move Related Data To', 'bit-pi'),
+
+    'Default Owner' => __('Default Owner', 'bit-pi'),
+
+    'Select default owner' => __('Select default owner', 'bit-pi'),
+
+    'Field Map' => __('Field Map', 'bit-pi'),
+
+    'Parent Company' => __('Parent Company', 'bit-pi'),
+
+    'Select parent company' => __('Select parent company', 'bit-pi'),
+
+    'Select owner' => __('Select owner', 'bit-pi'),
+
+    'Select currency' => __('Select currency', 'bit-pi'),
+
+    'Select title' => __('Select title', 'bit-pi'),
+
+    'Lead Source' => __('Lead Source', 'bit-pi'),
+
+    'Select lead source' => __('Select lead source', 'bit-pi'),
+
+    'Select company' => __('Select company', 'bit-pi'),
+
+    'Reports To (Contact)' => __('Reports To (Contact)', 'bit-pi'),
+
+    'Select reports to (contact)' => __('Select reports to (contact)', 'bit-pi'),
+
+    'Select contact' => __('Select contact', 'bit-pi'),
+
+    'Select stage' => __('Select stage', 'bit-pi'),
+
+    'Product Source' => __('Product Source', 'bit-pi'),
+
+    'Product Id' => __('Product Id', 'bit-pi'),
+
+    'Unit Price' => __('Unit Price', 'bit-pi'),
+
+    'Quantity' => __('Quantity', 'bit-pi'),
+
+    'Discount %' => __('Discount %', 'bit-pi'),
+
+    'Tax Rate' => __('Tax Rate', 'bit-pi'),
+
+    'Line Items' => __('Line Items', 'bit-pi'),
+
+    'Invoice date in YYYY-MM-DD format.' => __('Invoice date in YYYY-MM-DD format.', 'bit-pi'),
+
+    'Invoice Date' => __('Invoice Date', 'bit-pi'),
+
+    'Payment due date in YYYY-MM-DD format.' => __('Payment due date in YYYY-MM-DD format.', 'bit-pi'),
+
+    'Payment Term' => __('Payment Term', 'bit-pi'),
+
+    'Select a term' => __('Select a term', 'bit-pi'),
+
+    'Tax Option' => __('Tax Option', 'bit-pi'),
+
+    'Select tax option' => __('Select tax option', 'bit-pi'),
+
+    'Prefix for the generated invoice number (e.g. INV).' => __('Prefix for the generated invoice number (e.g. INV).', 'bit-pi'),
+
+    'Invoice Prefix' => __('Invoice Prefix', 'bit-pi'),
+
+    'Lead Status' => __('Lead Status', 'bit-pi'),
+
+    'Select lead status' => __('Select lead status', 'bit-pi'),
+
+    'The record this note belongs to.' => __('The record this note belongs to.', 'bit-pi'),
+
+    'Share this note on the client portal.' => __('Share this note on the client portal.', 'bit-pi'),
+
+    'Shared' => __('Shared', 'bit-pi'),
+
+    'Brand' => __('Brand', 'bit-pi'),
+
+    'Select status' => __('Select status', 'bit-pi'),
+
+    'Leave empty to fetch tags from every module.' => __('Leave empty to fetch tags from every module.', 'bit-pi'),
+
+    'Companies carry no email, so the name is their lookup key.' => __('Companies carry no email, so the name is their lookup key.', 'bit-pi'),
+
+    'Company Name' => __('Company Name', 'bit-pi'),
+
+    'The product code or SKU, as stored in Bit CRM.' => __('The product code or SKU, as stored in Bit CRM.', 'bit-pi'),
+
+    'Product Code' => __('Product Code', 'bit-pi'),
+
+    'The same title can exist in several modules; pick one to disambiguate.' => __('The same title can exist in several modules; pick one to disambiguate.', 'bit-pi'),
+
+    'Billing' => __('Billing', 'bit-pi'),
+
+    'Shipping' => __('Shipping', 'bit-pi'),
+
+    'Address Line 1' => __('Address Line 1', 'bit-pi'),
+
+    'Address Line 2' => __('Address Line 2', 'bit-pi'),
+
+    'City' => __('City', 'bit-pi'),
+
+    'County' => __('County', 'bit-pi'),
+
+    'State' => __('State', 'bit-pi'),
+
+    'Zip' => __('Zip', 'bit-pi'),
+
+    'Country' => __('Country', 'bit-pi'),
+
+    'Website' => __('Website', 'bit-pi'),
+
+    'Industry' => __('Industry', 'bit-pi'),
+
+    'Annual Revenue' => __('Annual Revenue', 'bit-pi'),
+
+    'Secondary Email' => __('Secondary Email', 'bit-pi'),
+
+    'Mobile' => __('Mobile', 'bit-pi'),
+
+    'Fax' => __('Fax', 'bit-pi'),
+
+    'Date of Birth' => __('Date of Birth', 'bit-pi'),
+
+    'Department' => __('Department', 'bit-pi'),
+
+    'Assistant' => __('Assistant', 'bit-pi'),
+
+    'Assistant Phone' => __('Assistant Phone', 'bit-pi'),
+
+    'Company Number' => __('Company Number', 'bit-pi'),
+
+    'Ticker Symbol' => __('Ticker Symbol', 'bit-pi'),
+
+    'Number of Employees' => __('Number of Employees', 'bit-pi'),
+
+    'Rating' => __('Rating', 'bit-pi'),
+
+    'Deal Name' => __('Deal Name', 'bit-pi'),
+
+    'Probability' => __('Probability', 'bit-pi'),
+
+    'Amount' => __('Amount', 'bit-pi'),
+
+    'Product Name' => __('Product Name', 'bit-pi'),
+
+    'Product Code/SKU' => __('Product Code/SKU', 'bit-pi'),
+
+    'Cost Price' => __('Cost Price', 'bit-pi'),
+
+    'Failed to load options. Please try again later.' => __('Failed to load options. Please try again later.', 'bit-pi'),
+
+    'Mr' => __('Mr', 'bit-pi'),
+
+    'Mrs' => __('Mrs', 'bit-pi'),
+
+    'Miss' => __('Miss', 'bit-pi'),
+
+    'Ms' => __('Ms', 'bit-pi'),
+
+    'Dr' => __('Dr', 'bit-pi'),
+
+    'None' => __('None', 'bit-pi'),
+
+    'Advertisement' => __('Advertisement', 'bit-pi'),
+
+    'Cold Call' => __('Cold Call', 'bit-pi'),
+
+    'Employee Referral' => __('Employee Referral', 'bit-pi'),
+
+    'External Referral' => __('External Referral', 'bit-pi'),
+
+    'Online Store' => __('Online Store', 'bit-pi'),
+
+    'Qualifies' => __('Qualifies', 'bit-pi'),
+
+    'Negotiation Done' => __('Negotiation Done', 'bit-pi'),
+
+    'Discount Approved' => __('Discount Approved', 'bit-pi'),
+
+    'Discount Rejected' => __('Discount Rejected', 'bit-pi'),
+
+    'Contract Sent' => __('Contract Sent', 'bit-pi'),
+
+    'Deal Win' => __('Deal Win', 'bit-pi'),
+
+    'Deal Lost' => __('Deal Lost', 'bit-pi'),
+
+    'New Business' => __('New Business', 'bit-pi'),
+
+    'Existing Business' => __('Existing Business', 'bit-pi'),
+
+    'Goods' => __('Goods', 'bit-pi'),
+
+    'Service' => __('Service', 'bit-pi'),
+
+    'Deals' => __('Deals', 'bit-pi'),
+
+    'Invoices' => __('Invoices', 'bit-pi'),
+
+    'Meetings' => __('Meetings', 'bit-pi'),
+
+    'Calls' => __('Calls', 'bit-pi'),
+
+    'Sent' => __('Sent', 'bit-pi'),
+
+    'Overdue' => __('Overdue', 'bit-pi'),
+
+    'Paid' => __('Paid', 'bit-pi'),
+
+    'Low' => __('Low', 'bit-pi'),
+
+    'Medium' => __('Medium', 'bit-pi'),
+
+    'High' => __('High', 'bit-pi'),
+
+    'Bit CRM Product' => __('Bit CRM Product', 'bit-pi'),
+
+    'WooCommerce Product' => __('WooCommerce Product', 'bit-pi'),
+
+    'Tax Exclusive' => __('Tax Exclusive', 'bit-pi'),
+
+    'Tax Inclusive' => __('Tax Inclusive', 'bit-pi'),
+
+    'Company to Update' => __('Company to Update', 'bit-pi'),
+
+    'Contact to Update' => __('Contact to Update', 'bit-pi'),
+
+    'Deal to Update' => __('Deal to Update', 'bit-pi'),
+
+    'Select a stage' => __('Select a stage', 'bit-pi'),
+
+    'A paid invoice can no longer be updated.' => __('A paid invoice can no longer be updated.', 'bit-pi'),
+
+    'Adding line items replaces every line item on the invoice.' => __('Adding line items replaces every line item on the invoice.', 'bit-pi'),
+
+    'A paid invoice cannot change status again.' => __('A paid invoice cannot change status again.', 'bit-pi'),
+
+    'Lead to Update' => __('Lead to Update', 'bit-pi'),
+
+    'Leave empty to keep the current title.' => __('Leave empty to keep the current title.', 'bit-pi'),
+
+    'Map this from an earlier node rather than typing a fixed password.' => __('Map this from an earlier node rather than typing a fixed password.', 'bit-pi'),
+
+    'New Password' => __('New Password', 'bit-pi'),
+
+    'Product to Update' => __('Product to Update', 'bit-pi'),
+
+    'The tag slug is regenerated from this title.' => __('The tag slug is regenerated from this title.', 'bit-pi'),
+
+    'Leave empty to keep the tag in its current module.' => __('Leave empty to keep the tag in its current module.', 'bit-pi'),
+
     'Submit Success' => __('Submit Success', 'bit-pi'),
 
     'Create a short link' => __('Create a short link', 'bit-pi'),
@@ -3940,8 +4606,6 @@ return [
     'Cancelled' => __('Cancelled', 'bit-pi'),
 
     'Rejected' => __('Rejected', 'bit-pi'),
-
-    'Select a status' => __('Select a status', 'bit-pi'),
 
     'Create Appointment' => __('Create Appointment', 'bit-pi'),
 
@@ -4349,8 +5013,6 @@ return [
 
     'User' => __('User', 'bit-pi'),
 
-    'Assistant' => __('Assistant', 'bit-pi'),
-
     'Messages' => __('Messages', 'bit-pi'),
 
     'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.anthropic.com/settings/keys">Here</a>' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.anthropic.com/settings/keys">Here</a>', 'bit-pi'),
@@ -4382,10 +5044,6 @@ return [
     'Assignees' => __('Assignees', 'bit-pi'),
 
     'Select assignees' => __('Select assignees', 'bit-pi'),
-
-    'Priority' => __('Priority', 'bit-pi'),
-
-    'Due Date' => __('Due Date', 'bit-pi'),
 
     'Due Date Time' => __('Due Date Time', 'bit-pi'),
 
@@ -4491,8 +5149,6 @@ return [
 
     'Course Status' => __('Course Status', 'bit-pi'),
 
-    'Select status' => __('Select status', 'bit-pi'),
-
     'Enter a valid student email address.' => __('Enter a valid student email address.', 'bit-pi'),
 
     'Optional username. Leave empty to auto-generate.' => __('Optional username. Leave empty to auto-generate.', 'bit-pi'),
@@ -4568,10 +5224,6 @@ return [
     'Event' => __('Event', 'bit-pi'),
 
     'Select an event' => __('Select an event', 'bit-pi'),
-
-    'Company' => __('Company', 'bit-pi'),
-
-    'Website' => __('Website', 'bit-pi'),
 
     'GDPR' => __('GDPR', 'bit-pi'),
 
@@ -4774,14 +5426,6 @@ return [
     'Address 1' => __('Address 1', 'bit-pi'),
 
     'Address 2' => __('Address 2', 'bit-pi'),
-
-    'City' => __('City', 'bit-pi'),
-
-    'State' => __('State', 'bit-pi'),
-
-    'Zip' => __('Zip', 'bit-pi'),
-
-    'Country' => __('Country', 'bit-pi'),
 
     'Time zone' => __('Time zone', 'bit-pi'),
 
@@ -5139,10 +5783,6 @@ return [
 
     'Total Amount' => __('Total Amount', 'bit-pi'),
 
-    'Address Line 1' => __('Address Line 1', 'bit-pi'),
-
-    'Address Line 2' => __('Address Line 2', 'bit-pi'),
-
     'ZIP' => __('ZIP', 'bit-pi'),
 
     'Meta Key' => __('Meta Key', 'bit-pi'),
@@ -5150,8 +5790,6 @@ return [
     'Meta Value' => __('Meta Value', 'bit-pi'),
 
     'Purchase ID' => __('Purchase ID', 'bit-pi'),
-
-    'Note' => __('Note', 'bit-pi'),
 
     'Site Inactive' => __('Site Inactive', 'bit-pi'),
 
@@ -5168,8 +5806,6 @@ return [
     'Abandoned' => __('Abandoned', 'bit-pi'),
 
     'For custom field mapping, product id should be mapped to a field with numeric value.' => __('For custom field mapping, product id should be mapped to a field with numeric value.', 'bit-pi'),
-
-    'Select a product' => __('Select a product', 'bit-pi'),
 
     'For custom field mapping, discount id should be mapped to a field with numeric value.' => __('For custom field mapping, discount id should be mapped to a field with numeric value.', 'bit-pi'),
 
@@ -5485,8 +6121,6 @@ return [
 
     'Add Item' => __('Add Item', 'bit-pi'),
 
-    'Field Map' => __('Field Map', 'bit-pi'),
-
     'Refetch Fields & Tags' => __('Refetch Fields & Tags', 'bit-pi'),
 
     'Select Tags to attach with the contact.' => __('Select Tags to attach with the contact.', 'bit-pi'),
@@ -5683,13 +6317,9 @@ return [
 
     'Delete Pipeline' => __('Delete Pipeline', 'bit-pi'),
 
-    'Update Task' => __('Update Task', 'bit-pi'),
-
     'Get Task' => __('Get Task', 'bit-pi'),
 
     'List Tasks' => __('List Tasks', 'bit-pi'),
-
-    'Delete Task' => __('Delete Task', 'bit-pi'),
 
     'Create Opportunity' => __('Create Opportunity', 'bit-pi'),
 
@@ -5717,11 +6347,7 @@ return [
 
     'Organization' => __('Organization', 'bit-pi'),
 
-    'Contact' => __('Contact', 'bit-pi'),
-
     'Enter the company name.' => __('Enter the company name.', 'bit-pi'),
-
-    'Company Name' => __('Company Name', 'bit-pi'),
 
     'Enter the first name of the contact.' => __('Enter the first name of the contact.', 'bit-pi'),
 
@@ -5760,8 +6386,6 @@ return [
     'Select Stage' => __('Select Stage', 'bit-pi'),
 
     'Enter the amount/value of the opportunity.' => __('Enter the amount/value of the opportunity.', 'bit-pi'),
-
-    'Amount' => __('Amount', 'bit-pi'),
 
     'Enter the description of the opportunity.' => __('Enter the description of the opportunity.', 'bit-pi'),
 
@@ -6283,12 +6907,6 @@ return [
 
     'Task Priority' => __('Task Priority', 'bit-pi'),
 
-    'Low' => __('Low', 'bit-pi'),
-
-    'Medium' => __('Medium', 'bit-pi'),
-
-    'High' => __('High', 'bit-pi'),
-
     'Specify if the task is a template' => __('Specify if the task is a template', 'bit-pi'),
 
     'Is Template' => __('Is Template', 'bit-pi'),
@@ -6507,8 +7125,6 @@ return [
 
     'Deletes a single customer.' => __('Deletes a single customer.', 'bit-pi'),
 
-    'Get Product (All)' => __('Get Product (All)', 'bit-pi'),
-
     'Fetches all products.' => __('Fetches all products.', 'bit-pi'),
 
     'Get Product (Single)' => __('Get Product (Single)', 'bit-pi'),
@@ -6519,11 +7135,7 @@ return [
 
     'Fetches the variants for a single product.' => __('Fetches the variants for a single product.', 'bit-pi'),
 
-    'Create Product' => __('Create Product', 'bit-pi'),
-
     'Creates a single product.' => __('Creates a single product.', 'bit-pi'),
-
-    'Delete Product' => __('Delete Product', 'bit-pi'),
 
     'Deletes a single product.' => __('Deletes a single product.', 'bit-pi'),
 
@@ -6697,13 +7309,7 @@ return [
 
     'Add Product' => __('Add Product', 'bit-pi'),
 
-    'Product' => __('Product', 'bit-pi'),
-
-    'Quantity' => __('Quantity', 'bit-pi'),
-
     'e.g., 1' => __('e.g., 1', 'bit-pi'),
-
-    'Unit Price' => __('Unit Price', 'bit-pi'),
 
     'e.g., 0.00' => __('e.g., 0.00', 'bit-pi'),
 
@@ -6760,8 +7366,6 @@ return [
     'Enter payment method title' => __('Enter payment method title', 'bit-pi'),
 
     'Payment Status' => __('Payment Status', 'bit-pi'),
-
-    'Paid' => __('Paid', 'bit-pi'),
 
     'Partially Paid' => __('Partially Paid', 'bit-pi'),
 
@@ -7081,14 +7685,6 @@ return [
 
     'Enter the WordPress user ID to verify profile' => __('Enter the WordPress user ID to verify profile', 'bit-pi'),
 
-    'Get Contact (All)' => __('Get Contact (All)', 'bit-pi'),
-
-    'Want to see contacts? Just hit **Test Run** to fetch them.' => __('Want to see contacts? Just hit **Test Run** to fetch them.', 'bit-pi'),
-
-    'Get Contact (By Id)' => __('Get Contact (By Id)', 'bit-pi'),
-
-    'Get Contact (By Email)' => __('Get Contact (By Email)', 'bit-pi'),
-
     'Get Contact (By User Id)' => __('Get Contact (By User Id)', 'bit-pi'),
 
     'Get Contact (By Tag Ids)' => __('Get Contact (By Tag Ids)', 'bit-pi'),
@@ -7100,10 +7696,6 @@ return [
     'Get Current Contact' => __('Get Current Contact', 'bit-pi'),
 
     'Get Current Contact based on the current userID or contact from the cookie value' => __('Get Current Contact based on the current userID or contact from the cookie value', 'bit-pi'),
-
-    'Get Tag (All)' => __('Get Tag (All)', 'bit-pi'),
-
-    'Want to see tags? Just hit **Test Run** to fetch them.' => __('Want to see tags? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
     'Create or Update Tag' => __('Create or Update Tag', 'bit-pi'),
 
@@ -7120,12 +7712,6 @@ return [
     'Add List To Contact' => __('Add List To Contact', 'bit-pi'),
 
     'Remove List From Contact' => __('Remove List From Contact', 'bit-pi'),
-
-    'Get Company (All)' => __('Get Company (All)', 'bit-pi'),
-
-    'Want to see companies? Just hit **Test Run** to fetch them.' => __('Want to see companies? Just hit **Test Run** to fetch them.', 'bit-pi'),
-
-    'Get Company (By Id)' => __('Get Company (By Id)', 'bit-pi'),
 
     'Create or Update Company' => __('Create or Update Company', 'bit-pi'),
 
@@ -7158,8 +7744,6 @@ return [
     'Contact status updated' => __('Contact status updated', 'bit-pi'),
 
     'Contact Id' => __('Contact Id', 'bit-pi'),
-
-    'Select a company' => __('Select a company', 'bit-pi'),
 
     'Contact Email' => __('Contact Email', 'bit-pi'),
 
@@ -7200,6 +7784,206 @@ return [
     'Fluent PDF Generator addon is required for this trigger' => __('Fluent PDF Generator addon is required for this trigger', 'bit-pi'),
 
     'PDF Download Requested' => __('PDF Download Requested', 'bit-pi'),
+
+    'Create Media' => __('Create Media', 'bit-pi'),
+
+    'Update Media' => __('Update Media', 'bit-pi'),
+
+    'Trash Media' => __('Trash Media', 'bit-pi'),
+
+    'Restore Media' => __('Restore Media', 'bit-pi'),
+
+    'Delete Media (Permanently)' => __('Delete Media (Permanently)', 'bit-pi'),
+
+    'Change Media Status' => __('Change Media Status', 'bit-pi'),
+
+    'Get Media (By Id)' => __('Get Media (By Id)', 'bit-pi'),
+
+    'Get Media (All)' => __('Get Media (All)', 'bit-pi'),
+
+    'Want to see your media? Just hit **Test Run** to fetch them.' => __('Want to see your media? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Rename Tag' => __('Rename Tag', 'bit-pi'),
+
+    'Set Media Tags' => __('Set Media Tags', 'bit-pi'),
+
+    'Add Tags to Media' => __('Add Tags to Media', 'bit-pi'),
+
+    'Remove Tags from Media' => __('Remove Tags from Media', 'bit-pi'),
+
+    'Get Tags (All)' => __('Get Tags (All)', 'bit-pi'),
+
+    'Want to see your tags? Just hit **Test Run** to fetch them.' => __('Want to see your tags? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Playlists' => __('Playlists', 'bit-pi'),
+
+    'Create Playlist' => __('Create Playlist', 'bit-pi'),
+
+    'Update Playlist' => __('Update Playlist', 'bit-pi'),
+
+    'Trash Playlist' => __('Trash Playlist', 'bit-pi'),
+
+    'Restore Playlist' => __('Restore Playlist', 'bit-pi'),
+
+    'Delete Playlist (Permanently)' => __('Delete Playlist (Permanently)', 'bit-pi'),
+
+    'Change Playlist Status' => __('Change Playlist Status', 'bit-pi'),
+
+    'Add Media to Playlist' => __('Add Media to Playlist', 'bit-pi'),
+
+    'Remove Media from Playlist' => __('Remove Media from Playlist', 'bit-pi'),
+
+    'Get Playlist (By Id)' => __('Get Playlist (By Id)', 'bit-pi'),
+
+    'Get Playlists (All)' => __('Get Playlists (All)', 'bit-pi'),
+
+    'Want to see your playlists? Just hit **Test Run** to fetch them.' => __('Want to see your playlists? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Leads' => __('Leads', 'bit-pi'),
+
+    'Create Email Submission' => __('Create Email Submission', 'bit-pi'),
+
+    'Get Email Submission (By Id)' => __('Get Email Submission (By Id)', 'bit-pi'),
+
+    'Get Email Submissions (All)' => __('Get Email Submissions (All)', 'bit-pi'),
+
+    'Want to see captured leads? Just hit **Test Run** to fetch them.' => __('Want to see captured leads? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Subscribe Email to Providers' => __('Subscribe Email to Providers', 'bit-pi'),
+
+    'Watch Progress' => __('Watch Progress', 'bit-pi'),
+
+    'Record Watch Progression' => __('Record Watch Progression', 'bit-pi'),
+
+    'Get Watch Progress' => __('Get Watch Progress', 'bit-pi'),
+
+    'Record Visit' => __('Record Visit', 'bit-pi'),
+
+    'Get Media Analytics' => __('Get Media Analytics', 'bit-pi'),
+
+    'Presets' => __('Presets', 'bit-pi'),
+
+    'Save Preset' => __('Save Preset', 'bit-pi'),
+
+    'Delete Preset' => __('Delete Preset', 'bit-pi'),
+
+    'Get Presets (All)' => __('Get Presets (All)', 'bit-pi'),
+
+    'Want to see your presets? Just hit **Test Run** to fetch them.' => __('Want to see your presets? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Media Created or Updated' => __('Media Created or Updated', 'bit-pi'),
+
+    'Media Trashed' => __('Media Trashed', 'bit-pi'),
+
+    'Media Restored' => __('Media Restored', 'bit-pi'),
+
+    'Media Deleted' => __('Media Deleted', 'bit-pi'),
+
+    'Media Rendered' => __('Media Rendered', 'bit-pi'),
+
+    'Video Completed' => __('Video Completed', 'bit-pi'),
+
+    'Existing Lead Resubmitted' => __('Existing Lead Resubmitted', 'bit-pi'),
+
+    'Playlist Created or Updated' => __('Playlist Created or Updated', 'bit-pi'),
+
+    'Playlist Trashed' => __('Playlist Trashed', 'bit-pi'),
+
+    'Playlist Restored' => __('Playlist Restored', 'bit-pi'),
+
+    'Playlist Deleted' => __('Playlist Deleted', 'bit-pi'),
+
+    'Playlist Rendered' => __('Playlist Rendered', 'bit-pi'),
+
+    'Select Media' => __('Select Media', 'bit-pi'),
+
+    'Select Playlist' => __('Select Playlist', 'bit-pi'),
+
+    'Preset' => __('Preset', 'bit-pi'),
+
+    'Video Time (seconds)' => __('Video Time (seconds)', 'bit-pi'),
+
+    'Meta Fields' => __('Meta Fields', 'bit-pi'),
+
+    'Media Source URL' => __('Media Source URL', 'bit-pi'),
+
+    'https://example.com/video.mp4 or a YouTube/Vimeo URL' => __('https://example.com/video.mp4 or a YouTube/Vimeo URL', 'bit-pi'),
+
+    'View Type' => __('View Type', 'bit-pi'),
+
+    'Poster Image URL' => __('Poster Image URL', 'bit-pi'),
+
+    'Attachment Id' => __('Attachment Id', 'bit-pi'),
+
+    'Media Items' => __('Media Items', 'bit-pi'),
+
+    'Tag Name' => __('Tag Name', 'bit-pi'),
+
+    'Select Preset' => __('Select Preset', 'bit-pi'),
+
+    'Select Tag' => __('Select Tag', 'bit-pi'),
+
+    'Submission Id' => __('Submission Id', 'bit-pi'),
+
+    'Start Date (Y-m-d)' => __('Start Date (Y-m-d)', 'bit-pi'),
+
+    'End Date (Y-m-d)' => __('End Date (Y-m-d)', 'bit-pi'),
+
+    'WordPress Media' => __('WordPress Media', 'bit-pi'),
+
+    'YouTube' => __('YouTube', 'bit-pi'),
+
+    'Vimeo' => __('Vimeo', 'bit-pi'),
+
+    'Bunny Stream' => __('Bunny Stream', 'bit-pi'),
+
+    'Mux' => __('Mux', 'bit-pi'),
+
+    'Gumlet' => __('Gumlet', 'bit-pi'),
+
+    'Cloudflare Stream' => __('Cloudflare Stream', 'bit-pi'),
+
+    'External URL' => __('External URL', 'bit-pi'),
+
+    'Audio' => __('Audio', 'bit-pi'),
+
+    'Watched Duration (seconds)' => __('Watched Duration (seconds)', 'bit-pi'),
+
+    'Watched Percentage (0-100)' => __('Watched Percentage (0-100)', 'bit-pi'),
+
+    'Country Code' => __('Country Code', 'bit-pi'),
+
+    'Device' => __('Device', 'bit-pi'),
+
+    'Browser' => __('Browser', 'bit-pi'),
+
+    'IP Address' => __('IP Address', 'bit-pi'),
+
+    'Duration (seconds)' => __('Duration (seconds)', 'bit-pi'),
+
+    'Watched Segments (JSON)' => __('Watched Segments (JSON)', 'bit-pi'),
+
+    '[{"start":0,"end":30}] — leave empty to mark fully watched' => __('[{"start":0,"end":30}] — leave empty to mark fully watched', 'bit-pi'),
+
+    'Ended (1 or 0)' => __('Ended (1 or 0)', 'bit-pi'),
+
+    'LMS Course Id' => __('LMS Course Id', 'bit-pi'),
+
+    'LMS Step Id' => __('LMS Step Id', 'bit-pi'),
+
+    'Tag to Rename' => __('Tag to Rename', 'bit-pi'),
+
+    'New Tag Name' => __('New Tag Name', 'bit-pi'),
+
+    'Preset Name' => __('Preset Name', 'bit-pi'),
+
+    'Preset Slug' => __('Preset Slug', 'bit-pi'),
+
+    'Leave empty to auto-generate from the name' => __('Leave empty to auto-generate from the name', 'bit-pi'),
+
+    'Preset Settings' => __('Preset Settings', 'bit-pi'),
+
+    'Extra Fields' => __('Extra Fields', 'bit-pi'),
 
     'Email was sent successfully' => __('Email was sent successfully', 'bit-pi'),
 
@@ -7298,8 +8082,6 @@ return [
     'Select a poll' => __('Select a poll', 'bit-pi'),
 
     'Quizzes' => __('Quizzes', 'bit-pi'),
-
-    'Create Lead' => __('Create Lead', 'bit-pi'),
 
     'Get Lead' => __('Get Lead', 'bit-pi'),
 
@@ -7551,8 +8333,6 @@ return [
 
     'Gender' => __('Gender', 'bit-pi'),
 
-    'Industry' => __('Industry', 'bit-pi'),
-
     'Job Title' => __('Job Title', 'bit-pi'),
 
     'Postal Code' => __('Postal Code', 'bit-pi'),
@@ -7715,8 +8495,6 @@ return [
 
     'Attachment #{COUNT}' => __('Attachment #{COUNT}', 'bit-pi'),
 
-    'Attachment' => __('Attachment', 'bit-pi'),
-
     'Enter the message ID, to delete the email.' => __('Enter the message ID, to delete the email.', 'bit-pi'),
 
     'Select Yes if you want to permanently delete the email.' => __('Select Yes if you want to permanently delete the email.', 'bit-pi'),
@@ -7793,8 +8571,6 @@ return [
 
     'Select the user to assign the opportunity to.' => __('Select the user to assign the opportunity to.', 'bit-pi'),
 
-    'Assigned To' => __('Assigned To', 'bit-pi'),
-
     'Enter the monetary value of the opportunity.' => __('Enter the monetary value of the opportunity.', 'bit-pi'),
 
     'Monetary Value' => __('Monetary Value', 'bit-pi'),
@@ -7815,8 +8591,6 @@ return [
 
     'GoHighLevel Marketplace' => __('GoHighLevel Marketplace', 'bit-pi'),
 
-    'Date of Birth' => __('Date of Birth', 'bit-pi'),
-
     'postalCode' => __('postalCode', 'bit-pi'),
 
     'DND (Do Not Disturb)' => __('DND (Do Not Disturb)', 'bit-pi'),
@@ -7824,8 +8598,6 @@ return [
     'Failed to fetch contacts' => __('Failed to fetch contacts', 'bit-pi'),
 
     'Enter the value you want to search for.' => __('Enter the value you want to search for.', 'bit-pi'),
-
-    'Select a contact' => __('Select a contact', 'bit-pi'),
 
     'Select pipeline to filter opportunities.' => __('Select pipeline to filter opportunities.', 'bit-pi'),
 
@@ -8323,8 +9095,6 @@ return [
 
     'Select the folder where to upload the file.' => __('Select the folder where to upload the file.', 'bit-pi'),
 
-    'Create Meeting' => __('Create Meeting', 'bit-pi'),
-
     'Select the calendar where you want to create the meeting.' => __('Select the calendar where you want to create the meeting.', 'bit-pi'),
 
     'Enter the meeting title or subject.' => __('Enter the meeting title or subject.', 'bit-pi'),
@@ -8717,8 +9487,6 @@ return [
 
     'Select a pipeline' => __('Select a pipeline', 'bit-pi'),
 
-    'Select a stage' => __('Select a stage', 'bit-pi'),
-
     'Client' => __('Client', 'bit-pi'),
 
     'Select a client' => __('Select a client', 'bit-pi'),
@@ -8737,15 +9505,11 @@ return [
 
     'Mobile phone number with country code.' => __('Mobile phone number with country code.', 'bit-pi'),
 
-    'Mobile' => __('Mobile', 'bit-pi'),
-
     'Secondary Mobile' => __('Secondary Mobile', 'bit-pi'),
 
     'Title / Job Title' => __('Title / Job Title', 'bit-pi'),
 
     'Expected Deal Value' => __('Expected Deal Value', 'bit-pi'),
-
-    'Lead Source' => __('Lead Source', 'bit-pi'),
 
     'Lead Stage' => __('Lead Stage', 'bit-pi'),
 
@@ -8813,8 +9577,6 @@ return [
 
     'Select a Company' => __('Select a Company', 'bit-pi'),
 
-    'Lead Status' => __('Lead Status', 'bit-pi'),
-
     'Select a Lead Status' => __('Select a Lead Status', 'bit-pi'),
 
     'Lifecycle Stage' => __('Lifecycle Stage', 'bit-pi'),
@@ -8853,15 +9615,9 @@ return [
 
     'Enable to update a deal if it exists, or add a new one if it does not.' => __('Enable to update a deal if it exists, or add a new one if it does not.', 'bit-pi'),
 
-    'Update Deal' => __('Update Deal', 'bit-pi'),
-
-    'Deals' => __('Deals', 'bit-pi'),
-
     'Select a Deal' => __('Select a Deal', 'bit-pi'),
 
     'A name for this deal.' => __('A name for this deal.', 'bit-pi'),
-
-    'Deal Name' => __('Deal Name', 'bit-pi'),
 
     'Sales Pipeline' => __('Sales Pipeline', 'bit-pi'),
 
@@ -8876,10 +9632,6 @@ return [
     'Select a Owner' => __('Select a Owner', 'bit-pi'),
 
     'Deal Type' => __('Deal Type', 'bit-pi'),
-
-    'New Business' => __('New Business', 'bit-pi'),
-
-    'Existing Business' => __('Existing Business', 'bit-pi'),
 
     'Select a Deal Type' => __('Select a Deal Type', 'bit-pi'),
 
@@ -8958,8 +9710,6 @@ return [
     'Bad Timing' => __('Bad Timing', 'bit-pi'),
 
     'Subscriber' => __('Subscriber', 'bit-pi'),
-
-    'Lead' => __('Lead', 'bit-pi'),
 
     'Marketing Qualified Lead' => __('Marketing Qualified Lead', 'bit-pi'),
 
@@ -9581,8 +10331,6 @@ return [
 
     'Get Data Source' => __('Get Data Source', 'bit-pi'),
 
-    'Delete Contact' => __('Delete Contact', 'bit-pi'),
-
     'Create Contact Event' => __('Create Contact Event', 'bit-pi'),
 
     'Get Audience Contact' => __('Get Audience Contact', 'bit-pi'),
@@ -9857,8 +10605,6 @@ return [
 
     'Enter value' => __('Enter value', 'bit-pi'),
 
-    'Meta Fields' => __('Meta Fields', 'bit-pi'),
-
     'JetEngine Forms' => __('JetEngine Forms', 'bit-pi'),
 
     'Enter the name of the field to filter by.' => __('Enter the name of the field to filter by.', 'bit-pi'),
@@ -9945,12 +10691,6 @@ return [
 
     'Create or Update Invoice' => __('Create or Update Invoice', 'bit-pi'),
 
-    'Get Invoice (All)' => __('Get Invoice (All)', 'bit-pi'),
-
-    'Want to see invoices? Just hit **Test Run** to fetch them.' => __('Want to see invoices? Just hit **Test Run** to fetch them.', 'bit-pi'),
-
-    'Get Invoice (By Id)' => __('Get Invoice (By Id)', 'bit-pi'),
-
     'Create or Update Quote' => __('Create or Update Quote', 'bit-pi'),
 
     'Get Quote (All)' => __('Get Quote (All)', 'bit-pi'),
@@ -9966,8 +10706,6 @@ return [
     'Quote Accepted' => __('Quote Accepted', 'bit-pi'),
 
     'Enter the Contact ID' => __('Enter the Contact ID', 'bit-pi'),
-
-    'Select tags' => __('Select tags', 'bit-pi'),
 
     'Company ID' => __('Company ID', 'bit-pi'),
 
@@ -9986,8 +10724,6 @@ return [
     'Enter the Transaction ID' => __('Enter the Transaction ID', 'bit-pi'),
 
     'Enter the Contact Email' => __('Enter the Contact Email', 'bit-pi'),
-
-    'County' => __('County', 'bit-pi'),
 
     'Home Phone' => __('Home Phone', 'bit-pi'),
 
@@ -10042,8 +10778,6 @@ return [
     'Net' => __('Net', 'bit-pi'),
 
     'Discount' => __('Discount', 'bit-pi'),
-
-    'Shipping' => __('Shipping', 'bit-pi'),
 
     'Shipping Taxes' => __('Shipping Taxes', 'bit-pi'),
 
@@ -10720,8 +11454,6 @@ return [
 
     'Write and hit enter to attach tags.' => __('Write and hit enter to attach tags.', 'bit-pi'),
 
-    'IP Address' => __('IP Address', 'bit-pi'),
-
     'This event is deprecated. It is recommended to use the updated events instead.' => __('This event is deprecated. It is recommended to use the updated events instead.', 'bit-pi'),
 
     'Create Subscriber (Deprecated Event)' => __('Create Subscriber (Deprecated Event)', 'bit-pi'),
@@ -10766,8 +11498,6 @@ return [
 
     'Enter the member\'s email from which you want to Add or Remove the tag.' => __('Enter the member\'s email from which you want to Add or Remove the tag.', 'bit-pi'),
 
-    'Tag Name' => __('Tag Name', 'bit-pi'),
-
     'Tag #{COUNT}' => __('Tag #{COUNT}', 'bit-pi'),
 
     'Tag Field Map' => __('Tag Field Map', 'bit-pi'),
@@ -10805,8 +11535,6 @@ return [
     'Remove tag from a member' => __('Remove tag from a member', 'bit-pi'),
 
     'Select Audience' => __('Select Audience', 'bit-pi'),
-
-    'Select Tag' => __('Select Tag', 'bit-pi'),
 
     'Add Address Field' => __('Add Address Field', 'bit-pi'),
 
@@ -10886,11 +11614,7 @@ return [
 
     'Deletes a contact by email address.' => __('Deletes a contact by email address.', 'bit-pi'),
 
-    'Add Tag to Contact' => __('Add Tag to Contact', 'bit-pi'),
-
     'Adds tags to a contact.' => __('Adds tags to a contact.', 'bit-pi'),
-
-    'Remove Tag from Contact' => __('Remove Tag from Contact', 'bit-pi'),
 
     'Removes tags from a contact.' => __('Removes tags from a contact.', 'bit-pi'),
 
@@ -10909,8 +11633,6 @@ return [
     'Create List' => __('Create List', 'bit-pi'),
 
     'Delete List' => __('Delete List', 'bit-pi'),
-
-    'Delete Tag' => __('Delete Tag', 'bit-pi'),
 
     'Get Contacts by Tag' => __('Get Contacts by Tag', 'bit-pi'),
 
@@ -10996,8 +11718,6 @@ return [
 
     'Create a new tag in Mail Mint.' => __('Create a new tag in Mail Mint.', 'bit-pi'),
 
-    'Update Tag' => __('Update Tag', 'bit-pi'),
-
     'Update a tag in Mail Mint.' => __('Update a tag in Mail Mint.', 'bit-pi'),
 
     'Delete a tag from Mail Mint.' => __('Delete a tag from Mail Mint.', 'bit-pi'),
@@ -11051,8 +11771,6 @@ return [
     'Add Contact Note' => __('Add Contact Note', 'bit-pi'),
 
     'Add a note to a contact in Mail Mint.' => __('Add a note to a contact in Mail Mint.', 'bit-pi'),
-
-    'Delete Note' => __('Delete Note', 'bit-pi'),
 
     'Delete a note from a contact in Mail Mint.' => __('Delete a note from a contact in Mail Mint.', 'bit-pi'),
 
@@ -11868,8 +12586,6 @@ return [
 
     'Triggers when a product is added to the save-for-later list.' => __('Triggers when a product is added to the save-for-later list.', 'bit-pi'),
 
-    'Select a user' => __('Select a user', 'bit-pi'),
-
     'Wishlist' => __('Wishlist', 'bit-pi'),
 
     'Select a wishlist' => __('Select a wishlist', 'bit-pi'),
@@ -12240,11 +12956,7 @@ return [
 
     'nonSubscribed' => __('nonSubscribed', 'bit-pi'),
 
-    'Product Id' => __('Product Id', 'bit-pi'),
-
     'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://app.omnisend.com/o/my-account/integrations/api-keys">Here</a>' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://app.omnisend.com/o/my-account/integrations/api-keys">Here</a>', 'bit-pi'),
-
-    'Country Code' => __('Country Code', 'bit-pi'),
 
     'Birth Date' => __('Birth Date', 'bit-pi'),
 
@@ -12672,8 +13384,6 @@ return [
 
     'Update Person' => __('Update Person', 'bit-pi'),
 
-    'Delete Deal' => __('Delete Deal', 'bit-pi'),
-
     'Duplicate Deal' => __('Duplicate Deal', 'bit-pi'),
 
     'Get Deal' => __('Get Deal', 'bit-pi'),
@@ -12682,11 +13392,7 @@ return [
 
     'Search Deal' => __('Search Deal', 'bit-pi'),
 
-    'Delete Lead' => __('Delete Lead', 'bit-pi'),
-
     'Get Many Leads' => __('Get Many Leads', 'bit-pi'),
-
-    'Update Lead' => __('Update Lead', 'bit-pi'),
 
     'Create Organization' => __('Create Organization', 'bit-pi'),
 
@@ -12720,17 +13426,11 @@ return [
 
     'Get Many Products' => __('Get Many Products', 'bit-pi'),
 
-    'Update Product' => __('Update Product', 'bit-pi'),
-
-    'Activity' => __('Activity', 'bit-pi'),
-
     'Activity Created' => __('Activity Created', 'bit-pi'),
 
     'Activity Deleted' => __('Activity Deleted', 'bit-pi'),
 
     'Activity Changed' => __('Activity Changed', 'bit-pi'),
-
-    'Deal' => __('Deal', 'bit-pi'),
 
     'Deal Changed' => __('Deal Changed', 'bit-pi'),
 
@@ -12889,8 +13589,6 @@ return [
     'Select the current status of the deal.' => __('Select the current status of the deal.', 'bit-pi'),
 
     'Deleted' => __('Deleted', 'bit-pi'),
-
-    'Probability' => __('Probability', 'bit-pi'),
 
     'Lost Reason' => __('Lost Reason', 'bit-pi'),
 
@@ -13090,9 +13788,107 @@ return [
 
     'Enter the campaign ID' => __('Enter the campaign ID', 'bit-pi'),
 
-    'Create Media Hub' => __('Create Media Hub', 'bit-pi'),
+    'Popups' => __('Popups', 'bit-pi'),
 
-    'Video Completed' => __('Video Completed', 'bit-pi'),
+    'Create Popup' => __('Create Popup', 'bit-pi'),
+
+    'Update Popup' => __('Update Popup', 'bit-pi'),
+
+    'Delete Popup' => __('Delete Popup', 'bit-pi'),
+
+    'Change Popup Status' => __('Change Popup Status', 'bit-pi'),
+
+    'Get Popup' => __('Get Popup', 'bit-pi'),
+
+    'Reset Popup Counts' => __('Reset Popup Counts', 'bit-pi'),
+
+    'Track Popup Event' => __('Track Popup Event', 'bit-pi'),
+
+    'Subscribers' => __('Subscribers', 'bit-pi'),
+
+    'Delete Subscriber' => __('Delete Subscriber', 'bit-pi'),
+
+    'Popup Opened' => __('Popup Opened', 'bit-pi'),
+
+    'Popup' => __('Popup', 'bit-pi'),
+
+    'Select a popup' => __('Select a popup', 'bit-pi'),
+
+    'Publish enables the popup on the site, draft disables it.' => __('Publish enables the popup on the site, draft disables it.', 'bit-pi'),
+
+    'Internal name of the popup, shown in the popup list.' => __('Internal name of the popup, shown in the popup list.', 'bit-pi'),
+
+    'Popup Name' => __('Popup Name', 'bit-pi'),
+
+    'Title displayed to visitors inside the popup.' => __('Title displayed to visitors inside the popup.', 'bit-pi'),
+
+    'Popup Title' => __('Popup Title', 'bit-pi'),
+
+    'Popup Theme' => __('Popup Theme', 'bit-pi'),
+
+    'Select a theme' => __('Select a theme', 'bit-pi'),
+
+    'Size' => __('Size', 'bit-pi'),
+
+    'Nano - 10%' => __('Nano - 10%', 'bit-pi'),
+
+    'Micro - 20%' => __('Micro - 20%', 'bit-pi'),
+
+    'Tiny - 30%' => __('Tiny - 30%', 'bit-pi'),
+
+    'Small - 40%' => __('Small - 40%', 'bit-pi'),
+
+    'Medium - 60%' => __('Medium - 60%', 'bit-pi'),
+
+    'Normal - 70%' => __('Normal - 70%', 'bit-pi'),
+
+    'Large - 80%' => __('Large - 80%', 'bit-pi'),
+
+    'X Large - 95%' => __('X Large - 95%', 'bit-pi'),
+
+    'Auto' => __('Auto', 'bit-pi'),
+
+    'Select a size' => __('Select a size', 'bit-pi'),
+
+    'Animation Type' => __('Animation Type', 'bit-pi'),
+
+    'Slide' => __('Slide', 'bit-pi'),
+
+    'Fade' => __('Fade', 'bit-pi'),
+
+    'Fade and Slide' => __('Fade and Slide', 'bit-pi'),
+
+    'Select an animation' => __('Select an animation', 'bit-pi'),
+
+    'Popup the subscriber is attributed to.' => __('Popup the subscriber is attributed to.', 'bit-pi'),
+
+    'Consent' => __('Consent', 'bit-pi'),
+
+    'Select consent' => __('Select consent', 'bit-pi'),
+
+    'Optional consent details stored with the subscriber.' => __('Optional consent details stored with the subscriber.', 'bit-pi'),
+
+    'Consent Args' => __('Consent Args', 'bit-pi'),
+
+    'Enable to permanently delete the popup. Leave disabled to move it to trash.' => __('Enable to permanently delete the popup. Leave disabled to move it to trash.', 'bit-pi'),
+
+    'Force Delete' => __('Force Delete', 'bit-pi'),
+
+    'Select a subscriber' => __('Select a subscriber', 'bit-pi'),
+
+    'Subscriber is looked up by email address.' => __('Subscriber is looked up by email address.', 'bit-pi'),
+
+    'Select a subscriber email' => __('Select a subscriber email', 'bit-pi'),
+
+    'Increases the popup open or conversion counter in Popup Maker analytics.' => __('Increases the popup open or conversion counter in Popup Maker analytics.', 'bit-pi'),
+
+    'Conversion' => __('Conversion', 'bit-pi'),
+
+    'Leave empty to keep the current name.' => __('Leave empty to keep the current name.', 'bit-pi'),
+
+    'Leave empty to keep the current value.' => __('Leave empty to keep the current value.', 'bit-pi'),
+
+    'Create Media Hub' => __('Create Media Hub', 'bit-pi'),
 
     'Video Watched' => __('Video Watched', 'bit-pi'),
 
@@ -13654,8 +14450,6 @@ return [
 
     'Select Lead' => __('Select Lead', 'bit-pi'),
 
-    'Select a lead' => __('Select a lead', 'bit-pi'),
-
     'Select the task you want to update.' => __('Select the task you want to update.', 'bit-pi'),
 
     'Custom Fields are Saved' => __('Custom Fields are Saved', 'bit-pi'),
@@ -13692,15 +14486,11 @@ return [
 
     'Double Optin' => __('Double Optin', 'bit-pi'),
 
-    'Subscribers' => __('Subscribers', 'bit-pi'),
-
     'Create or Update Subscriber' => __('Create or Update Subscriber', 'bit-pi'),
 
     'Get Subscriber' => __('Get Subscriber', 'bit-pi'),
 
     'Get All Subscribers' => __('Get All Subscribers', 'bit-pi'),
-
-    'Delete Subscriber' => __('Delete Subscriber', 'bit-pi'),
 
     'Get Subscriber Events' => __('Get Subscriber Events', 'bit-pi'),
 
@@ -13788,8 +14578,6 @@ return [
 
     'Pick a subscriber, or map an email / phone / ID from a previous step.' => __('Pick a subscriber, or map an email / phone / ID from a previous step.', 'bit-pi'),
 
-    'Select a subscriber' => __('Select a subscriber', 'bit-pi'),
-
     'Select the group to watch for this event.' => __('Select the group to watch for this event.', 'bit-pi'),
 
     'Please select a group for this event' => __('Please select a group for this event', 'bit-pi'),
@@ -13861,8 +14649,6 @@ return [
     'Unsubscribes' => __('Unsubscribes', 'bit-pi'),
 
     'Complaints' => __('Complaints', 'bit-pi'),
-
-    'Sent' => __('Sent', 'bit-pi'),
 
     'Select a stat type' => __('Select a stat type', 'bit-pi'),
 
@@ -13949,8 +14735,6 @@ return [
     'Campaign Sent' => __('Campaign Sent', 'bit-pi'),
 
     'Select the brand.' => __('Select the brand.', 'bit-pi'),
-
-    'Brand' => __('Brand', 'bit-pi'),
 
     'Enter the name of the subscriber.' => __('Enter the name of the subscriber.', 'bit-pi'),
 
@@ -14380,8 +15164,6 @@ return [
 
     'Enter the description of the product' => __('Enter the description of the product', 'bit-pi'),
 
-    'Service' => __('Service', 'bit-pi'),
-
     'Good' => __('Good', 'bit-pi'),
 
     'Enter the customer ID for creating subscription' => __('Enter the customer ID for creating subscription', 'bit-pi'),
@@ -14411,8 +15193,6 @@ return [
     'Checkout Session Completed' => __('Checkout Session Completed', 'bit-pi'),
 
     'Checkout Session Expired' => __('Checkout Session Expired', 'bit-pi'),
-
-    'Invoices' => __('Invoices', 'bit-pi'),
 
     'Invoice Finalized' => __('Invoice Finalized', 'bit-pi'),
 
@@ -15010,8 +15790,6 @@ return [
     'Chose Media Type' => __('Chose Media Type', 'bit-pi'),
 
     'Photo' => __('Photo', 'bit-pi'),
-
-    'Audio' => __('Audio', 'bit-pi'),
 
     'Select Media Type' => __('Select Media Type', 'bit-pi'),
 
@@ -16256,8 +17034,6 @@ return [
 
     'Administrator' => __('Administrator', 'bit-pi'),
 
-    'Auto' => __('Auto', 'bit-pi'),
-
     'Select who cancelled' => __('Select who cancelled', 'bit-pi'),
 
     'Coupon' => __('Coupon', 'bit-pi'),
@@ -17230,8 +18006,6 @@ return [
 
     'Taxable' => __('Taxable', 'bit-pi'),
 
-    'None' => __('None', 'bit-pi'),
-
     'Select tax status' => __('Select tax status', 'bit-pi'),
 
     'Tax class for this product (optional, e.g., reduced-rate).' => __('Tax class for this product (optional, e.g., reduced-rate).', 'bit-pi'),
@@ -17612,8 +18386,6 @@ return [
 
     'Get Post Tag (All)' => __('Get Post Tag (All)', 'bit-pi'),
 
-    'Want to see your tags? Just hit **Test Run** to fetch them.' => __('Want to see your tags? Just hit **Test Run** to fetch them.', 'bit-pi'),
-
     'Get Post Tag (Single)' => __('Get Post Tag (Single)', 'bit-pi'),
 
     'Add New Image To Media Library' => __('Add New Image To Media Library', 'bit-pi'),
@@ -17622,13 +18394,9 @@ return [
 
     'Rename Media' => __('Rename Media', 'bit-pi'),
 
-    'Get Media (All)' => __('Get Media (All)', 'bit-pi'),
-
     'Want to see your Medias? Just hit **Test Run** to fetch them.' => __('Want to see your Medias? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
     'Get Media (By Title)' => __('Get Media (By Title)', 'bit-pi'),
-
-    'Get Media (By Id)' => __('Get Media (By Id)', 'bit-pi'),
 
     'Get Term (All)' => __('Get Term (All)', 'bit-pi'),
 
@@ -18390,8 +19158,6 @@ return [
 
     'Whether to bypass Trash and force deletion.' => __('Whether to bypass Trash and force deletion.', 'bit-pi'),
 
-    'Force Delete' => __('Force Delete', 'bit-pi'),
-
     'Revisions' => __('Revisions', 'bit-pi'),
 
     'Trackbacks' => __('Trackbacks', 'bit-pi'),
@@ -18522,12 +19288,6 @@ return [
 
     'for custom mapping table id should be provided in the input data' => __('for custom mapping table id should be provided in the input data', 'bit-pi'),
 
-    'Create Company' => __('Create Company', 'bit-pi'),
-
-    'Update Company' => __('Update Company', 'bit-pi'),
-
-    'Delete Company' => __('Delete Company', 'bit-pi'),
-
     'Create Contact Group' => __('Create Contact Group', 'bit-pi'),
 
     'Get Contact Group (All)' => __('Get Contact Group (All)', 'bit-pi'),
@@ -18560,17 +19320,11 @@ return [
 
     'Create Payment' => __('Create Payment', 'bit-pi'),
 
-    'A contact is created' => __('A contact is created', 'bit-pi'),
-
-    'A contact is updated' => __('A contact is updated', 'bit-pi'),
-
     'A contact is deleted' => __('A contact is deleted', 'bit-pi'),
 
     'A contact owner is assigned' => __('A contact owner is assigned', 'bit-pi'),
 
     'A contact is unsubscribed' => __('A contact is unsubscribed', 'bit-pi'),
-
-    'A company is created' => __('A company is created', 'bit-pi'),
 
     'A contact is added to group' => __('A contact is added to group', 'bit-pi'),
 
@@ -18639,8 +19393,6 @@ return [
     'Parent department id (optional).' => __('Parent department id (optional).', 'bit-pi'),
 
     'Parent Department Id' => __('Parent Department Id', 'bit-pi'),
-
-    'Department' => __('Department', 'bit-pi'),
 
     'Select a department' => __('Select a department', 'bit-pi'),
 
@@ -19308,10 +20060,6 @@ return [
 
     'Update Vendor' => __('Update Vendor', 'bit-pi'),
 
-    'Create Invoice' => __('Create Invoice', 'bit-pi'),
-
-    'Update Invoice' => __('Update Invoice', 'bit-pi'),
-
     'Create Quote' => __('Create Quote', 'bit-pi'),
 
     'Update Quote' => __('Update Quote', 'bit-pi'),
@@ -19376,11 +20124,7 @@ return [
 
     'Select Deal' => __('Select Deal', 'bit-pi'),
 
-    'Select a deal' => __('Select a deal', 'bit-pi'),
-
     'Select the invoice you want to update.' => __('Select the invoice you want to update.', 'bit-pi'),
-
-    'Select an invoice' => __('Select an invoice', 'bit-pi'),
 
     'Select the product you want to update.' => __('Select the product you want to update.', 'bit-pi'),
 
@@ -19556,11 +20300,7 @@ return [
 
     'Get Many Meetings' => __('Get Many Meetings', 'bit-pi'),
 
-    'Delete Meeting' => __('Delete Meeting', 'bit-pi'),
-
     'Send Chat Message' => __('Send Chat Message', 'bit-pi'),
-
-    'Update Meeting' => __('Update Meeting', 'bit-pi'),
 
     'Create Webinar' => __('Create Webinar', 'bit-pi'),
 

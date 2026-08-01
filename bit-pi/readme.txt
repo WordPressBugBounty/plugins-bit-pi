@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.0.2
 Requires PHP: 7.4
-Stable tag: 1.26.0
+Stable tag: 1.27.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,18 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.27.0 (Aug 01, 2026) =
+
+* **Triggers (79)**:
+  * Bit CRM (66)
+  * FluentPlayer (12)
+  * Popup Maker (01)
+
+* **Actions (136)**:
+  * Bit CRM (88)
+  * FluentPlayer (36)
+  * Popup Maker (12)
 
 = v1.26.0 (Jul 29, 2026) =
 
