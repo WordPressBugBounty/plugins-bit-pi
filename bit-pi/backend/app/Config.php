@@ -24,11 +24,11 @@ class Config
 
     public const VAR_PREFIX = 'bit_pi_';
 
-    public const VERSION = '1.27.0';
+    public const VERSION = '1.28.0';
 
     public const DB_VERSION = '0.2.0';
 
-    public const REQUIRED_PHP_VERSION = '7.4';
+    public const REQUIRED_PHP_VERSION = '8.0';
 
     public const REQUIRED_WP_VERSION = '5.0';
 

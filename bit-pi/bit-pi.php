@@ -6,11 +6,11 @@
  * Plugin Name:  Bit Flows
  * Plugin URI:   https://bitapps.pro/bit-flows
  * Description:  Integrates with other platform
- * Version:     1.27.0
+ * Version:     1.28.0
  * Author:       Bit Apps
  * Author URI:   https://bitapps.pro
  * Text Domain:  bit-pi
- * Requires PHP: 7.4
+ * Requires PHP: 8.0
  * Requires WP:  5.0
  * Domain Path:  /languages
  * License:      GPL-2.0-or-later

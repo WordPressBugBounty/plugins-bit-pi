@@ -109,7 +109,7 @@ class FlowService
 
         $flowIds = $flowNodeModel->get(['flow_id']);
 
-        $flowIdsArr = \is_array($flowIds) ? Arr::pluck($flowIds, 'flow_id') : [];
+        $flowIdsArr = Arr::pluck($flowIds, 'flow_id');
 
         if (\count($flowIdsArr) === 0) {
             return false;
@@ -141,6 +141,22 @@ class FlowService
         $flow->executed_node_ids = $executedNodeIds;
 
         return $flow->save() ? $flow : false;
+    }
+
+    /**
+     * Delete a flow together with its side effects.
+     *
+     * Deleting a flow must also rebuild the active-trigger cache and drop the
+     * flow's polling state — the admin controller and the MCP tool both
+     * delete flows, so the ritual lives here to keep them in lockstep.
+     */
+    public static function deleteFlow(int $flowId): void
+    {
+        (new Flow($flowId))->delete();
+
+        self::updateTriggerNodeInCache();
+
+        Polling::deletePollingData($flowId);
     }
 
     public static function updateTriggerNodeInCache()

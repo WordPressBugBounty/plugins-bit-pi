@@ -94,6 +94,8 @@ Route::group(
         Route::get('webhooks/{webhook}', [WebhookController::class, 'show']);
         Route::post('webhooks/{webhook}/update', [WebhookController::class, 'update']);
         Route::post('webhooks/{webhook}/update-title', [WebhookController::class, 'updateTitle']);
+        Route::post('webhooks/{webhook}/update-authentication', [WebhookController::class, 'updateAuthentication']);
+        Route::post('webhooks/{webhook}/update-advanced-settings', [WebhookController::class, 'updateAdvancedSettings']);
         Route::post('webhooks/{webhook}/delete', [WebhookController::class, 'destroy']);
         // others
         Route::post('test-run-node', [FlowNodeTestController::class, 'runNode']);

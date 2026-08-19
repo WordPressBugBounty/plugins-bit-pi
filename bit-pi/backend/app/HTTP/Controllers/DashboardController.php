@@ -54,25 +54,26 @@ final class DashboardController
         $totalCustomApps = (int) CustomApp::count();
         $failedTasks = $this->getFailedTasks();
 
-        $recentFlowHistories = array_map(
-            function ($history) {
-                $timestamp = strtotime((string) $history->created_at);
+        if (\count($recentFlowHistories) > 0) {
+            $recentFlowHistories = $recentFlowHistories->map(
+                function ($history) {
+                    $timestamp = strtotime((string) $history->created_at);
 
-                if ($timestamp === false) {
+                    if ($timestamp === false) {
+                        $history->status = $this->formatHistoryStatus($history->status ?? '');
+                        $history->time = '';
+
+                        return $history;
+                    }
+
+                    $history->created_at = gmdate('Y/m/d', $timestamp);
                     $history->status = $this->formatHistoryStatus($history->status ?? '');
-                    $history->time = '';
+                    $history->time = gmdate('g:i a', $timestamp);
 
                     return $history;
                 }
-
-                $history->created_at = gmdate('Y/m/d', $timestamp);
-                $history->status = $this->formatHistoryStatus($history->status ?? '');
-                $history->time = gmdate('g:i a', $timestamp);
-
-                return $history;
-            },
-            \is_array($recentFlowHistories) ? $recentFlowHistories : []
-        );
+            )->toArray();
+        }
 
         return Response::success(
             [
@@ -105,17 +106,26 @@ final class DashboardController
             ['month' => 'December'],
         ];
 
-        $monthlyFlowExecutions = FlowHistory::select('COUNT(id) AS run_count', 'MONTH(created_at) AS month')
-            ->groupBy('month')
-            ->orderBy('month')
-            ->where('YEAR(created_at)', gmdate('Y'))
-            ->get();
+        // GROUP BY / ORDER BY target the `month` select alias, which the query
+        // builder would qualify with the table name and MySQL then rejects, so
+        // the aggregate runs as a prepared raw statement.
+        $monthlyFlowExecutions = FlowHistory::rawPrepared(
+            'SELECT COUNT(id) AS run_count, MONTH(created_at) AS month FROM {{identifier:table}} WHERE YEAR(created_at) = %d GROUP BY month ORDER BY month ASC',
+            [gmdate('Y')],
+            ['table' => Config::withDBPrefix('flow_histories')]
+        );
 
-        foreach ($monthLabels as $key => $label) {
-            foreach ($monthlyFlowExecutions as $monthlyFlowExecution) {
-                if (gmdate('F', gmmktime(0, 0, 0, $monthlyFlowExecution['month'], 1)) === $label['month']) {
-                    $monthLabels[$key]['run_count'] = $monthlyFlowExecution['run_count'];
-                }
+        if (empty($monthlyFlowExecutions) || !is_iterable($monthlyFlowExecutions)) {
+            return $monthLabels;
+        }
+
+        // $monthLabels is in calendar order, so MySQL's MONTH() (1-12) maps
+        // straight onto its index.
+        foreach ($monthlyFlowExecutions as $monthlyFlowExecution) {
+            $index = (int) $monthlyFlowExecution->month - 1;
+
+            if (isset($monthLabels[$index])) {
+                $monthLabels[$index]['run_count'] = (int) $monthlyFlowExecution->run_count;
             }
         }
 
@@ -133,20 +143,25 @@ final class DashboardController
             ->take(5)
             ->get(['node_id', 'details']);
 
-        return array_map(
-            function ($task) use ($mailSent) {
-                $details = \is_array($task->details) ? $task->details : [];
-                $appSlug = $details['app_slug'] ?? '';
-                $machineSlug = $details['machine_slug'] ?? '';
+        if (\count($failedTasks) === 0) {
+            return [];
+        }
 
-                return [
-                    'mailSent' => $mailSent,
-                    'nodeId'   => $task->node_id,
-                    'taskName' => $this->formatTaskName($appSlug, $machineSlug),
-                ];
-            },
-            \is_array($failedTasks) ? $failedTasks : []
-        );
+        return $failedTasks
+            ->map(
+                function ($task) use ($mailSent) {
+                    $details = \is_array($task->details) ? $task->details : [];
+                    $appSlug = $details['app_slug'] ?? '';
+                    $machineSlug = $details['machine_slug'] ?? '';
+
+                    return [
+                        'mailSent' => $mailSent,
+                        'nodeId'   => $task->node_id,
+                        'taskName' => $this->formatTaskName($appSlug, $machineSlug),
+                    ];
+                }
+            )
+            ->toArray();
     }
 
     private function formatTaskName($appSlug, $machineSlug)

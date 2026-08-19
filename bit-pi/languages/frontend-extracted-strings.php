@@ -83,6 +83,8 @@ return [
 
     'is up to date' => __('is up to date', 'bit-pi'),
 
+    'WordPress CRM to manage contacts, leads, deals, and invoices and run your whole sales pipeline right from your WordPress dashboard.' => __('WordPress CRM to manage contacts, leads, deals, and invoices and run your whole sales pipeline right from your WordPress dashboard.', 'bit-pi'),
+
     'Zapier Alternative in WordPress Unlimited Task.' => __('Zapier Alternative in WordPress Unlimited Task.', 'bit-pi'),
 
     'An social media management plugin for WordPress, that allows you to share your post to different social media platform, schedule post, manage social media account and many more feature.' => __('An social media management plugin for WordPress, that allows you to share your post to different social media platform, schedule post, manage social media account and many more feature.', 'bit-pi'),
@@ -733,6 +735,16 @@ return [
 
     'String' => __('String', 'bit-pi'),
 
+    'Failed to generate the access token' => __('Failed to generate the access token', 'bit-pi'),
+
+    'Failed to revoke the access token' => __('Failed to revoke the access token', 'bit-pi'),
+
+    'Access token revoked' => __('Access token revoked', 'bit-pi'),
+
+    'Failed to update MCP server settings' => __('Failed to update MCP server settings', 'bit-pi'),
+
+    'MCP server settings updated' => __('MCP server settings updated', 'bit-pi'),
+
     'Test run failed.' => __('Test run failed.', 'bit-pi'),
 
     'Test run successful.' => __('Test run successful.', 'bit-pi'),
@@ -1080,6 +1092,18 @@ return [
 
     'Webhook updated successfully' => __('Webhook updated successfully', 'bit-pi'),
 
+    'Failed to update webhook advanced settings' => __('Failed to update webhook advanced settings', 'bit-pi'),
+
+    'Settings saved' => __('Settings saved', 'bit-pi'),
+
+    'Failed to update webhook authentication' => __('Failed to update webhook authentication', 'bit-pi'),
+
+    'Authentication disabled' => __('Authentication disabled', 'bit-pi'),
+
+    'Secret token regenerated' => __('Secret token regenerated', 'bit-pi'),
+
+    'Authentication enabled' => __('Authentication enabled', 'bit-pi'),
+
     'webhook' => __('webhook', 'bit-pi'),
 
     'Untitled webhook' => __('Untitled webhook', 'bit-pi'),
@@ -1122,7 +1146,37 @@ return [
 
     'Disable' => __('Disable', 'bit-pi'),
 
+    'The headers will be added to the request body.' => __('The headers will be added to the request body.', 'bit-pi'),
+
+    'Get request headers' => __('Get request headers', 'bit-pi'),
+
+    'The HTTP method (verb) will be added to the request body.' => __('The HTTP method (verb) will be added to the request body.', 'bit-pi'),
+
+    'Get request HTTP method' => __('Get request HTTP method', 'bit-pi'),
+
+    'If enabled, JSON payloads are returned as a string.' => __('If enabled, JSON payloads are returned as a string.', 'bit-pi'),
+
+    'JSON pass-through' => __('JSON pass-through', 'bit-pi'),
+
     'Choose a webhook' => __('Choose a webhook', 'bit-pi'),
+
+    'Authentication' => __('Authentication', 'bit-pi'),
+
+    'When enabled, the webhook will require a secret token to accept incoming requests.' => __('When enabled, the webhook will require a secret token to accept incoming requests.', 'bit-pi'),
+
+    'Regenerate secret' => __('Regenerate secret', 'bit-pi'),
+
+    'Secret Token' => __('Secret Token', 'bit-pi'),
+
+    'Send as Authorization: Bearer YOUR_SECRET_TOKEN. Keep it private.' => __('Send as Authorization: Bearer YOUR_SECRET_TOKEN. Keep it private.', 'bit-pi'),
+
+    'IP Restrictions' => __('IP Restrictions', 'bit-pi'),
+
+    'e.g. 203.0.113.5 or 10.0.0.0/8' => __('e.g. 203.0.113.5 or 10.0.0.0/8', 'bit-pi'),
+
+    'Only listed IPs or CIDR ranges can call this webhook. Leave empty to allow all.' => __('Only listed IPs or CIDR ranges can call this webhook. Leave empty to allow all.', 'bit-pi'),
+
+    'Advanced settings' => __('Advanced settings', 'bit-pi'),
 
     'Are you sure delete this item?' => __('Are you sure delete this item?', 'bit-pi'),
 
@@ -1665,6 +1719,8 @@ return [
 
     'Webhooks' => __('Webhooks', 'bit-pi'),
 
+    'MCP Server' => __('MCP Server', 'bit-pi'),
+
     'Settings' => __('Settings', 'bit-pi'),
 
     'System Info' => __('System Info', 'bit-pi'),
@@ -1688,6 +1744,192 @@ return [
     'Collapse' => __('Collapse', 'bit-pi'),
 
     'Product by Bit Apps' => __('Product by Bit Apps', 'bit-pi'),
+
+    'Use an access token when a client cannot run the browser sign-in flow. The token carries full administrator access to your flows, so treat it like a password.' => __('Use an access token when a client cannot run the browser sign-in flow. The token carries full administrator access to your flows, so treat it like a password.', 'bit-pi'),
+
+    'Server URL' => __('Server URL', 'bit-pi'),
+
+    'Access token' => __('Access token', 'bit-pi'),
+
+    'Copy this access token now. It cannot be shown again.' => __('Copy this access token now. It cannot be shown again.', 'bit-pi'),
+
+    'A token is active, created' => __('A token is active, created', 'bit-pi'),
+
+    'by' => __('by', 'bit-pi'),
+
+    'Generate a new one to replace it.' => __('Generate a new one to replace it.', 'bit-pi'),
+
+    'No access token yet. Generate one to connect a client without OAuth.' => __('No access token yet. Generate one to connect a client without OAuth.', 'bit-pi'),
+
+    'Regenerate token' => __('Regenerate token', 'bit-pi'),
+
+    'Generate token' => __('Generate token', 'bit-pi'),
+
+    'Clients using this token will stop working immediately.' => __('Clients using this token will stop working immediately.', 'bit-pi'),
+
+    'Revoke this access token?' => __('Revoke this access token?', 'bit-pi'),
+
+    'Revoke' => __('Revoke', 'bit-pi'),
+
+    'Configuration JSON' => __('Configuration JSON', 'bit-pi'),
+
+    'Or add it from the command line (Claude Code)' => __('Or add it from the command line (Claude Code)', 'bit-pi'),
+
+    'Replace' => __('Replace', 'bit-pi'),
+
+    'with the token you copied when it was generated.' => __('with the token you copied when it was generated.', 'bit-pi'),
+
+    'Client access revoked' => __('Client access revoked', 'bit-pi'),
+
+    'Connected clients' => __('Connected clients', 'bit-pi'),
+
+    'No AI clients have connected yet.' => __('No AI clients have connected yet.', 'bit-pi'),
+
+    'Last used' => __('Last used', 'bit-pi'),
+
+    'The client will need to re-authorize to regain access.' => __('The client will need to re-authorize to regain access.', 'bit-pi'),
+
+    'Revoke this client?' => __('Revoke this client?', 'bit-pi'),
+
+    'Authorized by' => __('Authorized by', 'bit-pi'),
+
+    'Registered, awaiting authorization' => __('Registered, awaiting authorization', 'bit-pi'),
+
+    'Pending' => __('Pending', 'bit-pi'),
+
+    'Connect an AI client' => __('Connect an AI client', 'bit-pi'),
+
+    'Choose your client and follow its setup steps. OAuth sends you to this site to approve access, and every request runs with the permissions of the administrator who connected it.' => __('Choose your client and follow its setup steps. OAuth sends you to this site to approve access, and every request runs with the permissions of the administrator who connected it.', 'bit-pi'),
+
+    'OAuth discovery uses WordPress rewrite rules. Enable pretty permalinks in Settings → Permalinks if a client cannot connect.' => __('OAuth discovery uses WordPress rewrite rules. Enable pretty permalinks in Settings → Permalinks if a client cannot connect.', 'bit-pi'),
+
+    'Pretty permalinks are recommended' => __('Pretty permalinks are recommended', 'bit-pi'),
+
+    'Web clients such as Claude.ai and ChatGPT require a publicly reachable HTTPS site.' => __('Web clients such as Claude.ai and ChatGPT require a publicly reachable HTTPS site.', 'bit-pi'),
+
+    'HTTPS is required for web clients' => __('HTTPS is required for web clients', 'bit-pi'),
+
+    'OAuth (recommended)' => __('OAuth (recommended)', 'bit-pi'),
+
+    'API key' => __('API key', 'bit-pi'),
+
+    'Or set it up manually' => __('Or set it up manually', 'bit-pi'),
+
+    'Your site must be reachable from the internet over HTTPS.' => __('Your site must be reachable from the internet over HTTPS.', 'bit-pi'),
+
+    'Claude opens with the name and URL already filled in. Click Add, then approve access when Claude asks you to sign in.' => __('Claude opens with the name and URL already filled in. Click Add, then approve access when Claude asks you to sign in.', 'bit-pi'),
+
+    'Connect to Claude' => __('Connect to Claude', 'bit-pi'),
+
+    'Open claude.ai → Settings → Connectors → Add custom connector.' => __('Open claude.ai → Settings → Connectors → Add custom connector.', 'bit-pi'),
+
+    'Paste the server URL below and save.' => __('Paste the server URL below and save.', 'bit-pi'),
+
+    'Claude opens a popup to this site. Log in as an administrator and approve access.' => __('Claude opens a popup to this site. Log in as an administrator and approve access.', 'bit-pi'),
+
+    'Requires a ChatGPT plan with connectors (developer mode) and a publicly reachable HTTPS site.' => __('Requires a ChatGPT plan with connectors (developer mode) and a publicly reachable HTTPS site.', 'bit-pi'),
+
+    'This opens the connector form. ChatGPT cannot pre-fill the URL, so keep this page open to copy it.' => __('This opens the connector form. ChatGPT cannot pre-fill the URL, so keep this page open to copy it.', 'bit-pi'),
+
+    'Create in ChatGPT' => __('Create in ChatGPT', 'bit-pi'),
+
+    'Open ChatGPT → Settings → Connectors → Create.' => __('Open ChatGPT → Settings → Connectors → Create.', 'bit-pi'),
+
+    'Paste the server URL below as the MCP server URL and save.' => __('Paste the server URL below as the MCP server URL and save.', 'bit-pi'),
+
+    'Approve access in the popup using your administrator account.' => __('Approve access in the popup using your administrator account.', 'bit-pi'),
+
+    'This opens the Skills and Connectors page, where you add the server URL below.' => __('This opens the Skills and Connectors page, where you add the server URL below.', 'bit-pi'),
+
+    'Open Grok Connectors' => __('Open Grok Connectors', 'bit-pi'),
+
+    'On the Skills and Connectors page, click New Connector and select Custom.' => __('On the Skills and Connectors page, click New Connector and select Custom.', 'bit-pi'),
+
+    'Enter a name, e.g. Bit Flows, and paste the server URL below as the Server URL.' => __('Enter a name, e.g. Bit Flows, and paste the server URL below as the Server URL.', 'bit-pi'),
+
+    'Click Add Connector, then approve access when Grok asks you to sign in.' => __('Click Add Connector, then approve access when Grok asks you to sign in.', 'bit-pi'),
+
+    'Run in your terminal' => __('Run in your terminal', 'bit-pi'),
+
+    'Run the command below in your terminal.' => __('Run the command below in your terminal.', 'bit-pi'),
+
+    'Start Claude Code and use any Bit Flows tool. Your browser opens to approve access.' => __('Start Claude Code and use any Bit Flows tool. Your browser opens to approve access.', 'bit-pi'),
+
+    'Add to ~/.codex/config.toml' => __('Add to ~/.codex/config.toml', 'bit-pi'),
+
+    'Add the snippet below to ~/.codex/config.toml.' => __('Add the snippet below to ~/.codex/config.toml.', 'bit-pi'),
+
+    'Run "codex mcp login bit-flows" to complete the OAuth approval in your browser.' => __('Run "codex mcp login bit-flows" to complete the OAuth approval in your browser.', 'bit-pi'),
+
+    'Merge into ~/.gemini/settings.json' => __('Merge into ~/.gemini/settings.json', 'bit-pi'),
+
+    'Merge the snippet below into ~/.gemini/settings.json.' => __('Merge the snippet below into ~/.gemini/settings.json.', 'bit-pi'),
+
+    'Run "/mcp auth bit-flows" inside Gemini CLI to approve access in your browser.' => __('Run "/mcp auth bit-flows" inside Gemini CLI to approve access in your browser.', 'bit-pi'),
+
+    'Click Install in the dialog Cursor opens, then approve access in the browser when it asks you to sign in.' => __('Click Install in the dialog Cursor opens, then approve access in the browser when it asks you to sign in.', 'bit-pi'),
+
+    'Add to Cursor' => __('Add to Cursor', 'bit-pi'),
+
+    'Or add manually to .cursor/mcp.json' => __('Or add manually to .cursor/mcp.json', 'bit-pi'),
+
+    'Click the install button below (or add the snippet to .cursor/mcp.json).' => __('Click the install button below (or add the snippet to .cursor/mcp.json).', 'bit-pi'),
+
+    'Cursor opens your browser to approve access on this site.' => __('Cursor opens your browser to approve access on this site.', 'bit-pi'),
+
+    'VS Code asks to install the server, then prompts you to authorize in your browser.' => __('VS Code asks to install the server, then prompts you to authorize in your browser.', 'bit-pi'),
+
+    'Add to VS Code' => __('Add to VS Code', 'bit-pi'),
+
+    'Or add manually to .vscode/mcp.json' => __('Or add manually to .vscode/mcp.json', 'bit-pi'),
+
+    'Click the install button below (or add the snippet to .vscode/mcp.json).' => __('Click the install button below (or add the snippet to .vscode/mcp.json).', 'bit-pi'),
+
+    'VS Code prompts you to authorize. Approve access in your browser.' => __('VS Code prompts you to authorize. Approve access in your browser.', 'bit-pi'),
+
+    'Merge into ~/.codeium/windsurf/mcp_config.json' => __('Merge into ~/.codeium/windsurf/mcp_config.json', 'bit-pi'),
+
+    'Merge the snippet below into ~/.codeium/windsurf/mcp_config.json.' => __('Merge the snippet below into ~/.codeium/windsurf/mcp_config.json.', 'bit-pi'),
+
+    'Refresh MCP servers in Windsurf and approve access when your browser opens.' => __('Refresh MCP servers in Windsurf and approve access when your browser opens.', 'bit-pi'),
+
+    'Other' => __('Other', 'bit-pi'),
+
+    'Some clients can only run local (stdio) servers. For those, use the command "npx mcp-remote" followed by the server URL instead of the snippet above.' => __('Some clients can only run local (stdio) servers. For those, use the command "npx mcp-remote" followed by the server URL instead of the snippet above.', 'bit-pi'),
+
+    'Typical remote MCP server config' => __('Typical remote MCP server config', 'bit-pi'),
+
+    'Open your client’s MCP or connector settings and add a remote (HTTP) server.' => __('Open your client’s MCP or connector settings and add a remote (HTTP) server.', 'bit-pi'),
+
+    'Use the server URL below, or the snippet if your client is configured through a file.' => __('Use the server URL below, or the snippet if your client is configured through a file.', 'bit-pi'),
+
+    'Approve access in your browser when the client asks, signing in as an administrator.' => __('Approve access in your browser when the client asks, signing in as an administrator.', 'bit-pi'),
+
+    'Claude, ChatGPT, Cursor and other AI clients connect straight to your site.' => __('Claude, ChatGPT, Cursor and other AI clients connect straight to your site.', 'bit-pi'),
+
+    'Connect your AI assistant' => __('Connect your AI assistant', 'bit-pi'),
+
+    'AI builds, updates, runs and debugs flows using your existing connections.' => __('AI builds, updates, runs and debugs flows using your existing connections.', 'bit-pi'),
+
+    'Flows built by AI' => __('Flows built by AI', 'bit-pi'),
+
+    'OAuth 2.1 with an approval screen. Revoke any client at any time.' => __('OAuth 2.1 with an approval screen. Revoke any client at any time.', 'bit-pi'),
+
+    'Secure by default' => __('Secure by default', 'bit-pi'),
+
+    'Turn your site into an MCP server: connect Claude, ChatGPT, Cursor and more, and let AI create and operate your automation flows. Available in Bit Flows Pro.' => __('Turn your site into an MCP server: connect Claude, ChatGPT, Cursor and more, and let AI create and operate your automation flows. Available in Bit Flows Pro.', 'bit-pi'),
+
+    'Upgrade to Pro' => __('Upgrade to Pro', 'bit-pi'),
+
+    'Copied' => __('Copied', 'bit-pi'),
+
+    'Copy' => __('Copy', 'bit-pi'),
+
+    'Enable AI client access' => __('Enable AI client access', 'bit-pi'),
+
+    'Let AI clients like Claude, ChatGPT and Cursor build, run and monitor your flows. Each client must be approved by a WordPress administrator.' => __('Let AI clients like Claude, ChatGPT and Cursor build, run and monitor your flows. Each client must be approved by a WordPress administrator.', 'bit-pi'),
+
+    'If connection discovery fails while another MCP plugin is active, temporarily disable the other plugin and try again.' => __('If connection discovery fails while another MCP plugin is active, temporarily disable the other plugin and try again.', 'bit-pi'),
 
     'Failed Tasks' => __('Failed Tasks', 'bit-pi'),
 
@@ -3113,8 +3355,6 @@ return [
 
     'Draft' => __('Draft', 'bit-pi'),
 
-    'Pending' => __('Pending', 'bit-pi'),
-
     'Expired' => __('Expired', 'bit-pi'),
 
     'Add Store Credit to User' => __('Add Store Credit to User', 'bit-pi'),
@@ -4539,6 +4779,94 @@ return [
 
     'Post URL' => __('Post URL', 'bit-pi'),
 
+    'Bookings' => __('Bookings', 'bit-pi'),
+
+    'Create Booking' => __('Create Booking', 'bit-pi'),
+
+    'Update Booking' => __('Update Booking', 'bit-pi'),
+
+    'Get Booking' => __('Get Booking', 'bit-pi'),
+
+    'List Bookings' => __('List Bookings', 'bit-pi'),
+
+    'Check Dates Booked' => __('Check Dates Booked', 'bit-pi'),
+
+    'Get Booking Meta' => __('Get Booking Meta', 'bit-pi'),
+
+    'Get Booking Form Fields' => __('Get Booking Form Fields', 'bit-pi'),
+
+    'Resources' => __('Resources', 'bit-pi'),
+
+    'List Booking Resources' => __('List Booking Resources', 'bit-pi'),
+
+    'Get Booking Resource' => __('Get Booking Resource', 'bit-pi'),
+
+    'Payments' => __('Payments', 'bit-pi'),
+
+    'List Payment Statuses' => __('List Payment Statuses', 'bit-pi'),
+
+    'Booking Events' => __('Booking Events', 'bit-pi'),
+
+    'Booking Created' => __('Booking Created', 'bit-pi'),
+
+    'Booking Updated' => __('Booking Updated', 'bit-pi'),
+
+    'Booking Approval Evaluated' => __('Booking Approval Evaluated', 'bit-pi'),
+
+    'Use comma separated dates or a JSON array of date strings.' => __('Use comma separated dates or a JSON array of date strings.', 'bit-pi'),
+
+    'Booking Dates' => __('Booking Dates', 'bit-pi'),
+
+    'Booking Resource' => __('Booking Resource', 'bit-pi'),
+
+    'Select a resource' => __('Select a resource', 'bit-pi'),
+
+    'Use Recurrent Time' => __('Use Recurrent Time', 'bit-pi'),
+
+    'Booking' => __('Booking', 'bit-pi'),
+
+    'Select a booking' => __('Select a booking', 'bit-pi'),
+
+    'Optional Booking Calendar time range field value.' => __('Optional Booking Calendar time range field value.', 'bit-pi'),
+
+    'Range Time' => __('Range Time', 'bit-pi'),
+
+    'Optional JSON object merged into the booking form data.' => __('Optional JSON object merged into the booking form data.', 'bit-pi'),
+
+    'Additional Booking Data JSON' => __('Additional Booking Data JSON', 'bit-pi'),
+
+    'Send Emails' => __('Send Emails', 'bit-pi'),
+
+    'Booking Form Type' => __('Booking Form Type', 'bit-pi'),
+
+    'Optional locale code, for example en_US.' => __('Optional locale code, for example en_US.', 'bit-pi'),
+
+    'Locale' => __('Locale', 'bit-pi'),
+
+    'Show Payment Form' => __('Show Payment Form', 'bit-pi'),
+
+    'Approve Booking' => __('Approve Booking', 'bit-pi'),
+
+    'Save if Unavailable' => __('Save if Unavailable', 'bit-pi'),
+
+    'Option Name' => __('Option Name', 'bit-pi'),
+
+    'Any' => __('Any', 'bit-pi'),
+
+    'Not in Trash' => __('Not in Trash', 'bit-pi'),
+
+    'In Trash' => __('In Trash', 'bit-pi'),
+
+    'Unread' => __('Unread', 'bit-pi'),
+
+    'Read' => __('Read', 'bit-pi'),
+
+    'Trash Filter' => __('Trash Filter', 'bit-pi'),
+
+    'Read Filter' => __('Read Filter', 'bit-pi'),
+
+    'Use comma separated dates, for example 2023-01-01,2023-01-02.' => __('Use comma separated dates, for example 2023-01-01,2023-01-02.', 'bit-pi'),
+
     'Cancel Appointment' => __('Cancel Appointment', 'bit-pi'),
 
     'Update Appointment Status' => __('Update Appointment Status', 'bit-pi'),
@@ -5100,6 +5428,88 @@ return [
     'Method' => __('Method', 'bit-pi'),
 
     'Raw Body' => __('Raw Body', 'bit-pi'),
+
+    'Create Campaign' => __('Create Campaign', 'bit-pi'),
+
+    'Creates a ConvertForce popup campaign.' => __('Creates a ConvertForce popup campaign.', 'bit-pi'),
+
+    'Get Campaign' => __('Get Campaign', 'bit-pi'),
+
+    'Fetches a ConvertForce popup campaign by ID.' => __('Fetches a ConvertForce popup campaign by ID.', 'bit-pi'),
+
+    'Get All Campaigns' => __('Get All Campaigns', 'bit-pi'),
+
+    'Fetches all ConvertForce popup campaigns.' => __('Fetches all ConvertForce popup campaigns.', 'bit-pi'),
+
+    'Update Campaign' => __('Update Campaign', 'bit-pi'),
+
+    'Updates a ConvertForce popup campaign.' => __('Updates a ConvertForce popup campaign.', 'bit-pi'),
+
+    'Update Campaign Status' => __('Update Campaign Status', 'bit-pi'),
+
+    'Updates the publish status for a ConvertForce campaign.' => __('Updates the publish status for a ConvertForce campaign.', 'bit-pi'),
+
+    'Delete Campaign' => __('Delete Campaign', 'bit-pi'),
+
+    'Deletes or trashes a ConvertForce campaign.' => __('Deletes or trashes a ConvertForce campaign.', 'bit-pi'),
+
+    'Campaign Created' => __('Campaign Created', 'bit-pi'),
+
+    'Triggers when a ConvertForce campaign is created.' => __('Triggers when a ConvertForce campaign is created.', 'bit-pi'),
+
+    'Campaign Updated' => __('Campaign Updated', 'bit-pi'),
+
+    'Triggers when a ConvertForce campaign is updated.' => __('Triggers when a ConvertForce campaign is updated.', 'bit-pi'),
+
+    'Campaign Status Changed' => __('Campaign Status Changed', 'bit-pi'),
+
+    'Triggers when a ConvertForce campaign status changes.' => __('Triggers when a ConvertForce campaign status changes.', 'bit-pi'),
+
+    'Campaign Deleted' => __('Campaign Deleted', 'bit-pi'),
+
+    'Triggers when a ConvertForce campaign is deleted.' => __('Triggers when a ConvertForce campaign is deleted.', 'bit-pi'),
+
+    'The title of the new ConvertForce campaign.' => __('The title of the new ConvertForce campaign.', 'bit-pi'),
+
+    'Optional popup content or block markup.' => __('Optional popup content or block markup.', 'bit-pi'),
+
+    'The initial campaign status.' => __('The initial campaign status.', 'bit-pi'),
+
+    'Optional JSON object for ConvertForce display options.' => __('Optional JSON object for ConvertForce display options.', 'bit-pi'),
+
+    'Display Options JSON' => __('Display Options JSON', 'bit-pi'),
+
+    'Optional JSON array for ConvertForce display conditions.' => __('Optional JSON array for ConvertForce display conditions.', 'bit-pi'),
+
+    'Display Conditions JSON' => __('Display Conditions JSON', 'bit-pi'),
+
+    'The ConvertForce campaign to delete.' => __('The ConvertForce campaign to delete.', 'bit-pi'),
+
+    'Campaign' => __('Campaign', 'bit-pi'),
+
+    'Select a campaign' => __('Select a campaign', 'bit-pi'),
+
+    'Permanently delete the campaign without moving it to the trash first.' => __('Permanently delete the campaign without moving it to the trash first.', 'bit-pi'),
+
+    'Force Delete?' => __('Force Delete?', 'bit-pi'),
+
+    'The ConvertForce campaign to fetch.' => __('The ConvertForce campaign to fetch.', 'bit-pi'),
+
+    'Failed to fetch campaigns.' => __('Failed to fetch campaigns.', 'bit-pi'),
+
+    'The ConvertForce campaign to update.' => __('The ConvertForce campaign to update.', 'bit-pi'),
+
+    'The new campaign title. Leave empty to keep the current title.' => __('The new campaign title. Leave empty to keep the current title.', 'bit-pi'),
+
+    'The new popup content or block markup.' => __('The new popup content or block markup.', 'bit-pi'),
+
+    'The campaign status. Leave empty to keep the current status.' => __('The campaign status. Leave empty to keep the current status.', 'bit-pi'),
+
+    'Keep Current' => __('Keep Current', 'bit-pi'),
+
+    'The ConvertForce campaign whose status will be updated.' => __('The ConvertForce campaign whose status will be updated.', 'bit-pi'),
+
+    'The new campaign status.' => __('The new campaign status.', 'bit-pi'),
 
     'Create Student' => __('Create Student', 'bit-pi'),
 
@@ -5738,8 +6148,6 @@ return [
     'Condition for required products: all must be in cart or any one.' => __('Condition for required products: all must be in cart or any one.', 'bit-pi'),
 
     'Product Condition' => __('Product Condition', 'bit-pi'),
-
-    'Any' => __('Any', 'bit-pi'),
 
     'Date when the discount becomes active. Format: YYYY-MM-DD HH:MM:SS.' => __('Date when the discount becomes active. Format: YYYY-MM-DD HH:MM:SS.', 'bit-pi'),
 
@@ -7729,8 +8137,6 @@ return [
 
     'Get Campaign (Single)' => __('Get Campaign (Single)', 'bit-pi'),
 
-    'Create Campaign' => __('Create Campaign', 'bit-pi'),
-
     'A tag is added to contact' => __('A tag is added to contact', 'bit-pi'),
 
     'A tag is removed from contact' => __('A tag is removed from contact', 'bit-pi'),
@@ -9719,8 +10125,6 @@ return [
 
     'Evangelist' => __('Evangelist', 'bit-pi'),
 
-    'Other' => __('Other', 'bit-pi'),
-
     'Partner' => __('Partner', 'bit-pi'),
 
     'Prospect' => __('Prospect', 'bit-pi'),
@@ -10141,6 +10545,122 @@ return [
 
     'Configure SMTP Settings' => __('Configure SMTP Settings', 'bit-pi'),
 
+    'Get Emails' => __('Get Emails', 'bit-pi'),
+
+    'Mark Email as Read' => __('Mark Email as Read', 'bit-pi'),
+
+    'Mark Email as Unread' => __('Mark Email as Unread', 'bit-pi'),
+
+    'Move Email' => __('Move Email', 'bit-pi'),
+
+    'Delete Email' => __('Delete Email', 'bit-pi'),
+
+    'The folder the message is currently in.' => __('The folder the message is currently in.', 'bit-pi'),
+
+    'The folder the message is copied to.' => __('The folder the message is copied to.', 'bit-pi'),
+
+    'The folder holding the message.' => __('The folder holding the message.', 'bit-pi'),
+
+    'Starred (FLAGGED)' => __('Starred (FLAGGED)', 'bit-pi'),
+
+    'Not starred (UNFLAGGED)' => __('Not starred (UNFLAGGED)', 'bit-pi'),
+
+    'Replied (ANSWERED)' => __('Replied (ANSWERED)', 'bit-pi'),
+
+    'Not replied (UNANSWERED)' => __('Not replied (UNANSWERED)', 'bit-pi'),
+
+    'Draft (DRAFT)' => __('Draft (DRAFT)', 'bit-pi'),
+
+    'Marked for deletion (DELETED)' => __('Marked for deletion (DELETED)', 'bit-pi'),
+
+    'The mailbox folder to search.' => __('The mailbox folder to search.', 'bit-pi'),
+
+    'Which emails to return.' => __('Which emails to return.', 'bit-pi'),
+
+    'Criteria' => __('Criteria', 'bit-pi'),
+
+    'All emails' => __('All emails', 'bit-pi'),
+
+    'Only unread emails' => __('Only unread emails', 'bit-pi'),
+
+    'Only read emails' => __('Only read emails', 'bit-pi'),
+
+    'Pick common rules, or type your own and press Enter, e.g. SUBJECT "invoice". An email must match all of them. Read and unread live in Criteria above. Leave empty to match all emails.' => __('Pick common rules, or type your own and press Enter, e.g. SUBJECT "invoice". An email must match all of them. Read and unread live in Criteria above. Leave empty to match all emails.', 'bit-pi'),
+
+    'Custom Email Rules' => __('Custom Email Rules', 'bit-pi'),
+
+    'Select or type a rule' => __('Select or type a rule', 'bit-pi'),
+
+    'How many emails to return, newest first. Between 1 and 100. Each email is downloaded in full, so a high limit takes longer.' => __('How many emails to return, newest first. Between 1 and 100. Each email is downloaded in full, so a high limit takes longer.', 'bit-pi'),
+
+    'INBOX' => __('INBOX', 'bit-pi'),
+
+    'The UID of the message, usually piped from the New Email trigger.' => __('The UID of the message, usually piped from the New Email trigger.', 'bit-pi'),
+
+    'Message UID' => __('Message UID', 'bit-pi'),
+
+    'Target Folder' => __('Target Folder', 'bit-pi'),
+
+    '**Requires PHP 8.0.2 or newer.** Most sites already run a newer version. If this node reports a PHP error, check yours under Tools → Site Health → Info → Server.' => __('**Requires PHP 8.0.2 or newer.** Most sites already run a newer version. If this node reports a PHP error, check yours under Tools → Site Health → Info → Server.', 'bit-pi'),
+
+    'Pick the email provider and enter the mailbox credentials. Choose Other to enter the IMAP server settings manually.' => __('Pick the email provider and enter the mailbox credentials. Choose Other to enter the IMAP server settings manually.', 'bit-pi'),
+
+    'IMAP' => __('IMAP', 'bit-pi'),
+
+    'Mailbox password. Providers with two-factor authentication (Gmail, Outlook) require an app password.' => __('Mailbox password. Providers with two-factor authentication (Gmail, Outlook) require an app password.', 'bit-pi'),
+
+    'Server settings for known providers are applied automatically. Pick Other to enter them manually.' => __('Server settings for known providers are applied automatically. Pick Other to enter them manually.', 'bit-pi'),
+
+    'Email Provider' => __('Email Provider', 'bit-pi'),
+
+    'Gmail' => __('Gmail', 'bit-pi'),
+
+    'Hotmail' => __('Hotmail', 'bit-pi'),
+
+    'Outlook.com' => __('Outlook.com', 'bit-pi'),
+
+    'Seznam.cz' => __('Seznam.cz', 'bit-pi'),
+
+    'Yandex' => __('Yandex', 'bit-pi'),
+
+    'Zoho Mail' => __('Zoho Mail', 'bit-pi'),
+
+    'Zoho Mail (Organization)' => __('Zoho Mail (Organization)', 'bit-pi'),
+
+    'The IMAP server hostname, e.g. imap.gmail.com or mail.example.com.' => __('The IMAP server hostname, e.g. imap.gmail.com or mail.example.com.', 'bit-pi'),
+
+    'IMAP Host' => __('IMAP Host', 'bit-pi'),
+
+    'imap.example.com' => __('imap.example.com', 'bit-pi'),
+
+    '993 for SSL/TLS, 143 for STARTTLS or no encryption.' => __('993 for SSL/TLS, 143 for STARTTLS or no encryption.', 'bit-pi'),
+
+    'Port' => __('Port', 'bit-pi'),
+
+    'How the connection is secured. Most providers use SSL/TLS on port 993.' => __('How the connection is secured. Most providers use SSL/TLS on port 993.', 'bit-pi'),
+
+    'Encryption' => __('Encryption', 'bit-pi'),
+
+    'SSL/TLS' => __('SSL/TLS', 'bit-pi'),
+
+    'STARTTLS' => __('STARTTLS', 'bit-pi'),
+
+    'Usually the full email address of the mailbox.' => __('Usually the full email address of the mailbox.', 'bit-pi'),
+
+    'you@example.com' => __('you@example.com', 'bit-pi'),
+
+    'Turn off only for servers with a self-signed certificate.' => __('Turn off only for servers with a self-signed certificate.', 'bit-pi'),
+
+    'Validate SSL Certificate' => __('Validate SSL Certificate', 'bit-pi'),
+
+    'The folder the message is moved to.' => __('The folder the message is moved to.', 'bit-pi'),
+
+    'The mailbox folder to watch for new emails.' => __('The mailbox folder to watch for new emails.', 'bit-pi'),
+
+    'Which emails are allowed to start this flow.' => __('Which emails are allowed to start this flow.', 'bit-pi'),
+
+    'IMAP search rules, e.g. SUBJECT "invoice" or ["UNSEEN"]. Combined with the criteria above. Leave empty to allow all emails.' => __('IMAP search rules, e.g. SUBJECT "invoice" or ["UNSEEN"]. Combined with the criteria above. Leave empty to allow all emails.', 'bit-pi'),
+
     'Publish a single image to the Instagram feed' => __('Publish a single image to the Instagram feed', 'bit-pi'),
 
     'Publish Image' => __('Publish Image', 'bit-pi'),
@@ -10400,8 +10920,6 @@ return [
     'Default Country' => __('Default Country', 'bit-pi'),
 
     'Locale, e.g. en_US.' => __('Locale, e.g. en_US.', 'bit-pi'),
-
-    'Locale' => __('Locale', 'bit-pi'),
 
     'Timezone, e.g. America/New_York.' => __('Timezone, e.g. America/New_York.', 'bit-pi'),
 
@@ -10676,8 +11194,6 @@ return [
     'Enter new post title (leave empty to keep current)' => __('Enter new post title (leave empty to keep current)', 'bit-pi'),
 
     'Enter new post content (leave empty to keep current)' => __('Enter new post content (leave empty to keep current)', 'bit-pi'),
-
-    'Keep Current' => __('Keep Current', 'bit-pi'),
 
     'Enter user ID (leave empty to keep current)' => __('Enter user ID (leave empty to keep current)', 'bit-pi'),
 
@@ -10985,10 +11501,6 @@ return [
     'Create coupon' => __('Create coupon', 'bit-pi'),
 
     'Update coupon' => __('Update coupon', 'bit-pi'),
-
-    'Booking Created' => __('Booking Created', 'bit-pi'),
-
-    'Booking Updated' => __('Booking Updated', 'bit-pi'),
 
     'Booking ID' => __('Booking ID', 'bit-pi'),
 
@@ -11650,8 +12162,6 @@ return [
 
     'Contact Unsubscribed' => __('Contact Unsubscribed', 'bit-pi'),
 
-    'Campaign Created' => __('Campaign Created', 'bit-pi'),
-
     'List Created' => __('List Created', 'bit-pi'),
 
     'Tag Created' => __('Tag Created', 'bit-pi'),
@@ -11733,8 +12243,6 @@ return [
     'Add Recipients to Campaign' => __('Add Recipients to Campaign', 'bit-pi'),
 
     'Add recipients to a campaign in Mail Mint.' => __('Add recipients to a campaign in Mail Mint.', 'bit-pi'),
-
-    'Delete Campaign' => __('Delete Campaign', 'bit-pi'),
 
     'Delete a campaign from Mail Mint.' => __('Delete a campaign from Mail Mint.', 'bit-pi'),
 
@@ -12680,8 +13188,6 @@ return [
 
     'The port your MySQL server listens on. Default is 3306.' => __('The port your MySQL server listens on. Default is 3306.', 'bit-pi'),
 
-    'Port' => __('Port', 'bit-pi'),
-
     'The name of the database you would like to interact with.' => __('The name of the database you would like to interact with.', 'bit-pi'),
 
     'Database name' => __('Database name', 'bit-pi'),
@@ -12689,8 +13195,6 @@ return [
     'We recommend creating a dedicated database user with only the permissions this flow needs.' => __('We recommend creating a dedicated database user with only the permissions this flow needs.', 'bit-pi'),
 
     'Database user' => __('Database user', 'bit-pi'),
-
-    'Advanced settings' => __('Advanced settings', 'bit-pi'),
 
     'How long to wait (in seconds) when opening the connection before giving up. Default is 10.' => __('How long to wait (in seconds) when opening the connection before giving up. Default is 10.', 'bit-pi'),
 
@@ -13784,8 +14288,6 @@ return [
 
     'Submission Created' => __('Submission Created', 'bit-pi'),
 
-    'Campaign Deleted' => __('Campaign Deleted', 'bit-pi'),
-
     'Enter the campaign ID' => __('Enter the campaign ID', 'bit-pi'),
 
     'Popups' => __('Popups', 'bit-pi'),
@@ -13887,6 +14389,152 @@ return [
     'Leave empty to keep the current name.' => __('Leave empty to keep the current name.', 'bit-pi'),
 
     'Leave empty to keep the current value.' => __('Leave empty to keep the current value.', 'bit-pi'),
+
+    'Coupons' => __('Coupons', 'bit-pi'),
+
+    'List Coupons' => __('List Coupons', 'bit-pi'),
+
+    'Get Coupon' => __('Get Coupon', 'bit-pi'),
+
+    'Update Coupon' => __('Update Coupon', 'bit-pi'),
+
+    'Toggle Auto Apply' => __('Toggle Auto Apply', 'bit-pi'),
+
+    'Get Coupon Shortcode' => __('Get Coupon Shortcode', 'bit-pi'),
+
+    'Set Coupon Slideout Visibility' => __('Set Coupon Slideout Visibility', 'bit-pi'),
+
+    'List Available Coupons' => __('List Available Coupons', 'bit-pi'),
+
+    'Get Applied Coupons' => __('Get Applied Coupons', 'bit-pi'),
+
+    'Apply Coupon' => __('Apply Coupon', 'bit-pi'),
+
+    'Remove Coupon' => __('Remove Coupon', 'bit-pi'),
+
+    'Power Coupon Applied' => __('Power Coupon Applied', 'bit-pi'),
+
+    'Power Coupon Removed' => __('Power Coupon Removed', 'bit-pi'),
+
+    'Power Coupon Redeemed' => __('Power Coupon Redeemed', 'bit-pi'),
+
+    'Select a coupon code or map a code from a previous step.' => __('Select a coupon code or map a code from a previous step.', 'bit-pi'),
+
+    'Select a coupon code' => __('Select a coupon code', 'bit-pi'),
+
+    'Delete permanently instead of moving the coupon to trash.' => __('Delete permanently instead of moving the coupon to trash.', 'bit-pi'),
+
+    'Select a coupon or map its numeric ID.' => __('Select a coupon or map its numeric ID.', 'bit-pi'),
+
+    'Coupon' => __('Coupon', 'bit-pi'),
+
+    'Select a coupon' => __('Select a coupon', 'bit-pi'),
+
+    'Unique coupon code used by customers.' => __('Unique coupon code used by customers.', 'bit-pi'),
+
+    'Choose how the discount is calculated.' => __('Choose how the discount is calculated.', 'bit-pi'),
+
+    'Percentage Discount' => __('Percentage Discount', 'bit-pi'),
+
+    'Fixed Cart Discount' => __('Fixed Cart Discount', 'bit-pi'),
+
+    'Fixed Product Discount' => __('Fixed Product Discount', 'bit-pi'),
+
+    'Select a discount type' => __('Select a discount type', 'bit-pi'),
+
+    'Discount amount. Use a percentage value for percentage discounts.' => __('Discount amount. Use a percentage value for percentage discounts.', 'bit-pi'),
+
+    'Grant Free Shipping' => __('Grant Free Shipping', 'bit-pi'),
+
+    'Individual Use Only' => __('Individual Use Only', 'bit-pi'),
+
+    'Exclude Sale Items' => __('Exclude Sale Items', 'bit-pi'),
+
+    'Minimum cart subtotal required. Use 0 for no minimum.' => __('Minimum cart subtotal required. Use 0 for no minimum.', 'bit-pi'),
+
+    'Minimum Spend' => __('Minimum Spend', 'bit-pi'),
+
+    'Maximum cart subtotal allowed. Use 0 for no limit.' => __('Maximum cart subtotal allowed. Use 0 for no limit.', 'bit-pi'),
+
+    'Maximum Spend' => __('Maximum Spend', 'bit-pi'),
+
+    'Total uses allowed. Use 0 for unlimited.' => __('Total uses allowed. Use 0 for unlimited.', 'bit-pi'),
+
+    'Usage Limit' => __('Usage Limit', 'bit-pi'),
+
+    'Uses allowed per customer. Use 0 for unlimited.' => __('Uses allowed per customer. Use 0 for unlimited.', 'bit-pi'),
+
+    'Usage Limit Per User' => __('Usage Limit Per User', 'bit-pi'),
+
+    'Limit the coupon to selected products.' => __('Limit the coupon to selected products.', 'bit-pi'),
+
+    'Prevent the coupon from applying to selected products.' => __('Prevent the coupon from applying to selected products.', 'bit-pi'),
+
+    'Select excluded products' => __('Select excluded products', 'bit-pi'),
+
+    'Limit the coupon to selected product categories.' => __('Limit the coupon to selected product categories.', 'bit-pi'),
+
+    'Select product categories' => __('Select product categories', 'bit-pi'),
+
+    'Prevent the coupon from applying to selected categories.' => __('Prevent the coupon from applying to selected categories.', 'bit-pi'),
+
+    'Excluded Product Categories' => __('Excluded Product Categories', 'bit-pi'),
+
+    'Select excluded product categories' => __('Select excluded product categories', 'bit-pi'),
+
+    'Allowed customer emails, separated by commas.' => __('Allowed customer emails, separated by commas.', 'bit-pi'),
+
+    'Email Restrictions' => __('Email Restrictions', 'bit-pi'),
+
+    'Format: YYYY-MM-DD. Use Clear Start Date to remove an existing date.' => __('Format: YYYY-MM-DD. Use Clear Start Date to remove an existing date.', 'bit-pi'),
+
+    'Format: YYYY-MM-DD. Leave empty to start immediately.' => __('Format: YYYY-MM-DD. Leave empty to start immediately.', 'bit-pi'),
+
+    'Remove the coupon start date when this action runs.' => __('Remove the coupon start date when this action runs.', 'bit-pi'),
+
+    'Clear Start Date' => __('Clear Start Date', 'bit-pi'),
+
+    'Format: YYYY-MM-DD. Use Clear Expiry Date to remove an existing date.' => __('Format: YYYY-MM-DD. Use Clear Expiry Date to remove an existing date.', 'bit-pi'),
+
+    'Format: YYYY-MM-DD. Leave empty for no expiry.' => __('Format: YYYY-MM-DD. Leave empty for no expiry.', 'bit-pi'),
+
+    'Expiry Date' => __('Expiry Date', 'bit-pi'),
+
+    'Remove the coupon expiry date when this action runs.' => __('Remove the coupon expiry date when this action runs.', 'bit-pi'),
+
+    'Clear Expiry Date' => __('Clear Expiry Date', 'bit-pi'),
+
+    'Automatically apply this coupon when its conditions are satisfied.' => __('Automatically apply this coupon when its conditions are satisfied.', 'bit-pi'),
+
+    'Auto Apply' => __('Auto Apply', 'bit-pi'),
+
+    'Show this coupon in the available-coupons slideout.' => __('Show this coupon in the available-coupons slideout.', 'bit-pi'),
+
+    'Show in Slideout' => __('Show in Slideout', 'bit-pi'),
+
+    'Any Status' => __('Any Status', 'bit-pi'),
+
+    'Search coupons by code.' => __('Search coupons by code.', 'bit-pi'),
+
+    'Order By' => __('Order By', 'bit-pi'),
+
+    'Select a sort field' => __('Select a sort field', 'bit-pi'),
+
+    'Sort Direction' => __('Sort Direction', 'bit-pi'),
+
+    'Select a sort direction' => __('Select a sort direction', 'bit-pi'),
+
+    'Page number, starting at 1.' => __('Page number, starting at 1.', 'bit-pi'),
+
+    'Results per page, up to 100.' => __('Results per page, up to 100.', 'bit-pi'),
+
+    'Results Per Page' => __('Results Per Page', 'bit-pi'),
+
+    'Enable to show the coupon in the available-coupons slideout.' => __('Enable to show the coupon in the available-coupons slideout.', 'bit-pi'),
+
+    'Enable to apply the coupon automatically when it is valid.' => __('Enable to apply the coupon automatically when it is valid.', 'bit-pi'),
+
+    'Enable Auto Apply' => __('Enable Auto Apply', 'bit-pi'),
 
     'Create Media Hub' => __('Create Media Hub', 'bit-pi'),
 
@@ -14248,8 +14896,6 @@ return [
 
     'The date/time at which the payment link should expire. Use Unix timestamp.' => __('The date/time at which the payment link should expire. Use Unix timestamp.', 'bit-pi'),
 
-    'Expiry Date' => __('Expiry Date', 'bit-pi'),
-
     'A unique reference ID for the payment link.' => __('A unique reference ID for the payment link.', 'bit-pi'),
 
     'Reference ID' => __('Reference ID', 'bit-pi'),
@@ -14408,10 +15054,6 @@ return [
 
     'Select the campaign to add the contact to.' => __('Select the campaign to add the contact to.', 'bit-pi'),
 
-    'Campaign' => __('Campaign', 'bit-pi'),
-
-    'Select a campaign' => __('Select a campaign', 'bit-pi'),
-
     'The ID of the contact to add to the campaign.' => __('The ID of the contact to add to the campaign.', 'bit-pi'),
 
     'Select the campaign to add the lead to.' => __('Select the campaign to add the lead to.', 'bit-pi'),
@@ -14515,10 +15157,6 @@ return [
     'Get All Custom Fields' => __('Get All Custom Fields', 'bit-pi'),
 
     'Campaigns' => __('Campaigns', 'bit-pi'),
-
-    'Get Campaign' => __('Get Campaign', 'bit-pi'),
-
-    'Get All Campaigns' => __('Get All Campaigns', 'bit-pi'),
 
     'Send Campaign' => __('Send Campaign', 'bit-pi'),
 
@@ -14829,6 +15467,138 @@ return [
     'Select the list from which to unsubscribe the email address.' => __('Select the list from which to unsubscribe the email address.', 'bit-pi'),
 
     'Enter the email address to unsubscribe.' => __('Enter the email address to unsubscribe.', 'bit-pi'),
+
+    'This event requires the Sensei LMS Certificates addon to be installed and active.' => __('This event requires the Sensei LMS Certificates addon to be installed and active.', 'bit-pi'),
+
+    'Withdraw User from Course' => __('Withdraw User from Course', 'bit-pi'),
+
+    'List Enrolled Learners' => __('List Enrolled Learners', 'bit-pi'),
+
+    'Get User\'s Enrolled Courses' => __('Get User\'s Enrolled Courses', 'bit-pi'),
+
+    'Start Course for User' => __('Start Course for User', 'bit-pi'),
+
+    'Complete Course for User' => __('Complete Course for User', 'bit-pi'),
+
+    'Reset Course Progress' => __('Reset Course Progress', 'bit-pi'),
+
+    'Get Course Progress' => __('Get Course Progress', 'bit-pi'),
+
+    'Start Lesson for User' => __('Start Lesson for User', 'bit-pi'),
+
+    'Update Lesson Status' => __('Update Lesson Status', 'bit-pi'),
+
+    'Reset Lesson Progress' => __('Reset Lesson Progress', 'bit-pi'),
+
+    'Get Lesson Status' => __('Get Lesson Status', 'bit-pi'),
+
+    'Create Lesson' => __('Create Lesson', 'bit-pi'),
+
+    'Grade Quiz for User' => __('Grade Quiz for User', 'bit-pi'),
+
+    'Get Quiz Grade' => __('Get Quiz Grade', 'bit-pi'),
+
+    'Create Certificate for User' => __('Create Certificate for User', 'bit-pi'),
+
+    'Get User Certificate' => __('Get User Certificate', 'bit-pi'),
+
+    'Learner Enrolled / Unenrolled in Course' => __('Learner Enrolled / Unenrolled in Course', 'bit-pi'),
+
+    'Learner Manually Enrolled in Course' => __('Learner Manually Enrolled in Course', 'bit-pi'),
+
+    'Learner Manually Withdrawn from Course' => __('Learner Manually Withdrawn from Course', 'bit-pi'),
+
+    'Learner Started Course' => __('Learner Started Course', 'bit-pi'),
+
+    'Learner Completed Course' => __('Learner Completed Course', 'bit-pi'),
+
+    'Course Status Updated' => __('Course Status Updated', 'bit-pi'),
+
+    'Learner Reset Course Progress' => __('Learner Reset Course Progress', 'bit-pi'),
+
+    'Learner Started Lesson' => __('Learner Started Lesson', 'bit-pi'),
+
+    'Learner Completed Lesson' => __('Learner Completed Lesson', 'bit-pi'),
+
+    'Lesson Status Updated' => __('Lesson Status Updated', 'bit-pi'),
+
+    'Learner Reset Lesson Progress' => __('Learner Reset Lesson Progress', 'bit-pi'),
+
+    'Learner Submitted Quiz' => __('Learner Submitted Quiz', 'bit-pi'),
+
+    'Quiz Graded for Learner' => __('Quiz Graded for Learner', 'bit-pi'),
+
+    'Teacher Assigned to Course' => __('Teacher Assigned to Course', 'bit-pi'),
+
+    'Certificate Issued' => __('Certificate Issued', 'bit-pi'),
+
+    'Run this flow only for the selected course (or any course).' => __('Run this flow only for the selected course (or any course).', 'bit-pi'),
+
+    'Email address of the user.' => __('Email address of the user.', 'bit-pi'),
+
+    'Run this flow only for the selected lesson (or any lesson).' => __('Run this flow only for the selected lesson (or any lesson).', 'bit-pi'),
+
+    'Run this flow only for the selected quiz (or any quiz).' => __('Run this flow only for the selected quiz (or any quiz).', 'bit-pi'),
+
+    'Quiz' => __('Quiz', 'bit-pi'),
+
+    'Course the certificate is issued for. Requires the Sensei Certificates addon.' => __('Course the certificate is issued for. Requires the Sensei Certificates addon.', 'bit-pi'),
+
+    'Email address of the user receiving the certificate.' => __('Email address of the user receiving the certificate.', 'bit-pi'),
+
+    'Title of the new course.' => __('Title of the new course.', 'bit-pi'),
+
+    'Course description / content.' => __('Course description / content.', 'bit-pi'),
+
+    'Course Content' => __('Course Content', 'bit-pi'),
+
+    'Short excerpt for the course.' => __('Short excerpt for the course.', 'bit-pi'),
+
+    'Excerpt' => __('Excerpt', 'bit-pi'),
+
+    'Email of the course author (defaults to the current user).' => __('Email of the course author (defaults to the current user).', 'bit-pi'),
+
+    'Course the new lesson will belong to.' => __('Course the new lesson will belong to.', 'bit-pi'),
+
+    'Title of the new lesson.' => __('Title of the new lesson.', 'bit-pi'),
+
+    'Lesson Title' => __('Lesson Title', 'bit-pi'),
+
+    'Lesson description / content.' => __('Lesson description / content.', 'bit-pi'),
+
+    'Lesson Content' => __('Lesson Content', 'bit-pi'),
+
+    'Short excerpt for the lesson.' => __('Short excerpt for the lesson.', 'bit-pi'),
+
+    'Email of the lesson author (defaults to the current user).' => __('Email of the lesson author (defaults to the current user).', 'bit-pi'),
+
+    'Course whose certificate you want to retrieve. Requires the Sensei Certificates addon.' => __('Course whose certificate you want to retrieve. Requires the Sensei Certificates addon.', 'bit-pi'),
+
+    'Email address of the user whose certificate you want to retrieve.' => __('Email address of the user whose certificate you want to retrieve.', 'bit-pi'),
+
+    'Grade to assign (0–100).' => __('Grade to assign (0–100).', 'bit-pi'),
+
+    'Grade' => __('Grade', 'bit-pi'),
+
+    'How the quiz was graded.' => __('How the quiz was graded.', 'bit-pi'),
+
+    'Grade Type' => __('Grade Type', 'bit-pi'),
+
+    'Manual' => __('Manual', 'bit-pi'),
+
+    'Failed to fetch options. Please try again.' => __('Failed to fetch options. Please try again.', 'bit-pi'),
+
+    'Also mark the lesson as complete after starting it.' => __('Also mark the lesson as complete after starting it.', 'bit-pi'),
+
+    'Mark Complete' => __('Mark Complete', 'bit-pi'),
+
+    'Lesson Status' => __('Lesson Status', 'bit-pi'),
+
+    'Ungraded' => __('Ungraded', 'bit-pi'),
+
+    'Graded' => __('Graded', 'bit-pi'),
+
+    'Passed' => __('Passed', 'bit-pi'),
 
     'Get Post Meta' => __('Get Post Meta', 'bit-pi'),
 
@@ -15173,8 +15943,6 @@ return [
     'Enter the draft Invoice ID you want to Finalize' => __('Enter the draft Invoice ID you want to Finalize', 'bit-pi'),
 
     'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://dashboard.stripe.com/account/apikeys">Here</a>. Please click on "Create Secret Key"' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://dashboard.stripe.com/account/apikeys">Here</a>. Please click on "Create Secret Key"', 'bit-pi'),
-
-    'Payments' => __('Payments', 'bit-pi'),
 
     'Payment Intent Created' => __('Payment Intent Created', 'bit-pi'),
 
@@ -15844,8 +16612,6 @@ return [
     'Poll Type' => __('Poll Type', 'bit-pi'),
 
     'Regular' => __('Regular', 'bit-pi'),
-
-    'Quiz' => __('Quiz', 'bit-pi'),
 
     'Enter the poll question. Character Limit : 1-300 E.g. First day of the week?' => __('Enter the poll question. Character Limit : 1-300 E.g. First day of the week?', 'bit-pi'),
 
@@ -16602,8 +17368,6 @@ return [
 
     'Payment Type' => __('Payment Type', 'bit-pi'),
 
-    'Manual' => __('Manual', 'bit-pi'),
-
     'PayPal' => __('PayPal', 'bit-pi'),
 
     'Stripe' => __('Stripe', 'bit-pi'),
@@ -16974,19 +17738,13 @@ return [
 
     'Booking status changed' => __('Booking status changed', 'bit-pi'),
 
-    'Create Booking' => __('Create Booking', 'bit-pi'),
-
     'Update Booking Status' => __('Update Booking Status', 'bit-pi'),
-
-    'Approve Booking' => __('Approve Booking', 'bit-pi'),
 
     'Cancel Booking' => __('Cancel Booking', 'bit-pi'),
 
     'Delete Booking' => __('Delete Booking', 'bit-pi'),
 
     'Set Booking as Paid' => __('Set Booking as Paid', 'bit-pi'),
-
-    'Update Coupon' => __('Update Coupon', 'bit-pi'),
 
     'Create Service' => __('Create Service', 'bit-pi'),
 
@@ -16998,8 +17756,6 @@ return [
 
     'Create Location' => __('Create Location', 'bit-pi'),
 
-    'Get Booking' => __('Get Booking', 'bit-pi'),
-
     'Get All Bookings' => __('Get All Bookings', 'bit-pi'),
 
     'Get Service' => __('Get Service', 'bit-pi'),
@@ -17007,8 +17763,6 @@ return [
     'Get Staff Member' => __('Get Staff Member', 'bit-pi'),
 
     'Get All Staff Members' => __('Get All Staff Members', 'bit-pi'),
-
-    'Get Coupon' => __('Get Coupon', 'bit-pi'),
 
     'Get Location' => __('Get Location', 'bit-pi'),
 
@@ -17026,19 +17780,11 @@ return [
 
     'Service Category Created' => __('Service Category Created', 'bit-pi'),
 
-    'Booking' => __('Booking', 'bit-pi'),
-
-    'Select a booking' => __('Select a booking', 'bit-pi'),
-
     'Cancelled By' => __('Cancelled By', 'bit-pi'),
 
     'Administrator' => __('Administrator', 'bit-pi'),
 
     'Select who cancelled' => __('Select who cancelled', 'bit-pi'),
-
-    'Coupon' => __('Coupon', 'bit-pi'),
-
-    'Select a coupon' => __('Select a coupon', 'bit-pi'),
 
     'Select a location' => __('Select a location', 'bit-pi'),
 
@@ -17069,8 +17815,6 @@ return [
     'Enter the coupon code' => __('Enter the coupon code', 'bit-pi'),
 
     'Percentage discount (e.g. 10 for 10%)' => __('Percentage discount (e.g. 10 for 10%)', 'bit-pi'),
-
-    'Percentage Discount' => __('Percentage Discount', 'bit-pi'),
 
     'Fixed discount amount' => __('Fixed discount amount', 'bit-pi'),
 
@@ -17764,10 +18508,6 @@ return [
 
     'Type of discount to apply to the cart.' => __('Type of discount to apply to the cart.', 'bit-pi'),
 
-    'Fixed Cart Discount' => __('Fixed Cart Discount', 'bit-pi'),
-
-    'Fixed Product Discount' => __('Fixed Product Discount', 'bit-pi'),
-
     'Select Discount type' => __('Select Discount type', 'bit-pi'),
 
     'Code to use for the coupon (e.g. SUMMER_FUN).' => __('Code to use for the coupon (e.g. SUMMER_FUN).', 'bit-pi'),
@@ -17827,8 +18567,6 @@ return [
     'Limit Usage To X Items' => __('Limit Usage To X Items', 'bit-pi'),
 
     'Number of times this coupon can be used per user.' => __('Number of times this coupon can be used per user.', 'bit-pi'),
-
-    'Usage Limit Per User' => __('Usage Limit Per User', 'bit-pi'),
 
     'Provide first name to create the customer.' => __('Provide first name to create the customer.', 'bit-pi'),
 
@@ -18055,8 +18793,6 @@ return [
     'Code or id of the coupon to delete.' => __('Code or id of the coupon to delete.', 'bit-pi'),
 
     'Permanently delete the coupon without moving it to the trash first.' => __('Permanently delete the coupon without moving it to the trash first.', 'bit-pi'),
-
-    'Force Delete?' => __('Force Delete?', 'bit-pi'),
 
     'Brand ID' => __('Brand ID', 'bit-pi'),
 
@@ -19163,8 +19899,6 @@ return [
     'Trackbacks' => __('Trackbacks', 'bit-pi'),
 
     'Author' => __('Author', 'bit-pi'),
-
-    'Excerpt' => __('Excerpt', 'bit-pi'),
 
     'Page Attributes' => __('Page Attributes', 'bit-pi'),
 

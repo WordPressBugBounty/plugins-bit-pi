@@ -44,9 +44,10 @@ final class CustomMachineController
             return Response::error('Failed to insert data.');
         }
 
-        $query = CustomMachine::findOne(['id' => $insertedData['id']])->update(['slug' => Slug::generate($validatedData['name']) . '-' . $insertedData['id']]);
+        // update() persists and returns the model, or false when the write fails.
+        $updated = CustomMachine::findOne(['id' => $insertedData['id']])->update(['slug' => Slug::generate($validatedData['name']) . '-' . $insertedData['id']]);
 
-        if (!$query->save()) {
+        if (!$updated) {
             return Response::error('Failed to update slug.');
         }
 
@@ -59,10 +60,10 @@ final class CustomMachineController
 
         $validatedData['config'] = JSON::maybeEncode($validatedData['config']);
 
-        $updated = $customMachine->update($validatedData)->save();
+        $updated = $customMachine->update($validatedData);
 
         if ($updated) {
-            return Response::success($updated);
+            return Response::success($customMachine->id);
         }
 
         return Response::error('Failed to update data.');

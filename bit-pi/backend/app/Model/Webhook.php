@@ -16,8 +16,10 @@ class Webhook extends Model
     protected $prefix = Config::VAR_PREFIX;
 
     protected $casts = [
-        'id'      => 'int',
-        'flow_id' => 'int'
+        'id'              => 'int',
+        'flow_id'         => 'int',
+        'ip_restrictions' => 'array',
+        'details'         => 'array'
     ];
 
     protected $fillable = [
@@ -25,6 +27,8 @@ class Webhook extends Model
         'flow_id',
         'app_slug',
         'webhook_slug',
+        'ip_restrictions',
+        'details',
     ];
 
     public function flow()

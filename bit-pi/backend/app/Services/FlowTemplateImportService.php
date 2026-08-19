@@ -46,7 +46,7 @@ class FlowTemplateImportService
         $newData['nodes'] = $nodes;
 
         $flowUpdate = Flow::findOne(['id' => $flowId]);
-        $flowUpdate->update($newData)->save();
+        $flowUpdate->update($newData);
         $nodesDelete = FlowNode::where('flow_id', $flowId)->delete();
         $nodesInsert = true;
 
@@ -55,7 +55,7 @@ class FlowTemplateImportService
         }
 
         return [
-            'isImported'   => $flowUpdate && \is_array($nodesDelete) && $nodesInsert,
+            'isImported'   => $flowUpdate && $nodesDelete !== false && $nodesInsert,
             'importedFlow' => $newData,
             'flowUpdate'   => $flowUpdate,
         ];
@@ -91,8 +91,12 @@ class FlowTemplateImportService
             return;
         }
 
+        // "new" is the placeholder an importer uses when it cannot know the
+        // flow id yet — the MCP blueprint contract documents it. Leaving those
+        // ids as "new-1" saves a flow whose trigger the builder and the test
+        // run cannot find, since both address it as "{flowId}-1".
         return preg_replace_callback(
-            '/("|\')(\d+-\d+|\d+-\d+-\d+)("|\')/',
+            '/("|\')(new|\d+)-\d+(-\d+)?("|\')/',
             fn ($matches) => $this->replaceFlowId($matches[0], $flowId),
             JSON::maybeEncode($data)
         );
@@ -100,6 +104,6 @@ class FlowTemplateImportService
 
     private function replaceFlowId($nodeId, $flowId)
     {
-        return preg_replace('/\d+/', $flowId, $nodeId, 1);
+        return preg_replace('/new|\d+/', $flowId, $nodeId, 1);
     }
 }

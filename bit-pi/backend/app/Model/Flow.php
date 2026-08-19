@@ -82,6 +82,6 @@ class Flow extends Model
             ->where('app_slug', '!=', static::TOOLS)
             ->groupBy('flow_id')
             ->select('flow_id')
-            ->withCount();
+            ->selectRaw('COUNT(*) as count');
     }
 }

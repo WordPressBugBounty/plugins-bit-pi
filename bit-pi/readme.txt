@@ -3,8 +3,8 @@ Contributors: bitpressadmin
 Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.0.2
-Requires PHP: 7.4
-Stable tag: 1.27.0
+Requires PHP: 8.0
+Stable tag: 1.28.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,30 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.28.0 (Aug 19, 2026) =
+
+* **Triggers (26)**:
+  * Sensei LMS (15)
+  * ConvertForce Popup Builder (04)
+  * Booking Calendar (03)
+  * Power Coupons for WooCommerce (03)
+  * Email (IMAP) (01)
+
+* **Actions (52)**:
+  * Sensei LMS (18)
+  * Power Coupons for WooCommerce (12)
+  * Booking Calendar (10)
+  * ConvertForce Popup Builder (06)
+  * Email (IMAP) (06)
+
+* **Features**:
+  * Bit Flows is now an MCP server, so AI clients like Claude, ChatGPT and Cursor can build and run your flows.
+  * New Email (IMAP) integration: start flows on new mail, and search, read, move or delete messages.
+  * Webhooks now support authentication and advanced settings, including IP restrictions.
+
+* **Improvements**:
+  * The minimum required PHP version is now 8.0.
 
 = v1.27.0 (Aug 01, 2026) =
 

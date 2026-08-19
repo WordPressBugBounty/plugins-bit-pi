@@ -40,7 +40,16 @@ final class HistoryController
             ->desc()
             ->paginate($validatedData['page_number'], $validatedData['page_limit']);
 
-        array_map(
+        // A page limit of 1 yields the bare model instead of a collection, so
+        // wrap it to keep the payload a list of rows regardless of page size.
+        if (!is_countable($flowHistories['data'])) {
+            $flowHistories['data'] = [$flowHistories['data']->toArray()];
+            $flowHistories['current_total'] = 1;
+        } elseif (!\is_array($flowHistories['data'])) {
+            $flowHistories['data'] = $flowHistories['data']->toArray();
+        }
+
+        $flowHistories['data'] = array_map(
             function ($history) {
                 $totalDuration = 0;
 

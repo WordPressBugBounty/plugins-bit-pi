@@ -96,7 +96,7 @@ class FlowExecutor extends BackgroundProcessHandler
                     'listener_type'   => FlowModel::LISTENER_TYPE['NONE'],
                     'is_hook_capture' => FlowModel::IS_HOOK_CAPTURED
                 ]
-            )->save();
+            );
         }
 
         if (
@@ -313,7 +313,7 @@ class FlowExecutor extends BackgroundProcessHandler
 
         $flow = FlowModel::where('id', $this->flowId)->first();
 
-        $flow->update(['run_count' => ++$flow->run_count])->save();
+        $flow->update(['run_count' => ++$flow->run_count]);
 
         FlowHistoryService::updateFlowHistoryStatus($this->flowHistoryId);
 

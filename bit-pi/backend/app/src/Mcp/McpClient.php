@@ -8,6 +8,7 @@ if (!defined('ABSPATH')) {
 }
 
 use BitApps\Pi\Config;
+use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Client\HttpClient;
 use BitApps\Pi\src\Integrations\CommonActions\ApiRequestHelper;
 use ReflectionClass;
@@ -449,7 +450,7 @@ final class McpClient
         }
 
         // Data might be JSON-encoded string or plain URL
-        $decoded = json_decode($data);
+        $decoded = JSON::decode($data);
 
         return \is_string($decoded) ? $decoded : $data;
     }
@@ -980,7 +981,7 @@ final class McpClient
 
         // Try SSE format first, fallback to plain JSON
         $json = $this->extractJsonFromSse($response) ?? $response;
-        $decoded = json_decode($json);
+        $decoded = JSON::decode($json);
 
         return \is_object($decoded) ? $decoded : null;
     }

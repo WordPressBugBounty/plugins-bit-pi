@@ -1,0 +1,398 @@
+<?php
+
+namespace BitApps\Pi\Deps\BitApps\WPDatabase\Query;
+
+use BitApps\Pi\Deps\BitApps\WPDatabase\QueryBuilder;
+
+if (!\defined('ABSPATH')) {
+    exit;
+}
+
+/**
+ * Compiles the SELECT side of a {@see QueryBuilder} into an SQL string.
+ *
+ * Holds no state of its own: every method receives the QueryBuilder first and
+ * reads its state through getters. It does drive the builder's binding lifecycle
+ * while compiling — resetting (including nested builders) and repopulating
+ * bindings in placeholder order via {@see QueryBuilder::addBindings()} — so the
+ * resulting binding array lines up with the emitted placeholders.
+ */
+class Grammar
+{
+    /**
+     * Compiles a full SELECT statement for the given builder.
+     *
+     * @return string
+     */
+    public function compileSelect(QueryBuilder $query): string
+    {
+        $query->resetBindings();
+
+        $columns = array_map(static function ($column) use ($query) {
+            return $query->renderIdentifier($column, true, true);
+        }, $query->select);
+        $structuredSql = implode(',', $columns);
+        foreach ($query->getSelectExpressions() as $expression) {
+            $structuredSql .= $structuredSql === '' ? '' : ', ';
+            $structuredSql .= $this->prepareSelectExpression($query, $expression);
+        }
+
+        $sql = 'SELECT ' . ($query->isDistinct() ? 'DISTINCT ' : '') . $structuredSql;
+        $sql .= $this->prepareRawSelect($query, $structuredSql !== '');
+        $sql .= ' FROM ' . Identifier::quoteQualified($query->getTable());
+        $sql .= $this->getFrom($query);
+        $sql .= $this->getJoin($query);
+        $sql .= $this->getWhere($query);
+        $sql .= $this->getGroupBy($query);
+        $sql .= $this->getHaving($query);
+        $sql .= $this->getOrderBy($query);
+        $sql .= $this->getLimit($query);
+        $sql .= $this->getOffset($query);
+
+        return trim($sql);
+    }
+
+    /**
+     * Returns the processed WHERE clause (empty string when there is none).
+     *
+     * @return string
+     */
+    public function getWhere(QueryBuilder $query)
+    {
+        $sql = $this->getConditions($query);
+        if (empty($sql)) {
+            return '';
+        }
+
+        return " WHERE {$sql}";
+    }
+
+    /**
+     * Returns the SQL for the JOIN clauses.
+     *
+     * @return string
+     */
+    public function getJoin(QueryBuilder $query)
+    {
+        $sql   = '';
+        $joins = $query->getJoins();
+        if (empty($joins)) {
+            return $sql;
+        }
+
+        foreach ($joins as $join) {
+            $sql .= ' ' . JoinType::normalize($join['type']) . ' JOIN '
+                . Identifier::quoteQualified($join['table']);
+            if ($join['userAlias'] !== null) {
+                $sql .= ' AS ' . Identifier::quoteAlias($join['userAlias']);
+            }
+            $sql .= ' ON ' . $this->processConditions($query, $join['on']);
+        }
+
+        return $sql;
+    }
+
+    /**
+     * Processes a list of conditions (where/having/join-on) into SQL.
+     *
+     * @param array       $conditions
+     * @param null|string $type
+     *
+     * @return string
+     */
+    private function processConditions(QueryBuilder $query, $conditions, $type = null)
+    {
+        $sql = '';
+        if (\is_array($conditions) && \count($conditions) > 0) {
+            foreach ($conditions as $clause) {
+                if (isset($clause['bool'])) {
+                    $sql .= ' ' . $clause['bool'];
+                } else {
+                    $sql .= ' AND';
+                }
+
+                if (isset($clause['raw'])) {
+                    $sql .= ' ' . $clause['raw'];
+                    $query->addBindings($clause['bindings']);
+
+                    continue;
+                }
+
+                if (isset($clause['query']) && !\is_null($type)) {
+                    $clause['query']->resetBindings();
+                    $sql .= ' (' . $this->getConditions($clause['query'], $type) . ')';
+                    $query->addBindings($clause['query']->getBindings());
+
+                    continue;
+                }
+
+                $sql .= $this->prepareColumnForWhere($query, $clause);
+                $sql .= $this->prepareOperatorForWhere($clause);
+                $sql .= $this->prepareValueForWhere($query, $clause);
+            }
+
+            $sql = $this->removeLeadingBool($sql);
+        }
+
+        return $sql;
+    }
+
+    /**
+     * Returns the processed conditions for the given clause list.
+     *
+     * @param string $type
+     *
+     * @return string
+     */
+    private function getConditions(QueryBuilder $query, $type = 'where')
+    {
+        return $this->processConditions($query, $query->getClauseList($type), $type);
+    }
+
+    /**
+     * Returns the SQL for the GROUP BY clause.
+     *
+     * @return string
+     */
+    private function getGroupBy(QueryBuilder $query)
+    {
+        $groupBy = $query->getGroupByList();
+        if (empty($groupBy)) {
+            return '';
+        }
+
+        return ' GROUP BY ' . implode(',', array_map(static function ($column) use ($query) {
+            return $query->renderIdentifier($column);
+        }, $groupBy));
+    }
+
+    /**
+     * Returns the SQL for the HAVING clause.
+     *
+     * @return string
+     */
+    private function getHaving(QueryBuilder $query)
+    {
+        $sql = $this->getConditions($query, 'having');
+        if (empty($sql)) {
+            return '';
+        }
+
+        return " HAVING {$sql}";
+    }
+
+    /**
+     * Returns the SQL for the ORDER BY clause.
+     *
+     * @return string
+     */
+    private function getOrderBy(QueryBuilder $query)
+    {
+        $sql     = '';
+        $orderBy = $query->getOrderByList();
+        if (empty($orderBy)) {
+            return $sql;
+        }
+
+        foreach ($orderBy as $order) {
+            if (isset($order['raw'])) {
+                $sql .= $order['raw'] . ', ';
+                $query->addBindings($order['bindings']);
+            } elseif (isset($order['column'])) {
+                $sql .= $query->renderIdentifier($order['column']) . ' ' . $order['direction'] . ', ';
+            }
+        }
+
+        return ' ORDER BY ' . rtrim($sql, ', ');
+    }
+
+    /**
+     * Returns the table alias fragment for the FROM clause.
+     *
+     * @return string|null
+     */
+    private function getFrom(QueryBuilder $query)
+    {
+        $alias = $query->getFromAlias();
+
+        return isset($alias) ? ' ' . Identifier::quoteAlias($alias) : null;
+    }
+
+    /**
+     * Returns the LIMIT fragment for the query.
+     *
+     * @return string
+     */
+    private function getLimit(QueryBuilder $query)
+    {
+        $limit = $query->getLimitValue();
+
+        return isset($limit) ? " LIMIT {$limit}" : '';
+    }
+
+    /**
+     * Returns the OFFSET fragment for the query.
+     *
+     * @return string
+     */
+    private function getOffset(QueryBuilder $query)
+    {
+        $limit  = $query->getLimitValue();
+        $offset = $query->getOffsetValue();
+
+        return isset($limit) && isset($offset) ? " OFFSET {$offset}" : '';
+    }
+
+    /**
+     * Compiles the raw select columns and merges their bindings.
+     *
+     * @param mixed $hasStructuredSelect
+     *
+     * @return string
+     */
+    private function prepareRawSelect(QueryBuilder $query, $hasStructuredSelect = false)
+    {
+        $sql = '';
+        if (!empty($query->selectRaw['columns'])) {
+            $sql = $hasStructuredSelect ? ', ' : '';
+            $sql .= implode(', ', $query->selectRaw['columns']);
+        }
+
+        if (!empty($query->selectRaw['bindings'])) {
+            $query->addBindings($query->selectRaw['bindings']);
+        }
+
+        return $sql;
+    }
+
+    /**
+     * Compiles a framework-generated SELECT expression from typed state.
+     *
+     * @param array $expression
+     *
+     * @return string
+     */
+    private function prepareSelectExpression(QueryBuilder $query, array $expression)
+    {
+        if ($expression['type'] === 'aggregate') {
+            $column = $expression['column'] === '*'
+                ? '*'
+                : $query->renderIdentifier($expression['column']);
+            $sql = $expression['function'] . '(' . $column . ')';
+            if ($expression['alias'] !== null) {
+                $sql .= ' AS ' . Identifier::quoteAlias($expression['alias']);
+            }
+
+            return $sql;
+        }
+
+        $subquery = $expression['query'];
+        $sql      = $subquery->toSql();
+        $query->addBindings($subquery->getBindings());
+        $sql = $expression['exists'] ? 'exists(' . $sql . ')' : '(' . $sql . ')';
+
+        return $sql . ' as ' . Identifier::quoteAlias($expression['alias']);
+    }
+
+    /**
+     * Prepares the column part of a where clause.
+     *
+     * @param array $clause
+     *
+     * @return string|null
+     */
+    private function prepareColumnForWhere(QueryBuilder $query, $clause)
+    {
+        if (isset($clause['column'])) {
+            return ' ' . $query->renderIdentifier($clause['column']);
+        }
+    }
+
+    /**
+     * Prepares the operator part of a where clause.
+     *
+     * @param array $clause
+     *
+     * @return string
+     */
+    private function prepareOperatorForWhere($clause)
+    {
+        $sql = '';
+        if (!isset($clause['column'])) {
+            return $sql;
+        }
+
+        if (isset($clause['between'])) {
+            $sql .= ' ' . SqlOperator::normalizeRange($clause['operator']);
+        } elseif (isset($clause['secondColumn'])) {
+            $sql .= ' ' . SqlOperator::normalizeBinary($clause['operator']);
+        } elseif (!\array_key_exists('value', $clause)) {
+            $sql .= ' ' . SqlOperator::normalizeUnary($clause['operator']);
+        } elseif (\is_array($clause['value'])) {
+            if (isset($clause['operator'])) {
+                $sql .= ' ' . SqlOperator::normalizeList($clause['operator']);
+            } else {
+                $sql .= ' ' . SqlOperator::normalizeList('IN') . ' ';
+            }
+        } elseif (isset($clause['operator'])) {
+            $sql .= ' ' . SqlOperator::normalizeBinary($clause['operator']);
+        } else {
+            $sql .= ' ' . SqlOperator::normalizeBinary('=') . ' ';
+        }
+
+        return $sql;
+    }
+
+    /**
+     * Prepares the value part of a where clause, registering bindings.
+     *
+     * @param array $clause
+     *
+     * @return string
+     */
+    private function prepareValueForWhere(QueryBuilder $query, $clause)
+    {
+        $sql = '';
+        if (isset($clause['secondColumn'])) {
+            return ' ' . $query->renderIdentifier($clause['secondColumn']);
+        }
+
+        if (isset($clause['between'])) {
+            [$start, $end] = $clause['between'];
+            $query->addBindings([$start, $end]);
+
+            return ' ' . $query->getValueType($start) . ' AND ' . $query->getValueType($end);
+        }
+
+        if (!isset($clause['value'])) {
+            return $sql;
+        }
+
+        if (\is_array($clause['value'])) {
+            $sql .= ' (';
+            foreach ($clause['value'] as $value) {
+                $sql .= $query->getValueType($value) . ',';
+                $query->addBindings($value);
+            }
+
+            $sql = rtrim($sql, ',') . ')';
+        } elseif (!\is_null($clause['value'])) {
+            $sql .= ' ' . $query->getValueType($clause['value']);
+            $query->addBindings($clause['value']);
+        }
+
+        return $sql;
+    }
+
+    /**
+     * Removes a single leading AND/OR boolean from a condition string.
+     *
+     * @param string $sql
+     *
+     * @return string
+     */
+    private function removeLeadingBool($sql)
+    {
+        return preg_replace('/and |or /i', '', $sql, 1);
+    }
+}

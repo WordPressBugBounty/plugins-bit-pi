@@ -21,7 +21,6 @@ use BitApps\Pi\Model\FlowLog;
 use BitApps\Pi\Model\FlowNode;
 use BitApps\Pi\Model\Tag;
 use BitApps\Pi\Services\FlowService;
-use BitApps\Pi\Services\Polling;
 use BitApps\Pi\src\Flow\FlowExecutor;
 use WP_Error;
 
@@ -48,7 +47,8 @@ final class FlowController
             ->with(
                 'nodes',
                 function ($query) {
-                    $query->select(['id', 'node_id', 'app_slug', 'machine_slug', 'machine_label', 'flow_id', "IF(`app_slug` = 'tools', `data`, null) as data"]);
+                    $query->select(['id', 'node_id', 'app_slug', 'machine_slug', 'machine_label', 'flow_id'])
+                        ->selectRaw("IF(`app_slug` = 'tools', `data`, null) as data");
                 }
             )
             ->findOne(['id' => $validatedData['flow_id']]);
@@ -113,8 +113,13 @@ final class FlowController
         $flows = $flowsQuery->desc()->skip($skip)->take($limit)
             ->select(['id', 'title', 'run_count', 'is_active'])->get();
 
-        if (!\is_array($flows) || empty($flows)) {
-            return Response::success(['flows' => $flows, 'totalFlows' => $totalFlows]);
+        // A limit of 1 yields the bare model rather than a collection.
+        if (!is_countable($flows)) {
+            $flows = [$flows];
+        }
+
+        if (\count($flows) === 0) {
+            return Response::success(['flows' => [], 'totalFlows' => $totalFlows]);
         }
 
         $flowIds = Arr::pluck($flows, 'id');
@@ -142,21 +147,20 @@ final class FlowController
 
         $groupedTags = [];
 
-        if (\is_array($flowTags)) {
-            foreach ($flowTags as $tag) {
-                $groupKey = $tag['flow_id'];
-                unset($tag['flow_id']);
-                $groupedTags[$groupKey][] = $tag;
-            }
+        foreach ($flowTags as $tag) {
+            $groupKey = $tag['flow_id'];
+            unset($tag['flow_id']);
+            $groupedTags[$groupKey][] = $tag;
         }
 
-        array_map(
+        $flows = $flows->map(
             function ($flow) use ($groupedTags) {
                 $flow->nodesCount = $flow->nodesCount[0]['count'] ?? 0;
-                $flow->nodes = \is_array($flow->nodes) ? Arr::pluck($flow->nodes, 'app_slug') : [];
+                $flow->nodes = Arr::pluck($flow->nodes, 'app_slug');
                 $flow->flowTags = $groupedTags[$flow['id']] ?? [];
-            },
-            $flows
+
+                return $flow;
+            }
         );
 
         return Response::success(['flows' => $flows, 'totalFlows' => $totalFlows]);
@@ -247,13 +251,7 @@ final class FlowController
 
     public function destroy(Request $request)
     {
-        $getFlow = new Flow($request->id);
-
-        $getFlow->delete();
-
-        FlowService::updateTriggerNodeInCache();
-
-        Polling::deletePollingData($request->id);
+        FlowService::deleteFlow((int) $request->id);
 
         return Response::success('Flow deleted successfully');
     }
@@ -293,17 +291,18 @@ final class FlowController
     {
         $nodes = FlowNode::where('flow_id', $flow_id)->get(['node_id', 'variables']);
 
-        if (\is_array($nodes)) {
-            $nodes = array_filter(
-                $nodes,
-                function ($node) {
-                    return !(\is_null($node->variables) || (\is_array($node->variables) && \count($node->variables) === 0));
-                }
-            );
-
-            return Response::success([...$nodes]);
+        if (\count($nodes) === 0) {
+            return Response::success([]);
         }
 
-        return Response::success([]);
+        $nodes = $nodes->filter(
+            function ($node) {
+                return !(\is_null($node->variables) || (\is_array($node->variables) && \count($node->variables) === 0));
+            }
+        );
+
+        // filter() keeps the original keys, so re-index or the payload
+        // serializes as a JSON object and the builder ignores it.
+        return Response::success(array_values($nodes->toArray()));
     }
 }

@@ -121,7 +121,7 @@ class DelayTool
             if ($flowNodes && !empty($flowNodes->nodes) && !empty($flowNodes->map)) {
                 $flowLog = FlowLog::where('flow_history_id', $flowHistoryId)->where('node_id', $nodeId)->first();
 
-                $flowLog->update(['status' => FlowLog::STATUS['COMPLETED']])->save();
+                $flowLog->update(['status' => FlowLog::STATUS['COMPLETED']]);
 
                 wp_clear_scheduled_hook(Config::VAR_PREFIX . 'execute_delayed_flow', ['flowHistoryId' => $flowHistoryId, 'nodeId' => $nodeId]);
 

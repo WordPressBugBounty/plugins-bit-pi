@@ -19,7 +19,8 @@ final class CustomAppController
 {
     public function index()
     {
-        $query = CustomApp::select(['id', 'CONCAT("' . Config::get('UPLOAD_BASE_URL') . '", logo) as logo', 'name', 'slug', 'description', 'color', 'status']);
+        $query = CustomApp::select(['id', 'name', 'slug', 'description', 'color', 'status'])
+            ->selectRaw('CONCAT(%s, logo) AS logo', [Config::get('UPLOAD_BASE_URL')]);
 
         $query->with('customMachines');
 
@@ -30,7 +31,10 @@ final class CustomAppController
 
     public function getActiveCustomApps()
     {
-        return CustomApp::where('status', 1)->get(['name', 'slug', 'color', 'CONCAT("' . Config::get('UPLOAD_BASE_URL') . '", logo) as logo']);
+        return CustomApp::select(['name', 'slug', 'color'])
+            ->selectRaw('CONCAT(%s, logo) AS logo', [Config::get('UPLOAD_BASE_URL')])
+            ->where('status', 1)
+            ->get();
     }
 
     public function getActiveCustomAppsMeta()
@@ -102,23 +106,17 @@ final class CustomAppController
             $validatedData['logo'] = $this->extractPathFromUrl($validatedData['logo']);
         }
 
-        $insertedData = CustomApp::insert($validatedData)->getAttributes();
+        $created = CustomAppService::create($validatedData);
 
-        if (!$insertedData) {
-            return Response::error('Failed to insert data.');
+        if (isset($created['error'])) {
+            return Response::error(
+                $created['error'] === 'insert' ? 'Failed to insert data.' : 'Failed to update slug.'
+            );
         }
 
-        $createdUniqueId = str_replace('-', '', wp_generate_uuid4());
+        $insertedData = $created['app']->getAttributes();
 
-        $slug = CustomApp::APP_SLUG_PREFIX . $createdUniqueId;
-
-        $query = CustomApp::findOne(['id' => $insertedData['id']])->update(['slug' => $slug]);
-
-        if (!$query->save()) {
-            return Response::error('Failed to update slug.');
-        }
-
-        $insertedData['slug'] = $slug;
+        $insertedData['slug'] = $created['slug'];
 
         if (!isset($insertedData['status'])) {
             $insertedData['status'] = 1;
@@ -139,7 +137,7 @@ final class CustomAppController
             $validatedData['logo'] = $this->extractPathFromUrl($validatedData['logo']);
         }
 
-        $updated = $customApp->update($validatedData)->save();
+        $updated = $customApp->update($validatedData);
 
         if ($updated) {
             return Response::success('Data updated successfully.');

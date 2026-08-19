@@ -105,7 +105,7 @@ final class HookListenerController
                 [
                     'listener_type' => Flow::LISTENER_TYPE['NONE'],
                 ]
-            )->save();
+            );
 
         return Response::success('listener stopped');
     }

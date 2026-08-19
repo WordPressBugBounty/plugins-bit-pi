@@ -45,8 +45,14 @@ final class TagController
 
     public function destroy(Request $request)
     {
-        $getFlow = new Tag($request->tagId);
-        $getFlow->delete();
+        $tagId = $request->tagId ?? $request->id;
+        $tag = Tag::findOne(['id' => $tagId]);
+
+        if (!$tag) {
+            return Response::error('Tag not found');
+        }
+
+        $tag->delete();
 
         return Response::success('Tag deleted successfully');
     }

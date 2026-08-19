@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit9da7701626d117822deb38b9767bdc59
+class ComposerStaticInit00bf011b31ac0754cdf2eab181af84a9
 {
     public static $prefixLengthsPsr4 = array (
         'T' =>
@@ -51,10 +51,18 @@ class ComposerStaticInit9da7701626d117822deb38b9767bdc59
     public static $classMap = array (
         'BitApps\\Pi\\Config' => __DIR__ . '/../..' . '/backend/app/Config.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Blueprint' => __DIR__ . '/..' . '/bitapps/wp-database/src/Blueprint.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Collection' => __DIR__ . '/..' . '/bitapps/wp-database/src/Collection.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Concerns\\HasEvents' => __DIR__ . '/..' . '/bitapps/wp-database/src/Concerns/HasEvents.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Concerns\\QueriesRelationships' => __DIR__ . '/..' . '/bitapps/wp-database/src/Concerns/QueriesRelationships.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Concerns\\Relations' => __DIR__ . '/..' . '/bitapps/wp-database/src/Concerns/Relations.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Connection' => __DIR__ . '/..' . '/bitapps/wp-database/src/Connection.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Model' => __DIR__ . '/..' . '/bitapps/wp-database/src/Model.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\QueryBuilder' => __DIR__ . '/..' . '/bitapps/wp-database/src/QueryBuilder.php',
-        'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Relations' => __DIR__ . '/..' . '/bitapps/wp-database/src/Relations.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Query\\Grammar' => __DIR__ . '/..' . '/bitapps/wp-database/src/Query/Grammar.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Query\\Identifier' => __DIR__ . '/..' . '/bitapps/wp-database/src/Query/Identifier.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Query\\JoinType' => __DIR__ . '/..' . '/bitapps/wp-database/src/Query/JoinType.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Query\\RawTemplate' => __DIR__ . '/..' . '/bitapps/wp-database/src/Query/RawTemplate.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Query\\SqlOperator' => __DIR__ . '/..' . '/bitapps/wp-database/src/Query/SqlOperator.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Schema' => __DIR__ . '/..' . '/bitapps/wp-database/src/Schema.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Configs\\JsonConfig' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Configs/JsonConfig.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Helpers\\Arr' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Helpers/Arr.php',
@@ -155,11 +163,14 @@ class ComposerStaticInit9da7701626d117822deb38b9767bdc59
         'BitApps\\Pi\\HTTP\\Requests\\NodeStoreRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/NodeStoreRequest.php',
         'BitApps\\Pi\\HTTP\\Requests\\ProxyRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/ProxyRequest.php',
         'BitApps\\Pi\\HTTP\\Requests\\RefreshTokenRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/RefreshTokenRequest.php',
+        'BitApps\\Pi\\HTTP\\Requests\\WebhookAdvancedSettingsRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/WebhookAdvancedSettingsRequest.php',
+        'BitApps\\Pi\\HTTP\\Requests\\WebhookAuthenticationRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/WebhookAuthenticationRequest.php',
         'BitApps\\Pi\\HTTP\\Requests\\WebhookIndexRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/WebhookIndexRequest.php',
         'BitApps\\Pi\\HTTP\\Requests\\WebhookRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/WebhookRequest.php',
         'BitApps\\Pi\\HTTP\\Requests\\WebhookUpdateRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/WebhookUpdateRequest.php',
         'BitApps\\Pi\\HTTP\\Requests\\WebhookUpdateTitleRequest' => __DIR__ . '/../..' . '/backend/app/HTTP/Requests/WebhookUpdateTitleRequest.php',
         'BitApps\\Pi\\Helpers\\Hash' => __DIR__ . '/../..' . '/backend/app/Helpers/Hash.php',
+        'BitApps\\Pi\\Helpers\\IpAllowlist' => __DIR__ . '/../..' . '/backend/app/Helpers/IpAllowlist.php',
         'BitApps\\Pi\\Helpers\\MixInputHandler' => __DIR__ . '/../..' . '/backend/app/Helpers/MixInputHandler.php',
         'BitApps\\Pi\\Helpers\\Node' => __DIR__ . '/../..' . '/backend/app/Helpers/Node.php',
         'BitApps\\Pi\\Helpers\\Parser' => __DIR__ . '/../..' . '/backend/app/Helpers/Parser.php',
@@ -189,6 +200,7 @@ class ComposerStaticInit9da7701626d117822deb38b9767bdc59
         'BitApps\\Pi\\Services\\NodeService' => __DIR__ . '/../..' . '/backend/app/Services/NodeService.php',
         'BitApps\\Pi\\Services\\Polling' => __DIR__ . '/../..' . '/backend/app/Services/Polling.php',
         'BitApps\\Pi\\Services\\SystemInfo' => __DIR__ . '/../..' . '/backend/app/Services/SystemInfo.php',
+        'BitApps\\Pi\\Services\\WebhookService' => __DIR__ . '/../..' . '/backend/app/Services/WebhookService.php',
         'BitApps\\Pi\\Views\\Body' => __DIR__ . '/../..' . '/backend/app/Views/Body.php',
         'BitApps\\Pi\\Views\\Head' => __DIR__ . '/../..' . '/backend/app/Views/Head.php',
         'BitApps\\Pi\\Views\\HtmlTagModifier' => __DIR__ . '/../..' . '/backend/app/Views/HtmlTagModifier.php',
@@ -360,9 +372,9 @@ class ComposerStaticInit9da7701626d117822deb38b9767bdc59
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit9da7701626d117822deb38b9767bdc59::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit9da7701626d117822deb38b9767bdc59::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit9da7701626d117822deb38b9767bdc59::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit00bf011b31ac0754cdf2eab181af84a9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit00bf011b31ac0754cdf2eab181af84a9::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit00bf011b31ac0754cdf2eab181af84a9::$classMap;
 
         }, null, ClassLoader::class);
     }

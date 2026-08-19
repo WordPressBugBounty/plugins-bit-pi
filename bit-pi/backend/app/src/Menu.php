@@ -40,6 +40,7 @@ final class Menu
             'Connections' => self::getConnectionMenuAttributes(),
             'Webhooks'    => self::getWebhookMenuAttributes(),
             'Custom Apps' => self::getCustomAppsMenuAttributes(),
+            'MCP Server'  => self::getMcpServerMenuAttributes(),
             'Settings'    => self::getSettingsMenuAttributes(),
             'System Info' => self::getSystemInfoMenuAttributes(),
             'SMTP'        => self::getSmtpMenuAttributes(),
@@ -113,6 +114,17 @@ final class Menu
             'name'       => 'Custom Apps',
             'capability' => 'manage_options',
             'slug'       => Config::SLUG . '#/custom-apps',
+        ];
+    }
+
+    private static function getMcpServerMenuAttributes()
+    {
+        return [
+            'parent'     => Config::SLUG,
+            'type'       => 'submenu',
+            'name'       => 'MCP Server',
+            'capability' => 'manage_options',
+            'slug'       => Config::SLUG . '#/mcp-server',
         ];
     }
 

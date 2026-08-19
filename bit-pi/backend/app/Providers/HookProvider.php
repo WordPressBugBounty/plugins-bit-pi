@@ -67,6 +67,10 @@ class HookProvider
             && RequestType::is(RequestType::API)
         ) {
             $router = new Router(RequestType::API, Config::SLUG, 'v1');
+            // Without this the router cannot resolve a middleware name, and
+            // handleMiddleware() skips it silently — an API route asking for
+            // auth would answer as though it had none.
+            $router->setMiddlewares(Plugin::instance()->middlewares());
 
             include $this->_pluginBackend . 'hooks' . DIRECTORY_SEPARATOR . 'api.php';
             $router->register();

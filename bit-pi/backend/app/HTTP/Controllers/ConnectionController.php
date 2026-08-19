@@ -73,7 +73,7 @@ final class ConnectionController
             return Response::error('Connection not found');
         }
 
-        $result = $connection->update($validated)->save();
+        $result = $connection->update($validated);
         if (!$result) {
             return Response::error('Failed to update connection');
         }

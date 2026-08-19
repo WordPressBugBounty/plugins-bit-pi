@@ -68,7 +68,7 @@ abstract class AbstractBaseAuthorization
             [
                 'auth_details' => $newTokenDetails
             ]
-        )->save();
+        );
 
         if (!$save) {
             return [

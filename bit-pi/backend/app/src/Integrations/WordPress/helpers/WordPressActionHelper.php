@@ -469,10 +469,8 @@ class WordPressActionHelper
     {
         $flowNodes = FlowNode::select(['field_mapping'])->where('app_slug', $appSlug)->get();
 
-        if (!\is_array($flowNodes)) {
-            return $triggers;
-        }
-
+        // No early return on an empty result: the doAction hook below must be
+        // registered whether or not any node defines its own hook.
         foreach ($flowNodes as $flowNode) {
             $hookName = $flowNode->field_mapping->configs->{'hook-name'}->value ?? null;
 

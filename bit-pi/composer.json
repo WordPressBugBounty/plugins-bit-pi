@@ -4,9 +4,9 @@
   "type": "wordpress-plugin",
   "license": "GPL-2.0-or-later",
   "require": {
-    "php": ">=7.4",
+    "php": ">=8.0",
     "bitapps/wp-validator": "^1",
-    "bitapps/wp-database": "^1",
+    "bitapps/wp-database": "^2.0",
     "bitapps/wp-kit": "^2.0",
     "typisttech/imposter-plugin": "^0.6.2"
   },
@@ -42,7 +42,7 @@
     "reset": "composer clean && composer install",
     "insights": "./vendor/bin/phpinsights",
     "phpcs": "phpcs -s",
-    "compat": "./vendor/bin/phpcs -p backend --standard=PHPCompatibilityWP --runtime-set testVersion 7.4-8.3",
+    "compat": "./vendor/bin/phpcs -p backend --standard=PHPCompatibilityWP --runtime-set testVersion 8.0-8.4",
     "phpcs:fix": "phpcbf",
     "phpcs:report": "phpcs --report=summary --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1",
     "pi": "./vendor/wp-cli/wp-cli/bin/wp bit-pi",

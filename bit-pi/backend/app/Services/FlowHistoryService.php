@@ -45,7 +45,7 @@ class FlowHistoryService
         return FlowHistory::findOne(['id' => $flowHistoryId])
             ->update(
                 ['status' => $flowHistoryStatus]
-            )->save();
+            );
     }
 
     public static function createHistoryWithTriggerNode($flowId, $flowHistoryId, $parentFlowHistoryId, $triggerData, $listenerType = null)

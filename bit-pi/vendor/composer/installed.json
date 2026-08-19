@@ -2,33 +2,34 @@
     "packages": [
         {
             "name": "bitapps/wp-database",
-            "version": "1.11",
-            "version_normalized": "1.11.0.0",
+            "version": "2.0.2",
+            "version_normalized": "2.0.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Bit-Apps-Pro/wp-database.git",
-                "reference": "1617ab1dac3f4946e72deb68d3c52ae526658e37"
+                "url": "https://github.com/bit-apps-pro/wp-database.git",
+                "reference": "0513a6e71aa773152825152bd56c7e69e95e129a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Bit-Apps-Pro/wp-database/zipball/1617ab1dac3f4946e72deb68d3c52ae526658e37",
-                "reference": "1617ab1dac3f4946e72deb68d3c52ae526658e37",
+                "url": "https://api.github.com/repos/bit-apps-pro/wp-database/zipball/0513a6e71aa773152825152bd56c7e69e95e129a",
+                "reference": "0513a6e71aa773152825152bd56c7e69e95e129a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.4 || ^8.0"
+                "php": ">=8.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
                 "friendsofphp/php-cs-fixer": "^3.10",
                 "phpcompatibility/phpcompatibility-wp": "*",
+                "phpunit/phpunit": "^11.5",
                 "sirbrillig/phpcs-variable-analysis": "*"
             },
-            "time": "2025-02-15T08:05:59+00:00",
+            "time": "2026-08-13T09:24:29+00:00",
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.x-dev"
+                    "dev-main": "2.x-dev"
                 }
             },
             "installation-source": "dist",
