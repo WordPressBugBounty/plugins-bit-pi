@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.0.2
 Requires PHP: 8.0
-Stable tag: 1.28.0
+Stable tag: 1.28.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,16 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.28.1 (Aug 20, 2026) =
+
+* **Fixes**:
+  * Fixed the license expiry notice never showing and Check Again not refreshing the Pro update.
+  * Fixed the license expiry notice putting the plugin name and the remaining days the wrong way round.
+
+* **Security**:
+  * Improved connection security to prevent requests from accessing the server's internal network.
+  * We thank security researcher Saif Fadel for responsibly disclosing the issue addressed in this release.
 
 = v1.28.0 (Aug 19, 2026) =
 

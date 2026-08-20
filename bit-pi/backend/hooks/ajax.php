@@ -24,6 +24,7 @@ use BitApps\Pi\HTTP\Controllers\SmtpController;
 use BitApps\Pi\HTTP\Controllers\SystemInfoController;
 use BitApps\Pi\HTTP\Controllers\TagController;
 use BitApps\Pi\HTTP\Controllers\WebhookController;
+use BitApps\Pi\HTTP\Controllers\WpProxyController;
 use BitApps\Pi\src\Flow\FlowExecutor;
 
 if (!defined('ABSPATH')) {
@@ -100,6 +101,7 @@ Route::group(
         // others
         Route::post('test-run-node', [FlowNodeTestController::class, 'runNode']);
         Route::post('proxy/route', [ProxyController::class, 'proxyRequest']);
+        Route::post('wp-proxy/route', [WpProxyController::class, 'proxyRequest']);
         Route::post('mcp-client/tools', [McpClientController::class, 'getTools']);
         Route::post('refresh-token', [AuthorizationController::class, 'refreshToken']);
         Route::get('hook-capture/{flow_id}/{node_id}', [HookListenerController::class, 'captureResponse']);
