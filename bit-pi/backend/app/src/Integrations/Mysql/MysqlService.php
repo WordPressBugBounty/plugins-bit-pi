@@ -99,7 +99,7 @@ final class MysqlService
 
         return Utility::formatResponseData(
             200,
-            ['table'     => $table],
+            ['table' => $table],
             ['insert_id' => $this->pdo->lastInsertId(), 'affected_rows' => $statement->rowCount()]
         );
     }

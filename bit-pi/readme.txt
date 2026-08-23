@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.0.2
 Requires PHP: 8.0
-Stable tag: 1.28.1
+Stable tag: 1.28.2
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,11 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.28.2 (Aug 23, 2026) =
+
+* **Fixes**:
+  * Fixed a fatal error that stopped the plugin from loading on sites whose database table prefix begins with a number.
 
 = v1.28.1 (Aug 20, 2026) =
 

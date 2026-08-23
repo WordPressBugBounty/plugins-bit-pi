@@ -76,7 +76,7 @@ class MysqlAction implements ActionInterface
             return Utility::formatResponseData(
                 500,
                 ['machine' => $machineSlug],
-                ['error'   => true, 'message' => $th->getMessage()]
+                ['error' => true, 'message' => $th->getMessage()]
             );
         }
     }
