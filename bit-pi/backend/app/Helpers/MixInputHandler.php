@@ -93,7 +93,9 @@ class MixInputHandler
                 // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound -- Prefixed via Config::VAR_PREFIX (bit_pi_).
                 $value = apply_filters(Config::VAR_PREFIX . 'mix_tag_input', $values, $item);
 
-                if (!empty($value) || is_numeric($value)) {
+                // Arrays are admitted explicitly so an empty one still reaches
+                // the output, such as an array function that matched nothing.
+                if (!empty($value) || is_numeric($value) || \is_array($value)) {
                     $values[] = $value;
                 }
             }

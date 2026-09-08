@@ -7,6 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+use BitApps\Pi\Config;
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Request\Request;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
@@ -71,9 +72,65 @@ final class WebhookDispatchController
             return Response::success('Sorry, the requested action cannot be performed because the flow is currently inactive.');
         }
 
+        // A flow may answer this call itself. Anything able to do so arms here,
+        // before the run, so the executor knows to keep it inline.
+        // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound -- Prefixed via Config::VAR_PREFIX (bit_pi_).
+        do_action(Config::VAR_PREFIX . 'before_webhook_dispatch', $flow);
+
         FlowExecutor::execute($flow, $this->buildTriggerData($request, $webhook));
 
+        // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound -- Prefixed via Config::VAR_PREFIX (bit_pi_).
+        $webhookResponse = apply_filters(Config::VAR_PREFIX . 'webhook_response', null, $flow->id);
+
+        if (\is_array($webhookResponse)) {
+            $this->sendResponseAndExit($webhookResponse);
+        }
+
         return Response::success('Accepted');
+    }
+
+    /**
+     * Send the flow's own response and end the request.
+     *
+     * Nothing after the call site runs: this exits once the body is out.
+     *
+     * The REST router wraps whatever a controller returns in a JSON envelope, so
+     * the body the flow built has to leave before that happens — the caller asked
+     * for their own shape, not ours.
+     *
+     * @param array{statusCode: int, body: string, headers: array} $webhookResponse
+     */
+    private function sendResponseAndExit(array $webhookResponse)
+    {
+        while (ob_get_level() > 0) {
+            ob_end_clean();
+        }
+
+        if (!headers_sent()) {
+            nocache_headers();
+
+            status_header($webhookResponse['statusCode']);
+
+            $headerNames = array_map('strtolower', array_keys($webhookResponse['headers']));
+
+            foreach ($webhookResponse['headers'] as $name => $value) {
+                header($name . ': ' . $value, true);
+            }
+
+            // The tool names a Content-Type for every shape that carries a body,
+            // so this only covers a redirect the flow gave no type of its own.
+            if (!\in_array('content-type', $headerNames, true)) {
+                header('Content-Type: text/plain; charset=utf-8', true);
+            }
+        }
+
+        // 204 and 304 are defined as having no body at all.
+        if (!\in_array($webhookResponse['statusCode'], [204, 304], true)) {
+            // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped,Generic.PHP.ForbiddenFunctions.FoundWithAlternative -- flow-authored body; escaping would corrupt JSON, XML and HTML
+            echo $webhookResponse['body'];
+        }
+
+        exit;
     }
 
     /**

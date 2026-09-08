@@ -135,8 +135,12 @@ class FlowExecutor extends BackgroundProcessHandler
                 'listener_type'   => $flow->listener_type
             ];
 
+            // A webhook caller waiting on a Respond to Webhook node cannot be answered
+            // from the queue — the background worker closes the connection first.
             $isBackgroundDisabled = (defined('BACKGROUND_PROCESS_DISABLE') && BACKGROUND_PROCESS_DISABLE)
-                || (isset($flowSettings['background_process']) && !$flowSettings['background_process']);
+                || (isset($flowSettings['background_process']) && !$flowSettings['background_process'])
+                // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.DynamicHooknameFound -- Prefixed via Config::VAR_PREFIX (bit_pi_).
+                || (bool) apply_filters(Config::VAR_PREFIX . 'flow_skips_background_process', false, $flow);
 
             if ($isBackgroundDisabled) {
                 $obj = new stdClass();

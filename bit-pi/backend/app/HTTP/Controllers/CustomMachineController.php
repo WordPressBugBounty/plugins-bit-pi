@@ -38,24 +38,37 @@ final class CustomMachineController
 
         $validatedData['config'] = JSON::maybeEncode($validatedData['config']);
 
-        $insertedData = CustomMachine::insert($validatedData);
+        $customMachine = CustomMachine::insert($validatedData);
 
-        if (!$insertedData) {
+        if (!$customMachine) {
             return Response::error('Failed to insert data.');
         }
 
-        // update() persists and returns the model, or false when the write fails.
-        $updated = CustomMachine::findOne(['id' => $insertedData['id']])->update(['slug' => Slug::generate($validatedData['name']) . '-' . $insertedData['id']]);
+        // The slug carries the new id, so it can only be built once the row exists.
+        // insert() leaves the model not yet knowing it is stored, and a change on
+        // such a model is not tracked, so the row is read back before writing.
+        $customMachine = CustomMachine::findOne(['id' => $customMachine->id]);
 
-        if (!$updated) {
+        if (!$customMachine) {
+            return Response::error('Failed to read the stored module.');
+        }
+
+        $customMachine->slug = Slug::generate($validatedData['name']) . '-' . $customMachine->id;
+
+        if (!$customMachine->save()) {
             return Response::error('Failed to update slug.');
         }
 
-        return Response::success($insertedData);
+        return Response::success($customMachine);
     }
 
     public function update(CustomMachineRequest $request, CustomMachine $customMachine)
     {
+        // update() on a row that is gone builds no WHERE clause and would rewrite the whole table.
+        if (!$customMachine->exists()) {
+            return Response::error('Custom app module not found.');
+        }
+
         $validatedData = $request->validated();
 
         $validatedData['config'] = JSON::maybeEncode($validatedData['config']);
@@ -63,7 +76,8 @@ final class CustomMachineController
         $updated = $customMachine->update($validatedData);
 
         if ($updated) {
-            return Response::success($customMachine->id);
+            // Route binding fills in the key alone, and it arrives as text.
+            return Response::success((int) $customMachine->id);
         }
 
         return Response::error('Failed to update data.');
@@ -71,6 +85,13 @@ final class CustomMachineController
 
     public function destroy(CustomMachine $customMachine)
     {
+        // Route binding fills in the key alone, so the row itself is read here.
+        $customMachine = CustomMachine::findOne(['id' => $customMachine->id]);
+
+        if (!$customMachine) {
+            return Response::error('Custom app module not found.');
+        }
+
         $flowTitles = CustomAppService::findFlowTitlesBySlug('machine_slug', $customMachine->slug);
 
         if ($flowTitles) {
@@ -84,10 +105,11 @@ final class CustomMachineController
 
     public function updateStatus(Request $request, CustomMachine $customMachine)
     {
-        $flowTitles = CustomAppService::findFlowTitlesBySlug('machine_slug', $customMachine->slug);
+        // Route binding fills in the key alone, so the row itself is read here.
+        $customMachine = CustomMachine::findOne(['id' => $customMachine->id]);
 
-        if ($flowTitles) {
-            return Response::error('This custom app module is used in the following flows: ' . implode(', ', $flowTitles));
+        if (!$customMachine) {
+            return Response::error('Custom app module not found.');
         }
 
         $validatedData = $request->validate(
@@ -95,6 +117,16 @@ final class CustomMachineController
                 'status' => ['required', 'boolean'],
             ]
         );
+
+        // Only turning a module off is blocked by the flows using it. Turning one
+        // back on has to stay possible, or a used module could never be restored.
+        if ($validatedData['status'] === false) {
+            $flowTitles = CustomAppService::findFlowTitlesBySlug('machine_slug', $customMachine->slug);
+
+            if ($flowTitles) {
+                return Response::error('This custom app module is used in the following flows: ' . implode(', ', $flowTitles));
+            }
+        }
 
         $customMachine->status = $validatedData['status'];
 

@@ -21,6 +21,7 @@ use BitApps\Pi\src\Tools\JsonParser\JsonParserTool;
 use BitApps\Pi\src\Tools\Repeater\RepeaterTool;
 use BitApps\Pi\src\Tools\Xml\XmlTool;
 use BitApps\PiPro\src\Tools\RunCode\RunCodeTool;
+use BitApps\PiPro\src\Tools\WebhookResponse\WebhookResponseTool;
 
 /**
  * Factory class for creating and executing flow tools in the automation workflow.
@@ -90,6 +91,13 @@ class FlowToolsFactory
                 }
 
                 return new RepeaterTool(new NodeInfoProvider($currentNodeInfo), $flowHistoryId);
+
+            case 'respondToWebhook':
+                if (!class_exists(WebhookResponseTool::class)) {
+                    return false;
+                }
+
+                return new WebhookResponseTool(new NodeInfoProvider($currentNodeInfo), $flowHistoryId);
 
             case 'jsonParser':
                 if (!class_exists(JsonParserTool::class)) {

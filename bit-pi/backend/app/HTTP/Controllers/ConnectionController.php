@@ -83,8 +83,14 @@ final class ConnectionController
 
     public function destroy(Connection $connection)
     {
+        // delete() on a row that is gone builds no WHERE clause and throws instead of returning.
+        if (!$connection->exists()) {
+            return Response::error('Connection not found.');
+        }
+
         $connection->delete();
 
-        return Response::success($connection->id);
+        // Route binding fills in the key alone, and it arrives as text.
+        return Response::success((int) $connection->id);
     }
 }

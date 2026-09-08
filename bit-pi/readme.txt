@@ -2,9 +2,9 @@
 Contributors: bitpressadmin
 Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
-Tested up to: 7.0.2
+Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.28.2
+Stable tag: 1.29.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,28 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.29.0 (Sep 08, 2026) =
+
+* **Triggers (36)**:
+  * BuddyPress (36)
+
+* **Actions (54)**:
+  * BuddyPress (50)
+  * Salesforce (04)
+
+* **Features**:
+  * Added an Array tab with 21 functions for filtering, sorting, joining and reshaping a list inline.
+  * Added the Respond to Webhook tool for sending a custom response from a flow.
+
+* **Improvements**:
+  * Salesforce connections now send PKCE on the OAuth 2 handshake.
+
+* **Fixes**:
+  * Fixed a scheduled polling trigger stopping the WordPress cron run.
+  * Fixed Bit CRM invoice line items not reloading when a saved node was reopened.
+  * Fixed a console error in the Google Sheet Add Row action.
+  * Fixed a custom app GET action recording no input in the flow history.
 
 = v1.28.2 (Aug 23, 2026) =
 

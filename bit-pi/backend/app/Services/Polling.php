@@ -20,7 +20,8 @@ class Polling
      * Optionally returns only one type of change based on the $pollingType parameter.
      *
      * @param array  $oldResponse previous dataset from the last polling
-     * @param array  $newResponse current dataset from the latest polling
+     * @param array  $newResponse current dataset from the latest polling, holding
+     *                            records as either arrays or objects
      * @param string $idField     field name used as the unique identifier (default: 'id')
      * @param string $pollingType type of polling: AbstractPollingTrigger::TYPE_NEW or TYPE_UPDATED
      *
@@ -40,19 +41,21 @@ class Polling
         $oldMap = [];
 
         foreach ($oldResponse as $item) {
-            if (isset($item[$idField])) {
-                $oldMap[$item[$idField]] = $item;
+            $itemId = $this->identifierOf($item, $idField);
+
+            if ($itemId !== null) {
+                $oldMap[$itemId] = $item;
             }
         }
 
         foreach ($newResponse as $item) {
-            if (!isset($item[$idField])) {
+            $itemId = $this->identifierOf($item, $idField);
+
+            if ($itemId === null) {
                 $changes[AbstractPollingTrigger::TYPE_NEW][] = $item;
 
                 continue;
             }
-
-            $itemId = $item[$idField];
 
             if (!isset($oldMap[$itemId])) {
                 $changes[AbstractPollingTrigger::TYPE_NEW][] = $item;
@@ -82,5 +85,28 @@ class Polling
         if (Config::getOption($optionKey)) {
             Config::deleteOption($optionKey);
         }
+    }
+
+    /**
+     * The identifier of one polled record, or null when it carries none.
+     *
+     * A record is normally an array, but an integration that decodes its
+     * response without the associative flag hands over stdClass instead, and
+     * reading an array key off one of those is fatal rather than merely false.
+     *
+     * @param mixed  $item
+     * @param string $idField
+     *
+     * @return mixed the identifier, or null when the record carries none
+     */
+    private function identifierOf($item, $idField)
+    {
+        $record = \is_object($item) ? (array) $item : $item;
+
+        if (!\is_array($record) || !isset($record[$idField])) {
+            return;
+        }
+
+        return $record[$idField];
     }
 }

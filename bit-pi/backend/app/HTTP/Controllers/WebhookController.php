@@ -48,11 +48,6 @@ final class WebhookController
 
         $webhooks = $query->desc()->get();
 
-        // No rows comes back as a plain array rather than a collection.
-        if (empty($webhooks)) {
-            return Response::success([]);
-        }
-
         $webhooks = $webhooks->map(
             function ($webhook) {
                 $webhook->url = WebhookService::callbackUrl($webhook->webhook_slug);
@@ -219,13 +214,20 @@ final class WebhookController
      */
     public function update(WebhookUpdateRequest $request, Webhook $webhook)
     {
+        // update() on a row that is gone builds no WHERE clause and would rewrite the whole table.
+        // Checked before the detach below, so a missing webhook cannot cost the flow the one it has.
+        if (!$webhook->exists()) {
+            return Response::error('Webhook not found');
+        }
+
         $validated = $request->validated();
 
         $this->removeWebhookByFlowId($validated['flow_id']);
 
         $webhook->update(['flow_id' => $validated['flow_id']]);
 
-        return Response::success(['id' => $webhook->id]);
+        // Route binding fills in the key alone, and it arrives as text.
+        return Response::success(['id' => (int) $webhook->id]);
     }
 
     /**
@@ -238,7 +240,7 @@ final class WebhookController
         $validated = $request->validated();
 
         $webhook = Webhook::findOne(['id' => $validated['webhook']]);
-        if (!$webhook->id) {
+        if (!$webhook) {
             return Response::error('Webhook not found');
         }
 
@@ -263,10 +265,20 @@ final class WebhookController
      */
     public function destroy(Webhook $webhook)
     {
-        $flowId = $webhook->flow_id;
+        // Route binding fills in the key alone, so the row itself is read here.
+        // Without flow_id the attached-to-a-flow check below never fires.
+        $webhook = Webhook::findOne(['id' => $webhook->id]);
 
-        if ($flowId) {
-            return Response::error('The Webhook is already connected to ' . $webhook->flow->title);
+        if (!$webhook) {
+            return Response::error('Webhook not found');
+        }
+
+        if ($webhook->flow_id) {
+            // The flow may have been deleted without clearing flow_id, so the
+            // relation can be missing even though the id is set.
+            $flowTitle = $webhook->flow->title ?? 'a deleted flow';
+
+            return Response::error('The Webhook is already connected to ' . $flowTitle);
         }
 
         $webhook->delete();

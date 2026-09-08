@@ -83,6 +83,8 @@ return [
 
     'is up to date' => __('is up to date', 'bit-pi'),
 
+    'A community forum for WordPress where users raise feature requests, report issues, send feedback and vote on what gets built next.' => __('A community forum for WordPress where users raise feature requests, report issues, send feedback and vote on what gets built next.', 'bit-pi'),
+
     'WordPress CRM to manage contacts, leads, deals, and invoices and run your whole sales pipeline right from your WordPress dashboard.' => __('WordPress CRM to manage contacts, leads, deals, and invoices and run your whole sales pipeline right from your WordPress dashboard.', 'bit-pi'),
 
     'Zapier Alternative in WordPress Unlimited Task.' => __('Zapier Alternative in WordPress Unlimited Task.', 'bit-pi'),
@@ -122,13 +124,83 @@ return [
 
     'About' => __('About', 'bit-pi'),
 
-    'Returns this flow id' => __('Returns this flow id', 'bit-pi'),
+    'Compares two arrays and returns only the values found in both.' => __('Compares two arrays and returns only the values found in both.', 'bit-pi'),
+
+    'array 1' => __('array 1', 'bit-pi'),
+
+    'array 2' => __('array 2', 'bit-pi'),
+
+    'array' => __('array', 'bit-pi'),
+
+    'Joins all the items of an array into one text, using the separator you give. Leave it empty for a comma.' => __('Joins all the items of an array into one text, using the separator you give. Leave it empty for a comma.', 'bit-pi'),
+
+    'separator' => __('separator', 'bit-pi'),
+
+    'string' => __('string', 'bit-pi'),
+
+    'Returns the number of items in an array.' => __('Returns the number of items in an array.', 'bit-pi'),
 
     'number' => __('number', 'bit-pi'),
 
-    'Returns this flow name' => __('Returns this flow name', 'bit-pi'),
+    'Returns the field names of a collection, which shows you what a step actually sent.' => __('Returns the field names of a collection, which shows you what a step actually sent.', 'bit-pi'),
 
-    'string' => __('string', 'bit-pi'),
+    'collection' => __('collection', 'bit-pi'),
+
+    'Returns only the selected part of an array. The first item is 0 and the end item is left out. A negative number counts back from the end. Leave the end empty to run to the last item.' => __('Returns only the selected part of an array. The first item is 0 and the end item is left out. A negative number counts back from the end. Leave the end empty to run to the last item.', 'bit-pi'),
+
+    'start' => __('start', 'bit-pi'),
+
+    'end' => __('end', 'bit-pi'),
+
+    'Merges two arrays into one, keeping every item of both.' => __('Merges two arrays into one, keeping every item of both.', 'bit-pi'),
+
+    'Checks whether an array contains a value, and answers true or false. A typed number matches a stored number.' => __('Checks whether an array contains a value, and answers true or false. A typed number matches a stored number.', 'bit-pi'),
+
+    'value' => __('value', 'bit-pi'),
+
+    'boolean' => __('boolean', 'bit-pi'),
+
+    'Removes every item equal to the value. It compares plain values, so reach for slice to drop one collection from a list.' => __('Removes every item equal to the value. It compares plain values, so reach for slice to drop one collection from a list.', 'bit-pi'),
+
+    'Adds a value to the end of an array. What you type is added as text, so wrap it in toNumber when the array holds numbers.' => __('Adds a value to the end of an array. What you type is added as text, so wrap it in toNumber when the array holds numbers.', 'bit-pi'),
+
+    'Compares two arrays and returns the values that are in the first but not in the second.' => __('Compares two arrays and returns the values that are in the first but not in the second.', 'bit-pi'),
+
+    'Takes one field from every collection in a list and returns just those values. Fill the last two arguments to keep only the ones whose filter field matches.' => __('Takes one field from every collection in a list and returns just those values. Fill the last two arguments to keep only the ones whose filter field matches.', 'bit-pi'),
+
+    'key' => __('key', 'bit-pi'),
+
+    'filter key' => __('filter key', 'bit-pi'),
+
+    'filter values' => __('filter values', 'bit-pi'),
+
+    'Reorders the items of an array at random. Wrap it in first to pick one at random.' => __('Reorders the items of an array at random. Wrap it in first to pick one at random.', 'bit-pi'),
+
+    'Sorts the values of an array. The order can be asc, desc, asc ci or desc ci, where ci ignores capitals. Name a field to sort a list of collections by that field.' => __('Sorts the values of an array. The order can be asc, desc, asc ci or desc ci, where ci ignores capitals. Name a field to sort a list of collections by that field.', 'bit-pi'),
+
+    'order' => __('order', 'bit-pi'),
+
+    'Reverses an array, so the first item becomes the last one.' => __('Reverses an array, so the first item becomes the last one.', 'bit-pi'),
+
+    'Returns the first item of an array. From a list of collections you get the whole collection.' => __('Returns the first item of an array. From a list of collections you get the whole collection.', 'bit-pi'),
+
+    'any' => __('any', 'bit-pi'),
+
+    'Returns the last item of an array. From a list of collections you get the whole collection.' => __('Returns the last item of an array. From a list of collections you get the whole collection.', 'bit-pi'),
+
+    'Pulls the items of any nested arrays up into one flat array. Reach for it after map when the field itself holds a list.' => __('Pulls the items of any nested arrays up into one flat array. Reach for it after map when the field itself holds a list.', 'bit-pi'),
+
+    'Removes duplicates and keeps the first of each. Name a field to compare collections by that field instead of the whole collection.' => __('Removes duplicates and keeps the first of each. Name a field to compare collections by that field instead of the whole collection.', 'bit-pi'),
+
+    'Removes duplicate values from an array, keeping the first of each.' => __('Removes duplicate values from an array, keeping the first of each.', 'bit-pi'),
+
+    'Turns a list of collections into one collection, taking each field name and its value from the two fields you name.' => __('Turns a list of collections into one collection, taking each field name and its value from the two fields you name.', 'bit-pi'),
+
+    'Turns one collection into a list of its key and value pairs, ready to loop over with an Iterator.' => __('Turns one collection into a list of its key and value pairs, ready to loop over with an Iterator.', 'bit-pi'),
+
+    'Returns this flow id' => __('Returns this flow id', 'bit-pi'),
+
+    'Returns this flow name' => __('Returns this flow name', 'bit-pi'),
 
     'Returns this flow status' => __('Returns this flow status', 'bit-pi'),
 
@@ -154,8 +226,6 @@ return [
 
     'Returns the value of a mathematical expression.' => __('Returns the value of a mathematical expression.', 'bit-pi'),
 
-    'value' => __('value', 'bit-pi'),
-
     'Returns the length of the string.' => __('Returns the length of the string.', 'bit-pi'),
 
     'text' => __('text', 'bit-pi'),
@@ -174,15 +244,9 @@ return [
 
     'Extracts the characters from a string, between two specified indices.' => __('Extracts the characters from a string, between two specified indices.', 'bit-pi'),
 
-    'start' => __('start', 'bit-pi'),
-
-    'end' => __('end', 'bit-pi'),
-
     'Converts any value to a number.' => __('Converts any value to a number.', 'bit-pi'),
 
     'Converts any value to a boolean.' => __('Converts any value to a boolean.', 'bit-pi'),
-
-    'boolean' => __('boolean', 'bit-pi'),
 
     'Replace the search string with the new string.' => __('Replace the search string with the new string.', 'bit-pi'),
 
@@ -407,6 +471,8 @@ return [
     'Iterator' => __('Iterator', 'bit-pi'),
 
     'Repeater/Loop' => __('Repeater/Loop', 'bit-pi'),
+
+    'Respond to Webhook' => __('Respond to Webhook', 'bit-pi'),
 
     'Sticky Note' => __('Sticky Note', 'bit-pi'),
 
@@ -673,6 +739,8 @@ return [
 
     'Change color' => __('Change color', 'bit-pi'),
 
+    'Respond to Webhook Node' => __('Respond to Webhook Node', 'bit-pi'),
+
     'XML Node' => __('XML Node', 'bit-pi'),
 
     'Planned' => __('Planned', 'bit-pi'),
@@ -721,9 +789,9 @@ return [
 
     'No variables to display.' => __('No variables to display.', 'bit-pi'),
 
-    'Variables' => __('Variables', 'bit-pi'),
-
     'Functions' => __('Functions', 'bit-pi'),
+
+    'Variables' => __('Variables', 'bit-pi'),
 
     'System' => __('System', 'bit-pi'),
 
@@ -732,6 +800,8 @@ return [
     'Flow' => __('Flow', 'bit-pi'),
 
     'Math' => __('Math', 'bit-pi'),
+
+    'Array' => __('Array', 'bit-pi'),
 
     'String' => __('String', 'bit-pi'),
 
@@ -989,8 +1059,6 @@ return [
 
     'A detailed description of the image content. This will be stored as the post content in WordPress.' => __('A detailed description of the image content. This will be stored as the post content in WordPress.', 'bit-pi'),
 
-    'Array' => __('Array', 'bit-pi'),
-
     'Iteration start from' => __('Iteration start from', 'bit-pi'),
 
     'Iteration end at' => __('Iteration end at', 'bit-pi'),
@@ -1069,6 +1137,49 @@ return [
     'Add Poll Time' => __('Add Poll Time', 'bit-pi'),
 
     'Poll Times' => __('Poll Times', 'bit-pi'),
+
+    'JSON' => __('JSON', 'bit-pi'),
+
+    'HTML' => __('HTML', 'bit-pi'),
+
+    'Redirect' => __('Redirect', 'bit-pi'),
+
+    '<h1>Thank you!</h1><p>We received your request.</p>' => __('<h1>Thank you!</h1><p>We received your request.</p>', 'bit-pi'),
+
+    '{"status": "success", "message": "Request received"}' => __('{"status": "success", "message": "Request received"}', 'bit-pi'),
+
+    'Request received. Thank you!' => __('Request received. Thank you!', 'bit-pi'),
+
+    '<response><status>success</status><message>Request received</message></response>' => __('<response><status>success</status><message>Request received</message></response>', 'bit-pi'),
+
+    'Header name' => __('Header name', 'bit-pi'),
+
+    'Header value' => __('Header value', 'bit-pi'),
+
+    '**Note:** Webhook calls that reach this node skip background processing and run right away, so the caller can be answered. Your Background Processing setting is not changed.' => __('**Note:** Webhook calls that reach this node skip background processing and run right away, so the caller can be answered. Your Background Processing setting is not changed.', 'bit-pi'),
+
+    'Respond With' => __('Respond With', 'bit-pi'),
+
+    /* translators: %s: placeholder value */
+    'Returned to whoever called the webhook. Defaults to %s. Anything outside 100 to 599 falls back to the default.' => __('Returned to whoever called the webhook. Defaults to %s. Anything outside 100 to 599 falls back to the default.', 'bit-pi'),
+
+    'Status Code' => __('Status Code', 'bit-pi'),
+
+    'The caller is sent to this address after the flow runs.' => __('The caller is sent to this address after the flow runs.', 'bit-pi'),
+
+    'Redirect URL' => __('Redirect URL', 'bit-pi'),
+
+    'https://example.com/thank-you' => __('https://example.com/thank-you', 'bit-pi'),
+
+    'The content sent back to the webhook caller. You can insert values from previous steps.' => __('The content sent back to the webhook caller. You can insert values from previous steps.', 'bit-pi'),
+
+    'Body' => __('Body', 'bit-pi'),
+
+    'Add Header' => __('Add Header', 'bit-pi'),
+
+    'Optional. Add extra headers to the response. Content-Type is set automatically based on Respond With.' => __('Optional. Add extra headers to the response. Content-Type is set automatically based on Respond With.', 'bit-pi'),
+
+    'Custom Headers' => __('Custom Headers', 'bit-pi'),
 
     'Mode' => __('Mode', 'bit-pi'),
 
@@ -1311,8 +1422,6 @@ return [
     'cURL Command' => __('cURL Command', 'bit-pi'),
 
     'Paste your cURL command here...' => __('Paste your cURL command here...', 'bit-pi'),
-
-    'Body' => __('Body', 'bit-pi'),
 
     'Headers' => __('Headers', 'bit-pi'),
 
@@ -2110,8 +2219,6 @@ return [
     'zip' => __('zip', 'bit-pi'),
 
     'fileinfo' => __('fileinfo', 'bit-pi'),
-
-    'JSON' => __('JSON', 'bit-pi'),
 
     'OpenSSL' => __('OpenSSL', 'bit-pi'),
 
@@ -5287,6 +5394,412 @@ return [
 
     'Select the forum to subscribe the user to.' => __('Select the forum to subscribe the user to.', 'bit-pi'),
 
+    'Create Activity' => __('Create Activity', 'bit-pi'),
+
+    'Create Activity Comment' => __('Create Activity Comment', 'bit-pi'),
+
+    'Favorite Activity' => __('Favorite Activity', 'bit-pi'),
+
+    'Delete Activity' => __('Delete Activity', 'bit-pi'),
+
+    'Update Group Details' => __('Update Group Details', 'bit-pi'),
+
+    'Update Group Settings' => __('Update Group Settings', 'bit-pi'),
+
+    'Delete Group' => __('Delete Group', 'bit-pi'),
+
+    'Join Group' => __('Join Group', 'bit-pi'),
+
+    'Leave Group' => __('Leave Group', 'bit-pi'),
+
+    'Invite User to Group' => __('Invite User to Group', 'bit-pi'),
+
+    'Accept Group Invite' => __('Accept Group Invite', 'bit-pi'),
+
+    'Remove Member from Group' => __('Remove Member from Group', 'bit-pi'),
+
+    'Promote Group Member' => __('Promote Group Member', 'bit-pi'),
+
+    'Demote Group Member' => __('Demote Group Member', 'bit-pi'),
+
+    'Ban Group Member' => __('Ban Group Member', 'bit-pi'),
+
+    'Unban Group Member' => __('Unban Group Member', 'bit-pi'),
+
+    'Send Membership Request' => __('Send Membership Request', 'bit-pi'),
+
+    'Accept Membership Request' => __('Accept Membership Request', 'bit-pi'),
+
+    'Friends' => __('Friends', 'bit-pi'),
+
+    'Accept Friendship' => __('Accept Friendship', 'bit-pi'),
+
+    'Reject Friendship' => __('Reject Friendship', 'bit-pi'),
+
+    'Remove Friend' => __('Remove Friend', 'bit-pi'),
+
+    'Messages' => __('Messages', 'bit-pi'),
+
+    'Send Message' => __('Send Message', 'bit-pi'),
+
+    'Delete Thread' => __('Delete Thread', 'bit-pi'),
+
+    'Mark Thread as Read' => __('Mark Thread as Read', 'bit-pi'),
+
+    'Send Notice' => __('Send Notice', 'bit-pi'),
+
+    'Notifications' => __('Notifications', 'bit-pi'),
+
+    'Add Notification' => __('Add Notification', 'bit-pi'),
+
+    'Mark Notification Read' => __('Mark Notification Read', 'bit-pi'),
+
+    'Profiles' => __('Profiles', 'bit-pi'),
+
+    'Set Profile Field Data' => __('Set Profile Field Data', 'bit-pi'),
+
+    'Delete Profile Field Data' => __('Delete Profile Field Data', 'bit-pi'),
+
+    'Members' => __('Members', 'bit-pi'),
+
+    'Delete User Account' => __('Delete User Account', 'bit-pi'),
+
+    'Set Member Type' => __('Set Member Type', 'bit-pi'),
+
+    'Update Notification Settings' => __('Update Notification Settings', 'bit-pi'),
+
+    'Blogs' => __('Blogs', 'bit-pi'),
+
+    'Record Blog' => __('Record Blog', 'bit-pi'),
+
+    'Get Activities' => __('Get Activities', 'bit-pi'),
+
+    'Get Activity By ID' => __('Get Activity By ID', 'bit-pi'),
+
+    'Get Group' => __('Get Group', 'bit-pi'),
+
+    'List Groups' => __('List Groups', 'bit-pi'),
+
+    'Get Group Members' => __('Get Group Members', 'bit-pi'),
+
+    'Get User' => __('Get User', 'bit-pi'),
+
+    'Get User By Email' => __('Get User By Email', 'bit-pi'),
+
+    'Get Member Type' => __('Get Member Type', 'bit-pi'),
+
+    'Get Friends' => __('Get Friends', 'bit-pi'),
+
+    'Check Friendship' => __('Check Friendship', 'bit-pi'),
+
+    'Get Thread' => __('Get Thread', 'bit-pi'),
+
+    'Get Messages' => __('Get Messages', 'bit-pi'),
+
+    'Get Notifications' => __('Get Notifications', 'bit-pi'),
+
+    'Get Profile Field Data' => __('Get Profile Field Data', 'bit-pi'),
+
+    'List Blogs' => __('List Blogs', 'bit-pi'),
+
+    'Activity Created' => __('Activity Created', 'bit-pi'),
+
+    'Activity Update Posted' => __('Activity Update Posted', 'bit-pi'),
+
+    'Activity Favorited' => __('Activity Favorited', 'bit-pi'),
+
+    'Activity Unfavorited' => __('Activity Unfavorited', 'bit-pi'),
+
+    'Activity Deleted' => __('Activity Deleted', 'bit-pi'),
+
+    'Group Updated' => __('Group Updated', 'bit-pi'),
+
+    'Group Deleted' => __('Group Deleted', 'bit-pi'),
+
+    'Group Member Joined' => __('Group Member Joined', 'bit-pi'),
+
+    'Group Member Left' => __('Group Member Left', 'bit-pi'),
+
+    'Group Member Promoted' => __('Group Member Promoted', 'bit-pi'),
+
+    'Group Member Demoted' => __('Group Member Demoted', 'bit-pi'),
+
+    'Group Member Banned' => __('Group Member Banned', 'bit-pi'),
+
+    'Group Member Unbanned' => __('Group Member Unbanned', 'bit-pi'),
+
+    'Group Member Removed' => __('Group Member Removed', 'bit-pi'),
+
+    'Group Invite Sent' => __('Group Invite Sent', 'bit-pi'),
+
+    'Group Invite Accepted' => __('Group Invite Accepted', 'bit-pi'),
+
+    'Group Membership Requested' => __('Group Membership Requested', 'bit-pi'),
+
+    'Group Membership Accepted' => __('Group Membership Accepted', 'bit-pi'),
+
+    'Friendship Requested' => __('Friendship Requested', 'bit-pi'),
+
+    'Friendship Accepted' => __('Friendship Accepted', 'bit-pi'),
+
+    'Friendship Deleted' => __('Friendship Deleted', 'bit-pi'),
+
+    'Message Sent' => __('Message Sent', 'bit-pi'),
+
+    'Thread Deleted' => __('Thread Deleted', 'bit-pi'),
+
+    'Thread Marked Read' => __('Thread Marked Read', 'bit-pi'),
+
+    'Notice Sent' => __('Notice Sent', 'bit-pi'),
+
+    'Notification Saved' => __('Notification Saved', 'bit-pi'),
+
+    'Profile Field Saved' => __('Profile Field Saved', 'bit-pi'),
+
+    'User Activated' => __('User Activated', 'bit-pi'),
+
+    'User Deleted' => __('User Deleted', 'bit-pi'),
+
+    'Member Type Set' => __('Member Type Set', 'bit-pi'),
+
+    'Member Type Removed' => __('Member Type Removed', 'bit-pi'),
+
+    'General Settings Saved' => __('General Settings Saved', 'bit-pi'),
+
+    'Blog Post Published' => __('Blog Post Published', 'bit-pi'),
+
+    'Blog Comment Added' => __('Blog Comment Added', 'bit-pi'),
+
+    'Enter the user ID.' => __('Enter the user ID.', 'bit-pi'),
+
+    'Enter the notification component name.' => __('Enter the notification component name.', 'bit-pi'),
+
+    'Component Name' => __('Component Name', 'bit-pi'),
+
+    'Enter the notification component action.' => __('Enter the notification component action.', 'bit-pi'),
+
+    'Component Action' => __('Component Action', 'bit-pi'),
+
+    'Enter the item ID.' => __('Enter the item ID.', 'bit-pi'),
+
+    'Item ID' => __('Item ID', 'bit-pi'),
+
+    'Enter the secondary item ID.' => __('Enter the secondary item ID.', 'bit-pi'),
+
+    'Secondary Item ID' => __('Secondary Item ID', 'bit-pi'),
+
+    'Enter the initiator user ID.' => __('Enter the initiator user ID.', 'bit-pi'),
+
+    'Initiator User ID' => __('Initiator User ID', 'bit-pi'),
+
+    'Enter the friend user ID.' => __('Enter the friend user ID.', 'bit-pi'),
+
+    'Friend User ID' => __('Friend User ID', 'bit-pi'),
+
+    'Select the profile field.' => __('Select the profile field.', 'bit-pi'),
+
+    'Profile Field' => __('Profile Field', 'bit-pi'),
+
+    'Select the user.' => __('Select the user.', 'bit-pi'),
+
+    'User' => __('User', 'bit-pi'),
+
+    'Enter the friendship ID.' => __('Enter the friendship ID.', 'bit-pi'),
+
+    'Friendship ID' => __('Friendship ID', 'bit-pi'),
+
+    'Select the group.' => __('Select the group.', 'bit-pi'),
+
+    'Group' => __('Group', 'bit-pi'),
+
+    'Select the initiator user.' => __('Select the initiator user.', 'bit-pi'),
+
+    'Initiator' => __('Initiator', 'bit-pi'),
+
+    'Select the friend user.' => __('Select the friend user.', 'bit-pi'),
+
+    'Friend' => __('Friend', 'bit-pi'),
+
+    'Enter the thread ID.' => __('Enter the thread ID.', 'bit-pi'),
+
+    'Thread ID' => __('Thread ID', 'bit-pi'),
+
+    'Enter the user\'s email address.' => __('Enter the user\'s email address.', 'bit-pi'),
+
+    'Enter the activity component (e.g. activity, groups, members).' => __('Enter the activity component (e.g. activity, groups, members).', 'bit-pi'),
+
+    'Component' => __('Component', 'bit-pi'),
+
+    'Enter the activity type (e.g. activity_update, created_group).' => __('Enter the activity type (e.g. activity_update, created_group).', 'bit-pi'),
+
+    'Enter the activity content.' => __('Enter the activity content.', 'bit-pi'),
+
+    'Enter the activity action description.' => __('Enter the activity action description.', 'bit-pi'),
+
+    'Enter the primary link URL.' => __('Enter the primary link URL.', 'bit-pi'),
+
+    'Primary Link' => __('Primary Link', 'bit-pi'),
+
+    'Enter the associated item ID.' => __('Enter the associated item ID.', 'bit-pi'),
+
+    'Hide this activity from the sitewide activity stream.' => __('Hide this activity from the sitewide activity stream.', 'bit-pi'),
+
+    'Select the activity to comment on.' => __('Select the activity to comment on.', 'bit-pi'),
+
+    'Enter the comment content.' => __('Enter the comment content.', 'bit-pi'),
+
+    'Enter the parent comment ID (optional).' => __('Enter the parent comment ID (optional).', 'bit-pi'),
+
+    'Parent Comment ID' => __('Parent Comment ID', 'bit-pi'),
+
+    'Enter the name of the group.' => __('Enter the name of the group.', 'bit-pi'),
+
+    'Enter the group description.' => __('Enter the group description.', 'bit-pi'),
+
+    'Enter the group slug.' => __('Enter the group slug.', 'bit-pi'),
+
+    'Group Status' => __('Group Status', 'bit-pi'),
+
+    'Enter the creator user ID.' => __('Enter the creator user ID.', 'bit-pi'),
+
+    'Creator ID' => __('Creator ID', 'bit-pi'),
+
+    'Select the activity to delete.' => __('Select the activity to delete.', 'bit-pi'),
+
+    'Select the activity to favorite.' => __('Select the activity to favorite.', 'bit-pi'),
+
+    'Select a user to filter activities.' => __('Select a user to filter activities.', 'bit-pi'),
+
+    'Filter by activity component (e.g. activity, groups, members).' => __('Filter by activity component (e.g. activity, groups, members).', 'bit-pi'),
+
+    'Filter by activity type (e.g. activity_update, created_group).' => __('Filter by activity type (e.g. activity_update, created_group).', 'bit-pi'),
+
+    'Filter by associated item ID.' => __('Filter by associated item ID.', 'bit-pi'),
+
+    'Maximum number of results to return.' => __('Maximum number of results to return.', 'bit-pi'),
+
+    'Max Results' => __('Max Results', 'bit-pi'),
+
+    'Comma-separated activity IDs' => __('Comma-separated activity IDs', 'bit-pi'),
+
+    'Activity IDs' => __('Activity IDs', 'bit-pi'),
+
+    'Select the user whose notifications to retrieve.' => __('Select the user whose notifications to retrieve.', 'bit-pi'),
+
+    'Filter notifications by read status.' => __('Filter notifications by read status.', 'bit-pi'),
+
+    'Is New' => __('Is New', 'bit-pi'),
+
+    'Enter the email address of the user.' => __('Enter the email address of the user.', 'bit-pi'),
+
+    'Failed to fetch profile fields' => __('Failed to fetch profile fields', 'bit-pi'),
+
+    'Failed to fetch group types' => __('Failed to fetch group types', 'bit-pi'),
+
+    'Failed to fetch member types' => __('Failed to fetch member types', 'bit-pi'),
+
+    'Failed to fetch groups' => __('Failed to fetch groups', 'bit-pi'),
+
+    'Failed to fetch users' => __('Failed to fetch users', 'bit-pi'),
+
+    'Failed to fetch activities' => __('Failed to fetch activities', 'bit-pi'),
+
+    'Select the user to invite.' => __('Select the user to invite.', 'bit-pi'),
+
+    'Enter the inviter user ID.' => __('Enter the inviter user ID.', 'bit-pi'),
+
+    'Inviter ID' => __('Inviter ID', 'bit-pi'),
+
+    'Enter an optional invitation message.' => __('Enter an optional invitation message.', 'bit-pi'),
+
+    'Message' => __('Message', 'bit-pi'),
+
+    'Filter blogs by user ID.' => __('Filter blogs by user ID.', 'bit-pi'),
+
+    'Filter groups by user ID.' => __('Filter groups by user ID.', 'bit-pi'),
+
+    'Search groups by terms.' => __('Search groups by terms.', 'bit-pi'),
+
+    'Search Terms' => __('Search Terms', 'bit-pi'),
+
+    'Enter the notification ID.' => __('Enter the notification ID.', 'bit-pi'),
+
+    'Notification ID' => __('Notification ID', 'bit-pi'),
+
+    'Select the user to promote.' => __('Select the user to promote.', 'bit-pi'),
+
+    'Select the role to promote the member to.' => __('Select the role to promote the member to.', 'bit-pi'),
+
+    'Moderator' => __('Moderator', 'bit-pi'),
+
+    'Admin' => __('Admin', 'bit-pi'),
+
+    'Enter the blog ID.' => __('Enter the blog ID.', 'bit-pi'),
+
+    'Blog ID' => __('Blog ID', 'bit-pi'),
+
+    'Disable activity recording for this blog.' => __('Disable activity recording for this blog.', 'bit-pi'),
+
+    'No Activity' => __('No Activity', 'bit-pi'),
+
+    'Enter the message subject.' => __('Enter the message subject.', 'bit-pi'),
+
+    'Subject' => __('Subject', 'bit-pi'),
+
+    'Enter the message content.' => __('Enter the message content.', 'bit-pi'),
+
+    'Comma-separated emails or user IDs' => __('Comma-separated emails or user IDs', 'bit-pi'),
+
+    'Recipients' => __('Recipients', 'bit-pi'),
+
+    'Enter the sender user ID.' => __('Enter the sender user ID.', 'bit-pi'),
+
+    'Sender ID' => __('Sender ID', 'bit-pi'),
+
+    'Enter the notice subject.' => __('Enter the notice subject.', 'bit-pi'),
+
+    'Enter the notice message.' => __('Enter the notice message.', 'bit-pi'),
+
+    'Select the member type.' => __('Select the member type.', 'bit-pi'),
+
+    'Member Type' => __('Member Type', 'bit-pi'),
+
+    'Enter the email address of the user whose profile fields you want to update.' => __('Enter the email address of the user whose profile fields you want to update.', 'bit-pi'),
+
+    'Add Profile Field' => __('Add Profile Field', 'bit-pi'),
+
+    'Profile Fields' => __('Profile Fields', 'bit-pi'),
+
+    'Enter the new group name.' => __('Enter the new group name.', 'bit-pi'),
+
+    'Enter the new group description.' => __('Enter the new group description.', 'bit-pi'),
+
+    'Notify group members of the change.' => __('Notify group members of the change.', 'bit-pi'),
+
+    'Notify Members' => __('Notify Members', 'bit-pi'),
+
+    'Select the new privacy status.' => __('Select the new privacy status.', 'bit-pi'),
+
+    'Select the invite status.' => __('Select the invite status.', 'bit-pi'),
+
+    'Invite Status' => __('Invite Status', 'bit-pi'),
+
+    'All Members' => __('All Members', 'bit-pi'),
+
+    'Mods and Admins' => __('Mods and Admins', 'bit-pi'),
+
+    'Admins Only' => __('Admins Only', 'bit-pi'),
+
+    'Enable group forum.' => __('Enable group forum.', 'bit-pi'),
+
+    'Enable Forum' => __('Enable Forum', 'bit-pi'),
+
+    'Enter the email address of the user whose notification settings you want to update.' => __('Enter the email address of the user whose notification settings you want to update.', 'bit-pi'),
+
+    'Add Setting' => __('Add Setting', 'bit-pi'),
+
+    'Notification Settings' => __('Notification Settings', 'bit-pi'),
+
     'WooCommerce Order Creation' => __('WooCommerce Order Creation', 'bit-pi'),
 
     'Create a Completion' => __('Create a Completion', 'bit-pi'),
@@ -5300,8 +5813,6 @@ return [
     'Select a Model' => __('Select a Model', 'bit-pi'),
 
     'Write the message' => __('Write the message', 'bit-pi'),
-
-    'Message' => __('Message', 'bit-pi'),
 
     'Enter message' => __('Enter message', 'bit-pi'),
 
@@ -5338,10 +5849,6 @@ return [
     'Enter stop sequences' => __('Enter stop sequences', 'bit-pi'),
 
     'Role' => __('Role', 'bit-pi'),
-
-    'User' => __('User', 'bit-pi'),
-
-    'Messages' => __('Messages', 'bit-pi'),
 
     'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.anthropic.com/settings/keys">Here</a>' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.anthropic.com/settings/keys">Here</a>', 'bit-pi'),
 
@@ -5937,8 +6444,6 @@ return [
 
     'Enter the maximum number of results to return (default: 100).' => __('Enter the maximum number of results to return (default: 100).', 'bit-pi'),
 
-    'Max Results' => __('Max Results', 'bit-pi'),
-
     'Enter the destination path where the file should be uploaded (e.g., /Documents/file.txt).' => __('Enter the destination path where the file should be uploaded (e.g., /Documents/file.txt).', 'bit-pi'),
 
     'Enter the file content or URL to upload.' => __('Enter the file content or URL to upload.', 'bit-pi'),
@@ -6500,8 +7005,6 @@ return [
     'To Email Address' => __('To Email Address', 'bit-pi'),
 
     'Enter the email subject. Example: Welcome to Our Service or Order Confirmation #12345' => __('Enter the email subject. Example: Welcome to Our Service or Order Confirmation #12345', 'bit-pi'),
-
-    'Subject' => __('Subject', 'bit-pi'),
 
     'Enter the reply-to email address. Example: support@gmail.com' => __('Enter the reply-to email address. Example: support@gmail.com', 'bit-pi'),
 
@@ -7981,10 +8484,6 @@ return [
 
     'Member' => __('Member', 'bit-pi'),
 
-    'Moderator' => __('Moderator', 'bit-pi'),
-
-    'Admin' => __('Admin', 'bit-pi'),
-
     'Student' => __('Student', 'bit-pi'),
 
     'Select a role' => __('Select a role', 'bit-pi'),
@@ -8919,8 +9418,6 @@ return [
 
     'Enter the thread-id, for the email.' => __('Enter the thread-id, for the email.', 'bit-pi'),
 
-    'Thread ID' => __('Thread ID', 'bit-pi'),
-
     'Enter draft ID, to send the draft.' => __('Enter draft ID, to send the draft.', 'bit-pi'),
 
     'Draft ID' => __('Draft ID', 'bit-pi'),
@@ -9082,8 +9579,6 @@ return [
     'Scope Type' => __('Scope Type', 'bit-pi'),
 
     'Default' => __('Default', 'bit-pi'),
-
-    'Group' => __('Group', 'bit-pi'),
 
     'Enter the email address or domain value based on the scope type.' => __('Enter the email address or domain value based on the scope type.', 'bit-pi'),
 
@@ -11736,8 +12231,6 @@ return [
 
     'Select a Topic' => __('Select a Topic', 'bit-pi'),
 
-    'Enter the email address of the user.' => __('Enter the email address of the user.', 'bit-pi'),
-
     'Select the achievement to award.' => __('Select the achievement to award.', 'bit-pi'),
 
     'Select Achievement' => __('Select Achievement', 'bit-pi'),
@@ -12680,8 +13173,6 @@ return [
 
     'Section Completed' => __('Section Completed', 'bit-pi'),
 
-    'Enter the user ID.' => __('Enter the user ID.', 'bit-pi'),
-
     'Enter the course ID.' => __('Enter the course ID.', 'bit-pi'),
 
     'Enter the lesson ID.' => __('Enter the lesson ID.', 'bit-pi'),
@@ -12862,8 +13353,6 @@ return [
 
     'Duplicate Group' => __('Duplicate Group', 'bit-pi'),
 
-    'Delete Group' => __('Delete Group', 'bit-pi'),
-
     'Archive Group' => __('Archive Group', 'bit-pi'),
 
     'items management' => __('items management', 'bit-pi'),
@@ -12933,8 +13422,6 @@ return [
     'Select the group you want to delete.' => __('Select the group you want to delete.', 'bit-pi'),
 
     'Enter the ID of the item to delete.' => __('Enter the ID of the item to delete.', 'bit-pi'),
-
-    'Item ID' => __('Item ID', 'bit-pi'),
 
     'Select the board containing the group to duplicate.' => __('Select the board containing the group to duplicate.', 'bit-pi'),
 
@@ -13910,10 +14397,6 @@ return [
 
     'Update Organization' => __('Update Organization', 'bit-pi'),
 
-    'Create Activity' => __('Create Activity', 'bit-pi'),
-
-    'Delete Activity' => __('Delete Activity', 'bit-pi'),
-
     'Get Activity' => __('Get Activity', 'bit-pi'),
 
     'Get Many Activities' => __('Get Many Activities', 'bit-pi'),
@@ -13929,10 +14412,6 @@ return [
     'Update Product in Deal' => __('Update Product in Deal', 'bit-pi'),
 
     'Get Many Products' => __('Get Many Products', 'bit-pi'),
-
-    'Activity Created' => __('Activity Created', 'bit-pi'),
-
-    'Activity Deleted' => __('Activity Deleted', 'bit-pi'),
 
     'Activity Changed' => __('Activity Changed', 'bit-pi'),
 
@@ -15028,9 +15507,17 @@ return [
 
     'account' => __('account', 'bit-pi'),
 
+    'Get Account Industries' => __('Get Account Industries', 'bit-pi'),
+
+    'Add or Update Industry to Account' => __('Add or Update Industry to Account', 'bit-pi'),
+
     'contact' => __('contact', 'bit-pi'),
 
     'lead' => __('lead', 'bit-pi'),
+
+    'Get Lead Industries' => __('Get Lead Industries', 'bit-pi'),
+
+    'Add or Update Industry to Lead' => __('Add or Update Industry to Lead', 'bit-pi'),
 
     'task' => __('task', 'bit-pi'),
 
@@ -15044,8 +15531,6 @@ return [
 
     'Add Lead to Campaign' => __('Add Lead to Campaign', 'bit-pi'),
 
-    'Get User' => __('Get User', 'bit-pi'),
-
     'Get All Users' => __('Get All Users', 'bit-pi'),
 
     'attachments' => __('attachments', 'bit-pi'),
@@ -15055,6 +15540,22 @@ return [
     'Select the campaign to add the contact to.' => __('Select the campaign to add the contact to.', 'bit-pi'),
 
     'The ID of the contact to add to the campaign.' => __('The ID of the contact to add to the campaign.', 'bit-pi'),
+
+    'Select the account you want to add an industry to.' => __('Select the account you want to add an industry to.', 'bit-pi'),
+
+    'Select Account' => __('Select Account', 'bit-pi'),
+
+    'Select an account' => __('Select an account', 'bit-pi'),
+
+    'Select an industry for this account.' => __('Select an industry for this account.', 'bit-pi'),
+
+    'Select an industry' => __('Select an industry', 'bit-pi'),
+
+    'Select the lead you want to add an industry to.' => __('Select the lead you want to add an industry to.', 'bit-pi'),
+
+    'Select Lead' => __('Select Lead', 'bit-pi'),
+
+    'Select an industry for this lead.' => __('Select an industry for this lead.', 'bit-pi'),
 
     'Select the campaign to add the lead to.' => __('Select the campaign to add the lead to.', 'bit-pi'),
 
@@ -15080,17 +15581,15 @@ return [
 
     'Select the user you want to retrieve.' => __('Select the user you want to retrieve.', 'bit-pi'),
 
+    'Failed to fetch lead industries' => __('Failed to fetch lead industries', 'bit-pi'),
+
+    'Failed to fetch account industries' => __('Failed to fetch account industries', 'bit-pi'),
+
     'Select the account you want to update.' => __('Select the account you want to update.', 'bit-pi'),
-
-    'Select Account' => __('Select Account', 'bit-pi'),
-
-    'Select an account' => __('Select an account', 'bit-pi'),
 
     'Select the contact you want to update.' => __('Select the contact you want to update.', 'bit-pi'),
 
     'Select the lead you want to update.' => __('Select the lead you want to update.', 'bit-pi'),
-
-    'Select Lead' => __('Select Lead', 'bit-pi'),
 
     'Select the task you want to update.' => __('Select the task you want to update.', 'bit-pi'),
 
@@ -15103,8 +15602,6 @@ return [
     'Select the post.' => __('Select the post.', 'bit-pi'),
 
     'Select a post' => __('Select a post', 'bit-pi'),
-
-    'Select the user.' => __('Select the user.', 'bit-pi'),
 
     'Add Sub-field' => __('Add Sub-field', 'bit-pi'),
 
@@ -15143,8 +15640,6 @@ return [
     'Remove Subscriber from Group' => __('Remove Subscriber from Group', 'bit-pi'),
 
     'Update / Rename Group' => __('Update / Rename Group', 'bit-pi'),
-
-    'Get Group' => __('Get Group', 'bit-pi'),
 
     'Get Subscribers in Group' => __('Get Subscribers in Group', 'bit-pi'),
 
@@ -15235,8 +15730,6 @@ return [
     'Auto Follow-up Delay' => __('Auto Follow-up Delay', 'bit-pi'),
 
     'Editor' => __('Editor', 'bit-pi'),
-
-    'HTML' => __('HTML', 'bit-pi'),
 
     'Auto Follow-up Active' => __('Auto Follow-up Active', 'bit-pi'),
 
@@ -17942,8 +18435,6 @@ return [
 
     'Send Template Message' => __('Send Template Message', 'bit-pi'),
 
-    'Send Message' => __('Send Message', 'bit-pi'),
-
     'Send Document' => __('Send Document', 'bit-pi'),
 
     'Send Image' => __('Send Image', 'bit-pi'),
@@ -20408,8 +20899,6 @@ return [
 
     'Active only' => __('Active only', 'bit-pi'),
 
-    'Failed to fetch groups' => __('Failed to fetch groups', 'bit-pi'),
-
     'One or more recipient numbers, separated by commas.' => __('One or more recipient numbers, separated by commas.', 'bit-pi'),
 
     'To (Mobile Number)' => __('To (Mobile Number)', 'bit-pi'),
@@ -20417,8 +20906,6 @@ return [
     'The text message body.' => __('The text message body.', 'bit-pi'),
 
     'Sender ID / from number (optional, gateway dependent).' => __('Sender ID / from number (optional, gateway dependent).', 'bit-pi'),
-
-    'Sender ID' => __('Sender ID', 'bit-pi'),
 
     'Flash Message' => __('Flash Message', 'bit-pi'),
 
@@ -20451,8 +20938,6 @@ return [
     'List Users' => __('List Users', 'bit-pi'),
 
     'List Organizations' => __('List Organizations', 'bit-pi'),
-
-    'List Groups' => __('List Groups', 'bit-pi'),
 
     'Article Author Changed' => __('Article Author Changed', 'bit-pi'),
 
@@ -20771,8 +21256,6 @@ return [
     'Ticket Form' => __('Ticket Form', 'bit-pi'),
 
     'Failed to fetch tickets' => __('Failed to fetch tickets', 'bit-pi'),
-
-    'Failed to fetch users' => __('Failed to fetch users', 'bit-pi'),
 
     'Failed to fetch organizations' => __('Failed to fetch organizations', 'bit-pi'),
 

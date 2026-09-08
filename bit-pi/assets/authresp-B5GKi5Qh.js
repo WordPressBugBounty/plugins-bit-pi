@@ -1,0 +1,1 @@
+import{r as e,j as s,e as t}from"./main-three-clouds-mate.js";import{s as o}from"./oauthhel-DJ9hdmoT.js";import"./mutative-C6xjlr6O.js";function i(){return e.useEffect(()=>{window.opener&&o()},[]),s("h3",{children:t("Auth Response Captured","bit-pi")})}export{i as default};

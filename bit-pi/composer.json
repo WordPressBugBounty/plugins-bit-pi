@@ -6,8 +6,8 @@
   "require": {
     "php": ">=8.0",
     "bitapps/wp-validator": "^1",
-    "bitapps/wp-database": "^2.0",
-    "bitapps/wp-kit": "^2.0",
+    "bitapps/wp-database": "2.0.5",
+    "bitapps/wp-kit": "2.3.1",
     "typisttech/imposter-plugin": "^0.6.2"
   },
   "require-dev": {
@@ -40,6 +40,7 @@
   "scripts": {
     "clean": "rm -rf ./vendor && rm composer.lock && rm -rf ./dependencies",
     "reset": "composer clean && composer install",
+    "reset:all": "composer reset && composer -d pro reset",
     "insights": "./vendor/bin/phpinsights",
     "phpcs": "phpcs -s",
     "compat": "./vendor/bin/phpcs -p backend --standard=PHPCompatibilityWP --runtime-set testVersion 8.0-8.4",

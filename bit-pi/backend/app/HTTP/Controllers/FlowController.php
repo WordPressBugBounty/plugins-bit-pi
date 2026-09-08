@@ -187,6 +187,14 @@ final class FlowController
             }
         }
 
+        // Read the flow before any tag is written, so a request naming a flow
+        // that is gone cannot leave new tags behind with nothing to attach to.
+        $getFlow = Flow::findOne(['id' => $validatedData['id']]);
+
+        if (!$getFlow) {
+            return Response::error('Flow does not exist');
+        }
+
         $flowService = new FlowService();
         $newTagsId = [];
 
@@ -201,11 +209,7 @@ final class FlowController
             $getInsertedLastTags = $getInsertedNewTag['getLastInsertedTags'];
         }
 
-        $getFlow = Flow::take(1)->find(['id' => $validatedData['id']]);
-
         $getFlow->update($editedFlowField);
-
-        $getFlow->save();
 
         $allTags = array_merge($oldTagsId, $newTagsId);
 

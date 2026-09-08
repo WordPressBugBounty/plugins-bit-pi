@@ -131,6 +131,11 @@ final class CustomAppController
 
     public function update(CustomAppRequest $request, CustomApp $customApp)
     {
+        // update() on a row that is gone builds no WHERE clause and would rewrite the whole table.
+        if (!$customApp->exists()) {
+            return Response::error('Custom app not found.');
+        }
+
         $validatedData = $request->validated();
 
         if (!empty($validatedData['logo'])) {
@@ -163,6 +168,13 @@ final class CustomAppController
 
     public function destroy(CustomApp $customApp)
     {
+        // Route binding fills in the key alone, so the row itself is read here.
+        $customApp = CustomApp::findOne(['id' => $customApp->id]);
+
+        if (!$customApp) {
+            return Response::error('Custom app not found.');
+        }
+
         $flowTitles = CustomAppService::findFlowTitlesBySlug('app_slug', $customApp->slug);
 
         if ($flowTitles) {
@@ -181,6 +193,13 @@ final class CustomAppController
                 'status' => ['required', 'boolean'],
             ]
         );
+
+        // Route binding fills in the key alone, so the row itself is read here.
+        $customApp = CustomApp::findOne(['id' => $customApp->id]);
+
+        if (!$customApp) {
+            return Response::error('Custom app not found.');
+        }
 
         if ($validatedData['status'] === false) {
             $flowTitles = CustomAppService::findFlowTitlesBySlug('app_slug', $customApp->slug);

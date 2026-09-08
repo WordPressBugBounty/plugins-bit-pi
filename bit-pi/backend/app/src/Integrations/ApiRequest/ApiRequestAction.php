@@ -132,6 +132,11 @@ class ApiRequestAction implements ActionInterface
         foreach ($elements as $element) {
             if (\is_bool($element)) {
                 $jsonString .= $element ? '{{true}}' : '{{false}}';
+            } elseif (\is_array($element) || \is_object($element)) {
+                // A tag holding a list or a record has to be written as JSON.
+                // Concatenating one puts the word Array in the body instead,
+                // and the whole raw body then fails to decode.
+                $jsonString .= JSON::encode($element);
             } else {
                 $jsonString .= $element;
             }

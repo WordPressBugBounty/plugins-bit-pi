@@ -38,6 +38,10 @@ class CustomAppAction implements ActionInterface
 
         $queryParams = $this->getQueryParams($fieldMappedData, $machineDetails['query_params'] ?? []);
 
+        // Kept before the auth block below merges the connection secret into
+        // the query string, so a key can never reach the flow log.
+        $mappedQueryParams = $queryParams;
+
         $bodyParams = $this->getBodyParams($fieldMappedData, $machineDetails['body'] ?? []);
 
         $headers = $this->getHeaders($fieldMappedData, $machineDetails['headers'] ?? []);
@@ -97,7 +101,11 @@ class CustomAppAction implements ActionInterface
 
         $response = $http->request($url, $machineDetails['method'], $requestBody, $headers);
 
-        return Utility::formatResponseData($http->getResponseCode(), $requestBody, $response);
+        // A GET sends no body, so the query string is what it actually carried.
+        // Logging the body there would report the call as having no input at all.
+        $requestInput = $machineDetails['method'] === 'GET' ? $mappedQueryParams : $requestBody;
+
+        return Utility::formatResponseData($http->getResponseCode(), $requestInput, $response);
     }
 
     private function getQueryParams($fieldMappedData, $queryParamKeys)
