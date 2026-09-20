@@ -13,6 +13,65 @@ use BitApps\Pi\src\Integrations\OpenAi\OpenAiService;
 
 class OpenAiActionHandler
 {
+    /**
+     * Prepare a multimodal Chat Completions payload for the Analyze Image action.
+     */
+    public static function prepareImageAnalysisPayload(array $fieldMapData, array $imageInputs): array
+    {
+        $content = [
+            [
+                'type' => 'text',
+                'text' => $fieldMapData['prompt'],
+            ],
+        ];
+
+        foreach ($imageInputs as $imageInput) {
+            $imageUrl = $imageInput['image-url'] ?? '';
+
+            if (!\is_string($imageUrl)) {
+                continue;
+            }
+
+            $imageUrl = trim($imageUrl);
+
+            if ($imageUrl === '') {
+                continue;
+            }
+
+            $detail = $imageInput['detail'] ?? 'auto';
+            if (!\in_array($detail, ['auto', 'low', 'high'], true)) {
+                $detail = 'auto';
+            }
+
+            $content[] = [
+                'type'      => 'image_url',
+                'image_url' => [
+                    'url'    => $imageUrl,
+                    'detail' => $detail,
+                ],
+            ];
+        }
+
+        $fieldMapData['response_format'] = '{"type":"text"}';
+        $fieldMapData['messages'] = [
+            [
+                'role'    => 'user',
+                'content' => $content,
+            ],
+        ];
+
+        // max_tokens caps the single combined response, so drop it unless a usable limit was set
+        $maxTokens = $fieldMapData['max_tokens'] ?? null;
+
+        if (is_numeric($maxTokens) && (int) $maxTokens > 0) {
+            $fieldMapData['max_tokens'] = (int) $maxTokens;
+        } else {
+            unset($fieldMapData['max_tokens']);
+        }
+
+        return $fieldMapData;
+    }
+
     public static function handleConditions($fieldMapData, $stopSequence, $messageList, $inputFormat, $inputText, $optionalFields)
     {
         if ($fieldMapData['advance-feature'] === 'true') {
@@ -121,6 +180,9 @@ class OpenAiActionHandler
         $contextLength
     ) {
         switch ($machineSlug) {
+            case 'analyzeImage':
+                return $openAiService->createCompletion($fieldMapData);
+
             case 'createCompletion':
                 return $openAiService->createCompletion(
                     $fieldMapData,

@@ -60,7 +60,7 @@ class FlowExecutor extends BackgroundProcessHandler
      * @param collection  $flow
      * @param mixed       $triggerData
      * @param mixed       $flowHistoryId
-     * @param mixed       $executeType
+     * @param null|string $executeType 're-execute' replays a history, 'test' is a hand-started test run
      * @param null|string $nextNodId
      */
     public static function execute($flow, $triggerData = [], $flowHistoryId = null, $executeType = null, $nextNodId = null)
@@ -99,10 +99,18 @@ class FlowExecutor extends BackgroundProcessHandler
             );
         }
 
-        if (
-            $listenerType === FlowModel::LISTENER_TYPE['RUN_ONCE']
-            || $flow->is_active === 1
-        ) {
+        // A test run is started by hand from the builder, so it runs whether
+        // or not the flow is switched on. "Listen New Response" arrives as
+        // RUN_ONCE; "Use Existing Data" has no listener, so it passes 'test'.
+        $isTestRun = $executeType === 'test' || $listenerType === FlowModel::LISTENER_TYPE['RUN_ONCE'];
+
+        // A run that already started was authorised then. Resuming it at a
+        // later node, after a delay or a reviewer's answer, must not re-check
+        // the flow is active: a single test run gives up its RUN_ONCE as it
+        // starts, so by the time it resumes it is neither a test run nor active.
+        $isResuming = $flowHistoryId !== null && $nextNodId !== null;
+
+        if ($isTestRun || $isResuming || $flow->is_active === 1) {
             $parentFlowHistoryId = null;
 
             if ($executeType === 're-execute') {

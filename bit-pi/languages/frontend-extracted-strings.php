@@ -1249,14 +1249,6 @@ return [
 
     'Instant Webhook Response' => __('Instant Webhook Response', 'bit-pi'),
 
-    'Default Response' => __('Default Response', 'bit-pi'),
-
-    'Custom response feature is not available yet. But planned.' => __('Custom response feature is not available yet. But planned.', 'bit-pi'),
-
-    'Custom Response' => __('Custom Response', 'bit-pi'),
-
-    'Disable' => __('Disable', 'bit-pi'),
-
     'The headers will be added to the request body.' => __('The headers will be added to the request body.', 'bit-pi'),
 
     'Get request headers' => __('Get request headers', 'bit-pi'),
@@ -5174,6 +5166,368 @@ return [
 
     'Select to Remove All' => __('Select to Remove All', 'bit-pi'),
 
+    'Create Member' => __('Create Member', 'bit-pi'),
+
+    'Update Member' => __('Update Member', 'bit-pi'),
+
+    'Create Member Post' => __('Create Member Post', 'bit-pi'),
+
+    'Delete Member' => __('Delete Member', 'bit-pi'),
+
+    'Find Members' => __('Find Members', 'bit-pi'),
+
+    'Get Member Transactions' => __('Get Member Transactions', 'bit-pi'),
+
+    'Match Lead to Members' => __('Match Lead to Members', 'bit-pi'),
+
+    'Create Review' => __('Create Review', 'bit-pi'),
+
+    'Update Review' => __('Update Review', 'bit-pi'),
+
+    'Delete Review' => __('Delete Review', 'bit-pi'),
+
+    'Search Reviews' => __('Search Reviews', 'bit-pi'),
+
+    'Get Member' => __('Get Member', 'bit-pi'),
+
+    'Search Members' => __('Search Members', 'bit-pi'),
+
+    'Get Member Subscriptions' => __('Get Member Subscriptions', 'bit-pi'),
+
+    'Get Lead' => __('Get Lead', 'bit-pi'),
+
+    'List Leads' => __('List Leads', 'bit-pi'),
+
+    'List Lead Matches' => __('List Lead Matches', 'bit-pi'),
+
+    'Get Review' => __('Get Review', 'bit-pi'),
+
+    'Get Member Post' => __('Get Member Post', 'bit-pi'),
+
+    'List Member Posts' => __('List Member Posts', 'bit-pi'),
+
+    'List Membership Plans' => __('List Membership Plans', 'bit-pi'),
+
+    'List Top Categories' => __('List Top Categories', 'bit-pi'),
+
+    'List Sub Categories' => __('List Sub Categories', 'bit-pi'),
+
+    'List Form Inquiries' => __('List Form Inquiries', 'bit-pi'),
+
+    'Get Site Info' => __('Get Site Info', 'bit-pi'),
+
+    'New Member Signup' => __('New Member Signup', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Paid Plan Signup (On-Site Payment Gateway)", "Paid Plan Signup (Off-Site Payment Gateway)" and "Free Plan Signup" events.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Paid Plan Signup (On-Site Payment Gateway)", "Paid Plan Signup (Off-Site Payment Gateway)" and "Free Plan Signup" events.', 'bit-pi'),
+
+    'New Lead Submitted' => __('New Lead Submitted', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Lead Submitted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Lead Submitted" event.', 'bit-pi'),
+
+    'New Review Submitted' => __('New Review Submitted', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Member Review Submitted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Member Review Submitted" event.', 'bit-pi'),
+
+    'Contact Us Form Submitted' => __('Contact Us Form Submitted', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Contact Us Form Submitted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Contact Us Form Submitted" event.', 'bit-pi'),
+
+    'Newsletter Signup' => __('Newsletter Signup', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Newsletter Signup" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Newsletter Signup" event.', 'bit-pi'),
+
+    'Unsubscribe Form Submitted' => __('Unsubscribe Form Submitted', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Unsubscribed Form Submitted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Unsubscribed Form Submitted" event.', 'bit-pi'),
+
+    'Custom Form Submitted' => __('Custom Form Submitted', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Custom Forms" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Custom Forms" event.', 'bit-pi'),
+
+    'Sub Account Created' => __('Sub Account Created', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Sub Account Form Submitted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Sub Account Form Submitted" event.', 'bit-pi'),
+
+    'Contact Details Submitted' => __('Contact Details Submitted', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Contact Details Form Submitted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Contact Details Form Submitted" event.', 'bit-pi'),
+
+    'Additional Details Submitted' => __('Additional Details Submitted', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Additional Details Form Submitted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Additional Details Form Submitted" event.', 'bit-pi'),
+
+    'About Me Submitted' => __('About Me Submitted', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "About Me Form Submitted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "About Me Form Submitted" event.', 'bit-pi'),
+
+    'Profile Photos Updated' => __('Profile Photos Updated', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Profile Photos Form Submitted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Profile Photos Form Submitted" event.', 'bit-pi'),
+
+    'Member Email Verified' => __('Member Email Verified', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Member Clicked Email Verification Link" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Member Clicked Email Verification Link" event.', 'bit-pi'),
+
+    'Member Added or Changed via Admin' => __('Member Added or Changed via Admin', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Members Imported / Added / Updated / Deleted Via Admin" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Members Imported / Added / Updated / Deleted Via Admin" event.', 'bit-pi'),
+
+    'Member Plan Changed' => __('Member Plan Changed', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Member Plan Changed" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Member Plan Changed" event.', 'bit-pi'),
+
+    'Member Plan Cancelled' => __('Member Plan Cancelled', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Member Plan Cancelled" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Member Plan Cancelled" event.', 'bit-pi'),
+
+    'One-Time Purchase' => __('One-Time Purchase', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "One-Time Purchase" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "One-Time Purchase" event.', 'bit-pi'),
+
+    'Admin Subscription or Invoice Action' => __('Admin Subscription or Invoice Action', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Admin Subscription / Invoice Action" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Admin Subscription / Invoice Action" event.', 'bit-pi'),
+
+    'System Invoice Action' => __('System Invoice Action', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "System Invoice Action" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "System Invoice Action" event.', 'bit-pi'),
+
+    'Member Dashboard Payment' => __('Member Dashboard Payment', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Member Dashboard Payment" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Member Dashboard Payment" event.', 'bit-pi'),
+
+    'Post Created or Edited (Standard)' => __('Post Created or Edited (Standard)', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Post - Standard" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Post - Standard" event.', 'bit-pi'),
+
+    'Post Created or Edited (Photo Album)' => __('Post Created or Edited (Photo Album)', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Post - Photo Album" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Post - Photo Album" event.', 'bit-pi'),
+
+    'Post Deleted (Standard)' => __('Post Deleted (Standard)', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Post - Standard Deleted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Post - Standard Deleted" event.', 'bit-pi'),
+
+    'Post Deleted (Photo Album)' => __('Post Deleted (Photo Album)', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Post - Photo Album Deleted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Post - Photo Album Deleted" event.', 'bit-pi'),
+
+    'Post Comment Submitted' => __('Post Comment Submitted', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Post Comment Submitted" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Post Comment Submitted" event.', 'bit-pi'),
+
+    'Lead Accepted or Declined' => __('Lead Accepted or Declined', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Lead Accept / Decline" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Lead Accept / Decline" event.', 'bit-pi'),
+
+    'Smart List Entry Added' => __('Smart List Entry Added', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Smart Lists" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Smart Lists" event.', 'bit-pi'),
+
+    'Chat Message Sent' => __('Chat Message Sent', 'bit-pi'),
+
+    'Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Chat Message Actions" event.' => __('Copy the generated webhook URL, then paste it in your Brilliant Directories admin under Developer Hub > Webhooks for the "Chat Message Actions" event.', 'bit-pi'),
+
+    'Lead Name' => __('Lead Name', 'bit-pi'),
+
+    'Lead Email' => __('Lead Email', 'bit-pi'),
+
+    'Message' => __('Message', 'bit-pi'),
+
+    'Top-level category used for member auto-matching.' => __('Top-level category used for member auto-matching.', 'bit-pi'),
+
+    'Top Category' => __('Top Category', 'bit-pi'),
+
+    'Comma-separated member IDs or emails. Overrides category based auto-matching.' => __('Comma-separated member IDs or emails. Overrides category based auto-matching.', 'bit-pi'),
+
+    'Users To Match' => __('Users To Match', 'bit-pi'),
+
+    'Auto-Match Members' => __('Auto-Match Members', 'bit-pi'),
+
+    'Send Lead Email Notification' => __('Send Lead Email Notification', 'bit-pi'),
+
+    'Email address of the new member.' => __('Email address of the new member.', 'bit-pi'),
+
+    'Password for the new member. Will be hashed by BD.' => __('Password for the new member. Will be hashed by BD.', 'bit-pi'),
+
+    'Password' => __('Password', 'bit-pi'),
+
+    'Membership plan to assign. Must already exist in BD.' => __('Membership plan to assign. Must already exist in BD.', 'bit-pi'),
+
+    'Subscription Plan' => __('Subscription Plan', 'bit-pi'),
+
+    'Profession / member category.' => __('Profession / member category.', 'bit-pi'),
+
+    'Profession' => __('Profession', 'bit-pi'),
+
+    'Send Welcome Email' => __('Send Welcome Email', 'bit-pi'),
+
+    'Post type (Video, Article, Event, etc).' => __('Post type (Video, Article, Event, etc).', 'bit-pi'),
+
+    'Member ID who owns the post.' => __('Member ID who owns the post.', 'bit-pi'),
+
+    'Member ID receiving the review.' => __('Member ID receiving the review.', 'bit-pi'),
+
+    'Review Title' => __('Review Title', 'bit-pi'),
+
+    'Reviewer Name' => __('Reviewer Name', 'bit-pi'),
+
+    'Reviewer Email' => __('Reviewer Email', 'bit-pi'),
+
+    'Review Content' => __('Review Content', 'bit-pi'),
+
+    'Overall rating 1-5.' => __('Overall rating 1-5.', 'bit-pi'),
+
+    'Rating Overall' => __('Rating Overall', 'bit-pi'),
+
+    'Rating Service' => __('Rating Service', 'bit-pi'),
+
+    'Rating Response' => __('Rating Response', 'bit-pi'),
+
+    'Rating Expertise' => __('Rating Expertise', 'bit-pi'),
+
+    'Rating Results' => __('Rating Results', 'bit-pi'),
+
+    'Approval state of the review.' => __('Approval state of the review.', 'bit-pi'),
+
+    'Review Status' => __('Review Status', 'bit-pi'),
+
+    'Accepted' => __('Accepted', 'bit-pi'),
+
+    'Declined' => __('Declined', 'bit-pi'),
+
+    'Waiting for Admin' => __('Waiting for Admin', 'bit-pi'),
+
+    'Lead ID to delete.' => __('Lead ID to delete.', 'bit-pi'),
+
+    'Lead ID' => __('Lead ID', 'bit-pi'),
+
+    'User ID of the member to delete.' => __('User ID of the member to delete.', 'bit-pi'),
+
+    'Review ID to delete.' => __('Review ID to delete.', 'bit-pi'),
+
+    'Review ID' => __('Review ID', 'bit-pi'),
+
+    'Lead ID to fetch.' => __('Lead ID to fetch.', 'bit-pi'),
+
+    'Member ID to fetch.' => __('Member ID to fetch.', 'bit-pi'),
+
+    'Post ID to fetch.' => __('Post ID to fetch.', 'bit-pi'),
+
+    'Member whose plan history to fetch. Required unless a Client ID is set. Members who never had a billing record are rejected by Brilliant Directories.' => __('Member whose plan history to fetch. Required unless a Client ID is set. Members who never had a billing record are rejected by Brilliant Directories.', 'bit-pi'),
+
+    'Billing client ID, usable instead of the User ID.' => __('Billing client ID, usable instead of the User ID.', 'bit-pi'),
+
+    'Client ID' => __('Client ID', 'bit-pi'),
+
+    'User ID of the member whose transaction history to fetch. Required unless a Client ID is set. Members who never had a billing record are rejected by Brilliant Directories.' => __('User ID of the member whose transaction history to fetch. Required unless a Client ID is set. Members who never had a billing record are rejected by Brilliant Directories.', 'bit-pi'),
+
+    'Review ID to fetch.' => __('Review ID to fetch.', 'bit-pi'),
+
+    'Page cursor returned as `next_page` by the previous call.' => __('Page cursor returned as `next_page` by the previous call.', 'bit-pi'),
+
+    'Results per page (default 25, max 100).' => __('Results per page (default 25, max 100).', 'bit-pi'),
+
+    'Column to filter on. Leave empty to return every record.' => __('Column to filter on. Leave empty to return every record.', 'bit-pi'),
+
+    'Filter Column' => __('Filter Column', 'bit-pi'),
+
+    'Required whenever a filter column is set.' => __('Required whenever a filter column is set.', 'bit-pi'),
+
+    'Filter Value' => __('Filter Value', 'bit-pi'),
+
+    'Comparison used against the filter value. LIKE only accepts a trailing wildcard, e.g. sample%.' => __('Comparison used against the filter value. LIKE only accepts a trailing wildcard, e.g. sample%.', 'bit-pi'),
+
+    'Operator' => __('Operator', 'bit-pi'),
+
+    '=' => __('=', 'bit-pi'),
+
+    '!=' => __('!=', 'bit-pi'),
+
+    '>' => __('>', 'bit-pi'),
+
+    '<' => __('<', 'bit-pi'),
+
+    '>=' => __('>=', 'bit-pi'),
+
+    '<=' => __('<=', 'bit-pi'),
+
+    'LIKE' => __('LIKE', 'bit-pi'),
+
+    'Column to sort by, e.g. signup_date.' => __('Column to sort by, e.g. signup_date.', 'bit-pi'),
+
+    'Order Column' => __('Order Column', 'bit-pi'),
+
+    'Order Direction' => __('Order Direction', 'bit-pi'),
+
+    'Ascending' => __('Ascending', 'bit-pi'),
+
+    'Descending' => __('Descending', 'bit-pi'),
+
+    'Generate your API key from your Brilliant Directories admin: Developer Hub > Generate API Key. The Site URL is the root domain of your BD site (e.g. https://mysite.com).' => __('Generate your API key from your Brilliant Directories admin: Developer Hub > Generate API Key. The Site URL is the root domain of your BD site (e.g. https://mysite.com).', 'bit-pi'),
+
+    'Site URL' => __('Site URL', 'bit-pi'),
+
+    'https://yoursite.com' => __('https://yoursite.com', 'bit-pi'),
+
+    'Select a connection with a valid API Key and Site URL first.' => __('Select a connection with a valid API Key and Site URL first.', 'bit-pi'),
+
+    'Could not reach Brilliant Directories. Check the Site URL and try again.' => __('Could not reach Brilliant Directories. Check the Site URL and try again.', 'bit-pi'),
+
+    'Brilliant Directories rejected the request.' => __('Brilliant Directories rejected the request.', 'bit-pi'),
+
+    'Brilliant Directories returned an unexpected response.' => __('Brilliant Directories returned an unexpected response.', 'bit-pi'),
+
+    'Lead ID to match. BD routes it using the lead category, location and member service areas.' => __('Lead ID to match. BD routes it using the lead category, location and member service areas.', 'bit-pi'),
+
+    'Free-text search across member records.' => __('Free-text search across member records.', 'bit-pi'),
+
+    'Search Term' => __('Search Term', 'bit-pi'),
+
+    'Location to search around, e.g. Los Angeles, California, United States. Needs a Google Maps API key saved in the BD advanced setting `google_maps_api_key`.' => __('Location to search around, e.g. Los Angeles, California, United States. Needs a Google Maps API key saved in the BD advanced setting `google_maps_api_key`.', 'bit-pi'),
+
+    'Address' => __('Address', 'bit-pi'),
+
+    'Top Level Category ID to search within.' => __('Top Level Category ID to search within.', 'bit-pi'),
+
+    'Top Category ID' => __('Top Category ID', 'bit-pi'),
+
+    'Sub Level Category ID to search within.' => __('Sub Level Category ID to search within.', 'bit-pi'),
+
+    'Sub Category ID' => __('Sub Category ID', 'bit-pi'),
+
+    'Sub-Sub Level Category ID to search within.' => __('Sub-Sub Level Category ID to search within.', 'bit-pi'),
+
+    'Sub-Sub Category ID' => __('Sub-Sub Category ID', 'bit-pi'),
+
+    'Order the search results are returned in.' => __('Order the search results are returned in.', 'bit-pi'),
+
+    'Reviews' => __('Reviews', 'bit-pi'),
+
+    'Name (A-Z)' => __('Name (A-Z)', 'bit-pi'),
+
+    'Name (Z-A)' => __('Name (Z-A)', 'bit-pi'),
+
+    'Last Name (A-Z)' => __('Last Name (A-Z)', 'bit-pi'),
+
+    'Last Name (Z-A)' => __('Last Name (Z-A)', 'bit-pi'),
+
+    'Reproduce a Dynamic Category Filter search instead of a plain keyword search.' => __('Reproduce a Dynamic Category Filter search instead of a plain keyword search.', 'bit-pi'),
+
+    'Dynamic Category Filter' => __('Dynamic Category Filter', 'bit-pi'),
+
+    'Page number of results to return.' => __('Page number of results to return.', 'bit-pi'),
+
+    'Filter reviews by the member who received them.' => __('Filter reviews by the member who received them.', 'bit-pi'),
+
+    'Lead ID to update.' => __('Lead ID to update.', 'bit-pi'),
+
+    'Member ID (user_id) of the record to update.' => __('Member ID (user_id) of the record to update.', 'bit-pi'),
+
+    'Additional BD member fields to update (custom fields, address, etc).' => __('Additional BD member fields to update (custom fields, address, etc).', 'bit-pi'),
+
+    'Review ID to update.' => __('Review ID to update.', 'bit-pi'),
+
     'Create Activity Post' => __('Create Activity Post', 'bit-pi'),
 
     'Create Group Post' => __('Create Group Post', 'bit-pi'),
@@ -5712,8 +6066,6 @@ return [
 
     'Enter an optional invitation message.' => __('Enter an optional invitation message.', 'bit-pi'),
 
-    'Message' => __('Message', 'bit-pi'),
-
     'Filter blogs by user ID.' => __('Filter blogs by user ID.', 'bit-pi'),
 
     'Filter groups by user ID.' => __('Filter groups by user ID.', 'bit-pi'),
@@ -6073,8 +6425,6 @@ return [
     'Username' => __('Username', 'bit-pi'),
 
     'Optional password. Minimum 8 characters if provided. Leave empty to auto-generate.' => __('Optional password. Minimum 8 characters if provided. Leave empty to auto-generate.', 'bit-pi'),
-
-    'Password' => __('Password', 'bit-pi'),
 
     'For custom mapping - use the value of course ID.' => __('For custom mapping - use the value of course ID.', 'bit-pi'),
 
@@ -6796,6 +7146,240 @@ return [
 
     'Forms New Record' => __('Forms New Record', 'bit-pi'),
 
+    'Templates' => __('Templates', 'bit-pi'),
+
+    'Create Template' => __('Create Template', 'bit-pi'),
+
+    'Creates an ElementsKit header, footer, or section template.' => __('Creates an ElementsKit header, footer, or section template.', 'bit-pi'),
+
+    'Update Template' => __('Update Template', 'bit-pi'),
+
+    'Updates an ElementsKit template and its display conditions.' => __('Updates an ElementsKit template and its display conditions.', 'bit-pi'),
+
+    'Update Template Activation' => __('Update Template Activation', 'bit-pi'),
+
+    'Activates or deactivates an ElementsKit header/footer template.' => __('Activates or deactivates an ElementsKit header/footer template.', 'bit-pi'),
+
+    'Get Template' => __('Get Template', 'bit-pi'),
+
+    'Fetches a single ElementsKit template by ID.' => __('Fetches a single ElementsKit template by ID.', 'bit-pi'),
+
+    'Get All Templates' => __('Get All Templates', 'bit-pi'),
+
+    'Fetches every ElementsKit header/footer template.' => __('Fetches every ElementsKit header/footer template.', 'bit-pi'),
+
+    'Delete Template' => __('Delete Template', 'bit-pi'),
+
+    'Trashes or permanently deletes an ElementsKit template.' => __('Trashes or permanently deletes an ElementsKit template.', 'bit-pi'),
+
+    'Widgets' => __('Widgets', 'bit-pi'),
+
+    'Get Widget' => __('Get Widget', 'bit-pi'),
+
+    'Fetches a single ElementsKit widget by ID.' => __('Fetches a single ElementsKit widget by ID.', 'bit-pi'),
+
+    'Get All Widgets' => __('Get All Widgets', 'bit-pi'),
+
+    'Fetches every ElementsKit Widget Builder widget.' => __('Fetches every ElementsKit Widget Builder widget.', 'bit-pi'),
+
+    'Delete Widget' => __('Delete Widget', 'bit-pi'),
+
+    'Trashes or permanently deletes an ElementsKit widget.' => __('Trashes or permanently deletes an ElementsKit widget.', 'bit-pi'),
+
+    'Dynamic Content' => __('Dynamic Content', 'bit-pi'),
+
+    'Create Dynamic Content' => __('Create Dynamic Content', 'bit-pi'),
+
+    'Creates an ElementsKit dynamic content item.' => __('Creates an ElementsKit dynamic content item.', 'bit-pi'),
+
+    'Update Dynamic Content' => __('Update Dynamic Content', 'bit-pi'),
+
+    'Updates an ElementsKit dynamic content item.' => __('Updates an ElementsKit dynamic content item.', 'bit-pi'),
+
+    'Get Dynamic Content' => __('Get Dynamic Content', 'bit-pi'),
+
+    'Fetches a single ElementsKit dynamic content item by ID.' => __('Fetches a single ElementsKit dynamic content item by ID.', 'bit-pi'),
+
+    'Get All Dynamic Content' => __('Get All Dynamic Content', 'bit-pi'),
+
+    'Fetches every ElementsKit dynamic content item.' => __('Fetches every ElementsKit dynamic content item.', 'bit-pi'),
+
+    'Delete Dynamic Content' => __('Delete Dynamic Content', 'bit-pi'),
+
+    'Trashes or permanently deletes an ElementsKit dynamic content item.' => __('Trashes or permanently deletes an ElementsKit dynamic content item.', 'bit-pi'),
+
+    'Template Created' => __('Template Created', 'bit-pi'),
+
+    'Triggers when an ElementsKit template is created.' => __('Triggers when an ElementsKit template is created.', 'bit-pi'),
+
+    'Template Updated' => __('Template Updated', 'bit-pi'),
+
+    'Triggers when an ElementsKit template is updated.' => __('Triggers when an ElementsKit template is updated.', 'bit-pi'),
+
+    'Template Status Changed' => __('Template Status Changed', 'bit-pi'),
+
+    'Triggers when an ElementsKit template changes post status.' => __('Triggers when an ElementsKit template changes post status.', 'bit-pi'),
+
+    'Template Trashed' => __('Template Trashed', 'bit-pi'),
+
+    'Triggers when an ElementsKit template is moved to the trash.' => __('Triggers when an ElementsKit template is moved to the trash.', 'bit-pi'),
+
+    'Template Deleted' => __('Template Deleted', 'bit-pi'),
+
+    'Triggers when an ElementsKit template is permanently deleted.' => __('Triggers when an ElementsKit template is permanently deleted.', 'bit-pi'),
+
+    'Widget Created' => __('Widget Created', 'bit-pi'),
+
+    'Triggers when an ElementsKit widget is created.' => __('Triggers when an ElementsKit widget is created.', 'bit-pi'),
+
+    'Widget Updated' => __('Widget Updated', 'bit-pi'),
+
+    'Triggers when an ElementsKit widget is updated.' => __('Triggers when an ElementsKit widget is updated.', 'bit-pi'),
+
+    'Widget Trashed' => __('Widget Trashed', 'bit-pi'),
+
+    'Triggers when an ElementsKit widget is moved to the trash.' => __('Triggers when an ElementsKit widget is moved to the trash.', 'bit-pi'),
+
+    'Widget Deleted' => __('Widget Deleted', 'bit-pi'),
+
+    'Triggers when an ElementsKit widget is permanently deleted.' => __('Triggers when an ElementsKit widget is permanently deleted.', 'bit-pi'),
+
+    'Dynamic Content Created' => __('Dynamic Content Created', 'bit-pi'),
+
+    'Triggers when an ElementsKit dynamic content item is created.' => __('Triggers when an ElementsKit dynamic content item is created.', 'bit-pi'),
+
+    'Dynamic Content Updated' => __('Dynamic Content Updated', 'bit-pi'),
+
+    'Triggers when an ElementsKit dynamic content item is updated.' => __('Triggers when an ElementsKit dynamic content item is updated.', 'bit-pi'),
+
+    'Dynamic Content Trashed' => __('Dynamic Content Trashed', 'bit-pi'),
+
+    'Triggers when an ElementsKit dynamic content item is trashed.' => __('Triggers when an ElementsKit dynamic content item is trashed.', 'bit-pi'),
+
+    'Dynamic Content Deleted' => __('Dynamic Content Deleted', 'bit-pi'),
+
+    'Triggers when an ElementsKit dynamic content item is deleted.' => __('Triggers when an ElementsKit dynamic content item is deleted.', 'bit-pi'),
+
+    'The title of the new dynamic content item.' => __('The title of the new dynamic content item.', 'bit-pi'),
+
+    'The body of the dynamic content item.' => __('The body of the dynamic content item.', 'bit-pi'),
+
+    'Optional parent item. ElementsKit dynamic content is hierarchical.' => __('Optional parent item. ElementsKit dynamic content is hierarchical.', 'bit-pi'),
+
+    'Parent Item' => __('Parent Item', 'bit-pi'),
+
+    'Select a parent item' => __('Select a parent item', 'bit-pi'),
+
+    'The post status of the dynamic content item.' => __('The post status of the dynamic content item.', 'bit-pi'),
+
+    'The title of the new ElementsKit template.' => __('The title of the new ElementsKit template.', 'bit-pi'),
+
+    'Header and footer templates use display conditions. Section templates are inserted manually.' => __('Header and footer templates use display conditions. Section templates are inserted manually.', 'bit-pi'),
+
+    'Template Type' => __('Template Type', 'bit-pi'),
+
+    'Footer' => __('Footer', 'bit-pi'),
+
+    'Section' => __('Section', 'bit-pi'),
+
+    'Select template type' => __('Select template type', 'bit-pi'),
+
+    'Activate the template right after it is created.' => __('Activate the template right after it is created.', 'bit-pi'),
+
+    'Activation' => __('Activation', 'bit-pi'),
+
+    'Select activation' => __('Select activation', 'bit-pi'),
+
+    'Where the header/footer is displayed. Ignored for section templates.' => __('Where the header/footer is displayed. Ignored for section templates.', 'bit-pi'),
+
+    'Display Condition' => __('Display Condition', 'bit-pi'),
+
+    'Entire Site' => __('Entire Site', 'bit-pi'),
+
+    'Singular' => __('Singular', 'bit-pi'),
+
+    'Select display condition' => __('Select display condition', 'bit-pi'),
+
+    'Narrows a singular display condition. Only used when the condition is Singular.' => __('Narrows a singular display condition. Only used when the condition is Singular.', 'bit-pi'),
+
+    'Singular Condition' => __('Singular Condition', 'bit-pi'),
+
+    'All Singulars' => __('All Singulars', 'bit-pi'),
+
+    'Front Page' => __('Front Page', 'bit-pi'),
+
+    'All Posts' => __('All Posts', 'bit-pi'),
+
+    'All Pages' => __('All Pages', 'bit-pi'),
+
+    'Selective Singular' => __('Selective Singular', 'bit-pi'),
+
+    '404 Page' => __('404 Page', 'bit-pi'),
+
+    'Select singular condition' => __('Select singular condition', 'bit-pi'),
+
+    'Comma separated post IDs for a selective singular condition.' => __('Comma separated post IDs for a selective singular condition.', 'bit-pi'),
+
+    'Singular Post IDs' => __('Singular Post IDs', 'bit-pi'),
+
+    'The post status of the template.' => __('The post status of the template.', 'bit-pi'),
+
+    'The dynamic content item to delete.' => __('The dynamic content item to delete.', 'bit-pi'),
+
+    'Dynamic Content Item' => __('Dynamic Content Item', 'bit-pi'),
+
+    'Select a dynamic content item' => __('Select a dynamic content item', 'bit-pi'),
+
+    'Permanently delete the item instead of moving it to the trash.' => __('Permanently delete the item instead of moving it to the trash.', 'bit-pi'),
+
+    'The ElementsKit template to delete.' => __('The ElementsKit template to delete.', 'bit-pi'),
+
+    'Template' => __('Template', 'bit-pi'),
+
+    'Select a template' => __('Select a template', 'bit-pi'),
+
+    'Permanently delete the template instead of moving it to the trash.' => __('Permanently delete the template instead of moving it to the trash.', 'bit-pi'),
+
+    'The ElementsKit widget to delete.' => __('The ElementsKit widget to delete.', 'bit-pi'),
+
+    'Widget' => __('Widget', 'bit-pi'),
+
+    'Select a widget' => __('Select a widget', 'bit-pi'),
+
+    'Permanently delete the widget instead of moving it to the trash.' => __('Permanently delete the widget instead of moving it to the trash.', 'bit-pi'),
+
+    'The dynamic content item to fetch.' => __('The dynamic content item to fetch.', 'bit-pi'),
+
+    'The ElementsKit template to fetch.' => __('The ElementsKit template to fetch.', 'bit-pi'),
+
+    'The ElementsKit widget to fetch.' => __('The ElementsKit widget to fetch.', 'bit-pi'),
+
+    'Failed to fetch templates.' => __('Failed to fetch templates.', 'bit-pi'),
+
+    'Failed to fetch widgets.' => __('Failed to fetch widgets.', 'bit-pi'),
+
+    'Failed to fetch dynamic content items.' => __('Failed to fetch dynamic content items.', 'bit-pi'),
+
+    'The dynamic content item to update.' => __('The dynamic content item to update.', 'bit-pi'),
+
+    'The new title. Leave empty to keep the current title.' => __('The new title. Leave empty to keep the current title.', 'bit-pi'),
+
+    'The new body of the dynamic content item.' => __('The new body of the dynamic content item.', 'bit-pi'),
+
+    'The parent item. ElementsKit dynamic content is hierarchical.' => __('The parent item. ElementsKit dynamic content is hierarchical.', 'bit-pi'),
+
+    'The post status. Leave empty to keep the current status.' => __('The post status. Leave empty to keep the current status.', 'bit-pi'),
+
+    'The ElementsKit template to update.' => __('The ElementsKit template to update.', 'bit-pi'),
+
+    'The template type. Leave empty to keep the current type.' => __('The template type. Leave empty to keep the current type.', 'bit-pi'),
+
+    'Activate or deactivate the template. Leave empty to keep the current state.' => __('Activate or deactivate the template. Leave empty to keep the current state.', 'bit-pi'),
+
+    'The ElementsKit template to activate or deactivate.' => __('The ElementsKit template to activate or deactivate.', 'bit-pi'),
+
+    'Only an active header/footer template is rendered on the site.' => __('Only an active header/footer template is rendered on the site.', 'bit-pi'),
+
     'Some models may not be available in the free tier, may require a subscription to use.' => __('Some models may not be available in the free tier, may require a subscription to use.', 'bit-pi'),
 
     'Speech' => __('Speech', 'bit-pi'),
@@ -7148,8 +7732,6 @@ return [
 
     'Get LeadGen Form Details By Id' => __('Get LeadGen Form Details By Id', 'bit-pi'),
 
-    'List Leads' => __('List Leads', 'bit-pi'),
-
     'New Lead' => __('New Lead', 'bit-pi'),
 
     'Facebook allows only **one webhook callback URL per app**. If you create a new webhook here, it will **replace** the previously registered one. Any earlier flow using a different callback URL will stop receiving lead events.' => __('Facebook allows only **one webhook callback URL per app**. If you create a new webhook here, it will **replace** the previously registered one. Any earlier flow using a different callback URL will stop receiving lead events.', 'bit-pi'),
@@ -7177,6 +7759,110 @@ return [
     'Select Lead Form' => __('Select Lead Form', 'bit-pi'),
 
     'Subscribe to Webhook' => __('Subscribe to Webhook', 'bit-pi'),
+
+    'Create or Update Subscriber' => __('Create or Update Subscriber', 'bit-pi'),
+
+    'Get Subscriber' => __('Get Subscriber', 'bit-pi'),
+
+    'List Subscribers' => __('List Subscribers', 'bit-pi'),
+
+    'Unsubscribe Subscriber' => __('Unsubscribe Subscriber', 'bit-pi'),
+
+    'Add Subscriber to Segments' => __('Add Subscriber to Segments', 'bit-pi'),
+
+    'Remove Subscriber from Segments' => __('Remove Subscriber from Segments', 'bit-pi'),
+
+    'Create Segment' => __('Create Segment', 'bit-pi'),
+
+    'List Segments' => __('List Segments', 'bit-pi'),
+
+    'Get Segment' => __('Get Segment', 'bit-pi'),
+
+    'List Segment Colors' => __('List Segment Colors', 'bit-pi'),
+
+    'Create Custom Field' => __('Create Custom Field', 'bit-pi'),
+
+    'List Custom Fields' => __('List Custom Fields', 'bit-pi'),
+
+    'List Workflows' => __('List Workflows', 'bit-pi'),
+
+    'Add Subscriber to Workflow' => __('Add Subscriber to Workflow', 'bit-pi'),
+
+    'Remove Subscriber from Workflow' => __('Remove Subscriber from Workflow', 'bit-pi'),
+
+    'New Subscriber' => __('New Subscriber', 'bit-pi'),
+
+    'Subscriber Added to Segment' => __('Subscriber Added to Segment', 'bit-pi'),
+
+    'Subscriber Unsubscribed' => __('Subscriber Unsubscribed', 'bit-pi'),
+
+    'Select a subscriber, or map an id/email from a previous step.' => __('Select a subscriber, or map an id/email from a previous step.', 'bit-pi'),
+
+    'Subscriber' => __('Subscriber', 'bit-pi'),
+
+    'Select a subscriber' => __('Select a subscriber', 'bit-pi'),
+
+    'The segments to add or remove for the subscriber.' => __('The segments to add or remove for the subscriber.', 'bit-pi'),
+
+    'Segments' => __('Segments', 'bit-pi'),
+
+    'Select segments' => __('Select segments', 'bit-pi'),
+
+    'The workflow to enroll or remove the subscriber from.' => __('The workflow to enroll or remove the subscriber from.', 'bit-pi'),
+
+    'Workflow' => __('Workflow', 'bit-pi'),
+
+    'Select a workflow' => __('Select a workflow', 'bit-pi'),
+
+    'The display label of the new custom field.' => __('The display label of the new custom field.', 'bit-pi'),
+
+    'Field Label' => __('Field Label', 'bit-pi'),
+
+    'Flodesk identifies the subscriber by this email.' => __('Flodesk identifies the subscriber by this email.', 'bit-pi'),
+
+    'Optionally add the subscriber to these segments.' => __('Optionally add the subscriber to these segments.', 'bit-pi'),
+
+    'Send a confirmation email before activating the subscriber.' => __('Send a confirmation email before activating the subscriber.', 'bit-pi'),
+
+    'Double Opt-in' => __('Double Opt-in', 'bit-pi'),
+
+    'Name of the new segment.' => __('Name of the new segment.', 'bit-pi'),
+
+    'Segment Name' => __('Segment Name', 'bit-pi'),
+
+    'Flodesk requires a color for every segment.' => __('Flodesk requires a color for every segment.', 'bit-pi'),
+
+    'Color' => __('Color', 'bit-pi'),
+
+    'Select a color' => __('Select a color', 'bit-pi'),
+
+    'The segment to retrieve.' => __('The segment to retrieve.', 'bit-pi'),
+
+    'Select Segment' => __('Select Segment', 'bit-pi'),
+
+    'Select a Segment' => __('Select a Segment', 'bit-pi'),
+
+    'Enter your Flodesk API Key. You can find it in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://app.flodesk.com/account/integrations">Flodesk → Account → Integrations</a>. (API access requires a paid Flodesk plan.)' => __('Enter your Flodesk API Key. You can find it in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://app.flodesk.com/account/integrations">Flodesk → Account → Integrations</a>. (API access requires a paid Flodesk plan.)', 'bit-pi'),
+
+    'Webhook registered on Flodesk successfully.' => __('Webhook registered on Flodesk successfully.', 'bit-pi'),
+
+    'Failed to register the webhook on Flodesk. Please try again.' => __('Failed to register the webhook on Flodesk. Please try again.', 'bit-pi'),
+
+    'Results per page (max 100).' => __('Results per page (max 100).', 'bit-pi'),
+
+    'Per Page' => __('Per Page', 'bit-pi'),
+
+    'Unconfirmed' => __('Unconfirmed', 'bit-pi'),
+
+    'Complained' => __('Complained', 'bit-pi'),
+
+    'Cleaned' => __('Cleaned', 'bit-pi'),
+
+    'Segment' => __('Segment', 'bit-pi'),
+
+    'Select a segment' => __('Select a segment', 'bit-pi'),
+
+    'Paused' => __('Paused', 'bit-pi'),
 
     'Create Account Type' => __('Create Account Type', 'bit-pi'),
 
@@ -7723,8 +8409,6 @@ return [
     'Switch ON to add as viewer only' => __('Switch ON to add as viewer only', 'bit-pi'),
 
     'Is Viewer Only' => __('Is Viewer Only', 'bit-pi'),
-
-    'Per Page' => __('Per Page', 'bit-pi'),
 
     'Enter the number of items per page (default is 10)' => __('Enter the number of items per page (default is 10)', 'bit-pi'),
 
@@ -8452,6 +9136,8 @@ return [
 
     'Course Deleted' => __('Course Deleted', 'bit-pi'),
 
+    'Lesson Created' => __('Lesson Created', 'bit-pi'),
+
     'Lesson Updated' => __('Lesson Updated', 'bit-pi'),
 
     'User Leveled Up' => __('User Leveled Up', 'bit-pi'),
@@ -8988,17 +9674,9 @@ return [
 
     'Quizzes' => __('Quizzes', 'bit-pi'),
 
-    'Get Lead' => __('Get Lead', 'bit-pi'),
-
     'Get Leads' => __('Get Leads', 'bit-pi'),
 
-    'Get Widget' => __('Get Widget', 'bit-pi'),
-
     'Lead Created' => __('Lead Created', 'bit-pi'),
-
-    'Widget' => __('Widget', 'bit-pi'),
-
-    'Select a widget' => __('Select a widget', 'bit-pi'),
 
     'Select the FormyChat widget to create the lead for.' => __('Select the FormyChat widget to create the lead for.', 'bit-pi'),
 
@@ -9016,8 +9694,6 @@ return [
 
     'Enter the ID of the lead to retrieve.' => __('Enter the ID of the lead to retrieve.', 'bit-pi'),
 
-    'Lead ID' => __('Lead ID', 'bit-pi'),
-
     'Enter Lead ID' => __('Enter Lead ID', 'bit-pi'),
 
     'Select the FormyChat widget to retrieve leads from.' => __('Select the FormyChat widget to retrieve leads from.', 'bit-pi'),
@@ -9025,10 +9701,6 @@ return [
     'Sort leads by ascending or descending order.' => __('Sort leads by ascending or descending order.', 'bit-pi'),
 
     'Order' => __('Order', 'bit-pi'),
-
-    'Descending' => __('Descending', 'bit-pi'),
-
-    'Ascending' => __('Ascending', 'bit-pi'),
 
     'Number of leads to retrieve per page (default: 20).' => __('Number of leads to retrieve per page (default: 20).', 'bit-pi'),
 
@@ -10610,8 +11282,6 @@ return [
 
     'Bad Timing' => __('Bad Timing', 'bit-pi'),
 
-    'Subscriber' => __('Subscriber', 'bit-pi'),
-
     'Marketing Qualified Lead' => __('Marketing Qualified Lead', 'bit-pi'),
 
     'Sales Qualified Lead' => __('Sales Qualified Lead', 'bit-pi'),
@@ -11428,8 +12098,6 @@ return [
 
     'Optional unique client reference for this SMS (max 40 chars).' => __('Optional unique client reference for this SMS (max 40 chars).', 'bit-pi'),
 
-    'Client ID' => __('Client ID', 'bit-pi'),
-
     'The unique user ID you assigned to the contact when it was created.' => __('The unique user ID you assigned to the contact when it was created.', 'bit-pi'),
 
     'The project the audience belongs to. Find the ID in your Instasent project dashboard under Settings → General → Unique identifier.' => __('The project the audience belongs to. Find the ID in your Instasent project dashboard under Settings → General → Unique identifier.', 'bit-pi'),
@@ -11626,8 +12294,6 @@ return [
 
     'Enter the value to match. Leave empty for operators like "Is Empty".' => __('Enter the value to match. Leave empty for operators like "Is Empty".', 'bit-pi'),
 
-    'Operator' => __('Operator', 'bit-pi'),
-
     'Equals' => __('Equals', 'bit-pi'),
 
     'Not Equals' => __('Not Equals', 'bit-pi'),
@@ -11798,10 +12464,6 @@ return [
 
     'Total' => __('Total', 'bit-pi'),
 
-    'Template' => __('Template', 'bit-pi'),
-
-    'Accepted' => __('Accepted', 'bit-pi'),
-
     'Accepted Date' => __('Accepted Date', 'bit-pi'),
 
     'Accepted Signed' => __('Accepted Signed', 'bit-pi'),
@@ -11819,8 +12481,6 @@ return [
     'You can get your API key from <a class="text-blue-600 underline" href="https://www.jotform.com/myaccount/api" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API key from <a class="text-blue-600 underline" href="https://www.jotform.com/myaccount/api" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
 
     'Form' => __('Form', 'bit-pi'),
-
-    'Address' => __('Address', 'bit-pi'),
 
     'Date Picker' => __('Date Picker', 'bit-pi'),
 
@@ -12138,6 +12798,8 @@ return [
     'Flat amount' => __('Flat amount', 'bit-pi'),
 
     'Not paid' => __('Not paid', 'bit-pi'),
+
+    'Disable' => __('Disable', 'bit-pi'),
 
     'No show' => __('No show', 'bit-pi'),
 
@@ -12517,8 +13179,6 @@ return [
 
     'Select the status you want to assign to your member.' => __('Select the status you want to assign to your member.', 'bit-pi'),
 
-    'Cleaned' => __('Cleaned', 'bit-pi'),
-
     'Enable the switch to assign VIP status to the member.' => __('Enable the switch to assign VIP status to the member.', 'bit-pi'),
 
     'VIP' => __('VIP', 'bit-pi'),
@@ -12544,8 +13204,6 @@ return [
     'Add Address Field' => __('Add Address Field', 'bit-pi'),
 
     'Add Double Opt-in' => __('Add Double Opt-in', 'bit-pi'),
-
-    'Double Opt-in' => __('Double Opt-in', 'bit-pi'),
 
     'Update Responses if the Subscriber is exist?' => __('Update Responses if the Subscriber is exist?', 'bit-pi'),
 
@@ -12608,8 +13266,6 @@ return [
     'Subscription Type' => __('Subscription Type', 'bit-pi'),
 
     'Spam Complaints' => __('Spam Complaints', 'bit-pi'),
-
-    'Unconfirmed' => __('Unconfirmed', 'bit-pi'),
 
     'Creates a new contact or updates if email exists.' => __('Creates a new contact or updates if email exists.', 'bit-pi'),
 
@@ -12826,8 +13482,6 @@ return [
     'subscribed' => __('subscribed', 'bit-pi'),
 
     'unsubscribed' => __('unsubscribed', 'bit-pi'),
-
-    'Complained' => __('Complained', 'bit-pi'),
 
     'pending' => __('pending', 'bit-pi'),
 
@@ -13987,6 +14641,8 @@ return [
 
     'Create a Chat Completion' => __('Create a Chat Completion', 'bit-pi'),
 
+    'Analyze Image' => __('Analyze Image', 'bit-pi'),
+
     'Transform Text to Structured Data' => __('Transform Text to Structured Data', 'bit-pi'),
 
     'List Batches' => __('List Batches', 'bit-pi'),
@@ -13998,6 +14654,24 @@ return [
     'Generate An Image' => __('Generate An Image', 'bit-pi'),
 
     'Create A Moderation' => __('Create A Moderation', 'bit-pi'),
+
+    'Text Prompt' => __('Text Prompt', 'bit-pi'),
+
+    'Add Image' => __('Add Image', 'bit-pi'),
+
+    'Enter a publicly accessible image URL or a Base64 data URL.' => __('Enter a publicly accessible image URL or a Base64 data URL.', 'bit-pi'),
+
+    'Choose how much image detail the model should process.' => __('Choose how much image detail the model should process.', 'bit-pi'),
+
+    'Detail' => __('Detail', 'bit-pi'),
+
+    'Auto' => __('Auto', 'bit-pi'),
+
+    'Images' => __('Images', 'bit-pi'),
+
+    'Maximum number of tokens in the generated description. All images are analyzed in a single request, so this limit applies to the combined response, not to each image. Leave empty to use the model default.' => __('Maximum number of tokens in the generated description. All images are analyzed in a single request, so this limit applies to the combined response, not to each image. Leave empty to use the model default.', 'bit-pi'),
+
+    'Length of Description (Max Tokens)' => __('Length of Description (Max Tokens)', 'bit-pi'),
 
     'Select Batch For Cancel' => __('Select Batch For Cancel', 'bit-pi'),
 
@@ -14284,6 +14958,27 @@ return [
     'Submission ID' => __('Submission ID', 'bit-pi'),
 
     'Select the new payment status.' => __('Select the new payment status.', 'bit-pi'),
+
+    '**Setup**: In PaymentForm.io, go to **Webhooks** → **+ Add Webhook**. Choose a scope, paste this webhook URL into **Destination URL**, select only the event matching this trigger, then click **Create Webhook**.' => __('**Setup**: In PaymentForm.io, go to **Webhooks** → **+ Add Webhook**. Choose a scope, paste this webhook URL into **Destination URL**, select only the event matching this trigger, then click **Create Webhook**.', 'bit-pi'),
+
+    /* translators: %s: placeholder value */
+    'See the [PaymentForm.io webhook guide](%s).' => __('See the [PaymentForm.io webhook guide](%s).', 'bit-pi'),
+
+    'Submissions' => __('Submissions', 'bit-pi'),
+
+    'Submission Created' => __('Submission Created', 'bit-pi'),
+
+    'Submission Failed' => __('Submission Failed', 'bit-pi'),
+
+    'Payment Succeeded' => __('Payment Succeeded', 'bit-pi'),
+
+    'Payment Abandoned' => __('Payment Abandoned', 'bit-pi'),
+
+    'Subscriptions' => __('Subscriptions', 'bit-pi'),
+
+    'Subscription Updated' => __('Subscription Updated', 'bit-pi'),
+
+    'Subscription Cancelled' => __('Subscription Cancelled', 'bit-pi'),
 
     'Add Post to Activity Stream' => __('Add Post to Activity Stream', 'bit-pi'),
 
@@ -14717,8 +15412,6 @@ return [
 
     'Enter the text to search for.' => __('Enter the text to search for.', 'bit-pi'),
 
-    'Search Term' => __('Search Term', 'bit-pi'),
-
     'Select or enter the activity ID to update.' => __('Select or enter the activity ID to update.', 'bit-pi'),
 
     'Select the deal to update.' => __('Select the deal to update.', 'bit-pi'),
@@ -14755,6 +15448,306 @@ return [
 
     'Toggle if this product is linkable to deals.' => __('Toggle if this product is linkable to deals.', 'bit-pi'),
 
+    'Adjust Points' => __('Adjust Points', 'bit-pi'),
+
+    'Credits or debits a member manually. Use a negative value to debit.' => __('Credits or debits a member manually. Use a negative value to debit.', 'bit-pi'),
+
+    'Get Balance' => __('Get Balance', 'bit-pi'),
+
+    'Fetches a member points snapshot: available, pending, spendable and lifetime.' => __('Fetches a member points snapshot: available, pending, spendable and lifetime.', 'bit-pi'),
+
+    'Get Points History' => __('Get Points History', 'bit-pi'),
+
+    'Fetches one member ledger history, newest first.' => __('Fetches one member ledger history, newest first.', 'bit-pi'),
+
+    'Get Expiring Points' => __('Get Expiring Points', 'bit-pi'),
+
+    'Fetches the points a member is about to lose inside the expiry window.' => __('Fetches the points a member is about to lose inside the expiry window.', 'bit-pi'),
+
+    'Get Account Summary' => __('Get Account Summary', 'bit-pi'),
+
+    'Fetches the account headline figures for one member.' => __('Fetches the account headline figures for one member.', 'bit-pi'),
+
+    'Get Transactions' => __('Get Transactions', 'bit-pi'),
+
+    'Fetches the site wide ledger feed with filters.' => __('Fetches the site wide ledger feed with filters.', 'bit-pi'),
+
+    'Award Channel Points' => __('Award Channel Points', 'bit-pi'),
+
+    'Fires an earn channel for a member outside its normal hook.' => __('Fires an earn channel for a member outside its normal hook.', 'bit-pi'),
+
+    'Get Channels' => __('Get Channels', 'bit-pi'),
+
+    'Fetches the configured earn channels.' => __('Fetches the configured earn channels.', 'bit-pi'),
+
+    'Get Earn Opportunities' => __('Get Earn Opportunities', 'bit-pi'),
+
+    'Fetches the earn opportunities a member can still act on.' => __('Fetches the earn opportunities a member can still act on.', 'bit-pi'),
+
+    'Cancel Redemption' => __('Cancel Redemption', 'bit-pi'),
+
+    'Cancels an unused redemption and returns the held points.' => __('Cancels an unused redemption and returns the held points.', 'bit-pi'),
+
+    'Get Rewards' => __('Get Rewards', 'bit-pi'),
+
+    'Fetches the rewards a member can see, with eligibility and affordability.' => __('Fetches the rewards a member can see, with eligibility and affordability.', 'bit-pi'),
+
+    'Get Redemptions' => __('Get Redemptions', 'bit-pi'),
+
+    'Fetches one member redemption history with its coupon detail.' => __('Fetches one member redemption history with its coupon detail.', 'bit-pi'),
+
+    'Get Member Tier' => __('Get Member Tier', 'bit-pi'),
+
+    'Fetches a member current tier, the ladder and the distance to the next level.' => __('Fetches a member current tier, the ladder and the distance to the next level.', 'bit-pi'),
+
+    'Recompute Member Tier' => __('Recompute Member Tier', 'bit-pi'),
+
+    'Re-resolves a member tier from their rolling window qualifying points.' => __('Re-resolves a member tier from their rolling window qualifying points.', 'bit-pi'),
+
+    'Get Tiers' => __('Get Tiers', 'bit-pi'),
+
+    'Fetches every configured tier with its live member count.' => __('Fetches every configured tier with its live member count.', 'bit-pi'),
+
+    'Send Referral Invite' => __('Send Referral Invite', 'bit-pi'),
+
+    'Sends a referral invite email on a referrer behalf.' => __('Sends a referral invite email on a referrer behalf.', 'bit-pi'),
+
+    'Cancel Referral Invite' => __('Cancel Referral Invite', 'bit-pi'),
+
+    'Cancels one pending referral invite.' => __('Cancels one pending referral invite.', 'bit-pi'),
+
+    'Complete Referral Registration' => __('Complete Referral Registration', 'bit-pi'),
+
+    'Marks a referee registration as the referral completion.' => __('Marks a referee registration as the referral completion.', 'bit-pi'),
+
+    'Complete Referral Purchase' => __('Complete Referral Purchase', 'bit-pi'),
+
+    'Marks a referee qualifying purchase as the referral completion.' => __('Marks a referee qualifying purchase as the referral completion.', 'bit-pi'),
+
+    'Get Referral Stats' => __('Get Referral Stats', 'bit-pi'),
+
+    'Fetches a referrer share link, code and headline referral stats.' => __('Fetches a referrer share link, code and headline referral stats.', 'bit-pi'),
+
+    'Get Referral History' => __('Get Referral History', 'bit-pi'),
+
+    'Fetches a referrer referral rows, newest first.' => __('Fetches a referrer referral rows, newest first.', 'bit-pi'),
+
+    'Get Members' => __('Get Members', 'bit-pi'),
+
+    'Fetches loyalty customers with their balance and tier.' => __('Fetches loyalty customers with their balance and tier.', 'bit-pi'),
+
+    'Fetches one customer loyalty profile.' => __('Fetches one customer loyalty profile.', 'bit-pi'),
+
+    'Points Earned' => __('Points Earned', 'bit-pi'),
+
+    'Triggers when points land on a member ledger, whatever caused them.' => __('Triggers when points land on a member ledger, whatever caused them.', 'bit-pi'),
+
+    'Points Adjusted' => __('Points Adjusted', 'bit-pi'),
+
+    'Triggers when a manual adjustment credits or debits a member.' => __('Triggers when a manual adjustment credits or debits a member.', 'bit-pi'),
+
+    'Points Expired' => __('Points Expired', 'bit-pi'),
+
+    'Triggers once per expiry sweep that expired at least one lot.' => __('Triggers once per expiry sweep that expired at least one lot.', 'bit-pi'),
+
+    'Channel Awarded' => __('Channel Awarded', 'bit-pi'),
+
+    'Triggers when an earn channel award commits, with its point breakdown.' => __('Triggers when an earn channel award commits, with its point breakdown.', 'bit-pi'),
+
+    'The member whose balance is adjusted.' => __('The member whose balance is adjusted.', 'bit-pi'),
+
+    'Select a member' => __('Select a member', 'bit-pi'),
+
+    'Points to apply. A negative value debits the member.' => __('Points to apply. A negative value debits the member.', 'bit-pi'),
+
+    'Shown to the member as the ledger row label.' => __('Shown to the member as the ledger row label.', 'bit-pi'),
+
+    'Adjustment source recorded on the ledger row. Defaults to admin.' => __('Adjustment source recorded on the ledger row. Defaults to admin.', 'bit-pi'),
+
+    'Replaying the same key for the same member never credits twice.' => __('Replaying the same key for the same member never credits twice.', 'bit-pi'),
+
+    'Idempotency Key' => __('Idempotency Key', 'bit-pi'),
+
+    'The earn channel to fire.' => __('The earn channel to fire.', 'bit-pi'),
+
+    'Channel' => __('Channel', 'bit-pi'),
+
+    'Select a channel' => __('Select a channel', 'bit-pi'),
+
+    'The member to award.' => __('The member to award.', 'bit-pi'),
+
+    'Idempotency key for this award. Replaying it never awards twice.' => __('Idempotency key for this award. Replaying it never awards twice.', 'bit-pi'),
+
+    'Dedupe Key' => __('Dedupe Key', 'bit-pi'),
+
+    'Monetary amount fed into the calculation strategy. Ignored by flat strategies.' => __('Monetary amount fed into the calculation strategy. Ignored by flat strategies.', 'bit-pi'),
+
+    'The member who owns the invite.' => __('The member who owns the invite.', 'bit-pi'),
+
+    'Referrer' => __('Referrer', 'bit-pi'),
+
+    'Select a referrer' => __('Select a referrer', 'bit-pi'),
+
+    'The pending invite to cancel.' => __('The pending invite to cancel.', 'bit-pi'),
+
+    'Referral' => __('Referral', 'bit-pi'),
+
+    'Select a referral' => __('Select a referral', 'bit-pi'),
+
+    'The WordPress user this Pointics member belongs to.' => __('The WordPress user this Pointics member belongs to.', 'bit-pi'),
+
+    'The member who owns the redemption.' => __('The member who owns the redemption.', 'bit-pi'),
+
+    'Redemption id, as returned by Redeem Reward or Get Redemptions.' => __('Redemption id, as returned by Redeem Reward or Get Redemptions.', 'bit-pi'),
+
+    'Redemption ID' => __('Redemption ID', 'bit-pi'),
+
+    'The invited member whose purchase completes the referral.' => __('The invited member whose purchase completes the referral.', 'bit-pi'),
+
+    'Referee' => __('Referee', 'bit-pi'),
+
+    'Select a referee' => __('Select a referee', 'bit-pi'),
+
+    'Order total. It must clear the referral minimum order value to qualify.' => __('Order total. It must clear the referral minimum order value to qualify.', 'bit-pi'),
+
+    'Order Amount' => __('Order Amount', 'bit-pi'),
+
+    'Attribute to this referrer. Leave empty to let Pointics resolve it.' => __('Attribute to this referrer. Leave empty to let Pointics resolve it.', 'bit-pi'),
+
+    'The invited member whose registration completes the referral.' => __('The invited member whose registration completes the referral.', 'bit-pi'),
+
+    'Filter by active state. Leave empty for every channel.' => __('Filter by active state. Leave empty for every channel.', 'bit-pi'),
+
+    'Active only' => __('Active only', 'bit-pi'),
+
+    'Inactive only' => __('Inactive only', 'bit-pi'),
+
+    'Select a state' => __('Select a state', 'bit-pi'),
+
+    'Exact logical trigger id, for example woocommerce.order_paid.' => __('Exact logical trigger id, for example woocommerce.order_paid.', 'bit-pi'),
+
+    'Integration slug, for example woocommerce or wordpress.' => __('Integration slug, for example woocommerce or wordpress.', 'bit-pi'),
+
+    'Integration' => __('Integration', 'bit-pi'),
+
+    'Trigger group slug, for example points-earning or social.' => __('Trigger group slug, for example points-earning or social.', 'bit-pi'),
+
+    '1 indexed page number. Defaults to 1.' => __('1 indexed page number. Defaults to 1.', 'bit-pi'),
+
+    'Rows per page. Defaults to 20.' => __('Rows per page. Defaults to 20.', 'bit-pi'),
+
+    'Matched across display name, email and username.' => __('Matched across display name, email and username.', 'bit-pi'),
+
+    'Restrict to members holding this tier.' => __('Restrict to members holding this tier.', 'bit-pi'),
+
+    'Tier' => __('Tier', 'bit-pi'),
+
+    'Select a tier' => __('Select a tier', 'bit-pi'),
+
+    'Comma separated WordPress roles, for example customer,subscriber.' => __('Comma separated WordPress roles, for example customer,subscriber.', 'bit-pi'),
+
+    'Roles' => __('Roles', 'bit-pi'),
+
+    'Sort column.' => __('Sort column.', 'bit-pi'),
+
+    'Order By' => __('Order By', 'bit-pi'),
+
+    'Last Activity' => __('Last Activity', 'bit-pi'),
+
+    'Registered' => __('Registered', 'bit-pi'),
+
+    'Sort direction.' => __('Sort direction.', 'bit-pi'),
+
+    'Select a direction' => __('Select a direction', 'bit-pi'),
+
+    'The member whose ledger history is read.' => __('The member whose ledger history is read.', 'bit-pi'),
+
+    'Free text matched against the ledger rows.' => __('Free text matched against the ledger rows.', 'bit-pi'),
+
+    'The member whose redemptions are read.' => __('The member whose redemptions are read.', 'bit-pi'),
+
+    'Display status to filter on.' => __('Display status to filter on.', 'bit-pi'),
+
+    'Redeemed' => __('Redeemed', 'bit-pi'),
+
+    'Matches the coupon handle or the linked reward name.' => __('Matches the coupon handle or the linked reward name.', 'bit-pi'),
+
+    'The member whose referral rows are read.' => __('The member whose referral rows are read.', 'bit-pi'),
+
+    'The member whose referral link, code and stats are read.' => __('The member whose referral link, code and stats are read.', 'bit-pi'),
+
+    'Eligibility and affordability are resolved against this member.' => __('Eligibility and affordability are resolved against this member.', 'bit-pi'),
+
+    'Free text matched against reward names and descriptions.' => __('Free text matched against reward names and descriptions.', 'bit-pi'),
+
+    'How the reward value is priced.' => __('How the reward value is priced.', 'bit-pi'),
+
+    'Redeem Type' => __('Redeem Type', 'bit-pi'),
+
+    'Fixed' => __('Fixed', 'bit-pi'),
+
+    'Ratio' => __('Ratio', 'bit-pi'),
+
+    'Select a redeem type' => __('Select a redeem type', 'bit-pi'),
+
+    'Sort key. Prefix aware sorting is handled by Pointics.' => __('Sort key. Prefix aware sorting is handled by Pointics.', 'bit-pi'),
+
+    'Sort Order' => __('Sort Order', 'bit-pi'),
+
+    'Cost Points' => __('Cost Points', 'bit-pi'),
+
+    'Select a sort key' => __('Select a sort key', 'bit-pi'),
+
+    'Filter by active state. Leave empty for every tier.' => __('Filter by active state. Leave empty for every tier.', 'bit-pi'),
+
+    'Restrict the feed to one member. Leave empty for every member.' => __('Restrict the feed to one member. Leave empty for every member.', 'bit-pi'),
+
+    'Ledger entry type.' => __('Ledger entry type.', 'bit-pi'),
+
+    'Earn' => __('Earn', 'bit-pi'),
+
+    'Redeem' => __('Redeem', 'bit-pi'),
+
+    'Adjust' => __('Adjust', 'bit-pi'),
+
+    'Expire' => __('Expire', 'bit-pi'),
+
+    'Reversal' => __('Reversal', 'bit-pi'),
+
+    'Select a type' => __('Select a type', 'bit-pi'),
+
+    'Ledger entry status.' => __('Ledger entry status.', 'bit-pi'),
+
+    'Reversed' => __('Reversed', 'bit-pi'),
+
+    'Logical trigger id, for example woocommerce.order_paid.' => __('Logical trigger id, for example woocommerce.order_paid.', 'bit-pi'),
+
+    'Integration slug, for example woocommerce or admin.' => __('Integration slug, for example woocommerce or admin.', 'bit-pi'),
+
+    'Lower bound as YYYY-MM-DD, optionally with HH:MM:SS.' => __('Lower bound as YYYY-MM-DD, optionally with HH:MM:SS.', 'bit-pi'),
+
+    'Date From' => __('Date From', 'bit-pi'),
+
+    'Upper bound as YYYY-MM-DD, optionally with HH:MM:SS.' => __('Upper bound as YYYY-MM-DD, optionally with HH:MM:SS.', 'bit-pi'),
+
+    'Date To' => __('Date To', 'bit-pi'),
+
+    'Free text matched across the ledger rows and the customer.' => __('Free text matched across the ledger rows and the customer.', 'bit-pi'),
+
+    'Failed to fetch data. Please try again later.' => __('Failed to fetch data. Please try again later.', 'bit-pi'),
+
+    'The member whose tier is recomputed.' => __('The member whose tier is recomputed.', 'bit-pi'),
+
+    'Only promote. A member who fell out of their tier keeps it.' => __('Only promote. A member who fell out of their tier keeps it.', 'bit-pi'),
+
+    'Promote Only' => __('Promote Only', 'bit-pi'),
+
+    'The member sending the invite.' => __('The member sending the invite.', 'bit-pi'),
+
+    'The address the invite is sent to.' => __('The address the invite is sent to.', 'bit-pi'),
+
+    'Referee Email' => __('Referee Email', 'bit-pi'),
+
     'Get Campaign by ID' => __('Get Campaign by ID', 'bit-pi'),
 
     'Get Campaigns (All)' => __('Get Campaigns (All)', 'bit-pi'),
@@ -14764,8 +15757,6 @@ return [
     'Want to see submissions? Just hit **Test Run** to fetch them.' => __('Want to see submissions? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
     'Get Submissions By Campaign ID' => __('Get Submissions By Campaign ID', 'bit-pi'),
-
-    'Submission Created' => __('Submission Created', 'bit-pi'),
 
     'Enter the campaign ID' => __('Enter the campaign ID', 'bit-pi'),
 
@@ -14827,8 +15818,6 @@ return [
 
     'X Large - 95%' => __('X Large - 95%', 'bit-pi'),
 
-    'Auto' => __('Auto', 'bit-pi'),
-
     'Select a size' => __('Select a size', 'bit-pi'),
 
     'Animation Type' => __('Animation Type', 'bit-pi'),
@@ -14854,8 +15843,6 @@ return [
     'Enable to permanently delete the popup. Leave disabled to move it to trash.' => __('Enable to permanently delete the popup. Leave disabled to move it to trash.', 'bit-pi'),
 
     'Force Delete' => __('Force Delete', 'bit-pi'),
-
-    'Select a subscriber' => __('Select a subscriber', 'bit-pi'),
 
     'Subscriber is looked up by email address.' => __('Subscriber is looked up by email address.', 'bit-pi'),
 
@@ -14994,8 +15981,6 @@ return [
     'Any Status' => __('Any Status', 'bit-pi'),
 
     'Search coupons by code.' => __('Search coupons by code.', 'bit-pi'),
-
-    'Order By' => __('Order By', 'bit-pi'),
 
     'Select a sort field' => __('Select a sort field', 'bit-pi'),
 
@@ -15235,13 +16220,9 @@ return [
 
     'Subscription Completed' => __('Subscription Completed', 'bit-pi'),
 
-    'Subscription Updated' => __('Subscription Updated', 'bit-pi'),
-
     'Subscription Pending' => __('Subscription Pending', 'bit-pi'),
 
     'Subscription Halted' => __('Subscription Halted', 'bit-pi'),
-
-    'Subscription Cancelled' => __('Subscription Cancelled', 'bit-pi'),
 
     'Subscription Paused' => __('Subscription Paused', 'bit-pi'),
 
@@ -15625,10 +16606,6 @@ return [
 
     'Double Optin' => __('Double Optin', 'bit-pi'),
 
-    'Create or Update Subscriber' => __('Create or Update Subscriber', 'bit-pi'),
-
-    'Get Subscriber' => __('Get Subscriber', 'bit-pi'),
-
     'Get All Subscribers' => __('Get All Subscribers', 'bit-pi'),
 
     'Get Subscriber Events' => __('Get Subscriber Events', 'bit-pi'),
@@ -15643,8 +16620,6 @@ return [
 
     'Get Subscribers in Group' => __('Get Subscribers in Group', 'bit-pi'),
 
-    'Create Custom Field' => __('Create Custom Field', 'bit-pi'),
-
     'Update Custom Field' => __('Update Custom Field', 'bit-pi'),
 
     'Delete Custom Field' => __('Delete Custom Field', 'bit-pi'),
@@ -15658,10 +16633,6 @@ return [
     'Schedule Campaign' => __('Schedule Campaign', 'bit-pi'),
 
     'Get Campaign Stats' => __('Get Campaign Stats', 'bit-pi'),
-
-    'Segments' => __('Segments', 'bit-pi'),
-
-    'Get Segment' => __('Get Segment', 'bit-pi'),
 
     'Get Subscribers in Segment' => __('Get Subscribers in Segment', 'bit-pi'),
 
@@ -15683,8 +16654,6 @@ return [
 
     'Subscriber Updated' => __('Subscriber Updated', 'bit-pi'),
 
-    'Subscriber Unsubscribed' => __('Subscriber Unsubscribed', 'bit-pi'),
-
     'Subscriber Added to Group' => __('Subscriber Added to Group', 'bit-pi'),
 
     'Subscriber Unsubscribed from Group' => __('Subscriber Unsubscribed from Group', 'bit-pi'),
@@ -15704,10 +16673,6 @@ return [
     'Select a group, or map a group ID from a previous step.' => __('Select a group, or map a group ID from a previous step.', 'bit-pi'),
 
     'Select a segment, or map a segment ID from a previous step.' => __('Select a segment, or map a segment ID from a previous step.', 'bit-pi'),
-
-    'Segment' => __('Segment', 'bit-pi'),
-
-    'Select a segment' => __('Select a segment', 'bit-pi'),
 
     'Pick a subscriber, or map an email / phone / ID from a previous step.' => __('Pick a subscriber, or map an email / phone / ID from a previous step.', 'bit-pi'),
 
@@ -15734,8 +16699,6 @@ return [
     'Auto Follow-up Active' => __('Auto Follow-up Active', 'bit-pi'),
 
     'Select groups' => __('Select groups', 'bit-pi'),
-
-    'Select segments' => __('Select segments', 'bit-pi'),
 
     'Event Name' => __('Event Name', 'bit-pi'),
 
@@ -15857,8 +16820,6 @@ return [
 
     'Get Active Subscriber Count' => __('Get Active Subscriber Count', 'bit-pi'),
 
-    'New Subscriber' => __('New Subscriber', 'bit-pi'),
-
     'New Unsubscriber' => __('New Unsubscriber', 'bit-pi'),
 
     'Campaign Sending' => __('Campaign Sending', 'bit-pi'),
@@ -15882,8 +16843,6 @@ return [
     'Enter the subscriber\'s IP address.' => __('Enter the subscriber\'s IP address.', 'bit-pi'),
 
     'The URL where the user signed up from.' => __('The URL where the user signed up from.', 'bit-pi'),
-
-    'Referrer' => __('Referrer', 'bit-pi'),
 
     'Honeypot field to prevent spambots from signing up. When spambots fill this field, the signup will be rejected.' => __('Honeypot field to prevent spambots from signing up. When spambots fill this field, the signup will be rejected.', 'bit-pi'),
 
@@ -16199,8 +17158,6 @@ return [
 
     'To get access Token, Please Visit <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://api.slack.com/">Slack Console</a>' => __('To get access Token, Please Visit <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://api.slack.com/">Slack Console</a>', 'bit-pi'),
 
-    'Channel' => __('Channel', 'bit-pi'),
-
     'Select a Channel' => __('Select a Channel', 'bit-pi'),
 
     'Select a User' => __('Select a User', 'bit-pi'),
@@ -16369,8 +17326,6 @@ return [
 
     'Footer text shown on the invoice PDF and in the hosted invoice page.' => __('Footer text shown on the invoice PDF and in the hosted invoice page.', 'bit-pi'),
 
-    'Footer' => __('Footer', 'bit-pi'),
-
     'Select the Auto-Advance option for the invoice. Choose ‘Yes’ to send the invoice.' => __('Select the Auto-Advance option for the invoice. Choose ‘Yes’ to send the invoice.', 'bit-pi'),
 
     'Auto advance' => __('Auto advance', 'bit-pi'),
@@ -16460,8 +17415,6 @@ return [
     'Invoice Payment Failed' => __('Invoice Payment Failed', 'bit-pi'),
 
     'Invoice Sent' => __('Invoice Sent', 'bit-pi'),
-
-    'Subscriptions' => __('Subscriptions', 'bit-pi'),
 
     'Subscription Created' => __('Subscription Created', 'bit-pi'),
 
@@ -17348,8 +18301,6 @@ return [
 
     'The color of the label.' => __('The color of the label.', 'bit-pi'),
 
-    'Color' => __('Color', 'bit-pi'),
-
     'Black' => __('Black', 'bit-pi'),
 
     'Blue' => __('Blue', 'bit-pi'),
@@ -18207,8 +19158,6 @@ return [
 
     'Suspended' => __('Suspended', 'bit-pi'),
 
-    'Fixed' => __('Fixed', 'bit-pi'),
-
     'Percent' => __('Percent', 'bit-pi'),
 
     'Sale' => __('Sale', 'bit-pi'),
@@ -18403,8 +19352,6 @@ return [
 
     'Select the section or map section ID from previous steps.' => __('Select the section or map section ID from previous steps.', 'bit-pi'),
 
-    'Section' => __('Section', 'bit-pi'),
-
     'Enter the article title.' => __('Enter the article title.', 'bit-pi'),
 
     'Article Title' => __('Article Title', 'bit-pi'),
@@ -18544,8 +19491,6 @@ return [
     'Get Member Levels' => __('Get Member Levels', 'bit-pi'),
 
     'Retrieves the membership levels that the specified user belongs to' => __('Retrieves the membership levels that the specified user belongs to', 'bit-pi'),
-
-    'Delete Member' => __('Delete Member', 'bit-pi'),
 
     'Deletes an existing member.' => __('Deletes an existing member.', 'bit-pi'),
 
@@ -18986,8 +19931,6 @@ return [
     'Enable Archives?' => __('Enable Archives?', 'bit-pi'),
 
     'Determines the sort order of the terms on the frontend shop product pages. If using custom ordering, you can drag and drop the terms in this attribute.' => __('Determines the sort order of the terms on the frontend shop product pages. If using custom ordering, you can drag and drop the terms in this attribute.', 'bit-pi'),
-
-    'Sort Order' => __('Sort Order', 'bit-pi'),
 
     'Menu Order' => __('Menu Order', 'bit-pi'),
 
@@ -20897,8 +21840,6 @@ return [
 
     'All subscribers' => __('All subscribers', 'bit-pi'),
 
-    'Active only' => __('Active only', 'bit-pi'),
-
     'One or more recipient numbers, separated by commas.' => __('One or more recipient numbers, separated by commas.', 'bit-pi'),
 
     'To (Mobile Number)' => __('To (Mobile Number)', 'bit-pi'),
@@ -21656,8 +22597,6 @@ return [
     'Select a channel.' => __('Select a channel.', 'bit-pi'),
 
     'Channels' => __('Channels', 'bit-pi'),
-
-    'Select a channel' => __('Select a channel', 'bit-pi'),
 
     'Select a contact.' => __('Select a contact.', 'bit-pi'),
 

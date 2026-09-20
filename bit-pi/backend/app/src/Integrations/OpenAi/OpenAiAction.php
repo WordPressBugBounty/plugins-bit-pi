@@ -48,12 +48,17 @@ class OpenAiAction implements ActionInterface
         $stopSequence = $this->nodeInfoProvider->getFieldMapRepeaters('stop-sequences-list.value', false, false);
         $optionalFields = $this->nodeInfoProvider->getFieldMapRepeaters('optional-field-list.value', false, false);
         $messageList = $this->nodeInfoProvider->getFieldMapRepeaters('messages-list.value', false, false);
+        $imageInputs = $this->nodeInfoProvider->getFieldMapRepeaters('image-inputs-list.value', false, false);
         $inputFormat = $this->nodeInfoProvider->getFieldMapConfigs('input-format.value');
         $fieldMapData = $this->nodeInfoProvider->getFieldMapData();
         $batchLimit = $this->nodeInfoProvider->getFieldMapConfigs('batch-limit.value');
         $memoryKey = $this->nodeInfoProvider->getFieldMapConfigs('memory-key.value');
         $contextLength = $this->nodeInfoProvider->getFieldMapConfigs('context-length.value');
-        $fieldMapData = OpenAiActionHandler::handleConditions($fieldMapData, $stopSequence, $messageList, $inputFormat, $inputText, $optionalFields);
+        if ($machineSlug === 'analyzeImage') {
+            $fieldMapData = OpenAiActionHandler::prepareImageAnalysisPayload($fieldMapData, $imageInputs);
+        } else {
+            $fieldMapData = OpenAiActionHandler::handleConditions($fieldMapData, $stopSequence, $messageList, $inputFormat, $inputText, $optionalFields);
+        }
 
         if (!empty($optionalFields)) {
             $fieldMapData = OpenAiActionHandler::castFieldsIfExist($fieldMapData);

@@ -1,0 +1,1 @@
+import{r as t,x as c}from"./main-tiny-toys-arrive.js";import{a}from"./index-CpSQvBGi.js";function f(){const[,r]=t.useReducer(e=>e+1,0);return r}function m(){let r=arguments.length>0&&arguments[0]!==void 0?arguments[0]:!0;const e=t.useRef({}),n=f(),s=a();return c(()=>{const u=s.subscribe(o=>{e.current=o,r&&n()});return()=>s.unsubscribe(u)},[]),e.current}export{f as a,m as u};

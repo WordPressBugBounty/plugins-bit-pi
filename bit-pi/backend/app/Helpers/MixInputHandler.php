@@ -177,6 +177,10 @@ class MixInputHandler
 
     public static function processRepeaters($data, $isArrayAssociative, $isArrayColumn, $keyColumnName, $valueColumnName, $aiToolArgs = [], $path = null)
     {
+        if (!is_iterable($data)) {
+            return [];
+        }
+
         $output = [];
         foreach ($data as $items) {
             $itemArray = [];

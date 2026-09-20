@@ -63,6 +63,13 @@ class WpActionHookListener
                 continue;
             }
 
+            if (
+                $this->machineSlug === 'addAction'
+                && ($triggerNode->field_mapping->configs->{'hook-name'}->value ?? null) !== $currentHookName
+            ) {
+                continue;
+            }
+
             FlowExecutor::execute($flow, $arguments);
         }
     }

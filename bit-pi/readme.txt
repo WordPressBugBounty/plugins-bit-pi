@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.29.0
+Stable tag: 1.30.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,34 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.30.0 (Sep 20, 2026) =
+
+* **Triggers (56)**:
+  * Brilliant Directories (28)
+  * ElementsKit (13)
+  * PaymentForm.io (07)
+  * Pointics (04)
+  * Flodesk (03)
+  * Fluent Community (01)
+
+* **Actions (81)**:
+  * Brilliant Directories (28)
+  * Pointics (23)
+  * Flodesk (15)
+  * ElementsKit (14)
+  * OpenAI (01)
+
+* **Improvements**:
+  * Added a Max Tokens option to OpenAI's Analyze Image action.
+  * Simplified Webhook trigger setup by removing the instant response selector.
+
+* **Fixes**:
+  * Fixed Google Calendar's Return All option only fetching the first page of calendars and events.
+  * Fixed Google Calendar's Update Event action ignoring a mapped Event ID.
+  * Fixed WordPress Action Hooks' Add Action trigger firing every flow bound to it instead of only the one whose hook fired.
+  * Fixed "Test Flow Once > Use Existing Data" failing on an inactive flow.
+  * Fixed a paused flow run failing to resume after the flow was switched off.
 
 = v1.29.0 (Sep 08, 2026) =
 
