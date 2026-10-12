@@ -3,6 +3,7 @@
 namespace BitApps\Pi\HTTP\Controllers;
 
 use BitApps\Pi\Config;
+use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Request\Request;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitApps\Pi\Helpers\Parser;
@@ -10,6 +11,8 @@ use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\Model\Flow;
 use BitApps\Pi\Model\FlowNode;
 use BitApps\Pi\Services\NodeService;
+use BitApps\Pi\Services\Polling;
+use BitApps\Pi\src\Abstracts\AbstractPollingTrigger;
 use BitApps\Pi\src\Flow\GlobalNodeVariables;
 use BitApps\Pi\src\Flow\NodeExecutor;
 use BitApps\Pi\src\Flow\NodeInfoProvider;
@@ -58,7 +61,12 @@ class FlowNodeTestController
 
         $flowId = $this->getFlowId($nodeId);
 
-        $nodeType = isset($nodeData->data->schedule) ? 'PollingTrigger' : 'Action';
+        // A polling trigger with every Poll Time removed has no schedule, but it
+        // is still a polling trigger and must not be run as an action.
+        $isPollingTrigger = isset($nodeData->data->schedule)
+            || (str_ends_with($nodeId, '-1') && (new NodeExecutor())->isExistClass($nodeData->app_slug, 'PollingTrigger'));
+
+        $nodeType = $isPollingTrigger ? 'PollingTrigger' : 'Action';
 
         $this->loadNodeVariables($flowId);
 
@@ -145,9 +153,13 @@ class FlowNodeTestController
         $instance = new $appClass($provider);
 
         $executionResponse = $nodeType === 'PollingTrigger' ? $instance->poll() : $instance->execute();
-        if ($nodeType === 'PollingTrigger') {
+        // A failed or empty test poll must not replace the baseline the next poll diffs against.
+        if ($nodeType === 'PollingTrigger' && ($executionResponse['status'] ?? '') !== 'error' && !empty($executionResponse['output'])) {
             $optionName = 'poll_response_' . $nodeData->node_id;
-            $compressedResponse = base64_encode(gzcompress(wp_json_encode($executionResponse['output'])));
+            $idField = method_exists($instance, 'getUniquePollingFieldName') ? $instance->getUniquePollingFieldName() : 'id';
+            $pollingType = method_exists($instance, 'getPollingType') ? $instance->getPollingType() : AbstractPollingTrigger::TYPE_NEW;
+            $cachedResponse = (new Polling())->compactForCache($executionResponse['output'], $idField, $pollingType);
+            $compressedResponse = base64_encode(gzcompress(JSON::encode($cachedResponse)));
             Config::updateOption($optionName, $compressedResponse);
         }
 

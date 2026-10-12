@@ -134,7 +134,7 @@ class MixInputHandler
             }
         }
 
-        if (substr($indexPath, -1) === '.') {
+        if (str_ends_with($indexPath, '.')) {
             $indexPath = substr($indexPath, 0, -1);
         }
 

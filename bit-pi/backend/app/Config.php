@@ -24,7 +24,7 @@ class Config
 
     public const VAR_PREFIX = 'bit_pi_';
 
-    public const VERSION = '1.30.0';
+    public const VERSION = '1.31.0';
 
     public const DB_VERSION = '0.2.0';
 
@@ -208,7 +208,7 @@ class Config
      */
     public static function updateOption($option, $value, $autoload = null)
     {
-        return update_option(self::withPrefix($option), $value, \is_null($autoload) ? null : 'yes');
+        return update_option(self::withPrefix($option), $value, \is_null($autoload) ? null : (bool) $autoload);
     }
 
     public static function deleteOption($option)

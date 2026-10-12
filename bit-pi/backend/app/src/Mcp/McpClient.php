@@ -322,7 +322,7 @@ final class McpClient
             return $url;
         }
 
-        $separator = strpos($url, '?') === false ? '?' : '&';
+        $separator = !str_contains($url, '?') ? '?' : '&';
 
         return $url . $separator . http_build_query($this->authQueryParams);
     }
@@ -407,14 +407,14 @@ final class McpClient
             $line = trim($line);
 
             // Track current event type
-            if (strpos($line, 'event:') === 0) {
+            if (str_starts_with($line, 'event:')) {
                 $currentEvent = trim(substr($line, 6));
 
                 continue;
             }
 
             // Extract data lines
-            if (strpos($line, 'data:') === 0) {
+            if (str_starts_with($line, 'data:')) {
                 $data = trim(substr($line, 5));
 
                 // If looking for specific event, only collect matching data

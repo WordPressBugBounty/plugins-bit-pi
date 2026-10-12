@@ -41,6 +41,7 @@ final class ProductService extends BaseService
 
         $payload = [
             'systemDefinedFieldsValues' => $systemValues,
+            'customFieldsValues'        => $this->customFieldsValues('product'),
             'tagIds'                    => BitCrmHelper::toIntArray($fields['tag_ids'] ?? []),
         ];
 
@@ -101,6 +102,10 @@ final class ProductService extends BaseService
         if (!$product->update($systemValues)) {
             return ['status_code' => 400, 'payload' => $payload, 'response' => __('Failed to update product.', 'bit-pi')];
         }
+
+        // Writing the model directly skips the service that would normally store
+        // these, so they are saved here instead.
+        BitCrmHelper::saveCustomFieldsValues('product', $productId, $this->customFieldsValues('product'));
 
         Hooks::doAction('bit_crm/product_updated', $product);
 

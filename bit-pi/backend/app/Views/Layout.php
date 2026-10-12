@@ -56,7 +56,7 @@ final class Layout
     {
         global $plugin_page;
 
-        if (empty($plugin_page) || strpos($plugin_page, Config::SLUG) === false) {
+        if (empty($plugin_page) || !str_contains($plugin_page, Config::SLUG)) {
             return;
         }
 

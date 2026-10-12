@@ -2,94 +2,33 @@
 
 namespace BitApps\Pi\src\Integrations\WooCommerce;
 
-// Prevent direct script access
+use BitApps\Pi\Helpers\Utility;
+use BitApps\Pi\Services\FlowService;
+use BitApps\Pi\src\Integrations\IntegrationHelper;
+use BitApps\Pi\src\Integrations\WooCommerce\helper\WooCommerceHelper;
+use WC_Coupon;
+use WC_Order;
+use WC_Product_Variation;
+use WP_User;
+
 if (!defined('ABSPATH')) {
     exit;
 }
 
-
-use BitApps\Pi\Helpers\Node;
-use BitApps\Pi\Helpers\Utility;
-use BitApps\Pi\Services\FlowService;
-use BitApps\Pi\src\Flow\FlowExecutor;
-use BitApps\Pi\src\Integrations\IntegrationHelper;
-use WP_User;
-
-class WooCommerceTrigger
+final class WooCommerceTrigger
 {
     public static function newOrderCreated($orderId, $order)
     {
-        $flows = FlowService::exists('wooCommerce', 'newOrderCreated');
-        if (!$flows) {
-            return;
-        }
-
-        $orderData = (new WooCommerceHelper())->getOrderData($order);
-
-        foreach ($flows as $flow) {
-            $triggerNode = Node::getNodeInfoById($flow->id . '-1', $flow->nodes);
-            if (!$triggerNode) {
-                continue;
-            }
-
-            FlowExecutor::execute($flow, ['order_id' => $orderId, 'order' => $orderData]);
-        }
+        return self::execute('newOrderCreated', ['order_id' => $orderId, 'order' => WooCommerceHelper::getOrderData($order)]);
     }
-
-    // Hook did not responding
-    // public static function orderUpdated($orderId, $post, $update)
-    // {
-    //     if (
-    //         empty($orderId)
-    //         || empty($post)
-    //         || $post->post_status == 'trash'
-    //         || !\in_array($post->post_type, ['order', 'shop_order'], true)
-    //         || !$update
-    //     ) {
-    //         return;
-    //     }
-
-    //     return self::executeOrderTrigger($orderId, 'orderUpdated');
-    // }
-
-    // public static function orderDeleted($orderId)
-    // {
-    //     if (empty($orderId) || !\in_array(get_post_type($orderId), ['order', 'shop_order'], true)) {
-    //         return;
-    //     }
-
-    //     return self::executeOrderTrigger($orderId, 'orderDeleted');
-    // }
 
     public static function couponCreated($couponId, $coupon)
     {
-        if (empty($couponId)) {
+        if (!self::isCouponJustCreated($couponId)) {
             return;
         }
 
-        $couponData = $coupon->get_data();
-        $formateData = [
-            'coupon_id'              => $couponId,
-            'coupon_code'            => $couponData['code'],
-            'coupon_amount'          => $couponData['amount'],
-            'coupon_status'          => $couponData['status'],
-            'discount_type'          => $couponData['discount_type'],
-            'description'            => $couponData['description'],
-            'date_created'           => \is_null($coupon->get_date_created()) ? $coupon->get_date_created() : $coupon->get_date_created()->format('Y-m-d H:i:s'),
-            'date_modified'          => \is_null($coupon->get_date_modified()) ? $coupon->get_date_modified() : $coupon->get_date_modified()->format('Y-m-d H:i:s'),
-            'date_expires'           => \is_null($coupon->get_date_expires()) ? $coupon->get_date_expires() : $coupon->get_date_expires()->format('Y-m-d H:i:s'),
-            'usage_count'            => $couponData['usage_count'],
-            'usage_limit'            => $couponData['usage_limit'],
-            'usage_limit_per_user'   => $couponData['usage_limit_per_user'],
-            'limit_usage_to_x_items' => $couponData['limit_usage_to_x_items'],
-            'free_shipping'          => $couponData['free_shipping'],
-            'exclude_sale_items'     => $couponData['exclude_sale_items'],
-            'minimum_amount'         => $couponData['minimum_amount'],
-            'maximum_amount'         => $couponData['maximum_amount'],
-            'virtual'                => $couponData['virtual'],
-        ];
-
-        return self::execute('couponCreated', $formateData);
+        return self::executeCouponTrigger($couponId, $coupon, 'couponCreated');
     }
 
     public static function createCustomer($customerId, $importType)
@@ -190,7 +129,7 @@ class WooCommerceTrigger
     public static function productAddedToCart($cartItemKey, $productId, $quantity, $variationId, $variation, $cartItemData)
     {
         if (
-            !self::isPluginInstalled()
+            !WooCommerceHelper::isPluginInstalled()
             || empty($cartItemKey)
             || empty($productId)
         ) {
@@ -232,7 +171,7 @@ class WooCommerceTrigger
     public static function productRemovedFromCart($cartItemKey, $cart)
     {
         if (
-            !self::isPluginInstalled()
+            !WooCommerceHelper::isPluginInstalled()
             || empty($cartItemKey)
             || empty($cart->removed_cart_contents)
         ) {
@@ -298,15 +237,322 @@ class WooCommerceTrigger
         return self::executeOrderTrigger($orderId, 'restoreOrder', $order);
     }
 
-    // TODO:: need to implement
-    public static function isPluginInstalled()
+    public static function orderPaid($orderId)
     {
-        return class_exists('WooCommerce');
+        return self::executeOrderTrigger($orderId, 'orderPaid');
+    }
+
+    public static function orderNoteAdded($noteId, $order)
+    {
+        if (!WooCommerceHelper::isPluginInstalled() || empty($noteId) || !($order instanceof WC_Order)) {
+            return;
+        }
+
+        $noteData = wc_get_order_note($noteId);
+        if (empty($noteData)) {
+            return;
+        }
+
+        $noteData->date_created = WooCommerceHelper::formatDate($noteData->date_created);
+        $noteData->note_type = $noteData->customer_note ? 'customer' : 'internal';
+
+        $data = [
+            'note'  => $noteData,
+            'order' => WooCommerceHelper::getOrderData($order),
+        ];
+
+        return self::execute('orderNoteAdded', $data);
+    }
+
+    public static function variableProductPurchased($orderId)
+    {
+        if (!WooCommerceHelper::isPluginInstalled() || empty($orderId)) {
+            return;
+        }
+
+        $order = wc_get_order($orderId);
+
+        if (empty($order)) {
+            return;
+        }
+
+        $orderData = WooCommerceHelper::getOrderData($order);
+        $variableProducts = [];
+
+        foreach ($order->get_items() as $item) {
+            $product = $item->get_product();
+
+            if (!$product) {
+                continue;
+            }
+
+            $parentProduct = wc_get_product($item->get_product_id());
+
+            if ($parentProduct && $parentProduct->is_type('variable')) {
+                $variableProducts[] = [
+                    'product_id'   => $item->get_product_id(),
+                    'variation_id' => $item->get_variation_id(),
+                    'product_name' => $item->get_name(),
+                    'quantity'     => $item->get_quantity(),
+                    'product_data' => $product->get_data(),
+                ];
+            }
+        }
+
+        if (empty($variableProducts)) {
+            return;
+        }
+
+        $data = array_merge($orderData, ['variable_products' => wp_json_encode($variableProducts)]);
+
+        return self::execute('variableProductPurchased', $data);
+    }
+
+    public static function productCategoryPurchased($orderId)
+    {
+        if (!WooCommerceHelper::isPluginInstalled() || empty($orderId)) {
+            return;
+        }
+
+        $order = wc_get_order($orderId);
+
+        if (empty($order)) {
+            return;
+        }
+
+        $orderData = WooCommerceHelper::getOrderData($order);
+
+        $purchasedCategories = [];
+
+        foreach ($order->get_items() as $item) {
+            $productId = $item->get_product_id();
+            $categories = wp_get_post_terms($productId, 'product_cat', ['fields' => 'all']);
+
+            if (is_wp_error($categories)) {
+                continue;
+            }
+
+            foreach ($categories as $cat) {
+                if (!isset($purchasedCategories[$cat->term_id])) {
+                    $purchasedCategories[$cat->term_id] = [
+                        'category_id'   => $cat->term_id,
+                        'category_name' => $cat->name,
+                        'category_slug' => $cat->slug,
+                        'quantity'      => 0,
+                        'products'      => [],
+                    ];
+                }
+
+                $purchasedCategories[$cat->term_id]['quantity'] += $item->get_quantity();
+                $purchasedCategories[$cat->term_id]['products'][] = [
+                    'product_id'   => $productId,
+                    'product_name' => $item->get_name(),
+                    'quantity'     => $item->get_quantity(),
+                ];
+            }
+        }
+
+        if (empty($purchasedCategories)) {
+            return;
+        }
+
+        $data = array_merge($orderData, ['purchased_categories' => wp_json_encode(array_values($purchasedCategories))]);
+
+        return self::execute('productCategoryPurchased', $data);
+    }
+
+    public static function reviewAdded($commentId, $commentApproved)
+    {
+        if (\in_array($commentApproved, ['spam', 'trash'], true)) {
+            return;
+        }
+
+        return self::executeReviewTrigger('reviewAdded', get_comment($commentId), ['approved' => $commentApproved]);
+    }
+
+    public static function reviewApproved($newStatus, $oldStatus, $comment)
+    {
+        if ($newStatus !== 'approved') {
+            return;
+        }
+
+        return self::executeReviewTrigger('reviewApproved', $comment, ['old_status' => $oldStatus, 'new_status' => $newStatus]);
+    }
+
+    public static function reviewStatusChanged($newStatus, $oldStatus, $comment)
+    {
+        return self::executeReviewTrigger('reviewStatusChanged', $comment, ['old_status' => $oldStatus, 'new_status' => $newStatus]);
+    }
+
+    public static function reviewRatingUpdated($metaId, $commentId, $metaKey)
+    {
+        if ($metaKey !== 'rating') {
+            return;
+        }
+
+        return self::executeReviewTrigger('reviewRatingUpdated', get_comment($commentId));
+    }
+
+    public static function reviewDeleted($commentId, $comment)
+    {
+        return self::executeReviewTrigger('reviewDeleted', $comment);
+    }
+
+    public static function productRefunded($orderId, $refundId)
+    {
+        if (!WooCommerceHelper::isPluginInstalled() || empty($refundId) || empty($orderId)) {
+            return;
+        }
+
+        $refund = wc_get_order($refundId);
+        $order = wc_get_order($orderId);
+
+        if (empty($refund) || empty($order)) {
+            return;
+        }
+
+        $orderData = WooCommerceHelper::getOrderData($order);
+        $refundData = $refund->get_data();
+
+        $refundData['date_created'] = WooCommerceHelper::formatDate($refundData['date_created']);
+        $refundData['date_modified'] = WooCommerceHelper::formatDate($refundData['date_modified']);
+
+        foreach ($refund->get_items() as $item) {
+            $product = $item->get_product();
+            $refundData['refunded_items'][] = [
+                'product_id'   => $item->get_product_id(),
+                'product_name' => $product ? $product->get_name() : '',
+                'quantity'     => abs($item->get_quantity()),
+                'refund_total' => abs($item->get_total()),
+            ];
+        }
+
+        $data = [
+            'order'  => $orderData,
+            'refund' => $refundData
+        ];
+
+        return self::execute('productRefunded', $data);
+    }
+
+    public static function productViewed()
+    {
+        if (!WooCommerceHelper::isPluginInstalled() || !is_product() || self::isBotRequest()) {
+            return;
+        }
+
+        $product = wc_get_product(get_queried_object_id());
+
+        if (empty($product)) {
+            return;
+        }
+
+        return self::execute('productViewed', WooCommerceHelper::getProductData($product));
+    }
+
+    public static function productOutOfStock($product)
+    {
+        if (!WooCommerceHelper::isPluginInstalled() || empty($product)) {
+            return;
+        }
+
+        return self::execute('productOutOfStock', WooCommerceHelper::getProductData($product));
+    }
+
+    public static function productBackInStock($productId, $stockStatus, $product)
+    {
+        if (
+            !WooCommerceHelper::isPluginInstalled()
+            || empty($product)
+            || $stockStatus !== 'instock'
+            || self::getPreviousStockStatus($product) !== 'outofstock'
+        ) {
+            return;
+        }
+
+        return self::execute('productBackInStock', WooCommerceHelper::getProductData($product));
+    }
+
+    public static function productLowStock($product)
+    {
+        if (!WooCommerceHelper::isPluginInstalled() || empty($product)) {
+            return;
+        }
+
+        $productData = WooCommerceHelper::getProductData($product);
+        $productData['stock_quantity'] = $product->get_stock_quantity();
+
+        return self::execute('productLowStock', $productData);
+    }
+
+    public static function variationOutOfStock($variationId, $stockStatus, $variation)
+    {
+        if (
+            !WooCommerceHelper::isPluginInstalled()
+            || !($variation instanceof WC_Product_Variation)
+            || $stockStatus !== 'outofstock'
+            || self::getPreviousStockStatus($variation) === 'outofstock'
+        ) {
+            return;
+        }
+
+        return self::execute('variationOutOfStock', self::getVariationStockData($variation, $stockStatus));
+    }
+
+    public static function variationBackInStock($variationId, $stockStatus, $variation)
+    {
+        if (
+            !WooCommerceHelper::isPluginInstalled()
+            || !($variation instanceof WC_Product_Variation)
+            || $stockStatus !== 'instock'
+            || self::getPreviousStockStatus($variation) !== 'outofstock'
+        ) {
+            return;
+        }
+
+        return self::execute('variationBackInStock', self::getVariationStockData($variation, $stockStatus));
+    }
+
+    public static function couponUpdated($couponId, $coupon)
+    {
+        if (self::isCouponJustCreated($couponId)) {
+            return;
+        }
+
+        return self::executeCouponTrigger($couponId, $coupon, 'couponUpdated');
+    }
+
+    public static function couponDeleted($postId, $previousStatus = null)
+    {
+        if (!WooCommerceHelper::isPluginInstalled() || get_post_type($postId) !== 'shop_coupon') {
+            return;
+        }
+
+        return self::executeCouponTrigger(
+            $postId,
+            new WC_Coupon($postId),
+            'couponDeleted',
+            ['previous_status' => $previousStatus ?? get_post_status($postId)]
+        );
+    }
+
+    public static function couponRestored($postId, $previousStatus)
+    {
+        if (!WooCommerceHelper::isPluginInstalled() || get_post_type($postId) !== 'shop_coupon') {
+            return;
+        }
+
+        return self::executeCouponTrigger(
+            $postId,
+            new WC_Coupon($postId),
+            'couponRestored',
+            ['previous_status' => $previousStatus]
+        );
     }
 
     private static function executeOrderTrigger($orderId, $machineSlug, $order = null, $extra = [])
     {
-        if (!self::isPluginInstalled() || empty($orderId)) {
+        if (!WooCommerceHelper::isPluginInstalled() || empty($orderId)) {
             return false;
         }
 
@@ -315,12 +561,11 @@ class WooCommerceTrigger
             return;
         }
 
-        $wcHelper = new WooCommerceHelper();
-        $orderData = $wcHelper->getOrderData($order);
-        $acfFieldGroups = $wcHelper->getAcfFieldGroups(['product', 'shop_order']);
-        $acfFieldData = $wcHelper->getAcfFieldData($acfFieldGroups, $orderId);
-        $customCheckoutData = $wcHelper->getCustomCheckoutData($order);
-        $flexibleCheckoutData = $wcHelper->getFlexibleCheckoutData($order);
+        $orderData = WooCommerceHelper::getOrderData($order);
+        $acfFieldGroups = WooCommerceHelper::getAcfFieldGroups(['product', 'shop_order']);
+        $acfFieldData = WooCommerceHelper::getAcfFieldData($acfFieldGroups, $orderId);
+        $customCheckoutData = WooCommerceHelper::getCustomCheckoutData($order);
+        $flexibleCheckoutData = WooCommerceHelper::getFlexibleCheckoutData($order);
 
         return self::execute($machineSlug, array_merge($orderData, $acfFieldData, $customCheckoutData, $flexibleCheckoutData, $extra));
     }
@@ -328,7 +573,7 @@ class WooCommerceTrigger
     private static function executeProductTrigger($postId, $post, $machineSlug, $postStatus = 'publish', $extra = [])
     {
         if (
-            !self::isPluginInstalled()
+            !WooCommerceHelper::isPluginInstalled()
             || $post->post_type != 'product'
             || $post->post_status != $postStatus
         ) {
@@ -340,12 +585,81 @@ class WooCommerceTrigger
             return;
         }
 
-        $wcHelper = new WooCommerceHelper();
-        $productData = $wcHelper->getProductData($product);
-        $acfFieldGroups = $wcHelper->getAcfFieldGroups(['product']);
-        $acfFieldData = $wcHelper->getAcfFieldData($acfFieldGroups, $postId);
+        $productData = WooCommerceHelper::getProductData($product);
+        $acfFieldGroups = WooCommerceHelper::getAcfFieldGroups(['product']);
+        $acfFieldData = WooCommerceHelper::getAcfFieldData($acfFieldGroups, $postId);
 
         return self::execute($machineSlug, array_merge($productData, $acfFieldData, $extra));
+    }
+
+    private static function executeReviewTrigger($machineSlug, $comment, $extra = [])
+    {
+        if (!WooCommerceHelper::isPluginInstalled() || empty($comment) || (int) $comment->comment_parent !== 0) {
+            return;
+        }
+
+        $reviewData = WooCommerceHelper::getReviewData($comment);
+
+        if (empty($reviewData)) {
+            return;
+        }
+
+        return self::execute($machineSlug, array_merge($reviewData, $extra));
+    }
+
+    private static function executeCouponTrigger($couponId, $coupon, $machineSlug, $additionalData = [])
+    {
+        if (empty($couponId)) {
+            return;
+        }
+
+        $data = $coupon->get_data();
+
+        $data['coupon_id'] = $couponId;
+        $data['date_created'] = WooCommerceHelper::formatDate($coupon->get_date_created());
+        $data['date_modified'] = WooCommerceHelper::formatDate($coupon->get_date_modified());
+        $data['date_expires'] = WooCommerceHelper::formatDate($coupon->get_date_expires());
+        $data['coupon_code'] = $data['code'];
+        $data['coupon_amount'] = $data['amount'];
+        $data['coupon_status'] = $data['status'];
+
+        return self::execute($machineSlug, array_merge($data, $additionalData));
+    }
+
+    private static function getVariationStockData($variation, $stockStatus)
+    {
+        $parentProduct = wc_get_product($variation->get_parent_id());
+
+        return [
+            'variation_id'   => $variation->get_id(),
+            'parent_id'      => $variation->get_parent_id(),
+            'parent_name'    => $parentProduct ? $parentProduct->get_name() : '',
+            'sku'            => $variation->get_sku(),
+            'attributes'     => $variation->get_variation_attributes(),
+            'stock_quantity' => $variation->get_stock_quantity(),
+            'stock_status'   => $stockStatus,
+        ];
+    }
+
+    private static function getPreviousStockStatus($product)
+    {
+        // WooCommerce fires the stock status hooks before apply_changes(), so get_data() still holds the stored status.
+        return $product->get_data()['stock_status'] ?? '';
+    }
+
+    private static function isCouponJustCreated($couponId)
+    {
+        $post = get_post($couponId);
+
+        // Same 10-second window WooCommerce webhooks use to tell a coupon create from an update.
+        return $post && (time() - 10) <= strtotime(get_gmt_from_date($post->post_date));
+    }
+
+    private static function isBotRequest()
+    {
+        $userAgent = isset($_SERVER['HTTP_USER_AGENT']) ? wp_unslash($_SERVER['HTTP_USER_AGENT']) : ''; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
+
+        return $userAgent === '' || preg_match('/bot|crawl|spider|slurp/i', $userAgent) === 1;
     }
 
     /**
@@ -395,7 +709,8 @@ class WooCommerceTrigger
     private static function execute($machineSlug, $data)
     {
         $flows = FlowService::exists('wooCommerce', $machineSlug);
-        if (!$flows) {
+
+        if (!$flows || empty($data)) {
             return;
         }
 

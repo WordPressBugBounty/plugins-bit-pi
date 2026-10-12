@@ -97,9 +97,11 @@ final class NodeController
 
         if ($validated['node'] === $cratedNodeId) {
             FlowService::updateTriggerNodeInCache();
-        }
 
-        Polling::deletePollingData($node->flow_id);
+            // Only the trigger owns polling data. Clearing it when another node is
+            // deleted would make the next poll re-seed and skip its new items.
+            Polling::deletePollingData($node->flow_id);
+        }
 
         return Response::success($node->node_id);
     }

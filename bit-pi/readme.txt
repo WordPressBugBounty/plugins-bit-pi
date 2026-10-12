@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.30.0
+Stable tag: 1.31.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,43 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.31.0 (Oct 12, 2026) =
+
+* **Triggers (37)**:
+  * WooCommerce (17)
+  * Google Contacts (06)
+  * Google Calendar (05)
+  * Google Search Console (03)
+  * Quiz Maker (03)
+  * YouTube (03)
+
+* **Actions (108)**:
+  * Quiz Maker (31)
+  * Google Contacts (25)
+  * WooCommerce (23)
+  * YouTube (18)
+  * Google Search Console (10)
+  * Email (IMAP) (01)
+
+* **Features**:
+  * Added a Date tab with 16 functions for formatting, parsing, shifting and setting dates inline.
+
+* **Improvements**:
+  * Bit CRM actions now load their fields from Bit CRM and support custom fields.
+  * Bit CRM now sets the closing date when a deal moves to a won or lost stage.
+  * WooCommerce dropdowns can be searched by name and show each product's ID and status.
+  * WooCommerce's sales report is now built from WooCommerce Analytics totals for faster results.
+  * Polling triggers now store only item IDs, using far less database space.
+
+* **Fixes**:
+  * Fixed "Test Flow Once > Listen New Response" never receiving the trigger event on a switched-off flow.
+  * Fixed Email (IMAP)'s Move Email reporting an error after moving an email into a Gmail label folder such as Important.
+  * Fixed deleting an action node making the polling trigger skip the next new items.
+  * Fixed polling triggers missing new items after an API error.
+  * Fixed Gemini image generation by loading image models from the API and using the current Nano Banana model IDs.
+  * Fixed WordPress's Create User action not returning the user's email.
+  * Fixed Bit CRM failing to load deal stages.
 
 = v1.30.0 (Sep 20, 2026) =
 

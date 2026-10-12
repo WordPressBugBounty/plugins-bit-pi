@@ -233,7 +233,7 @@ class Utility
     public static function convertDotKeysToColons($data)
     {
         foreach ($data as $key => $value) {
-            if (strpos($key, '.') !== false) {
+            if (str_contains($key, '.')) {
                 $updatedKey = str_replace('.', ':', $key);
                 $data[$updatedKey] = $value;
                 unset($data[$key]);

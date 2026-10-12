@@ -87,7 +87,7 @@ class CustomAppAction implements ActionInterface
         $url = $machineDetails['url'];
 
         if ($queryParams) {
-            $url .= (strpos($url, '?') === false) ? '?' : '&';
+            $url .= !str_contains($url, '?') ? '?' : '&';
             $url .= http_build_query($queryParams);
         }
 

@@ -9,6 +9,7 @@ if (!defined('ABSPATH')) {
 
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Deps\BitApps\WPKit\Hooks\Hooks;
+use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\Model\CustomApp;
 use BitApps\Pi\Services\FlowService;
 use BitApps\Pi\src\Flow\NodeExecutor;
@@ -22,12 +23,22 @@ final class IntegrationHookLoader
     {
         $apps = JSON::maybeDecode(FlowService::getOrUpdateTriggerNodesFromCache());
 
+        // With no active flow, the cache call returns a bool instead of a list.
+        $apps = \is_array($apps) || \is_object($apps) ? (array) $apps : [];
+
+        // Flows under test listen for their trigger even while switched off.
+        $listeningApps = Utility::getTransientCache('listening_trigger_nodes');
+
+        if (\is_array($listeningApps)) {
+            $apps = array_merge_recursive($apps, $listeningApps);
+        }
+
         if (empty($apps)) {
             return;
         }
 
         foreach ($apps as $appSlug => $triggerSlugs) {
-            if (strpos($appSlug, CustomApp::APP_SLUG_PREFIX) !== false) {
+            if (str_contains($appSlug, CustomApp::APP_SLUG_PREFIX)) {
                 $appSlug = ucfirst(CustomApp::APP_SLUG);
             } else {
                 $appSlug = ucfirst($appSlug);

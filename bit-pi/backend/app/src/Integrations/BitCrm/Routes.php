@@ -28,6 +28,7 @@ Route::group(
         Route::get('bitcrm/calls', [BitCrmHelper::class, 'getCalls']);
         Route::get('bitcrm/invoices', [BitCrmHelper::class, 'getInvoices']);
         Route::post('bitcrm/entities', [BitCrmHelper::class, 'getEntities']);
+        Route::post('bitcrm/fields', [BitCrmHelper::class, 'getFields']);
 
         Route::get('bitcrm/tags', [BitCrmHelper::class, 'getTags']);
         Route::get('bitcrm/lead-tags', [BitCrmHelper::class, 'getLeadTags']);

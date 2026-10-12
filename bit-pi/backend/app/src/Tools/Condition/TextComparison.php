@@ -59,13 +59,13 @@ class TextComparison
 
     public function isContains($leftValue, $rightValue, $caseInSensitive)
     {
-        return $caseInSensitive ? (stripos($leftValue, $rightValue) !== false) : (strpos($leftValue, $rightValue) !== false);
+        return $caseInSensitive ? stripos($leftValue, $rightValue) !== false : str_contains($leftValue, $rightValue);
     }
 
     public function startWith($leftValue, $rightValue, $caseInSensitive)
     {
         if (!$caseInSensitive) {
-            return strncmp($leftValue, $rightValue, \strlen($rightValue)) === 0;
+            return str_starts_with($leftValue, $rightValue);
         }
 
         return strncasecmp($leftValue, $rightValue, \strlen($rightValue)) === 0;
@@ -74,7 +74,7 @@ class TextComparison
     public function endWith($leftValue, $rightValue, $caseInSensitive)
     {
         if (!$caseInSensitive) {
-            return substr_compare($leftValue, $rightValue, -\strlen($rightValue), \strlen($rightValue)) === 0;
+            return str_ends_with($leftValue, $rightValue);
         }
 
         return substr_compare(strtolower($leftValue), strtolower($rightValue), -\strlen($rightValue), \strlen($rightValue)) === 0;

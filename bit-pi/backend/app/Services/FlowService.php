@@ -9,9 +9,12 @@ if (!defined('ABSPATH')) {
 
 
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\Arr;
+use BitApps\Pi\Deps\BitApps\WPKit\Helpers\DateTimeHelper;
+use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Deps\BitApps\WPKit\Helpers\Slug;
 use BitApps\Pi\Deps\BitApps\WPValidator\Validator;
 use BitApps\Pi\Helpers\Utility;
+use BitApps\Pi\HTTP\Controllers\HookListenerController;
 use BitApps\Pi\Model\Flow;
 use BitApps\Pi\Model\FlowNode;
 use BitApps\Pi\Model\FlowTag;
@@ -182,12 +185,7 @@ class FlowService
         $scheduleNodes = [];
 
         foreach ($nodes as $node) {
-            $machineSlug = $node->machine_slug;
-            if (\in_array($node->app_slug, ['wordPress', 'wordPressActionHooks']) && $node->machine_slug === 'addAction') {
-                $machineSlug = Utility::convertToMachineSlug($node->field_mapping->configs->{'hook-name'}->value) ?? null;
-            }
-
-            $data[$node->app_slug][] = $machineSlug;
+            $data[$node->app_slug][] = self::triggerSlug($node);
 
             $jsonDecodedData = $node->data;
 
@@ -216,5 +214,66 @@ class FlowService
         }
 
         return $triggerNodes;
+    }
+
+    /**
+     * Cache the triggers of flows being tested with "Listen New Response".
+     *
+     * A flow under test waits for its trigger even while switched off, so its
+     * hook must be registered too. This list is kept apart from the active
+     * trigger cache, so starting or ending a test never resets flow schedules,
+     * and it only holds listeners still inside their time limit, so a test
+     * abandoned by closing the tab stops listening on its own.
+     */
+    public static function updateListeningTriggerCache()
+    {
+        $flows = Flow::select(['id', 'settings'])
+            ->where('listener_type', '!=', Flow::LISTENER_TYPE['NONE'])
+            ->get();
+
+        $now = strtotime((new DateTimeHelper())->getCurrentDateTime());
+        $nodeIds = [];
+
+        foreach ($flows ?: [] as $flow) {
+            $startTime = JSON::maybeDecode($flow->settings, true)['capture_start_time'] ?? null;
+
+            if ($startTime && strtotime(HookListenerController::LISTENER_TIME_LIMIT . $startTime) >= $now) {
+                $nodeIds[] = "{$flow->id}-1";
+            }
+        }
+
+        if ($nodeIds === []) {
+            return Utility::deleteTransientCache('listening_trigger_nodes');
+        }
+
+        $nodes = FlowNode::select(['app_slug', 'machine_slug', 'field_mapping'])
+            ->whereIn('node_id', $nodeIds)
+            ->get();
+
+        $data = [];
+
+        foreach ($nodes ?: [] as $node) {
+            $data[$node->app_slug][] = self::triggerSlug($node);
+        }
+
+        // Outlives the listener's own time limit only slightly, as a backstop.
+        Utility::setTransientCache('listening_trigger_nodes', $data, 5 * MINUTE_IN_SECONDS);
+
+        return $data;
+    }
+
+    /**
+     * The hook slug a trigger node listens on. WordPress "addAction" triggers
+     * listen on the hook name the user entered.
+     *
+     * @param object $node
+     */
+    private static function triggerSlug($node)
+    {
+        if (\in_array($node->app_slug, ['wordPress', 'wordPressActionHooks']) && $node->machine_slug === 'addAction') {
+            return Utility::convertToMachineSlug($node->field_mapping->configs->{'hook-name'}->value) ?? null;
+        }
+
+        return $node->machine_slug;
     }
 }

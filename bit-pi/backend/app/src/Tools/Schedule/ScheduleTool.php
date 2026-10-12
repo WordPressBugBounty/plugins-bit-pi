@@ -125,7 +125,14 @@ class ScheduleTool
             $pollingType = $triggerApp->getPollingType();
         }
 
-        $response = $triggerApp->poll()['output'] ?? [];
+        $pollResponse = $triggerApp->poll();
+
+        // An error's output is the error itself, not records to diff or cache.
+        if (($pollResponse['status'] ?? '') === 'error') {
+            return;
+        }
+
+        $response = $pollResponse['output'] ?? [];
 
         if (empty($response)) {
             return;
@@ -133,11 +140,15 @@ class ScheduleTool
 
         $optionName = 'poll_response_' . $nodeId;
 
+        $polling = new Polling();
+
+        $cachedResponse = $polling->compactForCache($response, $pollingUniqueFieldName, $pollingType);
+
         $storedResponse = Config::getOption($optionName);
 
         // If no previous response exists, cache current response and exit
         if (!$storedResponse) {
-            $compressedResponse = base64_encode(gzcompress(JSON::encode($response)));
+            $compressedResponse = base64_encode(gzcompress(JSON::encode($cachedResponse)));
             Config::updateOption($optionName, $compressedResponse, false);
 
             return;
@@ -154,13 +165,15 @@ class ScheduleTool
 
         $decodedStoredResponse = JSON::maybeDecode($decompressedStoredResponse, true);
 
-        $changeDetected = (new Polling())->detectNewOrUpdatedData($decodedStoredResponse, $response, $pollingUniqueFieldName, $pollingType);
+        $changeDetected = $polling->detectNewOrUpdatedData($decodedStoredResponse, $response, $pollingUniqueFieldName, $pollingType);
 
-        if (!$changeDetected) {
+        // An empty array still means records changed (e.g. only new ones on UPDATED
+        // polling), so the cache must be refreshed to include them.
+        if ($changeDetected === false) {
             return;
         }
 
-        $newResponse = base64_encode(gzcompress(wp_json_encode($response)));
+        $newResponse = base64_encode(gzcompress(JSON::encode($cachedResponse)));
 
         Config::updateOption('poll_response_' . $nodeId, $newResponse, false);
 

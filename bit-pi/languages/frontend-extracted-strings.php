@@ -198,6 +198,86 @@ return [
 
     'Turns one collection into a list of its key and value pairs, ready to loop over with an Iterator.' => __('Turns one collection into a list of its key and value pairs, ready to loop over with an Iterator.', 'bit-pi'),
 
+    'Turns a date into text using PHP date() characters: d day, m month, Y year, y two-digit year, H hour, i minute, s second, A am or pm, P offset. Put a backslash before a letter to show it as is. Leave the timezone empty to use the site timezone.' => __('Turns a date into text using PHP date() characters: d day, m month, Y year, y two-digit year, H hour, i minute, s second, A am or pm, P offset. Put a backslash before a letter to show it as is. Leave the timezone empty to use the site timezone.', 'bit-pi'),
+
+    'date' => __('date', 'bit-pi'),
+
+    'format' => __('format', 'bit-pi'),
+
+    'timezone' => __('timezone', 'bit-pi'),
+
+    'Reads text as a date using the same PHP date() characters as formatDate: d day, m month, Y four-digit year, y two-digit year, H hour, i minute, s second. Leave the format empty to let it work the shape out, and the timezone empty to read the text as site time.' => __('Reads text as a date using the same PHP date() characters as formatDate: d day, m month, Y four-digit year, y two-digit year, H hour, i minute, s second. Leave the format empty to let it work the shape out, and the timezone empty to read the text as site time.', 'bit-pi'),
+
+    'text' => __('text', 'bit-pi'),
+
+    'Adds that many seconds to a date. Give a negative number to go back instead. Wrap it in formatDate to change the shape.' => __('Adds that many seconds to a date. Give a negative number to go back instead. Wrap it in formatDate to change the shape.', 'bit-pi'),
+
+    'seconds' => __('seconds', 'bit-pi'),
+
+    'Adds that many minutes to a date. Give a negative number to go back instead. Wrap it in formatDate to change the shape.' => __('Adds that many minutes to a date. Give a negative number to go back instead. Wrap it in formatDate to change the shape.', 'bit-pi'),
+
+    'minutes' => __('minutes', 'bit-pi'),
+
+    'Adds that many hours to a date. Give a negative number to go back instead. Wrap it in formatDate to change the shape.' => __('Adds that many hours to a date. Give a negative number to go back instead. Wrap it in formatDate to change the shape.', 'bit-pi'),
+
+    'hours' => __('hours', 'bit-pi'),
+
+    'Adds that many days to a date. Give a negative number to go back instead. Wrap it in formatDate to change the shape.' => __('Adds that many days to a date. Give a negative number to go back instead. Wrap it in formatDate to change the shape.', 'bit-pi'),
+
+    'days' => __('days', 'bit-pi'),
+
+    'Adds that many weeks to a date. Give a negative number to go back instead. Wrap it in formatDate to change the shape.' => __('Adds that many weeks to a date. Give a negative number to go back instead. Wrap it in formatDate to change the shape.', 'bit-pi'),
+
+    'weeks' => __('weeks', 'bit-pi'),
+
+    'Adds that many months to a date. Give a negative number to go back instead. A day the new month does not have moves to its last day, so the 31st of January plus one month is the 28th of February.' => __('Adds that many months to a date. Give a negative number to go back instead. A day the new month does not have moves to its last day, so the 31st of January plus one month is the 28th of February.', 'bit-pi'),
+
+    'months' => __('months', 'bit-pi'),
+
+    'Adds that many years to a date. Give a negative number to go back instead. The 29th of February moves to the 28th in a year that does not have it.' => __('Adds that many years to a date. Give a negative number to go back instead. The 29th of February moves to the 28th in a year that does not have it.', 'bit-pi'),
+
+    'years' => __('years', 'bit-pi'),
+
+    'Sets the seconds of a date, from 0 to 59. Anything outside that gives back nothing.' => __('Sets the seconds of a date, from 0 to 59. Anything outside that gives back nothing.', 'bit-pi'),
+
+    'second' => __('second', 'bit-pi'),
+
+    'Sets the minutes of a date, from 0 to 59. Anything outside that gives back nothing.' => __('Sets the minutes of a date, from 0 to 59. Anything outside that gives back nothing.', 'bit-pi'),
+
+    'minute' => __('minute', 'bit-pi'),
+
+    'Sets the hour of a date, from 0 to 23. Anything outside that gives back nothing.' => __('Sets the hour of a date, from 0 to 23. Anything outside that gives back nothing.', 'bit-pi'),
+
+    'hour' => __('hour', 'bit-pi'),
+
+    'Moves a date to another day of the same week, Sunday through Saturday. Give an English weekday name or a number from 1 for Sunday to 7 for Saturday.' => __('Moves a date to another day of the same week, Sunday through Saturday. Give an English weekday name or a number from 1 for Sunday to 7 for Saturday.', 'bit-pi'),
+
+    'weekday' => __('weekday', 'bit-pi'),
+
+    'Sets the day of the month, from 1 to 31. A day the month does not have moves to its last day.' => __('Sets the day of the month, from 1 to 31. A day the month does not have moves to its last day.', 'bit-pi'),
+
+    'day of month' => __('day of month', 'bit-pi'),
+
+    'Sets the month. Give an English month name or a number from 1 to 12. A day the new month does not have moves to its last day.' => __('Sets the month. Give an English month name or a number from 1 to 12. A day the new month does not have moves to its last day.', 'bit-pi'),
+
+    'month' => __('month', 'bit-pi'),
+
+    'Sets the year. The 29th of February moves to the 28th in a year that does not have it.' => __('Sets the year. The 29th of February moves to the 28th in a year that does not have it.', 'bit-pi'),
+
+    'year' => __('year', 'bit-pi'),
+
+    'The date and time right now, in the site timezone. Wrap it in formatDate to change the shape.' => __('The date and time right now, in the site timezone. Wrap it in formatDate to change the shape.', 'bit-pi'),
+
+    'Returns server timestamp' => __('Returns server timestamp', 'bit-pi'),
+
+    'Returns server date' => __('Returns server date', 'bit-pi'),
+
+    'Returns server time' => __('Returns server time', 'bit-pi'),
+
+    'Returns day of week' => __('Returns day of week', 'bit-pi'),
+
+    'Returns day of month' => __('Returns day of month', 'bit-pi'),
+
     'Returns this flow id' => __('Returns this flow id', 'bit-pi'),
 
     'Returns this flow name' => __('Returns this flow name', 'bit-pi'),
@@ -227,8 +307,6 @@ return [
     'Returns the value of a mathematical expression.' => __('Returns the value of a mathematical expression.', 'bit-pi'),
 
     'Returns the length of the string.' => __('Returns the length of the string.', 'bit-pi'),
-
-    'text' => __('text', 'bit-pi'),
 
     'Converts all alphabetical characters in a text string to lowercase.' => __('Converts all alphabetical characters in a text string to lowercase.', 'bit-pi'),
 
@@ -321,16 +399,6 @@ return [
     'Returns server name' => __('Returns server name', 'bit-pi'),
 
     'Returns server protocol' => __('Returns server protocol', 'bit-pi'),
-
-    'Returns server timestamp' => __('Returns server timestamp', 'bit-pi'),
-
-    'Returns server date' => __('Returns server date', 'bit-pi'),
-
-    'Returns server time' => __('Returns server time', 'bit-pi'),
-
-    'Returns day of week' => __('Returns day of week', 'bit-pi'),
-
-    'Returns day of month' => __('Returns day of month', 'bit-pi'),
 
     'Returns logged in user id' => __('Returns logged in user id', 'bit-pi'),
 
@@ -802,6 +870,8 @@ return [
     'Math' => __('Math', 'bit-pi'),
 
     'Array' => __('Array', 'bit-pi'),
+
+    'Date' => __('Date', 'bit-pi'),
 
     'String' => __('String', 'bit-pi'),
 
@@ -1672,8 +1742,6 @@ return [
 
     '1. b2-6' => __('1. b2-6', 'bit-pi'),
 
-    'date' => __('date', 'bit-pi'),
-
     '1. b1-6' => __('1. b1-6', 'bit-pi'),
 
     '1. b1-9' => __('1. b1-9', 'bit-pi'),
@@ -2060,8 +2128,6 @@ return [
 
     'Recent Workflows' => __('Recent Workflows', 'bit-pi'),
 
-    'Date' => __('Date', 'bit-pi'),
-
     'Time' => __('Time', 'bit-pi'),
 
     'Status' => __('Status', 'bit-pi'),
@@ -2091,8 +2157,6 @@ return [
     'Preserve Flow Logs' => __('Preserve Flow Logs', 'bit-pi'),
 
     'Enter the number of days to retain task logs. For example, entering 30 will remove task history older than 30 days.' => __('Enter the number of days to retain task logs. For example, entering 30 will remove task history older than 30 days.', 'bit-pi'),
-
-    'days' => __('days', 'bit-pi'),
 
     'This feature is planned and will be available in the future.' => __('This feature is planned and will be available in the future.', 'bit-pi'),
 
@@ -4506,6 +4570,8 @@ return [
 
     'Leave any field empty to keep its current value.' => __('Leave any field empty to keep its current value.', 'bit-pi'),
 
+    'Contact and Company are always created. Deal is optional.' => __('Contact and Company are always created. Deal is optional.', 'bit-pi'),
+
     'Convert To' => __('Convert To', 'bit-pi'),
 
     'Select modules' => __('Select modules', 'bit-pi'),
@@ -4600,109 +4666,7 @@ return [
 
     'The same title can exist in several modules; pick one to disambiguate.' => __('The same title can exist in several modules; pick one to disambiguate.', 'bit-pi'),
 
-    'Billing' => __('Billing', 'bit-pi'),
-
-    'Shipping' => __('Shipping', 'bit-pi'),
-
-    'Address Line 1' => __('Address Line 1', 'bit-pi'),
-
-    'Address Line 2' => __('Address Line 2', 'bit-pi'),
-
-    'City' => __('City', 'bit-pi'),
-
-    'County' => __('County', 'bit-pi'),
-
-    'State' => __('State', 'bit-pi'),
-
-    'Zip' => __('Zip', 'bit-pi'),
-
-    'Country' => __('Country', 'bit-pi'),
-
-    'Website' => __('Website', 'bit-pi'),
-
-    'Industry' => __('Industry', 'bit-pi'),
-
-    'Annual Revenue' => __('Annual Revenue', 'bit-pi'),
-
-    'Secondary Email' => __('Secondary Email', 'bit-pi'),
-
-    'Mobile' => __('Mobile', 'bit-pi'),
-
-    'Fax' => __('Fax', 'bit-pi'),
-
-    'Date of Birth' => __('Date of Birth', 'bit-pi'),
-
-    'Department' => __('Department', 'bit-pi'),
-
-    'Assistant' => __('Assistant', 'bit-pi'),
-
-    'Assistant Phone' => __('Assistant Phone', 'bit-pi'),
-
-    'Company Number' => __('Company Number', 'bit-pi'),
-
-    'Ticker Symbol' => __('Ticker Symbol', 'bit-pi'),
-
-    'Number of Employees' => __('Number of Employees', 'bit-pi'),
-
-    'Rating' => __('Rating', 'bit-pi'),
-
-    'Deal Name' => __('Deal Name', 'bit-pi'),
-
-    'Probability' => __('Probability', 'bit-pi'),
-
-    'Amount' => __('Amount', 'bit-pi'),
-
-    'Product Name' => __('Product Name', 'bit-pi'),
-
-    'Product Code/SKU' => __('Product Code/SKU', 'bit-pi'),
-
-    'Cost Price' => __('Cost Price', 'bit-pi'),
-
     'Failed to load options. Please try again later.' => __('Failed to load options. Please try again later.', 'bit-pi'),
-
-    'Mr' => __('Mr', 'bit-pi'),
-
-    'Mrs' => __('Mrs', 'bit-pi'),
-
-    'Miss' => __('Miss', 'bit-pi'),
-
-    'Ms' => __('Ms', 'bit-pi'),
-
-    'Dr' => __('Dr', 'bit-pi'),
-
-    'None' => __('None', 'bit-pi'),
-
-    'Advertisement' => __('Advertisement', 'bit-pi'),
-
-    'Cold Call' => __('Cold Call', 'bit-pi'),
-
-    'Employee Referral' => __('Employee Referral', 'bit-pi'),
-
-    'External Referral' => __('External Referral', 'bit-pi'),
-
-    'Online Store' => __('Online Store', 'bit-pi'),
-
-    'Qualifies' => __('Qualifies', 'bit-pi'),
-
-    'Negotiation Done' => __('Negotiation Done', 'bit-pi'),
-
-    'Discount Approved' => __('Discount Approved', 'bit-pi'),
-
-    'Discount Rejected' => __('Discount Rejected', 'bit-pi'),
-
-    'Contract Sent' => __('Contract Sent', 'bit-pi'),
-
-    'Deal Win' => __('Deal Win', 'bit-pi'),
-
-    'Deal Lost' => __('Deal Lost', 'bit-pi'),
-
-    'New Business' => __('New Business', 'bit-pi'),
-
-    'Existing Business' => __('Existing Business', 'bit-pi'),
-
-    'Goods' => __('Goods', 'bit-pi'),
-
-    'Service' => __('Service', 'bit-pi'),
 
     'Deals' => __('Deals', 'bit-pi'),
 
@@ -4739,6 +4703,10 @@ return [
     'Deal to Update' => __('Deal to Update', 'bit-pi'),
 
     'Select a stage' => __('Select a stage', 'bit-pi'),
+
+    'Closing Date' => __('Closing Date', 'bit-pi'),
+
+    'YYYY-MM-DD HH:MM:SS' => __('YYYY-MM-DD HH:MM:SS', 'bit-pi'),
 
     'A paid invoice can no longer be updated.' => __('A paid invoice can no longer be updated.', 'bit-pi'),
 
@@ -5073,8 +5041,6 @@ return [
     'Select a staff member' => __('Select a staff member', 'bit-pi'),
 
     'Start Date & Time' => __('Start Date & Time', 'bit-pi'),
-
-    'YYYY-MM-DD HH:MM:SS' => __('YYYY-MM-DD HH:MM:SS', 'bit-pi'),
 
     'End Date & Time' => __('End Date & Time', 'bit-pi'),
 
@@ -6202,6 +6168,8 @@ return [
 
     'Role' => __('Role', 'bit-pi'),
 
+    'Assistant' => __('Assistant', 'bit-pi'),
+
     'You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.anthropic.com/settings/keys">Here</a>' => __('You can find credentials from <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.anthropic.com/settings/keys">Here</a>', 'bit-pi'),
 
     'You can get your API key from <a class="text-blue-600 underline" href="https://app.clickup.com/" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API key from <a class="text-blue-600 underline" href="https://app.clickup.com/" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
@@ -6492,6 +6460,8 @@ return [
 
     'Select an event' => __('Select an event', 'bit-pi'),
 
+    'Website' => __('Website', 'bit-pi'),
+
     'GDPR' => __('GDPR', 'bit-pi'),
 
     'Event Registration page URL' => __('Event Registration page URL', 'bit-pi'),
@@ -6693,6 +6663,14 @@ return [
     'Address 1' => __('Address 1', 'bit-pi'),
 
     'Address 2' => __('Address 2', 'bit-pi'),
+
+    'City' => __('City', 'bit-pi'),
+
+    'State' => __('State', 'bit-pi'),
+
+    'Zip' => __('Zip', 'bit-pi'),
+
+    'Country' => __('Country', 'bit-pi'),
 
     'Time zone' => __('Time zone', 'bit-pi'),
 
@@ -7045,6 +7023,10 @@ return [
     'Payment Method' => __('Payment Method', 'bit-pi'),
 
     'Total Amount' => __('Total Amount', 'bit-pi'),
+
+    'Address Line 1' => __('Address Line 1', 'bit-pi'),
+
+    'Address Line 2' => __('Address Line 2', 'bit-pi'),
 
     'ZIP' => __('ZIP', 'bit-pi'),
 
@@ -7983,6 +7965,8 @@ return [
     'Select Stage' => __('Select Stage', 'bit-pi'),
 
     'Enter the amount/value of the opportunity.' => __('Enter the amount/value of the opportunity.', 'bit-pi'),
+
+    'Amount' => __('Amount', 'bit-pi'),
 
     'Enter the description of the opportunity.' => __('Enter the description of the opportunity.', 'bit-pi'),
 
@@ -9828,33 +9812,7 @@ return [
 
     'Select Model' => __('Select Model', 'bit-pi'),
 
-    'Nano Banana' => __('Nano Banana', 'bit-pi'),
-
-    'Nano Banana Pro' => __('Nano Banana Pro', 'bit-pi'),
-
-    'Imagen 4 Preview' => __('Imagen 4 Preview', 'bit-pi'),
-
-    'Imagen 4 Ultra Preview' => __('Imagen 4 Ultra Preview', 'bit-pi'),
-
-    'Imagen 4.0 Fast' => __('Imagen 4.0 Fast', 'bit-pi'),
-
     'The prompt describing the image you want to generate.' => __('The prompt describing the image you want to generate.', 'bit-pi'),
-
-    'Select the aspect ratio for the generated image.' => __('Select the aspect ratio for the generated image.', 'bit-pi'),
-
-    'Aspect Ratio' => __('Aspect Ratio', 'bit-pi'),
-
-    '1:1 (Square)' => __('1:1 (Square)', 'bit-pi'),
-
-    '16:9 (Landscape)' => __('16:9 (Landscape)', 'bit-pi'),
-
-    '9:16 (Portrait)' => __('9:16 (Portrait)', 'bit-pi'),
-
-    '4:3 (Standard)' => __('4:3 (Standard)', 'bit-pi'),
-
-    '3:4 (Portrait Standard)' => __('3:4 (Portrait Standard)', 'bit-pi'),
-
-    'Select Aspect Ratio' => __('Select Aspect Ratio', 'bit-pi'),
 
     'URL of reference image(s) to guide the generation.' => __('URL of reference image(s) to guide the generation.', 'bit-pi'),
 
@@ -9909,6 +9867,8 @@ return [
     'You can get your API key from <a class="text-blue-600 underline" href="https://app.getgist.com/projects/_/settings/api-key" target="_blank" rel="noopener noreferrer nofollow">here</a>' => __('You can get your API key from <a class="text-blue-600 underline" href="https://app.getgist.com/projects/_/settings/api-key" target="_blank" rel="noopener noreferrer nofollow">here</a>', 'bit-pi'),
 
     'Gender' => __('Gender', 'bit-pi'),
+
+    'Industry' => __('Industry', 'bit-pi'),
 
     'Job Title' => __('Job Title', 'bit-pi'),
 
@@ -10166,6 +10126,8 @@ return [
 
     'GoHighLevel Marketplace' => __('GoHighLevel Marketplace', 'bit-pi'),
 
+    'Date of Birth' => __('Date of Birth', 'bit-pi'),
+
     'postalCode' => __('postalCode', 'bit-pi'),
 
     'DND (Do Not Disturb)' => __('DND (Do Not Disturb)', 'bit-pi'),
@@ -10211,6 +10173,12 @@ return [
     'Delete Access Control Rule' => __('Delete Access Control Rule', 'bit-pi'),
 
     'Find Availability' => __('Find Availability', 'bit-pi'),
+
+    'Event Cancelled' => __('Event Cancelled', 'bit-pi'),
+
+    'Event Started' => __('Event Started', 'bit-pi'),
+
+    'Event Ended' => __('Event Ended', 'bit-pi'),
 
     'Select the calendar containing the event.' => __('Select the calendar containing the event.', 'bit-pi'),
 
@@ -10352,6 +10320,12 @@ return [
 
     'Single Events' => __('Single Events', 'bit-pi'),
 
+    'The calendar to watch.' => __('The calendar to watch.', 'bit-pi'),
+
+    'Only events whose title, description, location or attendees contain this text start the flow. Leave empty to allow all events.' => __('Only events whose title, description, location or attendees contain this text start the flow. Leave empty to allow all events.', 'bit-pi'),
+
+    'Match Term' => __('Match Term', 'bit-pi'),
+
     'You can find your OAuth credentials in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.developers.google.com/apis/credentials">Google Cloud Console</a>' => __('You can find your OAuth credentials in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.developers.google.com/apis/credentials">Google Cloud Console</a>', 'bit-pi'),
 
     'Untitled Event' => __('Untitled Event', 'bit-pi'),
@@ -10365,6 +10339,302 @@ return [
     'Turn on to select any calendar from it' => __('Turn on to select any calendar from it', 'bit-pi'),
 
     'Select a calendar to update.' => __('Select a calendar to update.', 'bit-pi'),
+
+    'Contacts' => __('Contacts', 'bit-pi'),
+
+    'Get Contact' => __('Get Contact', 'bit-pi'),
+
+    'List Contacts' => __('List Contacts', 'bit-pi'),
+
+    'Batch Get Contacts' => __('Batch Get Contacts', 'bit-pi'),
+
+    'Batch Create Contacts' => __('Batch Create Contacts', 'bit-pi'),
+
+    'Batch Update Contacts' => __('Batch Update Contacts', 'bit-pi'),
+
+    'Batch Delete Contacts' => __('Batch Delete Contacts', 'bit-pi'),
+
+    'Update Contact Photo' => __('Update Contact Photo', 'bit-pi'),
+
+    'Delete Contact Photo' => __('Delete Contact Photo', 'bit-pi'),
+
+    'Contact Groups' => __('Contact Groups', 'bit-pi'),
+
+    'Create Contact Group' => __('Create Contact Group', 'bit-pi'),
+
+    'Update Contact Group' => __('Update Contact Group', 'bit-pi'),
+
+    'Get Contact Group' => __('Get Contact Group', 'bit-pi'),
+
+    'List Contact Groups' => __('List Contact Groups', 'bit-pi'),
+
+    'Delete Contact Group' => __('Delete Contact Group', 'bit-pi'),
+
+    'Batch Get Contact Groups' => __('Batch Get Contact Groups', 'bit-pi'),
+
+    'Add Contacts to Group' => __('Add Contacts to Group', 'bit-pi'),
+
+    'Remove Contacts from Group' => __('Remove Contacts from Group', 'bit-pi'),
+
+    'Other Contacts' => __('Other Contacts', 'bit-pi'),
+
+    'List Other Contacts' => __('List Other Contacts', 'bit-pi'),
+
+    'Search Other Contacts' => __('Search Other Contacts', 'bit-pi'),
+
+    'Copy Other Contact to My Contacts' => __('Copy Other Contact to My Contacts', 'bit-pi'),
+
+    'Directory' => __('Directory', 'bit-pi'),
+
+    'List Directory People' => __('List Directory People', 'bit-pi'),
+
+    'Search Directory People' => __('Search Directory People', 'bit-pi'),
+
+    'New Contact' => __('New Contact', 'bit-pi'),
+
+    'Updated Contact' => __('Updated Contact', 'bit-pi'),
+
+    'New Contact in Group' => __('New Contact in Group', 'bit-pi'),
+
+    'New Contact Group' => __('New Contact Group', 'bit-pi'),
+
+    'New Other Contact' => __('New Other Contact', 'bit-pi'),
+
+    'New Directory Person' => __('New Directory Person', 'bit-pi'),
+
+    'JSON array of up to 200 Person objects, e.g. [{"names":[{"givenName":"Jane"}],"emailAddresses":[{"value":"jane@example.com"}]}].' => __('JSON array of up to 200 Person objects, e.g. [{"names":[{"givenName":"Jane"}],"emailAddresses":[{"value":"jane@example.com"}]}].', 'bit-pi'),
+
+    'Contacts (JSON)' => __('Contacts (JSON)', 'bit-pi'),
+
+    'Fields to include in each returned contact. Leave empty for all fields.' => __('Fields to include in each returned contact. Leave empty for all fields.', 'bit-pi'),
+
+    'Read Mask' => __('Read Mask', 'bit-pi'),
+
+    'Select fields' => __('Select fields', 'bit-pi'),
+
+    'Select contacts, or map a comma separated list of resource names (people/c123) from a previous step.' => __('Select contacts, or map a comma separated list of resource names (people/c123) from a previous step.', 'bit-pi'),
+
+    'Select contacts' => __('Select contacts', 'bit-pi'),
+
+    'Select contact groups, or map a comma separated list of resource names (contactGroups/abc) from a previous step.' => __('Select contact groups, or map a comma separated list of resource names (contactGroups/abc) from a previous step.', 'bit-pi'),
+
+    'Select contact groups' => __('Select contact groups', 'bit-pi'),
+
+    'How many member resource names to include. Defaults to 0 (none).' => __('How many member resource names to include. Defaults to 0 (none).', 'bit-pi'),
+
+    'Max Members' => __('Max Members', 'bit-pi'),
+
+    'Fields to include in the returned group. Leave empty for all fields.' => __('Fields to include in the returned group. Leave empty for all fields.', 'bit-pi'),
+
+    'Group Fields' => __('Group Fields', 'bit-pi'),
+
+    'Person Fields' => __('Person Fields', 'bit-pi'),
+
+    'JSON object of up to 200 entries keyed by resource name, e.g. {"people/c123":{"names":[{"givenName":"Jane"}]}}. Missing etags are fetched for you.' => __('JSON object of up to 200 entries keyed by resource name, e.g. {"people/c123":{"names":[{"givenName":"Jane"}]}}. Missing etags are fetched for you.', 'bit-pi'),
+
+    'Fields to overwrite on every listed contact.' => __('Fields to overwrite on every listed contact.', 'bit-pi'),
+
+    'Update Mask' => __('Update Mask', 'bit-pi'),
+
+    'Select a contact, or map a resource name (people/c123) from a previous step.' => __('Select a contact, or map a resource name (people/c123) from a previous step.', 'bit-pi'),
+
+    'Fields to include in the returned contact. Leave empty for all fields.' => __('Fields to include in the returned contact. Leave empty for all fields.', 'bit-pi'),
+
+    'Your groups plus My Contacts and Starred, or map a resource name (contactGroups/abc) from a previous step.' => __('Your groups plus My Contacts and Starred, or map a resource name (contactGroups/abc) from a previous step.', 'bit-pi'),
+
+    'Contact Group' => __('Contact Group', 'bit-pi'),
+
+    'Select a contact group' => __('Select a contact group', 'bit-pi'),
+
+    'Select an "Other contact", or map a resource name (otherContacts/c123) from a previous step.' => __('Select an "Other contact", or map a resource name (otherContacts/c123) from a previous step.', 'bit-pi'),
+
+    'Other Contact' => __('Other Contact', 'bit-pi'),
+
+    'Fields to copy into the new contact. Leave empty to copy all three.' => __('Fields to copy into the new contact. Leave empty to copy all three.', 'bit-pi'),
+
+    'Copy Mask' => __('Copy Mask', 'bit-pi'),
+
+    'E.g. Mr., Dr.' => __('E.g. Mr., Dr.', 'bit-pi'),
+
+    'Name Prefix' => __('Name Prefix', 'bit-pi'),
+
+    'E.g. Jr., PhD' => __('E.g. Jr., PhD', 'bit-pi'),
+
+    'Name Suffix' => __('Name Suffix', 'bit-pi'),
+
+    'Nickname' => __('Nickname', 'bit-pi'),
+
+    'Add Email' => __('Add Email', 'bit-pi'),
+
+    'Add Phone' => __('Add Phone', 'bit-pi'),
+
+    'Phone #{COUNT}' => __('Phone #{COUNT}', 'bit-pi'),
+
+    'Phones' => __('Phones', 'bit-pi'),
+
+    'Department' => __('Department', 'bit-pi'),
+
+    'Street Address' => __('Street Address', 'bit-pi'),
+
+    'State or province.' => __('State or province.', 'bit-pi'),
+
+    'Region' => __('Region', 'bit-pi'),
+
+    'Address Type' => __('Address Type', 'bit-pi'),
+
+    'Select a type' => __('Select a type', 'bit-pi'),
+
+    'YYYY-MM-DD, or MM-DD without a year.' => __('YYYY-MM-DD, or MM-DD without a year.', 'bit-pi'),
+
+    'Birthday' => __('Birthday', 'bit-pi'),
+
+    'Shown under "Custom fields" in Google Contacts.' => __('Shown under "Custom fields" in Google Contacts.', 'bit-pi'),
+
+    'Groups to add the new contact to. It always lands in My Contacts as well.' => __('Groups to add the new contact to. It always lands in My Contacts as well.', 'bit-pi'),
+
+    'Must be unique among your contact groups.' => __('Must be unique among your contact groups.', 'bit-pi'),
+
+    'Only groups you created can be changed. Map a resource name (contactGroups/abc) from a previous step if needed.' => __('Only groups you created can be changed. Map a resource name (contactGroups/abc) from a previous step if needed.', 'bit-pi'),
+
+    'Also delete every contact that belongs to the group.' => __('Also delete every contact that belongs to the group.', 'bit-pi'),
+
+    'Delete Contacts' => __('Delete Contacts', 'bit-pi'),
+
+    'Select a contact group, or map a resource name (contactGroups/abc) from a previous step.' => __('Select a contact group, or map a resource name (contactGroups/abc) from a previous step.', 'bit-pi'),
+
+    'addresses' => __('addresses', 'bit-pi'),
+
+    'ageRanges' => __('ageRanges', 'bit-pi'),
+
+    'biographies' => __('biographies', 'bit-pi'),
+
+    'birthdays' => __('birthdays', 'bit-pi'),
+
+    'calendarUrls' => __('calendarUrls', 'bit-pi'),
+
+    'clientData' => __('clientData', 'bit-pi'),
+
+    'coverPhotos' => __('coverPhotos', 'bit-pi'),
+
+    'emailAddresses' => __('emailAddresses', 'bit-pi'),
+
+    'events' => __('events', 'bit-pi'),
+
+    'externalIds' => __('externalIds', 'bit-pi'),
+
+    'genders' => __('genders', 'bit-pi'),
+
+    'imClients' => __('imClients', 'bit-pi'),
+
+    'interests' => __('interests', 'bit-pi'),
+
+    'locales' => __('locales', 'bit-pi'),
+
+    'locations' => __('locations', 'bit-pi'),
+
+    'memberships' => __('memberships', 'bit-pi'),
+
+    'metadata' => __('metadata', 'bit-pi'),
+
+    'miscKeywords' => __('miscKeywords', 'bit-pi'),
+
+    'names' => __('names', 'bit-pi'),
+
+    'nicknames' => __('nicknames', 'bit-pi'),
+
+    'occupations' => __('occupations', 'bit-pi'),
+
+    'organizations' => __('organizations', 'bit-pi'),
+
+    'phoneNumbers' => __('phoneNumbers', 'bit-pi'),
+
+    'photos' => __('photos', 'bit-pi'),
+
+    'relations' => __('relations', 'bit-pi'),
+
+    'sipAddresses' => __('sipAddresses', 'bit-pi'),
+
+    'skills' => __('skills', 'bit-pi'),
+
+    'urls' => __('urls', 'bit-pi'),
+
+    'userDefined' => __('userDefined', 'bit-pi'),
+
+    'groupType' => __('groupType', 'bit-pi'),
+
+    'memberCount' => __('memberCount', 'bit-pi'),
+
+    'name' => __('name', 'bit-pi'),
+
+    'Domain profiles' => __('Domain profiles', 'bit-pi'),
+
+    'Domain shared contacts' => __('Domain shared contacts', 'bit-pi'),
+
+    'Home' => __('Home', 'bit-pi'),
+
+    'Work' => __('Work', 'bit-pi'),
+
+    'Mobile' => __('Mobile', 'bit-pi'),
+
+    'Main' => __('Main', 'bit-pi'),
+
+    'Work Mobile' => __('Work Mobile', 'bit-pi'),
+
+    'Home Fax' => __('Home Fax', 'bit-pi'),
+
+    'Work Fax' => __('Work Fax', 'bit-pi'),
+
+    'Pager' => __('Pager', 'bit-pi'),
+
+    'Google Voice' => __('Google Voice', 'bit-pi'),
+
+    'Sign in with the Google account whose contacts you want to use. You can find credentials from' => __('Sign in with the Google account whose contacts you want to use. You can find credentials from', 'bit-pi'),
+
+    'Failed to fetch data. Please try again.' => __('Failed to fetch data. Please try again.', 'bit-pi'),
+
+    'Fields to include in each returned group. Leave empty for all fields.' => __('Fields to include in each returned group. Leave empty for all fields.', 'bit-pi'),
+
+    '1 to 1000. Defaults to 1000.' => __('1 to 1000. Defaults to 1000.', 'bit-pi'),
+
+    'Map nextPageToken from a previous run to fetch the next page.' => __('Map nextPageToken from a previous run to fetch the next page.', 'bit-pi'),
+
+    'Page Token' => __('Page Token', 'bit-pi'),
+
+    'Sort Order' => __('Sort Order', 'bit-pi'),
+
+    'Last modified (oldest first)' => __('Last modified (oldest first)', 'bit-pi'),
+
+    'Last modified (newest first)' => __('Last modified (newest first)', 'bit-pi'),
+
+    'Select a sort order' => __('Select a sort order', 'bit-pi'),
+
+    'Directory sources to read. Leave empty for both.' => __('Directory sources to read. Leave empty for both.', 'bit-pi'),
+
+    'Sources' => __('Sources', 'bit-pi'),
+
+    'Select sources' => __('Select sources', 'bit-pi'),
+
+    'Fields to include in each returned person. Leave empty for all fields.' => __('Fields to include in each returned person. Leave empty for all fields.', 'bit-pi'),
+
+    'The contact group to watch for new members.' => __('The contact group to watch for new members.', 'bit-pi'),
+
+    'Matches names, nicknames, emails, phone numbers and organizations by prefix.' => __('Matches names, nicknames, emails, phone numbers and organizations by prefix.', 'bit-pi'),
+
+    '1 to 30. Defaults to 30.' => __('1 to 30. Defaults to 30.', 'bit-pi'),
+
+    'Matches names, emails, phone numbers and organizations by prefix. Google Workspace accounts only.' => __('Matches names, emails, phone numbers and organizations by prefix. Google Workspace accounts only.', 'bit-pi'),
+
+    '1 to 500. Defaults to 500.' => __('1 to 500. Defaults to 500.', 'bit-pi'),
+
+    'Matches names, emails and phone numbers by prefix.' => __('Matches names, emails and phone numbers by prefix.', 'bit-pi'),
+
+    'Replaces the existing list when at least one row is filled in.' => __('Replaces the existing list when at least one row is filled in.', 'bit-pi'),
+
+    'Adds the contact to these groups. The groups it is already in are kept.' => __('Adds the contact to these groups. The groups it is already in are kept.', 'bit-pi'),
+
+    'Public image URL or a base64-encoded image. A URL is downloaded and encoded for you.' => __('Public image URL or a base64-encoded image. A URL is downloaded and encoded for you.', 'bit-pi'),
+
+    'Photo' => __('Photo', 'bit-pi'),
 
     'Create Document' => __('Create Document', 'bit-pi'),
 
@@ -10683,6 +10953,140 @@ return [
     'Enter the meeting end time in HH:MM format (24-hour). You can also enter date and time together, e.g., 2025-12-20 07:30' => __('Enter the meeting end time in HH:MM format (24-hour). You can also enter date and time together, e.g., 2025-12-20 07:30', 'bit-pi'),
 
     'End Time' => __('End Time', 'bit-pi'),
+
+    'Sites' => __('Sites', 'bit-pi'),
+
+    'List Sites' => __('List Sites', 'bit-pi'),
+
+    'Get Site' => __('Get Site', 'bit-pi'),
+
+    'Add Site' => __('Add Site', 'bit-pi'),
+
+    'Delete Site' => __('Delete Site', 'bit-pi'),
+
+    'Sitemaps' => __('Sitemaps', 'bit-pi'),
+
+    'List Sitemaps' => __('List Sitemaps', 'bit-pi'),
+
+    'Get Sitemap' => __('Get Sitemap', 'bit-pi'),
+
+    'Submit Sitemap' => __('Submit Sitemap', 'bit-pi'),
+
+    'Delete Sitemap' => __('Delete Sitemap', 'bit-pi'),
+
+    'Search Analytics' => __('Search Analytics', 'bit-pi'),
+
+    'Query Search Analytics' => __('Query Search Analytics', 'bit-pi'),
+
+    'URL Inspection' => __('URL Inspection', 'bit-pi'),
+
+    'Inspect URL' => __('Inspect URL', 'bit-pi'),
+
+    'New Site' => __('New Site', 'bit-pi'),
+
+    'New Sitemap' => __('New Sitemap', 'bit-pi'),
+
+    'Sitemap Status Changed' => __('Sitemap Status Changed', 'bit-pi'),
+
+    'URL-prefix property with trailing slash (https://example.com/) or domain property (sc-domain:example.com). Ownership must still be verified in Search Console.' => __('URL-prefix property with trailing slash (https://example.com/) or domain property (sc-domain:example.com). Ownership must still be verified in Search Console.', 'bit-pi'),
+
+    'Property URL' => __('Property URL', 'bit-pi'),
+
+    'You can find your OAuth credentials in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.developers.google.com/apis/credentials">Google Cloud Console</a>. Enable the Google Search Console API for the project.' => __('You can find your OAuth credentials in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.developers.google.com/apis/credentials">Google Cloud Console</a>. Enable the Google Search Console API for the project.', 'bit-pi'),
+
+    'Pick a property from your account or map one from a previous step (https://example.com/ or sc-domain:example.com).' => __('Pick a property from your account or map one from a previous step (https://example.com/ or sc-domain:example.com).', 'bit-pi'),
+
+    'Property' => __('Property', 'bit-pi'),
+
+    'Sitemaps submitted for the selected property.' => __('Sitemaps submitted for the selected property.', 'bit-pi'),
+
+    'Sitemap' => __('Sitemap', 'bit-pi'),
+
+    'Failed to fetch data' => __('Failed to fetch data', 'bit-pi'),
+
+    'Fully-qualified URL to inspect. Must belong to the selected property. Returns the indexed version only, not a live test.' => __('Fully-qualified URL to inspect. Must belong to the selected property. Returns the indexed version only, not a live test.', 'bit-pi'),
+
+    'URL to Inspect' => __('URL to Inspect', 'bit-pi'),
+
+    'Optional IETF BCP-47 code for translated result messages, e.g. en-US.' => __('Optional IETF BCP-47 code for translated result messages, e.g. en-US.', 'bit-pi'),
+
+    'Optional. URL of a sitemap index; only sitemaps listed in that index are returned.' => __('Optional. URL of a sitemap index; only sitemaps listed in that index are returned.', 'bit-pi'),
+
+    'Sitemap Index URL' => __('Sitemap Index URL', 'bit-pi'),
+
+    'Search Appearance' => __('Search Appearance', 'bit-pi'),
+
+    'Equals' => __('Equals', 'bit-pi'),
+
+    'Not equals' => __('Not equals', 'bit-pi'),
+
+    'Not contains' => __('Not contains', 'bit-pi'),
+
+    'Matches regex' => __('Matches regex', 'bit-pi'),
+
+    'Does not match regex' => __('Does not match regex', 'bit-pi'),
+
+    'YYYY-MM-DD in Pacific Time. Relative values like "-28 days" are also accepted.' => __('YYYY-MM-DD in Pacific Time. Relative values like "-28 days" are also accepted.', 'bit-pi'),
+
+    'YYYY-MM-DD in Pacific Time, inclusive. Relative values like "yesterday" are also accepted.' => __('YYYY-MM-DD in Pacific Time, inclusive. Relative values like "yesterday" are also accepted.', 'bit-pi'),
+
+    'Group rows by these dimensions. Leave empty for a single aggregated row.' => __('Group rows by these dimensions. Leave empty for a single aggregated row.', 'bit-pi'),
+
+    'Dimensions' => __('Dimensions', 'bit-pi'),
+
+    'Search Type' => __('Search Type', 'bit-pi'),
+
+    'Web (default)' => __('Web (default)', 'bit-pi'),
+
+    'News' => __('News', 'bit-pi'),
+
+    'Discover' => __('Discover', 'bit-pi'),
+
+    'Google News' => __('Google News', 'bit-pi'),
+
+    'How data is aggregated. Auto lets Google choose between by property and by page.' => __('How data is aggregated. Auto lets Google choose between by property and by page.', 'bit-pi'),
+
+    'Aggregation Type' => __('Aggregation Type', 'bit-pi'),
+
+    'Auto (default)' => __('Auto (default)', 'bit-pi'),
+
+    'By property' => __('By property', 'bit-pi'),
+
+    'By page' => __('By page', 'bit-pi'),
+
+    'By News Showcase panel' => __('By News Showcase panel', 'bit-pi'),
+
+    '"All" includes fresh, not-yet-final data. "Hourly all" is required for the hour dimension.' => __('"All" includes fresh, not-yet-final data. "Hourly all" is required for the hour dimension.', 'bit-pi'),
+
+    'Data State' => __('Data State', 'bit-pi'),
+
+    'Final (default)' => __('Final (default)', 'bit-pi'),
+
+    'Hourly all' => __('Hourly all', 'bit-pi'),
+
+    '1 to 25,000. Default 1,000.' => __('1 to 25,000. Default 1,000.', 'bit-pi'),
+
+    'Row Limit' => __('Row Limit', 'bit-pi'),
+
+    'Zero-based offset for paging through results. Default 0.' => __('Zero-based offset for paging through results. Default 0.', 'bit-pi'),
+
+    'Start Row' => __('Start Row', 'bit-pi'),
+
+    'Add Filter' => __('Add Filter', 'bit-pi'),
+
+    'Dimension' => __('Dimension', 'bit-pi'),
+
+    'Expression' => __('Expression', 'bit-pi'),
+
+    'All filters must match (AND). Country expects a 3-letter ISO code, device one of DESKTOP, MOBILE or TABLET.' => __('All filters must match (AND). Country expects a 3-letter ISO code, device one of DESKTOP, MOBILE or TABLET.', 'bit-pi'),
+
+    'Filter #{COUNT}' => __('Filter #{COUNT}', 'bit-pi'),
+
+    'Filters' => __('Filters', 'bit-pi'),
+
+    'Full URL of the sitemap to submit, e.g. https://example.com/sitemap.xml' => __('Full URL of the sitemap to submit, e.g. https://example.com/sitemap.xml', 'bit-pi'),
+
+    'Sitemap URL' => __('Sitemap URL', 'bit-pi'),
 
     'spreadsheet' => __('spreadsheet', 'bit-pi'),
 
@@ -11192,6 +11596,8 @@ return [
 
     'A name for this deal.' => __('A name for this deal.', 'bit-pi'),
 
+    'Deal Name' => __('Deal Name', 'bit-pi'),
+
     'Sales Pipeline' => __('Sales Pipeline', 'bit-pi'),
 
     'Select a Pipeline' => __('Select a Pipeline', 'bit-pi'),
@@ -11205,6 +11611,10 @@ return [
     'Select a Owner' => __('Select a Owner', 'bit-pi'),
 
     'Deal Type' => __('Deal Type', 'bit-pi'),
+
+    'New Business' => __('New Business', 'bit-pi'),
+
+    'Existing Business' => __('Existing Business', 'bit-pi'),
 
     'Select a Deal Type' => __('Select a Deal Type', 'bit-pi'),
 
@@ -11720,6 +12130,8 @@ return [
 
     'Delete Email' => __('Delete Email', 'bit-pi'),
 
+    'Save to Drafts' => __('Save to Drafts', 'bit-pi'),
+
     'The folder the message is currently in.' => __('The folder the message is currently in.', 'bit-pi'),
 
     'The folder the message is copied to.' => __('The folder the message is copied to.', 'bit-pi'),
@@ -11810,6 +12222,8 @@ return [
 
     'STARTTLS' => __('STARTTLS', 'bit-pi'),
 
+    'None' => __('None', 'bit-pi'),
+
     'Usually the full email address of the mailbox.' => __('Usually the full email address of the mailbox.', 'bit-pi'),
 
     'you@example.com' => __('you@example.com', 'bit-pi'),
@@ -11825,6 +12239,30 @@ return [
     'Which emails are allowed to start this flow.' => __('Which emails are allowed to start this flow.', 'bit-pi'),
 
     'IMAP search rules, e.g. SUBJECT "invoice" or ["UNSEEN"]. Combined with the criteria above. Leave empty to allow all emails.' => __('IMAP search rules, e.g. SUBJECT "invoice" or ["UNSEEN"]. Combined with the criteria above. Leave empty to allow all emails.', 'bit-pi'),
+
+    'Where to save the draft. Pick your Drafts folder (on some web hosts it is called INBOX.Drafts).' => __('Where to save the draft. Pick your Drafts folder (on some web hosts it is called INBOX.Drafts).', 'bit-pi'),
+
+    'Drafts' => __('Drafts', 'bit-pi'),
+
+    'Who the email will go to when it is sent. To reply to an incoming email, select sender_email from the New Email trigger. Separate more than one address with commas.' => __('Who the email will go to when it is sent. To reply to an incoming email, select sender_email from the New Email trigger. Separate more than one address with commas.', 'bit-pi'),
+
+    'To' => __('To', 'bit-pi'),
+
+    'Optional. Who also gets a copy. Separate more than one address with commas.' => __('Optional. Who also gets a copy. Separate more than one address with commas.', 'bit-pi'),
+
+    'CC' => __('CC', 'bit-pi'),
+
+    'The subject line. To reply, type "Re: " and then select subject from the New Email trigger.' => __('The subject line. To reply, type "Re: " and then select subject from the New Email trigger.', 'bit-pi'),
+
+    'The email content. Type it, or select data from an earlier step.' => __('The email content. Type it, or select data from an earlier step.', 'bit-pi'),
+
+    'Optional. Select message_id from the New Email trigger so the draft appears inside the same email conversation as a reply. Leave empty to start a new conversation.' => __('Optional. Select message_id from the New Email trigger so the draft appears inside the same email conversation as a reply. Leave empty to start a new conversation.', 'bit-pi'),
+
+    'Reply to Message ID' => __('Reply to Message ID', 'bit-pi'),
+
+    'Turn on if the Body contains HTML, such as <p> or <b> tags. Leave off for plain text.' => __('Turn on if the Body contains HTML, such as <p> or <b> tags. Leave off for plain text.', 'bit-pi'),
+
+    'Is this draft in HTML format?' => __('Is this draft in HTML format?', 'bit-pi'),
 
     'Publish a single image to the Instagram feed' => __('Publish a single image to the Instagram feed', 'bit-pi'),
 
@@ -12023,8 +12461,6 @@ return [
     'Add SMS' => __('Add SMS', 'bit-pi'),
 
     'From' => __('From', 'bit-pi'),
-
-    'To' => __('To', 'bit-pi'),
 
     'Up to 100 SMS messages per request.' => __('Up to 100 SMS messages per request.', 'bit-pi'),
 
@@ -12294,8 +12730,6 @@ return [
 
     'Enter the value to match. Leave empty for operators like "Is Empty".' => __('Enter the value to match. Leave empty for operators like "Is Empty".', 'bit-pi'),
 
-    'Equals' => __('Equals', 'bit-pi'),
-
     'Not Equals' => __('Not Equals', 'bit-pi'),
 
     'Greater Than' => __('Greater Than', 'bit-pi'),
@@ -12402,6 +12836,8 @@ return [
 
     'Enter the Contact Email' => __('Enter the Contact Email', 'bit-pi'),
 
+    'County' => __('County', 'bit-pi'),
+
     'Home Phone' => __('Home Phone', 'bit-pi'),
 
     'Work Phone' => __('Work Phone', 'bit-pi'),
@@ -12455,6 +12891,8 @@ return [
     'Net' => __('Net', 'bit-pi'),
 
     'Discount' => __('Discount', 'bit-pi'),
+
+    'Shipping' => __('Shipping', 'bit-pi'),
 
     'Shipping Taxes' => __('Shipping Taxes', 'bit-pi'),
 
@@ -13084,8 +13522,6 @@ return [
     'Email address to which the email will be sent. You can use multiple emails separated by commas.' => __('Email address to which the email will be sent. You can use multiple emails separated by commas.', 'bit-pi'),
 
     'Email address to which a copy of the email will be sent. You can use multiple emails separated by commas.' => __('Email address to which a copy of the email will be sent. You can use multiple emails separated by commas.', 'bit-pi'),
-
-    'CC' => __('CC', 'bit-pi'),
 
     'Email address to which a blind copy of the email will be sent. You can use multiple emails separated by commas.' => __('Email address to which a blind copy of the email will be sent. You can use multiple emails separated by commas.', 'bit-pi'),
 
@@ -14489,8 +14925,6 @@ return [
 
     '2. Click the **‘Create Key’** button to generate your keys.' => __('2. Click the **‘Create Key’** button to generate your keys.', 'bit-pi'),
 
-    'Region' => __('Region', 'bit-pi'),
-
     'Enter the subscriber ID' => __('Enter the subscriber ID', 'bit-pi'),
 
     'User Approved' => __('User Approved', 'bit-pi'),
@@ -14587,11 +15021,7 @@ return [
 
     'Create a subscriber' => __('Create a subscriber', 'bit-pi'),
 
-    'List Contacts' => __('List Contacts', 'bit-pi'),
-
     'Update Contacts' => __('Update Contacts', 'bit-pi'),
-
-    'Get Contact' => __('Get Contact', 'bit-pi'),
 
     'Send Customer Event' => __('Send Customer Event', 'bit-pi'),
 
@@ -14830,8 +15260,6 @@ return [
     'logit_bias' => __('logit_bias', 'bit-pi'),
 
     'logprobs' => __('logprobs', 'bit-pi'),
-
-    'metadata' => __('metadata', 'bit-pi'),
 
     'modalities' => __('modalities', 'bit-pi'),
 
@@ -15162,11 +15590,7 @@ return [
 
     'Enter the person name.' => __('Enter the person name.', 'bit-pi'),
 
-    'Add Email' => __('Add Email', 'bit-pi'),
-
     'Enter the labels and email addresses.' => __('Enter the labels and email addresses.', 'bit-pi'),
-
-    'Add Phone' => __('Add Phone', 'bit-pi'),
 
     'Enter the labels and phone numbers.' => __('Enter the labels and phone numbers.', 'bit-pi'),
 
@@ -15267,6 +15691,8 @@ return [
     'Select the current status of the deal.' => __('Select the current status of the deal.', 'bit-pi'),
 
     'Deleted' => __('Deleted', 'bit-pi'),
+
+    'Probability' => __('Probability', 'bit-pi'),
 
     'Lost Reason' => __('Lost Reason', 'bit-pi'),
 
@@ -15692,8 +16118,6 @@ return [
 
     'Sort key. Prefix aware sorting is handled by Pointics.' => __('Sort key. Prefix aware sorting is handled by Pointics.', 'bit-pi'),
 
-    'Sort Order' => __('Sort Order', 'bit-pi'),
-
     'Cost Points' => __('Cost Points', 'bit-pi'),
 
     'Select a sort key' => __('Select a sort key', 'bit-pi'),
@@ -15713,8 +16137,6 @@ return [
     'Expire' => __('Expire', 'bit-pi'),
 
     'Reversal' => __('Reversal', 'bit-pi'),
-
-    'Select a type' => __('Select a type', 'bit-pi'),
 
     'Ledger entry status.' => __('Ledger entry status.', 'bit-pi'),
 
@@ -16087,6 +16509,170 @@ return [
     'Plan ID' => __('Plan ID', 'bit-pi'),
 
     'Subscription ID' => __('Subscription ID', 'bit-pi'),
+
+    'Create Quiz' => __('Create Quiz', 'bit-pi'),
+
+    'Update Quiz' => __('Update Quiz', 'bit-pi'),
+
+    'Change Quiz Status' => __('Change Quiz Status', 'bit-pi'),
+
+    'Delete Quiz' => __('Delete Quiz', 'bit-pi'),
+
+    'Get Quiz' => __('Get Quiz', 'bit-pi'),
+
+    'Get All Quizzes' => __('Get All Quizzes', 'bit-pi'),
+
+    'Create Question' => __('Create Question', 'bit-pi'),
+
+    'Update Question' => __('Update Question', 'bit-pi'),
+
+    'Change Question Status' => __('Change Question Status', 'bit-pi'),
+
+    'Delete Question' => __('Delete Question', 'bit-pi'),
+
+    'Get Question' => __('Get Question', 'bit-pi'),
+
+    'Get All Questions' => __('Get All Questions', 'bit-pi'),
+
+    'Create Quiz Category' => __('Create Quiz Category', 'bit-pi'),
+
+    'Update Quiz Category' => __('Update Quiz Category', 'bit-pi'),
+
+    'Delete Quiz Category' => __('Delete Quiz Category', 'bit-pi'),
+
+    'Get All Quiz Categories' => __('Get All Quiz Categories', 'bit-pi'),
+
+    'Create Question Category' => __('Create Question Category', 'bit-pi'),
+
+    'Update Question Category' => __('Update Question Category', 'bit-pi'),
+
+    'Delete Question Category' => __('Delete Question Category', 'bit-pi'),
+
+    'Get All Question Categories' => __('Get All Question Categories', 'bit-pi'),
+
+    'Results' => __('Results', 'bit-pi'),
+
+    'Create Quiz Result' => __('Create Quiz Result', 'bit-pi'),
+
+    'Mark Result as Read' => __('Mark Result as Read', 'bit-pi'),
+
+    'Delete Quiz Result' => __('Delete Quiz Result', 'bit-pi'),
+
+    'Get Quiz Result' => __('Get Quiz Result', 'bit-pi'),
+
+    'Get Results of a Quiz' => __('Get Results of a Quiz', 'bit-pi'),
+
+    'Get Reviews of a Quiz' => __('Get Reviews of a Quiz', 'bit-pi'),
+
+    'Question Reports' => __('Question Reports', 'bit-pi'),
+
+    'Create Question Report' => __('Create Question Report', 'bit-pi'),
+
+    'Resolve Question Report' => __('Resolve Question Report', 'bit-pi'),
+
+    'Delete Question Report' => __('Delete Question Report', 'bit-pi'),
+
+    'Quiz Submitted' => __('Quiz Submitted', 'bit-pi'),
+
+    'Training Completed' => __('Training Completed', 'bit-pi'),
+
+    'Quiz Saved' => __('Quiz Saved', 'bit-pi'),
+
+    'Select a question' => __('Select a question', 'bit-pi'),
+
+    'Quiz' => __('Quiz', 'bit-pi'),
+
+    'Question Report' => __('Question Report', 'bit-pi'),
+
+    'Select a question report' => __('Select a question report', 'bit-pi'),
+
+    'Run this flow only for the selected quiz (or any quiz).' => __('Run this flow only for the selected quiz (or any quiz).', 'bit-pi'),
+
+    'Quiz Result' => __('Quiz Result', 'bit-pi'),
+
+    'Select a quiz result' => __('Select a quiz result', 'bit-pi'),
+
+    'Plain-text title shown in the questions list' => __('Plain-text title shown in the questions list', 'bit-pi'),
+
+    'Question Title' => __('Question Title', 'bit-pi'),
+
+    'Question Category' => __('Question Category', 'bit-pi'),
+
+    'Select a question category' => __('Select a question category', 'bit-pi'),
+
+    'Question Type' => __('Question Type', 'bit-pi'),
+
+    'Select a question type' => __('Select a question type', 'bit-pi'),
+
+    'Add Answer' => __('Add Answer', 'bit-pi'),
+
+    'Correct' => __('Correct', 'bit-pi'),
+
+    'Answers' => __('Answers', 'bit-pi'),
+
+    'Hint' => __('Hint', 'bit-pi'),
+
+    'Explanation' => __('Explanation', 'bit-pi'),
+
+    'Right Answer Text' => __('Right Answer Text', 'bit-pi'),
+
+    'Wrong Answer Text' => __('Wrong Answer Text', 'bit-pi'),
+
+    'URL of the question image' => __('URL of the question image', 'bit-pi'),
+
+    'Question Image' => __('Question Image', 'bit-pi'),
+
+    'Report Text' => __('Report Text', 'bit-pi'),
+
+    'Leave empty to store the report for the current user' => __('Leave empty to store the report for the current user', 'bit-pi'),
+
+    'Quiz Title' => __('Quiz Title', 'bit-pi'),
+
+    'Quiz Category' => __('Quiz Category', 'bit-pi'),
+
+    'Select a quiz category' => __('Select a quiz category', 'bit-pi'),
+
+    'Questions included in this quiz' => __('Questions included in this quiz', 'bit-pi'),
+
+    'Select questions' => __('Select questions', 'bit-pi'),
+
+    'URL of the quiz featured image' => __('URL of the quiz featured image', 'bit-pi'),
+
+    'Quiz Image' => __('Quiz Image', 'bit-pi'),
+
+    'Quiz URL' => __('Quiz URL', 'bit-pi'),
+
+    'Ordering' => __('Ordering', 'bit-pi'),
+
+    'Score stored with the result, e.g. 80' => __('Score stored with the result, e.g. 80', 'bit-pi'),
+
+    'Score' => __('Score', 'bit-pi'),
+
+    'Leave empty to store the result for the current user' => __('Leave empty to store the result for the current user', 'bit-pi'),
+
+    'User Phone' => __('User Phone', 'bit-pi'),
+
+    'Correct Answers Count' => __('Correct Answers Count', 'bit-pi'),
+
+    'Questions Count' => __('Questions Count', 'bit-pi'),
+
+    'Format: Y-m-d H:i:s' => __('Format: Y-m-d H:i:s', 'bit-pi'),
+
+    'User Explanation' => __('User Explanation', 'bit-pi'),
+
+    'Rating' => __('Rating', 'bit-pi'),
+
+    'Select a rating' => __('Select a rating', 'bit-pi'),
+
+    'Review' => __('Review', 'bit-pi'),
+
+    'Leave empty to store the review for the current user' => __('Leave empty to store the review for the current user', 'bit-pi'),
+
+    'Select a review' => __('Select a review', 'bit-pi'),
+
+    'Leave empty to fetch questions of every category' => __('Leave empty to fetch questions of every category', 'bit-pi'),
+
+    'Failed to fetch options. Please try again.' => __('Failed to fetch options. Please try again.', 'bit-pi'),
 
     'Get All Giveaways' => __('Get All Giveaways', 'bit-pi'),
 
@@ -16754,8 +17340,6 @@ return [
 
     'Select events' => __('Select events', 'bit-pi'),
 
-    'Failed to fetch data. Please try again.' => __('Failed to fetch data. Please try again.', 'bit-pi'),
-
     'Failed to fetch subscriber fields. Please try again.' => __('Failed to fetch subscriber fields. Please try again.', 'bit-pi'),
 
     'Success! We have attached the webhook to your Sender account.' => __('Success! We have attached the webhook to your Sender account.', 'bit-pi'),
@@ -16789,8 +17373,6 @@ return [
     'SMS Status' => __('SMS Status', 'bit-pi'),
 
     'Transactional Email Status' => __('Transactional Email Status', 'bit-pi'),
-
-    'Contacts' => __('Contacts', 'bit-pi'),
 
     'Get Contact By ID' => __('Get Contact By ID', 'bit-pi'),
 
@@ -16990,10 +17572,6 @@ return [
 
     'Run this flow only for the selected lesson (or any lesson).' => __('Run this flow only for the selected lesson (or any lesson).', 'bit-pi'),
 
-    'Run this flow only for the selected quiz (or any quiz).' => __('Run this flow only for the selected quiz (or any quiz).', 'bit-pi'),
-
-    'Quiz' => __('Quiz', 'bit-pi'),
-
     'Course the certificate is issued for. Requires the Sensei Certificates addon.' => __('Course the certificate is issued for. Requires the Sensei Certificates addon.', 'bit-pi'),
 
     'Email address of the user receiving the certificate.' => __('Email address of the user receiving the certificate.', 'bit-pi'),
@@ -17037,8 +17615,6 @@ return [
     'Grade Type' => __('Grade Type', 'bit-pi'),
 
     'Manual' => __('Manual', 'bit-pi'),
-
-    'Failed to fetch options. Please try again.' => __('Failed to fetch options. Please try again.', 'bit-pi'),
 
     'Also mark the lesson as complete after starting it.' => __('Also mark the lesson as complete after starting it.', 'bit-pi'),
 
@@ -17382,6 +17958,8 @@ return [
 
     'Enter the description of the product' => __('Enter the description of the product', 'bit-pi'),
 
+    'Service' => __('Service', 'bit-pi'),
+
     'Good' => __('Good', 'bit-pi'),
 
     'Enter the customer ID for creating subscription' => __('Enter the customer ID for creating subscription', 'bit-pi'),
@@ -17512,8 +18090,6 @@ return [
     'You can find your API key in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://app.suitedash.com/integrations/publicApi">SuiteDash Api Settings</a>' => __('You can find your API key in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://app.suitedash.com/integrations/publicApi">SuiteDash Api Settings</a>', 'bit-pi'),
 
     'SuiteDash API' => __('SuiteDash API', 'bit-pi'),
-
-    'Name Prefix' => __('Name Prefix', 'bit-pi'),
 
     'Primary Email' => __('Primary Email', 'bit-pi'),
 
@@ -18002,8 +18578,6 @@ return [
     'Choose Protect Content' => __('Choose Protect Content', 'bit-pi'),
 
     'Chose Media Type' => __('Chose Media Type', 'bit-pi'),
-
-    'Photo' => __('Photo', 'bit-pi'),
 
     'Select Media Type' => __('Select Media Type', 'bit-pi'),
 
@@ -18960,8 +19534,6 @@ return [
 
     'New description for the video. Leave empty to keep unchanged.' => __('New description for the video. Leave empty to keep unchanged.', 'bit-pi'),
 
-    'Failed to fetch data' => __('Failed to fetch data', 'bit-pi'),
-
     'Generate a Personal Access Token (with the scopes you need) from' => __('Generate a Personal Access Token (with the scopes you need) from', 'bit-pi'),
 
     'Vimeo Developer Apps' => __('Vimeo Developer Apps', 'bit-pi'),
@@ -19600,17 +20172,13 @@ return [
 
     'Update the status of an existing order in your WooCommerce store.' => __('Update the status of an existing order in your WooCommerce store.', 'bit-pi'),
 
+    'Add Order Note' => __('Add Order Note', 'bit-pi'),
+
     'Add Or Update Order Custom Fields (Meta Data)' => __('Add Or Update Order Custom Fields (Meta Data)', 'bit-pi'),
 
     'Add or update custom fields (meta data) for an existing order.' => __('Add or update custom fields (meta data) for an existing order.', 'bit-pi'),
 
-    'Get Total Orders Count' => __('Get Total Orders Count', 'bit-pi'),
-
-    'Get the total count of orders in your WooCommerce store by status.' => __('Get the total count of orders in your WooCommerce store by status.', 'bit-pi'),
-
-    'Get A List Of Refunded Orders' => __('Get A List Of Refunded Orders', 'bit-pi'),
-
-    'Want to see refunded orders? Just hit **Test Run** to fetch them.' => __('Want to see refunded orders? Just hit **Test Run** to fetch them.', 'bit-pi'),
+    'Want to see a specific order? Just hit **Test Run** to fetch it.' => __('Want to see a specific order? Just hit **Test Run** to fetch it.', 'bit-pi'),
 
     'Want to see orders? Just hit **Test Run** to fetch them.' => __('Want to see orders? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
@@ -19622,11 +20190,47 @@ return [
 
     'Want to see orders by billing email? Just hit **Test Run** to fetch them.' => __('Want to see orders by billing email? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
-    'Get Order (By Customer Id)' => __('Get Order (By Customer Id)', 'bit-pi'),
+    'Get Order (By Customer ID)' => __('Get Order (By Customer ID)', 'bit-pi'),
 
-    'Want to see orders by customer id? Just hit **Test Run** to fetch them.' => __('Want to see orders by customer id? Just hit **Test Run** to fetch them.', 'bit-pi'),
+    'Want to see orders by customer ID? Just hit **Test Run** to fetch them.' => __('Want to see orders by customer ID? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
-    'Want to see a specific order? Just hit **Test Run** to fetch it.' => __('Want to see a specific order? Just hit **Test Run** to fetch it.', 'bit-pi'),
+    'Get A List Of Refunded Orders' => __('Get A List Of Refunded Orders', 'bit-pi'),
+
+    'Want to see refunded orders? Just hit **Test Run** to fetch them.' => __('Want to see refunded orders? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Order Notes' => __('Get Order Notes', 'bit-pi'),
+
+    'Retrieve all notes for a specific order.' => __('Retrieve all notes for a specific order.', 'bit-pi'),
+
+    'Get Order Refunds' => __('Get Order Refunds', 'bit-pi'),
+
+    'Retrieve a list of refunds for a specific order.' => __('Retrieve a list of refunds for a specific order.', 'bit-pi'),
+
+    'Retrieve all metadata entries (custom fields) for a specific order.' => __('Retrieve all metadata entries (custom fields) for a specific order.', 'bit-pi'),
+
+    'Get Order Metadata By Specific Meta Key (Single)' => __('Get Order Metadata By Specific Meta Key (Single)', 'bit-pi'),
+
+    'Retrieve a single metadata value for an order using a specific meta key.' => __('Retrieve a single metadata value for an order using a specific meta key.', 'bit-pi'),
+
+    'Get Total Orders Count' => __('Get Total Orders Count', 'bit-pi'),
+
+    'Get the total count of orders in your WooCommerce store by status.' => __('Get the total count of orders in your WooCommerce store by status.', 'bit-pi'),
+
+    'Create a new customer in your WooCommerce store.' => __('Create a new customer in your WooCommerce store.', 'bit-pi'),
+
+    'Update an existing customer\'s profile information by their ID.' => __('Update an existing customer\'s profile information by their ID.', 'bit-pi'),
+
+    'Permanently delete a customer from your WooCommerce store by their ID.' => __('Permanently delete a customer from your WooCommerce store by their ID.', 'bit-pi'),
+
+    'Want to see a specific customer? Just hit **Test Run** to fetch it.' => __('Want to see a specific customer? Just hit **Test Run** to fetch it.', 'bit-pi'),
+
+    'Get Customer (By Email Address)' => __('Get Customer (By Email Address)', 'bit-pi'),
+
+    'Want to see all customers? Just hit **Test Run** to fetch them.' => __('Want to see all customers? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Customers (By Purchased Product)' => __('Get Customers (By Purchased Product)', 'bit-pi'),
+
+    'Find registered customers who bought a product in a paid (processing or completed) order within a date range.' => __('Find registered customers who bought a product in a paid (processing or completed) order within a date range.', 'bit-pi'),
 
     'Get Customer Total Spent' => __('Get Customer Total Spent', 'bit-pi'),
 
@@ -19636,33 +20240,59 @@ return [
 
     'Want to see the last order placed by a customer? Just hit **Test Run** to fetch it.' => __('Want to see the last order placed by a customer? Just hit **Test Run** to fetch it.', 'bit-pi'),
 
-    'Add Order Note' => __('Add Order Note', 'bit-pi'),
+    'Get Customer Order Count' => __('Get Customer Order Count', 'bit-pi'),
 
-    'Want to see all customers? Just hit **Test Run** to fetch them.' => __('Want to see all customers? Just hit **Test Run** to fetch them.', 'bit-pi'),
+    'Get the total number of orders placed by a specific customer.' => __('Get the total number of orders placed by a specific customer.', 'bit-pi'),
 
-    'Want to see a specific customer? Just hit **Test Run** to fetch it.' => __('Want to see a specific customer? Just hit **Test Run** to fetch it.', 'bit-pi'),
+    'Get Customer Totals' => __('Get Customer Totals', 'bit-pi'),
 
-    'Get Customer (By Email Address)' => __('Get Customer (By Email Address)', 'bit-pi'),
-
-    'Create a new customer in your WooCommerce store.' => __('Create a new customer in your WooCommerce store.', 'bit-pi'),
+    'Want to see customer totals? Just hit **Test Run** to fetch them.' => __('Want to see customer totals? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
     'Simple – covers the vast majority of any products you may sell. Simple products are shipped and have no options. For example, a book.' => __('Simple – covers the vast majority of any products you may sell. Simple products are shipped and have no options. For example, a book.', 'bit-pi'),
 
-    'Create Product Variation' => __('Create Product Variation', 'bit-pi'),
-
-    'Create a new product variation for an existing variable product.' => __('Create a new product variation for an existing variable product.', 'bit-pi'),
-
     'Make sure the Product ID exists in your WooCommerce store.' => __('Make sure the Product ID exists in your WooCommerce store.', 'bit-pi'),
+
+    'Update Product Price' => __('Update Product Price', 'bit-pi'),
+
+    'Update the regular price and/or sale price of a product by its ID or SKU.' => __('Update the regular price and/or sale price of a product by its ID or SKU.', 'bit-pi'),
+
+    'Update Product Stock' => __('Update Product Stock', 'bit-pi'),
+
+    'Ensure that the "Manage stock?" option is enabled for the product.' => __('Ensure that the "Manage stock?" option is enabled for the product.', 'bit-pi'),
+
+    'Update Product Status' => __('Update Product Status', 'bit-pi'),
+
+    'Update the status of a product by ID.' => __('Update the status of a product by ID.', 'bit-pi'),
+
+    'Delete Product (Soft Delete)' => __('Delete Product (Soft Delete)', 'bit-pi'),
+
+    'Soft deleted products can be restored from the Trash in WooCommerce.' => __('Soft deleted products can be restored from the Trash in WooCommerce.', 'bit-pi'),
+
+    'Delete Product (Permanently)' => __('Delete Product (Permanently)', 'bit-pi'),
+
+    'Permanently deleted products cannot be restored.' => __('Permanently deleted products cannot be restored.', 'bit-pi'),
+
+    'Get Product by ID' => __('Get Product by ID', 'bit-pi'),
+
+    'Get Product by SKU' => __('Get Product by SKU', 'bit-pi'),
+
+    'Make sure the SKU exists for the product.' => __('Make sure the SKU exists for the product.', 'bit-pi'),
+
+    'Get Product by Name or Slug' => __('Get Product by Name or Slug', 'bit-pi'),
+
+    'Search for a product by its name or URL slug.' => __('Search for a product by its name or URL slug.', 'bit-pi'),
 
     'Get All Products' => __('Get All Products', 'bit-pi'),
 
-    'Want to see simple products? Just hit **Test Run** to fetch them.' => __('Want to see simple products? Just hit **Test Run** to fetch them.', 'bit-pi'),
+    'Want to see all products? Just hit **Test Run** to fetch them.' => __('Want to see all products? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
     'Get All Products (By Category)' => __('Get All Products (By Category)', 'bit-pi'),
 
     'Want to see products by category? Just hit **Test Run** to fetch them.' => __('Want to see products by category? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
     'Get All Simple Products' => __('Get All Simple Products', 'bit-pi'),
+
+    'Want to see simple products? Just hit **Test Run** to fetch them.' => __('Want to see simple products? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
     'Get All Variable Products' => __('Get All Variable Products', 'bit-pi'),
 
@@ -19676,31 +20306,9 @@ return [
 
     'Want to see external products? Just hit **Test Run** to fetch them.' => __('Want to see external products? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
-    'Get All Variation Products' => __('Get All Variation Products', 'bit-pi'),
-
-    'Want to see variation products? Just hit **Test Run** to fetch them.' => __('Want to see variation products? Just hit **Test Run** to fetch them.', 'bit-pi'),
-
     'Get All Subscription Products' => __('Get All Subscription Products', 'bit-pi'),
 
     'Want to see subscription products? Just hit **Test Run** to fetch them.' => __('Want to see subscription products? Just hit **Test Run** to fetch them.', 'bit-pi'),
-
-    'Get Product by ID' => __('Get Product by ID', 'bit-pi'),
-
-    'Get Product by SKU' => __('Get Product by SKU', 'bit-pi'),
-
-    'Make sure the SKU exists for the product.' => __('Make sure the SKU exists for the product.', 'bit-pi'),
-
-    'Update Product Stock' => __('Update Product Stock', 'bit-pi'),
-
-    'Ensure that the "Manage stock?" option is enabled for the product.' => __('Ensure that the "Manage stock?" option is enabled for the product.', 'bit-pi'),
-
-    'Delete Product (Permanently)' => __('Delete Product (Permanently)', 'bit-pi'),
-
-    'Permanently deleted products cannot be restored.' => __('Permanently deleted products cannot be restored.', 'bit-pi'),
-
-    'Delete Product (Soft Delete)' => __('Delete Product (Soft Delete)', 'bit-pi'),
-
-    'Soft deleted products can be restored from the Trash in WooCommerce.' => __('Soft deleted products can be restored from the Trash in WooCommerce.', 'bit-pi'),
 
     'Get Products Totals' => __('Get Products Totals', 'bit-pi'),
 
@@ -19710,9 +20318,23 @@ return [
 
     'Get number of sales for the product by ID.' => __('Get number of sales for the product by ID.', 'bit-pi'),
 
-    'Update Product Status' => __('Update Product Status', 'bit-pi'),
+    'Create Product Variation' => __('Create Product Variation', 'bit-pi'),
 
-    'Update the status of a product by ID.' => __('Update the status of a product by ID.', 'bit-pi'),
+    'Create a new product variation for an existing variable product.' => __('Create a new product variation for an existing variable product.', 'bit-pi'),
+
+    'Update Product Variation' => __('Update Product Variation', 'bit-pi'),
+
+    'Update pricing, stock, attributes, or other details for a product variation.' => __('Update pricing, stock, attributes, or other details for a product variation.', 'bit-pi'),
+
+    'Get Product Variation' => __('Get Product Variation', 'bit-pi'),
+
+    'Retrieve details for a specific product variation.' => __('Retrieve details for a specific product variation.', 'bit-pi'),
+
+    'Get All Variation Products' => __('Get All Variation Products', 'bit-pi'),
+
+    'Want to see variation products? Just hit **Test Run** to fetch them.' => __('Want to see variation products? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Product Category' => __('Product Category', 'bit-pi'),
 
     'Create Product Category' => __('Create Product Category', 'bit-pi'),
 
@@ -19720,13 +20342,15 @@ return [
 
     'Delete Product Category' => __('Delete Product Category', 'bit-pi'),
 
+    'Get Product Category (Single)' => __('Get Product Category (Single)', 'bit-pi'),
+
+    'Make sure the Category ID exists in your WooCommerce store.' => __('Make sure the Category ID exists in your WooCommerce store.', 'bit-pi'),
+
     'Get Product Category (All)' => __('Get Product Category (All)', 'bit-pi'),
 
     'Want to see categories? Just hit **Test Run** to fetch them.' => __('Want to see categories? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
-    'Get Product Category (Single)' => __('Get Product Category (Single)', 'bit-pi'),
-
-    'Make sure the Category ID exists in your WooCommerce store.' => __('Make sure the Category ID exists in your WooCommerce store.', 'bit-pi'),
+    'Product Tag' => __('Product Tag', 'bit-pi'),
 
     'Create Product Tag' => __('Create Product Tag', 'bit-pi'),
 
@@ -19734,11 +20358,11 @@ return [
 
     'Delete Product Tag' => __('Delete Product Tag', 'bit-pi'),
 
-    'Get Product Tag (All)' => __('Get Product Tag (All)', 'bit-pi'),
-
     'Get Product Tag (Single)' => __('Get Product Tag (Single)', 'bit-pi'),
 
     'Make sure the Tag ID exists in your WooCommerce store.' => __('Make sure the Tag ID exists in your WooCommerce store.', 'bit-pi'),
+
+    'Get Product Tag (All)' => __('Get Product Tag (All)', 'bit-pi'),
 
     'Create Product Type' => __('Create Product Type', 'bit-pi'),
 
@@ -19746,13 +20370,15 @@ return [
 
     'Delete Product Type' => __('Delete Product Type', 'bit-pi'),
 
+    'Get Product Type (Single)' => __('Get Product Type (Single)', 'bit-pi'),
+
+    'Make sure the Type ID exists in your WooCommerce store.' => __('Make sure the Type ID exists in your WooCommerce store.', 'bit-pi'),
+
     'Get Product Type (All)' => __('Get Product Type (All)', 'bit-pi'),
 
     'Want to see Types? Just hit **Test Run** to fetch them.' => __('Want to see Types? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
-    'Get Product Type (Single)' => __('Get Product Type (Single)', 'bit-pi'),
-
-    'Make sure the Type ID exists in your WooCommerce store.' => __('Make sure the Type ID exists in your WooCommerce store.', 'bit-pi'),
+    'Product Brand' => __('Product Brand', 'bit-pi'),
 
     'Create Product Brand' => __('Create Product Brand', 'bit-pi'),
 
@@ -19760,13 +20386,15 @@ return [
 
     'Delete Product Brand' => __('Delete Product Brand', 'bit-pi'),
 
+    'Get Product Brand (Single)' => __('Get Product Brand (Single)', 'bit-pi'),
+
+    'Make sure the brand ID exists in your WooCommerce store.' => __('Make sure the brand ID exists in your WooCommerce store.', 'bit-pi'),
+
     'Get Product Brand (All)' => __('Get Product Brand (All)', 'bit-pi'),
 
     'Want to see brands? Just hit **Test Run** to fetch them.' => __('Want to see brands? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
-    'Get Product Brand (Single)' => __('Get Product Brand (Single)', 'bit-pi'),
-
-    'Make sure the brand ID exists in your WooCommerce store.' => __('Make sure the brand ID exists in your WooCommerce store.', 'bit-pi'),
+    'Product Shipping Class' => __('Product Shipping Class', 'bit-pi'),
 
     'Create Product Shipping Class' => __('Create Product Shipping Class', 'bit-pi'),
 
@@ -19774,13 +20402,33 @@ return [
 
     'Delete Product Shipping Class' => __('Delete Product Shipping Class', 'bit-pi'),
 
+    'Get Product Shipping Class (Single)' => __('Get Product Shipping Class (Single)', 'bit-pi'),
+
+    'Make sure the Shipping Class ID exists in your WooCommerce store.' => __('Make sure the Shipping Class ID exists in your WooCommerce store.', 'bit-pi'),
+
     'Get Product Shipping Class (All)' => __('Get Product Shipping Class (All)', 'bit-pi'),
 
     'Want to see Shipping Class? Just hit **Test Run** to fetch them.' => __('Want to see Shipping Class? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
-    'Get Product Shipping Class (Single)' => __('Get Product Shipping Class (Single)', 'bit-pi'),
+    'Product Attribute' => __('Product Attribute', 'bit-pi'),
 
-    'Make sure the Shipping Class ID exists in your WooCommerce store.' => __('Make sure the Shipping Class ID exists in your WooCommerce store.', 'bit-pi'),
+    'Create Attribute' => __('Create Attribute', 'bit-pi'),
+
+    'Attributes let you define extra product data, such as size or color. You can use these attributes in the shop sidebar using the "layered nav" widgets.' => __('Attributes let you define extra product data, such as size or color. You can use these attributes in the shop sidebar using the "layered nav" widgets.', 'bit-pi'),
+
+    'Update Attribute' => __('Update Attribute', 'bit-pi'),
+
+    'Delete Attribute' => __('Delete Attribute', 'bit-pi'),
+
+    'Permanently delete an attribute from your WooCommerce store.' => __('Permanently delete an attribute from your WooCommerce store.', 'bit-pi'),
+
+    'Get Attribute' => __('Get Attribute', 'bit-pi'),
+
+    'Make sure the Attribute ID exists in your WooCommerce store.' => __('Make sure the Attribute ID exists in your WooCommerce store.', 'bit-pi'),
+
+    'Add Attribute Terms' => __('Add Attribute Terms', 'bit-pi'),
+
+    'Add one or more terms (options) to an existing product attribute.' => __('Add one or more terms (options) to an existing product attribute.', 'bit-pi'),
 
     'Add Or Update Product Attribute' => __('Add Or Update Product Attribute', 'bit-pi'),
 
@@ -19790,19 +20438,11 @@ return [
 
     'Remove descriptive pieces of information that customers can use to search for this product on your store, such as “Material” or “Size”.' => __('Remove descriptive pieces of information that customers can use to search for this product on your store, such as “Material” or “Size”.', 'bit-pi'),
 
-    'Create Attribute' => __('Create Attribute', 'bit-pi'),
+    'Add Product To Cart' => __('Add Product To Cart', 'bit-pi'),
 
-    'Attributes let you define extra product data, such as size or color. You can use these attributes in the shop sidebar using the "layered nav" widgets.' => __('Attributes let you define extra product data, such as size or color. You can use these attributes in the shop sidebar using the "layered nav" widgets.', 'bit-pi'),
+    'Add a specified product to the cart.' => __('Add a specified product to the cart.', 'bit-pi'),
 
-    'Update Attribute' => __('Update Attribute', 'bit-pi'),
-
-    'Get Attribute' => __('Get Attribute', 'bit-pi'),
-
-    'Make sure the Attribute ID exists in your WooCommerce store.' => __('Make sure the Attribute ID exists in your WooCommerce store.', 'bit-pi'),
-
-    'Delete Attribute' => __('Delete Attribute', 'bit-pi'),
-
-    'Permanently delete an attribute from your WooCommerce store.' => __('Permanently delete an attribute from your WooCommerce store.', 'bit-pi'),
+    'Remove a specified product from the cart.' => __('Remove a specified product from the cart.', 'bit-pi'),
 
     'Get All Cart Items' => __('Get All Cart Items', 'bit-pi'),
 
@@ -19812,11 +20452,13 @@ return [
 
     'Want to see cart totals? Just hit **Test Run** to fetch them.' => __('Want to see cart totals? Just hit **Test Run** to fetch them.', 'bit-pi'),
 
-    'Add Product To Cart' => __('Add Product To Cart', 'bit-pi'),
+    'Check Cart Status' => __('Check Cart Status', 'bit-pi'),
 
-    'Add a specified product to the cart.' => __('Add a specified product to the cart.', 'bit-pi'),
+    'Checks the latest order for this email: pending, failed or cancelled means abandoned; processing, on-hold or completed means recovered.' => __('Checks the latest order for this email: pending, failed or cancelled means abandoned; processing, on-hold or completed means recovered.', 'bit-pi'),
 
-    'Remove a specified product from the cart.' => __('Remove a specified product from the cart.', 'bit-pi'),
+    'Send Abandoned Cart Email' => __('Send Abandoned Cart Email', 'bit-pi'),
+
+    'Send a cart recovery email. Leave the body empty to send a short message with a link back to the cart.' => __('Send a cart recovery email. Leave the body empty to send a short message with a link back to the cart.', 'bit-pi'),
 
     'Update Coupon Data' => __('Update Coupon Data', 'bit-pi'),
 
@@ -19824,39 +20466,51 @@ return [
 
     'Add Emails to Coupon' => __('Add Emails to Coupon', 'bit-pi'),
 
+    'Want to see coupons? Just hit **Test Run** to fetch them.' => __('Want to see coupons? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Coupon Totals (By Discount Type)' => __('Get Coupon Totals (By Discount Type)', 'bit-pi'),
+
+    'Want to see coupon totals by discount type? Just hit **Test Run** to fetch them.' => __('Want to see coupon totals by discount type? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
     'Apply Coupon to Cart' => __('Apply Coupon to Cart', 'bit-pi'),
 
     'Get Applied Coupons from Cart' => __('Get Applied Coupons from Cart', 'bit-pi'),
 
     'Remove Coupon from Cart' => __('Remove Coupon from Cart', 'bit-pi'),
 
-    'Want to see coupons? Just hit **Test Run** to fetch them.' => __('Want to see coupons? Just hit **Test Run** to fetch them.', 'bit-pi'),
+    'Create Product Review' => __('Create Product Review', 'bit-pi'),
 
-    'Get Coupon Totals By Discount Type.' => __('Get Coupon Totals By Discount Type.', 'bit-pi'),
+    'Submit a new customer review for a product.' => __('Submit a new customer review for a product.', 'bit-pi'),
+
+    'Update an existing product review content, rating, or status.' => __('Update an existing product review content, rating, or status.', 'bit-pi'),
+
+    'Approve Review' => __('Approve Review', 'bit-pi'),
+
+    'Approve a pending product review.' => __('Approve a pending product review.', 'bit-pi'),
+
+    'Delete a product review from your WooCommerce store.' => __('Delete a product review from your WooCommerce store.', 'bit-pi'),
+
+    'Retrieve a single product review by its ID.' => __('Retrieve a single product review by its ID.', 'bit-pi'),
 
     'Get All Reviews' => __('Get All Reviews', 'bit-pi'),
 
     'Want to see reviews? Just hit **Test Run** to fetch them.' => __('Want to see reviews? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Get Review Totals (By Rating)' => __('Get Review Totals (By Rating)', 'bit-pi'),
+
+    'Want to see how many reviews each star rating has? Just hit **Test Run** to fetch them.' => __('Want to see how many reviews each star rating has? Just hit **Test Run** to fetch them.', 'bit-pi'),
+
+    'Report' => __('Report', 'bit-pi'),
+
+    'Get Sales Report' => __('Get Sales Report', 'bit-pi'),
+
+    'Get sales totals from WooCommerce Analytics for a date range. Leave both dates empty to report all time.' => __('Get sales totals from WooCommerce Analytics for a date range. Leave both dates empty to report all time.', 'bit-pi'),
 
     'Top Selling Products Report' => __('Top Selling Products Report', 'bit-pi'),
 
     'Get a report of top selling products in your WooCommerce store.' => __('Get a report of top selling products in your WooCommerce store.', 'bit-pi'),
 
     'On New Order Create' => __('On New Order Create', 'bit-pi'),
-
-    'Restore Order' => __('Restore Order', 'bit-pi'),
-
-    'New Coupon Created' => __('New Coupon Created', 'bit-pi'),
-
-    'Product Status Updated' => __('Product Status Updated', 'bit-pi'),
-
-    'Restore Product' => __('Restore Product', 'bit-pi'),
-
-    'Product Status Changed' => __('Product Status Changed', 'bit-pi'),
-
-    'Product Added to Cart' => __('Product Added to Cart', 'bit-pi'),
-
-    'Product Removed from Cart' => __('Product Removed from Cart', 'bit-pi'),
 
     'Order Status Set to Pending' => __('Order Status Set to Pending', 'bit-pi'),
 
@@ -19871,6 +20525,72 @@ return [
     'Order Status Set to Refunded' => __('Order Status Set to Refunded', 'bit-pi'),
 
     'Order Status Set to Cancelled' => __('Order Status Set to Cancelled', 'bit-pi'),
+
+    'Order Note Added' => __('Order Note Added', 'bit-pi'),
+
+    'Restore Order' => __('Restore Order', 'bit-pi'),
+
+    'New Coupon Created' => __('New Coupon Created', 'bit-pi'),
+
+    'Coupon Deleted' => __('Coupon Deleted', 'bit-pi'),
+
+    'Coupon Restored' => __('Coupon Restored', 'bit-pi'),
+
+    'Product Status Changed' => __('Product Status Changed', 'bit-pi'),
+
+    'Product Status Updated' => __('Product Status Updated', 'bit-pi'),
+
+    'Restore Product' => __('Restore Product', 'bit-pi'),
+
+    'Product Viewed' => __('Product Viewed', 'bit-pi'),
+
+    'Variable Product Purchased' => __('Variable Product Purchased', 'bit-pi'),
+
+    'Product Category Purchased' => __('Product Category Purchased', 'bit-pi'),
+
+    'Product Refunded' => __('Product Refunded', 'bit-pi'),
+
+    'Product Added to Cart' => __('Product Added to Cart', 'bit-pi'),
+
+    'Product Removed from Cart' => __('Product Removed from Cart', 'bit-pi'),
+
+    'Review Added' => __('Review Added', 'bit-pi'),
+
+    'Review Approved' => __('Review Approved', 'bit-pi'),
+
+    'Review Status Changed' => __('Review Status Changed', 'bit-pi'),
+
+    'Review Rating Updated' => __('Review Rating Updated', 'bit-pi'),
+
+    'Review Deleted' => __('Review Deleted', 'bit-pi'),
+
+    'Stock' => __('Stock', 'bit-pi'),
+
+    'Product Goes Out of Stock' => __('Product Goes Out of Stock', 'bit-pi'),
+
+    'Product Back in Stock' => __('Product Back in Stock', 'bit-pi'),
+
+    'Product Low Stock' => __('Product Low Stock', 'bit-pi'),
+
+    'Product Variation Goes Out of Stock' => __('Product Variation Goes Out of Stock', 'bit-pi'),
+
+    'Product Variation Back in Stock' => __('Product Variation Back in Stock', 'bit-pi'),
+
+    'Product attribute to add terms to.' => __('Product attribute to add terms to.', 'bit-pi'),
+
+    'Select an attribute' => __('Select an attribute', 'bit-pi'),
+
+    'Add Term' => __('Add Term', 'bit-pi'),
+
+    'Term Name' => __('Term Name', 'bit-pi'),
+
+    'Slug (optional)' => __('Slug (optional)', 'bit-pi'),
+
+    'Description (optional)' => __('Description (optional)', 'bit-pi'),
+
+    'Add one or more terms to the attribute (e.g. Small, Medium, Large).' => __('Add one or more terms to the attribute (e.g. Small, Medium, Large).', 'bit-pi'),
+
+    'Attribute Terms' => __('Attribute Terms', 'bit-pi'),
 
     'Code or id of the coupon to update.' => __('Code or id of the coupon to update.', 'bit-pi'),
 
@@ -19918,7 +20638,25 @@ return [
 
     'Product Quantity' => __('Product Quantity', 'bit-pi'),
 
+    'Select a pending review to approve.' => __('Select a pending review to approve.', 'bit-pi'),
+
+    'Select a pending review' => __('Select a pending review', 'bit-pi'),
+
+    'Email address of the customer whose cart status to check.' => __('Email address of the customer whose cart status to check.', 'bit-pi'),
+
+    'Attribute ID' => __('Attribute ID', 'bit-pi'),
+
     'URL-friendly version of the name.' => __('URL-friendly version of the name.', 'bit-pi'),
+
+    'WordPress user ID of the customer.' => __('WordPress user ID of the customer.', 'bit-pi'),
+
+    'product ID' => __('product ID', 'bit-pi'),
+
+    'Brand ID' => __('Brand ID', 'bit-pi'),
+
+    'Shipping Class ID' => __('Shipping Class ID', 'bit-pi'),
+
+    'Type ID' => __('Type ID', 'bit-pi'),
 
     'URL-friendly version of the Category name.' => __('URL-friendly version of the Category name.', 'bit-pi'),
 
@@ -19985,8 +20723,6 @@ return [
     'Products to which the coupon will not apply.' => __('Products to which the coupon will not apply.', 'bit-pi'),
 
     'Exclude Products' => __('Exclude Products', 'bit-pi'),
-
-    'Product Category' => __('Product Category', 'bit-pi'),
 
     'Select category' => __('Select category', 'bit-pi'),
 
@@ -20059,6 +20795,32 @@ return [
     'Provide any note to add with the order.' => __('Provide any note to add with the order.', 'bit-pi'),
 
     'Add a note to your order' => __('Add a note to your order', 'bit-pi'),
+
+    'Product to review.' => __('Product to review.', 'bit-pi'),
+
+    'Name of the reviewer.' => __('Name of the reviewer.', 'bit-pi'),
+
+    'Email of the reviewer.' => __('Email of the reviewer.', 'bit-pi'),
+
+    'Review rating from 1 (lowest) to 5 (highest).' => __('Review rating from 1 (lowest) to 5 (highest).', 'bit-pi'),
+
+    '1 - Poor' => __('1 - Poor', 'bit-pi'),
+
+    '2 - Fair' => __('2 - Fair', 'bit-pi'),
+
+    '3 - Average' => __('3 - Average', 'bit-pi'),
+
+    '4 - Good' => __('4 - Good', 'bit-pi'),
+
+    '5 - Excellent' => __('5 - Excellent', 'bit-pi'),
+
+    'Select rating' => __('Select rating', 'bit-pi'),
+
+    'The review content.' => __('The review content.', 'bit-pi'),
+
+    'Set the review as verified purchase.' => __('Set the review as verified purchase.', 'bit-pi'),
+
+    'Publish the review right away instead of holding it for moderation.' => __('Publish the review right away instead of holding it for moderation.', 'bit-pi'),
 
     'The ID of the variable product to which you want to add a variation.' => __('The ID of the variable product to which you want to add a variation.', 'bit-pi'),
 
@@ -20222,29 +20984,53 @@ return [
 
     'Gallery Images' => __('Gallery Images', 'bit-pi'),
 
-    'Attribute ID' => __('Attribute ID', 'bit-pi'),
-
     'Code or id of the coupon to delete.' => __('Code or id of the coupon to delete.', 'bit-pi'),
 
     'Permanently delete the coupon without moving it to the trash first.' => __('Permanently delete the coupon without moving it to the trash first.', 'bit-pi'),
 
-    'Brand ID' => __('Brand ID', 'bit-pi'),
+    'Select a review to delete.' => __('Select a review to delete.', 'bit-pi'),
 
-    'product ID' => __('product ID', 'bit-pi'),
-
-    'Shipping Class ID' => __('Shipping Class ID', 'bit-pi'),
-
-    'Type ID' => __('Type ID', 'bit-pi'),
+    'Permanently delete without moving to trash.' => __('Permanently delete without moving to trash.', 'bit-pi'),
 
     'Provide customer email address to fetch the customer.' => __('Provide customer email address to fetch the customer.', 'bit-pi'),
 
     'Customer Email Address' => __('Customer Email Address', 'bit-pi'),
+
+    'Select the product customers purchased.' => __('Select the product customers purchased.', 'bit-pi'),
+
+    'Start date in YYYY-MM-DD format (inclusive).' => __('Start date in YYYY-MM-DD format (inclusive).', 'bit-pi'),
+
+    'End date in YYYY-MM-DD format (inclusive).' => __('End date in YYYY-MM-DD format (inclusive).', 'bit-pi'),
 
     'Provide billing email to fetch the order.' => __('Provide billing email to fetch the order.', 'bit-pi'),
 
     'Billing Email' => __('Billing Email', 'bit-pi'),
 
     'Select the status for the orders.' => __('Select the status for the orders.', 'bit-pi'),
+
+    'ID of the order to retrieve metadata for.' => __('ID of the order to retrieve metadata for.', 'bit-pi'),
+
+    'Meta key to retrieve from the order metadata.' => __('Meta key to retrieve from the order metadata.', 'bit-pi'),
+
+    'ID of the order to retrieve notes for.' => __('ID of the order to retrieve notes for.', 'bit-pi'),
+
+    'ID of the order to retrieve refunds for.' => __('ID of the order to retrieve refunds for.', 'bit-pi'),
+
+    'Provide the product name or slug to search for.' => __('Provide the product name or slug to search for.', 'bit-pi'),
+
+    'Product Name or Slug' => __('Product Name or Slug', 'bit-pi'),
+
+    'Variable product that owns the variation.' => __('Variable product that owns the variation.', 'bit-pi'),
+
+    'Variation to retrieve. Pick a product first to list its variations, or map a variation ID.' => __('Variation to retrieve. Pick a product first to list its variations, or map a variation ID.', 'bit-pi'),
+
+    'Variation' => __('Variation', 'bit-pi'),
+
+    'Select a product review to retrieve.' => __('Select a product review to retrieve.', 'bit-pi'),
+
+    'Report start date in YYYY-MM-DD format. Leave empty to start from the first order.' => __('Report start date in YYYY-MM-DD format. Leave empty to start from the first order.', 'bit-pi'),
+
+    'Report end date in YYYY-MM-DD format. Leave empty to end today.' => __('Report end date in YYYY-MM-DD format. Leave empty to end today.', 'bit-pi'),
 
     'Town/City' => __('Town/City', 'bit-pi'),
 
@@ -20257,6 +21043,16 @@ return [
     'Attribute Names' => __('Attribute Names', 'bit-pi'),
 
     'Custom Message' => __('Custom Message', 'bit-pi'),
+
+    'Email address of the customer who abandoned their cart. A recovery email will be sent to this address.' => __('Email address of the customer who abandoned their cart. A recovery email will be sent to this address.', 'bit-pi'),
+
+    'Subject line for the abandoned cart recovery email.' => __('Subject line for the abandoned cart recovery email.', 'bit-pi'),
+
+    'Email Subject' => __('Email Subject', 'bit-pi'),
+
+    'Email body, HTML allowed. Leave empty to send a short message with a link back to the cart.' => __('Email body, HTML allowed. Leave empty to send a short message with a link back to the cart.', 'bit-pi'),
+
+    'Email Body' => __('Email Body', 'bit-pi'),
 
     'Select a date before which to filter the report.' => __('Select a date before which to filter the report.', 'bit-pi'),
 
@@ -20276,9 +21072,37 @@ return [
 
     'Coupon Id' => __('Coupon Id', 'bit-pi'),
 
+    'ID of the customer to update.' => __('ID of the customer to update.', 'bit-pi'),
+
+    'Update the customer first name.' => __('Update the customer first name.', 'bit-pi'),
+
+    'Update the customer last name.' => __('Update the customer last name.', 'bit-pi'),
+
+    'Update the customer display name.' => __('Update the customer display name.', 'bit-pi'),
+
+    'Update the customer email address.' => __('Update the customer email address.', 'bit-pi'),
+
     'The unique identifier for the product.' => __('The unique identifier for the product.', 'bit-pi'),
 
     'Select the new status for the order.' => __('Select the new status for the order.', 'bit-pi'),
+
+    'How to read the value below. Leave empty to try it as a product ID first, then as a SKU.' => __('How to read the value below. Leave empty to try it as a product ID first, then as a SKU.', 'bit-pi'),
+
+    'Find Product By' => __('Find Product By', 'bit-pi'),
+
+    'Product ID, then SKU' => __('Product ID, then SKU', 'bit-pi'),
+
+    'ID or SKU of the product to update pricing for.' => __('ID or SKU of the product to update pricing for.', 'bit-pi'),
+
+    'Product ID or SKU' => __('Product ID or SKU', 'bit-pi'),
+
+    'The new regular (list) price for the product.' => __('The new regular (list) price for the product.', 'bit-pi'),
+
+    'Turn on to end the current sale and sell at the regular price.' => __('Turn on to end the current sale and sell at the regular price.', 'bit-pi'),
+
+    'Remove Sale Price' => __('Remove Sale Price', 'bit-pi'),
+
+    'The new sale price. Leave empty to keep the current sale price.' => __('The new sale price. Leave empty to keep the current sale price.', 'bit-pi'),
 
     'Pending Preview' => __('Pending Preview', 'bit-pi'),
 
@@ -20293,6 +21117,24 @@ return [
     'Decrease' => __('Decrease', 'bit-pi'),
 
     'Select an Operation' => __('Select an Operation', 'bit-pi'),
+
+    'Variation to update. Pick a product first to list its variations, or map a variation ID.' => __('Variation to update. Pick a product first to list its variations, or map a variation ID.', 'bit-pi'),
+
+    'Detailed description for this variation.' => __('Detailed description for this variation.', 'bit-pi'),
+
+    'The standard price for this variation.' => __('The standard price for this variation.', 'bit-pi'),
+
+    'Select a review to update.' => __('Select a review to update.', 'bit-pi'),
+
+    'New reviewer name (leave empty to keep current).' => __('New reviewer name (leave empty to keep current).', 'bit-pi'),
+
+    'New reviewer email (leave empty to keep current).' => __('New reviewer email (leave empty to keep current).', 'bit-pi'),
+
+    'New rating (select to change).' => __('New rating (select to change).', 'bit-pi'),
+
+    'New review content (leave empty to keep current).' => __('New review content (leave empty to keep current).', 'bit-pi'),
+
+    'Approve the review after the update. Leave it off to keep the current status.' => __('Approve the review after the update. Leave it off to keep the current status.', 'bit-pi'),
 
     'User Added to Membership Plan' => __('User Added to Membership Plan', 'bit-pi'),
 
@@ -21244,8 +22086,6 @@ return [
 
     'Post Custom Field Map' => __('Post Custom Field Map', 'bit-pi'),
 
-    'Term Name' => __('Term Name', 'bit-pi'),
-
     'The taxonomy to which to add the term. Example: Trigger Type, Flow Category.' => __('The taxonomy to which to add the term. Example: Trigger Type, Flow Category.', 'bit-pi'),
 
     'URL-friendly version of the term name.' => __('URL-friendly version of the term name.', 'bit-pi'),
@@ -21339,8 +22179,6 @@ return [
     'Thumbnail' => __('Thumbnail', 'bit-pi'),
 
     'Post Formats' => __('Post Formats', 'bit-pi'),
-
-    'Nickname' => __('Nickname', 'bit-pi'),
 
     'Biographical Info' => __('Biographical Info', 'bit-pi'),
 
@@ -21456,8 +22294,6 @@ return [
 
     'for custom mapping table id should be provided in the input data' => __('for custom mapping table id should be provided in the input data', 'bit-pi'),
 
-    'Create Contact Group' => __('Create Contact Group', 'bit-pi'),
-
     'Get Contact Group (All)' => __('Get Contact Group (All)', 'bit-pi'),
 
     'Want to see contact groups? Just hit **Test Run** to fetch them.' => __('Want to see contact groups? Just hit **Test Run** to fetch them.', 'bit-pi'),
@@ -21542,8 +22378,6 @@ return [
 
     'A purchase payment is created' => __('A purchase payment is created', 'bit-pi'),
 
-    'Contact Groups' => __('Contact Groups', 'bit-pi'),
-
     'Enter the content of the note.' => __('Enter the content of the note.', 'bit-pi'),
 
     'Employee User Id' => __('Employee User Id', 'bit-pi'),
@@ -21551,8 +22385,6 @@ return [
     'Life Stage' => __('Life Stage', 'bit-pi'),
 
     'Select a life stage' => __('Select a life stage', 'bit-pi'),
-
-    'Select contact groups' => __('Select contact groups', 'bit-pi'),
 
     'WP user id of the department lead (optional).' => __('WP user id of the department lead (optional).', 'bit-pi'),
 
@@ -21855,6 +22687,152 @@ return [
     'Media URLs' => __('Media URLs', 'bit-pi'),
 
     'New name for the group.' => __('New name for the group.', 'bit-pi'),
+
+    'Update Video' => __('Update Video', 'bit-pi'),
+
+    'Rate Video' => __('Rate Video', 'bit-pi'),
+
+    'List My Playlists' => __('List My Playlists', 'bit-pi'),
+
+    'Get Playlist Videos' => __('Get Playlist Videos', 'bit-pi'),
+
+    'Delete Playlist' => __('Delete Playlist', 'bit-pi'),
+
+    'Add Video to Playlist' => __('Add Video to Playlist', 'bit-pi'),
+
+    'Remove Video from Playlist' => __('Remove Video from Playlist', 'bit-pi'),
+
+    'Get Video Comments' => __('Get Video Comments', 'bit-pi'),
+
+    'Post Comment' => __('Post Comment', 'bit-pi'),
+
+    'Set Comment Moderation Status' => __('Set Comment Moderation Status', 'bit-pi'),
+
+    'New Video in Playlist' => __('New Video in Playlist', 'bit-pi'),
+
+    'New Video on Channel' => __('New Video on Channel', 'bit-pi'),
+
+    'The playlist to add the video to.' => __('The playlist to add the video to.', 'bit-pi'),
+
+    'The video\'s ID or its YouTube URL.' => __('The video\'s ID or its YouTube URL.', 'bit-pi'),
+
+    'Optional. Where to put the video: 0 is the top. Leave empty to add it in the playlist\'s default place.' => __('Optional. Where to put the video: 0 is the top. Leave empty to add it in the playlist\'s default place.', 'bit-pi'),
+
+    'The playlist name.' => __('The playlist name.', 'bit-pi'),
+
+    'Optional.' => __('Optional.', 'bit-pi'),
+
+    'Who can see the playlist.' => __('Who can see the playlist.', 'bit-pi'),
+
+    'The ID of the comment to delete. You can only delete your own comments.' => __('The ID of the comment to delete. You can only delete your own comments.', 'bit-pi'),
+
+    'The playlist to delete. The videos in it are not deleted.' => __('The playlist to delete. The videos in it are not deleted.', 'bit-pi'),
+
+    'The video to delete permanently. It must be on your channel. The video\'s ID or its YouTube URL.' => __('The video to delete permanently. It must be on your channel. The video\'s ID or its YouTube URL.', 'bit-pi'),
+
+    'Leave empty to get your own channel. For another channel, paste its channel ID (it starts with UC). To find it, open the channel on YouTube, click "...more" under its name, then Share channel → Copy channel ID.' => __('Leave empty to get your own channel. For another channel, paste its channel ID (it starts with UC). To find it, open the channel on YouTube, click "...more" under its name, then Share channel → Copy channel ID.', 'bit-pi'),
+
+    'Channel ID' => __('Channel ID', 'bit-pi'),
+
+    'Pick one of your playlists, or type or paste any playlist ID or URL.' => __('Pick one of your playlists, or type or paste any playlist ID or URL.', 'bit-pi'),
+
+    'How many videos to return, up to 1000. Default 50.' => __('How many videos to return, up to 1000. Default 50.', 'bit-pi'),
+
+    'Newest first, or the most relevant first.' => __('Newest first, or the most relevant first.', 'bit-pi'),
+
+    'Newest first' => __('Newest first', 'bit-pi'),
+
+    'Most relevant' => __('Most relevant', 'bit-pi'),
+
+    'How many comments to return, from 1 to 100. Default 20.' => __('How many comments to return, from 1 to 100. Default 20.', 'bit-pi'),
+
+    'Could not load your playlists. Check the connection and try again.' => __('Could not load your playlists. Check the connection and try again.', 'bit-pi'),
+
+    'Create OAuth credentials in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.developers.google.com/apis/credentials">Google Cloud Console</a> and enable the YouTube Data API v3 for that project.' => __('Create OAuth credentials in <a target="_blank" class="text-blue-600 underline" rel="noopener noreferrer nofollow" href="https://console.developers.google.com/apis/credentials">Google Cloud Console</a> and enable the YouTube Data API v3 for that project.', 'bit-pi'),
+
+    'Playlist' => __('Playlist', 'bit-pi'),
+
+    'Keep current' => __('Keep current', 'bit-pi'),
+
+    'How many playlists to return. Default 50.' => __('How many playlists to return. Default 50.', 'bit-pi'),
+
+    'Leave empty to watch your own channel. To watch another channel, paste its channel ID (it starts with UC). To find it, open the channel on YouTube, click "...more" under its name, then Share channel → Copy channel ID.' => __('Leave empty to watch your own channel. To watch another channel, paste its channel ID (it starts with UC). To find it, open the channel on YouTube, click "...more" under its name, then Share channel → Copy channel ID.', 'bit-pi'),
+
+    'Watch one video, or every video on your channel.' => __('Watch one video, or every video on your channel.', 'bit-pi'),
+
+    'Watch' => __('Watch', 'bit-pi'),
+
+    'One video' => __('One video', 'bit-pi'),
+
+    'All videos on my channel' => __('All videos on my channel', 'bit-pi'),
+
+    'The video to watch for new comments. The video\'s ID or its YouTube URL.' => __('The video to watch for new comments. The video\'s ID or its YouTube URL.', 'bit-pi'),
+
+    'The playlist to watch. Pick one of your playlists, or type or paste any playlist ID or URL, including someone else\'s public playlist.' => __('The playlist to watch. Pick one of your playlists, or type or paste any playlist ID or URL, including someone else\'s public playlist.', 'bit-pi'),
+
+    'The video to comment on. The video\'s ID or its YouTube URL.' => __('The video to comment on. The video\'s ID or its YouTube URL.', 'bit-pi'),
+
+    'The comment text.' => __('The comment text.', 'bit-pi'),
+
+    'Like, dislike, or remove your rating.' => __('Like, dislike, or remove your rating.', 'bit-pi'),
+
+    'Like' => __('Like', 'bit-pi'),
+
+    'Dislike' => __('Dislike', 'bit-pi'),
+
+    'Remove rating' => __('Remove rating', 'bit-pi'),
+
+    'The playlist to remove the video from.' => __('The playlist to remove the video from.', 'bit-pi'),
+
+    'The video to remove. If it is in the playlist more than once, the first one is removed. The video\'s ID or its YouTube URL.' => __('The video to remove. If it is in the playlist more than once, the first one is removed. The video\'s ID or its YouTube URL.', 'bit-pi'),
+
+    'The ID of the comment to reply to, for example comment_id from the New Comment trigger.' => __('The ID of the comment to reply to, for example comment_id from the New Comment trigger.', 'bit-pi'),
+
+    'The reply text.' => __('The reply text.', 'bit-pi'),
+
+    'Reply' => __('Reply', 'bit-pi'),
+
+    'What to search for, as you would type it in the YouTube search box.' => __('What to search for, as you would type it in the YouTube search box.', 'bit-pi'),
+
+    'Optional. To search only one channel, paste its channel ID (it starts with UC). To find it, open the channel on YouTube, click "...more" under its name, then Share channel → Copy channel ID.' => __('Optional. To search only one channel, paste its channel ID (it starts with UC). To find it, open the channel on YouTube, click "...more" under its name, then Share channel → Copy channel ID.', 'bit-pi'),
+
+    'How to sort the results.' => __('How to sort the results.', 'bit-pi'),
+
+    'Relevance' => __('Relevance', 'bit-pi'),
+
+    'Upload date' => __('Upload date', 'bit-pi'),
+
+    'View count' => __('View count', 'bit-pi'),
+
+    'How many videos to return, from 1 to 50. Default 10. Each search uses 100 units of your daily YouTube quota.' => __('How many videos to return, from 1 to 50. Default 10. Each search uses 100 units of your daily YouTube quota.', 'bit-pi'),
+
+    'One comment ID, or several separated by commas. The comments must be on your channel\'s videos.' => __('One comment ID, or several separated by commas. The comments must be on your channel\'s videos.', 'bit-pi'),
+
+    'Comment IDs' => __('Comment IDs', 'bit-pi'),
+
+    'Published shows the comment, Held for review hides it until you approve it, Rejected removes it.' => __('Published shows the comment, Held for review hides it until you approve it, Rejected removes it.', 'bit-pi'),
+
+    'Held for review' => __('Held for review', 'bit-pi'),
+
+    'Only used with Rejected. Future comments from this author are rejected automatically.' => __('Only used with Rejected. Future comments from this author are rejected automatically.', 'bit-pi'),
+
+    'Ban the author' => __('Ban the author', 'bit-pi'),
+
+    'The playlist to update. Pick one of your playlists, or type or paste its ID or URL.' => __('The playlist to update. Pick one of your playlists, or type or paste its ID or URL.', 'bit-pi'),
+
+    'Optional. Leave empty to keep the current name.' => __('Optional. Leave empty to keep the current name.', 'bit-pi'),
+
+    'Optional. Leave empty to keep the current description.' => __('Optional. Leave empty to keep the current description.', 'bit-pi'),
+
+    'Optional. Leave empty to keep the current privacy.' => __('Optional. Leave empty to keep the current privacy.', 'bit-pi'),
+
+    'The video to update. It must be on your channel. The video\'s ID or its YouTube URL.' => __('The video to update. It must be on your channel. The video\'s ID or its YouTube URL.', 'bit-pi'),
+
+    'Optional. Leave empty to keep the current title.' => __('Optional. Leave empty to keep the current title.', 'bit-pi'),
+
+    'Optional. Separate tags with commas. They replace the current tags. Leave empty to keep them.' => __('Optional. Separate tags with commas. They replace the current tags. Leave empty to keep them.', 'bit-pi'),
+
+    'Optional. A YouTube category number, for example 22 for People & Blogs. Leave empty to keep the current category.' => __('Optional. A YouTube category number, for example 22 for People & Blogs. Leave empty to keep the current category.', 'bit-pi'),
 
     'Update Ticket' => __('Update Ticket', 'bit-pi'),
 

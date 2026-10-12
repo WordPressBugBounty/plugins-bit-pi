@@ -48,7 +48,7 @@ final class Plugin
 
         $requestUri = isset($_SERVER['REQUEST_URI']) ? sanitize_text_field(wp_unslash($_SERVER['REQUEST_URI'])) : '';
 
-        if (!RequestType::is(RequestType::API) && !RequestType::is(RequestType::AJAX) && !RequestType::is(RequestType::CRON) && strpos($requestUri, 'wp-content') === false) {
+        if (!RequestType::is(RequestType::API) && !RequestType::is(RequestType::AJAX) && !RequestType::is(RequestType::CRON) && !str_contains($requestUri, 'wp-content')) {
             $rewriteRules = get_option('rewrite_rules');
 
             $oAuthCallbackRoute = '^' . Config::SLUG . '/oauth-callback/?$';

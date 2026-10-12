@@ -75,7 +75,7 @@ final class WordPressServices
 
         $this->sendEmailNotification($userId, $emailNotify);
 
-        return WordPressActionHelper::response(['user_id' => $userId], $payload);
+        return WordPressActionHelper::response(['user_id' => $userId, 'user_email' => $userData['user_email'] ?? ''], $payload);
     }
 
     /**

@@ -70,7 +70,7 @@ class Webhook implements ActionInterface
         $url = $machineConfig['url']['value'];
 
         if ($queryParams) {
-            $url .= (strpos($url, '?') === false) ? '?' : '&';
+            $url .= !str_contains($url, '?') ? '?' : '&';
             $url .= http_build_query($queryParams);
         }
 

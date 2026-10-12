@@ -30,6 +30,7 @@ final class CompanyService extends BaseService
 
         $payload = [
             'systemDefinedFieldsValues' => $systemValues,
+            'customFieldsValues'        => $this->customFieldsValues('company'),
             'tagIds'                    => BitCrmHelper::toIntArray($fields['tag_ids'] ?? []),
         ];
 
@@ -66,6 +67,7 @@ final class CompanyService extends BaseService
         $payload = [
             'id'                        => (int) $fields['company_id'],
             'systemDefinedFieldsValues' => $systemValues,
+            'customFieldsValues'        => $this->customFieldsValues('company'),
         ];
 
         $result = (new \BitApps\Crm\Services\CompanyService())->update($payload);

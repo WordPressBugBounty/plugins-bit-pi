@@ -509,7 +509,7 @@ class ImageHelperTool
 
     private function extractBase64Data($base64Input)
     {
-        if (strpos($base64Input, 'data:') === 0) {
+        if (str_starts_with($base64Input, 'data:')) {
             $commaPos = strpos($base64Input, ',');
             if ($commaPos !== false) {
                 return substr($base64Input, $commaPos + 1);

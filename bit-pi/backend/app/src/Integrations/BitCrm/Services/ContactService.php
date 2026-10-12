@@ -38,6 +38,7 @@ final class ContactService extends BaseService
 
         $payload = [
             'systemDefinedFieldsValues' => $systemValues,
+            'customFieldsValues'        => $this->customFieldsValues('contact'),
             'tagIds'                    => BitCrmHelper::toIntArray($fields['tag_ids'] ?? []),
         ];
 
@@ -77,6 +78,7 @@ final class ContactService extends BaseService
         $payload = [
             'id'                        => (int) $fields['contact_id'],
             'systemDefinedFieldsValues' => $systemValues,
+            'customFieldsValues'        => $this->customFieldsValues('contact'),
         ];
 
         $result = (new \BitApps\Crm\Services\ContactService())->update($payload);

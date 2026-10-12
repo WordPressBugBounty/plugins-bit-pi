@@ -3,6 +3,7 @@
 namespace BitApps\Pi\src\Integrations\BitCrm\Services;
 
 use BitApps\Crm\Model\Deal;
+use BitApps\Crm\Services\DealStageService;
 use BitApps\Pi\Deps\BitApps\WPKit\Hooks\Hooks;
 use BitApps\Pi\src\Integrations\BitCrm\BitCrmHelper;
 use BitApps\Pi\src\Integrations\IntegrationHelper;
@@ -47,6 +48,7 @@ final class DealService extends BaseService
 
         $payload = [
             'systemDefinedFieldsValues' => $systemValues,
+            'customFieldsValues'        => $this->customFieldsValues('deal'),
             'tagIds'                    => BitCrmHelper::toIntArray($fields['tag_ids'] ?? []),
             'lineItems'                 => $this->lineItemsFromRepeater(),
         ];
@@ -88,6 +90,7 @@ final class DealService extends BaseService
         $payload = [
             'id'                        => (int) $fields['deal_id'],
             'systemDefinedFieldsValues' => $systemValues,
+            'customFieldsValues'        => $this->customFieldsValues('deal'),
             'lineItems'                 => $this->lineItemsFromRepeater(),
         ];
 
@@ -275,12 +278,95 @@ final class DealService extends BaseService
             return ['status_code' => 400, 'payload' => $payload, 'response' => __('Deal not found!', 'bit-pi')];
         }
 
-        if (!$deal->update(['stage' => $stage, 'updated_by' => get_current_user_id()])) {
+        $stages = self::dealStages();
+        $definition = $stages[$stage] ?? null;
+
+        if (!empty($stages) && $definition === null) {
+            return ['status_code' => 400, 'payload' => $payload, 'response' => __('This deal stage does not exist in Bit CRM.', 'bit-pi')];
+        }
+
+        $update = ['stage' => $stage, 'updated_by' => get_current_user_id()];
+
+        // Bit CRM rewrites the probability on every stage change; leaving it would
+        // keep the odds of the stage before.
+        if (isset($definition['probability'])) {
+            $update['probability'] = $definition['probability'];
+        }
+
+        // Required on a stage that closes the deal, asked for on no other.
+        if (\in_array($definition['deal_category'] ?? '', ['closed_won', 'closed_lost'], true)) {
+            $closedAt = self::closingDate($fields['closed_at'] ?? '');
+
+            if ($closedAt === null) {
+                return ['status_code' => 400, 'payload' => $payload, 'response' => __('A closing date is required to move a deal to a won or lost stage.', 'bit-pi')];
+            }
+
+            $update['closed_at'] = $closedAt;
+            $payload['closed_at'] = $closedAt;
+        }
+
+        if (!$deal->update($update)) {
             return ['status_code' => 400, 'payload' => $payload, 'response' => __('Failed to update deal stage.', 'bit-pi')];
         }
 
         Hooks::doAction('bit_crm/deal_stage_updated', $deal, $stage);
 
         return ['status_code' => 200, 'payload' => $payload, 'response' => BitCrmHelper::normalizeData($deal)];
+    }
+
+    /**
+     * The site's deal stages keyed by stage key. Empty when they cannot be read,
+     * which leaves the stage unvalidated rather than rejected.
+     *
+     * @return array<string, array>
+     */
+    private static function dealStages(): array
+    {
+        if (!class_exists('BitApps\Crm\Services\DealStageService')) {
+            return [];
+        }
+
+        $stages = [];
+
+        foreach ((array) (new DealStageService())->getAllStages() as $stage) {
+            $stage = (array) $stage;
+            $key = (string) ($stage['key'] ?? '');
+
+            if ($key !== '') {
+                $stages[$key] = $stage;
+            }
+        }
+
+        return $stages;
+    }
+
+    /**
+     * Every branch returns a bare site-local `Y-m-d H:i:s`, the shape Bit CRM's
+     * own stage modal submits. Formatting one input as local and another as UTC
+     * would store the same instant two ways. Null when nothing usable was mapped.
+     */
+    private static function closingDate(mixed $value): ?string
+    {
+        $value = trim((string) $value);
+
+        if ($value === '') {
+            return null;
+        }
+
+        if (preg_match('/^\d{4}-\d{2}-\d{2}$/', $value)) {
+            return $value . ' 00:00:00';
+        }
+
+        if (preg_match('/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}$/', $value)) {
+            return $value . ':00';
+        }
+
+        if (preg_match('/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/', $value)) {
+            return $value;
+        }
+
+        $timestamp = strtotime($value);
+
+        return $timestamp === false ? null : wp_date('Y-m-d H:i:s', $timestamp);
     }
 }

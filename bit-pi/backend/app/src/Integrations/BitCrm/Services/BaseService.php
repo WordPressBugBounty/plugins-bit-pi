@@ -3,8 +3,10 @@
 namespace BitApps\Pi\src\Integrations\BitCrm\Services;
 
 use BitApps\Crm\Model\LineItem;
+use BitApps\CrmPro\Model\CustomField;
 use BitApps\CrmPro\Model\Product;
 use BitApps\Pi\src\Flow\NodeInfoProvider;
+use BitApps\Pi\src\Integrations\BitCrm\BitCrmHelper;
 
 if (!defined('ABSPATH')) {
     exit;
@@ -47,7 +49,55 @@ abstract class BaseService
             }
         );
 
-        return array_merge($this->mappedFields(), $filteredExtra);
+        // Custom fields travel in their own payload key, so they must not reach
+        // the entity's own columns.
+        $mapped = array_filter(
+            $this->mappedFields(),
+            static function ($key) {
+                return strpos((string) $key, BitCrmHelper::CUSTOM_FIELD_PREFIX) !== 0;
+            },
+            ARRAY_FILTER_USE_KEY
+        );
+
+        return array_merge($mapped, $filteredExtra);
+    }
+
+    /**
+     * Field map rows targeting a custom field, keyed the way Bit CRM's entity
+     * services expect: [field_key => ['field_id' => int, 'field_value' => string]].
+     *
+     * Rows whose field no longer exists on the module are dropped, so deleting a
+     * custom field in Bit CRM cannot break a flow that still maps it.
+     */
+    protected function customFieldsValues(string $module): array
+    {
+        $definitions = BitCrmHelper::customFields($module);
+
+        if (empty($definitions)) {
+            return [];
+        }
+
+        $byKey = array_column($definitions, null, 'field_key');
+        $values = [];
+
+        foreach ($this->mappedFields() as $key => $value) {
+            if (strpos((string) $key, BitCrmHelper::CUSTOM_FIELD_PREFIX) !== 0) {
+                continue;
+            }
+
+            $fieldKey = substr((string) $key, \strlen(BitCrmHelper::CUSTOM_FIELD_PREFIX));
+
+            if (!isset($byKey[$fieldKey]) || $value === null || $value === '' || $value === []) {
+                continue;
+            }
+
+            $values[$fieldKey] = [
+                'field_id'    => (int) $byKey[$fieldKey]['id'],
+                'field_value' => self::customFieldValue($value, (string) ($byKey[$fieldKey]['type'] ?? '')),
+            ];
+        }
+
+        return $values;
     }
 
     /**
@@ -102,6 +152,33 @@ abstract class BaseService
         }
 
         return $items;
+    }
+
+    /**
+     * Multi-value custom fields are stored as a JSON list; everything else is a
+     * plain string. A mapped value arrives comma separated when it comes from a
+     * text token rather than a real array.
+     *
+     * @param mixed $value
+     */
+    private static function customFieldValue($value, string $type): string
+    {
+        if (!\in_array($type, CustomField::MULTI_VALUE_FIELD_TYPES)) {
+            return \is_array($value) ? implode(', ', $value) : (string) $value;
+        }
+
+        $items = \is_array($value) ? $value : explode(',', (string) $value);
+
+        $items = array_values(
+            array_filter(
+                array_map('trim', array_map('strval', $items)),
+                static function ($item) {
+                    return $item !== '';
+                }
+            )
+        );
+
+        return (string) wp_json_encode($items);
     }
 
     private static function findCrmProduct($productId)

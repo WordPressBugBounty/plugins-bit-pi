@@ -41,6 +41,7 @@ final class LeadService extends BaseService
 
         $payload = [
             'systemDefinedFieldsValues' => $systemValues,
+            'customFieldsValues'        => $this->customFieldsValues('lead'),
             'tagIds'                    => BitCrmHelper::toIntArray($fields['tag_ids'] ?? []),
         ];
 
@@ -79,6 +80,7 @@ final class LeadService extends BaseService
         $payload = [
             'id'                        => (int) $fields['lead_id'],
             'systemDefinedFieldsValues' => $systemValues,
+            'customFieldsValues'        => $this->customFieldsValues('lead'),
         ];
 
         $result = (new \BitApps\Crm\Services\LeadService())->update($payload);
@@ -264,7 +266,16 @@ final class LeadService extends BaseService
         }
 
         $leadId = (int) $fields['lead_id'];
-        $convertTo = array_values(array_filter((array) $fields['convert_to']));
+
+        $convertTo = array_values(
+            array_unique(
+                array_merge(
+                    ['contact', 'company'],
+                    array_filter((array) $fields['convert_to'])
+                )
+            )
+        );
+
         $moveRelatedDataTo = $fields['move_related_data_to'];
         $defaultOwnerId = !empty($fields['owner_id']) ? (int) $fields['owner_id'] : null;
 

@@ -25,7 +25,7 @@ final class IpAllowlist
             return false;
         }
 
-        if (strpos($entry, '/') === false) {
+        if (!str_contains($entry, '/')) {
             return (bool) rest_is_ip_address($entry);
         }
 
@@ -59,7 +59,7 @@ final class IpAllowlist
     {
         foreach (self::packedForms($clientIp) as $clientPacked) {
             foreach ($allowlist as $entry) {
-                $isMatch = strpos($entry, '/') === false
+                $isMatch = !str_contains($entry, '/')
                     ? @inet_pton($entry) === $clientPacked
                     : self::cidrMatch($clientPacked, $entry);
 
@@ -93,7 +93,7 @@ final class IpAllowlist
         $forms = [$packed];
 
         // ::ffff:0:0/96 — the trailing 4 bytes are the embedded IPv4 address.
-        if (substr($packed, 0, 12) === "\0\0\0\0\0\0\0\0\0\0\xFF\xFF") {
+        if (str_starts_with($packed, "\0\0\0\0\0\0\0\0\0\0\xFF\xFF")) {
             $forms[] = substr($packed, 12);
         }
 

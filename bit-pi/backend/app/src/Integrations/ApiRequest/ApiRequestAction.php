@@ -102,7 +102,7 @@ class ApiRequestAction implements ActionInterface
         }
 
         if ($queryParams) {
-            $url .= (strpos($url, '?') === false) ? '?' : '&';
+            $url .= !str_contains($url, '?') ? '?' : '&';
             $url .= http_build_query($queryParams);
         }
 

@@ -66,7 +66,7 @@ class OpenAiService
         $fieldMapData = AIIntegrationHelper::castPayloadTypes($fieldMapData);
 
         $model = $fieldMapData['model'] ?? '';
-        if (strpos($model, 'gpt-5') === 0 && isset($fieldMapData['max_tokens'])) {
+        if (str_starts_with($model, 'gpt-5') && isset($fieldMapData['max_tokens'])) {
             $fieldMapData['max_completion_tokens'] = $fieldMapData['max_tokens'];
             unset($fieldMapData['max_tokens']);
         }

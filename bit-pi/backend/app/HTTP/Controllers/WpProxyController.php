@@ -49,7 +49,7 @@ final class WpProxyController
         if (!\is_null($queryParams)) {
             // Plain permalinks put the route in a query of its own, as
             // ?rest_route=/..., so the separator depends on the URL
-            $url .= (strpos($url, '?') === false ? '?' : '&') . http_build_query($queryParams);
+            $url .= (!str_contains($url, '?') ? '?' : '&') . http_build_query($queryParams);
         }
 
         $response = (new HttpClient())->request($url, $method, $bodyParams, $headers);
@@ -74,6 +74,6 @@ final class WpProxyController
      */
     private function isInvalidPath($path)
     {
-        return $path === '' || strpos($path, '..') !== false || strpos($path, '://') !== false;
+        return $path === '' || str_contains($path, '..') || str_contains($path, '://');
     }
 }

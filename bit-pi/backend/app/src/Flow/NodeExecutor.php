@@ -128,7 +128,7 @@ class NodeExecutor
      */
     public function isExistClass($appSlug, $appType = 'Action')
     {
-        if (strpos($appSlug, CustomApp::APP_SLUG_PREFIX) !== false) {
+        if (str_contains($appSlug, CustomApp::APP_SLUG_PREFIX)) {
             $appSlug = ucfirst(CustomApp::APP_SLUG);
         } else {
             $appSlug = ucfirst($appSlug);

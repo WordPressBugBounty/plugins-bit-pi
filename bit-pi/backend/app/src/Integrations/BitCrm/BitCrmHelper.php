@@ -21,13 +21,26 @@ use BitApps\Crm\Services\DealStageService;
 use BitApps\Crm\Services\InvoiceTermService;
 use BitApps\Crm\Services\LeadService;
 use BitApps\Crm\Services\UserService;
+use BitApps\CrmPro\Model\CustomField;
 use BitApps\CrmPro\Services\ProductService;
+use BitApps\Pi\Deps\BitApps\WPKit\Hooks\Hooks;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Request\Request;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitApps\Pi\Helpers\Utility;
+use Throwable;
 
 final class BitCrmHelper
 {
+    /**
+     * Marks a field map row as targeting a custom field rather than a column on
+     * the entity itself. Bit CRM takes the two through different payload keys.
+     */
+    public const CUSTOM_FIELD_PREFIX = 'cf::';
+
+    public const CUSTOM_FIELD_MODULES = ['lead', 'contact', 'company', 'deal', 'product'];
+
+    private const SAVE_CUSTOM_FIELDS_HOOK = 'bit_crm_update_custom_fields_values';
+
     private static $isActive;
 
     private static $isProActive;
@@ -68,15 +81,34 @@ final class BitCrmHelper
         return Response::success(self::toOptions((new UserService())->getUsersAsOptions()));
     }
 
+    /**
+     * Read whole rather than as bare options: the machine decides a closing date
+     * by the stage's category.
+     */
     public static function getDealStages()
     {
         if ($inactive = self::guardActive('BitApps\Crm\Services\DealStageService')) {
             return $inactive;
         }
 
-        $stages = (new DealStageService())->getStagesAsOptions(DealStageService::STATUS_ACTIVE);
+        $options = [];
 
-        return Response::success(self::toOptions($stages));
+        foreach ((array) (new DealStageService())->getAllStages(DealStageService::STATUS_ACTIVE) as $stage) {
+            $stage = (array) $stage;
+            $value = (string) ($stage['key'] ?? '');
+
+            if ($value === '') {
+                continue;
+            }
+
+            $options[] = [
+                'label'    => (string) ($stage['name'] ?? $value),
+                'value'    => $value,
+                'category' => (string) ($stage['deal_category'] ?? ''),
+            ];
+        }
+
+        return Response::success($options);
     }
 
     public static function getInvoiceTerms()
@@ -159,6 +191,65 @@ final class BitCrmHelper
         }
 
         return Response::success(self::toOptions((new $serviceClass())->getEntitiesAsOptions()));
+    }
+
+    public static function getFields(Request $request)
+    {
+        if ($inactive = self::guardActive()) {
+            return $inactive;
+        }
+
+        return Response::success(BitCrmFieldService::fields(sanitize_text_field((string) $request->module)));
+    }
+
+    /**
+     * Active custom field definitions for a module.
+     *
+     * Custom fields are a Bit CRM Pro feature, so without it every module simply
+     * has none and the field maps fall back to system fields only.
+     *
+     * @return array<int, array>
+     */
+    public static function customFields(string $module): array
+    {
+        if (!\in_array($module, self::CUSTOM_FIELD_MODULES) || !class_exists('BitApps\CrmPro\Model\CustomField')) {
+            return [];
+        }
+
+        try {
+            $fields = CustomField::where('module', $module)->get();
+        } catch (Throwable) {
+            return [];
+        }
+
+        if (empty($fields)) {
+            return [];
+        }
+
+        $active = [];
+        foreach ($fields->toArray() as $field) {
+            if (empty($field['field_key']) || empty($field['status'])) {
+                continue;
+            }
+
+            $active[] = $field;
+        }
+
+        return $active;
+    }
+
+    /**
+     * Write custom field values for an entity the same way Bit CRM's own entity
+     * services do. Only needed where a record is written directly instead of
+     * through the service that fires this action itself.
+     */
+    public static function saveCustomFieldsValues(string $module, int $entityId, array $values): void
+    {
+        if (empty($values) || empty($entityId)) {
+            return;
+        }
+
+        Hooks::doAction(self::SAVE_CUSTOM_FIELDS_HOOK, $module, $entityId, $values);
     }
 
     public static function getAttachments()

@@ -14,6 +14,7 @@ use BitApps\Pi\Deps\BitApps\WPKit\Http\Request\Request;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\Response;
 use BitApps\Pi\Model\Flow;
 use BitApps\Pi\Model\FlowNode;
+use BitApps\Pi\Services\FlowService;
 use BitApps\Pi\src\Tools\Schedule\ScheduleTool;
 
 final class HookListenerController
@@ -69,6 +70,10 @@ final class HookListenerController
             if (!$flow->save()) {
                 return Response::error('Error updating flow');
             }
+
+            // Register the trigger's hook now, so a flow that is switched off
+            // still hears the event it is being tested with.
+            FlowService::updateListeningTriggerCache();
         }
 
         $flowSettings = JSON::maybeDecode($flow->settings, true);
@@ -100,12 +105,19 @@ final class HookListenerController
             ]
         );
 
-        Flow::findOne(['id' => $validated['flowId']])
-            ->update(
-                [
-                    'listener_type' => Flow::LISTENER_TYPE['NONE'],
-                ]
-            );
+        $flow = Flow::findOne(['id' => $validated['flowId']]);
+
+        if (!$flow) {
+            return Response::error('Flow does not exist');
+        }
+
+        $flow->update(
+            [
+                'listener_type' => Flow::LISTENER_TYPE['NONE'],
+            ]
+        );
+
+        FlowService::updateListeningTriggerCache();
 
         return Response::success('listener stopped');
     }
@@ -114,11 +126,22 @@ final class HookListenerController
     {
         $flow = Flow::where('id', $flowId)->first();
 
+        if (!$flow) {
+            return false;
+        }
+
         $flow->is_hook_capture = false;
 
         $flow->listener_type = Flow::LISTENER_TYPE['NONE'];
 
-        return $flow->save();
+        if (!$flow->save()) {
+            return false;
+        }
+
+        // A switched-off flow's trigger no longer needs its hook.
+        FlowService::updateListeningTriggerCache();
+
+        return true;
     }
 
     private function getVariables($data)

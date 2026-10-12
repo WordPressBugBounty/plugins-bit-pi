@@ -70,7 +70,7 @@ class DefaultConditionTool
         $logs = LogHandler::getLogs();
 
         foreach ($logs as $log) {
-            if (strpos($log['node_id'], $parentNodeId) === 0 && $log['messages'] === 'Condition met') {
+            if (str_starts_with($log['node_id'], $parentNodeId) && $log['messages'] === 'Condition met') {
                 return true;
             }
         }
