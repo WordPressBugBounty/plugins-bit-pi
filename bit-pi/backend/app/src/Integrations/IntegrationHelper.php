@@ -7,6 +7,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
+use BitApps\Pi\Deps\BitApps\WPKit\Helpers\JSON;
 use BitApps\Pi\Deps\BitApps\WPValidator\Validator;
 use BitApps\Pi\Helpers\Node;
 use BitApps\Pi\src\Flow\FlowExecutor;
@@ -57,6 +58,25 @@ class IntegrationHelper
                 'status_code' => 400,
             ];
         }
+    }
+
+    public static function filterEmpty(array $payload)
+    {
+        return array_filter(
+            $payload,
+            static function ($value) {
+                if (\is_bool($value) || is_numeric($value)) {
+                    return true;
+                }
+
+                return !empty($value);
+            }
+        );
+    }
+
+    public static function toArray($data)
+    {
+        return JSON::decode(JSON::encode($data), true);
     }
 
     /**

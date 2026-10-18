@@ -981,7 +981,7 @@ final class WordPressServices
         }
 
         if (!empty($fields['tags'])) {
-            wp_add_post_tags($postId, $fields['tags']);
+            wp_add_post_tags($postId, $this->splitMappedTags($fields['tags']));
         }
 
         $error = WordPressActionHelper::setPostFeaturedImage($postId, $fields, $isEnabledFeaturedImageId);
@@ -1030,7 +1030,7 @@ final class WordPressServices
         }
 
         if (!empty($fields['tags'])) {
-            wp_set_post_tags($postId, $fields['tags'], true);
+            wp_set_post_tags($postId, $this->splitMappedTags($fields['tags']), true);
         }
 
         $error = WordPressActionHelper::setPostFeaturedImage($postId, $fields, $isEnabledFeaturedImageId);
@@ -1593,7 +1593,7 @@ final class WordPressServices
         $data = $this->nodeInfoProvider->getFieldMapData();
 
         $postId = $data['postId'] ?? null;
-        $tags = $data['tags'] ?? null;
+        $tags = $this->splitMappedTags($data['tags'] ?? null);
         $append = $data['append'] ?? false;
 
         $payload = [
@@ -1629,7 +1629,7 @@ final class WordPressServices
         $data = $this->nodeInfoProvider->getFieldMapData();
 
         $postId = $data['postId'] ?? null;
-        $tags = $data['tags'] ?? null;
+        $tags = $this->splitMappedTags($data['tags'] ?? null);
 
         $payload = [
             'post_id' => $postId,
@@ -2327,6 +2327,26 @@ final class WordPressServices
         }
 
         return WordPressActionHelper::response(__('Plugin is successfully activated.', 'bit-pi'), $payload);
+    }
+
+    /**
+     * Normalize the Tags input for a post.
+     *
+     * A mapped value arrives as a comma-separated string of tag names; the
+     * dropdown sends an array of term IDs. Split and trim the string case, and
+     * leave an array untouched so numeric term IDs keep resolving by ID.
+     *
+     * @param mixed $tags
+     *
+     * @return mixed
+     */
+    private function splitMappedTags($tags)
+    {
+        if (!\is_string($tags)) {
+            return $tags;
+        }
+
+        return array_values(array_filter(array_map('trim', explode(',', $tags)), 'strlen'));
     }
 
     /**

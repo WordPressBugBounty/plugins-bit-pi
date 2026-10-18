@@ -369,20 +369,20 @@ class WordPressActionHelper
     public static function mapPostFields($data)
     {
         $fields = [
-            'ID'             => 'postId',
-            'post_title'     => 'title',
-            'post_content'   => 'content',
-            'post_status'    => 'postStatus',
-            'post_type'      => 'postType',
-            'meta_input'     => 'customField',
-            'post_date'      => 'date',
-            'post_date_gmt'  => 'dateGMT',
-            'post_password'  => 'password',
-            'post_parent'    => 'parentId',
-            'post_author_id' => 'postAuthor',
-            'post_excerpt'   => 'excerpt',
-            'post_name'      => 'slug',
-            'post_category'  => 'categories',
+            'ID'            => 'postId',
+            'post_title'    => 'title',
+            'post_content'  => 'content',
+            'post_status'   => 'postStatus',
+            'post_type'     => 'postType',
+            'meta_input'    => 'customField',
+            'post_date'     => 'date',
+            'post_date_gmt' => 'dateGMT',
+            'post_password' => 'password',
+            'post_parent'   => 'parentId',
+            'post_author'   => 'postAuthor',
+            'post_excerpt'  => 'excerpt',
+            'post_name'     => 'slug',
+            'post_category' => 'categories',
         ];
 
         $fieldMap = [];
@@ -391,6 +391,15 @@ class WordPressActionHelper
             if (!empty($data[$dbKey])) {
                 $fieldMap[$inputKey] = $data[$dbKey];
             }
+        }
+
+        // The category dropdown sends an array of term IDs; a mapped value
+        // arrives as a comma-separated string. wp_insert_post only honours an
+        // array for post_category, so split the string case before it is used.
+        if (isset($fieldMap['post_category']) && \is_string($fieldMap['post_category'])) {
+            $fieldMap['post_category'] = array_values(
+                array_filter(array_map('trim', explode(',', $fieldMap['post_category'])), 'strlen')
+            );
         }
 
         return $fieldMap;

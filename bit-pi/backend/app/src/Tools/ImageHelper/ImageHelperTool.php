@@ -8,7 +8,6 @@ if (!defined('ABSPATH')) {
 }
 
 use BitApps\Pi\Helpers\MixInputHandler;
-use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\Model\FlowLog;
 use BitApps\Pi\src\DTO\FlowToolResponseDTO;
 use BitApps\Pi\src\Flow\GlobalNodeVariables;
@@ -377,6 +376,14 @@ class ImageHelperTool
             }
         }
 
+        if ($tmpFile === null) {
+            $filePath = $this->containUploadsPath(trim((string) $filePath));
+
+            if ($filePath === false) {
+                return ['error' => 'Image file must be within the WordPress uploads directory.'];
+            }
+        }
+
         if (!file_exists($filePath)) {
             $this->cleanupTempFile($tmpFile);
 
@@ -384,6 +391,45 @@ class ImageHelperTool
         }
 
         return ['path' => $filePath, 'tmpFile' => $tmpFile];
+    }
+
+    /**
+     * Resolve an input path to a real path confined to the uploads directory.
+     *
+     * Accepts an uploads URL or an absolute path under the uploads dir, mirrors
+     * the containment used by CsvTool and MailServices, and returns false for
+     * anything that escapes it — so node input cannot read arbitrary files.
+     *
+     * @param string $path
+     *
+     * @return false|string
+     */
+    private function containUploadsPath($path)
+    {
+        $uploadDir = wp_upload_dir();
+
+        if (empty($uploadDir['basedir'])) {
+            return false;
+        }
+
+        if (str_starts_with($path, $uploadDir['baseurl'])) {
+            $path = $uploadDir['basedir'] . substr($path, \strlen($uploadDir['baseurl']));
+        } elseif (!str_starts_with($path, $uploadDir['basedir'])) {
+            return false;
+        }
+
+        $realPath = realpath($path);
+        $realUploads = realpath($uploadDir['basedir']);
+
+        if ($realPath === false || $realUploads === false) {
+            return false;
+        }
+
+        if (!str_starts_with($realPath, $realUploads . \DIRECTORY_SEPARATOR)) {
+            return false;
+        }
+
+        return $realPath;
     }
 
     private function initializeImageEditor($filePath)
@@ -476,7 +522,11 @@ class ImageHelperTool
 
     private function fileToBase64($filePath)
     {
-        $filePath = Utility::getFilePath(trim($filePath));
+        $filePath = $this->containUploadsPath(trim((string) $filePath));
+
+        if ($filePath === false) {
+            return ['error' => 'File path must be within the WordPress uploads directory.'];
+        }
 
         global $wp_filesystem;
 

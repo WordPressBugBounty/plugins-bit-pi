@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.31.0
+Stable tag: 1.32.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,35 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.32.0 (Oct 18, 2026) =
+
+* **Triggers (120)**:
+  * BuddyBoss (64)
+  * NextCRM (19)
+  * Charitable (18)
+  * WP Simple Booking Calendar (12)
+  * Cart Abandonment Recovery (05)
+  * Facebook Custom Audience (02)
+
+* **Actions (172)**:
+  * BuddyBoss (56)
+  * NextCRM (29)
+  * WP Simple Booking Calendar (27)
+  * Charitable (21)
+  * Facebook Custom Audience (16)
+  * Google Photos (14)
+  * Cart Abandonment Recovery (09)
+
+* **Improvements**:
+  * WordPress post actions now accept mapped values for Post Author, Post Tags (comma-separated) and Update Post's category.
+
+* **Fixes**:
+  * Fixed WordPress post actions ignoring the mapped Post Author and Post Category.
+  * Fixed the image helper reading files from outside the WordPress uploads folder.
+  * Fixed BuddyBoss's Private Group Joined trigger returning the user and group swapped.
+  * Fixed BuddyBoss activity post actions not posting as the selected author.
+  * Fixed BuddyBoss dropdown lists loading for users who are not admins.
 
 = v1.31.0 (Oct 12, 2026) =
 
