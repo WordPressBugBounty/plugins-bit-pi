@@ -1,1 +1,0 @@
-import{q as u}from"./main-three-clouds-mate.js";import{u as t}from"./index-WP2yYef0.js";function y(o,e){const{data:s,isLoading:a}=t({queryFn:async({signal:r})=>u("webhooks",{appSlug:e,flowId:o},void 0,"POST",{signal:r}),queryKey:["webhooks",o||"all",e||"all"]});return{isWebhookLoading:a,webhooks:s?.data||[]}}export{y as u};

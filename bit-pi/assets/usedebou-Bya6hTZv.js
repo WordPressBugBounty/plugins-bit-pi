@@ -1,1 +1,0 @@
-import{_ as s}from"./lodash-B-qwTIrN.js";import{r as e}from"./main-icy-oranges-appear.js";const p=(r,n=400)=>{const o=e.useRef(r);e.useEffect(()=>{o.current=r},[r]);const t=e.useMemo(()=>{const u=(...c)=>o.current(...c);return s.debounce(u,n)},[n]);return e.useEffect(()=>()=>t.cancel(),[t]),t};export{p as u};
