@@ -24,7 +24,7 @@ class Config
 
     public const VAR_PREFIX = 'bit_pi_';
 
-    public const VERSION = '1.32.0';
+    public const VERSION = '1.33.0';
 
     public const DB_VERSION = '0.2.0';
 
@@ -41,6 +41,12 @@ class Config
     public const ASSETS_FOLDER = 'assets';
 
     public const PRO_PLUGIN_NAMESPACE = 'BitApps\PiPro\\';
+
+    public const TELEMETRY_SERVER_BASE_URL = 'https://wp-api.bitapps.pro/public/';
+
+    public const TELEMETRY_TERMS_URL = 'https://bitapps.pro/terms-of-service/';
+
+    public const TELEMETRY_POLICY_URL = 'https://bitapps.pro/privacy-policy/';
 
     /**
      * Provides configuration for plugin.

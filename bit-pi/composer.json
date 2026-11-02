@@ -5,9 +5,10 @@
   "license": "GPL-2.0-or-later",
   "require": {
     "php": ">=8.0",
+    "bitapps/wp-telemetry": "^2",
     "bitapps/wp-validator": "^1",
     "bitapps/wp-database": "2.0.5",
-    "bitapps/wp-kit": "2.3.1",
+    "bitapps/wp-kit": "2.5.0",
     "typisttech/imposter-plugin": "^0.6.2"
   },
   "require-dev": {

@@ -10,15 +10,18 @@ if (!defined('ABSPATH')) {
 use BitApps\Pi\Config;
 use BitApps\Pi\Model\Flow;
 use BitApps\Pi\Model\FlowLog;
+use BitApps\Pi\Services\LogService;
 use BitApps\Pi\src\DTO\FlowToolResponseDTO;
 use BitApps\Pi\src\Flow\FlowExecutor;
 use BitApps\Pi\src\Flow\GlobalNodeVariables;
 use BitApps\Pi\src\Flow\NodeInfoProvider;
+use BitApps\Pi\src\Log\LogHandler;
 use BitApps\Pi\src\Tools\FlowToolsFactory;
 
 class DelayTool
 {
     public const DELAY_UNITS = [
+        'seconds' => 1,
         'minutes' => 60,
         'hours'   => 3600,
         'days'    => 86400,
@@ -27,6 +30,11 @@ class DelayTool
     ];
 
     private const MACHINE_SLUG = 'delay';
+
+    /**
+     * Longest delay waited in the running request; longer ones go to WP-Cron.
+     */
+    private const MAX_IN_REQUEST_DELAY = 59;
 
     private $nodeInfoProvider;
 
@@ -66,15 +74,21 @@ class DelayTool
             'machine_slug' => self::MACHINE_SLUG,
         ];
 
-        $data = $this->scheduleEventWithDelay($eventId, $args, $config);
+        $delayInSeconds = $config['delayValue'] * static::DELAY_UNITS[$config['delayUnit']];
 
-        if ($this->isTestRun) {
+        $isInRequestDelay = $delayInSeconds <= self::MAX_IN_REQUEST_DELAY;
+
+        $data = $isInRequestDelay
+            ? $this->waitInRequest($delayInSeconds, $config, $args, $details)
+            : $this->scheduleEventWithDelay($eventId, $args, $config);
+
+        if ($this->isTestRun && !$isInRequestDelay) {
             $scheduleStatus = $data['status'] === FlowLog::STATUS['PENDING']
             ? FlowLog::STATUS['SUCCESS']
             : FlowLog::STATUS['ERROR'];
 
             $message = $scheduleStatus === FlowLog::STATUS['SUCCESS']
-                ? \sprintf('Successfully scheduled event %s', $eventId)
+                ? 'The execution was delayed for ' . $config['delayValue'] . ' ' . $config['delayUnit']
                 : \sprintf('Failed to schedule event %s', $eventId);
 
             $data['status'] = $scheduleStatus;
@@ -94,7 +108,9 @@ class DelayTool
             $data,
             $data['message'],
             $details,
-            true
+            !$isInRequestDelay,
+            null,
+            !$isInRequestDelay
         );
     }
 
@@ -128,6 +144,62 @@ class DelayTool
                 FlowExecutor::execute($flowNodes, [], $flowHistoryId, null, $nodeId);
             }
         }
+    }
+
+    /**
+     * Waits in the running request: WP-Cron spawns at most once a minute and only on site traffic,
+     * so it cannot time a shorter delay. A node test run skips the wait.
+     *
+     * The node's log is saved as pending before the wait and completed after it, so the log shows
+     * the delay while it runs; the buffered logs of earlier nodes are saved first to keep their order.
+     *
+     * @param float|int $delayInSeconds
+     * @param array     $config
+     * @param array     $args
+     * @param array     $details
+     */
+    private function waitInRequest($delayInSeconds, $config, $args, $details)
+    {
+        $duration = $config['delayValue'] . ' ' . $config['delayUnit'];
+
+        $data = [
+            'status'  => FlowLog::STATUS['SUCCESS'],
+            'message' => 'The execution was delayed for ' . $duration,
+        ];
+
+        if ($this->isTestRun) {
+            return $data;
+        }
+
+        LogService::save(LogHandler::getLogs());
+        LogHandler::destroy();
+
+        $log = FlowLog::insert(
+            [
+                'flow_history_id' => $this->flowHistoryId,
+                'node_id'         => $this->nodeInfoProvider->getNodeId(),
+                'status'          => FlowLog::STATUS['PENDING'],
+                'input'           => $args,
+                'output'          => [],
+                'messages'        => 'Waiting for ' . $duration,
+                'details'         => $details,
+            ]
+        );
+
+        sleep((int) $delayInSeconds);
+
+        if ($log) {
+            // The model returned by insert() does not track later changes, so update by id.
+            FlowLog::where('id', $log->id)->update(
+                [
+                    'status'   => $data['status'],
+                    'output'   => $data,
+                    'messages' => $data['message'],
+                ]
+            );
+        }
+
+        return $data;
     }
 
     private function scheduleEventWithDelay($eventId, $args, $config)

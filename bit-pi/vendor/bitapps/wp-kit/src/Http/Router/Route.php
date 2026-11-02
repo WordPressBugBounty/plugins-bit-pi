@@ -12,6 +12,8 @@ namespace BitApps\Pi\Deps\BitApps\WPKit\Http\Router;
  * @method static RouteBase     isTokenIgnored()
  * @method static RouteBase     ignoreToken()
  * @method static RouteBase     getMiddleware()
+ * @method static RouteBase     permission(callable $callback)
+ * @method static RouteBase     getPermission()
  * @method static RouteBase     getRoutePrefix()
  * @method static RouteBase     group(Closure $callback)
  * @method static RouteBase     getRouter()
@@ -49,7 +51,7 @@ final class Route
      *
      * @return RouteBase
      */
-    public function __call($method, $parameters)
+    public function __call(string $method, array $parameters)
     {
         return \call_user_func_array([new RouteBase(), $method], $parameters);
     }
@@ -62,7 +64,7 @@ final class Route
      *
      * @return RouteBase
      */
-    public static function __callStatic($method, $parameters)
+    public static function __callStatic(string $method, array $parameters)
     {
         return \call_user_func_array([new RouteBase(), $method], $parameters);
     }

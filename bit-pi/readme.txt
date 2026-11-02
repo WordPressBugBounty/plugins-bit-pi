@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.32.0
+Stable tag: 1.33.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,21 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.33.0 (Oct 29, 2026) =
+
+* **Triggers (10)**:
+  * Rox Appointment Booking (10)
+
+* **Actions (30)**:
+  * Rox Appointment Booking (30)
+
+* **Features**:
+  * Delay tool now supports a Seconds unit that waits within the request.
+
+* **Fixes**:
+  * Fixed Tutor LMS Enroll User action not accepting a mapped course.
+  * Fixed the Delay tool test run message not showing the delay duration.
 
 = v1.32.0 (Oct 18, 2026) =
 

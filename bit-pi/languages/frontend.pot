@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Sun Oct 18 2026 12:27:20 GMT+0000 (Coordinated Universal "
+"POT-Creation-Date: Mon Nov 02 2026 08:59:41 GMT+0000 (Coordinated Universal "
 "Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -1176,6 +1176,11 @@ msgstr ""
 #: frontend/src/services/machines/razorpay/createPaymentLink.razorpay.machine.pro.ts:47
 #: frontend/src/services/machines/razorpay/createPlan.razorpay.machine.pro.ts:88
 #: frontend/src/services/machines/razorpay/updateItem.razorpay.machine.pro.ts:45
+#: frontend/src/services/machines/roxAppointmentBooking/createCategory.roxAppointmentBooking.machine.pro.ts:33
+#: frontend/src/services/machines/roxAppointmentBooking/createNotification.roxAppointmentBooking.machine.pro.ts:40
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:45
+#: frontend/src/services/machines/roxAppointmentBooking/updateCategory.roxAppointmentBooking.machine.pro.ts:47
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:58
 #: frontend/src/services/machines/seoPress/helpers/seoPressFields.ts:5
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:27
 #: frontend/src/services/machines/stripe/createInvoice.stripe.machine.pro.ts:29
@@ -2791,6 +2796,8 @@ msgstr ""
 #: frontend/src/services/machines/notion/helpers/notionCommons.ts:79
 #: frontend/src/services/machines/Omnisend/listProduct.omnisend.machine.pro.ts:43
 #: frontend/src/services/machines/powerCoupons/listCoupons.powerCoupons.machine.pro.ts:44
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:50
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:64
 #: frontend/src/services/machines/wpCafe/helpers/wpCafeFields.ts:7
 msgid "Date"
 msgstr ""
@@ -2879,6 +2886,10 @@ msgstr ""
 #: frontend/src/services/machines/popupMaker/updateSubscriber.popupMaker.machine.pro.ts:47
 #: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:33
 #: frontend/src/services/machines/rafflepress/registerContestParticipant.rafflepress.machine.pro.ts:37
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:18
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:14
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:32
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:27
 #: frontend/src/services/machines/sender/createOrUpdateSubscriber.sender.machine.pro.ts:28
 #: frontend/src/services/machines/sender/updateSubscriber.sender.machine.pro.ts:38
 #: frontend/src/services/machines/sendFox/createContact.sendFox.machine.pro.ts:29
@@ -2950,6 +2961,10 @@ msgstr ""
 #: frontend/src/services/machines/popupMaker/updateSubscriber.popupMaker.machine.pro.ts:56
 #: frontend/src/services/machines/profilePress/addOrUpdateCustomer.profilePress.machine.pro.ts:42
 #: frontend/src/services/machines/rafflepress/registerContestParticipant.rafflepress.machine.pro.ts:46
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:28
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:24
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:42
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:37
 #: frontend/src/services/machines/sender/createOrUpdateSubscriber.sender.machine.pro.ts:37
 #: frontend/src/services/machines/sender/updateSubscriber.sender.machine.pro.ts:47
 #: frontend/src/services/machines/sendFox/createContact.sendFox.machine.pro.ts:39
@@ -3039,6 +3054,10 @@ msgstr ""
 #: frontend/src/services/machines/rapidMail/createContact.rapidMail.machine.pro.ts:89
 #: frontend/src/services/machines/razorpay/createCustomer.razorpay.machine.pro.ts:28
 #: frontend/src/services/machines/razorpay/updateCustomer.razorpay.machine.pro.ts:45
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:38
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:34
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:52
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:47
 #: frontend/src/services/machines/selzy/helpers/machineHelper.selzy.ts:103
 #: frontend/src/services/machines/sender/addSubscriberToGroup.sender.machine.pro.ts:33
 #: frontend/src/services/machines/sender/createEvent.sender.machine.pro.ts:17
@@ -3579,6 +3598,8 @@ msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/DateTimeConfig/DateTimeConfig.tsx:113
 #: frontend/src/services/machines/quizMaker/createResult.quizMaker.machine.pro.ts:124
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:25
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:38
 msgid "Duration"
 msgstr ""
 
@@ -3589,34 +3610,35 @@ msgid "Unit"
 msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/DateTimeConfig/DateTimeConfig.tsx:125
+#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:37
 msgid "Seconds"
 msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/DateTimeConfig/DateTimeConfig.tsx:126
-#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:37
+#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:38
 #: frontend/src/services/machines/humanInTheLoop/helpers/approvalConfig.ts:128
 msgid "Minutes"
 msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/DateTimeConfig/DateTimeConfig.tsx:127
-#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:38
+#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:39
 #: frontend/src/services/machines/humanInTheLoop/helpers/approvalConfig.ts:129
 msgid "Hours"
 msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/DateTimeConfig/DateTimeConfig.tsx:128
-#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:39
+#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:40
 #: frontend/src/services/machines/humanInTheLoop/helpers/approvalConfig.ts:130
 msgid "Days"
 msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/DateTimeConfig/DateTimeConfig.tsx:129
-#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:40
+#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:41
 msgid "Weeks"
 msgstr ""
 
 #: frontend/src/components/features/NodeDetails/internals/DateTimeConfig/DateTimeConfig.tsx:130
-#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:41
+#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:42
 msgid "Months"
 msgstr ""
 
@@ -3738,11 +3760,11 @@ msgstr ""
 msgid "Select units"
 msgstr ""
 
-#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:44
+#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:45
 msgid "Select time & unit how long the delay should be to execute the next node"
 msgstr ""
 
-#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:45
+#: frontend/src/components/features/NodeDetails/internals/DelayConfig/DelayConfig.tsx:46
 msgid "Execution delay time"
 msgstr ""
 
@@ -3909,6 +3931,11 @@ msgstr ""
 #: frontend/src/services/machines/quizMaker/updateQuestionCategory.quizMaker.machine.pro.ts:27
 #: frontend/src/services/machines/quizMaker/updateQuizCategory.quizMaker.machine.pro.ts:27
 #: frontend/src/services/machines/rapidMail/createContact.rapidMail.machine.pro.ts:93
+#: frontend/src/services/machines/roxAppointmentBooking/createCategory.roxAppointmentBooking.machine.pro.ts:13
+#: frontend/src/services/machines/roxAppointmentBooking/createNotification.roxAppointmentBooking.machine.pro.ts:17
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:14
+#: frontend/src/services/machines/roxAppointmentBooking/updateCategory.roxAppointmentBooking.machine.pro.ts:27
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:27
 #: frontend/src/services/machines/sender/createCampaign.sender.machine.pro.ts:17
 #: frontend/src/services/machines/sendy/createCampaign.sendy.machine.pro.ts:69
 #: frontend/src/services/machines/seoPress/helpers/seoPressFields.ts:4
@@ -6585,6 +6612,11 @@ msgstr ""
 #: frontend/src/services/machines/quizMaker/updateQuestionCategory.quizMaker.machine.pro.ts:48
 #: frontend/src/services/machines/quizMaker/updateQuiz.quizMaker.machine.pro.ts:81
 #: frontend/src/services/machines/quizMaker/updateQuizCategory.quizMaker.machine.pro.ts:48
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:146
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:191
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:160
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:204
+#: frontend/src/services/machines/roxAppointmentBooking/updateServiceStatus.roxAppointmentBooking.machine.pro.ts:28
 #: frontend/src/services/machines/senseiLms/createCourse.senseiLms.machine.pro.ts:56
 #: frontend/src/services/machines/senseiLms/createLesson.senseiLms.machine.pro.ts:72
 #: frontend/src/services/machines/ultimateAffiliatePro/changeTransactionStatus.ultimateAffiliatePro.machine.pro.ts:27
@@ -6898,6 +6930,7 @@ msgstr ""
 #: frontend/src/services/machines/pipeDrive/updateActivity.pipeDrive.machine.pro.ts:56
 #: frontend/src/services/machines/pointics/getChannels.pointics.machine.pro.ts:53
 #: frontend/src/services/machines/pointics/getTransactions.pointics.machine.pro.ts:31
+#: frontend/src/services/machines/roxAppointmentBooking/createNotification.roxAppointmentBooking.machine.pro.ts:51
 #: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:37
 #: frontend/src/services/machines/trello/addBoardMember.trello.machine.pro.ts:52
 #: frontend/src/services/machines/trello/inviteBoardMember.trello.machine.pro.ts:46
@@ -7054,7 +7087,7 @@ msgstr ""
 #: frontend/src/services/machines/senseiLms/createLesson.senseiLms.machine.pro.ts:22
 #: frontend/src/services/machines/senseiLms/getUserCertificate.senseiLms.machine.pro.ts:24
 #: frontend/src/services/machines/tutorLms/CommonMachines/createCourse.machine.ts:36
-#: frontend/src/services/machines/tutorLms/enrollUserInCourse.tutorLms.machine.pro.ts:21
+#: frontend/src/services/machines/tutorLms/enrollUserInCourse.tutorLms.machine.pro.ts:22
 #: frontend/src/services/machines/tutorLms/listEnrolledUsers.tutorLms.machine.pro.ts:20
 #: frontend/src/services/machines/tutorLms/markCourseComplete.tutorLms.machine.pro.ts:22
 #: frontend/src/services/machines/tutorLms/markLessonComplete.tutorLms.machine.pro.ts:21
@@ -7278,7 +7311,7 @@ msgstr ""
 #: frontend/src/services/machines/teamsForWoocommerceMemberships/addMemberToTeam.teamsForWoocommerceMemberships.machine.pro.ts:30
 #: frontend/src/services/machines/teamsForWoocommerceMemberships/removeMemberFromTeam.teamsForWoocommerceMemberships.machine.pro.ts:30
 #: frontend/src/services/machines/teamsForWoocommerceMemberships/updateMemberRole.teamsForWoocommerceMemberships.machine.pro.ts:30
-#: frontend/src/services/machines/tutorLms/enrollUserInCourse.tutorLms.machine.pro.ts:32
+#: frontend/src/services/machines/tutorLms/enrollUserInCourse.tutorLms.machine.pro.ts:33
 #: frontend/src/services/machines/tutorLms/markLessonComplete.tutorLms.machine.pro.ts:42
 #: frontend/src/services/machines/tutorLms/resetUserCourseProgress.tutorLms.machine.pro.ts:29
 #: frontend/src/services/machines/tutorLms/unenrollUserFromCourse.tutorLms.machine.pro.ts:32
@@ -8462,6 +8495,10 @@ msgstr ""
 #: frontend/src/services/machines/discord/findChannel.discord.machine.pro.ts:40
 #: frontend/src/services/machines/pipeDrive/createProduct.pipeDrive.machine.pro.ts:69
 #: frontend/src/services/machines/pipeDrive/updateProduct.pipeDrive.machine.pro.ts:85
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:109
+#: frontend/src/services/machines/roxAppointmentBooking/deleteCategory.roxAppointmentBooking.machine.pro.ts:15
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:123
+#: frontend/src/services/machines/roxAppointmentBooking/updateCategory.roxAppointmentBooking.machine.pro.ts:15
 msgid "Category"
 msgstr ""
 
@@ -9150,6 +9187,10 @@ msgstr ""
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:92
 #: frontend/src/services/machines/googlePhotos/addAlbumEnrichment.googlePhotos.machine.pro.ts:84
 #: frontend/src/services/machines/klaviyo/createProfile.klaviyo.machine.pro.ts:127
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:103
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:96
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:117
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:110
 #: frontend/src/services/machines/webbaBooking/commonMachines/locationId.webbaBooking.machine.ts:15
 #: frontend/src/services/machines/webbaBooking/createBooking.webbaBooking.machine.pro.ts:92
 msgid "Location"
@@ -9312,6 +9353,10 @@ msgstr ""
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:133
 #: frontend/src/services/machines/pipeDrive/addPerson.pipeDrive.machine.pro.ts:78
 #: frontend/src/services/machines/pipeDrive/updatePerson.pipeDrive.machine.pro.ts:95
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:58
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:44
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:72
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:57
 #: frontend/src/services/machines/sender/createOrUpdateSubscriber.sender.machine.pro.ts:47
 #: frontend/src/services/machines/sender/updateSubscriber.sender.machine.pro.ts:57
 #: frontend/src/services/machines/stripe/createCustomer.stripe.machine.pro.ts:47
@@ -9737,6 +9782,8 @@ msgstr ""
 #: frontend/src/services/machines/fluentCrm/_helpers/commonUtils.fluentCrm.ts:142
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:62
 #: frontend/src/services/machines/nextCrm/commonMachines/taxonomyFields.nextCrm.machine.ts:23
+#: frontend/src/services/machines/roxAppointmentBooking/createCategory.roxAppointmentBooking.machine.pro.ts:23
+#: frontend/src/services/machines/roxAppointmentBooking/updateCategory.roxAppointmentBooking.machine.pro.ts:37
 #: frontend/src/services/machines/wooCommerce/commonMachines/createTerm.wooCommerce.machine.ts:24
 #: frontend/src/services/machines/wooCommerce/commonMachines/updateTerm.wooCommerce.machine.ts:34
 #: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.free.ts:32
@@ -10076,6 +10123,8 @@ msgstr ""
 #: frontend/src/services/machines/razorpay/createPaymentLink.razorpay.machine.pro.ts:27
 #: frontend/src/services/machines/razorpay/createPlan.razorpay.machine.pro.ts:68
 #: frontend/src/services/machines/razorpay/updateItem.razorpay.machine.pro.ts:64
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:118
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:132
 #: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:42
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:32
 #: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:99
@@ -11428,11 +11477,13 @@ msgstr ""
 #: frontend/src/services/machines/amelia/_ameliaMachines.ts:64
 #: frontend/src/services/machines/fluentBooking/_fluentBookingMachines.ts:36
 #: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:84
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:267
 #: frontend/src/services/machines/webbaBooking/_webbaBookingMachines.ts:173
 msgid "Booking Cancelled"
 msgstr ""
 
 #: frontend/src/services/machines/amelia/_ameliaMachines.ts:71
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:259
 msgid "Booking Rescheduled"
 msgstr ""
 
@@ -13536,6 +13587,14 @@ msgstr ""
 #: frontend/src/services/machines/quizMaker/updateQuestionCategory.quizMaker.machine.pro.ts:53
 #: frontend/src/services/machines/quizMaker/updateQuiz.quizMaker.machine.pro.ts:86
 #: frontend/src/services/machines/quizMaker/updateQuizCategory.quizMaker.machine.pro.ts:53
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:151
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:151
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:196
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:165
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:165
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointmentStatus.roxAppointmentBooking.machine.pro.ts:36
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:209
+#: frontend/src/services/machines/roxAppointmentBooking/updateServiceStatus.roxAppointmentBooking.machine.pro.ts:33
 #: frontend/src/services/machines/sender/updateSubscriber.sender.machine.pro.ts:122
 #: frontend/src/services/machines/sender/updateSubscriber.sender.machine.pro.ts:133
 #: frontend/src/services/machines/sender/updateSubscriber.sender.machine.pro.ts:144
@@ -14958,6 +15017,8 @@ msgstr ""
 #: frontend/src/services/machines/paymentForm/_paymentFormMachines.ts:42
 #: frontend/src/services/machines/paymentForm/_paymentFormMachines.ts:50
 #: frontend/src/services/machines/paymentForm/_paymentFormMachines.ts:58
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:209
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:216
 #: frontend/src/services/machines/stripe/helpers/commonUtils.stripe.ts:49
 msgid "Payments"
 msgstr ""
@@ -15147,11 +15208,13 @@ msgstr ""
 
 #: frontend/src/services/machines/bookingPress/_bookingPressMachines.ts:22
 #: frontend/src/services/machines/bookly/_booklyMachines.ts:25
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:148
 msgid "Update Appointment Status"
 msgstr ""
 
 #: frontend/src/services/machines/bookingPress/_bookingPressMachines.ts:28
 #: frontend/src/services/machines/bookly/_booklyMachines.ts:33
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:155
 msgid "Delete Appointment"
 msgstr ""
 
@@ -15159,6 +15222,7 @@ msgstr ""
 #: frontend/src/services/machines/bookly/_booklyMachines.ts:57
 #: frontend/src/services/machines/moreConvertWishlist/_moreConvertWishlistMachines.ts:135
 #: frontend/src/services/machines/razorpay/_razorpayMachines.ts:17
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:22
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:883
 msgid "Create Customer"
 msgstr ""
@@ -15167,6 +15231,7 @@ msgstr ""
 #: frontend/src/services/machines/bookly/_booklyMachines.ts:65
 #: frontend/src/services/machines/fluentCart/_fluentCartMachines.ts:355
 #: frontend/src/services/machines/razorpay/_razorpayMachines.ts:24
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:29
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:132
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:890
 msgid "Update Customer"
@@ -15175,16 +15240,19 @@ msgstr ""
 #: frontend/src/services/machines/bookingPress/_bookingPressMachines.ts:46
 #: frontend/src/services/machines/bookly/_booklyMachines.ts:73
 #: frontend/src/services/machines/fluentCart/_fluentCartMachines.ts:362
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:36
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:139
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:897
 msgid "Delete Customer"
 msgstr ""
 
 #: frontend/src/services/machines/bookingPress/_bookingPressMachines.ts:52
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:162
 msgid "Get Appointment"
 msgstr ""
 
 #: frontend/src/services/machines/bookingPress/_bookingPressMachines.ts:58
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:43
 msgid "Get Customer"
 msgstr ""
 
@@ -15216,6 +15284,7 @@ msgid "Appointment Rescheduled"
 msgstr ""
 
 #: frontend/src/services/machines/bookingPress/_bookingPressMachines.ts:112
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:243
 msgid "Appointment Updated"
 msgstr ""
 
@@ -15244,6 +15313,11 @@ msgstr ""
 #: frontend/src/services/machines/bookingPress/appointmentRescheduled.bookingPress.machine.pro.ts:27
 #: frontend/src/services/machines/bookingPress/appointmentStatusChanged.bookingPress.machine.pro.ts:27
 #: frontend/src/services/machines/bookingPress/appointmentUpdated.bookingPress.machine.pro.ts:27
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:76
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:83
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:90
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:97
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:104
 msgid "Services"
 msgstr ""
 
@@ -15254,6 +15328,11 @@ msgstr ""
 #: frontend/src/services/machines/bookingPress/appointmentStatusChanged.bookingPress.machine.pro.ts:31
 #: frontend/src/services/machines/bookingPress/appointmentUpdated.bookingPress.machine.pro.ts:31
 #: frontend/src/services/machines/bookly/createAppointment.bookly.machine.pro.ts:35
+#: frontend/src/services/machines/roxAppointmentBooking/commonMachines/serviceId.roxAppointmentBooking.machine.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:42
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:56
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/updateServiceStatus.roxAppointmentBooking.machine.pro.ts:20
 #: frontend/src/services/machines/webbaBooking/commonMachines/serviceId.webbaBooking.machine.ts:20
 #: frontend/src/services/machines/webbaBooking/createBooking.webbaBooking.machine.pro.ts:58
 #: frontend/src/services/machines/webbaBooking/updateService.webbaBooking.machine.pro.ts:20
@@ -15350,6 +15429,7 @@ msgid "Rejected"
 msgstr ""
 
 #: frontend/src/services/machines/bookly/_booklyMachines.ts:17
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:134
 msgid "Create Appointment"
 msgstr ""
 
@@ -15421,6 +15501,13 @@ msgstr ""
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:29
 #: frontend/src/services/machines/moreConvertWishlist/commonMachines/customerId.moreConvertWishlist.machine.ts:20
 #: frontend/src/services/machines/moreConvertWishlist/createWishlist.moreConvertWishlist.machine.pro.ts:55
+#: frontend/src/services/machines/roxAppointmentBooking/commonMachines/customerId.roxAppointmentBooking.machine.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:29
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:26
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:26
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:43
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:40
 msgid "Select a customer"
 msgstr ""
 
@@ -15498,6 +15585,10 @@ msgid "Customer ID"
 msgstr ""
 
 #: frontend/src/services/machines/bookly/updateAppointmentStatus.bookly.machine.pro.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/commonMachines/appointmentId.roxAppointmentBooking.machine.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:62
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:30
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointmentStatus.roxAppointmentBooking.machine.pro.ts:23
 msgid "Select an appointment"
 msgstr ""
 
@@ -18541,6 +18632,7 @@ msgstr ""
 #: frontend/src/services/machines/buddyPress/_buddyPressMachines.ts:211
 #: frontend/src/services/machines/buddyPress/_buddyPressMachines.ts:344
 #: frontend/src/services/machines/buddyPress/_buddyPressMachines.ts:576
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:223
 msgid "Notifications"
 msgstr ""
 
@@ -19388,6 +19480,9 @@ msgstr ""
 #: frontend/src/services/machines/fluentCart/updatePaymentStatus.fluentCart.machine.pro.ts:23
 #: frontend/src/services/machines/fluentCart/updateShippingStatus.fluentCart.machine.pro.ts:23
 #: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:45
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:185
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:199
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrderStatus.roxAppointmentBooking.machine.pro.ts:28
 #: frontend/src/services/machines/wooCommerce/createOrder.wooCommerce.machine.free.ts:76
 #: frontend/src/services/machines/wooCommerce/getOrderByStatus.wooCommerce.machine.free.ts:15
 #: frontend/src/services/machines/wooCommerce/updateOrderStatus.wooCommerce.machine.free.ts:27
@@ -19867,6 +19962,9 @@ msgstr ""
 #: frontend/src/services/machines/quizMaker/_quizMakerMachines.ts:138
 #: frontend/src/services/machines/quizMaker/_quizMakerMachines.ts:145
 #: frontend/src/services/machines/quizMaker/_quizMakerMachines.ts:152
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:111
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:118
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:125
 #: frontend/src/services/machines/wooCommerce/createSimpleProduct.wooCommerce.machine.free.ts:350
 #: frontend/src/services/machines/wooCommerce/updateExistingProduct.wooCommerce.machine.free.ts:368
 msgid "Categories"
@@ -19899,6 +19997,7 @@ msgstr ""
 #: frontend/src/services/machines/razorpay/createPaymentLink.razorpay.machine.pro.ts:17
 #: frontend/src/services/machines/razorpay/createPlan.razorpay.machine.pro.ts:58
 #: frontend/src/services/machines/razorpay/updateItem.razorpay.machine.pro.ts:55
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:33
 #: frontend/src/services/machines/stripe/createInvoiceItem.stripe.machine.pro.ts:31
 #: frontend/src/services/machines/stripe/createPaymentIntent.stripe.machine.pro.ts:19
 #: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:36
@@ -20113,6 +20212,11 @@ msgstr ""
 #: frontend/src/services/machines/charitable/markUserVerified.charitable.machine.pro.ts:15
 #: frontend/src/services/machines/charitable/updateDonor.charitable.machine.pro.ts:58
 #: frontend/src/services/machines/charitable/updateUserProfile.charitable.machine.pro.ts:15
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:80
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:87
+#: frontend/src/services/machines/roxAppointmentBooking/createNotification.roxAppointmentBooking.machine.pro.ts:28
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:94
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:100
 msgid "WordPress User"
 msgstr ""
 
@@ -21044,7 +21148,7 @@ msgstr ""
 #: frontend/src/services/machines/senseiLms/createCertificate.senseiLms.machine.pro.ts:18
 #: frontend/src/services/machines/senseiLms/createLesson.senseiLms.machine.pro.ts:18
 #: frontend/src/services/machines/senseiLms/getUserCertificate.senseiLms.machine.pro.ts:20
-#: frontend/src/services/machines/tutorLms/enrollUserInCourse.tutorLms.machine.pro.ts:17
+#: frontend/src/services/machines/tutorLms/enrollUserInCourse.tutorLms.machine.pro.ts:18
 #: frontend/src/services/machines/tutorLms/listEnrolledUsers.tutorLms.machine.pro.ts:16
 #: frontend/src/services/machines/tutorLms/markCourseComplete.tutorLms.machine.pro.ts:17
 #: frontend/src/services/machines/tutorLms/markLessonComplete.tutorLms.machine.pro.ts:16
@@ -22458,6 +22562,8 @@ msgstr ""
 
 #: frontend/src/services/machines/easyDigitalDownload/createDiscount.easyDigitalDownload.machine.pro.ts:68
 #: frontend/src/services/machines/fluentCart/createCoupon.fluentCart.machine.pro.ts:50
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:67
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:81
 msgid "Discount Amount"
 msgstr ""
 
@@ -22593,6 +22699,9 @@ msgstr ""
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:149
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:115
 #: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:61
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:149
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:83
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:163
 #: frontend/src/services/machines/wcAffiliate/createTransaction.wcAffiliate.machine.pro.ts:40
 #: frontend/src/services/machines/webbaBooking/setBookingAsPaid.webbaBooking.machine.pro.ts:28
 msgid "Payment Method"
@@ -22601,6 +22710,8 @@ msgstr ""
 #: frontend/src/services/machines/easyDigitalDownload/helpers/easyDigitalDownloadFields.ts:13
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:268
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:234
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:33
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:47
 msgid "Total Amount"
 msgstr ""
 
@@ -23462,18 +23573,25 @@ msgstr ""
 #: frontend/src/services/machines/elevenLabs/_elevenLabsMachines.ts:45
 #: frontend/src/services/machines/elevenLabs/_elevenLabsMachines.ts:51
 #: frontend/src/services/machines/elevenLabs/_elevenLabsMachines.ts:57
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:48
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:55
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:62
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:69
 msgid "Agents"
 msgstr ""
 
 #: frontend/src/services/machines/elevenLabs/_elevenLabsMachines.ts:39
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:50
 msgid "Create Agent"
 msgstr ""
 
 #: frontend/src/services/machines/elevenLabs/_elevenLabsMachines.ts:46
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:71
 msgid "Get Agent"
 msgstr ""
 
 #: frontend/src/services/machines/elevenLabs/_elevenLabsMachines.ts:52
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:64
 msgid "Delete Agent"
 msgstr ""
 
@@ -24183,6 +24301,7 @@ msgid "Remove a user from an event by cancelling their active registration."
 msgstr ""
 
 #: frontend/src/services/machines/eventsManager/_eventsManagerMachines.ts:34
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:275
 msgid "Booking Status Changed"
 msgstr ""
 
@@ -24524,6 +24643,8 @@ msgstr ""
 #: frontend/src/services/machines/facebookCustomAudience/commonMachines/contact.facebookCustomAudience.machine.ts:101
 #: frontend/src/services/machines/goHighLevel/helpers/machineHelper.goHighLevel.ts:106
 #: frontend/src/services/machines/mailMint/createContact.mailMint.machine.pro.ts:98
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:65
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:78
 msgid "Date of Birth"
 msgstr ""
 
@@ -24531,6 +24652,8 @@ msgstr ""
 #: frontend/src/services/machines/getGist/createContact.getGist.machine.pro.ts:65
 #: frontend/src/services/machines/Omnisend/helpers/machineHelper.omnisend.ts:73
 #: frontend/src/services/machines/rapidMail/createContact.rapidMail.machine.pro.ts:92
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:54
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:67
 msgid "Gender"
 msgstr ""
 
@@ -24892,6 +25015,10 @@ msgid "How long people stay in the audience, from 1 to 180 days. Defaults to 30.
 msgstr ""
 
 #: frontend/src/services/machines/facebookCustomAudience/helpers/facebookCustomAudienceCommons.ts:21
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:27
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:34
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:41
 #: frontend/src/services/machines/stripe/helpers/commonUtils.stripe.ts:86
 msgid "Customers"
 msgstr ""
@@ -27193,6 +27320,7 @@ msgid "Fetches the tax rates of a given order."
 msgstr ""
 
 #: frontend/src/services/machines/fluentCart/_fluentCartMachines.ts:204
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:183
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:28
 msgid "Update Order Status"
 msgstr ""
@@ -27202,6 +27330,7 @@ msgid "Updates the status of a given order."
 msgstr ""
 
 #: frontend/src/services/machines/fluentCart/_fluentCartMachines.ts:211
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:218
 msgid "Update Payment Status"
 msgstr ""
 
@@ -27219,6 +27348,7 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/_fluentCartMachines.ts:225
 #: frontend/src/services/machines/razorpay/_razorpayMachines.ts:45
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:169
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:21
 msgid "Create Order"
 msgstr ""
@@ -27232,10 +27362,12 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/_fluentCartMachines.ts:234
 #: frontend/src/services/machines/razorpay/_razorpayMachines.ts:52
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:176
 msgid "Update Order"
 msgstr ""
 
 #: frontend/src/services/machines/fluentCart/_fluentCartMachines.ts:243
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:197
 msgid "Delete Order"
 msgstr ""
 
@@ -27681,6 +27813,10 @@ msgstr ""
 #: frontend/src/services/machines/fluentCart/commonMachines/couponId.fluentCart.machine.ts:13
 #: frontend/src/services/machines/latePoint/updateCoupon.latePoint.machine.pro.ts:15
 #: frontend/src/services/machines/powerCoupons/listCoupons.powerCoupons.machine.pro.ts:45
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:135
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:128
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:149
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:142
 #: frontend/src/services/machines/wooCommerce/getCouponById.wooCommerce.machine.free.ts:13
 msgid "Coupon ID"
 msgstr ""
@@ -27705,6 +27841,8 @@ msgstr ""
 #: frontend/src/services/machines/powerCoupons/commonMachines/couponCode.powerCoupons.machine.ts:16
 #: frontend/src/services/machines/powerCoupons/helpers/commons.powerCoupons.ts:36
 #: frontend/src/services/machines/powerCoupons/listCoupons.powerCoupons.machine.pro.ts:46
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:138
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:152
 #: frontend/src/services/machines/webbaBooking/createCoupon.webbaBooking.machine.pro.ts:14
 #: frontend/src/services/machines/webbaBooking/updateCoupon.webbaBooking.machine.pro.ts:28
 #: frontend/src/services/machines/wooCommerce/createCoupon.wooCommerce.machine.free.ts:33
@@ -27801,6 +27939,13 @@ msgstr ""
 #: frontend/src/services/machines/jetpackCrm/updateContactStatus.jetpackCrm.machine.pro.ts:28
 #: frontend/src/services/machines/moreConvertWishlist/commonMachines/customerId.moreConvertWishlist.machine.ts:15
 #: frontend/src/services/machines/moreConvertWishlist/createWishlist.moreConvertWishlist.machine.pro.ts:50
+#: frontend/src/services/machines/roxAppointmentBooking/commonMachines/customerId.roxAppointmentBooking.machine.ts:15
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:24
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:21
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:21
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:38
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:15
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:35
 #: frontend/src/services/machines/webbaBooking/cancelBooking.webbaBooking.machine.pro.ts:32
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:124
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:131
@@ -27837,6 +27982,9 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:84
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:50
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:190
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:204
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrderStatus.roxAppointmentBooking.machine.pro.ts:33
 msgid "Select an order status"
 msgstr ""
 
@@ -27901,6 +28049,7 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:124
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:90
+#: frontend/src/services/machines/roxAppointmentBooking/updatePaymentStatus.roxAppointmentBooking.machine.pro.ts:15
 msgid "Payment"
 msgstr ""
 
@@ -27953,6 +28102,12 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:169
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:135
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:159
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:162
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:70
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:173
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:176
+#: frontend/src/services/machines/roxAppointmentBooking/updatePaymentStatus.roxAppointmentBooking.machine.pro.ts:28
 #: frontend/src/services/machines/ultimateAffiliatePro/createReferral.ultimateAffiliatePro.machine.pro.ts:128
 #: frontend/src/services/machines/ultimateAffiliatePro/getAllReferral.ultimateAffiliatePro.machine.pro.ts:44
 #: frontend/src/services/machines/wcAffiliate/createReferral.wcAffiliate.machine.pro.ts:112
@@ -27979,6 +28134,12 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:181
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:147
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:164
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:167
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:75
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:178
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:181
+#: frontend/src/services/machines/roxAppointmentBooking/updatePaymentStatus.roxAppointmentBooking.machine.pro.ts:33
 msgid "Select a payment status"
 msgstr ""
 
@@ -27994,6 +28155,8 @@ msgstr ""
 
 #: frontend/src/services/machines/fluentCart/createOrder.fluentCart.machine.pro.ts:198
 #: frontend/src/services/machines/fluentCart/updateOrder.fluentCart.machine.pro.ts:164
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:57
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:71
 msgid "Subtotal"
 msgstr ""
 
@@ -29670,6 +29833,11 @@ msgstr ""
 #: frontend/src/services/machines/jotForm/createForm.jotForm.machine.pro.ts:98
 #: frontend/src/services/machines/pointics/getMembers.pointics.machine.pro.ts:73
 #: frontend/src/services/machines/pointics/getTransactions.pointics.machine.pro.ts:144
+#: frontend/src/services/machines/roxAppointmentBooking/commonMachines/orderId.roxAppointmentBooking.machine.ts:15
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:44
+#: frontend/src/services/machines/roxAppointmentBooking/refundOrder.roxAppointmentBooking.machine.pro.ts:15
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:22
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrderStatus.roxAppointmentBooking.machine.pro.ts:15
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:20
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:27
 #: frontend/src/services/machines/wooCommerce/_wooCommerceMachines.ts:34
@@ -30142,6 +30310,8 @@ msgstr ""
 #: frontend/src/services/machines/googleContacts/createContact.googleContacts.machine.pro.ts:153
 #: frontend/src/services/machines/googleContacts/updateContact.googleContacts.machine.pro.ts:172
 #: frontend/src/services/machines/lemList/createContact.lemList.machine.pro.ts:72
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:48
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:62
 msgid "Job Title"
 msgstr ""
 
@@ -30899,6 +31069,8 @@ msgstr ""
 #: frontend/src/services/machines/googleCalendar/deleteEvent.googleCalendar.machine.pro.ts:45
 #: frontend/src/services/machines/googleCalendar/removeAttendeesFromEvent.googleCalendar.machine.pro.ts:60
 #: frontend/src/services/machines/googleCalendar/updateEvent.googleCalendar.machine.pro.ts:132
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:100
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:113
 msgid "Send Notifications"
 msgstr ""
 
@@ -31963,6 +32135,10 @@ msgstr ""
 #: frontend/src/services/machines/googleContacts/listContacts.googleContacts.machine.pro.ts:39
 #: frontend/src/services/machines/googlePhotos/searchMediaItems.googlePhotos.machine.pro.ts:157
 #: frontend/src/services/machines/pointics/getRewards.pointics.machine.pro.ts:62
+#: frontend/src/services/machines/roxAppointmentBooking/createCategory.roxAppointmentBooking.machine.pro.ts:53
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:116
+#: frontend/src/services/machines/roxAppointmentBooking/updateCategory.roxAppointmentBooking.machine.pro.ts:67
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:129
 #: frontend/src/services/machines/wooCommerce/createAttribute.wooCommerce.machine.free.ts:50
 #: frontend/src/services/machines/wooCommerce/updateAttribute.wooCommerce.machine.free.ts:58
 msgid "Sort Order"
@@ -32779,6 +32955,8 @@ msgid ""
 msgstr ""
 
 #: frontend/src/services/machines/googleMeet/createMeeting.googleMeet.machine.pro.ts:54
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:61
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:75
 #: frontend/src/services/machines/wpCafe/helpers/wpCafeFields.ts:8
 #: frontend/src/services/machines/zoom/createMeeting.zoom.machine.pro.ts:30
 #: frontend/src/services/machines/zoom/createWebinar.zoom.machine.pro.ts:30
@@ -32793,6 +32971,8 @@ msgid ""
 msgstr ""
 
 #: frontend/src/services/machines/googleMeet/createMeeting.googleMeet.machine.pro.ts:67
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:72
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:86
 #: frontend/src/services/machines/wpCafe/helpers/wpCafeFields.ts:9
 msgid "End Time"
 msgstr ""
@@ -33376,6 +33556,7 @@ msgid "Sitemap"
 msgstr ""
 
 #: frontend/src/services/machines/googleSearchConsole/helpers/machineHelper.googleSearchConsole.ts:34
+#: frontend/src/services/machines/roxAppointmentBooking/helpers/machineHelper.roxAppointmentBooking.ts:41
 #: frontend/src/services/machines/vimeo/helpers/machineHelper.vimeo.ts:30
 msgid "Failed to fetch data"
 msgstr ""
@@ -34523,6 +34704,8 @@ msgstr ""
 #: frontend/src/services/machines/heffl/createDeal.heffl.machine.pro.ts:95
 #: frontend/src/services/machines/pipeDrive/createProduct.pipeDrive.machine.pro.ts:121
 #: frontend/src/services/machines/pipeDrive/updateProduct.pipeDrive.machine.pro.ts:138
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:35
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:48
 #: frontend/src/services/machines/stripe/createSubscription.stripe.machine.pro.ts:28
 #: frontend/src/services/machines/webbaBooking/createService.webbaBooking.machine.pro.ts:36
 #: frontend/src/services/machines/webbaBooking/updateService.webbaBooking.machine.pro.ts:50
@@ -37490,6 +37673,7 @@ msgstr ""
 
 #: frontend/src/services/machines/jetpackCrm/commonMachines/transactionId.jetpackCrm.machine.ts:13
 #: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:70
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:95
 #: frontend/src/services/machines/ultimateAffiliatePro/insertPayment.ultimateAffiliatePro.machine.pro.ts:55
 #: frontend/src/services/machines/wcAffiliate/createReferral.wcAffiliate.machine.pro.ts:68
 #: frontend/src/services/machines/wcAffiliate/updateTransactionStatus.wcAffiliate.machine.pro.ts:15
@@ -38147,6 +38331,8 @@ msgid "Title / Designation"
 msgstr ""
 
 #: frontend/src/services/machines/latePoint/createAgent.latePoint.machine.pro.ts:125
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:135
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:149
 msgid "Bio"
 msgstr ""
 
@@ -41098,6 +41284,7 @@ msgid "Triggers when an event booking is completed."
 msgstr ""
 
 #: frontend/src/services/machines/modernEventsCalendar/_modernEventsCalendarMachines.ts:68
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:251
 msgid "Booking Confirmed"
 msgstr ""
 
@@ -46150,6 +46337,8 @@ msgid "Billing Phone"
 msgstr ""
 
 #: frontend/src/services/machines/profilePress/addNewOrder.profilePress.machine.pro.ts:133
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:198
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:212
 msgid "Order Date"
 msgstr ""
 
@@ -46725,6 +46914,7 @@ msgid "Create Item"
 msgstr ""
 
 #: frontend/src/services/machines/razorpay/_razorpayMachines.ts:59
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:204
 msgid "Get Order"
 msgstr ""
 
@@ -47479,6 +47669,515 @@ msgstr ""
 #: frontend/src/services/machines/restrictContent/membershipCancelled.restrictContent.machine.pro.ts:36
 #: frontend/src/services/machines/restrictContent/membershipExpired.restrictContent.machine.pro.ts:36
 msgid "Select a level"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:57
+msgid "Update Agent"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:78
+#: frontend/src/services/machines/webbaBooking/_webbaBookingMachines.ts:64
+msgid "Create Service"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:85
+#: frontend/src/services/machines/webbaBooking/_webbaBookingMachines.ts:70
+msgid "Update Service"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:92
+msgid "Update Service Status"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:99
+msgid "Delete Service"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:106
+#: frontend/src/services/machines/webbaBooking/_webbaBookingMachines.ts:106
+msgid "Get Service"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:113
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:526
+msgid "Create Category"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:120
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:532
+msgid "Update Category"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:127
+#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:538
+msgid "Delete Category"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:132
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:139
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:146
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:153
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:160
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:233
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:241
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:249
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:257
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:265
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:273
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:281
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:289
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:44
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:58
+msgid "Appointments"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:141
+msgid "Update Appointment"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:167
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:174
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:181
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:188
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:195
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:202
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:297
+msgid "Orders"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:190
+msgid "Refund Order"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:211
+#: frontend/src/services/machines/wpErp/_wpErpMachines.ts:189
+msgid "Create Payment"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:225
+msgid "Create Notification"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:235
+msgid "Appointment Created"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:283
+msgid "Booking Reminder Sent"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:291
+msgid "Booking Confirmed From Booking Panel"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:299
+msgid "Order Saved"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:305
+msgid "Accounts"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/_roxAppointmentBookingMachines.ts:307
+msgid "Password Reset Requested"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/commonMachines/agentId.roxAppointmentBooking.machine.ts:15
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:83
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:97
+#: frontend/src/services/machines/zendesk/createOrUpdateUser.zendesk.machine.pro.ts:16
+#: frontend/src/services/machines/zendesk/createUser.zendesk.machine.pro.ts:16
+#: frontend/src/services/machines/zendesk/updateUser.zendesk.machine.pro.ts:16
+msgid "Agent"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/commonMachines/agentId.roxAppointmentBooking.machine.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:88
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:25
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:102
+msgid "Select an agent"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/commonMachines/appointmentId.roxAppointmentBooking.machine.ts:15
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:57
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:25
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointmentStatus.roxAppointmentBooking.machine.pro.ts:18
+msgid "Appointment"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/commonMachines/orderId.roxAppointmentBooking.machine.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:49
+#: frontend/src/services/machines/roxAppointmentBooking/refundOrder.roxAppointmentBooking.machine.pro.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:27
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrderStatus.roxAppointmentBooking.machine.pro.ts:20
+msgid "Select an order"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/commonMachines/serviceId.roxAppointmentBooking.machine.ts:15
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:37
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:51
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:15
+#: frontend/src/services/machines/roxAppointmentBooking/updateServiceStatus.roxAppointmentBooking.machine.pro.ts:15
+#: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:40
+#: frontend/src/services/machines/webbaBooking/commonMachines/serviceId.webbaBooking.machine.ts:15
+#: frontend/src/services/machines/webbaBooking/createBooking.webbaBooking.machine.pro.ts:53
+#: frontend/src/services/machines/webbaBooking/updateService.webbaBooking.machine.pro.ts:15
+msgid "Service"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:67
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:81
+msgid "1 to let the agent sign in, 0 otherwise."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:69
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:76
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:83
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:89
+msgid "Allow to Login"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:85
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:92
+#: frontend/src/services/machines/roxAppointmentBooking/createNotification.roxAppointmentBooking.machine.pro.ts:33
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:99
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:105
+msgid "Select a WordPress user"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:92
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:110
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:106
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:123
+msgid "Avatar Attachment ID"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:108
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:101
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:122
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:115
+#: frontend/src/services/machines/webbaBooking/commonMachines/locationId.webbaBooking.machine.ts:20
+#: frontend/src/services/machines/webbaBooking/createBooking.webbaBooking.machine.pro.ts:97
+msgid "Select a location"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:115
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:129
+msgid "Years of Experience"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:125
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:139
+msgid "Certifications"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAgent.roxAppointmentBooking.machine.pro.ts:158
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:225
+#: frontend/src/services/machines/roxAppointmentBooking/createCategory.roxAppointmentBooking.machine.pro.ts:63
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:120
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:230
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:116
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:203
+#: frontend/src/services/machines/roxAppointmentBooking/updateAgent.roxAppointmentBooking.machine.pro.ts:172
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:239
+#: frontend/src/services/machines/roxAppointmentBooking/updateCategory.roxAppointmentBooking.machine.pro.ts:77
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:133
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:244
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:216
+msgid "Internal Notes"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:48
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:62
+msgid "Appointment date as YYYY-MM-DD."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:59
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:73
+msgid "Start of the slot as YYYY-MM-DD HH:MM:SS."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:70
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:84
+msgid "End of the slot as YYYY-MM-DD HH:MM:SS."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:114
+#: frontend/src/services/machines/roxAppointmentBooking/deleteCategory.roxAppointmentBooking.machine.pro.ts:20
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:128
+#: frontend/src/services/machines/roxAppointmentBooking/updateCategory.roxAppointmentBooking.machine.pro.ts:20
+#: frontend/src/services/machines/webbaBooking/createBooking.webbaBooking.machine.pro.ts:71
+msgid "Select a category"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:122
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:136
+msgid "Extra Services"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:128
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:142
+msgid "Select extra services"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:146
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:160
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointmentStatus.roxAppointmentBooking.machine.pro.ts:31
+msgid "Appointment Status"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:171
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:185
+msgid "Total Attendees"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:180
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:194
+msgid "1 to send the booking e-mails, 0 otherwise."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:182
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:196
+msgid "Send Notification"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:191
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:205
+msgid "1 to send the reminder e-mail, 0 otherwise."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:193
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:207
+msgid "Reminder Notification"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:202
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:216
+msgid "JSON snapshot of the booked service."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:204
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:218
+msgid "Service Details"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:213
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:227
+msgid "JSON snapshot of the purchase."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createAppointment.roxAppointmentBooking.machine.pro.ts:215
+#: frontend/src/services/machines/roxAppointmentBooking/updateAppointment.roxAppointmentBooking.machine.pro.ts:229
+msgid "Purchase Details"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createCategory.roxAppointmentBooking.machine.pro.ts:43
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:180
+#: frontend/src/services/machines/roxAppointmentBooking/updateCategory.roxAppointmentBooking.machine.pro.ts:57
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:193
+msgid "Thumbnail Attachment ID"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:63
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:76
+msgid "Date of birth as YYYY-MM-DD."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:74
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:87
+msgid "1 to let the customer sign in, 0 otherwise."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createCustomer.roxAppointmentBooking.machine.pro.ts:98
+#: frontend/src/services/machines/roxAppointmentBooking/updateCustomer.roxAppointmentBooking.machine.pro.ts:111
+msgid "1 to e-mail this customer, 0 otherwise."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createNotification.roxAppointmentBooking.machine.pro.ts:56
+msgid "Select a notification type"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createNotification.roxAppointmentBooking.machine.pro.ts:62
+msgid "Notification time as YYYY-MM-DD HH:MM:SS. Defaults to now."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createNotification.roxAppointmentBooking.machine.pro.ts:64
+msgid "Notification Time"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createNotification.roxAppointmentBooking.machine.pro.ts:73
+msgid "JSON object describing the notification link."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createNotification.roxAppointmentBooking.machine.pro.ts:75
+msgid "Action Link"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:50
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:64
+msgid "Select the appointments this order covers"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:77
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:91
+msgid "Tax Amount"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:87
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:96
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:101
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:109
+msgid "Deposit Amount"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:97
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:111
+msgid "Amount Due Now"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:107
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:121
+msgid "Amount Due Later"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:116
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:130
+msgid "Three letter currency code, e.g. USD."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:154
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:88
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:168
+#: frontend/src/services/machines/wooCommerce/createOrder.wooCommerce.machine.free.ts:99
+msgid "Select a payment method"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:174
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:188
+msgid "Payment Transaction ID"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:196
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:210
+msgid "Order date as YYYY-MM-DD HH:MM:SS."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:207
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:221
+msgid "Fulfillment date as YYYY-MM-DD HH:MM:SS."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:209
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:223
+msgid "Fulfillment Date"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:218
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:232
+msgid "Cancellation date as YYYY-MM-DD HH:MM:SS."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createOrder.roxAppointmentBooking.machine.pro.ts:220
+#: frontend/src/services/machines/roxAppointmentBooking/updateOrder.roxAppointmentBooking.machine.pro.ts:234
+msgid "Cancellation Date"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:104
+msgid "Payment time as YYYY-MM-DD HH:MM:SS. Defaults to now."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createPayment.roxAppointmentBooking.machine.pro.ts:106
+msgid "Payment Time"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:23
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:36
+msgid "Duration in minutes."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:55
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:68
+msgid "Capacity"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:65
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:78
+msgid "Maximum Capacity"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:74
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:87
+msgid "1 to require a deposit, 0 otherwise."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:76
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:89
+msgid "Enable Deposit"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:86
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:99
+msgid "Deposit Type"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:106
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:119
+msgid "Calendar Colour"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:125
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:136
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:138
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:149
+msgid "1 to hide, 0 to show."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:127
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:140
+msgid "Hide Price in Booking Panel"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:138
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:151
+msgid "Hide Duration in Booking Panel"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:147
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:160
+msgid "1 to hide from customers, 0 otherwise."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:149
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:162
+msgid "Only Visible to Agent"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:158
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:171
+msgid "1 to allow, 0 otherwise."
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:160
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:173
+msgid "Allow Booking Without Agent"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/createService.roxAppointmentBooking.machine.pro.ts:170
+#: frontend/src/services/machines/roxAppointmentBooking/updateService.roxAppointmentBooking.machine.pro.ts:183
+msgid "Capacity Without Agent"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/refundOrder.roxAppointmentBooking.machine.pro.ts:27
+msgid "Refund Amount"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/refundOrder.roxAppointmentBooking.machine.pro.ts:37
+msgid "Refund Reason"
+msgstr ""
+
+#: frontend/src/services/machines/roxAppointmentBooking/updatePaymentStatus.roxAppointmentBooking.machine.pro.ts:20
+msgid "Select a payment"
 msgstr ""
 
 #: frontend/src/services/machines/salesforce/_salesforceMachines.ts:15
@@ -49429,13 +50128,6 @@ msgstr ""
 
 #: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:26
 msgid "Enter the description of the product"
-msgstr ""
-
-#: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:40
-#: frontend/src/services/machines/webbaBooking/commonMachines/serviceId.webbaBooking.machine.ts:15
-#: frontend/src/services/machines/webbaBooking/createBooking.webbaBooking.machine.pro.ts:53
-#: frontend/src/services/machines/webbaBooking/updateService.webbaBooking.machine.pro.ts:15
-msgid "Service"
 msgstr ""
 
 #: frontend/src/services/machines/stripe/createProduct.stripe.machine.pro.ts:41
@@ -51908,7 +52600,7 @@ msgstr ""
 msgid "Achieved target percentage on a quiz"
 msgstr ""
 
-#: frontend/src/services/machines/tutorLms/enrollUserInCourse.tutorLms.machine.pro.ts:28
+#: frontend/src/services/machines/tutorLms/enrollUserInCourse.tutorLms.machine.pro.ts:29
 msgid ""
 "Enter the email address of the user you want to enroll in the course. Leave "
 "empty to use current user email."
@@ -53430,14 +54122,6 @@ msgstr ""
 msgid "Set Booking as Paid"
 msgstr ""
 
-#: frontend/src/services/machines/webbaBooking/_webbaBookingMachines.ts:64
-msgid "Create Service"
-msgstr ""
-
-#: frontend/src/services/machines/webbaBooking/_webbaBookingMachines.ts:70
-msgid "Update Service"
-msgstr ""
-
 #: frontend/src/services/machines/webbaBooking/_webbaBookingMachines.ts:76
 msgid "Create Service Category"
 msgstr ""
@@ -53452,10 +54136,6 @@ msgstr ""
 
 #: frontend/src/services/machines/webbaBooking/_webbaBookingMachines.ts:100
 msgid "Get All Bookings"
-msgstr ""
-
-#: frontend/src/services/machines/webbaBooking/_webbaBookingMachines.ts:106
-msgid "Get Service"
 msgstr ""
 
 #: frontend/src/services/machines/webbaBooking/_webbaBookingMachines.ts:118
@@ -53510,11 +54190,6 @@ msgstr ""
 msgid "Select who cancelled"
 msgstr ""
 
-#: frontend/src/services/machines/webbaBooking/commonMachines/locationId.webbaBooking.machine.ts:20
-#: frontend/src/services/machines/webbaBooking/createBooking.webbaBooking.machine.pro.ts:97
-msgid "Select a location"
-msgstr ""
-
 #: frontend/src/services/machines/webbaBooking/commonMachines/staffId.webbaBooking.machine.ts:15
 #: frontend/src/services/machines/webbaBooking/createBooking.webbaBooking.machine.pro.ts:79
 msgid "Staff Member"
@@ -53534,10 +54209,6 @@ msgstr ""
 
 #: frontend/src/services/machines/webbaBooking/createBooking.webbaBooking.machine.pro.ts:66
 msgid "Service Category"
-msgstr ""
-
-#: frontend/src/services/machines/webbaBooking/createBooking.webbaBooking.machine.pro.ts:71
-msgid "Select a category"
 msgstr ""
 
 #: frontend/src/services/machines/webbaBooking/createBooking.webbaBooking.machine.pro.ts:103
@@ -55705,10 +56376,6 @@ msgstr ""
 msgid "Select Payment Method"
 msgstr ""
 
-#: frontend/src/services/machines/wooCommerce/createOrder.wooCommerce.machine.free.ts:99
-msgid "Select a payment method"
-msgstr ""
-
 #: frontend/src/services/machines/wooCommerce/createOrder.wooCommerce.machine.free.ts:107
 msgid "Provide the title for the payment method."
 msgstr ""
@@ -57220,18 +57887,6 @@ msgstr ""
 
 #: frontend/src/services/machines/wordPress/_wordPressMachines.ts:518
 msgid "Remove Taxonomy From Post"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:526
-msgid "Create Category"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:532
-msgid "Update Category"
-msgstr ""
-
-#: frontend/src/services/machines/wordPress/_wordPressMachines.ts:538
-msgid "Delete Category"
 msgstr ""
 
 #: frontend/src/services/machines/wordPress/_wordPressMachines.ts:544
@@ -59244,10 +59899,6 @@ msgstr ""
 
 #: frontend/src/services/machines/wpErp/_wpErpMachines.ts:182
 msgid "Create Expense"
-msgstr ""
-
-#: frontend/src/services/machines/wpErp/_wpErpMachines.ts:189
-msgid "Create Payment"
 msgstr ""
 
 #: frontend/src/services/machines/wpErp/_wpErpMachines.ts:223
@@ -61274,12 +61925,6 @@ msgstr ""
 #: frontend/src/services/machines/zendesk/createUser.zendesk.machine.pro.ts:15
 #: frontend/src/services/machines/zendesk/updateUser.zendesk.machine.pro.ts:15
 msgid "End User"
-msgstr ""
-
-#: frontend/src/services/machines/zendesk/createOrUpdateUser.zendesk.machine.pro.ts:16
-#: frontend/src/services/machines/zendesk/createUser.zendesk.machine.pro.ts:16
-#: frontend/src/services/machines/zendesk/updateUser.zendesk.machine.pro.ts:16
-msgid "Agent"
 msgstr ""
 
 #: frontend/src/services/machines/zendesk/createTicket.zendesk.machine.pro.ts:23

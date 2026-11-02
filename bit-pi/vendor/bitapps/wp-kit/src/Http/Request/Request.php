@@ -16,13 +16,14 @@ use WP_REST_Request;
 
 class Request extends Validator implements ArrayAccess, JsonSerializable
 {
+    use InteractsWithHeaders;
     use IpTool;
 
-    protected $route;
+    private const APPLICATION_MEDIA_PREFIX = 'application/';
 
     protected $rest;
 
-    protected $attributes = [];
+    protected array $attributes = [];
 
     protected $queryParams = [];
 
@@ -31,47 +32,51 @@ class Request extends Validator implements ArrayAccess, JsonSerializable
     protected $body = [];
 
     /**
+     * Raw php://input, read at most once.
+     */
+    private ?string $_content = null;
+
+    /**
      * Undocumented function.
      */
-    public function __construct(?RouteRegister $route = null)
+    public function __construct(protected ?RouteRegister $route = null)
     {
-        $this->route = $route;
         $this->setBody();
         $this->setQueryParams();
         $this->setRouteParams();
         $this->attributes = (array) $this->queryParams + (array) $this->body + (array) $this->routeParams;
     }
 
-    public function __isset($offset)
+    public function __isset(string $offset)
     {
         return $this->has($offset);
     }
 
-    public function __get($offset)
+    public function __get(string $offset)
     {
         return $this->get($offset);
     }
 
-    public function __set($offset, $value)
+    public function __set(string $offset, mixed $value)
     {
         $this->setAttribute($offset, $value);
     }
 
-    public function __unset($offset)
+    public function __unset(string $offset)
     {
         $this->unsetAttribute($offset);
     }
 
-    public function __call($method, $parameters)
+    public function __call(string $method, array $parameters)
     {
         if (isset($this->rest) && method_exists($this->rest, $method)) {
             return \call_user_func_array([$this->rest, $method], $parameters);
         }
 
-        throw new RuntimeException('Undefined method [' . (string) $method . '] called on ' . __CLASS__ . 'class.');
+        throw new RuntimeException('Undefined method [' . (string) $method . '] called on ' . self::class . 'class.');
     }
 
-    public static function __callStatic($method, $parameters)
+    public static function __callStatic(string $method, array $parameters)
     {
         return (new static())->{$method}(...$parameters);
     }
@@ -101,14 +106,47 @@ class Request extends Validator implements ArrayAccess, JsonSerializable
         return $this->body;
     }
 
-    public function method()
+    /**
+     * Returns the raw request body exactly as sent, e.g. for signature checks.
+     *
+     * @return string
+     */
+    public function content()
     {
-        return sanitize_text_field($_SERVER['REQUEST_METHOD']);
+        if (isset($this->rest)) {
+            return (string) $this->rest->get_body();
+        }
+
+        return $this->_content ??= (string) file_get_contents('php://input');
     }
 
+    /**
+     * Returns the sanitized, upper-cased HTTP method, or '' when the server omits it.
+     *
+     * @return string
+     */
+    public function method()
+    {
+        if (!isset($_SERVER['REQUEST_METHOD'])) {
+            return '';
+        }
+
+        return strtoupper(sanitize_text_field(wp_unslash($_SERVER['REQUEST_METHOD'])));
+    }
+
+    /**
+     * Returns the sanitized Content-Type with a leading "application/" removed (e.g. "json").
+     *
+     * @return string
+     */
     public function contentType()
     {
-        return isset($_SERVER['CONTENT_TYPE']) ? ltrim($_SERVER['CONTENT_TYPE'], 'application/') : '';
+        $type = (string) $this->header('Content-Type', '');
+
+        // Media types are case-insensitive (RFC 9110 §8.3.1).
+        return str_starts_with(strtolower($type), self::APPLICATION_MEDIA_PREFIX)
+            ? substr($type, \strlen(self::APPLICATION_MEDIA_PREFIX))
+            : $type;
     }
 
     public function setApiRequest(WP_REST_Request $request)
@@ -123,13 +161,14 @@ class Request extends Validator implements ArrayAccess, JsonSerializable
     }
 
     /**
-     * Provides all files in a request if exist otherwise returns null.
+     * Provides all files in a request, or an empty array when there are none.
      *
-     * @return null|array
+     * @return array
      */
     public function files()
     {
-        return isset($_FILES) ? $_FILES : null;
+        // phpcs:ignore WordPress.Security.NonceVerification.Missing -- request wrapper; nonce checks belong to route middleware.
+        return $_FILES ?? [];
     }
 
     public function all()
@@ -144,9 +183,12 @@ class Request extends Validator implements ArrayAccess, JsonSerializable
 
     public function input($offset, $default = null)
     {
-        $this->get($offset, $default);
+        return $this->get($offset, $default);
     }
 
+    /**
+     * @return mixed[]
+     */
     public function except()
     {
         $paramToIgnore = \func_get_args();
@@ -220,8 +262,9 @@ class Request extends Validator implements ArrayAccess, JsonSerializable
     {
         if (!empty($params)) {
             $this->queryParams = $params;
-        } elseif (isset($_GET)) {
-            $this->queryParams = wp_unslash($_GET);
+        } else {
+            // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- request wrapper; nonce checks belong to route middleware.
+            $this->queryParams = (array) wp_unslash($_GET ?? []);
         }
     }
 
@@ -243,14 +286,16 @@ class Request extends Validator implements ArrayAccess, JsonSerializable
             $this->body = $body;
         } else {
             if (
-                strpos($this->contentType(), 'form-data')                === false
-                && strpos($this->contentType(), 'x-www-form-urlencoded') === false
+                !str_contains($this->contentType(), 'form-data')
+                && !str_contains($this->contentType(), 'x-www-form-urlencoded')
             ) {
-                $this->body = JSON::maybeDecode(file_get_contents('php://input'), JsonConfig::decodeAsArray());
+                $this->body = JSON::maybeDecode($this->content(), JsonConfig::decodeAsArray());
             }
 
-            if (!empty($_POST)) {
-                $this->body = (array) $this->body + (array) wp_unslash($_POST);
+            // phpcs:ignore WordPress.Security.NonceVerification.Missing -- request wrapper; nonce checks belong to route middleware.
+            $post = (array) wp_unslash($_POST ?? []);
+            if (!empty($post)) {
+                $this->body = (array) $this->body + $post;
             }
         }
     }

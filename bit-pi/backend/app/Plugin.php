@@ -12,13 +12,17 @@ use BitApps\Pi\Deps\BitApps\WPKit\Hooks\Hooks;
 use BitApps\Pi\Deps\BitApps\WPKit\Http\RequestType;
 use BitApps\Pi\Deps\BitApps\WPKit\Migration\MigrationHelper;
 use BitApps\Pi\Deps\BitApps\WPKit\Utils\Capabilities;
+use BitApps\Pi\Deps\BitApps\WPTelemetry\Telemetry\Telemetry;
+use BitApps\Pi\Deps\BitApps\WPTelemetry\Telemetry\TelemetryConfig;
 use BitApps\Pi\HTTP\Controllers\OauthCallbackController;
+use BitApps\Pi\HTTP\Controllers\PluginImprovementController;
 use BitApps\Pi\HTTP\Middleware\AdminCheckerMiddleware;
 use BitApps\Pi\HTTP\Middleware\NonceCheckerMiddleware;
 use BitApps\Pi\Providers\HookProvider;
 use BitApps\Pi\Providers\InstallerProvider;
 use BitApps\Pi\Providers\RewriteRuleProvider;
 use BitApps\Pi\src\Flow\FlowExecutor;
+use BitApps\Pi\src\TelemetryOptionMigration;
 use BitApps\Pi\Views\HtmlTagModifier;
 use BitApps\Pi\Views\Layout;
 use BitApps\Pi\Views\PluginPageActions;
@@ -58,6 +62,28 @@ final class Plugin
         }
 
         Hooks::addAction('plugins_loaded', [$this, 'loaded']);
+
+        Hooks::addFilter(Config::withPrefix('telemetry_additional_data'), [new PluginImprovementController(), 'filterTrackingData']);
+
+        // Before plugins_loaded: the telemetry library listens on the activate hook, which fires
+        // in the activation request after plugins_loaded has already run.
+        if (!Config::getEnv('DEV')) {
+            $this->initWPTelemetry();
+        }
+    }
+
+    public function initWPTelemetry()
+    {
+        TelemetryConfig::setSlug(Config::SLUG);
+        TelemetryConfig::setTitle(Config::TITLE);
+        TelemetryConfig::setVersion(Config::VERSION);
+        TelemetryConfig::setPrefix(Config::VAR_PREFIX);
+        TelemetryConfig::setServerBaseUrl(Config::TELEMETRY_SERVER_BASE_URL);
+        TelemetryConfig::setTermsUrl(Config::TELEMETRY_TERMS_URL);
+        TelemetryConfig::setPolicyUrl(Config::TELEMETRY_POLICY_URL);
+        TelemetryOptionMigration::migrateFromProIfAbsent();
+        Telemetry::report()->init();
+        Telemetry::feedback()->init();
     }
 
     public function registerInstaller()

@@ -18266,6 +18266,190 @@ return [
 
     'Select a level' => __('Select a level', 'bit-pi'),
 
+    'Update Agent' => __('Update Agent', 'bit-pi'),
+
+    'Create Service' => __('Create Service', 'bit-pi'),
+
+    'Update Service' => __('Update Service', 'bit-pi'),
+
+    'Update Service Status' => __('Update Service Status', 'bit-pi'),
+
+    'Delete Service' => __('Delete Service', 'bit-pi'),
+
+    'Get Service' => __('Get Service', 'bit-pi'),
+
+    'Create Category' => __('Create Category', 'bit-pi'),
+
+    'Update Category' => __('Update Category', 'bit-pi'),
+
+    'Delete Category' => __('Delete Category', 'bit-pi'),
+
+    'Appointments' => __('Appointments', 'bit-pi'),
+
+    'Update Appointment' => __('Update Appointment', 'bit-pi'),
+
+    'Orders' => __('Orders', 'bit-pi'),
+
+    'Refund Order' => __('Refund Order', 'bit-pi'),
+
+    'Create Payment' => __('Create Payment', 'bit-pi'),
+
+    'Create Notification' => __('Create Notification', 'bit-pi'),
+
+    'Appointment Created' => __('Appointment Created', 'bit-pi'),
+
+    'Booking Reminder Sent' => __('Booking Reminder Sent', 'bit-pi'),
+
+    'Booking Confirmed From Booking Panel' => __('Booking Confirmed From Booking Panel', 'bit-pi'),
+
+    'Order Saved' => __('Order Saved', 'bit-pi'),
+
+    'Accounts' => __('Accounts', 'bit-pi'),
+
+    'Password Reset Requested' => __('Password Reset Requested', 'bit-pi'),
+
+    'Agent' => __('Agent', 'bit-pi'),
+
+    'Select an agent' => __('Select an agent', 'bit-pi'),
+
+    'Appointment' => __('Appointment', 'bit-pi'),
+
+    'Select an order' => __('Select an order', 'bit-pi'),
+
+    'Service' => __('Service', 'bit-pi'),
+
+    '1 to let the agent sign in, 0 otherwise.' => __('1 to let the agent sign in, 0 otherwise.', 'bit-pi'),
+
+    'Allow to Login' => __('Allow to Login', 'bit-pi'),
+
+    'Select a WordPress user' => __('Select a WordPress user', 'bit-pi'),
+
+    'Avatar Attachment ID' => __('Avatar Attachment ID', 'bit-pi'),
+
+    'Select a location' => __('Select a location', 'bit-pi'),
+
+    'Years of Experience' => __('Years of Experience', 'bit-pi'),
+
+    'Certifications' => __('Certifications', 'bit-pi'),
+
+    'Internal Notes' => __('Internal Notes', 'bit-pi'),
+
+    'Appointment date as YYYY-MM-DD.' => __('Appointment date as YYYY-MM-DD.', 'bit-pi'),
+
+    'Start of the slot as YYYY-MM-DD HH:MM:SS.' => __('Start of the slot as YYYY-MM-DD HH:MM:SS.', 'bit-pi'),
+
+    'End of the slot as YYYY-MM-DD HH:MM:SS.' => __('End of the slot as YYYY-MM-DD HH:MM:SS.', 'bit-pi'),
+
+    'Select a category' => __('Select a category', 'bit-pi'),
+
+    'Extra Services' => __('Extra Services', 'bit-pi'),
+
+    'Select extra services' => __('Select extra services', 'bit-pi'),
+
+    'Appointment Status' => __('Appointment Status', 'bit-pi'),
+
+    'Total Attendees' => __('Total Attendees', 'bit-pi'),
+
+    '1 to send the booking e-mails, 0 otherwise.' => __('1 to send the booking e-mails, 0 otherwise.', 'bit-pi'),
+
+    'Send Notification' => __('Send Notification', 'bit-pi'),
+
+    '1 to send the reminder e-mail, 0 otherwise.' => __('1 to send the reminder e-mail, 0 otherwise.', 'bit-pi'),
+
+    'Reminder Notification' => __('Reminder Notification', 'bit-pi'),
+
+    'JSON snapshot of the booked service.' => __('JSON snapshot of the booked service.', 'bit-pi'),
+
+    'Service Details' => __('Service Details', 'bit-pi'),
+
+    'JSON snapshot of the purchase.' => __('JSON snapshot of the purchase.', 'bit-pi'),
+
+    'Purchase Details' => __('Purchase Details', 'bit-pi'),
+
+    'Thumbnail Attachment ID' => __('Thumbnail Attachment ID', 'bit-pi'),
+
+    'Date of birth as YYYY-MM-DD.' => __('Date of birth as YYYY-MM-DD.', 'bit-pi'),
+
+    '1 to let the customer sign in, 0 otherwise.' => __('1 to let the customer sign in, 0 otherwise.', 'bit-pi'),
+
+    '1 to e-mail this customer, 0 otherwise.' => __('1 to e-mail this customer, 0 otherwise.', 'bit-pi'),
+
+    'Select a notification type' => __('Select a notification type', 'bit-pi'),
+
+    'Notification time as YYYY-MM-DD HH:MM:SS. Defaults to now.' => __('Notification time as YYYY-MM-DD HH:MM:SS. Defaults to now.', 'bit-pi'),
+
+    'Notification Time' => __('Notification Time', 'bit-pi'),
+
+    'JSON object describing the notification link.' => __('JSON object describing the notification link.', 'bit-pi'),
+
+    'Action Link' => __('Action Link', 'bit-pi'),
+
+    'Select the appointments this order covers' => __('Select the appointments this order covers', 'bit-pi'),
+
+    'Tax Amount' => __('Tax Amount', 'bit-pi'),
+
+    'Deposit Amount' => __('Deposit Amount', 'bit-pi'),
+
+    'Amount Due Now' => __('Amount Due Now', 'bit-pi'),
+
+    'Amount Due Later' => __('Amount Due Later', 'bit-pi'),
+
+    'Three letter currency code, e.g. USD.' => __('Three letter currency code, e.g. USD.', 'bit-pi'),
+
+    'Select a payment method' => __('Select a payment method', 'bit-pi'),
+
+    'Payment Transaction ID' => __('Payment Transaction ID', 'bit-pi'),
+
+    'Order date as YYYY-MM-DD HH:MM:SS.' => __('Order date as YYYY-MM-DD HH:MM:SS.', 'bit-pi'),
+
+    'Fulfillment date as YYYY-MM-DD HH:MM:SS.' => __('Fulfillment date as YYYY-MM-DD HH:MM:SS.', 'bit-pi'),
+
+    'Fulfillment Date' => __('Fulfillment Date', 'bit-pi'),
+
+    'Cancellation date as YYYY-MM-DD HH:MM:SS.' => __('Cancellation date as YYYY-MM-DD HH:MM:SS.', 'bit-pi'),
+
+    'Cancellation Date' => __('Cancellation Date', 'bit-pi'),
+
+    'Payment time as YYYY-MM-DD HH:MM:SS. Defaults to now.' => __('Payment time as YYYY-MM-DD HH:MM:SS. Defaults to now.', 'bit-pi'),
+
+    'Payment Time' => __('Payment Time', 'bit-pi'),
+
+    'Duration in minutes.' => __('Duration in minutes.', 'bit-pi'),
+
+    'Capacity' => __('Capacity', 'bit-pi'),
+
+    'Maximum Capacity' => __('Maximum Capacity', 'bit-pi'),
+
+    '1 to require a deposit, 0 otherwise.' => __('1 to require a deposit, 0 otherwise.', 'bit-pi'),
+
+    'Enable Deposit' => __('Enable Deposit', 'bit-pi'),
+
+    'Deposit Type' => __('Deposit Type', 'bit-pi'),
+
+    'Calendar Colour' => __('Calendar Colour', 'bit-pi'),
+
+    '1 to hide, 0 to show.' => __('1 to hide, 0 to show.', 'bit-pi'),
+
+    'Hide Price in Booking Panel' => __('Hide Price in Booking Panel', 'bit-pi'),
+
+    'Hide Duration in Booking Panel' => __('Hide Duration in Booking Panel', 'bit-pi'),
+
+    '1 to hide from customers, 0 otherwise.' => __('1 to hide from customers, 0 otherwise.', 'bit-pi'),
+
+    'Only Visible to Agent' => __('Only Visible to Agent', 'bit-pi'),
+
+    '1 to allow, 0 otherwise.' => __('1 to allow, 0 otherwise.', 'bit-pi'),
+
+    'Allow Booking Without Agent' => __('Allow Booking Without Agent', 'bit-pi'),
+
+    'Capacity Without Agent' => __('Capacity Without Agent', 'bit-pi'),
+
+    'Refund Amount' => __('Refund Amount', 'bit-pi'),
+
+    'Refund Reason' => __('Refund Reason', 'bit-pi'),
+
+    'Select a payment' => __('Select a payment', 'bit-pi'),
+
     'account' => __('account', 'bit-pi'),
 
     'Get Account Industries' => __('Get Account Industries', 'bit-pi'),
@@ -19147,8 +19331,6 @@ return [
     'Enter the name of the product, which is visible to the customer' => __('Enter the name of the product, which is visible to the customer', 'bit-pi'),
 
     'Enter the description of the product' => __('Enter the description of the product', 'bit-pi'),
-
-    'Service' => __('Service', 'bit-pi'),
 
     'Good' => __('Good', 'bit-pi'),
 
@@ -20938,10 +21120,6 @@ return [
 
     'Set Booking as Paid' => __('Set Booking as Paid', 'bit-pi'),
 
-    'Create Service' => __('Create Service', 'bit-pi'),
-
-    'Update Service' => __('Update Service', 'bit-pi'),
-
     'Create Service Category' => __('Create Service Category', 'bit-pi'),
 
     'Create Staff Member' => __('Create Staff Member', 'bit-pi'),
@@ -20949,8 +21127,6 @@ return [
     'Create Location' => __('Create Location', 'bit-pi'),
 
     'Get All Bookings' => __('Get All Bookings', 'bit-pi'),
-
-    'Get Service' => __('Get Service', 'bit-pi'),
 
     'Get Staff Member' => __('Get Staff Member', 'bit-pi'),
 
@@ -20978,8 +21154,6 @@ return [
 
     'Select who cancelled' => __('Select who cancelled', 'bit-pi'),
 
-    'Select a location' => __('Select a location', 'bit-pi'),
-
     'Staff Member' => __('Staff Member', 'bit-pi'),
 
     'Enter the customer full name' => __('Enter the customer full name', 'bit-pi'),
@@ -20989,8 +21163,6 @@ return [
     'Customer Phone' => __('Customer Phone', 'bit-pi'),
 
     'Service Category' => __('Service Category', 'bit-pi'),
-
-    'Select a category' => __('Select a category', 'bit-pi'),
 
     'Booking date & time, e.g. 2026-06-10 14:30 (uses your site timezone). A Unix timestamp also works.' => __('Booking date & time, e.g. 2026-06-10 14:30 (uses your site timezone). A Unix timestamp also works.', 'bit-pi'),
 
@@ -21958,8 +22130,6 @@ return [
 
     'Select Payment Method' => __('Select Payment Method', 'bit-pi'),
 
-    'Select a payment method' => __('Select a payment method', 'bit-pi'),
-
     'Provide the title for the payment method.' => __('Provide the title for the payment method.', 'bit-pi'),
 
     'Select a coupon to apply on the new order.' => __('Select a coupon to apply on the new order.', 'bit-pi'),
@@ -22609,12 +22779,6 @@ return [
     'Add Taxonomy to Post' => __('Add Taxonomy to Post', 'bit-pi'),
 
     'Remove Taxonomy From Post' => __('Remove Taxonomy From Post', 'bit-pi'),
-
-    'Create Category' => __('Create Category', 'bit-pi'),
-
-    'Update Category' => __('Update Category', 'bit-pi'),
-
-    'Delete Category' => __('Delete Category', 'bit-pi'),
 
     'Add Category To Post' => __('Add Category To Post', 'bit-pi'),
 
@@ -23495,8 +23659,6 @@ return [
     'Create Holiday' => __('Create Holiday', 'bit-pi'),
 
     'Create Expense' => __('Create Expense', 'bit-pi'),
-
-    'Create Payment' => __('Create Payment', 'bit-pi'),
 
     'A contact owner is assigned' => __('A contact owner is assigned', 'bit-pi'),
 
@@ -24421,8 +24583,6 @@ return [
     'Domain Names (comma separated)' => __('Domain Names (comma separated)', 'bit-pi'),
 
     'End User' => __('End User', 'bit-pi'),
-
-    'Agent' => __('Agent', 'bit-pi'),
 
     'Urgent' => __('Urgent', 'bit-pi'),
 

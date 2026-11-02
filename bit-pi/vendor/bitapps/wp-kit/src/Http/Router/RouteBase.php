@@ -39,13 +39,33 @@ final class RouteBase
 
     private $_prefix;
 
-    private $_noAuth;
+    private ?bool $_noAuth = null;
 
-    private $_ignoreToken;
+    private ?bool $_ignoreToken = null;
 
-    private $_middleware = [];
+    private array $_middleware = [];
 
-    private static $_isGrouped;
+    /**
+     * REST permission callback shared by every route in this group.
+     *
+     * @var null|callable
+     */
+    private $_permission;
+
+    /**
+     * Enclosing group this route or group was declared in; attributes inherit from it.
+     */
+    private ?self $_parent;
+
+    private static ?self $_isGrouped = null;
+
+    /**
+     * Captures the group being declared, so nested routes and groups inherit from it.
+     */
+    public function __construct()
+    {
+        $this->_parent = self::$_isGrouped;
+    }
 
     /**
      * Handle static call to route.
@@ -55,7 +75,7 @@ final class RouteBase
      *
      * @return RouteRegister
      */
-    public function __call($method, $parameters)
+    public function __call(string $method, array $parameters)
     {
         if (method_exists(RouteRegister::class, $method)) {
             $route = \call_user_func_array([$this->getRegistrar(), $method], $parameters);
@@ -64,10 +84,10 @@ final class RouteBase
             return $route;
         }
 
-        throw new RuntimeException('Undefined method [' . $method . '] called on ' . __CLASS__ . ' class.');
+        throw new RuntimeException('Undefined method [' . $method . '] called on ' . self::class . ' class.');
     }
 
-    public static function __callStatic($method, $parameters)
+    public static function __callStatic(string $method, array $parameters)
     {
         return (new static())->{$method}(...$parameters);
     }
@@ -79,7 +99,7 @@ final class RouteBase
      *
      * @return RouteBase
      */
-    public function prefix($prefix)
+    public function prefix($prefix): self
     {
         $this->_prefix = $prefix;
 
@@ -91,7 +111,7 @@ final class RouteBase
      *
      * @return RouteBase
      */
-    public function noAuth()
+    public function noAuth(): self
     {
         $this->_noAuth = true;
 
@@ -103,9 +123,9 @@ final class RouteBase
      *
      * @return bool
      */
-    public function isNoAuth()
+    public function isNoAuth(): ?bool
     {
-        return $this->_noAuth;
+        return $this->_noAuth ?? $this->_parent?->isNoAuth();
     }
 
     /**
@@ -113,9 +133,9 @@ final class RouteBase
      *
      * @return bool
      */
-    public function isTokenIgnored()
+    public function isTokenIgnored(): ?bool
     {
-        return $this->_ignoreToken;
+        return $this->_ignoreToken ?? $this->_parent?->isTokenIgnored();
     }
 
     /**
@@ -123,7 +143,7 @@ final class RouteBase
      *
      * @return RouteBase
      */
-    public function ignoreToken()
+    public function ignoreToken(): self
     {
         $this->_ignoreToken = true;
 
@@ -135,9 +155,9 @@ final class RouteBase
      *
      * @return RouteBase
      */
-    public function middleware()
+    public function middleware(): self
     {
-        $this->_middleware = (array) $this->_middleware + \func_get_args();
+        $this->_middleware = array_merge($this->_middleware, \func_get_args());
 
         return $this;
     }
@@ -147,9 +167,31 @@ final class RouteBase
      *
      * @return []
      */
-    public function getMiddleware()
+    public function getMiddleware(): array
     {
-        return $this->_middleware;
+        return array_merge($this->_parent?->getMiddleware() ?? [], $this->_middleware);
+    }
+
+    /**
+     * Sets the REST permission callback for every route in this group.
+     *
+     * @param callable $callback receives the WP_REST_Request; return true, false or WP_Error
+     *
+     * @return RouteBase
+     */
+    public function permission(callable $callback): self
+    {
+        $this->_permission = $callback;
+
+        return $this;
+    }
+
+    /**
+     * Returns the group's REST permission callback, if any.
+     */
+    public function getPermission(): ?callable
+    {
+        return $this->_permission ?? $this->_parent?->getPermission();
     }
 
     /**
@@ -159,7 +201,16 @@ final class RouteBase
      */
     public function getRoutePrefix()
     {
-        return $this->_prefix;
+        $parentPrefix = $this->_parent?->getRoutePrefix();
+        if ($parentPrefix === null || $parentPrefix === '') {
+            return $this->_prefix;
+        }
+
+        if ($this->_prefix === null || $this->_prefix === '') {
+            return $parentPrefix;
+        }
+
+        return rtrim($parentPrefix, '/') . '/' . ltrim($this->_prefix, '/');
     }
 
     /**
@@ -169,11 +220,16 @@ final class RouteBase
      *
      * @return $this
      */
-    public function group(Closure $callback)
+    public function group(Closure $callback): self
     {
+        $enclosing        = self::$_isGrouped;
         self::$_isGrouped = $this;
-        $callback();
-        self::$_isGrouped = null;
+
+        try {
+            $callback();
+        } finally {
+            self::$_isGrouped = $enclosing;
+        }
 
         return $this;
     }
@@ -185,9 +241,7 @@ final class RouteBase
      */
     public function getRouter()
     {
-        if (!isset($this->_router)) {
-            $this->_router = Router::instance();
-        }
+        $this->_router ??= Router::instance();
 
         return $this->_router;
     }
@@ -197,13 +251,8 @@ final class RouteBase
      *
      * @return RouteRegister
      */
-    private function getRegistrar()
+    private function getRegistrar(): RouteRegister
     {
-        $instance = $this;
-        if (!\is_null(self::$_isGrouped)) {
-            $instance = self::$_isGrouped;
-        }
-
-        return new RouteRegister($instance);
+        return new RouteRegister($this);
     }
 }

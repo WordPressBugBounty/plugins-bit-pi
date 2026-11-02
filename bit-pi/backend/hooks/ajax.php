@@ -19,6 +19,7 @@ use BitApps\Pi\HTTP\Controllers\HistoryController;
 use BitApps\Pi\HTTP\Controllers\HookListenerController;
 use BitApps\Pi\HTTP\Controllers\McpClientController;
 use BitApps\Pi\HTTP\Controllers\NodeController;
+use BitApps\Pi\HTTP\Controllers\PluginImprovementController;
 use BitApps\Pi\HTTP\Controllers\ProxyController;
 use BitApps\Pi\HTTP\Controllers\SmtpController;
 use BitApps\Pi\HTTP\Controllers\SystemInfoController;
@@ -58,6 +59,8 @@ Route::group(
         Route::post('flow-settings/update', [FlowSettingsController::class, 'updateSettings']);
         Route::get('global-settings', [GlobalSettingsController::class, 'getSettings']);
         Route::post('global-settings/update', [GlobalSettingsController::class, 'updateSettings']);
+        Route::get('plugin-improvement', [PluginImprovementController::class, 'getOpt']);
+        Route::post('plugin-improvement', [PluginImprovementController::class, 'updateOpt']);
         Route::get('node/{flow_id}/{node_id}', [NodeController::class, 'show']);
         Route::post('node/store', [NodeController::class, 'store']);
         Route::post('node/save', [NodeController::class, 'createOrUpdate']);

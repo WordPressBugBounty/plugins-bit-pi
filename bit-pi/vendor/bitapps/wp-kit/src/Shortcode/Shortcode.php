@@ -15,30 +15,28 @@ use RuntimeException;
  */
 final class Shortcode
 {
-    private static $_wrapper;
+    private static ?ShortcodeWrapper $_wrapper = null;
 
     public function __construct()
     {
-        if (!isset(self::$_wrapper)) {
-            self::$_wrapper = new ShortcodeWrapper();
-        }
+        self::$_wrapper ??= new ShortcodeWrapper();
     }
 
-    public function __call($method, $parameters)
+    public function __call(string $method, array $parameters)
     {
         if (method_exists($this->getInstance(), $method)) {
             return \call_user_func_array([$this->getInstance(), $method], $parameters);
         }
 
-        throw new RuntimeException('Undefined method [' . $method . '] called on ' . __CLASS__ . ' class.');
+        throw new RuntimeException('Undefined method [' . $method . '] called on ' . self::class . ' class.');
     }
 
-    public static function __callStatic($method, $parameters)
+    public static function __callStatic(string $method, array $parameters)
     {
         return (new static())->{$method}(...$parameters);
     }
 
-    public function getInstance()
+    public function getInstance(): ?ShortcodeWrapper
     {
         return self::$_wrapper;
     }

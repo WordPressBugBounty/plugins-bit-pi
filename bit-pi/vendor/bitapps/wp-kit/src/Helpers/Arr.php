@@ -23,7 +23,7 @@ class Arr
      *
      * @return bool
      */
-    public static function accessible($value)
+    public static function accessible($value): bool
     {
         return \is_array($value) || $value instanceof ArrayAccess;
     }
@@ -53,7 +53,7 @@ class Arr
      *
      * @return array
      */
-    public static function collapse($array)
+    public static function collapse($array): array
     {
         $results = [];
 
@@ -75,7 +75,7 @@ class Arr
      *
      * @return array
      */
-    public static function crossJoin(...$arrays)
+    public static function crossJoin(...$arrays): array
     {
         $results = [[]];
 
@@ -103,7 +103,7 @@ class Arr
      *
      * @return array
      */
-    public static function divide($array)
+    public static function divide($array): array
     {
         return [array_keys($array), array_values($array)];
     }
@@ -116,7 +116,7 @@ class Arr
      *
      * @return array
      */
-    public static function dot($array, $prepend = '')
+    public static function dot($array, $prepend = ''): array
     {
         $results = [];
 
@@ -139,7 +139,7 @@ class Arr
      *
      * @return array
      */
-    public static function except($array, $keys)
+    public static function except($array, $keys): array
     {
         static::forget($array, $keys);
 
@@ -154,7 +154,7 @@ class Arr
      *
      * @return bool
      */
-    public static function exists($array, $key)
+    public static function exists($array, $key): bool
     {
         if ($array instanceof ArrayAccess) {
             return $array->offsetExists($key);
@@ -217,7 +217,7 @@ class Arr
      *
      * @return array
      */
-    public static function flatten($array, $depth = INF)
+    public static function flatten($array, $depth = INF): array
     {
         $result = [];
 
@@ -242,7 +242,7 @@ class Arr
      * @param array        $array
      * @param array|string $keys
      */
-    public static function forget(&$array, $keys)
+    public static function forget(&$array, $keys): void
     {
         $original = &$array;
 
@@ -302,8 +302,8 @@ class Arr
             return $array[$key];
         }
 
-        if (strpos($key, '.') === false) {
-            return isset($array[$key]) ? $array[$key] : self::value($default);
+        if (!str_contains($key, '.')) {
+            return $array[$key] ?? self::value($default);
         }
 
         foreach (explode('.', $key) as $segment) {
@@ -325,7 +325,7 @@ class Arr
      *
      * @return bool
      */
-    public static function has($array, $keys)
+    public static function has($array, $keys): bool
     {
         $keys = (array) $keys;
 
@@ -360,7 +360,7 @@ class Arr
      *
      * @return bool
      */
-    public static function hasAny($array, $keys)
+    public static function hasAny($array, $keys): bool
     {
         if (\is_null($keys)) {
             return false;
@@ -392,7 +392,7 @@ class Arr
      *
      * @return bool
      */
-    public static function isAssoc(array $array)
+    public static function isAssoc(array $array): bool
     {
         $keys = array_keys($array);
 
@@ -407,7 +407,7 @@ class Arr
      *
      * @return array
      */
-    public static function only($array, $keys)
+    public static function only($array, $keys): array
     {
         return array_intersect_key($array, array_flip((array) $keys));
     }
@@ -421,7 +421,7 @@ class Arr
      *
      * @return array
      */
-    public static function pluck($array, $value, $key = null)
+    public static function pluck($array, $value, $key = null): array
     {
         $results = [];
 
@@ -496,7 +496,7 @@ class Arr
      *
      * @return string
      */
-    public static function query($array)
+    public static function query($array): string
     {
         return http_build_query($array, '', '&', PHP_QUERY_RFC3986);
     }
@@ -514,7 +514,7 @@ class Arr
      */
     public static function random($array, $number = null, $preserveKeys = false)
     {
-        $requested = \is_null($number) ? 1 : $number;
+        $requested = $number ?? 1;
 
         $count = \count($array);
 
@@ -591,8 +591,8 @@ class Arr
     /**
      * Shuffle the given array and return the result.
      *
-     * @param array    $array
-     * @param null|int $seed
+     * @param array           $array
+     * @param null|int|string $seed
      *
      * @return array
      */
@@ -600,13 +600,11 @@ class Arr
     {
         if (\is_null($seed)) {
             shuffle($array);
-        } else {
-            mt_srand($seed);
-            shuffle($array);
-            mt_srand();
+
+            return $array;
         }
 
-        return $array;
+        return self::seededShuffle(array_values($array), (string) $seed);
     }
 
     /**
@@ -658,7 +656,7 @@ class Arr
      *
      * @return string
      */
-    public static function toCssClasses($array)
+    public static function toCssClasses($array): string
     {
         $classList = static::wrap($array);
 
@@ -682,7 +680,7 @@ class Arr
      *
      * @return array
      */
-    public static function where($array, callable $callback)
+    public static function where($array, callable $callback): array
     {
         return array_filter($array, $callback, ARRAY_FILTER_USE_BOTH);
     }
@@ -694,7 +692,7 @@ class Arr
      *
      * @return array
      */
-    public static function wrap($value)
+    public static function wrap($value): array
     {
         if (\is_null($value)) {
             return [];
@@ -773,12 +771,28 @@ class Arr
      *
      * @return array
      */
-    protected static function explodePluckParameters($value, $key)
+    protected static function explodePluckParameters($value, $key): array
     {
         $value = \is_string($value) ? explode('.', $value) : $value;
 
         $key = \is_null($key) || \is_array($key) ? $key : explode('.', $key);
 
         return [$value, $key];
+    }
+
+    /**
+     * Orders values by a hash of seed, length and position: repeatable per seed without reseeding the global mt_rand state.
+     */
+    private static function seededShuffle(array $values, string $seed): array
+    {
+        $length  = \count($values);
+        $weights = [];
+        foreach (array_keys($values) as $position) {
+            $weights[$position] = sha1($seed . ':' . $length . ':' . $position);
+        }
+
+        asort($weights, SORT_STRING);
+
+        return array_map(static fn (int $position) => $values[$position], array_keys($weights));
     }
 }

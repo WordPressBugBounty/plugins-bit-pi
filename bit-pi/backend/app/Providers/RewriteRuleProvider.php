@@ -14,6 +14,8 @@ class RewriteRuleProvider
 {
     private string $route;
 
+    private string $pagename;
+
     private array $queryVars;
 
     private array $rewriteRules;
@@ -27,6 +29,37 @@ class RewriteRuleProvider
         $this->makeRewriteRule();
         Hooks::addAction('init', [$this, 'rewriteUrl']);
         Hooks::addAction('query_vars', [$this, 'addQueryVars']);
+        Hooks::addFilter('pre_handle_404', [$this, 'preventNotFound']);
+        Hooks::addFilter('redirect_canonical', [$this, 'preventCanonicalRedirect']);
+    }
+
+    /**
+     * The route maps to a pagename with no real page behind it, so the main query is empty and
+     * WordPress would mark the request 404. That runs before our template_include handler, and
+     * "redirect broken URLs" features (SEO plugins, redirect managers) act on is_404() at
+     * template_redirect and send the request elsewhere. Short-circuit the 404 for our route.
+     *
+     * @param bool $preempt
+     *
+     * @return bool
+     */
+    public function preventNotFound($preempt)
+    {
+        return $preempt || $this->isCurrentRoute();
+    }
+
+    /**
+     * Once the request is no longer a 404, WordPress would 301 the slash-less form of the route
+     * (e.g. the advertised MCP authorization endpoint) to the trailing-slash form. Serve it directly,
+     * as it was before the 404 short-circuit.
+     *
+     * @param false|string $redirectUrl
+     *
+     * @return false|string
+     */
+    public function preventCanonicalRedirect($redirectUrl)
+    {
+        return $this->isCurrentRoute() ? false : $redirectUrl;
     }
 
     public function rewriteUrl()
@@ -52,11 +85,11 @@ class RewriteRuleProvider
 
         // Create route path and pagename
         $path = trim($this->route, '/');
-        $pagename = str_replace(['/', '{', '}'], ['-', '', ''], $path);
+        $this->pagename = str_replace(['/', '{', '}'], ['-', '', ''], $path);
 
         // Build regex and query string
         $regex = '^' . preg_replace('/\{(\w+)\}/', '([^/]+)', $path) . '/?$';
-        $query = "index.php?pagename={$pagename}";
+        $query = "index.php?pagename={$this->pagename}";
 
         // Add parameters to query
         foreach ($this->queryVars as $i => $param) {
@@ -75,5 +108,10 @@ class RewriteRuleProvider
         }
 
         return array_merge($vars, $this->queryVars);
+    }
+
+    private function isCurrentRoute(): bool
+    {
+        return get_query_var('pagename') === $this->pagename;
     }
 }

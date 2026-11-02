@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0ada926d08df9509a05c0b9582b24f30
+class ComposerStaticInit38b6c8cc2dd2cfe2746d66c5c2815864
 {
     public static $prefixLengthsPsr4 = array (
         'T' =>
@@ -15,6 +15,7 @@ class ComposerStaticInit0ada926d08df9509a05c0b9582b24f30
         'B' =>
         array (
             'BitApps\\WPValidator\\' => 20,
+            'BitApps\\WPTelemetry\\' => 20,
             'BitApps\\WPKit\\' => 14,
             'BitApps\\WPDatabase\\' => 19,
             'BitApps\\Pi\\' => 11,
@@ -33,6 +34,10 @@ class ComposerStaticInit0ada926d08df9509a05c0b9582b24f30
         'BitApps\\WPValidator\\' =>
         array (
             0 => __DIR__ . '/..' . '/bitapps/wp-validator/src',
+        ),
+        'BitApps\\WPTelemetry\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/bitapps/wp-telemetry/src',
         ),
         'BitApps\\WPKit\\' =>
         array (
@@ -64,7 +69,21 @@ class ComposerStaticInit0ada926d08df9509a05c0b9582b24f30
         'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Query\\RawTemplate' => __DIR__ . '/..' . '/bitapps/wp-database/src/Query/RawTemplate.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Query\\SqlOperator' => __DIR__ . '/..' . '/bitapps/wp-database/src/Query/SqlOperator.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPDatabase\\Schema' => __DIR__ . '/..' . '/bitapps/wp-database/src/Schema.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Cache\\Cache' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Cache/Cache.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Cache\\CacheManager' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Cache/CacheManager.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Cache\\Contracts\\Store' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Cache/Contracts/Store.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Cache\\Repository' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Cache/Repository.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Cache\\Stores\\ArrayStore' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Cache/Stores/ArrayStore.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Cache\\Stores\\FileStore' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Cache/Stores/FileStore.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Cache\\Stores\\TransientStore' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Cache/Stores/TransientStore.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Cache\\Stores\\WpObjectCacheStore' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Cache/Stores/WpObjectCacheStore.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Configs\\JsonConfig' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Configs/JsonConfig.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Container\\Application' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Container/Application.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Container\\Container' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Container/Container.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Container\\Exceptions\\BindingResolutionException' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Container/Exceptions/BindingResolutionException.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Container\\Exceptions\\ContainerException' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Container/Exceptions/ContainerException.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Container\\ServiceProvider' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Container/ServiceProvider.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Cron\\Scheduler' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Cron/Scheduler.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Helpers\\Arr' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Helpers/Arr.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Helpers\\DateTimeHelper' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Helpers/DateTimeHelper.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Helpers\\JSON' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Helpers/JSON.php',
@@ -73,23 +92,46 @@ class ComposerStaticInit0ada926d08df9509a05c0b9582b24f30
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Hooks\\HooksWrapper' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Hooks/HooksWrapper.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Client\\Http' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Client/Http.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Client\\HttpClient' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Client/HttpClient.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Detection\\ClientIpResolver' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Detection/ClientIpResolver.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Detection\\UserAgent' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Detection/UserAgent.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\IpTool' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/IpTool.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\RequestType' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/RequestType.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Request\\InteractsWithHeaders' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Request/InteractsWithHeaders.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Request\\Request' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Request/Request.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Request\\Validator\\RuleInterface' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Request/Validator/RuleInterface.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Response' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Response.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\APIRouter' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/APIRouter.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\AjaxRouter' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/AjaxRouter.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\Emitter\\AjaxResponseEmitter' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/Emitter/AjaxResponseEmitter.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\Emitter\\ApiResponseEmitter' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/Emitter/ApiResponseEmitter.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\Emitter\\RawResponseEmitter' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/Emitter/RawResponseEmitter.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\Emitter\\ResponseEmitter' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/Emitter/ResponseEmitter.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\Emitter\\StaticResponseEmitter' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/Emitter/StaticResponseEmitter.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\MiddlewareConfigurationException' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/MiddlewareConfigurationException.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\MiddlewareRegistry' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/MiddlewareRegistry.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\ResponseEnvelope' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/ResponseEnvelope.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\RewriteRuleSet' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/RewriteRuleSet.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\Route' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/Route.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\RouteBase' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/RouteBase.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\RouteBlockedException' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/RouteBlockedException.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\RoutePattern' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/RoutePattern.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\RouteRegister' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/RouteRegister.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\Router' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/Router.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Http\\Router\\StaticRouter' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Http/Router/StaticRouter.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Installer' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Installer.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Migration\\Migration' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Migration/Migration.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Migration\\MigrationHelper' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Migration/MigrationHelper.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Settings\\SettingField' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Settings/SettingField.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Settings\\SettingsRepository' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Settings/SettingsRepository.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Settings\\SettingsSchema' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Settings/SettingsSchema.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Shortcode\\Shortcode' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Shortcode/Shortcode.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Shortcode\\ShortcodeWrapper' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Shortcode/ShortcodeWrapper.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPKit\\Utils\\Capabilities' => __DIR__ . '/..' . '/bitapps/wp-kit/src/Utils/Capabilities.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPTelemetry\\Telemetry\\Feedback\\Feedback' => __DIR__ . '/..' . '/bitapps/wp-telemetry/src/Telemetry/Feedback/Feedback.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPTelemetry\\Telemetry\\Report\\Report' => __DIR__ . '/..' . '/bitapps/wp-telemetry/src/Telemetry/Report/Report.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPTelemetry\\Telemetry\\Report\\ReportInfo' => __DIR__ . '/..' . '/bitapps/wp-telemetry/src/Telemetry/Report/ReportInfo.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPTelemetry\\Telemetry\\Telemetry' => __DIR__ . '/..' . '/bitapps/wp-telemetry/src/Telemetry/Telemetry.php',
+        'BitApps\\Pi\\Deps\\BitApps\\WPTelemetry\\Telemetry\\TelemetryConfig' => __DIR__ . '/..' . '/bitapps/wp-telemetry/src/Telemetry/TelemetryConfig.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPValidator\\ErrorBag' => __DIR__ . '/..' . '/bitapps/wp-validator/src/ErrorBag.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPValidator\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/bitapps/wp-validator/src/Exception/InvalidArgumentException.php',
         'BitApps\\Pi\\Deps\\BitApps\\WPValidator\\Exception\\MethodNotFoundException' => __DIR__ . '/..' . '/bitapps/wp-validator/src/Exception/MethodNotFoundException.php',
@@ -142,6 +184,7 @@ class ComposerStaticInit0ada926d08df9509a05c0b9582b24f30
         'BitApps\\Pi\\HTTP\\Controllers\\McpClientController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/McpClientController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\NodeController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/NodeController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\OauthCallbackController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/OauthCallbackController.php',
+        'BitApps\\Pi\\HTTP\\Controllers\\PluginImprovementController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/PluginImprovementController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\ProxyController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/ProxyController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\RedirectController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/RedirectController.php',
         'BitApps\\Pi\\HTTP\\Controllers\\SmtpController' => __DIR__ . '/../..' . '/backend/app/HTTP/Controllers/SmtpController.php',
@@ -338,6 +381,7 @@ class ComposerStaticInit0ada926d08df9509a05c0b9582b24f30
         'BitApps\\Pi\\src\\Menu' => __DIR__ . '/../..' . '/backend/app/src/Menu.php',
         'BitApps\\Pi\\src\\Queue\\AsyncRequest' => __DIR__ . '/../..' . '/backend/app/src/Queue/AsyncRequest.php',
         'BitApps\\Pi\\src\\Queue\\BackgroundProcessHandler' => __DIR__ . '/../..' . '/backend/app/src/Queue/BackgroundProcessHandler.php',
+        'BitApps\\Pi\\src\\TelemetryOptionMigration' => __DIR__ . '/../..' . '/backend/app/src/TelemetryOptionMigration.php',
         'BitApps\\Pi\\src\\Tools\\AiAgent\\AiAgent' => __DIR__ . '/../..' . '/backend/app/src/Tools/AiAgent/AiAgent.php',
         'BitApps\\Pi\\src\\Tools\\AiAgent\\ChatModel\\ChatModelProvider' => __DIR__ . '/../..' . '/backend/app/src/Tools/AiAgent/ChatModel/ChatModelProvider.php',
         'BitApps\\Pi\\src\\Tools\\AiAgent\\Memory\\MemoryInterface' => __DIR__ . '/../..' . '/backend/app/src/Tools/AiAgent/Memory/MemoryInterface.php',
@@ -390,9 +434,9 @@ class ComposerStaticInit0ada926d08df9509a05c0b9582b24f30
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0ada926d08df9509a05c0b9582b24f30::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0ada926d08df9509a05c0b9582b24f30::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit0ada926d08df9509a05c0b9582b24f30::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit38b6c8cc2dd2cfe2746d66c5c2815864::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit38b6c8cc2dd2cfe2746d66c5c2815864::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit38b6c8cc2dd2cfe2746d66c5c2815864::$classMap;
 
         }, null, ClassLoader::class);
     }
