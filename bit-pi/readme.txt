@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.33.0
+Stable tag: 1.34.0
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -511,7 +511,34 @@ For full details on what data is sent, when it is sent, and each service's Terms
 
 == Changelog ==
 
-= v1.33.0 (Oct 29, 2026) =
+= v1.34.0 (Nov 15, 2026) =
+
+* **Triggers (125)**:
+  * WP Activity Log (45)
+  * Bit Connect (27)
+  * Bookings and Appointments for WooCommerce (19)
+  * NiroHelp (13)
+  * WP Hotel Booking (12)
+  * Five Star Restaurant Reservations (09)
+
+* **Actions (268)**:
+  * Follow Up Boss (121)
+  * Voxel (30)
+  * WP Hotel Booking (27)
+  * WP Activity Log (25)
+  * Bookings and Appointments for WooCommerce (21)
+  * NiroHelp (20)
+  * Five Star Restaurant Reservations (13)
+  * Bit Connect (11)
+
+* **Improvements**:
+  * Pipedrive connections can now use an API Token as well as OAuth 2.
+  * WordPress's Get Posts by Metadata now supports Compare and Value Type options and accepts 0 as a value.
+
+* **Fixes**:
+  * Fixed Minor bugs.
+
+= v1.33.0 (Nov 02, 2026) =
 
 * **Triggers (10)**:
   * Rox Appointment Booking (10)

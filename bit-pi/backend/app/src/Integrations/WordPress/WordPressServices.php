@@ -2,6 +2,7 @@
 
 namespace BitApps\Pi\src\Integrations\WordPress;
 
+use BitApps\Pi\Deps\BitApps\WPKit\Helpers\DateTimeHelper;
 use BitApps\Pi\Helpers\Utility;
 use BitApps\Pi\src\Flow\NodeInfoProvider;
 use BitApps\Pi\src\Integrations\WordPress\helpers\WordPressActionHelper;
@@ -14,6 +15,8 @@ if (!defined('ABSPATH')) {
 
 final class WordPressServices
 {
+    private const META_COMPARE_OPERATORS = ['=', '!=', '>', '>=', '<', '<=', 'LIKE', 'NOT LIKE'];
+
     private $nodeInfoProvider;
 
     public function __construct(NodeInfoProvider $nodeInfoProvider)
@@ -799,20 +802,46 @@ final class WordPressServices
             return WordPressActionHelper::response(__('Meta Key is required', 'bit-pi'), $payload, 422);
         }
 
-        if (empty($metaValue)) {
+        if ($metaValue === null || $metaValue === '') {
             return WordPressActionHelper::response(__('Meta Value is required', 'bit-pi'), $payload, 422);
         }
 
+        $metaClause = [
+            'key'   => $metaKey,
+            'value' => $metaValue
+        ];
+
+        $metaCompare = $data['metaCompare'] ?? '';
+        $metaType = $data['metaType'] ?? '';
+
+        if (!empty($metaCompare)) {
+            if (!\in_array($metaCompare, self::META_COMPARE_OPERATORS, true)) {
+                return WordPressActionHelper::response(__('The compare operator is not supported. Select an operator from the list.', 'bit-pi'), $payload, 422);
+            }
+
+            $metaClause['compare'] = $metaCompare;
+        }
+
+        if (!empty($metaType)) {
+            if (!\in_array($metaType, ['NUMERIC', 'DATE', 'DATETIME'], true)) {
+                return WordPressActionHelper::response(__('The value type is not supported. Select a type from the list.', 'bit-pi'), $payload, 422);
+            }
+
+            $metaClause['type'] = $metaType;
+        }
+
+        if (\in_array($metaType, ['DATE', 'DATETIME'], true)) {
+            $date = date_create_immutable((string) $metaValue, DateTimeHelper::wp_timezone());
+
+            if (!$date) {
+                return WordPressActionHelper::response(__('The meta value is not a valid date. Enter a date such as 2026-05-18, or a word such as "today".', 'bit-pi'), $payload, 422);
+            }
+
+            $metaClause['value'] = $date->format($metaType === 'DATE' ? 'Y-m-d' : 'Y-m-d H:i:s');
+        }
+
         return WordPressActionHelper::response(
-            WordPressActionHelper::getPosts(
-                $postType,
-                [
-                    [
-                        'key'   => $metaKey,
-                        'value' => $metaValue
-                    ],
-                ]
-            ),
+            WordPressActionHelper::getPosts($postType, [$metaClause]),
             $payload
         );
     }
