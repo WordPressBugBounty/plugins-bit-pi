@@ -177,6 +177,7 @@ final class NodeController
 
         $clonedNodeData = $originalNode->getAttributes();
         $clonedNodeData['node_id'] = $validated['newNodeId'];
+        $clonedNodeData['data'] = $this->rekeyConditionIds($clonedNodeData['data'] ?? null, $validated['nodeId'], $validated['newNodeId']);
 
         $clonedNode = FlowNode::insert($clonedNodeData);
 
@@ -185,6 +186,35 @@ final class NodeController
         }
 
         return Response::success($clonedNode);
+    }
+
+    /**
+     * Condition ids are "{nodeId}-{n}" and double as edge source handles.
+     * A verbatim copy would leave the clone's conditions keyed to the original
+     * node, so edges drawn from the clone (saved with the new node id) no longer
+     * match any handle after reload. Re-key them to the new node id.
+     *
+     * @param mixed  $data
+     * @param string $oldNodeId
+     * @param string $newNodeId
+     *
+     * @return mixed
+     */
+    private function rekeyConditionIds($data, $oldNodeId, $newNodeId)
+    {
+        if (!\is_object($data) || !\is_array($data->conditions ?? null)) {
+            return $data;
+        }
+
+        $oldPrefix = $oldNodeId . '-';
+
+        foreach ($data->conditions as $condition) {
+            if (\is_object($condition) && \is_string($condition->id ?? null) && str_starts_with($condition->id, $oldPrefix)) {
+                $condition->id = $newNodeId . '-' . substr($condition->id, \strlen($oldPrefix));
+            }
+        }
+
+        return $data;
     }
 
     private function clearMcpToolSchemasFromNodeData($validated)

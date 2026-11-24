@@ -4,7 +4,7 @@ Tags: Automation, Google Sheets, AI Agent, ChatGPT, Webhooks
 Requires at least: 5.8
 Tested up to: 7.1
 Requires PHP: 8.0
-Stable tag: 1.34.0
+Stable tag: 1.34.1
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -510,6 +510,13 @@ For full details on what data is sent, when it is sent, and each service's Terms
 [Complete External Services Documentation](https://github.com/Bit-Apps-Pro/bit-pi-wordpress-plugin/blob/main/external-services.md)
 
 == Changelog ==
+
+= v1.34.1 (Nov 24, 2026) =
+
+* **Fixes**:
+  * Fixed Pipedrive's Add Person action failing when a phone number was mapped.
+  * Fixed MemberPress's recurring subscription trigger not firing.
+  * Fixed connections from a cloned Condition node disappearing after reload.
 
 = v1.34.0 (Nov 15, 2026) =
 
